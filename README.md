@@ -38,8 +38,6 @@ An _output\_file\_path_ parameter is optional. If there is no path specified for
 
 \nosplash - run the program without the startup screen
 
-Sanny Builder
-
 ## Credits
 
 Delphi 7.0 Ent. © Borland Software Corp  
