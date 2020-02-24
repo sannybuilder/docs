@@ -1,14 +1,15 @@
 # Constants
 
-**A constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can’t be changed in run-time. At compilation the constant name is replaced with the value associated with it. Constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
+**A constant** is an identifier with a predefined value. Contrary to a [variable ](variables.md)the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
 
-To define new constant use the construct `CONST..END`. It syntax looks like this:
+To define a new constant use the construct `CONST..END`:
 
 `CONST  
 <constant name> = <constant value>  
 END`
 
-The _constant name_ is any allowed identifier \(letters, numbers and “\_”\). There are reserved names that can’t be used, as Continue, True, And and so on. The _constant value_ may be a number \(a model identifier, a label\); a string; an expression \(for example class or variable\); another constant.
+The _constant name_ is any allowed identifier \(any combination of letters, numbers and `_`\). There are reserved names that can not be used, such as `Continue`, `True`, `And` and few others.   
+The _constant value_ might be a number \(also a model identifier or a label\); a string; an expression \(for example a class or a variable\); another constant.
 
 Example:
 
@@ -25,11 +26,11 @@ then
 end
 ```
 
-At compilation the constant _MoneyRequired_ will be replaced with the number `30` and _PlayerMoney_ with `$PLAYER_CHAR.Money`
+At compilation the constant `MoneyRequired` will be replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
 
 The compiler also uses 2 internal constants `True` and `False` which values are equal to `1` and `0` respectively.
 
-You can use the constant anywhere except the case:
+You can use constants anywhere except the case:
 
 ```text
 const
@@ -45,7 +46,7 @@ To compile such expression, you must write the opcode, for example:
 0004: VarName[IndexName] = 0
 ```
 
-Also there are the limits with using of a complex expression as a constant.
+Also there are some limitations when using a complex expression as the constant value.
 
-The list of the constants could be called at any place of the code by pressing `Ctrl + [space]`.
+A list of the currently defined constants is displayed after pressing `Ctrl+[space]`.
 
