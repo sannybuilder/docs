@@ -7,8 +7,13 @@
 
 * [Data Types](coding/data-types.md)
 * [Variables](coding/variables.md)
+* [Classes](coding/classes.md)
 
 ## Editor
 
 * [Options](editor/options.md)
+
+## SCM Documentation
+
+* [GTA Limits](scm-documentation/gta-limits.md)
 
