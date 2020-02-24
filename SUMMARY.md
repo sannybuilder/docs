@@ -7,6 +7,7 @@
 
 * [Data Types](coding/data-types.md)
 * [Variables](coding/variables.md)
+* [Constants](coding/constants.md)
 * [Classes](coding/classes.md)
 
 ## Editor
