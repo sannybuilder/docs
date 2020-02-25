@@ -10,6 +10,7 @@
 * [Constants](coding/constants.md)
 * [Arrays](coding/arrays.md)
 * [Classes](coding/classes.md)
+* [Keywords](coding/keywords.md)
 * [HEX..END](coding/hex..end.md)
 * [Directives](coding/directives.md)
 

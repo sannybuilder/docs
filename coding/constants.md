@@ -1,17 +1,17 @@
 # Constants
 
-**A constant** is an identifier with a predefined value. Contrary to a [variable ](variables.md)the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
+A **constant** is an identifier with a predefined value. Contrary to a [variable ](variables.md)the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
 
-To define a new constant use the construct `CONST..END`:
+## Syntax
+
+To define a new constant use the `CONST..END` construct:
 
 `CONST  
-<constant name> = <constant value>  
+    <constant name> = <constant value>  
 END`
 
 The _constant name_ is any allowed identifier \(any combination of letters, numbers and `_`\). There are reserved names that can not be used, such as `Continue`, `True`, `And` and few others.   
 The _constant value_ might be a number \(also a model identifier or a label\); a string; an expression \(for example a class or a variable\); another constant.
-
-Example:
 
 ```text
 const
@@ -30,6 +30,10 @@ At compilation the constant `MoneyRequired` will be replaced with the number `30
 
 The compiler also uses 2 internal constants `True` and `False` which values are equal to `1` and `0` respectively.
 
+A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
+
+## Limitations
+
 You can use constants anywhere except the case:
 
 ```text
@@ -47,6 +51,4 @@ To compile such expression, you must write the opcode, for example:
 ```
 
 Also there are some limitations when using a complex expression as the constant value.
-
-A list of the currently defined constants is displayed after pressing `Ctrl+[space]`.
 

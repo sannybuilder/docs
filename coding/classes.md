@@ -2,13 +2,13 @@
 
 ## Basic Concepts 
 
-**A class** is a group of opcodes applied to in-game entities: player, peds, objects, etc.
+A **class** is a group of opcodes applied to in-game entities: player, peds, objects, etc.
 
 Each class has a set of commands \(class members\). They can be split into the following groups:
 
 * conditional opcodes
 * regular opcodes \(methods\)
-*  properties
+* properties
 
 ### Conditional Commands 
 
