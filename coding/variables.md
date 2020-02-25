@@ -123,7 +123,7 @@ In the `'Food'` script `10@` is the floating-point variable. In the `'Loop'` scr
 You can re-declare variables as many times as you need.
 {% endhint %}
 
-## Shorter Form of Declaration
+## Short Form of Declaration
 
 Since v3.2.0 it's possible to declare a variable of a built-in type \(`Int`, `Float`, `String`, `LongString`\) using only the type name.
 

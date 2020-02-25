@@ -17,7 +17,7 @@
 ## v. 3.3.0 - 08.09.2019
 
 * added compiler support for Liberty City Stories SCM format
-* added aliases for the [timer variables](coding/variables.md#timer-variables): `TIMERA` and `TIMERB`
+* added aliases for the [timer variables](coding/variables.md#timer-variables): TIMERA and TIMERB
 * changed the `Ranges check` option to apply to the global variables
 
 ## v. 3.2.4 - 04.08.2019
