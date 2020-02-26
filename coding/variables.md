@@ -90,7 +90,7 @@ The following types of variables are supported:
 * `Float` - floating-points values
 * `String`, `ShortString` - a variable containing a string literal with the fixed length \(only for the arrays, use `s$`, `@s` for variables\)
 * `LongString` - a variable containing a string literal with the variable length \(only for the arrays, use `v$`, `@v` for variables\)
-* `<Class name>` - any available [class name](classes.md)
+* &lt;Class name&gt; - any available [class name](classes.md)
 
 The types of the local variables can be declared too.
 

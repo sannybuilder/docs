@@ -15,11 +15,11 @@ The `IF` operator evaluates one or more conditions and creates a new branch of c
 
 `N` means the total number of conditions within the IF statement and the way the evaluation of conditions happens. 
 
-| If Number | Logical Operator |
-| :--- | :--- |
-| 0 | N/A |
-| 1..7 | AND \(all conditions must be true for the IF statement to be true\) |
-| 21..27 | OR \(at least one of the conditions must be true in order for the IF statement to be true\) |
+| N | Number of Conditions | Logical Operator |
+| :--- | :--- | :--- |
+| 0 | 1 | N/A |
+| 1..7 | 2..8 | AND \(all conditions must be true for the IF statement to be true\) |
+| 21..27 | 2..8 | OR \(at least one of the conditions must be true in order for the IF statement to be true\) |
 
 {% hint style="info" %}
 A single IF statement can contain up to 8 conditions. 
