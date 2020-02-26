@@ -23,18 +23,18 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F6</code>
       </td>
-      <td style="text-align:left">compile text to a script file</td>
+      <td style="text-align:left">compile the text to a script file</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F7</code>
       </td>
-      <td style="text-align:left">compile text to a script file and copy it to the directory for scripts
+      <td style="text-align:left">compile the text to a script file and copy the file to the scripts directory
         for the current game</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F8</code>
       </td>
-      <td style="text-align:left">run the current game</td>
+      <td style="text-align:left">run the game</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F10</code>
@@ -74,8 +74,8 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
         <p><code>Ctrl+Alt+M</code>
         </p>
       </td>
-      <td style="text-align:left">different modes of text selection: Normal, Columnar (same as selection
-        with pressed <code>Alt</code>), Lines</td>
+      <td style="text-align:left">toggle different modes of the text selection: Normal, Columnar (same as
+        selection with pressed <code>Alt</code>), Lines</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -114,7 +114,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>Ctrl+Q</code>
       </td>
-      <td style="text-align:left">comment / uncomment line</td>
+      <td style="text-align:left"><a href="features.md#commenting-code">comment / uncomment</a> line</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Navigation</b>
@@ -134,7 +134,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
         <p><code>Ctrl+Shift+Num2</code>
         </p>
       </td>
-      <td style="text-align:left">to scroll page on line up / down</td>
+      <td style="text-align:left">scroll the page one line up / down</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -148,12 +148,14 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>Ctrl+Shift+0..9</code>
       </td>
-      <td style="text-align:left">toggle a bookmark</td>
+      <td style="text-align:left">toggle a <a href="features.md#bookmarks-quick-jump">bookmark</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+0..9</code>
       </td>
-      <td style="text-align:left">jump at the bookmark</td>
+      <td style="text-align:left">jump at the <a href="features.md#bookmarks-quick-jump">bookmark</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+G</code>
@@ -167,22 +169,23 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
         <p><code>Ctrl+Num6</code>
         </p>
       </td>
-      <td style="text-align:left">search the word under the cursor below/above in the code</td>
+      <td style="text-align:left"><a href="features.md#instasearch">search </a>the word under the cursor
+        below/above in the code</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+Num2</code>
       </td>
-      <td style="text-align:left">jump to the label under the cursor</td>
+      <td style="text-align:left"><a href="features.md#instasearch">jump </a>to the label under the cursor</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+Num8</code>
       </td>
-      <td style="text-align:left">return the cursor back to the previous position (before InstaSearch)</td>
+      <td style="text-align:left">return the cursor back to the previous position (before <a href="features.md#instasearch">InstaSearch</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+Enter</code>
       </td>
-      <td style="text-align:left">open file which name is under the cursor (see also relative path priorities)</td>
+      <td style="text-align:left">open the file which name is under the cursor (see also <a href="coding/directives.md#usdinclude">relative path priorities</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Code</b>
@@ -192,22 +195,25 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>Ctrl+Space</code>
       </td>
-      <td style="text-align:left">show list of classes / class members / models / labels / variables / missions</td>
+      <td style="text-align:left">show the list of classes / class members / models / labels / variables
+        / missions</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+Shift+Space</code>
       </td>
-      <td style="text-align:left">show list of parameters for the current class command</td>
+      <td style="text-align:left">show the list of parameters for the current class command</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+Shift+C</code>
       </td>
-      <td style="text-align:left">insert the player&apos;s coordinates</td>
+      <td style="text-align:left">insert the <a href="features.md#player-coordinates-management">player&apos;s coordinates</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+Shift+E</code>
       </td>
-      <td style="text-align:left">insert the player&apos;s z_angle</td>
+      <td style="text-align:left">insert the <a href="features.md#player-coordinates-management">player&apos;s z_angle</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F1</code>
@@ -222,22 +228,26 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F2</code>
       </td>
-      <td style="text-align:left">use macro</td>
+      <td style="text-align:left">use <a href="features.md#code-snippets">code snippet</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+J</code>
       </td>
-      <td style="text-align:left">show list of macros</td>
+      <td style="text-align:left">show list of <a href="features.md#code-snippets">snippets</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+M</code>
       </td>
-      <td style="text-align:left">start/stop recording of a macro (keystroke pressings sequence)</td>
+      <td style="text-align:left">start/stop recording of a <a href="features.md#keypress-recording-macro">macro </a>(keystroke
+        pressings sequence)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+P</code>
       </td>
-      <td style="text-align:left">replay macro/pause while processing</td>
+      <td style="text-align:left">replay <a href="features.md#keypress-recording-macro">macro</a>/pause while
+        processing</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+H</code>

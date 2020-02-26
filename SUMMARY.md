@@ -26,6 +26,7 @@
   * [Editor](editor/options/editor.md)
   * [Syntax Highlighting](editor/options/syntax-highlighting.md)
   * [Hotkeys](editor/options/hotkeys.md)
+* [Features](features.md)
 * [Edit Modes](edit-modes.md)
 * [Console](console.md)
 * [Hotkeys](hotkeys.md)
