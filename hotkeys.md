@@ -117,7 +117,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
       <td style="text-align:left">comment / uncomment line</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>Cursor</b>
+      <td style="text-align:left"><b>Navigation</b>
       </td>
       <td style="text-align:left"></td>
     </tr>
