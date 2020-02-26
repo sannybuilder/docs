@@ -14,6 +14,7 @@
 * [Loops](coding/loops.md)
 * [Classes](coding/classes.md)
 * [Keywords](coding/keywords.md)
+* [Built-in Commands](coding/built-in-commands.md)
 * [HEX..END](coding/hex..end.md)
 * [Directives](coding/directives.md)
 
