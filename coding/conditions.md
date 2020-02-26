@@ -33,7 +33,7 @@ Sanny Builder allows to omit  `0` after `IF. IF 0` and  `IF` are equivalent.
 
 `<condition>` - any conditional opcode evaluating to `true` or `false` 
 
-If you have the  `Conditions check` enabled in the [options](../editor/options.md), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
+If you have the  `Conditions check` enabled in the [options](../editor/options/), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
 
 ```text
 if and 

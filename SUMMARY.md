@@ -20,7 +20,16 @@
 
 ## Editor
 
-* [Options](editor/options.md)
+* [Options](editor/options/README.md)
+  * [General](editor/options/general.md)
+  * [Formats](editor/options/formats.md)
+  * [Editor](editor/options/editor.md)
+  * [Syntax Highlighting](editor/options/syntax-highlighting.md)
+  * [Hotkeys](editor/options/hotkeys.md)
+* [Edit Modes](edit-modes.md)
+* [Console](console.md)
+* [Hotkeys](hotkeys.md)
+* [Opcode Search Tool](opcode-search-tool.md)
 
 ## SCM Documentation
 
