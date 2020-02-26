@@ -9,6 +9,7 @@
 * [Variables](coding/variables.md)
 * [Constants](coding/constants.md)
 * [Arrays](coding/arrays.md)
+* [Conditions](coding/conditions.md)
 * [Classes](coding/classes.md)
 * [Keywords](coding/keywords.md)
 * [HEX..END](coding/hex..end.md)
