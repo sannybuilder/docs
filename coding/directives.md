@@ -1,10 +1,12 @@
 # Directives
 
-Preprocessing **directives** are the special words that make the compiler function in different ways. They starts with the dollar sign `$` and located between the curly brackets `{}`.
+Preprocessing **directives** are the special words that make the compiler function in different ways. They starts with `$` and enclosed between the curly brackets `{}`.
 
 ## $VERSION
 
+{% hint style="warning" %}
 This directive is deprecated since v3.1.0
+{% endhint %}
 
 This directive sets what version of opcodes should be used during compilation.
 
@@ -21,7 +23,9 @@ By default the compiler uses the version `current_edit_mode.1.0000`.
 
 ## $VERSION\_RESTORE
 
+{% hint style="warning" %}
 This directive is deprecated since v3.1.0
+{% endhint %}
 
 This directive restores the version to the value prior to using `$VERSION`.
 

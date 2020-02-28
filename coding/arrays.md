@@ -68,5 +68,5 @@ These variables can also be used as the class name:
 $players[0].Build 
 ```
 
-By default in the`SA` edit mode, the array elements are decompiled with the numbers as indexes. You can turn this feature off through the Console using the command `toggle constant_indexes off`. The same feature is available in LCS and VCS but is disabled by default. You can enable this through the Console.
+By default in the `GTA SA` [edit mode](../edit-modes.md), array elements are decompiled with the numbers as indexes. You can turn this feature off through the [console](../console.md) using the command `toggle constant_indexes off`. The same feature is available in LCS and VCS but is disabled by default. You can enable this through the Console.
 

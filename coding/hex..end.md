@@ -2,7 +2,7 @@
 
 Sanny Builder supports writing a raw content in an output file. All values within this construct are written in an output file without any checks.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Use this feature only if you know what you're doing. Any mistakes will corrupt the script file making it unreadable by the game or a script editor.
 {% endhint %}
 
@@ -22,7 +22,7 @@ This sequence of bytes is the compiled version of the opcode `0004: $2 = 1`, so 
 
 You must specify each byte you're going to write with two digits. All spaces are ignored. The compiler treats any two digits with a space between them as a single byte value. A single digit \(`0..F`\) is prefixed with `0`. So, for example, a sequence of three letters`A B C` will be compiled as the number `0xAB0C`.
 
-The `HEX..END` construct also accepts string literals, labels, global variables identifiers, model names. They are compiled without a preceding data type.
+The `HEX..END` construct also accepts [string literals](data-types.md#string-literals), [labels](data-types.md#labels), [global variables](variables.md#global-variables), [model names](data-types.md#model-names). They are compiled without a preceding data type byte.
 
 ```text
 :get_offset
@@ -33,7 +33,7 @@ end
 
 This is the exact copy of the opcode `0004: $PLAYER_CHAR = @get_offset`
 
-String literals are compiled as a sequence of characters enclosed in double quotes.
+A string literal enclosed in double quotes is compiled as a sequence of characters.
 
 ```text
 hex
@@ -43,7 +43,7 @@ end
 
 ## Escape Sequences
 
-The following escape sequences are supported within a string:
+The following escape sequences are supported within a string literal:
 
 | Name | Escape Sequence | Byte Form |
 | :--- | :--- | :--- |
@@ -67,7 +67,7 @@ Currently multiple spaces in a string literal are converted into a single one. T
 
 ## Using aDMA Numbers
 
-Also you can use the [aDMA ](data-types.md)data type to write a numeric constant in an output file. The number after the `&` sign can be both positive or negative, decimal or hexadecimal.
+Also you can use the [aDMA](data-types.md#variables) data type to write a numeric constant in an output file. The number after the `&` sign can be both positive or negative, decimal or hexadecimal.
 
 ```text
 hex

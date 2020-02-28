@@ -12,7 +12,7 @@ Syntax:
 END`
 
 `<loop variable>` - a variable used as a counter for iterations  
-`<initial value>` - a starting value of the loop variable \(any value including a model identifier\)  
+`<initial value>` - a starting value of the loop variable \(any value including a [model identifier](data-types.md#model-names)\)  
 `TO/DOWNTO` ****- increment or decrement the loop variable between iterations  
 `<final value>` - a final value of the loop variable when finished \(any value including a model identifier\)`<step>` - an optional value the loop variable will be incremented or decremented with between iterations. By default its value is equal to `1`.
 
@@ -100,7 +100,7 @@ The constants `True` and `False` are valid for the use as the loop condition.`re
 `repeat..until false` - the loop executes infinitely until it's stopped with the `Break` command.
 {% endhint %}
 
-Currently the compiler accepts only one condition to be checked in the loop condition, but you can check more conditions within the loop body and use the commands Break and Continue.
+Currently the compiler accepts only one condition to be checked in the loop condition, but you can check more conditions within the loop body and use the commands `Break` and `Continue`.
 
 ## Continue and Break
 

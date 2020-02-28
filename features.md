@@ -4,7 +4,7 @@ Sanny Builder provides the end-user the following features:
 
 ## Syntax Highlighting
 
-Sanny Builder highlights different elements of the code for easier understanding. The color scheme can be customized via the [options](editor/options/syntax-highlighting.md).
+Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](editor/options/syntax-highlighting.md).
 
 ## Bookmarks / Quick jump
 
@@ -26,7 +26,7 @@ Before changing the cursor position InstaSearch remembers it, so if you want to 
 
 ## Displaying Information about Opcode
 
-Sanny Builder displays a number of parameters for the opcode, a numeric value of the model under the cursor in the status bar when the option `Show opcode info` is enabled.
+Sanny Builder displays a number of parameters for the opcode, a numeric value of the [model name](coding/data-types.md#model-names) under the cursor in the status bar when the option `Show opcode info` is enabled.
 
 ## SA Mission Builder Source Code Converter
 
@@ -116,7 +116,7 @@ DEFINE MISSION 10 AT @MYMISSION
 
 Instead of `start_mission 10` you can write`start_mission MYMISSION`.
 
-There is also the [Replace Mission Numbers](editor/options/general.md) option. When it's enabled, the decompiler automatically replaces all mission numbers with their names.
+There is also the [Replace Mission Numbers](editor/options/general.md#replace-mission-numbers) option. When it's enabled, the decompiler automatically replaces all mission numbers with their names.
 
 To call the mission names list, press `Ctrl+Space`. The cursor has to be directly after the `start_mission` command.
 
@@ -128,7 +128,7 @@ Since v3.2.0 Sanny supports custom mission titles for each available [edit mode]
 
 ## Multilingual Interface
 
-Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](editor/options/) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
+Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](editor/options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
 
 ## External Tools/Plug-ins Menu
 
@@ -161,7 +161,7 @@ File syntax:
 
 If the decompiler finds a label at the specified offset, this label gets the given custom name.
 
-To find out the offset value set the labels format to `Global Offset` in the [options](editor/options/formats.md). After decompiling, a number in the label name is the offset value.
+To find out the offset value set the labels format to [`Global Offset`](editor/options/formats.md#global-offset) in the options. After decompiling, a number in the label name is the offset value.
 
 ## Checking for updates
 

@@ -2,7 +2,7 @@
 
 ## Basic Concepts 
 
-A **class** is a group of opcodes applied to in-game entities: player, peds, objects, etc.
+A **class** is a group of opcodes applied to the in-game entities: player, peds, objects, etc.
 
 Each class has a set of commands \(class members\). They can be split into the following groups:
 
@@ -12,7 +12,7 @@ Each class has a set of commands \(class members\). They can be split into the f
 
 ### Conditional Commands 
 
-Conditional commands are marked with the word `Check` in the resizable window that is displayed when you press `Ctrl+Space`. Many of these have the only parameter: the class owner \(a variable\).
+Conditional commands are marked with the word `Check` in the resizable window that is displayed when you press `Ctrl+Space`. Many of these have the only parameter: the class owner \(a [variable](variables.md)\).
 
 Example:
 
@@ -28,7 +28,7 @@ jf @anywhere
 
 ### Regular Commands \(methods\)
 
-Regular \(procedural\) commands are used to complete a single in-game action: move an object, destroy it and so on. A special kind of these commands is the constructor that creates an object \(an ped, a vehicle\) and stores its handle to a variable.
+Regular commands \(methods\) are used to complete a single in-game action: move an object, destroy it and so on. A special kind of methods is a constructor that creates an object \(a ped, a vehicle\) and stores its handle to a variable.
 
 In Sanny Builder the constructor can be used either as a method or a property:
 
@@ -59,7 +59,7 @@ Player($PLAYER_CHAR).Money > 461@
 4@ = Player($PLAYER_CHAR).Money
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 In the current version there is a limit on using space characters in the string literals used as a parameter in a property. The compiler ignores these characters. For example, the command
 
 ```text
@@ -83,7 +83,7 @@ var
 end
 ```
 
-It declares the variable `$PLAYER_CHAR` as member of the class `Player`. So, the variable can be used instead of the class name:
+It declares the variable `$PLAYER_CHAR` as the member of the class `Player`. So, the variable can be used instead of the class name:
 
 ```text
 if
@@ -91,7 +91,7 @@ if
 jf @anywhere
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Such variables are compiled as the first parameter and therefore do not duplicate them.
 
 ```text
@@ -137,7 +137,7 @@ Some classes use parameters with special names. This possibility makes the sourc
 Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", Torso)
 ```
 
-Last parameter \(`Torso`\) is the class constant that will be replaced with the number `0` at compilation.
+Last parameter \(`Torso`\) is the class constant that will be replaced with the number `0` during compilation.
 
 These parameters are defined in the file `classes.db`.
 

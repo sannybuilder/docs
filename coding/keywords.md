@@ -1,6 +1,6 @@
 # Keywords
 
-A **keyword** is a single word that substitutes an opcode. For example, the keyword `WAIT` can be used instead of the opcode `0001`.
+A **keyword** is a single word that substitutes the opcode. For example, the keyword `WAIT` can be used instead of the opcode `0001`.
 
 ```text
 wait 0

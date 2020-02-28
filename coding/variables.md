@@ -4,7 +4,7 @@ A **variable \(var\)** is a named storage location that contains a value and can
 
 ## Global variables
 
-Global variables are denoted by the `$` character before the identifier which is its name.  The global variable name is any combination of letters, underscores, and digits:
+A global variable starts with `$` followed by an identifier \(name\).  The global variable name is any combination of letters, digits and `_`:
 
 `$variable1 $100 $____`
 
@@ -12,17 +12,23 @@ Their values are available from any place of the code.
 
 ### **Saved Variables**
 
-A saved variable is a special global variable available only in `LCS` and `VCS` modes. It is denoted by a combination of the dollar sign \(`$`\) and the underscore \(`_`\) put before the identifier: `$_var`. The value of this variable persists across saved games. Global variables denoted by the dollar sign only \(`$var`\) are not saved and they get blank values when the LCS or VCS game loads.
+A saved variable is a special global variable available only in `LCS` and `VCS` modes. Its name is prefixed with `$_`, e.g. `$_var`. The value of this variable persists across saved games. Global variables denoted by `$` only \(e.g. `$var`\) are not saved and they get blank values when the LCS or VCS game loads.
 
 ## Local variables
 
-Local variables are denoted by the `@` character put after the name identifier. A local variable name can only include digits:
+A local variable name may only be a number followed by `@`.
 
-`0@ 999@ 56@`
+```text
+0@ 
+999@ 
+56@
+```
 
 Their values are available only within the current script or the mission.
 
-Scripts have a limited amount of local variables. Refer to the [limits documentation](../scm-documentation/gta-limits.md) to find out the exact ranges.
+{% hint style="warning" %}
+The number of local variables per script is strictly [limited](../scm-documentation/gta-limits.md).
+{% endhint %}
 
 ### **Timer Variables**
 
@@ -39,7 +45,9 @@ Each script or a mission have 2 special local variables called `TIMERA` and `TIM
 0662: printstring "2 seconds has passed"
 ```
 
-Note that `TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. Older scripts reference these timers via the local variables `16@`, `17@` \(GTA3, VC\) or `32@`, `33@` \(SA\).
+{% hint style="info" %}
+`TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. Older scripts reference these timers via the local variables `16@`, `17@` \(GTA3, VC\) or `32@`, `33@` \(SA\).
+{% endhint %}
 
 ## VAR..END construct
 

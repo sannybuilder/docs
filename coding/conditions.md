@@ -2,9 +2,7 @@
 
 The `IF` operator evaluates one or more conditions and creates a new branch of code.
 
-## Syntax
-
-### Low-level IF statements
+## Low-level IF statements
 
 `00d6: if <N>  
 ...condition 1  
@@ -29,11 +27,10 @@ A single IF statement can contain up to 8 conditions.
 Sanny Builder allows to omit  `0` after `IF. IF 0` and  `IF` are equivalent.
 {% endhint %}
 
-`<label>`- a name of the label where script jumps if the IF statement is false.
-
+`<label>`- a name of the label where script jumps if the IF statement is false.  
 `<condition>` - any conditional opcode evaluating to `true` or `false` 
 
-If you have the  `Conditions check` enabled in the [options](../editor/options/), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
+If you have the  `Conditions check` enabled in the [options](../editor/options/general.md#check-conditions), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
 
 ```text
 if and 
@@ -42,12 +39,12 @@ if and
 jf @anywhere
 ```
 
-The compiler writes the number 1 instead of `and`.
+The compiler writes the number `1` instead of `and`.
 
 `IF AND` - conditions connected with the logical operator `AND` \(a replacement for the if number in the range of`1` to `7`\)  
 `IF OR` - conditions connected with the logical operator `OR` \(a replacement for the if number in the range of `21` to `27`\)
 
-### High-level Constructions
+## High-level Constructions
 
 `IF..THEN..END  
 IF..THEN..ELSE..END`
@@ -66,7 +63,7 @@ end
 ```
 
 {% hint style="info" %}
-Option `Conditions check` has to be enabled.
+The  [`Conditions check`](../editor/options/general.md#check-conditions) option  has to be enabled.
 {% endhint %}
 
 {% hint style="info" %}
@@ -88,5 +85,5 @@ Nested IF statements are supported.
 * a **&lt;=** b a is less than or equal to b 
 * a **&lt;&gt;** b a is not equal to b
 
-Sanny Builder is able to figure out the opcode for these checks if one of the operands is a number or a string literal, or both [variable' type](variables.md#var-end-construct) is known.
+Sanny Builder is able to figure out the opcode for these checks if one of the operands is a number or a [string literal](data-types.md#string-literals), or both [variable' type](variables.md#var-end-construct) is known.
 

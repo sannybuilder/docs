@@ -1,78 +1,99 @@
 # Data Types
 
-`$` - a global variable
+Certain code elements must start or end with specific characters. They help the compiler to recognize their meaning. The following list is final and contains all types of data known to the compiler.  
+
+## Variables
+
+A [global variable](variables.md#global-variables) starts with `$` followed by a valid identifier \(any combination of letters, digits and `_`\).
 
 ```text
 0004: $MyVar = 100
 ```
 
-`@` \(before an identifier\) - a label. The identifier is the label name.  Labels are used to reference the code location from unconditional or conditional jumps
-
-```text
-0002: jump @MyLabel
-```
-
-`@` \(after a number\) - a local variable. The number is the [local variable](variables.md#local-variables) id.
+A [local variable](variables.md#local-variables) name may only be a number followed by `@`.  The number is the [local variable](variables.md#local-variables) index in the list of local variables unique to this script or a mission.
 
 ```text
 0006: 100@ = 10
 ```
 
-`'...'` - a short string \(15 characters max\).
+An `ADMA` \(Advanced Direct Memory Access\) variable is a reference to the offset in the `main.scm` file. They serve as global variables, i.e. you can read from and write to an address in the `main.scm`. 
+
+```text
+$myVar = &0 // read first 4 bytes of the main.scm and write them to $myVar
+&57 += &120(&231,4i) // can be used as an array element
+```
+
+ADMA variables don't affect the size of the global variables space in the `main.scm` header.
+
+## Labels
+
+Labels are used to reference the code location from unconditional or conditional jumps. They start with `:`followed by a valid identifier \(a label name\).
+
+```text
+:MyLabel
+```
+
+To reference the label from an opcode use `@`  and then write the label name.
+
+```text
+0002: jump @MyLabel
+```
+
+## String literals
+
+A text enclosed between single quotes `' '` is a short string literal \(`15` characters max\).
 
 ```text
 03A4: name_thread 'MAIN'
 ```
 
-Blank strings are also allowed: `' '`
+Blank strings are also allowed: `' '`.
 
-`"..."` - a long string \(maximum length is determined by the opcode it uses\)
+A text enclosed between `" "` is a long string literal \(maximum length is determined by the opcode it uses\)
 
-If the text contains a double quote character you must write the slash character before it.
+If the literal contains `"` you must write `\` before it.
 
 ```text
 0662: write_debug_message "Hello, \"world\"! \n 'Here we go!'"
 ```
 
-Blank strings are also allowed: `" "`
+Blank strings are also allowed: `" "`.
 
-`s$` - a global string variable
+## String Variables
+
+A global variable containing a short string literal starts with `s$`.
 
 ```text
 05A9: s$MyString = 'GLOBAL'
 ```
 
-`@s` - a local string variable
+A local variable containing a short string literal starts with`@s`. 
 
 ```text
 05AA: 1@s = 'LOCAL'
 ```
 
-`v$` - a global long string variable
+A global variable containing a long string literal starts with `v$`. 
 
 ```text
 06D1: v$MyString = "LONG_GLOBAL"
 ```
 
-`@v` - a local long string variable
+A local variable containing a long string literal starts with`@v`. 
 
 ```text
 06D2: 1@v = "LONG_LOCAL"
 ```
 
-`#` - a model identifier from '.ide' files
+## Model Names
+
+Models from `.ide` files can be referenced by`#` followed by the valid model name. 
 
 ```text
 0247: request_model #CELLPHONE
 ```
 
-`&` - ADMA \(Advanced Direct Memory Access\). Reads/writes the values within the SCM file even outside of the variables block. Does not affect the second segment size.
-
-ADMA can serve as a global variable.
-
-```text
-&57 += &120(&231,4i)
-```
+## Hexadecimal Numbers
 
 `0x` - a hexadecimal number   
 `-0x` - a negative hexadecimal number
@@ -81,5 +102,5 @@ ADMA can serve as a global variable.
 0004: $var = -0xBB08
 ```
 
-A number has to be within the `-80000000..7FFFFFFF` range.
+A hexadecimal number has to be within the `-80000000..7FFFFFFF` range.
 
