@@ -34,5 +34,6 @@
 
 ## SCM Documentation
 
+* [Opcodes List \(SCM.INI\)](scm-documentation/opcodes-list-scm.ini.md)
 * [GTA Limits](scm-documentation/gta-limits.md)
 
