@@ -29,11 +29,15 @@ The decompiler prints the metadata in the first line of the output file.
 Each line has the following syntax:
 
 `xxxx=N, yyyy`   
-where `XXXX` is the opcode number, `N` – the number of parameters, `YYYY` – the opcode description.
+`XXXX` – the opcode number  
+`N` – the number of parameters  
+`yyyy` – the opcode description.
 
 The opcode number and the number of parameters are final and can't be changed. The description is open to modifications.
 
 If the INI file contains multiple definitions for the same opcode, the latter controls.
+
+By convention a description for a conditional opcode starts with two spaces.
 
 ### Opcode Parameters
 
@@ -72,7 +76,7 @@ Changing parameters order in the INI file should be avoided by any means as it m
 {% endhint %}
 
 {% hint style="info" %}
-In GTA SA SCR [edit mode](../edit-modes.md) all opcodes have parameters in their original unchanged order.
+In `GTA SA SCR` [edit mode](../edit-modes.md) all opcodes have parameters in their original unchanged order.
 {% endhint %}
 
 #### Parameter Types
@@ -86,6 +90,6 @@ A letter following the index number indicates the parameter type.
 `x` - an external script ID
 
 {% hint style="info" %}
-You can freely change the description and the parameters types, if needed.
+You can freely change parameters types, if needed.
 {% endhint %}
 
