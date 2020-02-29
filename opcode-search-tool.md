@@ -1,12 +1,14 @@
 # Opcode Search Tool
 
+![](.gitbook/assets/ost.PNG)
+
 You can call this tool by pressing `Ctrl+Alt +2` or by selecting the menu item: `Tools->IDE Tools->Opcode Search`.
 
 To find an opcode, type some words in the input line, e.g. `actor car`. The tool displays the opcodes with these words. You may also use special search operators.
 
 When the tool is open, it checks if there is a selected word in the editor. If the selected word is found, it will be copied into the search field.
 
-## Copying into clipboard
+## Copying Results
 
 To copy an opcode into clipboard, select it in the list and press `ENTER`.   
 To add another opcode to the clipboard content press `SHIFT+ENTER`.   
@@ -21,7 +23,7 @@ To copy the entire results list press `F2`.
 `F3` - sort the list by opcodes  
 `F4` - sort the list alphabetically  
 `F11` - clear the search field, display all opcodes  
-`ESC` - close window
+`ESC` - close the tool window
 
 ## Search Operators
 
