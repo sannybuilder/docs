@@ -1,7 +1,5 @@
 # Syntax Highlighting
 
-
-
 ![](../../.gitbook/assets/high_page.png)
 
 These settings customize the way Sanny Builder displays various elements of the code. 

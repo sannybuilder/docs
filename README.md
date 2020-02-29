@@ -27,7 +27,7 @@ Latest versions and updates are always available at [sannybuilder.com](https://s
 You can also change the current [edit mode](edit-modes.md) in run-time.
 {% endhint %}
 
-`\debug` - enables the debug options  
+`\debug` - enables the [debug options](console.md#running-with-the-debug-parameter)  
   
 `\compile input_file_path [output_file_path]` - compiles the file and exits
 
