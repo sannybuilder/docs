@@ -1,56 +1,54 @@
-# Introduction
+# Введение
 
-**Sanny Builder** is a fast and powerful tool designed for the GTA 3D game series \(GTA3, VC, SA, LCS; partially VCS\).
+**Sanny Builder** - мощнейшее средство для создания новых миссий и скриптов в линейке трехмерных игр GTA. В комплект входит дизассемблер, который переводит игровые скрипты в текстовый формат; компилятор, который переводит скрипт в формат, читаемый игрой, и удобный редактор со множеством вспомогательных функций, таких как [подсветка синтаксиса](editor/options/syntax-highlighting.md), [чтение координат игрока в игре](features.md#player-coordinates-management), быстрое перемещение по участкам кода и многое другое. Добавьте к этому быструю скорость работы и настраиваемый синтаксис кода \(через [классы](coding/classes.md) и [ключевые слова](coding/keywords.md)\) и Вы получите представление о программе.
 
-It includes a disassembler, permitting the end-user to transform the game scripts into text. The compiler feature offers a convenient editor with a large number of useful functions such as [syntax highlighting](editor/options/syntax-highlighting.md), error checking, advanced search tools, [player coordinates reading](features.md#player-coordinates-management), fast movement through code and much more.
+## Установка и обновление
 
-Sanny offers an advanced code syntax which is similar to existing programming languages. This syntax includes changeable [classes](coding/classes.md), [keywords ](coding/keywords.md)and high-level statements. We recommend you continue reading and fully explore the documentation to learn more about SB and its capabilities. We provide a wealth of information that will help you get started in mission coding.
+Запустите инсталлятор и следуйте его инструкциям. Во время установки вы можете дополнительно указать папку с игрой, с которой будете работать, ассоциировать файлы с расширением `.scm` с Sanny Builder, установить [библиотеку CLEO](https://cleo.li/ru). Все эти опции вы можете потом изменить в самой программе.
 
-## **Installation and Updates**
+Для полного удаления программы запустите файл `unins000.exe` в директории программы.
 
-Run the installer and follow its instructions. During installation you could optionally select the game directory you plan to work with, associate files with the `.SCM` extension with Sanny Builder and install the [CLEO library](https://cleo.li).  You can always update these settings in the program options.
+Свежие версии и обновления программы всегда можно найти на официальном сайте [sannybuilder.com](https://sannybuilder.com/)
 
-To uninstall the program, run the file `unins000.exe` located in its root folder.
+## Параметры командной строки:
 
-Latest versions and updates are always available at [sannybuilder.com](https://sannybuilder.com/)
-
-## Command line usage
-
-`\sa` - run as SA editor \(default\)  
-`\vc` - run as VC editor  
-`\gta3` - run as GTA3 editor  
-`\lcs` - run as LCS editor  
-`\vcs` - run as VCS editor  
-`\sa_mobile` - run as SA Mobile editor.
+`\sa` - использовать как редактор SA \(по умолчанию\)  
+`\vc` - использовать как редактор VC  
+`\gta3` - использовать как редактор GTA3  
+`\lcs` - использовать как редактор LCS  
+`\vcs` - использовать как редактор VCS  
+`\sa_mobile` - использовать как редактор мобильной SA \(для iOS и Android\)
 
 {% hint style="info" %}
-You can also change the current [edit mode](edit-modes.md) in run-time.
+Вы также можете изменить [режим редактирования](edit-modes.md) непосредственно в редакторе.
 {% endhint %}
 
-`\debug` - enables the [debug options](console.md#running-with-the-debug-parameter)  
+`\debug` - установить [отладочные опции](console.md#debug-options)  
   
-`\compile input_file_path [output_file_path]` - compiles the file and exits
+`\compile input_file_path [output_file_path]` - запустить процесс компиляции в скрытом режиме
 
 ```text
 sanny.exe \compile C:\myscm.txt C:\myscm.scm
 ```
 
 {% hint style="info" %}
-The `output_file_path` __parameter is optional. If there is no path specified for an output file, the compiler uses the [format rules](editor/options/formats.md#file-name-format). Note that the source file must have no errors. If there are errors found during compilation, they will be logged in the file `compile.log`. When compilation ends, the program shuts down.
+`output_file_path` является опциональным параметром. Если он не указан, компилятор будет использовать путь на основе [форматов имен](editor/options/formats.md#file-name-format).  
+  
+Обратите внимание, что исходный файл должен быть без ошибок! Если в процессе компиляции возникнут ошибки, они будут записаны в файл `compile.log`. После завершения компиляции программа завершит работу.
 {% endhint %}
 
-`\nosplash` - runs Sanny Builder without the splash screen
+`\nosplash` - запустить программу без стартовой заставки
 
-## Contacts
+## Контактная информация
 
 [sannybuilder.com](https://sannybuilder.com/)  
 [Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)  
 [Sanny Builder @ Facebook](https://facebook.com/SannyBuilder)  
 [Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)
 
-For any questions e-mail me at [mail@sannybuilder.com](mailto:mail@sannybuilder.com)
+С замечаниями, советами и предложениями обращайтесь на [mail@sannybuilder.com](mailto:mail@sannybuilder.com)
 
-Use responsibly at your own risk. In Backup We Trust.
+Используйте программу на свой страх и риск. Делайте резервные копии всех редактируемых файлов.
 
 © 2005-2020 Seemann
 
