@@ -1,360 +1,344 @@
-# Version History
+# История изменений
 
 ## v. 3.3.3 - 20.10.2019
 
-* fixed [bug](http://bugs.sannybuilder.com/view.php?id=52) causing incorrect external scripts compilation
+* исправлен [баг](http://bugs.sannybuilder.com/view.php?id=52), вызывавший неправильную компиляцию внешних скриптов
 
 ## v. 3.3.2 - 19.10.2019
 
-* fixed bugs [\#0036](http://bugs.sannybuilder.com/view.php?id=36), [\#0050](http://bugs.sannybuilder.com/view.php?id=50)
-* fixed opcode `059C` in Vice City mode
+* исправлены баги [\#0036](http://bugs.sannybuilder.com/view.php?id=36), [\#0050](http://bugs.sannybuilder.com/view.php?id=50)
+* исправлен опкод 059C в режиме Vice City
 
 ## v. 3.3.1 - 14.09.2019
 
-* fixed bug [\#0048](http://bugs.sannybuilder.com/view.php?id=48)
-* included `constants.txt` missing in GTA SA mode
+* исправлен баг [\#0048](http://bugs.sannybuilder.com/view.php?id=48)
+* добавлен файл constants.txt, который отсутствовал для режима GTA SA
 
 ## v. 3.3.0 - 08.09.2019
 
-* added compiler support for Liberty City Stories SCM format
-* added aliases for the [timer variables](coding/variables.md#timer-variables): `TIMERA` and `TIMERB`
-* changed the `Ranges check` option to apply to the global variables
+* добавлена поддержка для компиляции SCM Liberty City Stories
+* добавлены алиасы для [переменных-таймеров](coding/variables.md#timer-variables): TIMERA and TIMERB
+* [опция](editor/options/general.md#ranges-check) Проверка переменных теперь применяется и к глобальным переменным
 
 ## v. 3.2.4 - 04.08.2019
 
-* fixed bugs [\#0031](http://bugs.sannybuilder.com/view.php?id=31), [\#0032](http://bugs.sannybuilder.com/view.php?id=32), [\#0033](http://bugs.sannybuilder.com/view.php?id=33), [\#0040](http://bugs.sannybuilder.com/view.php?id=40), [\#0044](http://bugs.sannybuilder.com/view.php?id=44)
-* fixed regression defect when a CHM help file can not open
-* updated opcode definitions for GTA 3 and Vice City
-* added IDE support for CLEO 2.0 for III and VC
+* исправлены баги [\#0031](http://bugs.sannybuilder.com/view.php?id=31), [\#0032](http://bugs.sannybuilder.com/view.php?id=32), [\#0033](http://bugs.sannybuilder.com/view.php?id=33), [\#0040](http://bugs.sannybuilder.com/view.php?id=40), [\#0044](http://bugs.sannybuilder.com/view.php?id=44)
+* исправлен дефект предыдущей версии, когда CHM справка не открывалась
+* обновлены описания опкодов для GTA 3 и Vice City
+* в IDE добавлена поддержка CLEO 2.0 для III и VC
 
 ## v. 3.2.3 - 07.07.2019
 
-* improved support of the version of GTA San Andreas for Wi﻿nStore, Xbox 360, and P﻿S3
-* fixed an issue with opcodes `09A4` and `0A18` not being properly decompiled in SA\_Mobile mode
+* улучшена поддержка версии GTA San Andreas для Wi﻿nStore, Xbox 360 и P﻿S3
+* исправлена ошибка с неправильной декомпиляцией опкодов 09A4 и 0A18 в режиме SA\_Mobile
 
 ## v. 3.2.2 - 05.07.2014
 
-* added translation into Korean language \(thanks to MINE\)
-* improved [HEX..END](coding/hex..end.md) construct processing
-* fixed bug [\#0000028](http://bugs.sannybuilder.com/view.php?id=28)
+* добавлен перевод на корейский язык \(спасибо MINE\)
+* улучшена работа конструкции [HEX..END](coding/hex..end.md)
+* исправлен баг [\#0000028](http://bugs.sannybuilder.com/view.php?id=28)
 
 ## v. 3.2.1 - 04.05.2014
 
-* added translation into Indonesian language \(thanks to IMasterFX\)
-* CLEO for GTA III and CLEO for Vice City updated \(thanks to Silent\)
-* fixed bugs [\#0000026](http://bugs.sannybuilder.com/view.php?id=26), [\#0000027](http://bugs.sannybuilder.com/view.php?id=27)
+* добавлен перевод на индонезийский язык \(спасибо IMasterFX\)
+* обновлены CLEO для GTA III и CLEO для Vice City \(спасибо Silent\)
+* исправлены баги [\#0000026](http://bugs.sannybuilder.com/view.php?id=26), [\#0000027](http://bugs.sannybuilder.com/view.php?id=27)
 
 ## v. 3.2.0 - 22.03.2014
 
-* adding custom edit modes by editing the `games.xml` file is now possible
-* new edit mode - `GTA SA SCR`
-* variables can be quickly declared using a type name prefix
-* CLEO updated to the version 4.3.16
-* added the InstaSearch feature \(formerly 'jump to label' function\)
-* mission names can be changed by editing appropriate `missions.txt` files
-* improved association of the script file extensions with Sanny Builder
-* Sanny Builder only checks if the game directory path is not empty, no checks for specific files \(such as an `.exe`\)
-* minor improvements in the SB updating feature
-* changed the Sanny Builder icon and the menu icons
-* fixed bug [\#0000024](http://bugs.sannybuilder.com/view.php?id=24)
+* добавление собственных [режимов редактирования](edit-modes.md) возможно путем изменения файла games.xml
+* новый режим редактирования - GTA SA SCR
+* переменные [могут быть объявлены](coding/variables.md#shorter-form-of-declaration) при помощи указания типа перед именем переменной
+* CLEO обновлена до версии 4.3.16
+* добавлен [моментальный поиск в тексте](features.md#instasearch) \(ранее эта возможность называлась "переход к метке"\)
+* [оригинальные названия миссий](features.md#custom-mission-titles) могут быть изменены через файл missions.txt
+* улучшена [ассоциация](editor/options/general.md#file-association) расширений скриптовых файлов с Sanny Builder
+* при указании директории игры Sanny Builder проверяет только существование этой директории и не проверяет наличие дополнительных файлов в ней
+* небольшие улучшения в функции проверки обновлений
+* изменена иконка Sanny Builder и иконки в меню
+* исправлен баг [\#0000024](http://bugs.sannybuilder.com/view.php?id=24)
 
 ## v. 3.1.4 - 22.02.2014
 
-* CLEO updated to the version 4.3.14
-* fixed minor interface glitches for hi-res displays
-* updated German, Polish, Chinese, Ukrainian translations
+* CLEO обновлена до версии 4.3.14
+* исправлены некоторые ошибки в интерфейсе на высоких разрешениях экрана
+* обновлены переводы на немецкий, польский, китайский, украинский языки
 
 ## v. 3.1.3 - 22.12.2013
 
-* added support for iOS and Android versions of GTA San Andreas
-* a looking depth value is now used when making a list of constants
-* updated Chinese and German translations
+* добавлена [поддержка](edit-modes.md) iOS и Android версий GTA: San Andreas
+* значение [глубины просмотра](editor/options/editor.md#code-scan-distance) теперь используется при построении списка констант
+* обновлены переводы на китайский и немецкий языки
 
 ## v. 3.1.2 - 06.10.2013
 
-* added Czech translation
-* added options to associate file extensions `.cs` and `.cm` with Sanny Builder
-* fixed bugs [\#0000011](http://bugs.sannybuilder.com/view.php?id=11), [\#0000020](http://bugs.sannybuilder.com/view.php?id=20)
+* добавлен перевод на чешкий язык
+* добавлены [опции](editor/options/general.md#file-association) ассоциации файлов .cs и .cm с Sanny Builder.
+* исправлены баги [\#0000011](http://bugs.sannybuilder.com/view.php?id=11), [\#0000020](http://bugs.sannybuilder.com/view.php?id=20)
 
 ## v. 3.1.1 - 22.09.2013
 
-* added a new directive `$OPCODE` to register a new opcode in the script
-* corrected behavior of the directive `$INCLUDE` while scanning directories for the file
-* fixed bugs [\#0000005](http://bugs.sannybuilder.com/view.php?id=5), [\#0000019](http://bugs.sannybuilder.com/view.php?id=19)
+* добавлена новая директива [$OPCODE](coding/directives.md#usdopcode) для регистрации нового опкода через скрипт
+* скорректировано поведение директивы [$INCLUDE](coding/directives.md#usdinclude) при поиске файла
+* исправлены баги [\#0000005](http://bugs.sannybuilder.com/view.php?id=5), [\#0000019](http://bugs.sannybuilder.com/view.php?id=19)
 
 ## v. 3.1.0 - 14.09.2013
 
-* `VCSCM.ini` is updated to include opcodes for the GTA VC mobile version and unsupported opcodes
-* when the option `Add extra info to SCM` is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
-* when the option `Add extra info to SCM` is enabled, Sanny Builder adds a source code into a script file \(only when the directive `$EXTERNAL` or `$CLEO` is present\)
-* added a new directive `$NOSOURCE` to prohibit including a source code into a compiled script
-* some hotkeys are now customizable in the options
-* added a feature to check automatically if an update exists at the program startup
-* [directives ](coding/directives.md)`$VERSION` and `$VERSION_RESTORE` are deprecated
-* updated Spanish and Chinese translations
-* The Coords manager is now able to change the player's angle in GTA VC
-* The Sanny Builder installation now includes the [SCRLog CLEO plugin](http://www.gtagarage.com/mods/show.php?id=23846) by LINK/2012 \(can be found in the `tools` folder\)
-* fixed bugs [\#0000010](http://bugs.sannybuilder.com/view.php?id=10), [\#0000014](http://bugs.sannybuilder.com/view.php?id=14), [\#0000015](http://bugs.sannybuilder.com/view.php?id=15), [\#0000016](http://bugs.sannybuilder.com/view.php?id=16)
+* в VCSCM.ini добавлены опкоды из мобильной версии GTA VC и отмечены неподдерживаемые опкоды
+* при включенной опции [Добавлять доп. информацию в SCM](editor/options/general.md#add-extra-info-to-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes.md) при декомпиляции
+* при включенной опции Добавлять доп. информацию в SCM, Sanny Builder добавляет исходный код в тело скрипта \(только при наличии директивы [$EXTERNAL](coding/directives.md#usdexternal) или [$CLEO](coding/directives.md#usdcleo)\)
+* добавлена новая директива [$NOSOURCE](coding/directives.md#usdnosource), чтобы запретить добавление исходного кода в тело скрипта
+* некоторые горячие клавиши могут быть изменены [в опциях](editor/options/hotkeys.md)
+* добавлена возможность автоматически проверять наличие обновления при запуске программы
+* директивы [$VERSION](coding/directives.md#usdversion) и [$VERSION\_RESTORE](coding/directives.md#usdversion_restore) устарели \(компилируются, но не имеют эффекта\)
+* обновлены перевод на испанский и китайский языки
+* Менеджер координат может изменять угол поворота игрока в GTA VC
+* в комплектацию Sanny Builder добавлен [CLEO плагин SCRLog](http://www.gtagarage.com/mods/show.php?id=23846) от LINK/2012 \(можно найти в папке tools\)
+* исправлены баги [\#0000010](http://bugs.sannybuilder.com/view.php?id=10), [\#0000014](http://bugs.sannybuilder.com/view.php?id=14), [\#0000015](http://bugs.sannybuilder.com/view.php?id=15), [\#0000016](http://bugs.sannybuilder.com/view.php?id=16)
 
 ## v. 3.09 - 28.07.2013
 
-* Sanny Builder is licensed under the Sanny Builder Freeware/Donationware License Agreement
-* added a feature to report found bugs via [the official bug tracker](http://bugs.sannybuilder.com/)
-* added a feature to check if an update is available
-* The Coords manager is upgraded to work with all known versions of GTA3, VC and SA \(thanks to Silent\)
-* added an updated Chinese translation
-* fixed bugs [\#0000002](http://bugs.sannybuilder.com/view.php?id=2), [\#0000003](http://bugs.sannybuilder.com/view.php?id=3), [\#0000004](http://bugs.sannybuilder.com/view.php?id=4), [\#0000006](http://bugs.sannybuilder.com/view.php?id=6), [\#0000009](http://bugs.sannybuilder.com/view.php?id=9)
-* minor design changes
+* в Sanny Builder добавлено лицензионное соглашение вида Freeware/Donationware
+* добавлена возможность сообщать о найденных багах в [официальный баг-трекер](http://bugs.sannybuilder.com/)
+* добавлена возможность проверять наличие обновления для Sanny Builder
+* Менеджер координат теперь поддерживает все известные версии GTA3, VC и SA \(спасибо Silent\)
+* добавлена обновленная версия перевода на китайский язык
+* исправлены баги [\#0000002](http://bugs.sannybuilder.com/view.php?id=2), [\#0000003](http://bugs.sannybuilder.com/view.php?id=3), [\#0000004](http://bugs.sannybuilder.com/view.php?id=4), [\#0000006](http://bugs.sannybuilder.com/view.php?id=6), [\#0000009](http://bugs.sannybuilder.com/view.php?id=9)
+* небольшие изменения дизайна
 
 ## v. 3.08 - 05.07.2013
 
-* added [Silent's ASI Loader](http://www.gtagarage.com/mods/show.php?id=21709) v1.1 as a default ASI loader for CLEO 3 and CLEO 4
-* added Chinese translation
-* added classes `File` and `Audiostream` for backward compatibility with CLEO 4 by Alien\*
-* the compiler now accepts a literal string as a parameter in [a class property](coding/classes.md)\*\*
-* the compiler is no more allowed to compile a string like `text1"text2"` or `text1'text2'` \(without a leading quotation mark\)
-* the compiler is allowed to compile the comment characters within a string \(`"{text1}text2"`\)
-* the semicolon \(`;`\) can not be used to comment out a line of the code
-* changed syntax of the [\debug](./#command-line-usage) parameter
-* added flag icons for the available languages in the options
-* fixed some issues in VCS decompiling
+* добавлен [Silent's ASI Loader](http://www.gtagarage.com/mods/show.php?id=21709) v1.1 для CLEO 3 и CLEO 4
+* добавлен перевод на китайский язык
+* добавлены классы File и Audiostream для обратной совместимости с CLEO 4 от Alien\*
+* компилятор теперь может принимать строковую константу в качестве параметра в свойстве класса\*\*
+* компилятор больше не компилирует строки без начальной кавычки, например text1"text2" или text1'text2'
+* компилятор может компилировать символы комментария внутри строки \("{text1}text2"\)
+* точка с запятой \(;\) больше не может использоваться для закомментирования строки
+* изменен синтаксис параметра [\debug](./#parametry-komandnoi-stroki)
+* добавлены иконки флагов для доступных языков перевода в [опциях](editor/options/general.md#interface-language)
+* исправлены некоторые ошибки в декомпиляции для VCS
 
-{% hint style="info" %}
-\* `File.Open`, `Audiostream.Load`, `Audiostream.Load3D` were methods in CLEO 4. Now they are properties. It means, if you get an error when compiling old sources with these commands, change their syntax to:  
- `var = File.Open(file_name, mode)  
-var = Audiostream.Load(file_name)  
-var = Audiostream.Load3D(file_name)`
-{% endhint %}
+Важное замечание: File.Open, Audiostream.Load, Audiostream.Load3D были [методами](coding/classes.md#regular-commands-methods) в CLEO 4. Теперь они [свойства](coding/classes.md#properties). Это означает, что если вы получаете ошибку при компиляции старых скриптов, где использовались эти команды, измените их синтаксис следующим образом:  
+переменная = File.Open\(имя\_файла, режим\_открытия\)  
+переменная = Audiostream.Load\(имя\_файла\)  
+переменная = Audiostream.Load3D\(имя\_файла\)
 
-{% hint style="info" %}
-\*\* There is a limit on using space characters in such parameter.
-{% endhint %}
+Существует [ограничение](coding/classes.md#properties) на использование пробелов в таком параметре.
 
 ## v. 3.06 - 17.06.2013
 
-* added new operators `++` and `--`
-* added support for block comments `/*   */`
-* SASCM.INI is updated with help of the [GTAG Database](https://gtagmodding.com/opcode-database/)
-* properties `Actor.Armour` and `Actor.Car` are replaced with their correct versions `Actor.AddArmour` and `Actor.MissionCar`
-* added new property `Actor.CurrentCar` for the opcode `03C0` in the SA and VC classes.
-* added new hotkeys `Ctrl+Num+` and `Ctrl+Num-` to quickly change the text size
-* Sanny Builder now remembers a number of closed files for the option Load all closed files
-* fixed bug when the compiler failed to compile numerous [HEX..END](coding/hex..end.md) constructs
-* fixed bug of version 3.05 when the program hung on startup trying to open a file passed as a parameter
+* добавлены [новые операторы ++ и --](coding/built-in-commands.md)
+* добавлена поддержка [блочных комментариев](features.md#commenting-code) /\*   \*/
+* SASCM.INI обновлен при помощи [базы GTAG](https://gtagmodding.com/opcode-database/)
+* [свойства](coding/classes.md#properties) Actor.Armour и Actor.Car заменены на корректные версии Actor.AddArmour, Actor.MissionCar
+* добавлено новое свойство Actor.CurrentCar для опкода 03C0 в скриптовых классах для игр SA и VC
+* добавлены [новые комбинации клавиш](hotkeys.md) Ctrl+Num+ и Ctrl+Num- для быстрого изменения размера шрифта в редакторе
+* Sanny Builder запоминает число закрытых файлов для опции [Открывать все закрытые файлы](editor/options/editor.md)
+* исправлена ошибка при компиляции скрипта с большим числом вставок [hex..end](coding/hex..end.md)
+* исправлена ошибка версии 3.05, когда программа зависала при запуске, пытаясь открыть файл, переданный в качестве параметра
 
 ## v. 3.05 - 05.06.2013
 
-* added new translations for the following languages: Finnish, Polish, Hungarian, Turkish, Ukrainian
-* the CLEO library updated to version 4.1.1.30f \(CLEO 4 by Alien\)
-* added possibility to install CLEO for GTA III and Vice City \(made by Alien\)
-* the opcode files \(\*\*SCM.ini, opcodes.txt\) replaced with the ones from the CLEO 4 library installation
-* new [command line parameter](./#command-line-usage) `\nosplash`
+* добавлены новые языки перевода \(финский, польский, венгерский, украинский, турецкий\)
+* библиотека CLEO обновлена до версии 4.1.1.30f \(CLEO 4 от Alien\)
+* Добавлена возможность установить CLEO для GTA III и для Vice City \(автор - Alien\)
+* файлы опкодов \(\*\*SCM.ini, opcodes.txt\) замененены на файлы из комплекта CLEO 4.
+* добавлен новый параметр запуска программы [\nosplash](./#parametry-komandnoi-stroki)
 
-## v. 3.04 - 17.08.2008
+## v. 3.04 - 04.08.2008
 
-*  the editor got abilities to convert hexadecimal numbers to decimal ones and vice versa \(`Ctrl+H`\), and convert the model names to their IDs \(`Ctrl+Alt+H`\)
-*  removed the complaining message about the script.img being used by the game when compiling a CLEO script
-*  the compiling report displays size of a CLEO script \(as Largest script\)
-*  fixed bug when compiling an array with constant numeric indexes
-*  the installer no longer required the system administrator rights
+* в редактор кода добавлены возможности конвертации чисел из 16-чной системы счисления в 10-чную и наоборот \(Ctrl+H\), а также конвертировать имя модели в ID и обратно \(Ctrl+Alt+H\)
+* убрано сообщение о невозможности изменить script.img при компиляции CLEO-скриптов
+*  отчет о компиляции показывает размер CLEO-скрипта \(пункт Largest Script\)
+* исправлена ошибка при компиляции массива с числовыми индексами
+*  инсталлятор не требует прав администратора
 
 ## v. 3.03 - 17.11.2007
 
-* the previous version of CLEO had a bug
-* minor changes \(the toolbar position wasn't saved\)
+* предыдущая версия CLEO была с ошибкой
+* мелкие исправления \(положение панели инструментов теперь сохраняется\)
 
 ## v. 3.02 - 16.11.2007
 
-*  new version of the CLEO library
-*  main toolbar is movable
-*  `F7` while compiling SCM with no header \(with `$E`, `$CLEO` directives\) does not make a copy of the output file
-*  while compiling a source file with directive `$CLEO` by pressing `F6`, the output file is created at the same directory; if by pressing `F7` a copy of the output is created at the CLEO directory \(like with common SCM files\)
-*  new translations: Italian, Portuguese
+* новая версия CLEO
+* панель инструментов можно передвигать
+* F7 при компиляции SCM без заголовка \(c директивами $E, $CLEO\) не делает копию
+*  при компиляции файла с директивой $CLEO нажатием F6 файл создается в той же папке, нажатием F7 дополнительно создается копия в папке CLEO \(по аналогии с обычными scm-файлами\)
+* новый язык перевода - итальянский, португальский
 
-## v. 3.01- 06.08.2007
+## v. 3.01 - 06.08.2007
 
-* bug-fixes update
+* обновление, исправляющее некоторые ошибки
 
 ## v. 3.00 - 04.08.2007
 
-* the CLEO 3 library is integrated into Sanny Builder
-* VCS SCM format support \(decompiling only\)
-* [constants ](coding/constants.md)support
-* new directives `$INCLUDE`,`$EXTERNAL`,`$CLEO`
-* writing of the additional info in the end of the `main.scm`
-* custom arrays support
-* possibility to decompile the files having no header
-* ability to create an external script named `AAA`
-* new command line parameter `\compile`
-* possibility to use the floating-point values as a counter value in `FOR..END` loop
-* the commands `WriteMem` and `ReadMem` are not supported anymore
-* possibility to use the regular expressions when searching
-* possibility to save a source file in the RTF or HTML formats
-* ability to skip the splashes at SA startup
-* new key combo `Ctrl+Enter`
-* updated `SASCM.INI`
+* интегрирована библиотека [CLEO 3](https://cleo.li/ru)
+* возможность декомпиляции main.scm Vice City Stories
+* поддержка [констант](coding/constants.md)
+* новые директивы [$INCLUDE](coding/directives.md#usdinclude), [$EXTERNAL](coding/directives.md#usdexternal), [$CLEO](coding/directives.md#usdcleo)
+* запись [дополнительной информации](editor/options/general.md#add-extra-info-to-scm) в конец main.scm
+* задание [собственных массивов](editor/options/formats.md#custom-names) при декомпиляции
+* [возможность декомпилировать](console.md#skip_scm_header) файлы main.scm без заголовка
+*  можно использовать внешний скрипт с именем AAA
+* новый [параметр командной строки](./#parametry-komandnoi-stroki) \compile
+* в цикле [FOR](coding/loops.md#for-end) можно использовать дробные значения счетчика
+*  команды WriteMem и ReadMem больше не поддерживаются
+*  поддержка поиска по тексту с использованием регулярных выражений
+*  возможность сохранять исходник в формат [RTF или HTML](editor/options/syntax-highlighting.md)
+* возможность [пропускать заставки](editor/options/general.md#quick-game-loading) при запуске San Andreas
+* новая комбинация клавиш: [Ctrl+Enter](hotkeys.md)
+* обновленный [SASCM.INI](scm-documentation/opcodes-list-scm.ini.md)
 
 ## v. 2.99e - 01.01.2007
 
-* fixed bug when parts of the code within the `HEX..END` construction disappeared in the debug\_mode decompiling
-* a [HEX..END](coding/hex..end.md) statement could accept the `aDMA` type and strings
-* a `FOR` statement could accept the model identifiers as the counter values
+* справлена ошибка с пропаданием части кода при декомпиляции в режиме отладки внутри конструкции hex..end
+* конструкция hex..end может принимать [тип aDMA](coding/hex..end.md#using-adma-numbers) для записи чисел и [строки](coding/data-types.md#string-literals)
+* к цикле [FOR](coding/loops.md#for-end) можно использовать имена моделей в качестве значений счетчика
 
 ## v. 2.99d - 03.12.2006
 
-* Memory Hacker became a separate tool. Now downloadable at: [http://sannybuilder.com/downloads](http://sannybuilder.com/downloads)
-*  fixed a decompiler bug
+* убран Memory Hacker \(он стал [отдельной программой](http://sannybuilder.com/downloads)\)
+* исправлена одна ошибка в декомпиляторе
 
 ## v. 2.99c - 30.11.2006
 
-* added the Memory Hacker plug-in
-* possibility to decompile the `main.scm` of Liberty City Stories
-* support for numbers as indexes of global [arrays](coding/arrays.md)
-* global variables are decompiled with the type aDMA \(`&`\) if are not dividable by 4
-* at compilation the default values for the segments are used when the file header is not present
-* possibility to Drag&Drop a file into the editor to open it
-* new preprocessor [directives](coding/directives.md): `{$VERSION}`, `{$VERSION_RESTORE}`
+* добавлен плагин Memory Hacker
+* возможность декомпиляции main.scm Liberty City Stories
+* поддержка [числовых констант в качестве индекса](console.md#constant_indexes) глобального массива
+* при декомпиляции переменные заменяются на тип ADMA, если не делятся на 4
+* при компиляции при отсутствии заголовка выставляются значения по умолчанию
+* возможность открывать файлы в редакторе методом Drag&Drop
+* новые препроцессорные директивы: [{$VERSION}](coding/directives.md#usdversion), [{$VERSION\_RESTORE}](coding/directives.md#usdversion_restore)
 
-{% hint style="info" %}
-If you get a compiler error message like `Unknown directive xxxx` when compiling the sources from v2.99, replace the line `{$VERSION xxxx}` to any place after the header, for instance before the comment `//-------------MAIN---------------`
-{% endhint %}
+Если при компиляции вы получаете сообщение об ошибке в заголовке \("Неизвестная команда DEFINE OBJECTS"\) переместите строку {$VERSION xxxx} в любое место после заголовка, например перед комментарием //-------------MAIN---------------
 
 ## v. 2.99 - 27.09.2006
 
-* added new commands `WriteMem` and `ReadMem`
-* support for hexadecimal numbers
-* `HEX..END` statement can accept labels and global variables
-* full support for the `ADMA`datatype
-* opportunity to give custom names to labels
-* opportunity to choose a different case for custom names and strings \(`Options->Format`\)
-* added the console in order to switch the special options of SB
-* decompiler supports the GXT files of GTA III & GTA VC
-* added special symbol constants in the long strings
-* information about an INI file \(version, author, date\)
-* classes support an original order of the parameters \(like in `SASCM.INI` from PLPynton\). In order to support such order there should be a line {`$VERSION x.0.xxxx`}, see comments in the INI about this
-* added option to confirm exit program
-* quick switching of the Edit Mode
-* converting of the selected piece of code
-* opportunity to pass the current file name to the external tool
-* corrected some mistakes in the configuration files
-* removed auto-casting of an integer number to a float one when the variable was declared as `Float`. Now the compiler chooses an opcode depending on the number type only \(in math expressions without opcodes\)
-* reading/writing of the player's z\_angle in Coord Manager; quick insertion of this one in a script by pressing `Ctrl+Shift+E` \(for SA\)
-
-{% hint style="info" %}
-The following opcodes were changed in `SASCM.INI`: `0181`, `00c3`, `00c4` in order to support the commands `WriteMem` and `ReadMem`. In original files these opcodes are not used and the games do not support them so there should be no problem.
-{% endhint %}
-
-{% hint style="info" %}
-The class member `Car.SetSpeedInstantly` was named incorrectly \(with wrong opcode\) in the file `classes.db` for SA. If you get the error message about this method at compilation, rename it in `Actor.DrivingPlane` manually. We apologize.
-{% endhint %}
+* добавлены две новые команды WriteMem и ReadMem
+* поддержка чисел в шестнадцатиричном формате
+* конструкция [hex..end](coding/hex..end.md) может принимать значения меток и глобальных переменных
+* поддержка типа данных & для [массивов](coding/arrays.md), а также в выражениях без опкодов: &57 += &120\(&231,4i\)
+* возможность давать [собственные имена меткам](editor/options/formats.md#custom-names)
+* возможность [выбирать регистр букв](editor/options/formats.md#case-converting) для собственных имен меток и переменных, а также стринговых переменных \(Настройки -&gt; Форматирование\)
+* добавлена [консоль](console.md) для специальных опций SB
+* поддержка GXT-файлов GTA III, GTA VC
+* поддержка символьных констант в длинных строках
+* информация об авторе и версии INI файла
+* поддержка классами INI с оригинальным порядком следования параметров \(как SASCM.INI от PLPynton\)
+* [опция подтверждения выхода](editor/options/editor.md)
+* возможность быстро переключать режим редактирования
+* конвертация отдельного, выделенного участка кода
+* возможность передавать во внешнее приложение в качестве параметра имя текущего открытого файла
+* исправлены некоторые ошибки в конфигурационных файлах
+* убрана автоматическая конвертация числа в тип Float, если переменная была объявлена как Float, а в нее записывалось целое число. Теперь опкод выбирается только в зависимости от типа числа
+* чтение/изменение Z\_angle игрока в Coord Manager; возможность вставки значения угла в скрипт нажатием Ctrl+Shift+E \(для SA\)
 
 ## v. 2.98 - 04.08.2006
 
-* Sanny Builder became multilingual
-* added menu for external applications
-* the special version of Opcode Search Tool is built in SB Details in a file `OST Readme.txt`
-* checking of the math expressions while decompiling when the option `Write opcodes` is disabled \(to sure that all the opcodes were used correctly\)
-* an opportunity to choose an IMG-file manually if the last one is not found in a folder with the SCM file \(the option "`Manual IMG opening`"\)
-* an opportunity to add new macros directly from the editor; added macros descriptions
-* the list of models can be sorted alphabetically/by value \(`Alt+S` when the list is active\)
-* minor corrections and changes
+* Sanny Builder полностью русифицирован
+* добавлено меню внешних приложений
+* в SB встроена специальная версия [Opcode Search Tool](opcode-search-tool.md)
+* проверка математических выражений при декомпиляции с выключенной опцией "Писать опкоды"
+* возможность выбирать IMG-файл самостоятельно, если таковой не найден в папке с SCM-файлом \(опция "Ручной выбор IMG-файла"\)
+* возможность добавлять новые макросы прямо из редактора; добавлены описания макросов
+* список моделей можно сортировать по алфавиту/по значению \(Alt+S, когда активен список\)
+* минорные исправления и изменения
 
 ## v. 2.97 - 11.06.2006
 
-* new data type: `&` that denotes direct byte address \([ADMA](coding/data-types.md)\).
-* minor updates
+* новый тип данных: & \(direct byte address\)
+* минорные изменения
 
 ## v. 2.96 - 01.04.2006
 
-* improved the option jump to label
-* added an opportunity to call macros list of macros
-* added an option of replacement of mission numbers with their names
-* fixed some bugs
+* расширена опция прохода по меткам
+* добавлена возможность вызвать список макросов
+* добавлена опция замены номеров миссий на их имена
+* исправлены некоторые ошибки
 
 ## v. 2.9f - 18.02.2006
 
-* model names is added to the `DEFINE OBJECT` list by the compiler \(this list may be not presented in the source file at all\)
-* block comments support `{}`
-* macrorecording
-* minor changes
+* новые модели автоматически добавляются в список DEFINE OBJECTS \(этот список можно вообще не использовать\)
+* добавлены блочные комментарии: {}
+* добавлена запись макросов
+* минорные исправления и добавления
 
 ## v. 2.9 - 15.12.2005
 
-* additional commands \(see by item 2.5\) are added
-* operator `IN` is added
-* construction `IF..THEN..ELSE..END` is added
-* loops `WHILE`, `REPEAT` are added
-* the opportunity of use of the enclosed loops is added.
-* function `alloc()` is added, allowing to specify for a variable the specific address in memory
-* new comment style: `//`
-* positions of markers and the cursor are remembered for the closed files
+* добавлены дополнительные команды
+* добавлен оператор IN
+* добавлена конструкция IF..THEN..ELSE..END
+* добавлены циклы WHILE, REPEAT; добавлена возможность использования вложенных циклов
+* добавлена команда ALLOC
+* новый стиль комментариев: //
+* позиции маркеров и курсора запоминаются для закрытых файлов
 
 ## v. 2.6 - 05.11.2005
 
-* full support of formats of Vice City and GTA3 is added
-* the opportunity of initialization of variables and files as members of a class is added
-* display of the list of variables and labels is added
-* support of loops \(`FOR` operator\) is added
-* minor changes:
-  * missions can be started on their name \(`start_mission MYMISSION`\), where `MYMISSION` is a name of a starting label \(`DEFINE MISSION 100 at @MYMISSION`\)
-  * the list of imported models \(defined objects\) on `Ctrl+Space` is accessible
-  * new operator `<>`
-  * if the disassembler can't find the `script.img`, it uses the one from the game folder
-  * for arrays the type handle is added
-  * an opportunity of switching-off of the warning of use IMG by game
+* добавлена поддержка форматов Vice City и GTA3
+* добавлена возможность инициализации переменных и массивов как членов класса
+* добавлен показ списка переменных и меток
+* добавлена поддержка циклов \( оператор FOR \)
+* миссии можно запускать по их имени \(start\_mission MYMISSION\), где MYMISSION - это имя стартовой метки \(DEFINE MISSION 100 at @MYMISSION \)
+* доступен список импортируемых моделей \(defined objects\) по Ctrl+Space
+* новый оператор &lt;&gt;
+* если при декомпиляции не найден script.img, используется оригинальный файл
+* для массивов добавлен тип handle
+* возможность отключения предупреждения об использовании IMG игрой
 
 ## v. 2.5 - 10.10.2005
 
-* added "properties" support
-* added macroes support
-* added construction [VAR...END](coding/variables.md#var-end-construct) for variables management
-* all math commands can be used without opcodes `0004..008B`
-* new operators `<` and `<=`
-* added a capability that the compiler itself set necessary value for `IF` command
-* added "extended" parameters support
-* added models list showing
-* minor changes and fixes
+* добавлена поддержка свойств классов
+* добавлена поддержка макросов
+* добавлена конструкция VAR..END для эффективного управления переменными
+* описаны все возможные математические опкоды: 0004..008B
+* новые операторы &lt; и &lt;=
+* добавлена возможность автоподбора необходимого значения для оператора IF
+* добавлена поддержка текстовых названий параметров
+* добавлен показ списка моделей
+* минорные добавления и исправления
 
 ## v. 2.0 - 18.09.2005
 
-* added classes support
-* added keywords support
-* added a capability to write some math commands without opcodes \(now such capability exists for opcodes `0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`\)
-* for opcode `00D6` the default parameter is `0` \(`if` = `if 0`\)
-* added the option of a choice of various kinds of labels \(`Formats->Labels Format`\)
-* added keywords `True` and `False` which designate `1` and `0` accordingly
-* added construction [HEX...END](coding/hex..end.md) for writing hexadecimal values directly in SCM
+* добавлена поддержка классов
+* добавлена поддержка ключевых слов
+* добавлена возможность писать некоторые математические команды без опкодов
+* для опкода 00D6 по умолчанию устанавливается параметр 0, если иное не установлено \(if = if 0\)
+* добавлена опция выбора различных видов меток \(Formats-&gt;Labels Format\)
+* добавлены ключевые слова True и False, которые обозначают 1 и 0 соответственно
+* добавлена конструкция HEX..END для записи шестнадцатиричных значений прямо в SCM
 
 ## v. 1.1 - 07.09.2005
 
-* added coords manager
-* some bugs fixed
+* добавлен coord manager
+* исправлены некоторые ошибки
 
 ## v. 1.0 - 04.09.2005
 
-* new format of labels
-* added converter from BW's SA Mission Builder syntax
-* at decompiling names of models and texts from `american.gxt` are added in source
-* added new options
-* some bugs fixed
+* новый формат меток
+* добавлен конвертор из синтаксиса BW's SA Mission Builder
+* при декомпиляции в исходник добавляются названия моделей и содержимое american.gxt
+* добавлены новые опции
+* пофиксены некоторые ошибки
 
 ## v. 0.8 - 20.08.2005
 
-* added the capability to associate SCM files with the program
-* after decompiling the output file get an addition index if a file with same name already exists. \(e.g, if `main.scm.txt` already exists, a new file will be `main.scm[0].txt`\)
-* error messages became more informative
-* added check of label redeclaring
-* some bugs fixed
+* добавлена возможность ассоциировать SCM-файлы с программой
+* теперь при декомпиляции имя выходного файла изменяется, если такой файл уже существует \(например, если уже существует main.scm.txt, то имя нового файла будет main.scm\[0\].txt\)
+* сообщения об ошибках стали более информативными
+* добавлена проверка на дублирование меток
+* пофиксены некоторые ошибки
 
-## **v. 0.7 - 10.08.2005**
+## v. 0.7 - 10.08.2005
 
-* added new options for the text editing
-* added a capability to work with several files simultaneously
-* added a function to auto-complete a line with the F1 button \(beta\)
+* увеличено число опций для работы с текстом
+* добавлена возможность работать с несколькими файлами одновременно
+* добавлена функция поиска опкодов через F1 \(beta\)
 
-## **v. 0.6 - 04.08.2005**
+## v. 0.6 - 04.08.2005
 
-* full decompiling of GTA SA SCM files
-* compiling of the source files into a SA SCM file and an IMG file
-* some options for the text editing
+* полная декомпиляция \*.scm файлов San Andreas
+* компиляция скриптов в SCM-файл \(SA\) и IMG-файл
+* доступны минимальные опции работы с текстом
 

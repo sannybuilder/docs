@@ -2,7 +2,7 @@
 
 * [Введение](README.md)
 * [Благодарности](credits.md)
-* [Version History](version-history.md)
+* [История изменений](version-history.md)
 
 ## Coding
 
