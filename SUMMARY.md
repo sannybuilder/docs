@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Введение](README.md)
 * [Credits](credits.md)
 * [Version History](version-history.md)
 
