@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Введение](README.md)
-* [Credits](credits.md)
+* [Благодарности](credits.md)
 * [Version History](version-history.md)
 
 ## Coding
