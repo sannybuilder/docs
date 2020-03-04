@@ -2,7 +2,7 @@
 
 ## Contributors
 
-**Sanny Builde**r is made and produced by Seemann with the contributions from the best people from around the globe:
+**Sanny Builder** is made and produced by Seemann with the contributions from the best people from around the globe:
 
 Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Hammer83, koPPP, listener, Midnightz, pdescobar, PLPynton, San'OK, Sergey81, spaceeinstein, Silent, Y\_Less and many others.
 
