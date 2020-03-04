@@ -4,7 +4,7 @@ Here you can change the IDE settings.
 
 ![](../../.gitbook/assets/editor_page1.png)
 
-## Editor Colors
+## GUI Colors
 
 ![](../../.gitbook/assets/editor_colors.png)
 
@@ -22,6 +22,14 @@ The code scan distance \(looking depth\) is used when you press `Ctrl+Space` to 
 
 If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_opt.png)
 
+## Font
+
+![](../../.gitbook/assets/editor_font.png)
+
+Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
+
+## Editor Configuration
+
 ![](../../.gitbook/assets/editor_opt.png)
 
 `Show main panel` – toggle the main toolbar  
@@ -32,9 +40,5 @@ If the `Auto list` option is checked, the list of available labels, models and v
 `Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked.  
 `Confirm when exit` – confirm exit to prevent occasional program termination.
 
-## Font
-
-![](../../.gitbook/assets/editor_font.png)
-
-Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
+## 
 

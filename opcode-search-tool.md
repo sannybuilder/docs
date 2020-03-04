@@ -2,7 +2,7 @@
 
 ![](.gitbook/assets/ost.PNG)
 
-You can call this tool by pressing `Ctrl+Alt +2` or by selecting the menu item: `Tools->IDE Tools->Opcode Search`.
+You can call this tool by pressing `Ctrl+Alt+2` or by selecting the menu item: `Tools->IDE Tools->Opcode Search`.
 
 To find an opcode, type some words in the input line, e.g. `actor car`. The tool displays the opcodes with these words. You may also use special search operators.
 
@@ -25,7 +25,7 @@ To copy the entire results list press `F2`.
 `F11` - clear the search field, display all opcodes  
 `ESC` - close the tool window
 
-## Search Operators
+## Search Queries
 
 ### AND operator
 
@@ -55,7 +55,7 @@ If you write `|` as the first character in the search, the tool will connect all
 
 Finds opcodes with either `actor`, `player` or `car`.
 
-### NOT operator \(NOT\)
+### NOT operator
 
 Two dashes before the word exclude opcodes with this word from the result.
 

@@ -2,7 +2,7 @@
 
 An **array** represents an indexed collection of elements of the same type \(called the base type\). You can work with any element directly via its index. An index numeration begins with a zero. These arrays are supported in San Andreas, LCS and VCS.
 
-### General Syntax
+## General Syntax
 
 San Andreas:  
 `<array name>(<index var name>,<size><type>)`
@@ -31,7 +31,7 @@ $index = 0
 $array($index,10i) = 1
 ```
 
-### Shorter Forms of Syntax
+## Shorter Forms of Syntax
 
 1\) declare an array using the [VAR..END](variables.md#var-end-construct) construct
 
@@ -68,5 +68,5 @@ These variables can also be used as the class name:
 $players[0].Build 
 ```
 
-By default in the `GTA SA` [edit mode](../edit-modes.md), array elements are decompiled with the numbers as indexes. You can turn this feature off through the [console](../console.md) using the command `toggle constant_indexes off`. The same feature is available in LCS and VCS but is disabled by default. You can enable this through the Console.
+By default in the `GTA SA` [edit mode](../edit-modes.md), array elements are decompiled with the numbers as indexes. You can turn this feature off through the [console](../console.md) using the command `toggle constant_indexes off`. The same feature is available in LCS and VCS but is disabled by default. You can enable this through the console.
 
