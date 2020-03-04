@@ -6,7 +6,7 @@ Sanny Builder supports writing a raw content in an output file. All values withi
 Use this feature only if you know what you're doing. Any mistakes will corrupt the script file making it unreadable by the game or a script editor.
 {% endhint %}
 
-## Syntax
+## Синтаксис
 
 `hex  
 <any hexadecimal numbers>  
@@ -41,7 +41,7 @@ hex
 end
 ```
 
-## Escape Sequences
+## Экранированные последовательности
 
 The following escape sequences are supported within a string literal:
 
@@ -65,7 +65,7 @@ It produces the following sequence of bytes: `00 08 09 0A 0D DD`.
 
 Currently multiple spaces in a string literal are converted into a single one. Thus a line `"This    is  a     string"` is converted into `"This is a string"`. Use the backward slash character `\` to add multiple spaces in a string literal: `"This \ \ \ is \ a \ \ \ \ string"`.
 
-## Using aDMA Numbers
+## Использование типа aDMA
 
 Also you can use the [aDMA](data-types.md#variables) data type to write a numeric constant in an output file. The number after the `&` sign can be both positive or negative, decimal or hexadecimal.
 

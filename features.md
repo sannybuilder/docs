@@ -1,18 +1,18 @@
-# Features
+# Возможности
 
 Sanny Builder provides the end-user the following features:
 
-## Syntax Highlighting
+## Подсветка синтаксиса
 
 Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](editor/options/syntax-highlighting.md).
 
-## Bookmarks / Quick jump
+## Быстрый переход по тексту
 
 You can bookmark a line by pressing `Ctrl+Shift+0..9` and then get back to it by pressing `Ctrl+0..9`. To delete all bookmarks, use the menu option `Edit->Clear All Bookmarks`. 
 
 Alternatively you can go to a particular line using the `Go To Line` feature. Press `Ctrl+G`, enter the line number and the editor will move the cursor to it.
 
-## InstaSearch
+## Моментальный поиск
 
 The InstaSearch feature allows to find a word or a label directly in the editor without using the `Find` dialog box.
 
@@ -24,11 +24,11 @@ If InstaSearch did not find the word in the code, the cursor position remains un
 
 Before changing the cursor position InstaSearch remembers it, so if you want to return back press `Ctrl+Num8`.
 
-## Displaying Information about Opcode
+## Показ различной информации о текущем опкоде
 
 Sanny Builder displays a number of parameters for the opcode, a numeric value of the [model name](coding/data-types.md#model-names) under the cursor in the status bar when the option `Show opcode info` is enabled.
 
-## SA Mission Builder Source Code Converter
+## Конвертирование исходников SA Mission Builder
 
 Sanny Builder supports the SAMB 0.33 syntax. To use the converter, open the source file in Sanny Builder and select the menu: `Tools->Code converter->MB->SB`. 
 
@@ -36,17 +36,17 @@ Sanny Builder supports the SAMB 0.33 syntax. To use the converter, open the sour
 The converter uses the file `MB.ini` from the Sanny install directory which contains the variables used by SAMB and their memory addresses. If you added your own variables in the file `variables.ini` \(shipped with SAMB 0.33\), copy them into the `MB.ini` file. 
 {% endhint %}
 
-## Opcode Search
+## Поиск нужного опкода
 
 Use the built-in [Opcode Search tool](opcode-search-tool.md) to find an opcode you need.
 
-## Player Coordinates Management
+## Изменение координат и угла разворота игрока
 
 Press `F4` when GTA San Andreas is running and the `Coords Manager` window will appear. Here you can read the player's coordinates from the game memory and modify them. 
 
 In the top edit line you can enter the XYZ coordinates, delimited by the space character  `` or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
 
-## Code Snippets
+## Переиспользование фрагментов кода
 
 A code snippet is the group of lines that are inserted in the editor when you type a snippet name \(e.g.  `load`\) and press `F2` . The editor will add the following piece of the code:
 
@@ -67,7 +67,7 @@ Additionally, it's possible to save the code snippet in the file `macroes.txt` d
 
 To call the snippet list, press `Ctrl+J`.
 
-## Keypress Recording \(Macro\)
+## Запись и воспроизведение нажатий кнопок
 
 You can record a key pressing sequence \(macro\) and playback it later. Consider the following code:
 
@@ -106,7 +106,7 @@ You can playback the recorded sequence by pressing `Ctrl+P`. Place the cursor in
 
 During recording, you can pause/unpause it by pressing `Ctrl+P`.
 
-## Replacing Mission Numbers with their Names
+## Замена номеров миссий на их названия
 
 Sanny Builder allows using a mission name in the opcode `start_mission`. The mission name is the label defined with a `DEFINE MISSION` command. Say, you have:
 
@@ -122,19 +122,19 @@ To call the mission names list, press `Ctrl+Space`. The cursor has to be directl
 
 Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to the mission code when the cursor is under the mission name.
 
-## Custom Mission Titles
+## Использование оригинальных имен миссий
 
 Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes.md). Mission titles are stored in the `missions.txt` file located in the `data\<game>` folder. This file is used by the decompiler to add the title for each mission entry. If the `main.scm` file contains custom-made missions you may edit the `missions.txt` to have the correct title order after decompiling.
 
-## Multilingual Interface
+## Многоязычный интерфейс
 
 Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](editor/options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
 
-## External Tools/Plug-ins Menu
+## Меню внешних приложений
 
 You can add up to `9` tools which can be executed whenever you need them. Every tool has its own hotkey for your convenience. You may also pass the parameters to your tool. To pass the name of the currently opened file use the special word `$SB_FileName`.
 
-## Commenting Code
+## Комментирование кода
 
 Comments start with the double slash `//`, as seen in other programming languages. Everything after `//` to the end of the line is ignored by the compiler.
 
@@ -152,7 +152,7 @@ Since version 3.06 Sanny Builder also supports the C++-like comments `/* */`.
 
 To comment out or uncomment multiple lines select them and press `Ctrl+Q`.
 
-## Custom Labels
+## Собственные имена для меток
 
 You can give labels custom names that do not depend on the decompiler configuration. The names are specified in the file `CustomLabels.ini` \(one for each game\).
 
@@ -163,7 +163,7 @@ If the decompiler finds a label at the specified offset, this label gets the giv
 
 To find out the offset value set the labels format to [`Global Offset`](editor/options/formats.md#global-offset) in the options. After decompiling, a number in the label name is the offset value.
 
-## Checking for updates
+## Проверка обновлений
 
 Sanny Builder is able to check if a new version is available. To use this feature go to menu `Help->Check for update...`. The editor will connect to a remote server and if a newer version is available it prompts the download and install. 
 

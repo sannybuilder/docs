@@ -1,10 +1,10 @@
-# Formats
+# Форматирование
 
 Here you can set up source file names, labels format, and identifiers case.
 
 ![](../../.gitbook/assets/formats_page.png)
 
-## File Name Format
+## Имена файлов
 
 ![](../../.gitbook/assets/form_form.png)
 
@@ -20,27 +20,27 @@ E.g. if you decompile the file `C:\MyDir\main.scm`, then
 `$name` is `main`   
 `$ext` is `.scm` So, if the mask is `$dir$name.txt`, the output file will be named `C:\MyDir\main.txt`
 
-## Label Name Format
+## Имена меток
 
 ![](../../.gitbook/assets/form_label.png)
 
 Here you may choose one of the various name formats for the labels used at decompiling.
 
-### Global Offset
+### Смещение от начала файла
 
 all labels will have a numeric name, for example `@12345`. The number means this label’s offset in the file being decompiled.
 
-### Thread+Local Offset
+### Имя скрипта+Смещение от его начала
 
 label name will consist of two parts: a name of the thread where the label is \(the `name_thread` opcode is used for this\), and additionally offset from this thread’s beginning, for example `@MAIN_12`.
 
-### Thread + Global Offset
+### Имя потока+Смещение от начала файла
 
 this option is similar to the previous one, except that after the thread name there will be not a local offset but the global one \(as the first case\), for example `@HELP_34567`.
 
 If you want the offsets to be hexadecimal, select the proper option. By default, all offsets are decimal.
 
-## Custom Names
+## Собственные имена
 
 ![](../../.gitbook/assets/form_names.png)
 
@@ -52,7 +52,7 @@ The variables names are present in the file `CustomVariables.ini` for each game.
 
 The arrays names list are present in the file `CustomArrays.ini`. Its syntax is as follows: the first number is the global variable name which is the first element of the array \(`array name`\), the second – `array size`, the third – `custom name`. It helps the decompiler to recognize a global variable as an array element and add the index to it.
 
-## Case Converting
+## Регистр букв
 
 ![](../../.gitbook/assets/form_case.png)
 

@@ -1,8 +1,8 @@
-# Console
+# Консоль
 
 The **console** offers an ability to switch debug options of Sanny Builder. Mostly they relate to the decompiler features and you can see the changes when decompile a file. The console window is open after pressing `Ctrl+~`. You may enter the commands in the input line. After typing a command press  `Enter` to proceed. The console will display a result.
 
-## Available commands 
+## Доступные команды 
 
 All commands are case-insensitive.
 
@@ -18,7 +18,7 @@ The input command ends either with the word `ON` \(the option will be enabled\) 
 Before enabling the following options turn on the debug mode with the command `toggle debug_mode`
 {% endhint %}
 
-## Debug Options
+## Отладочные опции
 
 ### CODE\_OFFSETS
 
@@ -48,11 +48,11 @@ E.g. given an array of three elements starting with `$10` this option affect the
 
 The decompiler skips the `SCM` header. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). Also makes the compiler compile an `SCM` file without the header .
 
-## Alternate ways
+## Альтернативные способы включения
 
 Sanny Builder offers a few other ways to toggling debug options outside of the console that might be useful in some cases.
 
-### Running with  the `\debug` parameter
+### Запуск с параметром `\debug`
 
 Usage of the [command-line parameter](./#command-line-usage) `\debug` is an alternate way to switch the debug options. Run Sanny with the parameter `\debug=X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
 
@@ -70,7 +70,7 @@ sanny.exe \debug=11000
 
 The first `1` enables the `code_offsets` option, the second `1` enables the `ignore_unknown` mode. The remaining zeros disable `var_counter`, `constant_indexes`, `skip_scm_header`.
 
-### Using GUI
+### Использование интерфейса программы
 
 Clicking the right-most button in the main toolbar shows a drop-down menu with the list of debug options.
 

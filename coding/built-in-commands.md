@@ -1,4 +1,4 @@
-# Built-in Commands
+# Дополнительные команды
 
 The following commands are built directly into the compiler and serve mostly as [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar).
 

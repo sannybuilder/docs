@@ -1,8 +1,8 @@
-# Conditions
+# Условия
 
 The `IF` operator evaluates one or more conditions and creates a new branch of code.
 
-## Low-level IF statements
+## Общий синтаксис условных выражений
 
 `00d6: if <N>  
 ...condition 1  
@@ -44,7 +44,7 @@ The compiler writes the number `1` instead of `and`.
 `IF AND` - conditions connected with the logical operator `AND` \(a replacement for the if number in the range of`1` to `7`\)  
 `IF OR` - conditions connected with the logical operator `OR` \(a replacement for the if number in the range of `21` to `27`\)
 
-## High-level Constructions
+## Высокоуровневые конструкции
 
 `IF..THEN..END  
 IF..THEN..ELSE..END`
@@ -70,7 +70,7 @@ The  [`Conditions check`](../editor/options/general.md#check-conditions) option 
 Nested IF statements are supported.
 {% endhint %}
 
-## Relational Operators
+## Операторы сравнения
 
 * a **==** b a is equal to b 
 * a **&gt;=** b a is greater than or equal to b 

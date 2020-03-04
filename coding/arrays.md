@@ -1,8 +1,8 @@
-# Arrays
+# Массивы
 
 An **array** represents an indexed collection of elements of the same type \(called the base type\). You can work with any element directly via its index. An index numeration begins with a zero. These arrays are supported in San Andreas, LCS and VCS.
 
-### General Syntax
+## Общий синтаксис
 
 San Andreas:  
 `<array name>(<index var name>,<size><type>)`
@@ -31,7 +31,7 @@ $index = 0
 $array($index,10i) = 1
 ```
 
-### Shorter Forms of Syntax
+## Объявление массивов
 
 1\) declare an array using the [VAR..END](variables.md#var-end-construct) construct
 

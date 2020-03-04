@@ -1,4 +1,4 @@
-# GTA Limits
+# Скриптовые лимиты
 
 <table>
   <thead>

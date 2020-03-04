@@ -1,4 +1,4 @@
-# Syntax Highlighting
+# Подсветка синтаксиса
 
 ![](../../.gitbook/assets/high_page.png)
 
@@ -9,7 +9,7 @@ Available `style` elements are: **B** – bold, **I** – italic, **U** – unde
 
 The highlighting configuration is also used when the code source is saved into the `RTF` or `HTML` formats.
 
-### Code elements
+### Элементы кода
 
 * [Comments](../../features.md#commenting-code) – the text after `//` or between `{}` or `/* */`
 * [Labels](../../coding/data-types.md) – the identifiers starting with `@`

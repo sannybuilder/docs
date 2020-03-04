@@ -1,4 +1,4 @@
-# Hotkeys
+# Горячие клавиши
 
 Sanny Builder supports standard keyboard shortcuts for the file and text operations `(Ctrl+N`, `Ctrl+Z`, etc\). There are extra hotkeys to make scripting easier. Some of them are also [customizable](editor/options/hotkeys.md).
 

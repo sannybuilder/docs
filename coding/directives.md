@@ -1,4 +1,4 @@
-# Directives
+# Директивы
 
 Preprocessing **directives** are the special words that make the compiler function in different ways. They starts with `$` and enclosed between the curly brackets `{}`.
 

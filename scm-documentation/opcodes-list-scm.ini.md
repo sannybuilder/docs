@@ -1,4 +1,4 @@
-# Opcodes List \(SCM.INI\)
+# Список опкодов \(SCM.INI\)
 
 `SCM.INI` is the file containing information about opcodes used during reading and producing script files. Each game has its own list of opcodes. They are shipped with Sanny Builder.
 
@@ -10,11 +10,11 @@
 | Liberty City Stories | LCSSCM.INI | data\lcs |
 | Vice City Stories | VCSSCM.INI | data\vcs |
 
-## File Format
+## Формат файла
 
 Lines starting with `;` are ignored.
 
-### Metadata
+### Метаданные
 
 Special INI parameters provide metadata information about the opcodes list.
 
@@ -24,7 +24,7 @@ Special INI parameters provide metadata information about the opcodes list.
   
 The decompiler prints the metadata in the first line of the output file.
 
-### Opcode Definition
+### Опкоды
 
 Each line has the following syntax:
 
@@ -39,7 +39,7 @@ If the INI file contains multiple definitions for the same opcode, the latter co
 
 By convention a description for a conditional opcode starts with two spaces.
 
-### Opcode Parameters
+### Параметры опкодов
 
 A parameter is a dynamic part of the opcode. They start and end with `%` 
 
@@ -51,7 +51,7 @@ This line is the definition of the opcode `0001`. When the disassembler finds `0
 
 A parameter consists of two parts: a `number` and a `type`.
 
-#### Parameters Order
+#### Порядок следования параметров
 
 The number in parameter `%1d%` is its index. The idea is that some opcodes have their parameters rearranged to make source code more readable.
 
@@ -79,7 +79,7 @@ Changing parameters order in the INI file should be avoided by any means as it m
 In `GTA SA SCR` [edit mode](../edit-modes.md) all opcodes have parameters in their original unchanged order.
 {% endhint %}
 
-#### Parameter Types
+#### Типы параметров
 
 A letter following the index number indicates the parameter type.
 

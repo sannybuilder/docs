@@ -1,10 +1,10 @@
-# Data Types
+# Типы данных
 
-Certain code elements must start or end with specific characters. They help the compiler to recognize their meaning. The following list is final and contains all types of data known to the compiler.  
+Код разделен на отдельные элементы, каждый из которых обозначается по-своему и выполняет конкретную функцию в скрипте.
 
-## Variables
+## Переменные
 
-A [global variable](variables.md#global-variables) starts with `$` followed by a valid identifier \(any combination of letters, digits and `_`\).
+Если перед именем переменной \(комбинация букв, цифр, и `_`\) стоит знак `$` - это [глобальная переменная](variables.md#globalnye-peremennye).
 
 ```text
 0004: $MyVar = 100
@@ -25,7 +25,7 @@ $myVar = &0 // read first 4 bytes of the main.scm and write them to $myVar
 
 `ADMA` variables don't affect the size of the global variables space in the `main.scm` header.
 
-## Labels
+## Метки
 
 Labels are used to reference the code location from unconditional or conditional jumps. They start with `:`followed by a valid identifier \(a label name\).
 
@@ -39,7 +39,7 @@ To reference the label from an opcode use `@`  and then write the label name.
 0002: jump @MyLabel
 ```
 
-## String literals
+## Строковые литералы
 
 A text enclosed between single quotes `' '` is a short string literal \(`15` characters max\).
 
@@ -59,7 +59,7 @@ If the literal contains `"` you must write `\` before it.
 
 Blank strings are also allowed: `" "`.
 
-## String Variables
+## Строковые переменные
 
 A global variable containing a short string literal starts with `s$`.
 
@@ -85,7 +85,7 @@ A local variable containing a long string literal starts with`@v`.
 06D2: 1@v = "LONG_LOCAL"
 ```
 
-## Model Names
+## Имена моделей
 
 Models from `.ide` files can be referenced by`#` followed by the valid model name. 
 
@@ -93,7 +93,7 @@ Models from `.ide` files can be referenced by`#` followed by the valid model nam
 0247: request_model #CELLPHONE
 ```
 
-## Hexadecimal Numbers
+## Числа в 16-ричном формате
 
 `0x` - a hexadecimal number   
 `-0x` - a negative hexadecimal number

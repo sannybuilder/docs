@@ -1,4 +1,4 @@
-# Loops
+# Циклы
 
 A **loop** is a statement which allows code to be repeatedly executed. Sanny Builder supports three kinds of controls loops: [for](loops.md#for-end), [while](loops.md#while-end), [repeat](loops.md#repeat-until).
 
@@ -102,7 +102,7 @@ The constants `True` and `False` are valid for the use as the loop condition.`re
 
 Currently the compiler accepts only one condition to be checked in the loop condition, but you can check more conditions within the loop body and use the commands `Break` and `Continue`.
 
-## Continue and Break
+## Команды Continue и Break
 
 If you want to skip the current iteration and proceed to the next one, use the `Continue` command. The `Break` command causes the loop to stop immediately and proceed to the command after the loop body.
 

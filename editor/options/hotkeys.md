@@ -1,4 +1,4 @@
-# Hotkeys
+# Горячие клавиши
 
 ![](../../.gitbook/assets/hotkeys.png)
 

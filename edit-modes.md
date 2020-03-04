@@ -1,4 +1,4 @@
-# Edit Modes
+# Режимы редактирования
 
 An **edit mode** is a set of options determining behavior of Sanny Builder when working with scripts of a particular game. Fact is, there is no game in the GTA series with the script format same to the others. So, each game requires special settings while editing scripts. That's the reason why the edit modes are introduced in Sanny Builder.
 

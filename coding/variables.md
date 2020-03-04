@@ -1,8 +1,8 @@
-# Variables
+# Переменные
 
 A **variable \(var\)** is a named storage location that contains a value and can be read/rewrite many times. There are two types of variables.
 
-## Global variables
+## Глобальные переменные
 
 A global variable starts with `$` followed by an identifier \(name\).  The global variable name is any combination of letters, digits and `_`:
 
@@ -10,11 +10,11 @@ A global variable starts with `$` followed by an identifier \(name\).  The globa
 
 Their values are available from any place of the code.
 
-### **Saved Variables**
+### **Сохраняемые переменные**
 
 A saved variable is a special global variable available only in `LCS` and `VCS` modes. Its name is prefixed with `$_`, e.g. `$_var`. The value of this variable persists across saved games. Global variables denoted by `$` only \(e.g. `$var`\) are not saved and they get blank values when the LCS or VCS game loads.
 
-## Local variables
+## Локальные переменные
 
 A local variable name may only be a number followed by `@`.
 
@@ -30,7 +30,7 @@ Their values are available only within the current script or the mission.
 The number of local variables per script is strictly [limited](../scm-documentation/gta-limits.md).
 {% endhint %}
 
-### **Timer Variables**
+### Переменные-таймеры
 
 Each script or a mission have 2 special local variables called `TIMERA` and `TIMERB`. The value of a timer variable is increased automatically when the game clock advances, so they are commonly used to measure elapsed time in the script.
 
@@ -49,7 +49,7 @@ Each script or a mission have 2 special local variables called `TIMERA` and `TIM
 `TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. Older scripts reference these timers via the local variables `16@`, `17@` \(GTA3, VC\) or `32@`, `33@` \(SA\).
 {% endhint %}
 
-## VAR..END construct
+## Конструкция VAR..END
 
 Variables are commonly used in the expressions. If the right operand is a number constant, the opcode can be omitted:
 
@@ -131,7 +131,7 @@ In the `'Food'` script `10@` is the floating-point variable. In the `'Loop'` scr
 You can re-declare variables as many times as you need.
 {% endhint %}
 
-## Shorter Form of Declaration
+## Короткая форма объявления переменных
 
 Since v3.2.0 it's possible to declare a variable of a built-in type \(`Int`, `Float`, `String`, `LongString`\) using only the type name.
 
@@ -142,7 +142,7 @@ Syntax:
 int 0@ // 0@ declared as an integer variable.
 ```
 
-## Variable Initialization
+## Начальное значение переменной
 
 You can set the initial value for the variable when declaring it. Write `=` and then the value:
 

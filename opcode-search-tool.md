@@ -1,4 +1,4 @@
-# Opcode Search Tool
+# Поиск опкодов
 
 ![](.gitbook/assets/ost.PNG)
 
@@ -8,13 +8,13 @@ To find an opcode, type some words in the input line, e.g. `actor car`. The tool
 
 When the tool is open, it checks if there is a selected word in the editor. If the selected word is found, it will be copied into the search field.
 
-## Copying Results
+## Копирование результатов
 
 To copy an opcode into clipboard, select it in the list and press `ENTER`.   
 To add another opcode to the clipboard content press `SHIFT+ENTER`.   
 To copy the entire results list press `F2`.
 
-## Hotkeys
+## Горячие клавиши
 
 `ENTER` copy selected opcode onto clipboard  
 `SHIFT+ENTER` add selected opcode to the clipboard  
@@ -25,9 +25,9 @@ To copy the entire results list press `F2`.
 `F11` - clear the search field, display all opcodes  
 `ESC` - close the tool window
 
-## Search Operators
+## Поисковые выражения
 
-### AND operator
+### Оператор AND
 
 A single space between words serves as the AND operator.
 
@@ -37,7 +37,7 @@ A single space between words serves as the AND operator.
 
 Finds all opcodes with both `@` and the word `player`.
 
-### OR operator
+### Оператор OR
 
 The pipe character `|` is the OR operator.
 
@@ -55,7 +55,7 @@ If you write `|` as the first character in the search, the tool will connect all
 
 Finds opcodes with either `actor`, `player` or `car`.
 
-### NOT operator \(NOT\)
+### Оператор NOT
 
 Two dashes before the word exclude opcodes with this word from the result.
 
@@ -73,7 +73,7 @@ A single dash can be used before identifiers or `$` and `@` characters, but not 
 
 Finds opcodes with the number `-10` and without `@`, `car` and `-1`
 
-### Search in conditional opcodes 
+### Поиск среди условных опкодов
 
 `^` - shows only conditional opcodes   
 `^word` - finds `word` in the conditional opcodes
@@ -100,7 +100,7 @@ player -^actor
 
 Finds opcodes with `player`, with the exception of the conditional opcodes with `actor`.
 
-### Respect the order of the words
+### Учет порядка слов
 
 `%` - finds opcodes with the words in the given order
 

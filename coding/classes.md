@@ -1,6 +1,6 @@
-# Classes
+# Классы
 
-## Basic Concepts 
+## Общие принципы 
 
 A **class** is a group of opcodes applied to the in-game entities: player, peds, objects, etc.
 
@@ -10,7 +10,7 @@ Each class has a set of commands \(class members\). They can be split into the f
 * regular opcodes \(methods\)
 * properties
 
-### Conditional Commands 
+### Условия 
 
 Conditional commands are marked with the word `Check` in the resizable window that is displayed when you press `Ctrl+Space`. Many of these have the only parameter: the class owner \(a [variable](variables.md)\).
 
@@ -26,7 +26,7 @@ jf @anywhere
 `Defined` - class member   
 `$PLAYER_CHAR` - class owner
 
-### Regular Commands \(methods\)
+### Методы
 
 Regular commands \(methods\) are used to complete a single in-game action: move an object, destroy it and so on. A special kind of methods is a constructor that creates an object \(a ped, a vehicle\) and stores its handle to a variable.
 
@@ -39,7 +39,7 @@ $PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38) - constructor
 
 These create the same effect.
 
-### Properties
+### Свойства
 
 Property allows you to read/write values to the class fields.
 
@@ -73,7 +73,7 @@ will be compiled as
 ```
 {% endhint %}
 
-## Class Members 
+## Члены класса 
 
 There is a possibility of initializing the variables as class members to use them instead of class names:
 
@@ -103,7 +103,7 @@ $PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head))
 
 These variables can be redeclared with another type.
 
-## `Model` Class 
+## Класс `Model` 
 
 The model identifiers are always the members of the `Model` class. You can reference this class using their names:
 
@@ -129,7 +129,7 @@ if
 jf @loop
 ```
 
-## Extended Parameters \(class constants\)
+## Константы класса
 
 Some classes use parameters with special names. This possibility makes the source code more readable:
 

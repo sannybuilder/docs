@@ -1,8 +1,8 @@
-# Constants
+# Константы
 
 A **constant** is an identifier with a predefined value. Contrary to a [variable ](variables.md)the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
 
-## Syntax
+## Объявление констант
 
 To define a new constant use the `CONST..END` construct:
 
@@ -32,7 +32,7 @@ The compiler also uses 2 internal constants `True` and `False` which values are 
 
 A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
 
-## Limitations
+## Ограничения
 
 You can use constants anywhere except the case:
 
