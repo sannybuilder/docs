@@ -1,8 +1,8 @@
 # Список опкодов \(SCM.INI\)
 
-`SCM.INI` is the file containing information about opcodes used during reading and producing script files. Each game has its own list of opcodes. They are shipped with Sanny Builder.
+Основной файл, который обеспечивает компиляцию и дизассемблирование скриптов, – `INI` файл со списком опкодов. В Sanny Builder есть список опкодов для каждой поддерживаемой игры
 
-| Game | File Name | Location |
+| Игра | Имя файла | Директория |
 | :--- | :--- | :--- |
 | GTA III | SCM.INI | data\gta3 |
 | Vice City | VCSCM.INI | data\vc |
@@ -12,84 +12,88 @@
 
 ## Формат файла
 
-Lines starting with `;` are ignored.
+Строки, начинающиеся с `;`, игнорируются.
 
 ### Метаданные
 
-Special INI parameters provide metadata information about the opcodes list.
+Файл может иметь особые параметры, которые содержат метаданные о его текущей версии.
 
-`VERSION` – defines the version of this file. See the [$VERSION](../coding/directives.md#usdversion) directive  
-`PUBLISHER` – who authored this version   
-`DATE` – the update date.   
+`VERSION` – номер версии. См. директиву [$VERSION](../coding/directives.md#usdversion)  
+`PUBLISHER` – автор изменений   
+`DATE` – дата обновления  
   
-The decompiler prints the metadata in the first line of the output file.
+Дизассемблер выводит эту информацию в комментарии на первой строке исходника.
 
 ### Опкоды
 
-Each line has the following syntax:
+Каждая строка с опкодом имеет следующий формат:
 
 `xxxx=N, yyyy`   
-`XXXX` – the opcode number  
-`N` – the number of parameters  
-`yyyy` – the opcode description.
+`XXXX` – номер опкода  
+`N` – кол-во параметров  
+`yyyy` – описание опкода
 
-The opcode number and the number of parameters are final and can't be changed. The description is open to modifications.
+Не допускается редактирование первых двух значений \(номер опкода и кол-во параметров\). Описание опкода может меняться свободно.
 
-If the INI file contains multiple definitions for the same opcode, the latter controls.
+Если в `INI` файле содержится несколько определений для одного и того же опкода, используется последнее.
 
-By convention a description for a conditional opcode starts with two spaces.
+Существует соглашение, по которому описание условного опкода всегда начинается с двух пробелов.
 
 ### Параметры опкодов
 
-A parameter is a dynamic part of the opcode. They start and end with `%` 
+Параметры - это динамическая часть опкода. В описании опкода они начинаются и заканчиваются `%` 
 
 ```text
 0001=1,wait %1d% ms
 ```
 
-This line is the definition of the opcode `0001`. When the disassembler finds `0001` in a script it prints the words`wait` and `ms` with the parameter value in-between to the output file.
+Данная строка указывает дизассемблеру, что для опкода `0001` следует написать слова `wait` и `ms`, а между ними единственный параметр опкода:
 
-A parameter consists of two parts: a `number` and a `type`.
+```text
+0001: wait 10 ms
+```
+
+Определение параметра включает в себя его [порядковый номер](opcodes-list-scm.ini.md#poryadok-sledovaniya-parametrov) и [тип](opcodes-list-scm.ini.md#tipy-parametrov).
 
 #### Порядок следования параметров
 
-The number in parameter `%1d%` is its index. The idea is that some opcodes have their parameters rearranged to make source code more readable.
+Число в параметре `%1d%` - его порядковый номер. Он нужен, потому что в некоторых опкодах параметры переставлены местами для улучшения читабельности кода.
 
 ```text
 0053=5,%5d% = create_player %1o% at %2d% %3d% %4d%
 ```
 
-The disassembler writes the 5th opcode parameter before any others. 
+Для опкода `0053` дизассемблер поставит 5-й параметр в начале:
 
 ```text
 0053: $PLAYER_CHAR = сreate_player #NULL at 2488.562 -1666.865 12.8757 
 ```
 
-If the parameters will follow their original order, the opcode `0053` would look like:
+Если бы параметры выводились в оригинальном порядке, опкод `0053` выглядел бы так:
 
 ```text
 0053: сreate_player #NULL at 2488.562 -1666.865 12.8757 $PLAYER_CHAR
 ```
 
 {% hint style="warning" %}
-Changing parameters order in the INI file should be avoided by any means as it makes the source code incompatible with the default opcode definitions or earlier scripts.
+Изменений порядка следования параметров должно быть крайней мерой, т.к. оно приводит к несовместимости старых скриптов с новым INI файлом.
 {% endhint %}
 
 {% hint style="info" %}
-In `GTA SA SCR` [edit mode](../edit-modes.md) all opcodes have parameters in their original unchanged order.
+В [режиме редактирования](../edit-modes.md)`GTA SA SCR` все опкоды имеют оригинальный порядок следования параметров.
 {% endhint %}
 
 #### Типы параметров
 
-A letter following the index number indicates the parameter type.
+Буква после номера параметра обозначает его тип.
 
-`d` - any value  
-`p` - a [label](../coding/data-types.md#labels) reference  
-`o` - a [model name](../coding/data-types.md#model-names)   
-`g` - a GXT entry   
-`x` - an external script ID
+`d` - любое значение  
+`p` - имя [метки](../coding/data-types.md#metki)  
+`o` - имя [модели](../coding/data-types.md#imena-modelei)  
+`g` - ключ из `GXT` файла  
+`x` - ID внешнего скрипта
 
 {% hint style="info" %}
-You can freely change parameters types, if needed.
+Типы параметров могут свободно меняться в случае необходимости.
 {% endhint %}
 
