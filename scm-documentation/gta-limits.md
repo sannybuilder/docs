@@ -66,16 +66,16 @@
     <tr>
       <td style="text-align:left"><b>&#x43B;&#x43E;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x435; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x44B;&#x435;</b>
       </td>
-      <td style="text-align:left">16+2 <a href="../coding/variables.md#timer-variables">timers</a>
+      <td style="text-align:left">16+2 <a href="../coding/variables.md#peremennye-taimery">&#x442;&#x430;&#x439;&#x43C;&#x435;&#x440;&#x430;</a>
       </td>
-      <td style="text-align:left">16+2 <a href="../coding/variables.md#timer-variables">timers</a>
+      <td style="text-align:left">16+2 <a href="../coding/variables.md#peremennye-taimery">&#x442;&#x430;&#x439;&#x43C;&#x435;&#x440;&#x430;</a>
       </td>
       <td style="text-align:left">
-        <p>32+2 <a href="../coding/variables.md#timer-variables">timers</a>
+        <p>32+2 <a href="../coding/variables.md#peremennye-taimery">&#x442;&#x430;&#x439;&#x43C;&#x435;&#x440;&#x430;</a>
         </p>
-        <p>1024 total in missions</p>
+        <p>1024 &#x432; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438;</p>
       </td>
-      <td style="text-align:left">96+2 <a href="../coding/variables.md#timer-variables">timers</a>
+      <td style="text-align:left">96+2 <a href="../coding/variables.md#peremennye-taimery">&#x442;&#x430;&#x439;&#x43C;&#x435;&#x440;&#x430;</a>
       </td>
     </tr>
     <tr>
