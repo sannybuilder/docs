@@ -1,6 +1,6 @@
 # Constants
 
-A **constant** is an identifier with a predefined value. Contrary to a [variable ](variables.md)the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
+A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
 
 ## Syntax
 
@@ -10,8 +10,9 @@ To define a new constant use the `CONST..END` construct:
     <constant name> = <constant value>  
 END`
 
-The `constant name` is any allowed identifier \(any combination of letters, numbers and `_`\). There are reserved names that can not be used, such as `Continue`, `True`, `And` and few others.   
-The `constant value` might be a number \(also a model identifier or a label\); a string; an expression \(for example a class or a variable\); another constant.
+A constant name is any allowed identifier \(a combination of letters, numbers and `_`\). There are names reserved by the compiler that can not be used, such as `Continue`, `Break`, `And`, etc \(see `compiler.ini)`.  
+  
+A constant value might be a number \(also a [model identifier](data-types.md#model-names) or a [label](data-types.md#labels)\); a [string literal](data-types.md#string-literals); a [variable](variables.md) \(also a [class member](classes.md#class-members)\); another constant.
 
 ```text
 const
@@ -26,9 +27,9 @@ then
 end
 ```
 
-At compilation the constant `MoneyRequired` will be replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
+During compilation the constant `MoneyRequired` gets replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
 
-The compiler also uses 2 internal constants `True` and `False` which values are equal to `1` and `0` respectively.
+[Edit modes](../edit-modes.md) can load constants from an external file by using the `<constants>` parameter in the `games.xml`.
 
 A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
 
@@ -50,5 +51,5 @@ To compile such expression, you must write the opcode, for example:
 0004: VarName[IndexName] = 0
 ```
 
-Also there are some limitations when using a complex expression as the constant value.
+Also there are some limitations with using an expression as the constant value.
 
