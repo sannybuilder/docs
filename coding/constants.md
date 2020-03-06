@@ -1,17 +1,18 @@
 # Константы
 
-A **constant** is an identifier with a predefined value. Contrary to a [variable ](variables.md)the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
+**Константа** представляет собой идентификатор, которому присваивается определенное значение. В отличие от переменных значение константы не может изменяться. При компиляции имя константы заменяется на то значение, которое ей было присвоено. Константы могут быть числовыми и строковыми, а также содержать в себе выражение.
 
 ## Объявление констант
 
-To define a new constant use the `CONST..END` construct:
+Для объявления константы используется конструкция `CONST..END`:
 
 `CONST  
-    <constant name> = <constant value>  
+    <имя константы> = <значение>  
 END`
 
-The `constant name` is any allowed identifier \(any combination of letters, numbers and `_`\). There are reserved names that can not be used, such as `Continue`, `True`, `And` and few others.   
-The `constant value` might be a number \(also a model identifier or a label\); a string; an expression \(for example a class or a variable\); another constant.
+Именем константы может быть любая комбинация букв, цифр и `_`, которая не повторяет зарезервированные компилятором имена, такие как `Continue`, `Break`, `And` \(см. файл `compiler.ini`\).   
+  
+Значением константы может быть число \(а также [имя модели](data-types.md#imena-modelei) или [метка](data-types.md#metki)\), [строковый литерал](data-types.md#strokovye-literaly), [переменная](variables.md) \(а также [член класса](classes.md#chleny-klassa)\), другая константа.
 
 ```text
 const
@@ -26,15 +27,15 @@ then
 end
 ```
 
-At compilation the constant `MoneyRequired` will be replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
+Во время компиляции константа `MoneyRequired` будет заменена на число `30` , а `PlayerMoney` на `$PLAYER_CHAR.Money`.
 
-The compiler also uses 2 internal constants `True` and `False` which values are equal to `1` and `0` respectively.
+[Режимы редактирования](../edit-modes.md) могут загружать константы из внешнего файла при помощи параметра `<constants>` в `games.xml`.
 
-A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
+Список констант вызывается нажатием `Ctrl+Space`.
 
 ## Ограничения
 
-You can use constants anywhere except the case:
+Константы могут использоваться везде, кроме случая:
 
 ```text
 const
@@ -44,11 +45,11 @@ end
 VarName[IndexName] = 0
 ```
 
-To compile such expression, you must write the opcode, for example:
+Чтобы скомпилировать такое выражение, нужно указать номер опкода:
 
 ```text
 0004: VarName[IndexName] = 0
 ```
 
-Also there are some limitations when using a complex expression as the constant value.
+Также существуют ограничения на использование выражений в качестве константы.
 
