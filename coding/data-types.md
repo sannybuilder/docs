@@ -10,7 +10,7 @@ A [global variable](variables.md#global-variables) starts with `$` followed by a
 0004: $MyVar = 100
 ```
 
-A [local variable](variables.md#local-variables) name may only be a number followed by `@`.  The number is the [local variable](variables.md#local-variables) index in the list of local variables unique to this script or a mission.
+A [local variable](variables.md#local-variables) name may only be a number followed by `@`.  The number is the local variable index in the list of local variables [allocated](../scm-documentation/gta-limits.md) to this script or a mission.
 
 ```text
 0006: 100@ = 10
@@ -27,7 +27,7 @@ $myVar = &0 // read first 4 bytes of the main.scm and write them to $myVar
 
 ## Labels
 
-Labels are used to reference the code location from unconditional or conditional jumps. They start with `:`followed by a valid identifier \(a label name\).
+Labels are used to reference the code location from unconditional \(opcodes 0002, 0050\) or conditional jumps \(opcode 004D\). They start with `:`followed by a valid identifier \(a label name\).
 
 ```text
 :MyLabel
@@ -87,7 +87,7 @@ A local variable containing a long string literal starts with`@v`.
 
 ## Model Names
 
-Models from `.ide` files can be referenced by`#` followed by the valid model name. 
+Models defined in `.ide` files can be referenced by`#` followed by the model name. 
 
 ```text
 0247: request_model #CELLPHONE
