@@ -32,17 +32,17 @@ The number of local variables per script is strictly [limited](../scm-documentat
 
 ### **Timer Variables**
 
-Each script or a mission have 2 special local variables called `TIMERA` and `TIMERB`. The value of a timer variable is increased automatically when the game clock advances, so they are commonly used to measure elapsed time in the script.
+Each script or a mission have 2 special local variables called `TIMERA` and `TIMERB`. The value of a timer variable is increased automatically when the game clock advances, so they are commonly used to measure time elapsed since the timer reset:
 
 ```text
-0006: TIMERA = 0
+0006: TIMERA = 0 // reset the timer
 
 :WAIT_2S
 0001: wait 0 ms
 00D6: if
-0019:   TIMERA > 2000
+0019:   TIMERA > 2000 // if the timer value is > 2000, i.e. 2 seconds has passed
 004D: jump_if_false @WAIT_2S
-0662: printstring "2 seconds has passed"
+0662: printstring "2 seconds has passed" // display the message
 ```
 
 {% hint style="info" %}
@@ -79,7 +79,7 @@ To communicate the compiler a variable type use the `VAR..END` construct.
 
 Syntax:  
 `var  
-<var name>: <type>  
+<variable>: <type>  
 end`
 
 For example, if both variables are declared, the compiler is able to process the expression without opcodes:
@@ -144,7 +144,7 @@ int 0@ // 0@ declared as an integer variable.
 
 ## Variable Initialization
 
-You can set the initial value for the variable when declaring it. Write `=` and then the value:
+You can specify an initial value for the variable when declaring it. Write `=` and then the value:
 
 ```text
 var
@@ -158,11 +158,11 @@ or
 float $fVar = 1.0
 ```
 
-Variable `$fVar` is now declared as `Float` and the compiler adds the opcode in the script:
+The variable `$fVar` is now declared as `Float` and the compiler adds the opcode `0005` in the script:
 
 ```text
 0005: $fVar = 1.0
 ```
 
-Initialization is allowed for the variables only, not for the arrays.
+Initialization is allowed for variables, but not for arrays.
 
