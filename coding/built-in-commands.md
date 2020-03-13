@@ -59,9 +59,9 @@ $var -= 1
 Multiplies the first parameter by the second one. The first parameter is a variable.
 
 ```text
-$var--
+Mul($IntVariable, $Value)
 =
-$var -= 1
+$IntVariable = $IntVariable * $Value
 ```
 
 The second parameter is equal to `2` if isn't specified.
