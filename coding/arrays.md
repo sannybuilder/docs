@@ -1,19 +1,21 @@
 # Arrays
 
-An **array** represents an indexed collection of elements of the same type \(called the base type\). You can work with any element directly via its index. An index numeration begins with a zero. These arrays are supported in San Andreas, LCS and VCS.
+An **array** represents an indexed collection of elements of the same type \(called the base type\). You can work with any element directly via its index. An index numeration begins with a zero. Arrays are supported in San Andreas, LCS and VCS.
 
 ## General Syntax
 
 San Andreas:  
 `<array name>(<index var name>,<size><type>)`
 
-Liberty City Stories, Vice City Stories:  
-`<array name>(<index var name>,<size>)`
+```text
+$index = 0
+$array($index,10i) = 1
+```
 
-`<array name>`: local or global variable  
-`<index var name>`: any variable containing an index value  
+`<array name>`: local or global [variable](variables.md)  
+`<index var name>`: any variable containing an index of the element to read or write  
 `<size>`: any value greater than 0  
-`<type>`: chars `i` `f` `s` `v` denote one of the array types:
+`<type>`: one of characters `i` `f` `s` `v`:
 
 | Letter | Item Type | Item Size \(bytes\) |
 | :--- | :--- | :--- |
@@ -22,19 +24,21 @@ Liberty City Stories, Vice City Stories:
 | s | string | 8 |
 | v | string | 16 |
 
-In LCS, VCS, array elements are only 4 bytes in length. Therefore, there is no need in type declaration.
+Liberty City Stories, Vice City Stories:  
+`<array name>(<index var name>,<size>)`
 
-An array could contain the elements of the same type only:
+{% hint style="info" %}
+In LCS, VCS, array elements are only 4 bytes in length. Therefore, there is no need in type declaration.
+{% endhint %}
 
 ```text
 $index = 0
-$array($index,10i) = 1
+$array($index,10) = 1
 ```
 
-## Shorter Forms of Syntax
+## Array Declaration
 
-1\) declare an array using the [VAR..END](variables.md#var-end-construct) construct
-
+Arrays can be declared using the [VAR..END](variables.md#var-end-construct) construct:  
 `var  
    <array name>: array <size> of <type>  
 end`
@@ -45,28 +49,48 @@ var
 end
 ```
 
-Now you can work with this array without specifying its type and size:
+### Accessing array elements after declaration
+
+After declaring an array you can work access its elements using square brackets:
 
 ```text
-$FloatArray[$RndIndex] += 100.0
+var
+    $FloatArray: array 10 of Float
+end
+$index = 1
+$FloatArray[$index] += 100.0
 ```
 
-2\) use a number as an index
+### Using constant indexes
 
-For instance, you have the array `$strings`, containing 10 elements of type `s`. You can use a constant number to work with the specified element:
+You can use a number to access a particular array element:
 
 ```text
+var
+    $FloatArray: array 10 of Float
+end
+$FloatArray[1] += 100.0
+```
+
+Elements of an array containing [string literals](data-types.md#string-literals) can be accessed with [string variables](data-types.md#string-variables):
+
+```text
+// initializing first three elements of the $strings array
 s$strings[0] = 'str1'
 s$strings[1] = 'str2'
-	...
-s$strings[9] = 'str10'
+s$strings[2] = 'str3'
 ```
 
-These variables can also be used as the class name:
+An array can be declared as a collection of [class members](classes.md#class-members):
 
 ```text
-$players[0].Build 
+var
+  $players: array 2 of Player
+end
+$players[0].Build
 ```
 
-By default in the `GTA SA` [edit mode](../edit-modes.md), array elements are decompiled with the numbers as indexes. You can turn this feature off through the [console](../console.md) using the command `toggle constant_indexes off`. The same feature is available in LCS and VCS but is disabled by default. You can enable this through the console.
+{% hint style="info" %}
+By default in the `GTA SA` [edit mode](../edit-modes.md), the disassembler prints array elements with the numbers as indexes. The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../console.md#constant_indexes) `CONSTANT_INDEXES`. 
+{% endhint %}
 
