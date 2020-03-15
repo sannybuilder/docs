@@ -183,7 +183,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 ## v. 3.00 - 04.08.2007
 
 * the CLEO 3 library is integrated into Sanny Builder
-* VCS SCM format support \(disassembling only\)
+* disassembler supports the `SCM` format of Vice City Stories
 * [constants ](coding/constants.md)support
 * new [directives](coding/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
 * [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
@@ -191,9 +191,9 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 * a [possibility](console.md#skip_scm_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
-* a possibility to use s floating-point value as the counter value in a [FOR..END](coding/loops.md#for-end) loop
+* a possibility to use a floating-point value as the counter value in a [FOR..END](coding/loops.md#for-end) loop
 * dropped support for the commands `WriteMem` and `ReadMem` 
-* a possibility to use the regular expressions when searching
+* a possibility to use regular expressions when searching
 * a possibility to save a source file in the `RTF` or `HTML` formats
 * an ability to skip the splashes at SA startup
 * a new key combo `Ctrl+Enter`
@@ -202,7 +202,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 ## v. 2.99e - 01.01.2007
 
 * fixed a bug when parts of the code within the [HEX..END](coding/hex..end.md) construct disappeared in [debug mode](console.md#debug-options) 
-* a HEX..END construct could accept the [aDMA](coding/hex..end.md#using-adma-numbers) type and string literals
+* a HEX..END construct now accepts the [aDMA](coding/hex..end.md#using-adma-numbers) type and string literals
 * a [FOR ](coding/loops.md#for-end)loop accepts model identifiers as the counter values
 
 ## v. 2.99d - 03.12.2006
@@ -213,7 +213,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 ## v. 2.99c - 30.11.2006
 
 * added the Memory Hacker plug-in
-* a possibility to decompile the `main.scm` of Liberty City Stories
+* disassembler supports the `SCM` format of Liberty City Stories
 * support for constant numbers as indexes of global [arrays](coding/arrays.md)
 * a global variable gets disassembled with the type [aDMA](coding/data-types.md#variables) \(`&`\) if its address is not divisible by 4
 * the compiler uses default values during compilation of a`main.scm` with the missing header segments \(`DEFINE XXX`\) 
@@ -228,17 +228,17 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 
 * added new commands `WriteMem` and `ReadMem`
 * support for [hexadecimal](coding/data-types.md#hexadecimal-numbers) numbers
-* `HEX..END` statement can accept labels and global variables
+* `HEX..END` statement accepts labels and global variables
 * full support for the [ADMA](coding/data-types.md#variables) datatype
-* opportunity to give [custom names](editor/options/formats.md#custom-names) to labels
+* an opportunity to give [custom names](editor/options/formats.md#custom-names) to labels
 * an opportunity to choose a [different case](editor/options/formats.md#case-converting) for custom names and strings
-* added [console](console.md) in order to switch the debug options of SB
+* added [console](console.md) to switch debug options
 * decompiler supports `GXT` files of GTA III & GTA VC
-* added special symbol constants in [long string literals](coding/data-types.md#string-literals)
+* added escape sequences in [long string literals](coding/data-types.md#string-literals)
 * information about [INI](scm-documentation/opcodes-list-scm.ini.md) file \(version, author, date\)
-* classes support an original order of the parameters \(like in `SASCM.INI` from PLPynton\). In order to support such order there should be a line {`$VERSION x.0.xxxx`}, see comments in the INI about this
+* classes support the original order of the parameters \(like in `SASCM.INI` by PLPynton\). The script should have a line {`$VERSION x.0.xxxx`} to support such order, see comments in the `INI` about this
 * added option to confirm an exit from the program
-* quick switching of an [edit mode](edit-modes.md)
+* a dropdown menu to switch [edit modes](edit-modes.md)
 * converting of the selected piece of code
 * an opportunity to pass the current file name to an [external tool](features.md#external-tools-plug-ins-menu)
 * corrected some mistakes in the configuration files
@@ -258,62 +258,62 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 * Sanny Builder became multilingual
 * added menu for [external applications](features.md#external-tools-plug-ins-menu)
 * a special version of [Opcode Search Tool](opcode-search-tool.md) has been built into SB. The details can be found in the file `OST Readme.txt`
-* validating math expressions during disassembling when [Write opcodes](editor/options/general.md#write-opcodes) is disabled \(to ensure that all the opcodes are used properly\)
-* an [opportunity to choose](editor/options/general.md#manual-img-opening) a `script.img` file manually if there is no one in the folder with `main.scm` file
+* validating math expressions during disassembling when [Write opcodes](editor/options/general.md#write-opcodes) is disabled \(to ensure that opcodes are used properly\)
+* an [opportunity to choose](editor/options/general.md#manual-img-opening) a `script.img` file manually if the folder with the `main.scm` file does not have one
 * an opportunity to add a new [code template](features.md#code-templates) directly from the editor; added template descriptions 
 * the list of models can be sorted alphabetically/by value \(`Alt+S` when the list is active\)
 * minor corrections and changes
 
 ## v. 2.97 - 11.06.2006
 
-* new data type: `&` that denotes direct byte address \([ADMA](coding/data-types.md)\).
+* new data type: `&` for direct byte address \([ADMA](coding/data-types.md)\).
 * minor updates
 
 ## v. 2.96 - 01.04.2006
 
-* improved the option [jump to label](features.md#instasearch)
+* improved the [jump to label](features.md#instasearch) option
 * added an opportunity to show the list of templates
 * added an [option](editor/options/general.md#replace-mission-numbers) to replace mission numbers with their names
 * fixed some bugs
 
 ## v. 2.9f - 18.02.2006
 
-* the compiler adds model names used in the script into the `DEFINE OBJECT` list \(this list may be not presented in the source file at all\)
+* the `DEFINE OBJECT` list is now optional \(the compiler can make it out of model names used in the script\)
 * support for block comments `{}`
 * keypress [recording](features.md#keypress-recording-macro)
 * minor changes
 
 ## v. 2.9 - 15.12.2005
 
-* [additional commands](coding/built-in-commands.md) are added
-* operator `IN` is added
-* construction [IF..THEN..ELSE..END](coding/conditions.md#high-level-constructions) is added
+* added [additional commands](coding/built-in-commands.md)
+* new operator `IN` 
+* added construction [IF..THEN..ELSE..END](coding/conditions.md#high-level-constructions)
 * added support for `WHILE` and `REPEAT` [loops](coding/loops.md)
 * added support for nested loops
 * added a new function [Alloc](coding/built-in-commands.md#alloc), allowing to assign a specific memory address to a global variable
 * new comment style: `//`
-* positions of markers and the cursor are remembered for the closed files
+* the editor now remembers the position of markers and the cursor in closed files
 
 ## v. 2.6 - 05.11.2005
 
-* full support of formats of Vice City and GTA3
+* full support of `SCM` formats of Vice City and GTA 3
 * an opportunity to declare variables and arrays as [class members](coding/classes.md#class-members)
 * added a feature to display the list of variables and labels
 * added [loops](coding/loops.md) \(`FOR..END`\)
 * minor changes:
-  * missions can be referenced by their name \(`start_mission MYMISSION` where `MYMISSION` is the name of the initial label \(`DEFINE MISSION 100 at @MYMISSION`\)\)
+  * missions can be referenced by their name \(`start_mission MYMISSION` where `MYMISSION` is the label defined in line`DEFINE MISSION XX at @MYMISSION`\)
   * `Ctrl+Space` displays the list of imported models \(`DEFINE OBJECT`\)
   * new [operator](coding/conditions.md#relational-operators) `<>`
   * if the disassembler can't find a `script.img` file, it uses the one from the game folder
-  * added a `handle` type for [arrays](coding/arrays.md)
-  * an [opportunity](editor/options/general.md#show-warning) to switch off the warning of an `IMG`  file being used by the game
+  * added `handle` type for [arrays](coding/arrays.md)
+  * an [opportunity](editor/options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
 
 ## v. 2.5 - 10.10.2005
 
 * added [properties](coding/classes.md#properties) support
-* added[ code templates](features.md#code-templates) support
-* added construction [VAR...END](coding/variables.md#var-end-construct) for variables management
-* all math commands can be used without opcodes `0004..008B`
+* added [code templates](features.md#code-templates) support
+* added construction [VAR...END](coding/variables.md#var-end-construct) for variables declaration
+* all math commands can be used without opcodes \(`0004..008B`\)
 * new [operators](coding/conditions.md#relational-operators) `<` and `<=`
 * added a capability that the compiler itself set necessary value for the [IF command](coding/conditions.md#low-level-if-statements)
 * added [extended parameters](coding/classes.md#extended-parameters-class-constants) support
@@ -324,11 +324,11 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 * added [classes](coding/classes.md) support
 * added [keywords](coding/keywords.md) support
-*  some math commands can be written without opcodes \(now such capability exists for opcodes `0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`\)
-* for opcode `00D6` the default parameter is `0` \(`if` = `if 0`\)
-* added the [option](editor/options/formats.md#label-name-format) of a choice of various kinds of labels
-* added [keywords](coding/keywords.md) `True` and `False` which designate `1` and `0` accordingly
-* added construction [HEX...END](coding/hex..end.md) for writing hexadecimal values directly in SCM
+*  some math commands can be written without opcodes \(e.g.`0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`\)
+* for the opcode `00D6` the default parameter is `0` \(`if` = `if 0`\)
+* added the [option](editor/options/formats.md#label-name-format) to customize labels output
+* added [keywords](coding/keywords.md) `True` and `False` which correspond to `1` and `0`
+* added construction [HEX...END](coding/hex..end.md) for writing hexadecimal values directly in a binary output
 
 ## v. 1.1 - 07.09.2005
 
@@ -339,14 +339,14 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 * new format of [labels](coding/data-types.md#labels)
 * added [converter](features.md#sa-mission-builder-source-code-converter) from the BW's SA Mission Builder syntax
-* disassembler adds the names of models and the texts from `american.gxt` in a source file
+* disassembler adds the model names and the text from `american.gxt` in a source file
 * added new options
 * fixed some bugs 
 
 ## v. 0.8 - 20.08.2005
 
-* added an ability to [associate](editor/options/general.md#file-association) `SCM` files with the program
-* disassembler adds an addition index to the file name if a file with the same name already exists. \(e.g, if `main.scm.txt` already exists, a new file will be `main.scm[0].txt`\)
+* added an ability to [associate](editor/options/general.md#file-association) `SCM` files with Sanny Builder
+* disassembler adds an additional index to the file name if a file with the same name already exists \(e.g, if `main.scm.txt` already exists, a new file will be `main.scm[0].txt`\)
 * more informative error messages
 * added a check for duplicated labels
 * fixed some bugs
@@ -355,11 +355,11 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 * added new options for text editing
 * added an ability to work with multiple files simultaneously
-* added a function to auto-complete a line with the `F1` button \(beta\)
+* added a function to auto-complete an opcode with the `F1` button \(beta\)
 
 ## **v. 0.6 - 04.08.2005**
 
-* disassembling of GTA SA `SCM` files
-* compiling into `main.scm` and `script.img`
+* disassembling support for GTA SA `SCM` format
+* compilation of text sources into `main.scm` and `script.img`
 * basic features for text editing
 
