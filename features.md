@@ -46,9 +46,11 @@ Press `F4` when GTA San Andreas is running and the `Coords Manager` window will 
 
 In the top edit line you can enter the XYZ coordinates, delimited by the space character  `` or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
 
-## Code Snippets
+## Code Templates
 
-A code snippet is the group of lines that are inserted in the editor when you type a snippet name \(e.g.  `load`\) and press `F2` . The editor will add the following piece of the code:
+You can insert a predefined piece of code called a code template by typing the template name and pressing `F2`. To display the list of available templates, press `Ctrl+J`. 
+
+For example, if you type `load` and press `F2` the editor adds:
 
 ```text
 #.Load
@@ -60,12 +62,10 @@ while not #.Available
 end
 ```
 
-All snippets are contained in the file `macroes.txt`. This file has the following syntax:  
-A snippet name is written in a separate line. The equal sign `=` follows the name. After the equal sign you can also add a short hint. The snippet code starts at the next line, each line begins with the equals sign. The cursor position is marked with the `|` character
+All templates are contained in the file `macroes.txt`. This file has the following syntax:  
+A template name is written in a separate line. The equal sign `=` follows the name. After the equal sign you can also add a short hint. The template code starts at the next line, each line begins with the equals sign. The cursor position is marked with the `|` character.
 
-Additionally, it's possible to save the code snippet in the file `macroes.txt` directly from the editor. Select the code and click the `Service->Add macros` menu. Enter the name of a new snippet, the description \(optionally\) in the appeared dialog window and press the `OK` button. The snippet is ready to be used.
-
-To call the snippet list, press `Ctrl+J`.
+It's also possible to add a template in the file `macroes.txt` from the editor. Select the code and click the `Service->Add macros` menu. Enter a name of the template, a description \(optionally\) in the dialog window and press the `OK` button. The template is ready to use.
 
 ## Keypress Recording \(Macro\)
 

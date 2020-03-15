@@ -260,7 +260,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 * a special version of [Opcode Search Tool](opcode-search-tool.md) has been built into SB. The details can be found in the file `OST Readme.txt`
 * validating math expressions during disassembling when [Write opcodes](editor/options/general.md#write-opcodes) is disabled \(to ensure that all the opcodes are used properly\)
 * an [opportunity to choose](editor/options/general.md#manual-img-opening) a `script.img` file manually if there is no one in the folder with `main.scm` file
-* an opportunity to add a new [code snippet](features.md#code-snippets) directly from the editor; added snippet descriptions 
+* an opportunity to add a new [code template](features.md#code-templates) directly from the editor; added template descriptions 
 * the list of models can be sorted alphabetically/by value \(`Alt+S` when the list is active\)
 * minor corrections and changes
 
@@ -272,7 +272,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 ## v. 2.96 - 01.04.2006
 
 * improved the option [jump to label](features.md#instasearch)
-* added an opportunity to show the list of [snippets](features.md#code-snippets)
+* added an opportunity to show the list of templates
 * added an [option](editor/options/general.md#replace-mission-numbers) to replace mission numbers with their names
 * fixed some bugs
 
@@ -311,7 +311,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 ## v. 2.5 - 10.10.2005
 
 * added [properties](coding/classes.md#properties) support
-* added [code snippets](features.md#code-snippets) support
+* added[ code templates](features.md#code-templates) support
 * added construction [VAR...END](coding/variables.md#var-end-construct) for variables management
 * all math commands can be used without opcodes `0004..008B`
 * new [operators](coding/conditions.md#relational-operators) `<` and `<=`
