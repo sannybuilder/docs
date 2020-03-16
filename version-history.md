@@ -287,7 +287,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 * added [additional commands](coding/built-in-commands.md)
 * new operator `IN` 
-* added construction [IF..THEN..ELSE..END](coding/conditions.md#high-level-constructions)
+* added [IF..THEN..ELSE..END](coding/conditions.md#high-level-constructs)
 * added support for `WHILE` and `REPEAT` [loops](coding/loops.md)
 * added support for nested loops
 * added a new function [Alloc](coding/built-in-commands.md#alloc), allowing to assign a specific memory address to a global variable
