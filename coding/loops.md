@@ -1,20 +1,22 @@
 # Циклы
 
-A **loop** is a statement which allows code to be repeatedly executed. Sanny Builder supports three kinds of controls loops: [for](loops.md#for-end), [while](loops.md#while-end), [repeat](loops.md#repeat-until).
+**Цикл** - это конструкция, позволяющая выполнять последовательность команд неоднократно. Sanny Builder поддерживает несколько видов циклов: [for](loops.md#for-end), [while](loops.md#while-end), [repeat](loops.md#repeat-until).
 
 ## FOR..END
 
-The `FOR` loop has a strictly certain number of iterations \(repetitions\).
+В цикле `FOR` количество повторений \(итераций\) определено заранее.
 
-Syntax:  
-`FOR <loop variable> = <initial value> TO/DOWNTO <final value> [step = 1]  
-  <the loop body>  
+Синтаксис:  
+`FOR <имя переменной> = <начальное значение> TO/DOWNTO <конечное значение> [шаг = 1]  
+  <тело цикла>  
 END`
 
-`<loop variable>` - a variable used as a counter for iterations  
-`<initial value>` - a starting value of the loop variable \(any value including a [model identifier](data-types.md#model-names)\)  
-`TO/DOWNTO` ****- increment or decrement the loop variable between iterations  
-`<final value>` - a final value of the loop variable when finished \(any value including a model identifier\)`<step>` - an optional value the loop variable will be incremented or decremented with between iterations. By default its value equals to `1`.
+`имя переменной` - [переменная](variables.md), которая используется для подсчета количества итераций \(счетчик\)  
+`начальное значение` - значение счетчика перед первой итерацией \(любое число, включая [имя модели](data-types.md#imena-modelei)\)  
+`TO` или `DOWNTO` ****- указывает на то, увеличивается или уменьшается значение счетчика после каждой итерации  
+`конечное значение` - значение счетчика, при котором цикл завершается \(любое число, включая [имя модели](data-types.md#imena-modelei)\)  
+****`шаг` - необязательный параметр, который определяет на сколько изменяется значение счетчика после каждой итерации. По умолчанию равен `1`  
+`тело цикла` - команды, которые выполняются при каждой итерации цикла; тело цикла может отсутствовать
 
 ```text
 var
@@ -27,7 +29,9 @@ FOR $MyCounter = 1 to $final step 2
 end
 ```
 
-If the starting/final values or a step value contained in [variables](variables.md), these variables get the same type the loop variable has. If the loop variable is not declared with any type before using in the loop it gets the `Integer` type. In order to use the floating-point values as the `FOR` loop ranges, declare the loop variable with the `Float` type.
+Если тип счетчика не был [объявлен](variables.md#konstrukciya-var-end) ранее, счетчик приобретает тип `Integer`. Если `начальное значение`, `конечное значение` или `шаг` цикла указаны в виде переменных, эти переменные будут автоматически объявлены с тем же типом, который есть у переменной цикла.
+
+Для использования дробных чисел для счетчика итераций, счетчик должен иметь тип `Float`.
 
 ```text
 var
@@ -35,17 +39,21 @@ var
 end
 
 FOR $MyCounter = 1.0 to $final step 2.0
-end
-```
 
-Variables `$MyCounter` and `$final` both have the `Float` type after the loop.
+end
+
+// переменные $MyCounter и $final имеют тип Float
+```
 
 ## WHILE..END
 
-Syntax:  
-`WHILE <loop condition>  
-  <the loop body>  
+Синтаксис:  
+`WHILE <условие цикла>  
+  <тело цикла>  
 END`
+
+`условие цикла` - любой условный опкод  
+`тело цикла` - команды, которые выполняются при каждой итерации цикла; тело цикла может отсутствовать
 
 ```text
 while not #AK47.Available
@@ -53,7 +61,7 @@ while not #AK47.Available
 end
 ```
 
-The `WHILE` loop is working until the loop condition returns `True`. The condition is evaluated before the loop iterations. Hence, if the condition is `False`, the statement sequence is never executed.
+Цикл `WHILE` работает до тех пор, пока условие цикла истинно. Условие цикла проверяется до первой итерации цикла. Поэтому если условие изначально ложно, цикл не отработает ни разу.
 
 ```text
 $var = 10
@@ -61,19 +69,19 @@ $var = 10
 while $var > 11
     inc($var)
 end
+
+// условие цикла ложно, поэтому команда inc($var) никогда не выполнится
 ```
 
-As the condition `$var > 11` is `False`, the command `inc($var)` never gets executed.
-
-The constants `True` and `False` can be used as the loop condition.
+[Константы](constants.md) `True` и `False` могут использоваться в качестве условия цикла.
 
 ```text
 while true
-    <the loop body>
+    <тело цикла>
 end
 ```
 
-This loop's body executes infinitely until the loop stopped with the `Break` command.
+Такой цикл будет выполняться бесконечно, пока в теле не выполнится команда`Break`.
 
 ```text
 while false
@@ -81,42 +89,90 @@ while false
 end
 ```
 
-This loop is ignored by the compiler as the condition is never met.
+Такой цикл игнорируется компилятором, т.к. условие изначально ложно.
 
-Currently the compiler accepts only one condition to be checked in the loop condition, but you can check more conditions within the loop body and use the commands `Break` and `Continue`.
+{% hint style="info" %}
+В текущей версии допускается только один опкод в качестве условия цикла. Если нужно скомбинировать несколько проверок, их можно поместить в начало цикла и использовать команды `Break` и `Continue`
+
+```text
+while true
+    if and
+       $var >= 0
+       $var <= 100
+    then
+       Break
+    end
+
+    // цикл выполняется, пока значение переменной $var 
+    // находится в интервале [0...100]    
+    <тело цикла>
+end
+```
+{% endhint %}
 
 ## REPEAT..UNTIL
 
-Syntax:
-
+Синтаксис:  
 `REPEAT  
-  <the loop body>  
-UNTIL <loop condition>`
+  <тело цикла>  
+UNTIL <условие цикла>`
 
-The `repeat..until` loop executes until the loop condition returns `False`. The condition is evaluated after iteration therefore the loop is guaranteed to be executed at least once.
+`тело цикла` - команды, которые выполняются при каждой итерации цикла; тело цикла может отсутствовать  
+`условие цикла` - любой условный опкод
+
+Цикл `REPEAT..UNTIL` работает, пока условие цикла не будет истинно. Условие проверяется в конце итерации цикла, поэтому данный цикл будет иметь минимум одну итерацию.
+
+Константы `True` и `False` могут быть использованы в качестве условия цикла.
+
+```text
+repeat
+  // цикл с одной итерацией
+until true 
+```
+
+```text
+repeat
+  // цикл работает бесконечно, пока не остановлен командой Break
+until false
+```
 
 {% hint style="info" %}
-The constants `True` and `False` are valid for the use as the loop condition.`repeat..until true` - the loop has the only iteration.  
-`repeat..until false` - the loop executes infinitely until it's stopped with the `Break` command.
-{% endhint %}
+В текущей версии допускается только один опкод в качестве условия цикла. Если нужно скомбинировать несколько проверок, их можно поместить в конец цикла и использовать команды `Break` и `Continue`
 
-Currently the compiler accepts only one condition to be checked in the loop condition, but you can check more conditions within the loop body and use the commands `Break` and `Continue`.
+```text
+repeat  
+    <тело цикла>
+    if and
+       $var >= 0
+       $var <= 100
+    then
+       Break
+    end
+  // цикл выполняется, пока значение переменной $var 
+  // находится в интервале [0...100]  
+until false
+```
+{% endhint %}
 
 ## Команды Continue и Break
 
-If you want to skip the current iteration and proceed to the next one, use the `Continue` command. The `Break` command causes the loop to stop immediately and proceed to the command after the loop body.
+Если необходимо пропустить текущую итерацию цикла и перейти к следующей, используйте команду `Continue`. 
 
-They can substitute an opcode parameter \(e.g., `jf continue`\) or serve as a standalone statement.
+Команда `Break` завершает цикл и передает управление на команду, следующую за  завершающим `end`.
+
+Обе эти команды могут быть использованы как параметр в опкоде \(например, `jf Continue`\) или как отдельная команда.
 
 ```text
-if
-    $currentactor.dead
-jf Break // exit the loop
+while true
+  if
+    not $actor.dead
+  jf Break // завершить цикл
 
-if
-    not $currentactor.dead
-then
-   Continue // go to the next iteration
+  if
+    $actor.dead
+  then
+    Continue // перейти на следующую итерацию
+  end
 end
 ```
 
