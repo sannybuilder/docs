@@ -82,7 +82,7 @@ s$strings[1] = 'str2'
 s$strings[2] = 'str3'
 ```
 
-Массив может быть объявлен как коллекция [членов класса](classes.md#chleny-klassa):
+Массив может быть объявлен как коллекция [экземпляров класса](classes.md#ekzemplyary-klassa):
 
 ```text
 var

@@ -1,20 +1,33 @@
 # Классы
 
-## Общие принципы 
+**Класс** - это группа команд, относящихся к какой-либо сущности в игре: игрокам, актерам, машинам и т.д. Например, класс `Player` объединяет опкоды, которые выполняются над игровым персонажем.
 
-A **class** is a group of opcodes applied to the in-game entities: player, peds, objects, etc.
+## Общий синтаксис
 
-Each class has a set of commands \(class members\). They can be split into the following groups:
+Синтаксис:  
+`<имя класса>.<член класса>(параметры)`
 
-* conditional opcodes
-* regular opcodes \(methods\)
-* properties
+`Имя класса` - название группы опкодов, которая определена в файле `classes.db` для текущего [режима редактирования](../edit-modes.md)  
+`Член класса` - одна из команд, входящих в класс  
+`Параметры` - 0 и более [параметров](data-types.md), разделенных запятой
+
+```text
+Player.SetMinWantedLevel($PLAYER_CHAR, 2)
+```
+
+`Player` - имя класса  
+`SetMinWantedLevel` - член класса   
+`$PLAYER_CHAR, 2` - два параметра для команды `SetMinWantedLevel`
+
+Существует 3 вида членов класса:
+
+* условия
+* методы
+* свойства
 
 ### Условия 
 
-Conditional commands are marked with the word `Check` in the resizable window that is displayed when you press `Ctrl+Space`. Many of these have the only parameter: the class owner \(a [variable](variables.md)\).
-
-Example:
+Условные команды в списке, вызываемом нажатием `Ctrl+Space`, обозначаются словом `Check`. Они используются в [условных выражениях](conditions.md):
 
 ```text
 if
@@ -22,60 +35,74 @@ if
 jf @anywhere
 ```
 
-`Player` - class name   
-`Defined` - class member   
-`$PLAYER_CHAR` - class owner
-
 ### Методы
 
-Regular commands \(methods\) are used to complete a single in-game action: move an object, destroy it and so on. A special kind of methods is a constructor that creates an object \(a ped, a vehicle\) and stores its handle to a variable.
-
-In Sanny Builder the constructor can be used either as a method or a property:
+Команды, которые используются для выполнения одиночного действия над экземплярами класса, называются методами. Например, перемещение объекта, взрыв машины и т.п.:
 
 ```text
-Player.Create($PLAYER_CHAR, #NULL, 2488.5601, -1666.84, 13.38) - procedure
-$PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38) - constructor
+Object.PutAt($crate, 10.0, -25.5, 12.2)
+Car.Destroy($car)
 ```
 
-These create the same effect.
+В списке членов класса они обозначаются словом `proc`. 
+
+Особый вид методов - это конструктор. Конструктор создает новый экземпляр класса и сохраняет указатель на него в переменную.
+
+Sanny Builder допускает два эквивалентных друг другу варианта написать конструктор:
+
+```text
+Player.Create($PLAYER_CHAR, #NULL, 2488.5601, -1666.84, 13.38)
+```
+
+```text
+$PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38)
+```
 
 ### Свойства
 
-Property allows you to read/write values to the class fields.
+Свойства служат для чтения или изменения отдельных атрибутов экземпляра класса.
 
-For example, the `Money` property of the class `Player` allows to operate with the following opcodes:
-
-```text
-0109: player $PLAYER_CHAR money += 1000000
-010A:   player $PLAYER_CHAR money > 461@
-010B: 4@ = player $PLAYER_CHAR money
-```
-
-With the property you can use the following commands without any opcodes:
+Например, свойство `.Money` класса `Player` позволяет работать с количеством денег у игрока:
 
 ```text
-Player($PLAYER_CHAR).Money += 1000000
-Player($PLAYER_CHAR).Money > 461@
-4@ = Player($PLAYER_CHAR).Money
+Player($PLAYER_CHAR).Money += 1000000 // добавить деньги
+Player($PLAYER_CHAR).Money > 461@ // проверить счет игрока
+4@ = Player($PLAYER_CHAR).Money // записать текущую сумму денег в переменную
 ```
 
 {% hint style="warning" %}
-In the current version there is a limit on using space characters in the string literals used as a parameter in a property. The compiler ignores these characters. For example, the command
+В текущей версии существует ограничение на использование пробелов в строковых литералах в параметрах свойств. Компилятор игнорирует такие пробелы:
 
 ```text
 0@ = File.Open("file name","wb")
 ```
 
-will be compiled as
+будет скомпилировано как:
 
 ```text
 0@ = File.Open("filename","wb")
 ```
 {% endhint %}
 
-## Члены класса 
+## Экземпляры класса
 
-There is a possibility of initializing the variables as class members to use them instead of class names:
+Практически все члены классов в качестве первого параметра принимают переменную, которая хранит указатель на экземпляр класса - ту сущность в игре, над которой выполняется эта команда. 
+
+```text
+Player.Build($PLAYER_CHAR)
+```
+
+`$PLAYER_CHAR` - экземпляр класса. 
+
+При этом некоторые внутриигровые элементы существуют в единственном экземпляре. Например, камера, которая определяет поле зрения игрока. Члены классов для таких сущностей не требуют экземпляра класса
+
+```text
+Camera.SetBehindPlayer()
+```
+
+### Объявление экземпляров класса
+
+Переменные можно [объявлять](variables.md#konstrukciya-var-end) с типом - именем класса.
 
 ```text
 var
@@ -83,7 +110,7 @@ var
 end
 ```
 
-It declares the variable `$PLAYER_CHAR` as the member of the class `Player`. So, the variable can be used instead of the class name:
+Это указывает компилятору на то, что переменная `$PLAYER_CHAR` является экземпляром класса `Player`. Такую переменную можно использовать вместо имени класса:
 
 ```text
 if
@@ -92,20 +119,24 @@ jf @anywhere
 ```
 
 {% hint style="warning" %}
-Such variables are compiled as the first parameter and therefore do not duplicate them.
+Если переменная используется вместо имени класса, она также компилируется как первый параметр, поэтому дублировать её в списке параметров не нужно:
+
+```text
+$PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head)
+```
+
+эквивалентно
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "PLAYER_FACE", "HEAD", Head)
-
-$PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head))
 ```
 {% endhint %}
 
-These variables can be redeclared with another type.
+Переменные - экземпляры класса могут быть переобъявлены с другим типом.
 
-## Класс `Model` 
+### Класс `Model` 
 
-The model identifiers are always the members of the `Model` class. You can reference this class using their names:
+[Имена моделей](data-types.md#imena-modelei) являются экземплярами класса `Model`:
 
 ```text
 #AK47.Load
@@ -117,7 +148,7 @@ if
 jf @loop
 ```
 
-It is the same as:
+эквивалентно
 
 ```text
 Model.Load(#AK47)
@@ -131,15 +162,17 @@ jf @loop
 
 ## Константы класса
 
-Some classes use parameters with special names. This possibility makes the source code more readable:
+Некоторые параметры в членах классов могут задаваться в виде заранее определенных констант. Это делает код более читаемым:
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", Torso)
 ```
 
-Last parameter \(`Torso`\) is the class constant that will be replaced with the number `0` during compilation.
+Последний параметр \(`Torso`\) - это константа для метода `SetClothes`, которая будет заменена на `0` при компиляции. Константы классов определены в файле `classes.db`.
 
-These parameters are defined in the file `classes.db`.
+{% hint style="info" %}
+Параметр, для которого существует список констант, обозначается словом `Extended` в списке членов класса и подсказке при наборе параметров. 
 
-For convenience, a list of extended parameters are displayed when you press `Ctrl+Space`. Simply put the cursor where an extended parameter should be, press `Ctrl+Space` and the parameters list will appear. You can then select a name from it and insert this into your code.
+Список доступных констант можно вызвать через `Ctrl+Space`, если курсор стоит в месте, где используется такой параметр.
+{% endhint %}
 

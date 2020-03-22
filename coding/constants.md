@@ -12,7 +12,7 @@ END`
 
 Именем константы может быть любая комбинация букв, цифр и `_`, которая не повторяет зарезервированные компилятором имена, такие как `Continue`, `Break`, `And` \(см. файл `compiler.ini`\).   
   
-Значением константы может быть число \(а также [имя модели](data-types.md#imena-modelei) или [метка](data-types.md#metki)\), [строковый литерал](data-types.md#strokovye-literaly), [переменная](variables.md) \(а также [член класса](classes.md#chleny-klassa)\), другая константа.
+Значением константы может быть число \(а также [имя модели](data-types.md#imena-modelei) или [метка](data-types.md#metki)\), [строковый литерал](data-types.md#strokovye-literaly), [переменная](variables.md) \(а также [свойство класса](classes.md#svoistva)\), другая константа.
 
 ```text
 const
