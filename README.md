@@ -44,11 +44,12 @@ The `output_file_path` __parameter is optional. If there is no path specified fo
 ## Contacts
 
 [sannybuilder.com](https://sannybuilder.com/)  
+[Sanny Builder @ Github](https://github.com/sannybuilder/dev/issues)  
 [Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)  
 [Sanny Builder @ Facebook](https://facebook.com/SannyBuilder)  
 [Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)
 
-For any questions e-mail me at [mail@sannybuilder.com](mailto:mail@sannybuilder.com)
+For any questions e-mail me at [mail@sannybuilder.com](mailto:mail@sannybuilder.com) or raise a ticket on [Github](https://github.com/sannybuilder/dev/issues).
 
 Use responsibly at your own risk. In Backup We Trust.
 
