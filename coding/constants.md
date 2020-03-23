@@ -12,7 +12,7 @@ END`
 
 A constant name is any allowed identifier \(a combination of letters, numbers and `_`\). There are names reserved by the compiler that can not be used, such as `Continue`, `Break`, `And`, etc \(see `compiler.ini)`.  
   
-A constant value might be a number \(also a [model identifier](data-types.md#model-names) or a [label](data-types.md#labels)\); a [string literal](data-types.md#string-literals); a [variable](variables.md) \(also a [class member](classes.md#class-members)\); another constant.
+A constant value might be a number \(also a [model identifier](data-types.md#model-names) or a [label](data-types.md#labels)\); a [string literal](data-types.md#string-literals); a [variable](variables.md) \(also a [class property](classes.md#properties)\); another constant.
 
 ```text
 const

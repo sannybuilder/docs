@@ -1,20 +1,33 @@
 # Classes
 
-## Basic Concepts 
+A **class** is a group of commands applied to the in-game entities: player, peds, objects, etc. For example, the `Player` class groups the commands performed over the player character.
 
-A **class** is a group of opcodes applied to the in-game entities: player, peds, objects, etc.
+## General Syntax
 
-Each class has a set of commands \(class members\). They can be split into the following groups:
+Syntax:  
+`<Class name>.<Class member>(parameters)`
 
-* conditional opcodes
-* regular opcodes \(methods\)
+`Class name` - the name of a group of commands defined in the `classes.db` file for this edit mode  
+`Class member` - one of the commands included in the class  
+`Parameters` - 0 or more comma-delimited [parameters](data-types.md)
+
+```text
+Player.SetMinWantedLevel($PLAYER_CHAR, 2)
+```
+
+`Player` - class name  
+`SetMinWantedLevel` - class member  
+`$PLAYER_CHAR, 2` - two parameters for `SetMinWantedLevel`
+
+There are three types of class members:
+
+* conditions
+* methods
 * properties
 
-### Conditional Commands 
+### Conditions
 
-Conditional commands are marked with the word `Check` in the resizable window that is displayed when you press `Ctrl+Space`. Many of these have the only parameter: the class owner \(a [variable](variables.md)\).
-
-Example:
+The list that appears when you press `Ctrl+Space` marks conditional commands with the word `Check`. They are used in [conditional expressions](conditions.md): 
 
 ```text
 if
@@ -22,45 +35,44 @@ if
 jf @anywhere
 ```
 
-`Player` - class name   
-`Defined` - class member   
-`$PLAYER_CHAR` - class owner
+### Methods
 
-### Regular Commands \(methods\)
-
-Regular commands \(methods\) are used to complete a single in-game action: move an object, destroy it and so on. A special kind of methods is a constructor that creates an object \(a ped, a vehicle\) and stores its handle to a variable.
-
-In Sanny Builder the constructor can be used either as a method or a property:
+Methods are regular commands used to complete a single in-game action, e.g. moving an object, destroying a vehicle, etc. 
 
 ```text
-Player.Create($PLAYER_CHAR, #NULL, 2488.5601, -1666.84, 13.38) - procedure
-$PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38) - constructor
+Object.PutAt($crate, 10.0, -25.5, 12.2)
+Car.Destroy($car)
 ```
 
-These create the same effect.
+They are marked with the work `proc` in the list of class members.
+
+A special kind of methods is a constructor. A constructor creates a new instance of a class and stores its handle to a variable.
+
+In Sanny Builder the constructor can be written in two equivalent ways:
+
+```text
+Player.Create($PLAYER_CHAR, #NULL, 2488.5601, -1666.84, 13.38)
+
+```
+
+```text
+$PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38)
+```
 
 ### Properties
 
-Property allows you to read/write values to the class fields.
+Property allows you to access class attributes and/or modify them.
 
-For example, the `Money` property of the class `Player` allows to operate with the following opcodes:
-
-```text
-0109: player $PLAYER_CHAR money += 1000000
-010A:   player $PLAYER_CHAR money > 461@
-010B: 4@ = player $PLAYER_CHAR money
-```
-
-With the property you can use the following commands without any opcodes:
+For example, the `.Money` property of the `Player` class allows to operate with the amount of money of the player:
 
 ```text
-Player($PLAYER_CHAR).Money += 1000000
-Player($PLAYER_CHAR).Money > 461@
-4@ = Player($PLAYER_CHAR).Money
+Player($PLAYER_CHAR).Money += 1000000 // add more money
+Player($PLAYER_CHAR).Money > 461@ // check the amount
+4@ = Player($PLAYER_CHAR).Money // read the amount and store in variable
 ```
 
 {% hint style="warning" %}
-In the current version there is a limit on using space characters in the string literals used as a parameter in a property. The compiler ignores these characters. For example, the command
+In the current version the compiler ignores whitespace characters in [string literals](data-types.md#string-literals) used in property parameters:
 
 ```text
 0@ = File.Open("file name","wb")
@@ -73,9 +85,25 @@ will be compiled as
 ```
 {% endhint %}
 
-## Class Members 
+## Class Instances
 
-There is a possibility of initializing the variables as class members to use them instead of class names:
+Almost all class members take a variable as the first parameter. This variable holds a handle of the class instance which is a concrete in-game entity the command is applied to:
+
+```text
+Player.Build($PLAYER_CHAR)
+```
+
+`$PLAYER_CHAR` - the class instance. 
+
+For some in-game entities there is only one instance to exist. An example of that would be the camera that controls what the player can see. The members of classes for such entities do not require a variable with the class instance:
+
+```text
+Camera.SetBehindPlayer()
+```
+
+### Declaring a class instance
+
+Variables can be [declared](variables.md#var-end-construct) using a class name as the type:
 
 ```text
 var
@@ -83,7 +111,7 @@ var
 end
 ```
 
-It declares the variable `$PLAYER_CHAR` as the member of the class `Player`. So, the variable can be used instead of the class name:
+It instructs the compiler that `$PLAYER_CHAR` holds an instance of the class `Player`. This variable can serve as an alias to the class name:
 
 ```text
 if
@@ -92,20 +120,24 @@ jf @anywhere
 ```
 
 {% hint style="warning" %}
-Such variables are compiled as the first parameter and therefore do not duplicate them.
+If a variable substitutes a class name, the compiler also makes it the first parameter, hence no need to use it again in the list of parameters:
+
+```text
+$PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head)
+```
+
+is equivalent to 
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "PLAYER_FACE", "HEAD", Head)
-
-$PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head))
 ```
 {% endhint %}
 
-These variables can be redeclared with another type.
+Variables declared as instances of a class can be redeclared with another type.
 
-## `Model` Class 
+### The `Model` Class 
 
-The model identifiers are always the members of the `Model` class. You can reference this class using their names:
+[Model names](data-types.md#model-names) are always instances of the `Model` class:
 
 ```text
 #AK47.Load
@@ -117,7 +149,7 @@ if
 jf @loop
 ```
 
-It is the same as:
+It is equivalent to:
 
 ```text
 Model.Load(#AK47)
@@ -129,17 +161,17 @@ if
 jf @loop
 ```
 
-## Extended Parameters \(class constants\)
+## Class constants
 
-Some classes use parameters with special names. This possibility makes the source code more readable:
+Some class members have pre-defined constants for some parameter values. It makes the source code more readable:
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", Torso)
 ```
 
-Last parameter \(`Torso`\) is the class constant that will be replaced with the number `0` during compilation.
+The last parameter \(`Torso`\) is a class constant substituted with `0` during compilation. Class constants are defined in the `classes.db` file.
 
-These parameters are defined in the file `classes.db`.
-
-For convenience, a list of extended parameters are displayed when you press `Ctrl+Space`. Simply put the cursor where an extended parameter should be, press `Ctrl+Space` and the parameters list will appear. You can then select a name from it and insert this into your code.
+{% hint style="info" %}
+The special `Extended` type is reserved for parameters having a list of constants. You can see the `Extended` type in the list of class members and in a hint appearing as you type class member parameters.
+{% endhint %}
 

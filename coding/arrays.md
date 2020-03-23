@@ -81,7 +81,7 @@ s$strings[1] = 'str2'
 s$strings[2] = 'str3'
 ```
 
-An array can be declared as a collection of [class members](classes.md#class-members):
+An array can be declared as a collection of [class instances](classes.md#class-instances):
 
 ```text
 var

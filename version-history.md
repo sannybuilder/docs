@@ -297,7 +297,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 ## v. 2.6 - 05.11.2005
 
 * full support of `SCM` formats of Vice City and GTA 3
-* an opportunity to declare variables and arrays as [class members](coding/classes.md#class-members)
+* an opportunity to [declare](coding/classes.md#declaring-a-class-instance) variables and arrays as class instances
 * added a feature to display the list of variables and labels
 * added [loops](coding/loops.md) \(`FOR..END`\)
 * minor changes:
