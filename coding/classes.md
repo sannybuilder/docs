@@ -37,7 +37,7 @@ jf @anywhere
 
 ### Methods
 
-Methods are regular commands used to complete a single in-game action, e.g. moving an object, destroying a vehicle, etc. 
+Methods are regular commands used to complete a single in-game action, e.g. moving an object, destroying a vehicle, etc.:
 
 ```text
 Object.PutAt($crate, 10.0, -25.5, 12.2)
@@ -78,7 +78,7 @@ In the current version the compiler ignores whitespace characters in [string lit
 0@ = File.Open("file name","wb")
 ```
 
-will be compiled as
+will be compiled as:
 
 ```text
 0@ = File.Open("filename","wb")
@@ -126,7 +126,7 @@ If a variable substitutes a class name, the compiler also makes it the first par
 $PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head)
 ```
 
-is equivalent to 
+is equivalent to:
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "PLAYER_FACE", "HEAD", Head)
