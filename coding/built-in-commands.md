@@ -46,7 +46,7 @@ Dec(1@)
 1@ -= 1
 ```
 
-Since the version 3.06 it's possible to use the `++` operator that can be applied to variables and decrements their value by one.
+Since the version 3.06 it's possible to use the `--` operator that can be applied to variables and decrements their value by one.
 
 ```text
 $var--
@@ -92,7 +92,7 @@ Div(1@)
 
 ## ALLOC 
 
-This function sets the memory address for the [global variable](variables.md#global-variables). It has to be used only for the ones with custom names \(e.g. `$text`\). For the others, the memory address is set by their name: the variable `$40` always occupy four bytes in the `main.scm` header starting at the offset `40`.
+This function sets the memory address for the [global variable](variables.md#global-variables). It has to be used only for the ones with custom names \(e.g. `$text`\). For variables with numeric names \(DMA-variables\), the memory address is calculated out of this number: the variable `$40` always occupy four bytes in the `main.scm` header starting at the offset 40\*4=160.
 
 ```text
 Alloc($MyVar, 40) - the variable $MyVar will be compiled as $40
