@@ -47,7 +47,7 @@ Syntax:
 If the file path is relative, the compiler scans directories in the following order to find the file:
 
 1. directory of the file with the directive
-2. `Sanny Builder\data\<current edit mode>`
+2. `data` folder for the current edit mode
 3. Sanny Builder root directory
 4. the game directory
 
