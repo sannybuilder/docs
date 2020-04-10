@@ -1,93 +1,93 @@
 # Общие настройки
 
-This tab contains the general settings used by Sanny Builder.
+Данная страница содержит общие настройки программы.
 
-![](../../.gitbook/assets/options-en.PNG)
+![](../../.gitbook/assets/general.png)
 
 
 
 ## Директория игры
 
-![](../../.gitbook/assets/main_dir.png)
+![](../../.gitbook/assets/general01.gif)
 
-Sanny Builder needs certain game files while working, so you have to choose a correct directory where the game is installed. You may input the path manually or by selecting the directory via the dialog appearing when you press the button.
+Путь к папке, где установлена игра для текущего [режима редактирования](../../edit-modes.md). Путь можно ввести вручную или выбрать через диалог, появляющийся при нажатии кнопки.
 
 ## Файл с опкодами
 
-![](../../.gitbook/assets/main_ini.png)
+![](../../.gitbook/assets/ini.gif)
 
-The program also needs the file containing the opcodes list. You may set the path to this file here \(manually or by selecting file dialog appearing when you press the button\).
+Для корректной работы программы требуется INI-файл со [списком опкодов](../../scm-documentation/opcodes-list-scm.ini.md). В данном поле вы можете указать путь к данному файлу. При нажатии на кнопку появится диалог выбора файла.
 
 ## Язык интерфейса
 
-![](../../.gitbook/assets/lang-en.png)
+![](../../.gitbook/assets/general03.gif)
 
-This is the list of all available translations for Sanny Builder. The translation files are present in the folder `\lang`. Select a desired language for the program interface in this list. More information on how to create a new translation or update the existing one can be found at [sannybuilder/translations](https://github.com/sannybuilder/translations).
+Список доступных языков для интерфейса программы. Сами переводы находится в папке `lang`. Информацию о создании новых переводов можно найти на [sannybuilder/translations](https://github.com/sannybuilder/translations).
 
 ## Ассоциация файловых расширений
 
-![](../../.gitbook/assets/main_ass.png)
+![](../../.gitbook/assets/ass.png)
 
-You may associate different file extensions with Sanny Builder. When a checkbox is selected, your Windows Registry is changed and you may open the files with this extension simply by clicking it. To cancel the association, unselect a proper checkbox.
+Файлы с отмеченными расширениями по умолчанию открываются в Sanny Builder. Для отмены ассоциации, снимите галочку.
 
 ## Настройки
 
-![](../../.gitbook/assets/main_opt.png)
-
-Here you see the options of the disassembler and the compiler.
+![](../../.gitbook/assets/general05.gif)
 
 ### Перезапись выходного файла
 
-This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name \(e.g. `main[0].txt`\). 
-
-When this option is checked the disassembler replaces the existing file with a new file.
+Перезаписывать файл с результатом дизассемблирования, если файл с таким именем уже существует. Если опция не выбрана,  дизассемблер создаст новый файл, добавив к нему индекс \(например, `main[0].txt`\).
 
 ### Показывать прогресс
 
-Display a live progress bar during the disassembling or compilation processes. Showing the progress slightly slows the execution time. When this option is turned off the status bar displays the words: `Please wait`. 
+Отображать текущий прогресс при работе дизассемблера или компилятора. Без этой опции в статусбаре будут слова `Пожалуйста ждите…`. 
+
+Показ прогресса немного замедляет процесс \(де\)компиляции.
 
 ### Показывать предупреждение
 
-This option is only used during compilation of the San Andreas scripts. If the game is running, the file `script.img` containing external scripts can not be overwritten as the game uses this file and the compiler complains about it. You may disable the warning by unchecking this box.
+Данная опция имеет значение только при компиляции скриптов San Andreas. Если игра запущена ко время компиляции, то файл `script.img`, содержащий часть скриптов, не может быть изменен, поскольку игра использует его. Компилятор покажет об этом предупреждение. Вы можете отключить показ предупреждения, выбрав данную опцию.
 
 ### Ручной выбор IMG-файла
 
-When the disassembling process starts, the program searches for the file `script.img` containing some game scripts. If this file is not present in the same folder with the `.SCM` file or in the `San Andreas\data\scripts` folder, the error message is displayed. If this option is enabled, a file select dialog appears and you can provide another `script.img` file manually.
+При дизассемблировании `main.scm` в режиме `GTA SA` программа ищет файл `script.img`, содержащий часть игровых скриптов. Если файл не найден в одной папке с `main.scm` или в папке игры, то будет показана ошибка. Однако при выборе данной опции вы сможете выбрать `script.img` вручную.
 
 ### Быстрая загрузка игры
 
-With this option Sanny Builder skips the startup splash screens when launching San Andreas \(`F8`\). If this feature does not work with your game version, disable this option.
+Sanny Builder способен пропускать начальные заставки при запуске San Andreas \(`F8`\). Если данная возможность вызывает ошибку в вашей версии игры, отключите данную опцию.
 
 ### Проверка условий
 
-This option has two meanings. First, the program replaces the [number of conditions](../../coding/conditions.md#syntax) in the `IF` opcode with `AND` or `OR`. Second, the program is able to compile the `IF..END` construct, and calculate needed `IF` parameter in the conditions with words `AND` or `OR`.
+Данная опция имеет 2 значения. При дизассемблировании скриптов программа заменяет [количество условий](../../coding/conditions.md#obshii-sintaksis-uslovnykh-vyrazhenii) в `IF` на слова `AND` и `OR`. При компиляции появляется поддержка конструкции `IF..END`, а также возможность компилировать `IF` со словами `AND` и `OR`.
 
 ### Проверка переменных
 
-The number of local and global [variables](../../coding/variables.md) is limited. When this option is checked, the compiler checks if a variable fits the available range.
+Количество используемых глобальных и локальных [переменных](../../coding/variables.md) имеет свои [лимиты](../../scm-documentation/gta-limits.md). При включении данной опции компилятор будет проверять правильность их использования.
 
 ### Использовать опкоды
 
-This option changes the disassembled output from high-level to low-level and vice versa. If this option is unchecked, the disassembler uses available [classes](../../coding/classes.md) and [keywords](../../coding/keywords.md) instead of opcodes. In addition, there will be no opcodes in simple math expressions. If the option is checked, all opcodes are present in the output file.
+При выключении этой опции дизассемблер использует [классы](../../coding/classes.md) и [ключевые слова](../../coding/keywords.md), заменяя ими опкоды. Также не будут записываться опкоды для некоторых простых математических выражений. 
+
+При включении данной опции все опкоды будут записываться в исходник.
 
 ### Заменять номера миссий
 
-When this option checked, the disassembler [replaces the mission number](../../features.md#replacing-mission-numbers-with-their-names) in the opcode `start_mission` with the mission name. The mission name is the label name defined in the file header. This name also could be used to quickly move to the mission code.
+При включении данной опции дизассемблер [заменяет](../../features.md#zamena-nomerov-missii-na-ikh-nazvaniya) номера миссий в `start_mission` на их имена. Например, `start_mission INITIAL`. Имя миссии определяется по имени метки в заголовке файла. Еe также можно использовать для [быстрого перехода](../../features.md#bystryi-perekhod-po-tekstu) к началу миссии.
 
 ### Вставлять оригинальные имена миссий
 
-When this option is checked, the disassembler adds the [mission title](../../features.md#custom-mission-titles) in the comment for the opcode `start_mission` and for the line `DEFINE MISSION` in the file header.
+Когда данная опция включена, декомпилятор добавляет заранее определенные [имена миссий](../../features.md#ispolzovanie-originalnykh-imen-missii) как комментарии к `start_mission`, а также к строке `DEFINE MISSION` в заголовке файла.
 
 ### Добавлять дополнительную информацию в SCM
 
-If this option is checked the compiler adds extra information at the end of the resulting file. This info will be used later when this file is disassembled back to restore the source closer to the original. The following data is stored: 
+При включении данной опции компилятор сохраняет информацию о скрипте в теле скомпилированного файла. Эта информация используется в дальнейшем при дизассемблировании для достижения максимального соответствия оригиналу:
 
-* [HEX..END](../../coding/hex..end.md) constructs offsets
-* [global variables](../../coding/variables.md#global-variables) names
-* full source code \(use [$NOSOURCE](../../coding/directives.md#usdnosource) to disable\)
-* current game
+* адреса конструкций [HEX..END](../../coding/hex..end.md)
+* имена [глобальных переменных](../../coding/variables.md#globalnye-peremennye)
+* оригинальный исходный код \(см. также [$NOSOURCE](../../coding/directives.md#usdnosource)\)
+* [режим редактирования](../../edit-modes.md)
 
 {% hint style="info" %}
-The file compiled with extra information can not be open with Sanny Builder prior to v3.00 \(except the case when `ignore_unknown` option is enabled\).
+Скрипт, скомпилированный с дополнительной информацией, нельзя открыть в версиях Sanny Builder ранее v3.0 \(кроме случая включения [опции](../../console.md#ignore_unknown) `ignore_unknown`\).
 {% endhint %}
 
