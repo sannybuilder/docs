@@ -1,60 +1,66 @@
 # Formats
 
-Here you can set up source file names, labels format, and identifiers case.
+Here you can set up source file names, labels format, letter case for string literals, etc.
 
 ![](../../.gitbook/assets/formats_page.png)
 
 ## File Name Format
 
+Formats for files produced by the disassembler or the compiler.
+
 ![](../../.gitbook/assets/form_form.png)
 
-There the file name masks are present. The upper line contains path and name of the text file which is created at decompiling. Bottom lines contain paths and names of two binary files `SCM` and `IMG` which are created at compiling. All lines have the same syntax. It uses the special words meaning a part of the full file name:
+The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` \(if the [edit mode](../../edit-modes.md) is `GTA SA`\) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
 
-`$dir` – file path   
-`$name` – file name   
-`$ext` – file extension
+`$dir` – the file path   
+`$name` – the file name   
+`$ext` – the file extension
 
-E.g. if you decompile the file `C:\MyDir\main.scm`, then
+E.g. if you disassemble the file `C:\MyDir\main.scm`, then
 
 `$dir` is `C:\MyDir`   
 `$name` is `main`   
-`$ext` is `.scm` So, if the mask is `$dir$name.txt`, the output file will be named `C:\MyDir\main.txt`
+`$ext` is `.scm` 
+
+If the format is `$dir\$name.txt`, the output file is named `C:\MyDir\main.txt`.
 
 ## Label Name Format
 
-![](../../.gitbook/assets/form_label.png)
+Formats for label names used during disassembling.
 
-Here you may choose one of the various name formats for the labels used at decompiling.
+![](../../.gitbook/assets/form_label.png)
 
 ### Global Offset
 
-all labels will have a numeric name, for example `@12345`. The number means this label’s offset in the file being decompiled.
+A label name is numeric e.g. `@12345`. The number is the offset of the label from the beginning of the source file.
 
-### Thread+Local Offset
+### Script+Local Offset
 
-label name will consist of two parts: a name of the thread where the label is \(the `name_thread` opcode is used for this\), and additionally offset from this thread’s beginning, for example `@MAIN_12`.
+A label name includes a name of the script where the label is located \(as defined with the `name_thread` command\) and the offset from the beginning of the script, e.g. `@MAIN_12`.
 
-### Thread + Global Offset
+### Script+Global Offset
 
-this option is similar to the previous one, except that after the thread name there will be not a local offset but the global one \(as the first case\), for example `@HELP_34567`.
+A label name includes a name of the script where the label is located \(as defined with the `name_thread` command\) and the offset from the beginning of the source file, e.g. `@MAIN_12345`.
 
-If you want the offsets to be hexadecimal, select the proper option. By default, all offsets are decimal.
+{% hint style="info" %}
+If you want the offsets to be hexadecimal, select the checkbox at the bottom.
+{% endhint %}
 
 ## Custom Names
 
+These options instruct the disassembler to use custom names defined by the user in the external files.
+
 ![](../../.gitbook/assets/form_names.png)
 
-These options make the decompiler use or not the custom names for the various code elements.
+The file `CustomLabels.ini` contains the list of [label names](../../coding/data-types.md#labels) and their offsets. If the disassembler finds a match between the label offset in the source file and the offset defined in the INI file it gives this label a name associated with this offset.
 
-The labels names are contained in the file `CustomLabels.ini` in the folder `SB\data`. This file contains the list of labels names and offsets. If the first box checked, the decompiler names the label as defined.
+The file `CustomVariables.ini` contains the list of [global variables](../../coding/variables.md#global-variables) addresses and their custom names. The disassembler uses this file to name global variables.
 
-The variables names are present in the file `CustomVariables.ini` for each game. It contains the list of [global variables](../../coding/variables.md#global-variables) addresses and their custom names. If this box checked, the decompiler uses this file to name the global variables.
-
-The arrays names list are present in the file `CustomArrays.ini`. Its syntax is as follows: the first number is the global variable name which is the first element of the array \(`array name`\), the second – `array size`, the third – `custom name`. It helps the decompiler to recognize a global variable as an array element and add the index to it.
+The file `CustomArrays.ini` contains names of the arrays in the following syntax: the first number is the global variable address which is the first element of the array, then the array size, then a custom name. It helps the disassembler to recognize [array elements](../../coding/arrays.md#using-constant-indexes).
 
 ## Case Converting
 
 ![](../../.gitbook/assets/form_case.png)
 
-This option has two meanings. The decompiler names the global variables, labels, arrays using the selected letter case. The compiler writes the strings in the `SCM` using the selected letter case as well.
+This option serves a dual purpose. The disassembler names [global variables](../../coding/variables.md#global-variables), [labels](../../coding/data-types.md#labels), [arrays](../../coding/arrays.md) using the selected letter case. The compiler writes [string literals](../../coding/data-types.md#string-literals) using the selected case too.
 

@@ -36,8 +36,6 @@ You may associate different file extensions with Sanny Builder. When a checkbox 
 
 ![](../../.gitbook/assets/main_opt.png)
 
-Here you see the options of the disassembler and the compiler.
-
 ### Always overwrite output file
 
 This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name \(e.g. `main[0].txt`\). 
