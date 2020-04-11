@@ -1,60 +1,72 @@
 # Форматирование
 
-Here you can set up source file names, labels format, and identifiers case.
+На данной вкладке вы можете настроить имена для выходных файлов, форматы меток, регистры строковых литералов и т.д.
 
-![](../../.gitbook/assets/formats_page.png)
+![](../../.gitbook/assets/nastroiki_1.png)
 
 ## Имена файлов
 
-![](../../.gitbook/assets/form_form.png)
+Настройка для имен файлов, получаемых после дизассемблирования и компиляции. 
 
-There the file name masks are present. The upper line contains path and name of the text file which is created at decompiling. Bottom lines contain paths and names of two binary files `SCM` and `IMG` which are created at compiling. All lines have the same syntax. It uses the special words meaning a part of the full file name:
+![](../../.gitbook/assets/nastroiki_2.png)
 
-`$dir` – file path   
-`$name` – file name   
-`$ext` – file extension
+В верхнем поле указывается формат для текстового файла, в который записывается содержимое дизассемблированого скрипта. В нижних двух – форматы для бинарных файлов `SCM` и `IMG` \(в [режиме](../../edit-modes.md) `GTA SA`\), содержащих скомпилированные скрипты. 
 
-E.g. if you decompile the file `C:\MyDir\main.scm`, then
+Все поля имеют общий синтаксис. Можно использовать специальные слова, которые представляют часть имени исходного файла:
 
-`$dir` is `C:\MyDir`   
-`$name` is `main`   
-`$ext` is `.scm` So, if the mask is `$dir$name.txt`, the output file will be named `C:\MyDir\main.txt`
+`$dir` – путь к исходному файлу   
+`$name` – имя исходного файла  
+`$ext` – расширение исходного файла
+
+Например, если вы дизассемблируете файл `C:\MyDir\main.scm`, то
+
+`$dir` это `C:\MyDir`   
+`$name` это `main`   
+`$ext` это `.scm` 
+
+Если в верхнем поле указано `$dir\$name.txt`, то текстовый файл будет сохранен как `C:\MyDir\main.txt`
 
 ## Имена меток
 
-![](../../.gitbook/assets/form_label.png)
+Формат меток, который используется при дизассемблировании скриптов.
 
-Here you may choose one of the various name formats for the labels used at decompiling.
+![](../../.gitbook/assets/format02.gif)
 
 ### Смещение от начала файла
 
-all labels will have a numeric name, for example `@12345`. The number means this label’s offset in the file being decompiled.
+Имена меток представляют собой адрес этих меток в исходном файле, например `@12345`.
 
 ### Имя скрипта+Смещение от его начала
 
-label name will consist of two parts: a name of the thread where the label is \(the `name_thread` opcode is used for this\), and additionally offset from this thread’s beginning, for example `@MAIN_12`.
+Имена меток состоят из имени скрипта, в котором они находятся \(определяется командой `name_thread`\) и смещения от начала скрипта. Например, `@MAIN_12`.
 
-### Имя потока+Смещение от начала файла
+### Имя скрипта+Смещение от начала файла
 
-this option is similar to the previous one, except that after the thread name there will be not a local offset but the global one \(as the first case\), for example `@HELP_34567`.
+Имена меток состоят из имени скрипта, в котором они находятся \(определяется командой `name_thread`\) и смещения от начала исходного файла. Например, `@MAIN_12345`.
 
-If you want the offsets to be hexadecimal, select the proper option. By default, all offsets are decimal.
+{% hint style="info" %}
+Для вывода смещений в 16-ричном формате, поставьте нижнюю галочку. 
+{% endhint %}
 
 ## Собственные имена
 
-![](../../.gitbook/assets/form_names.png)
+Опции, которые указывают дизассемблеру использовать имена, определенные пользователем во внешних файлах.
 
-These options make the decompiler use or not the custom names for the various code elements.
+![](../../.gitbook/assets/format03.gif)
 
-The labels names are contained in the file `CustomLabels.ini` in the folder `SB\data`. This file contains the list of labels names and offsets. If the first box checked, the decompiler names the label as defined.
+Имена [меток ](../../coding/data-types.md#metki)содержатся в файле `CustomLabels.ini`. Файл представляет собой список имен меток и их смещений от начала файла. Если данная опция выбрана, дизассемблер при соответствии позиции метки в исходном файле одной из позиций в данном списке, назовет метку так, как указано в списке. 
 
-The variables names are present in the file `CustomVariables.ini` for each game. It contains the list of [global variables](../../coding/variables.md#global-variables) addresses and their custom names. If this box checked, the decompiler uses this file to name the global variables.
+Имена глобальных [переменных](../../coding/variables.md#globalnye-peremennye) содержатся в файле `CustomVariables.ini` для каждого [режима редактирования](../../edit-modes.md). Файл представляет собой список оригинальных числовых имен глобальных переменных \(`DMA`\) и их текстовые эквиваленты. При включении данной опции дизассемблер будет называть переменные указанными именами.
 
-The arrays names list are present in the file `CustomArrays.ini`. Its syntax is as follows: the first number is the global variable name which is the first element of the array \(`array name`\), the second – `array size`, the third – `custom name`. It helps the decompiler to recognize a global variable as an array element and add the index to it.
+Имена массивов содержатся в файле `CustomArrays.ini`. Формат файла следующий: первым числом на строке стоит оригинальное имя переменной – начало массива, затем через пробел количество элементов в массиве – размер, затем текстовое имя. Данная опция предназначена для того, чтобы дизассемблер распознавал [элементы массива](../../coding/arrays.md#ispolzovanie-celochislennykh-konstant).
+
+{% hint style="info" %}
+Содержимое файлов `CustomLabels.ini`, `CustomVariables.ini`, `CustomArrays.ini` в комплекте Sanny Builder составлено для оригинального`main.scm` версии 1.0
+{% endhint %}
 
 ## Регистр букв
 
-![](../../.gitbook/assets/form_case.png)
+![](../../.gitbook/assets/format04.gif)
 
-This option has two meanings. The decompiler names the global variables, labels, arrays using the selected letter case. The compiler writes the strings in the `SCM` using the selected letter case as well.
+Эта опция имеет 2 значения. Дизассемблер, используя данную опцию, будет именовать [глобальные переменные](../../coding/variables.md#globalnye-peremennye), [метки](../../coding/data-types.md#metki), [массивы ](../../coding/arrays.md)в указанном регистре букв. Компилятор будет записывать [строковые литералы](../../coding/data-types.md#strokovye-literaly) также в указанном регистре.
 
