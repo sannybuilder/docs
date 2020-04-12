@@ -1,6 +1,6 @@
 # Горячие клавиши
 
-![](../../.gitbook/assets/hotkeys.png)
+![](../../.gitbook/assets/hotkeys%20%281%29.png)
 
-Some [hotkeys](../../hotkeys.md) are customizable for your comfort. You may set up new keyboard shortcuts for the IDE tools, editor actions and some other features.
+Некоторые [горячие клавиши](../../hotkeys.md) могут быть изменены для вашего удобства. Вы можете установить новые сочетания кнопок для вызова инструментов, действий редактора и некоторых других возможностей.
 
