@@ -1,44 +1,42 @@
 # Редактор
 
-Here you can change the IDE settings.
+На данной вкладке вы можете изменить настройки IDE.
 
-![](../../.gitbook/assets/editor_page1.png)
+![](../../.gitbook/assets/editor00.gif)
 
-## Цвет редактора
+## Цвета
 
-![](../../.gitbook/assets/editor_colors.png)
+Следующие опции позволяют установить цвета различных элементов окна редактора.
 
-The following options allow to set up different colors for the editor.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_colors.png)
+![](../../.gitbook/assets/editor01.gif)
 
-`Active line` - the background color of the line with the cursor  
-`Gutter` - the background color of the area on the left side of the code area \(with line numbers\)  
-`Editor` - the background color of the code area
+`Активная строка` - цвет строки, на которой стоит курсор  
+`Отступ` - цвет левого края редактора  
+`Поле редактора` - фон текста в редакторе
 
 ## Глубина просмотра кода
 
-![](../../.gitbook/assets/editor_look.png)
+![](../../.gitbook/assets/editor02.gif)
 
-The code scan distance \(looking depth\) is used when you press `Ctrl+Space` to find [constants](../../coding/constants.md), labels and [variables](../../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
+Значение глубины просмотра используется при построении списка [констант](../../coding/constants.md), [меток](../../coding/data-types.md#metki) и [переменных](../../coding/variables.md) после нажатия комбинации `Ctrl+Space`. Это значение говорит редактору, как много строк кода нужно просмотреть в обе стороны от текущей строки. Если указано значение `0`, программа будет искать указанные элементы по всему файлу.
 
-If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_opt.png)
+Если галочка внизу поставлена, список меток, моделей и переменных будет появляться автоматически после набора  `@`, `$`, `#`.
 
 ## Шрифт
 
-![](../../.gitbook/assets/editor_font.png)
+![](../../.gitbook/assets/editor04.gif)
 
-Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
+Здесь вы можете выбрать шрифт и его настройки для редактора. Sanny Builder поддерживает только [моноширинные шрифты](https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%BE%D1%88%D0%B8%D1%80%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9_%D1%88%D1%80%D0%B8%D1%84%D1%82). Строка `AaBbCcDd` отражает текущие настройки.
 
 ## Настройки
 
-![](../../.gitbook/assets/editor_opt.png)
+![](../../.gitbook/assets/editor03.gif)
 
-`Show main panel` – toggle the main toolbar  
-`Show opcode info` – make the editor display important information in the status bar \(number of expecting parameters for an opcode, model ID, variable type, etc\)  
-`Line numbers` – show line numbers in the left padding area  
-`Show gutter border` – display the border line on the right side of the left padding area. Uncheck this option to increase the available space visually.  
-`Load last closed file at startup` – open the last closed file at startup  
-`Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked.  
-`Confirm when exit` – confirm exit to prevent occasional program termination.
-
-## 
+`Показывать главную панель` – показать/спрятать панель с кнопками в главном окне редактора  
+`Показывать информацию об опкодах` – отображать в статусной строке внизу экрана различную информацию: кол-во параметров опкода, номер модели, тип переменной и т.д.  
+`Показывать номера строк` – отображать номера строк в отступе в левой части редактора   
+`Показывать границу отступа` – показать границу для отступа в левой части редактора. Отключите данную опцию, чтобы визуально увеличить пространство редактора  
+`Открывать при запуске последний файл` – открывать при запуске программы последний закрытый файл, если таковой существует  
+`Открывать все закрытые файлы` – открывать разом все закрытые файлы при запуске. Данная опция может быть выбрана только вместе с `Открывать при запуске последний файл`  
+`Подтверждать выход` – включить подтверждение для закрытия программы. Полезно для предотвращения случайного выхода
 
