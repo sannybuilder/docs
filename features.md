@@ -49,7 +49,7 @@ Sanny Builder подсвечивает код разными цветами, ч�
 
 ## Переиспользование фрагментов кода
 
-A code snippet is the group of lines that are inserted in the editor when you type a snippet name \(e.g.  `load`\) and press `F2` . The editor will add the following piece of the code:
+Фрагменты кода - это заранее подготовленный код, которой вставляется в редактор, после ввода имени фрагмента \(например, `load`\) и нажатия `F2`. Редактор вставит следующий код:
 
 ```text
 #.Load
@@ -61,16 +61,17 @@ while not #.Available
 end
 ```
 
-All snippets are contained in the file `macroes.txt`. This file has the following syntax:  
-A snippet name is written in a separate line. The equal sign `=` follows the name. After the equal sign you can also add a short hint. The snippet code starts at the next line, each line begins with the equals sign. The cursor position is marked with the `|` character
+Все фрагменты содержатся в файле `macroes.txt`. Этот файл имеет следующий синтаксис:
 
-Additionally, it's possible to save the code snippet in the file `macroes.txt` directly from the editor. Select the code and click the `Service->Add macros` menu. Enter the name of a new snippet, the description \(optionally\) in the appeared dialog window and press the `OK` button. The snippet is ready to be used.
+`Имя фрагмента` пишется отдельной строкой. После имени должен стоять знак `=`. После `=` можно добавить краткое описание фрагмента. Поддерживаются только однострочные описания. После строки с именем записывается содержимое фрагмента, каждая строка начинается знаком `=`. Место, куда должен быть помещен курсор после вставки, обозначается символом `|`.
 
-To call the snippet list, press `Ctrl+J`.
+Также можно добавить новый фрагмент в файл `macroes.txt` прямо из редактора. Для этого нужно выделить нужный кусок текста и выбрать меню `Сервис->Добавить макрос`. В появившемся диалоговом окне вы должны ввести имя фрагмента \(также можно добавить описание\) и нажать кнопку `OK`. Новый фрагмент будет сразу же готов к использованию.
+
+Вызвать список фрагментов можно комбинацией `Ctrl+J`.
 
 ## Запись и воспроизведение нажатий кнопок
 
-You can record a key pressing sequence \(macro\) and playback it later. Consider the following code:
+Можно записывать последовательность нажатия клавиш \(макрос\) и воспроизводить ее позднее. Например, есть следующий код:
 
 ```text
 $Actor = Actor.Create(CivMale, #MALE01, 100.0, 100.0, 10.0)
@@ -81,31 +82,29 @@ $Killer = Actor.Create(CivMale, #MALE01, 140.0, 100.0, 50.0)
 $ActorWithoutGun = Actor.Create(CivMale, #MALE01, 150.0, 100.0, 60.0) 
 ```
 
-Say, you need to exchange the actor's handles in each pair \(i.e have `$ActorWithGun` instead of `$Actor`, and vice versa\).
+Допустим, нужно обменять переменные в каждой паре строк \(поставить вместо `$Actor` `$ActorWithGun`, а вместо `$ActorWithGun` - `$Actor` и т.д.\).
 
-Place the cursor in the first line before `$Actor` and press `Ctrl+M`. The editor immediately begins recording all keys - so be careful!
+Поставьте курсор на первую строку и нажмите `Ctrl+M`. С этого момента редактор запоминает все нажатия клавиш, так что будьте осторожны.
 
-1. Press and hold `Ctrl` and press the `Right Arrow` button once 
-2. Press `Shift+Home` and `Ctrl+Ins`.
-3. Press the `Down Arrow` button. The cursor must be on the second line with the global variable in the clipboard
-4. Press `Ctrl+Right Arrow` and `Shift+Ins`.
-5. Press `Ctrl+Left Arrow`, `Shift+Home`, `Ctrl+Ins` and `Delete`
-6. Press the `Up Arrow` button
-7. Press `Ctrl+Shift+Right Arrow` and `Shift+Ins`
-8. Press the `Home` button.
+1. Зажмите `Ctrl` и нажмите один раз `стрелку вправо`. `Ctrl` нужен так как строки разной длины. 
+2. Теперь нажмите `Shift+Home` и `Ctrl+Ins`. 
+3. Нажмите `стрелку вниз`. Курсор должен оказаться на второй строке, при этом глобальная переменная будет в буфере обмена. 
+4. Нажмите `Ctrl+стрелка вправо` и `Shift+Ins`.
+5. Нажмите `Ctrl+стрелка влево`, `Shift+Home`, `Ctrl+Ins` и кнопку `Delete`
+6. Нажмите `стрелку вверх`
+7. Нажмите `Ctrl+Shift+стрелка вправо` и `Shift+Ins`
+8. Нажмите кнопку `Home`.
 
-Now the first two lines should look like these:
+Теперь первые две строки выглядят так:
 
 ```text
 $ActorWithGun = Actor.Create(CivMale, 100.0, 100.0, 10.0)
 $Actor = Actor.Create(CivMale, 110.0, 100.0, 20.0)
 ```
 
-with the cursor being in the beginning of the first line. Now press `Ctrl+M` to stop recording.
+и курсор стоит в начале первой строки. Теперь нажмите `Ctrl+M`. Макрос записан. Теперь можно воспроизводить записанную последовательность комбинацией `Ctrl+P`. Установите курсор на третью строку, нажмите `Ctrl+P`, и переменные `$Gang01` и `$Gang02` поменяются местами.
 
-You can playback the recorded sequence by pressing `Ctrl+P`. Place the cursor in the beginning of the third line, press `Ctrl+P` and the actor handles will be swapped.
-
-During recording, you can pause/unpause it by pressing `Ctrl+P`.
+Во время записи макроса можно поставить/снять запись на паузу нажатием `Ctrl+P`.
 
 ## Замена номеров миссий на их названия
 
