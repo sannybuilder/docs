@@ -1,50 +1,51 @@
 # Возможности
 
-Sanny Builder provides the end-user the following features:
+Sanny Builder как среда программирования предоставляет пользователю следующие возможности.
 
 ## Подсветка синтаксиса
 
-Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](editor/options/syntax-highlighting.md).
+Sanny Builder подсвечивает код разными цветами, чтобы облегчить его чтение. Настройки подсветки могут быть изменены в [опциях программы](editor/options/syntax-highlighting.md).
 
 ## Быстрый переход по тексту
 
-You can bookmark a line by pressing `Ctrl+Shift+0..9` and then get back to it by pressing `Ctrl+0..9`. To delete all bookmarks, use the menu option `Edit->Clear All Bookmarks`. 
+Текущую строку можно запомнить, если поставить закладку нажатием `Ctrl+Shift+0..9`, а затем вернуться к ней нажатием `Ctrl+0..9`.   
+Удалить все закладки можно через меню `Правка -> Удалить закладки`.
 
-Alternatively you can go to a particular line using the `Go To Line` feature. Press `Ctrl+G`, enter the line number and the editor will move the cursor to it.
+Также можно перейти к строке по ее номеру через опцию `Перейти...`. Она вызывается комбинацией `Ctrl+G`. Введите порядковый номер нужной строки, и редактор быстро переместит Вас к ней.
 
 ## Моментальный поиск
 
-The InstaSearch feature allows to find a word or a label directly in the editor without using the `Find` dialog box.
+Моментальный поиск позволяет находить слово или метку прямо в редакторе без вызова диалога поиска.
 
-To find an occurrence of the word under the cursor, press `Ctrl+Num6` to start searching it below in a code, or `Ctrl+Num4` to search above. The cursor will immediately move to the line where such word is found. Keep pressing `Ctrl+Num4/Num6` to find other occurrences of this word.
+Чтобы найти в тексте другое вхождение слова под курсором, нажмите `Ctrl+Num6`, чтобы искать его ниже по тексту или `Ctrl+Num4`, чтобы искать выше. Курсор немедленно переместится к строке, где есть такое слово. Продолжайте нажимать `Ctrl+Num4/Num6`, чтобы найти другие строки с нужным словом.
 
-To jump to the line with a label \(e.g, `:MyLabel`\), put the cursor on the label reference \(`@MyLabel`\) and press `Ctrl+Num2`. The editor will move the cursor to the line with this label.
+Чтобы перейти к строке, обозначенной меткой \(например, `:MyLabel`\), поместите курсор на ссылку на эту метку \(`@MyLabel`\) и нажмите `Ctrl+Num2`. Редактор немедленно переместит курсор к строке с искомой меткой.
 
-If InstaSearch did not find the word in the code, the cursor position remains unchanged.
+Если позиция курсора не изменилась, это означает, что моментальный поиск не смог найти нужное слово в тексте.
 
-Before changing the cursor position InstaSearch remembers it, so if you want to return back press `Ctrl+Num8`.
+Перед изменением позиции курсора моментальный поиск запоминает текущую позицию, и если вы решили вернуться на предыдущее место, нажмите `Ctrl+Num8`.
 
 ## Показ различной информации о текущем опкоде
 
-Sanny Builder displays a number of parameters for the opcode, a numeric value of the [model name](coding/data-types.md#model-names) under the cursor in the status bar when the option `Show opcode info` is enabled.
+При включенной [опции](editor/options/editor.md#nastroiki) `Показывать информацию об опкодах` Sanny Builder показывает количество параметров для опкода и, если курсор находится над [именем модели](coding/data-types.md#imena-modelei), ее ID \(только для моделей из IDE-файлов и только когда определена [директория игры](editor/options/general.md#direktoriya-igry)\).
 
 ## Конвертирование исходников SA Mission Builder
 
-Sanny Builder supports the SAMB 0.33 syntax. To use the converter, open the source file in Sanny Builder and select the menu: `Tools->Code converter->MB->SB`. 
+В текущей версии поддерживается формат SAMB 0.33. Для конвертации откройте файл в Sanny Builder и выберите пункт меню `Сервис->Конвертация->MB->SB`. 
+
+Также можно конвертировать отдельный, выделенный участок кода.
 
 {% hint style="info" %}
-The converter uses the file `MB.ini` from the Sanny install directory which contains the variables used by SAMB and their memory addresses. If you added your own variables in the file `variables.ini` \(shipped with SAMB 0.33\), copy them into the `MB.ini` file. 
+При конвертировании используется файл `MB.ini`, в котором содержатся текстовые имена переменных и значения их адресов. Если Вы добавляли свои переменные в файл `variables.ini` в SAMB 0.33, используйте его \(переименовав в`MB.ini`\).
 {% endhint %}
 
 ## Поиск нужного опкода
 
-Use the built-in [Opcode Search tool](opcode-search-tool.md) to find an opcode you need.
+Используйте программу [поиска опкодов](opcode-search-tool.md), чтобы найти нужный опкод.
 
 ## Изменение координат и угла разворота игрока
 
-Press `F4` when GTA San Andreas is running and the `Coords Manager` window will appear. Here you can read the player's coordinates from the game memory and modify them. 
-
-In the top edit line you can enter the XYZ coordinates, delimited by the space character  `` or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
+Нажмите `Ctrl+Alt+1`, когда запущена игра, и появится окно менеджера. Здесь вы можете установить новые координаты и угол разворота игрока и скопировать текущие. В верхнем поле ввода вы можете указать сразу 3 координаты, разделив их пробелом или `,`. Также вы можете быстро вставить координаты игрока в редакторе комбинацией `Ctrl+Shift+C`. Вставка угла разворота \(`z_angle`\) в редакторе производится нажатием `Ctrl+Shift+E`.
 
 ## Переиспользование фрагментов кода
 
