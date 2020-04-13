@@ -26,7 +26,7 @@ Before changing the cursor position InstaSearch remembers it, so if you want to 
 
 ## Displaying Information about Opcode
 
-Sanny Builder displays a number of parameters for the opcode, a numeric value of the [model name](coding/data-types.md#model-names) under the cursor in the status bar when the option `Show opcode info` is enabled.
+When the `Show opcode info` [option](editor/options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, [model](coding/data-types.md#model-names) IDs \(when the [game directory](editor/options/general.md#game-directory) is set up\), etc.
 
 ## SA Mission Builder Source Code Converter
 
@@ -42,9 +42,9 @@ Use the built-in [Opcode Search tool](opcode-search-tool.md) to find an opcode y
 
 ## Player Coordinates Management
 
-Press `F4` when GTA San Andreas is running and the `Coords Manager` window will appear. Here you can read the player's coordinates from the game memory and modify them. 
+Press `Ctrl+Alt+1` when GTA San Andreas is running and the Coords Manager window will appear. You can read the player's coordinates from the game memory and modify them there. 
 
-In the top edit line you can enter the XYZ coordinates, delimited by the space character  `` or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
+In the top edit line you can enter the XYZ coordinates, delimited by the space character or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
 
 ## Code Templates
 
