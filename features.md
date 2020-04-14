@@ -126,7 +126,9 @@ DEFINE MISSION 10 AT @MYMISSION
 
 ## Использование оригинальных имен миссий
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes.md). Mission titles are stored in the `missions.txt` file located in the `data\<game>` folder. This file is used by the decompiler to add the title for each mission entry. If the `main.scm` file contains custom-made missions you may edit the `missions.txt` to have the correct title order after decompiling.
+Начиная с версии 3.2.0 Sanny Builder поддерживает оригинальные названия миссий для каждого [режима редактирования](edit-modes.md). Названия содержатся в файле `missions.txt`. Этот файл используется при дизассемблировании, чтобы добавить название миссии как комментарий рядом командой определения \(`DEFINE MISSION`\) или вызова миссии \(`start_mission`\). 
+
+При дизассемблировании `main.scm` с измененными миссиями, отредактируйте соответствующий файл `missions.txt`, чтобы названий миссий соответствовали скрипту.
 
 ## Многоязычный интерфейс
 
