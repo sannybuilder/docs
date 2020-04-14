@@ -124,7 +124,9 @@ Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to 
 
 ## Custom Mission Titles
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes.md). Mission titles are stored in the `missions.txt` file located in the `data\<game>` folder. This file is used by the decompiler to add the title for each mission entry. If the `main.scm` file contains custom-made missions you may edit the `missions.txt` to have the correct title order after decompiling.
+Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes.md). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
+
+If a `SCM` file contains custom-made missions you may edit the `missions.txt` to have the correct titles after disassembling.
 
 ## Multilingual Interface
 
