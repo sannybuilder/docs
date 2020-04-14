@@ -108,19 +108,21 @@ $Actor = Actor.Create(CivMale, 110.0, 100.0, 20.0)
 
 ## Замена номеров миссий на их названия
 
-Sanny Builder allows using a mission name in the opcode `start_mission`. The mission name is the label defined with a `DEFINE MISSION` command. Say, you have:
+Sanny Builder допускает использовать имя миссии в команде `start_mission`. Именем миссии явлется ее метка, которая определена в блоке `DEFINE MISSION`.
+
+Например, у вас есть 
 
 ```text
 DEFINE MISSION 10 AT @MYMISSION
 ```
 
-Instead of `start_mission 10` you can write`start_mission MYMISSION`.
+Вы можете использовать вместо `start_mission 10` команду `start_mission MYMISSION`.
 
-There is also the [Replace Mission Numbers](editor/options/general.md#replace-mission-numbers) option. When it's enabled, the decompiler automatically replaces all mission numbers with their names.
+Также существует [опция](editor/options/general.md#zamenyat-nomera-missii) `Заменять номера миссий`. Когда она включена, дизассемблер автоматически заменяет все номера миссий в коде на их имена. Эта опция дает возможность безболезненно удалять миссии, не заботясь о переименовывании номеров в коде.
 
-To call the mission names list, press `Ctrl+Space`. The cursor has to be directly after the `start_mission` command.
+Для дополнительного удобства после команды `start_mission` можно вызвать список имен миссий нажатием `Ctrl+пробел`.
 
-Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to the mission code when the cursor is under the mission name.
+См. также [Быстрый переход к миссии](features.md#momentalnyi-poisk).
 
 ## Использование оригинальных имен миссий
 

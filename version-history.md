@@ -292,7 +292,7 @@
 * добавлен показ списка переменных и меток
 * добавлена поддержка циклов \( оператор [FOR](coding/loops.md#for-end) \)
 * миссии можно запускать по их имени \(`start_mission MYMISSION`\), где `MYMISSION` - это имя стартовой метки \(`DEFINE MISSION 100 at @MYMISSION` \)
-* доступен список импортируемых моделей \(`DEFINE OBJECTS`\) по `Ctrl+Space`
+* доступен список импортируемых моделей \(`DEFINE OBJECTS`\) по `Ctrl+пробел`
 * новый [оператор](coding/conditions.md#operatory-sravneniya) `<>`
 * если при декомпиляции не найден `script.img`, используется оригинальный файл
 * для [массивов](coding/arrays.md) добавлен тип `handle`

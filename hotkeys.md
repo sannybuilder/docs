@@ -193,7 +193,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Space</code>
+      <td style="text-align:left"><code>Ctrl+&#x43F;&#x440;&#x43E;&#x431;&#x435;&#x43B;</code>
       </td>
       <td style="text-align:left">show the list of classes / class members / models / labels / variables
         / missions</td>
