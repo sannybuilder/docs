@@ -18,23 +18,24 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F5</code>
       </td>
-      <td style="text-align:left">open file as a script and decompile</td>
+      <td style="text-align:left">open file as a script and disassemble</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F6</code>
       </td>
-      <td style="text-align:left">compile the text to a script file</td>
+      <td style="text-align:left">compile the editor content to a script file</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F7</code>
       </td>
-      <td style="text-align:left">compile the text to a script file and copy the file to the scripts directory
-        for the current game</td>
+      <td style="text-align:left">compile the editor content to a script file and copy the file to the scripts
+        directory for the current game</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F8</code>
       </td>
-      <td style="text-align:left">run the game</td>
+      <td style="text-align:left">run the game for the current <a href="edit-modes.md">edit mode</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F10</code>
@@ -44,7 +45,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F12</code>
       </td>
-      <td style="text-align:left">open the help file</td>
+      <td style="text-align:left">open documentation</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Text</b>
