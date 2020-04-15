@@ -132,44 +132,46 @@ DEFINE MISSION 10 AT @MYMISSION
 
 ## Многоязычный интерфейс
 
-Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](editor/options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
+Sanny Builder обладает интерфейсом, переведенным на 15 языков. Переключить язык можно в [опциях](editor/options/general.md#yazyk-interfeisa) \(`F10`\). Информацию по созданию или изменению переводов можно найти на [sannybuilder/translations](https://github.com/sannybuilder/translations).
 
 ## Меню внешних приложений
 
-You can add up to `9` tools which can be executed whenever you need them. Every tool has its own hotkey for your convenience. You may also pass the parameters to your tool. To pass the name of the currently opened file use the special word `$SB_FileName`.
+Вы можете добавить в меню `Инструменты` до `9` внешних приложений и запускать по мере необходимости. Каждому приложению можно присвоить комбинацию горячих клавиш и параметры, необходимые для запуска.
+
+Для передачи в запускаемое приложение пути к открытому в редакторе файлу используйте специальное слово: `$SB_FileName`.
 
 ## Комментирование кода
 
-Comments start with the double slash `//`, as seen in other programming languages. Everything after `//` to the end of the line is ignored by the compiler.
+Комментарии обозначаются в коде двумя слэшами `//`. Все, что идет после `//` до конца строки, игнорируется компилятором.
 
-To comment out multiple lines or a part of the line, use block comments `{}`:
-
-```text
-0001: wait  {comments here} 0 ms
-```
-
-Since version 3.06 Sanny Builder also supports the C++-like comments `/* */`.
+Для того чтобы закомментировать несколько строк сразу либо только часть строки \(например в середине или начале\), используйте блочные комментарии `{}` 
 
 ```text
-0001: wait  /* comments here */ 0 ms
+0001: wait  {это игнорируется} 0 ms
 ```
 
-To comment out or uncomment multiple lines select them and press `Ctrl+Q`.
+Начиная с версии 3.06 Sanny Builder поддерживает C++-подобные комментарии `/* */`. 
+
+```text
+0001: wait /* комментарий */ 0 ms
+```
+
+Также вы можете закомментировать несколько строк, выделив их и нажав `Ctrl+Q`. Для раскоментирования выделите текст и нажмите `Ctrl+Q` еще раз.
 
 ## Собственные имена для меток
 
-You can give labels custom names that do not depend on the decompiler configuration. The names are specified in the file `CustomLabels.ini` \(one for each game\).
+Вы можете присваивать меткам специфичные имена, которые не будут зависеть от [опций](editor/options/formats.md#imena-metok) дизассемблера. Такие имена содержатся в файле `CustomLabels.ini` \(отдельный для каждого [режима редактирования](edit-modes.md)\).
 
-File syntax:  
-`<label offset>=<custom name>`
+Формат файла:   
+`<адрес метки>=<имя>`
 
-If the decompiler finds a label at the specified offset, this label gets the given custom name.
+Если в дизассемблируемом файле есть метка по указанному адресу, она получит имя из файла.
 
-To find out the offset value set the labels format to [`Global Offset`](editor/options/formats.md#global-offset) in the options. After decompiling, a number in the label name is the offset value.
+Узнать адрес метки можно включив в [опциях](editor/options/formats.md#imena-metok) формат меток `Смещение от начала`. После дизассемблирования файла, число после слова `Label` и будет адресом метки.
 
 ## Проверка обновлений
 
-Sanny Builder is able to check if a new version is available. To use this feature go to menu `Help->Check for update...`. The editor will connect to a remote server and if a newer version is available it prompts the download and install. 
+Sanny Builder может проверить, доступна ли новая версия программы. Чтобы использовать эту возможность, пройдите в меню `Справка->Проверить обновления...`. Программа подключится к серверу обновлений и предложит скачать и установить обновление, если оно найдено. 
 
-The editor can also check for an update during startup if you enable this option in the updater window.
+Sanny Builder может автоматически проверять наличие обновления при запуске, если вы включите соответствующую опцию в окне меню обновлений.
 
