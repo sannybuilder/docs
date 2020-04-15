@@ -1,30 +1,30 @@
 # Режимы редактирования
 
-An **edit mode** is a set of options determining behavior of Sanny Builder when working with scripts of a particular game. Fact is, there is no game in the GTA series with the script format same to the others. So, each game requires special settings while editing scripts. That's the reason why the edit modes are introduced in Sanny Builder.
+**Режим редактирования** - это набор параметров, определяющих поведение Sanny Builder при работе со скриптами определенной игры. Суть в том, что в серии GTA нет двух игр с одинаковым форматом скриптов. Поэтому каждая игра требует особого подхода при редактировании скриптов. Это является основной причиной появления разных режимов работы Sanny Builder.
 
-An edit mode includes \(but not limited to\) the following options:
+Режим редактирования включает \(но не ограничен\) следующие параметры:
 
-* Sanny Builder disassemble a script file in a specific way
-* Sanny Builder can compile a script for the given game
-* you may run the game or read/change the player coordinates
+* Sanny Builder дизассемблирует скрипт особым образом
+* Sanny Builder может компилировать скрипты для выбранной игры
+* Sanny Builder может запускать игру и читать/менять координаты игрока
 
-By default, there are 7 different modes:
+По умолчанию в редакторе настроено 7 различных режимов:
 
 * `GTA III`
 * `GTA VC`
-* `GTA SA` \(for community named opcodes\)
+* `GTA SA` \(для опкодов с измененным порядком следования параметров\)
 * `GTA LCS`
 * `GTA VCS`
-* `SA Mobile` \(for Android and iOS versions\)
-* `GTA SA SCR` \(with original names for opcodes\)
+* `SA Mobile` \(для мобильной версии San Andreas\)
+* `GTA SA SCR` \(для оригинальных опкодов R\*\)
 
-You may add a new mode by manually editing the `games.xml` file  located in the `<SB>\data\ directory`.
+Вы можете добавлять собственные режимы редактирования путем изменения файла `games.xml`, расположенного в папке `Sanny Builder\data`.
 
-To switch the edit mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. Choose one and click it. Sanny Builder will reload all needed files and you may start working.
+Чтобы переключить режим редактирования кликните в правом нижнем углу программы. Появится список доступных режимов. Выберите нужный и кликните по нему. Sanny Builder загрузит все требуемые файлы и вы можете продолжить работу.
 
 ![](.gitbook/assets/edit_modes.png)
 
-Before disassembling or compiling a script, make sure that the correct edit mode is active. Even if the script is compiled with no errors, the game will crash when trying to read a script in different format.
+Перед дизассемблированием или компиляцией скрипта, убедитесь что выбрали режим редактирования, соответствующий скрипту. Даже если скрипт компилируется без ошибок, игра выдаст ошибку при попытке чтения скрипта другого формата.
 
-A compiled script file may have an information which game it is made for. So, if you decompile such a script in another edit mode being active, Sanny Builder will propose you to change the mode to the correct one. Declining this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
+Скомпилированный скрипт может содержать в себе информацию о том, для каком режиме он был написан. При попытке открыть такой скрипт Sanny Builder предложит вам автоматически перейти в правильный режим. Игнорирование этого предложения может вызвать ошибку при дизассемблировании, поскольку формат скрипта будет отличаться от ожидаемого.
 
