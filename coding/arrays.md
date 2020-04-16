@@ -91,6 +91,6 @@ $players[0].Build
 ```
 
 {% hint style="info" %}
-By default in the `GTA SA` [edit mode](../edit-modes.md), the disassembler prints array elements with the numbers as indexes. The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../console.md#constant_indexes) `CONSTANT_INDEXES`. 
+By default in the `GTA SA` [edit mode](../edit-modes/), the disassembler prints array elements with the numbers as indexes. The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../console.md#constant_indexes) `CONSTANT_INDEXES`. 
 {% endhint %}
 

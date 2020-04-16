@@ -124,7 +124,7 @@ Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to 
 
 ## Custom Mission Titles
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes.md). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
+Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes/). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
 
 If a `SCM` file contains custom-made missions you may edit the `missions.txt` to have the correct titles after disassembling.
 
@@ -153,17 +153,6 @@ Since version 3.06 Sanny Builder also supports the C++-like comments `/* */`.
 ```
 
 To comment out or uncomment multiple lines select them and press `Ctrl+Q`.
-
-## Custom Labels
-
-You can give labels custom names that do not depend on the disassembler [configuration](editor/options/formats.md#label-name-format). The names are specified in the file `CustomLabels.ini` \(one for each [edit mode](edit-modes.md)\).
-
-File syntax:  
-`<label offset>=<custom name>`
-
-If the disassembler finds a label at the specified offset, this label gets the given custom name.
-
-To find out the offset value change the labels format to [`Global Offset`](editor/options/formats.md#global-offset) in the options. After disassembling, a number in the label name is the offset value.
 
 ## Checking for updates
 

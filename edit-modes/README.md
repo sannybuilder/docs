@@ -22,7 +22,7 @@ You may add a new mode by manually editing the `games.xml` file  located in the 
 
 To switch the edit mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. Choose one and click it. Sanny Builder will reload all needed files and you may continue working.
 
-![](.gitbook/assets/edit_modes.png)
+![](../.gitbook/assets/edit_modes.png)
 
 Before disassembling or compiling a script, make sure that the correct edit mode is active. Even if the script is compiled with no errors, the game will crash when trying to read a script in different format.
 

@@ -24,7 +24,7 @@ Latest versions and updates are always available at [sannybuilder.com](https://s
 `\sa_mobile` - run as SA Mobile editor.
 
 {% hint style="info" %}
-You can also change the current [edit mode](edit-modes.md) in run-time.
+You can also change the current [edit mode](edit-modes/) in run-time.
 {% endhint %}
 
 `\debug` - enables the [debug options](console.md#running-with-the-debug-parameter)  

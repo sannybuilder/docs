@@ -27,13 +27,14 @@
   * [Syntax Highlighting](editor/options/syntax-highlighting.md)
   * [Hotkeys](editor/options/hotkeys.md)
 * [Features](features.md)
-* [Edit Modes](edit-modes.md)
+* [Edit Modes](edit-modes/README.md)
+  * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
+  * [CustomLabels.ini](edit-modes/customlabels.ini.md)
 * [Console](console.md)
 * [Hotkeys](hotkeys.md)
 * [Opcode Search Tool](opcode-search-tool.md)
 
 ## SCM Documentation
 
-* [Opcodes List \(SCM.INI\)](scm-documentation/opcodes-list-scm.ini.md)
 * [GTA Limits](scm-documentation/gta-limits.md)
 

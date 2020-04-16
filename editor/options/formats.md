@@ -10,7 +10,7 @@ Formats for files produced by the disassembler or the compiler.
 
 ![](../../.gitbook/assets/form_form.png)
 
-The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` \(if the [edit mode](../../edit-modes.md) is `GTA SA`\) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
+The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` \(if the [edit mode](../../edit-modes/) is `GTA SA`\) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
 
 `$dir` – the file path   
 `$name` – the file name   
@@ -52,7 +52,7 @@ These options instruct the disassembler to use custom names defined by the user 
 
 ![](../../.gitbook/assets/form_names.png)
 
-The file `CustomLabels.ini` contains the list of [label names](../../coding/data-types.md#labels) and their offsets. If the disassembler finds a match between the label offset in the source file and the offset defined in the INI file it gives this label a name associated with this offset.
+The file [`CustomLabels.ini`](../../edit-modes/customlabels.ini.md) contains the list of label names and their offsets. If the disassembler finds a match between the label offset in the source file and the offset defined in the INI file it gives this label a name associated with this offset.
 
 The file `CustomVariables.ini` contains the list of [global variables](../../coding/variables.md#global-variables) addresses and their custom names. The disassembler uses this file to name global variables.
 

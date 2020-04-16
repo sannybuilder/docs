@@ -8,12 +8,12 @@ Preprocessing **directives** are the special words that make the compiler functi
 This directive is deprecated since v3.1.0
 {% endhint %}
 
-Sets what version of [opcodes](../scm-documentation/opcodes-list-scm.ini.md) to use during compilation.
+Sets what version of [opcodes](../edit-modes/opcodes-list-scm.ini.md) to use during compilation.
 
 Syntax:  
 `{$VERSION x.y.zzzz}`
 
-* `X`- [edit mode](../edit-modes.md) ID
+* `X`- [edit mode](../edit-modes/) ID
 * `y` - parameters order
   * `0` - original: 0, 1, 2, etc
   * `1` - custom order, some parameters reordered
@@ -101,7 +101,7 @@ Syntax:
 
 Registers a custom opcode via the script. 
 
-All the opcodes definitions are contained in a [special file](../scm-documentation/opcodes-list-scm.ini.md), one for each supported game. But sometimes it's necessary to add a custom opcode to use in the current script. `$OPCODE` makes it possible without touching the INI file.
+All the opcodes definitions are contained in a [special file](../edit-modes/opcodes-list-scm.ini.md), one for each supported game. But sometimes it's necessary to add a custom opcode to use in the current script. `$OPCODE` makes it possible without touching the INI file.
 
 Syntax:  
 `{$OPCODE <opcode definition>}`  
@@ -110,7 +110,7 @@ Syntax:
  or  
 `{$OPCODE}`
 
-`opcode definition` - it accepts an definition in the same [format](../scm-documentation/opcodes-list-scm.ini.md#opcode-definition) as the INI file.
+`opcode definition` - it accepts an definition in the same [format](../edit-modes/opcodes-list-scm.ini.md#opcode-definition) as the INI file.
 
 ```text
 {$OPCODE 0CCC=1,my_new_opcode %1d%}

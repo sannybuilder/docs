@@ -76,7 +76,7 @@ Changing parameters order in the INI file should be avoided by any means as it m
 {% endhint %}
 
 {% hint style="info" %}
-In `GTA SA SCR` [edit mode](../edit-modes.md) all opcodes have parameters in their original unchanged order.
+In `GTA SA SCR` [edit mode](./) all opcodes have parameters in their original unchanged order.
 {% endhint %}
 
 #### Parameter Types

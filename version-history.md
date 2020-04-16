@@ -235,10 +235,10 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 * added [console](console.md) to switch debug options
 * decompiler supports `GXT` files of GTA III & GTA VC
 * added escape sequences in [long string literals](coding/data-types.md#string-literals)
-* information about [INI](scm-documentation/opcodes-list-scm.ini.md) file \(version, author, date\)
+* information about [INI](edit-modes/opcodes-list-scm.ini.md) file \(version, author, date\)
 * classes support the original order of the parameters \(like in `SASCM.INI` by PLPynton\). The script should have a line {`$VERSION x.0.xxxx`} to support such order, see comments in the `INI` about this
 * added option to confirm an exit from the program
-* a dropdown menu to switch [edit modes](edit-modes.md)
+* a dropdown menu to switch [edit modes](edit-modes/)
 * converting of the selected piece of code
 * an opportunity to pass the current file name to an [external tool](features.md#external-tools-plug-ins-menu)
 * corrected some mistakes in the configuration files

@@ -14,7 +14,7 @@ The highlighting configuration is also used when the code source is saved into t
 * [Comments](../../features.md#commenting-code) – the text after `//` or between `{}` or `/* */`
 * [Labels](../../coding/data-types.md) – the identifiers starting with `@`
 * [Variables](../../coding/variables.md) – the identifiers starting with `$` \(global variables\), or ending with `@` \(local variables\) Also the [aDMA](../../coding/data-types.md) type \(begins with `&`\) and [arrays](../../coding/arrays.md) are highlighted as variables.
-* [Keywords](../../coding/keywords.md) – the special words stored in the file `keywords.ini` \(one for all [edit modes](../../edit-modes.md)\) and the file`keywords.txt` \(one per edit mode\)
+* [Keywords](../../coding/keywords.md) – the special words stored in the file `keywords.ini` \(one for all [edit modes](../../edit-modes/)\) and the file`keywords.txt` \(one per edit mode\)
 * Numbers – the integer and floating-point numbers
 * Strings – the text between double quotes `" "` and single quotes `' '`
 * Models – the identifiers starting with `#`

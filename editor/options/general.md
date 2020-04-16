@@ -87,7 +87,7 @@ If this option is checked the compiler adds extra information at the end of the 
 * [HEX..END](../../coding/hex..end.md) constructs offsets
 * [global variables](../../coding/variables.md#global-variables) names
 * full source code \(use [$NOSOURCE](../../coding/directives.md#usdnosource) to disable\)
-* current [edit mode](../../edit-modes.md)
+* current [edit mode](../../edit-modes/)
 
 {% hint style="info" %}
 The file compiled with extra information can not be open with Sanny Builder prior to v3.00 \(except the case when `ignore_unknown` [option](../../console.md#ignore_unknown) is enabled\).

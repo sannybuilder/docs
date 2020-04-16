@@ -29,7 +29,7 @@ end
 
 During compilation the constant `MoneyRequired` gets replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
 
-[Edit modes](../edit-modes.md) can load constants from an external file by using the `<constants>` parameter in the `games.xml`.
+[Edit modes](../edit-modes/) can load constants from an external file by using the `<constants>` parameter in the `games.xml`.
 
 A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
 

@@ -34,7 +34,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F8</code>
       </td>
-      <td style="text-align:left">run the game for the current <a href="edit-modes.md">edit mode</a>
+      <td style="text-align:left">run the game for the current <a href="edit-modes/">edit mode</a>
       </td>
     </tr>
     <tr>
