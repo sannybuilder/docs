@@ -1,6 +1,6 @@
 # Console
 
-The **console** offers an ability to switch debug options of Sanny Builder. Mostly they relate to the decompiler features and you can see the changes when decompile a file. The console window is open after pressing `Ctrl+~`. You may enter the commands in the input line. After typing a command press  `Enter` to proceed. The console will display a result.
+The **console** offers an ability to switch debug options of Sanny Builder. Mostly they relate to the disassembler features and you can see the changes when disassemble a file. The console window is open after pressing `Ctrl+~`. You may enter the commands in the input line. After typing a command press  `Enter` to proceed. The console will display a result.
 
 ## Available commands 
 
@@ -15,28 +15,28 @@ All commands are case-insensitive.
 The input command ends either with the word `ON` \(the option will be enabled\) or `OFF` \(the option will be disabled\), or nothing \(the option will be toggled from `ON` to `OFF` or from `OFF` to `ON`\).
 
 {% hint style="info" %}
-Before enabling the following options turn on the debug mode with the command `toggle debug_mode`
+Before enabling the following options turn on the debug mode with the command `toggle debug_mode ON`
 {% endhint %}
 
 ## Debug Options
 
 ### CODE\_OFFSETS
 
-The decompiler prints the offset for each opcode.
+The disassembler prints an offset for each command.
 
 ### VAR\_COUNTER
 
-After compiling the console contains the list of the [global variables](coding/variables.md#global-variables) used only once in the code. It is useful to find unused variables.
+After compiling the console contains the list of the [global variables](coding/variables.md#global-variables) used only once in the code \(i.e. can be removed or replaced with [local variables](coding/variables.md#local-variables)\).
 
 ### IGNORE\_UNKNOWN
 
-The decompiler ignores missing opcodes, incorrect parameters and so on. It helps to decompile almost any file that used to be protected or compiled incorrectly.
+The disassembler missing opcodes, incorrect parameters and so on. It helps to calmost any file that used to be protected or compiled incorrectly.
 
 ### CONSTANT\_INDEXES
 
-Allows to decompile array elements with the index. It's available for San Andreas \(enabled by default\), LCS, VCS. 
+Disassembles array elements as global variables with indices. It's available for `GTA SA` \(enabled by default\), `LCS`, `VCS` modes. 
 
-E.g. given an array of three elements starting with `$10` this option affect the way the variables looks like after disassembling:
+E.g. given an array of three elements starting with `$10` this option affect the way the variables look like after disassembling:
 
 | Without `CONSTANT_INDEXES` | With `CONSTANT_INDEXES` |
 | :--- | :--- |
@@ -46,7 +46,7 @@ E.g. given an array of three elements starting with `$10` this option affect the
 
 ### SKIP\_SCM\_HEADER
 
-The decompiler skips the `SCM` header. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). Also makes the compiler compile an `SCM` file without the header .
+The disassembler skips the header of the input file. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). Also makes the compiler compile a `.scm` file without the header .
 
 ## Alternate ways
 
@@ -58,17 +58,17 @@ Usage of the [command-line parameter](./#command-line-usage) `\debug` is an alte
 
 | Index | Debug Option |
 | :--- | :--- |
-| 1 | code\_offsets |
-| 2 | ignore\_unknown |
-| 3 | var\_counter |
-| 4 | constant\_indexes |
-| 5 | skip\_scm\_header |
+| 1 | CODE\_OFFSETS |
+| 2 | IGNORE\_UNKNOWN |
+| 3 | VAR\_COUNTER |
+| 4 | CONSTANT\_INDEXES |
+| 5 | SKIP\_SCM\_HEADER |
 
 ```text
 sanny.exe \debug=11000
 ```
 
-The first `1` enables the `code_offsets` option, the second `1` enables the `ignore_unknown` mode. The remaining zeros disable `var_counter`, `constant_indexes`, `skip_scm_header`.
+The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGNORE_UNKNOWN` mode. The remaining zeros disable `VAR_COUNTER`, `CONSTANT_INDEXES`, `SKIP_SCM_HEADER`.
 
 ### Using GUI
 
@@ -76,5 +76,5 @@ Clicking the right-most button in the main toolbar shows a drop-down menu with t
 
 ![](.gitbook/assets/debug_options.PNG)
 
-Each menu item toggles the debug option and the change comes into effect immediately.
+Each menu item toggles a particular debug option. The change comes into effect immediately.
 
