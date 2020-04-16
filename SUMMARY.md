@@ -27,13 +27,14 @@
   * [Подсветка синтаксиса](editor/options/syntax-highlighting.md)
   * [Горячие клавиши](editor/options/hotkeys.md)
 * [Возможности](features.md)
-* [Режимы редактирования](edit-modes.md)
+* [Режимы редактирования](edit-modes/README.md)
+  * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
+  * [CustomLabels.ini](edit-modes/customlabels.ini.md)
 * [Консоль](console.md)
 * [Горячие клавиши](hotkeys.md)
 * [Поиск опкодов](opcode-search-tool.md)
 
 ## Документация по SCM <a id="scm-documentation"></a>
 
-* [Список опкодов \(SCM.INI\)](scm-documentation/opcodes-list-scm.ini.md)
 * [Скриптовые лимиты](scm-documentation/gta-limits.md)
 

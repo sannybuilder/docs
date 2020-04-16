@@ -46,7 +46,7 @@
 
 ## v. 3.2.0 - 22.03.2014
 
-* добавление собственных [режимов редактирования](edit-modes.md) возможно путем изменения файла `games.xml`
+* добавление собственных [режимов редактирования](edit-modes/) возможно путем изменения файла `games.xml`
 * новый режим редактирования `GTA SA SCR`
 * переменные [могут быть объявлены](coding/variables.md#korotkaya-forma-obyavleniya-peremennykh) при помощи указания типа перед именем переменной
 * CLEO обновлена до версии 4.3.16
@@ -66,7 +66,7 @@
 
 ## v. 3.1.3 - 22.12.2013
 
-* добавлена [поддержка](edit-modes.md) iOS и Android версий GTA: San Andreas
+* добавлена [поддержка](edit-modes/) iOS и Android версий GTA: San Andreas
 * значение [глубины просмотра](editor/options/editor.md#glubina-prosmotra-koda) теперь используется при построении списка констант
 * обновлены переводы на китайский и немецкий языки
 
@@ -85,7 +85,7 @@
 ## v. 3.1.0 - 14.09.2013
 
 * в `VCSCM.ini` добавлены опкоды из мобильной версии GTA VC и отмечены неподдерживаемые опкоды
-* при включенной опции [Добавлять доп. информацию в SCM](editor/options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes.md) при декомпиляции
+* при включенной опции [Добавлять доп. информацию в SCM](editor/options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes/) при декомпиляции
 * при включенной опции `Добавлять доп. информацию в SCM`, Sanny Builder добавляет исходный код в тело скрипта \(только при наличии директивы [$EXTERNAL](coding/directives.md#usdexternal) или [$CLEO](coding/directives.md#usdcleo)\)
 * добавлена новая директива [$NOSOURCE](coding/directives.md#usdnosource), чтобы запретить добавление исходного кода в тело скрипта
 * некоторые горячие клавиши могут быть изменены [в опциях](editor/options/hotkeys.md)
@@ -152,7 +152,7 @@
 * добавлены новые языки перевода \(финский, польский, венгерский, украинский, турецкий\)
 * библиотека CLEO обновлена до версии 4.1.1.30f \(CLEO 4 от Alien\)
 * добавлена возможность установить CLEO для GTA III и для Vice City \(автор - Alien\)
-* [файлы опкодов](scm-documentation/opcodes-list-scm.ini.md) \(\*\*SCM.ini, opcodes.txt\) замененены на файлы из комплекта CLEO 4.
+* [файлы опкодов](edit-modes/opcodes-list-scm.ini.md) \(\*\*SCM.ini, opcodes.txt\) замененены на файлы из комплекта CLEO 4.
 * добавлен новый параметр запуска программы [\nosplash](./#parametry-komandnoi-stroki)
 
 ## v. 3.04 - 04.08.2008
@@ -197,7 +197,7 @@
 * возможность сохранять исходник в формат [RTF или HTML](editor/options/syntax-highlighting.md)
 * возможность [пропускать заставки](editor/options/general.md#bystraya-zagruzka-igry) при запуске San Andreas
 * новая комбинация клавиш: [Ctrl+Enter](hotkeys.md)
-* обновленный [SASCM.INI](scm-documentation/opcodes-list-scm.ini.md)
+* обновленный [SASCM.INI](edit-modes/opcodes-list-scm.ini.md)
 
 ## v. 2.99e - 01.01.2007
 
@@ -235,7 +235,7 @@
 * добавлена [консоль](console.md) для специальных опций SB
 * поддержка `GXT` файлов GTA III, GTA VC
 * [поддержка символьных констант](coding/data-types.md#strokovye-literaly) в длинных строках
-* информация об авторе и версии [INI](scm-documentation/opcodes-list-scm.ini.md) файла
+* информация об авторе и версии [INI](edit-modes/opcodes-list-scm.ini.md) файла
 * поддержка классами `INI` с оригинальным порядком следования параметров \(как SASCM.INI от PLPynton\)
 * [опция](editor/options/editor.md#nastroiki) подтверждения выхода
 * возможность быстро переключать режим редактирования
