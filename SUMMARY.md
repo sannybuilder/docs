@@ -38,3 +38,8 @@
 
 * [Скриптовые лимиты](scm-documentation/gta-limits.md)
 
+## Исправление проблем
+
+* [Сообщения об ошибках](ispravlenie-problem/soobsheniya-ob-oshibkakh/README.md)
+  * [0001: INI файл не найден](ispravlenie-problem/soobsheniya-ob-oshibkakh/0001-ini-fail-ne-naiden.md)
+
