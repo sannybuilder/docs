@@ -38,3 +38,8 @@
 
 * [GTA Limits](scm-documentation/gta-limits.md)
 
+## Troubleshooting
+
+* [Error Messages](troubleshooting/error-messages/README.md)
+  * [0001: INI file not found](troubleshooting/error-messages/0001-ini-file-not-found.md)
+
