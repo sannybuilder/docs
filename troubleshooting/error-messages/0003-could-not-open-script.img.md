@@ -1,0 +1,6 @@
+# 0003: Could not open script.img
+
+The `script.img` archive accompanying the `main.scm` file is broken or has an unknown format. It may happen if this archive was compiled with a different `main.scm` file. Check if both files were compiled at the same time.
+
+**Possible solutions:** replace the `script.img` with the correct file.
+

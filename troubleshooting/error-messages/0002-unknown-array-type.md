@@ -1,0 +1,6 @@
+# 0002: Unknown array type
+
+The disassembler can not recognize the type of an [array](../../coding/arrays.md) in a script file. It may happen because of wrong compilation.
+
+**Possible solutions:** enable [debug option](../../console.md#ignore_unknown) `IGNORE_UNKNOWN`.
+

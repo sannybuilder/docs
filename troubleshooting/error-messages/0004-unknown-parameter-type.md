@@ -1,0 +1,6 @@
+# 0004: Unknown parameter type
+
+The disassembler can not recognize the type of an opcode parameter. It may happen if the file was compiled with errors or protected, or the number of parameters for this opcode in the script does not match the disassembler [configuration](../../edit-modes/opcodes-list-scm.ini.md).
+
+**Possible solutions:** enable [debug option](../../console.md#ignore_unknown) `IGNORE_UNKNOWN`.
+
