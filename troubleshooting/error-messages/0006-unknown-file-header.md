@@ -1,6 +1,6 @@
 # 0006: Unknown file header
 
-The header of the `.scm` file is impossible to read.
+The header of the `.scm` file is impossible to read. It is expected if you open a script from `script.img`.
 
 **Possible solutions:** enable debug [option](../../console.md#skip_scm_header) `SKIP_SCM_HEADER`.
 

@@ -1,6 +1,6 @@
-# 0009: Missed INI file
+# 0009: No opcodes
 
-Sanny Builder can’t find [opcodes definitions](../../edit-modes/opcodes-list-scm.ini.md).
+Disassembler or compiler can't work without [opcodes definitions](../../edit-modes/opcodes-list-scm.ini.md) \(see [0001](0001-ini-file-not-found.md)\).
 
-**Possible solutions:** check if the path to the INI file has been set in the [options](../../editor/options/general.md#opcodes-path) and is correct.
+**Possible solutions:** check if the path to the INI file has been set in the [options](../../editor/options/general.md#opcodes-path) and the file exists.
 

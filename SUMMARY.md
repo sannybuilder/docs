@@ -49,6 +49,6 @@
   * [0006: Unknown file header](troubleshooting/error-messages/0006-unknown-file-header.md)
   * [0007: Could not load file](troubleshooting/error-messages/0007-could-not-load-file.md)
   * [0008: Could not create opcodes table](troubleshooting/error-messages/0008-could-not-create-opcodes-table.md)
-  * [0009: Missed INI file](troubleshooting/error-messages/0009-missed-ini-file.md)
+  * [0009: No opcodes](troubleshooting/error-messages/0009-missed-ini-file.md)
   * [0010: Unknown opcode](troubleshooting/error-messages/0010-unknown-opcode.md)
 
