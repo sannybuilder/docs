@@ -46,7 +46,7 @@ Each script or a mission have 2 special local variables called `TIMERA` and `TIM
 ```
 
 {% hint style="info" %}
-`TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. Older scripts reference these timers via the local variables `16@`, `17@` \(GTA3, VC\) or `32@`, `33@` \(SA\).
+`TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. In older scripts the timers are known as `16@`, `17@` \(GTA3, VC\) or `32@`, `33@` \(SA\).
 {% endhint %}
 
 ## VAR..END construct
