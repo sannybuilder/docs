@@ -46,4 +46,9 @@
   * [0003: Could not open script.img](troubleshooting/error-messages/0003-could-not-open-script.img.md)
   * [0004: Unknown parameter type](troubleshooting/error-messages/0004-unknown-parameter-type.md)
   * [0005: Could not decompile this file](troubleshooting/error-messages/0005-could-not-decompile-this-file.md)
+  * [0006: Unknown file header](troubleshooting/error-messages/0006-unknown-file-header.md)
+  * [0007: Could not load file](troubleshooting/error-messages/0007-could-not-load-file.md)
+  * [0008: Could not create opcodes table](troubleshooting/error-messages/0008-could-not-create-opcodes-table.md)
+  * [0009: Missed INI file](troubleshooting/error-messages/0009-missed-ini-file.md)
+  * [0010: Unknown opcode](troubleshooting/error-messages/0010-unknown-opcode.md)
 

@@ -1,0 +1,6 @@
+# 0008: Could not create opcodes table
+
+Sanny Builder can't load [opcodes definitions](../../edit-modes/opcodes-list-scm.ini.md). It might happen if the file does not match the expected format.
+
+**Possible solutions:** either reinstall the program, or update the INI file.
+
