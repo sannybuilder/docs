@@ -46,4 +46,9 @@
   * [0003: Невозможно открыть script.img](ispravlenie-problem/soobsheniya-ob-oshibkakh/0003-nevozmozhno-otkryt-script.img.md)
   * [0004: Неизвестный тип параметра](ispravlenie-problem/soobsheniya-ob-oshibkakh/0004-neizvestnyi-tip-parametra.md)
   * [0005: Невозможно декомпилировать файл](ispravlenie-problem/soobsheniya-ob-oshibkakh/0005-nevozmozhno-dekompilirovat-fail.md)
+  * [0006: Неверный заголовок файла](ispravlenie-problem/soobsheniya-ob-oshibkakh/0006-nevernyi-zagolovok-faila.md)
+  * [0007: Невозможно загрузить файл](ispravlenie-problem/soobsheniya-ob-oshibkakh/0007-nevozmozhno-zagruzit-fail.md)
+  * [0008: Невозможно создать таблицу опкодов](ispravlenie-problem/soobsheniya-ob-oshibkakh/0008-nevozmozhno-sozdat-tablicu-opkodov.md)
+  * [0009: Нет опкодов](ispravlenie-problem/soobsheniya-ob-oshibkakh/0009-net-opkodov.md)
+  * [0010: Неизвестный опкод](ispravlenie-problem/soobsheniya-ob-oshibkakh/0010-neizvestnyi-opkod.md)
 
