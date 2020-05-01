@@ -51,4 +51,9 @@
   * [0008: Невозможно создать таблицу опкодов](troubleshooting/error-messages/0008.md)
   * [0009: Нет опкодов](troubleshooting/error-messages/0009.md)
   * [0010: Неизвестный опкод](troubleshooting/error-messages/0010.md)
+  * [0011: Неизвестный опкод](troubleshooting/error-messages/0011.md)
+  * [0012: Переход за границы файла](troubleshooting/error-messages/0012.md)
+  * [0013: Неизвестная команда](troubleshooting/error-messages/0013.md)
+  * [0014: Неверное выражение](troubleshooting/error-messages/0014.md)
+  * [0016: Скрипт не найден](troubleshooting/error-messages/0016.md)
 
