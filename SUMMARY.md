@@ -51,4 +51,9 @@
   * [0008: Could not create opcodes table](troubleshooting/error-messages/0008.md)
   * [0009: No opcodes](troubleshooting/error-messages/0009.md)
   * [0010: Unknown opcode](troubleshooting/error-messages/0010.md)
+  * [0011: Unknown opcode](troubleshooting/error-messages/0011.md)
+  * [0012: Incorrect jump instruction](troubleshooting/error-messages/0012.md)
+  * [0013: Unknown directive](troubleshooting/error-messages/0013.md)
+  * [0014: Incorrect expression](troubleshooting/error-messages/0014.md)
+  * [0016: Script not found](troubleshooting/error-messages/0016.md)
 
