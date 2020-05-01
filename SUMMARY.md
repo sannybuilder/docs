@@ -38,17 +38,17 @@
 
 * [Скриптовые лимиты](scm-documentation/gta-limits.md)
 
-## Исправление проблем
+## Исправление проблем <a id="troubleshooting"></a>
 
-* [Сообщения об ошибках](ispravlenie-problem/soobsheniya-ob-oshibkakh/README.md)
-  * [0001: INI файл не найден](ispravlenie-problem/soobsheniya-ob-oshibkakh/0001.md)
-  * [0002: Неизвестный тип массива](ispravlenie-problem/soobsheniya-ob-oshibkakh/0002.md)
-  * [0003: Невозможно открыть script.img](ispravlenie-problem/soobsheniya-ob-oshibkakh/0003.md)
-  * [0004: Неизвестный тип параметра](ispravlenie-problem/soobsheniya-ob-oshibkakh/0004.md)
-  * [0005: Невозможно декомпилировать файл](ispravlenie-problem/soobsheniya-ob-oshibkakh/0005.md)
-  * [0006: Неверный заголовок файла](ispravlenie-problem/soobsheniya-ob-oshibkakh/0006.md)
-  * [0007: Невозможно загрузить файл](ispravlenie-problem/soobsheniya-ob-oshibkakh/0007.md)
-  * [0008: Невозможно создать таблицу опкодов](ispravlenie-problem/soobsheniya-ob-oshibkakh/0008.md)
-  * [0009: Нет опкодов](ispravlenie-problem/soobsheniya-ob-oshibkakh/0009.md)
-  * [0010: Неизвестный опкод](ispravlenie-problem/soobsheniya-ob-oshibkakh/0010.md)
+* [Сообщения об ошибках](troubleshooting/error-messages/README.md)
+  * [0001: INI файл не найден](troubleshooting/error-messages/0001.md)
+  * [0002: Неизвестный тип массива](troubleshooting/error-messages/0002.md)
+  * [0003: Невозможно открыть script.img](troubleshooting/error-messages/0003.md)
+  * [0004: Неизвестный тип параметра](troubleshooting/error-messages/0004.md)
+  * [0005: Невозможно декомпилировать файл](troubleshooting/error-messages/0005.md)
+  * [0006: Неверный заголовок файла](troubleshooting/error-messages/0006.md)
+  * [0007: Невозможно загрузить файл](troubleshooting/error-messages/0007.md)
+  * [0008: Невозможно создать таблицу опкодов](troubleshooting/error-messages/0008.md)
+  * [0009: Нет опкодов](troubleshooting/error-messages/0009.md)
+  * [0010: Неизвестный опкод](troubleshooting/error-messages/0010.md)
 
