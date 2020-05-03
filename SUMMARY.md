@@ -56,4 +56,9 @@
   * [0013: Неизвестная команда](troubleshooting/error-messages/0013.md)
   * [0014: Неверное выражение](troubleshooting/error-messages/0014.md)
   * [0016: Скрипт не найден](troubleshooting/error-messages/0016.md)
+  * [0017: Переменная не объявлена](troubleshooting/error-messages/0017.md)
+  * [0018: Невозможно получить размер массива](troubleshooting/error-messages/0018.md)
+  * [0019: Неизвестный тип массива](troubleshooting/error-messages/0019.md)
+  * [0020: Переменная не объявлена как массив](troubleshooting/error-messages/0020.md)
+  * [0021: Неверное значение в имени переменной](troubleshooting/error-messages/0021.md)
 

@@ -38,7 +38,7 @@ $array($index,10) = 1
 
 ## Объявление массивов
 
-Массивы могут быть объявлены через конструкцию [VAR..END](variables.md#var-end-construct):
+Массивы могут быть объявлены через конструкцию [`VAR..END`](variables.md#konstrukciya-var-end):
 
 `var  
    <имя массива>: array <размер> of <тип>  
