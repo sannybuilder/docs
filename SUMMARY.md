@@ -60,5 +60,5 @@
   * [0018: Could not get array size](troubleshooting/error-messages/0018.md)
   * [0019: Unknown array type](troubleshooting/error-messages/0019.md)
   * [0020: Variable is not declared as array](troubleshooting/error-messages/0020.md)
-  * [0021: Incorrect variable name](troubleshooting/error-messages/0021-incorrect-variable-name.md)
+  * [0021: Incorrect variable name](troubleshooting/error-messages/0021.md)
 
