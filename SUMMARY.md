@@ -56,4 +56,9 @@
   * [0013: Unknown directive](troubleshooting/error-messages/0013.md)
   * [0014: Incorrect expression](troubleshooting/error-messages/0014.md)
   * [0016: Script not found](troubleshooting/error-messages/0016.md)
+  * [0017: Unknown type of variable](troubleshooting/error-messages/0017.md)
+  * [0018: Could not get array size](troubleshooting/error-messages/0018.md)
+  * [0019: Unknown array type](troubleshooting/error-messages/0019.md)
+  * [0020: Variable is not declared as array](troubleshooting/error-messages/0020.md)
+  * [0021: Incorrect variable name](troubleshooting/error-messages/0021-incorrect-variable-name.md)
 

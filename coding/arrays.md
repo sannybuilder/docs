@@ -38,7 +38,7 @@ $array($index,10) = 1
 
 ## Array Declaration
 
-Arrays can be declared using the [VAR..END](variables.md#var-end-construct) construct:  
+Arrays can be declared using the [`VAR..END`](variables.md#var-end-construct) construct:  
 `var  
    <array name>: array <size> of <type>  
 end`

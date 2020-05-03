@@ -1,0 +1,11 @@
+# 0021: Incorrect variable name
+
+The compiler expects an integer number for [local variable](../../coding/variables.md#local-variables) names.
+
+**Possible solutions:** use a valid integer number that meets the local variables [limit](../../scm-documentation/gta-limits.md) for this game.
+
+```text
+var@s = 'test' // incorrect
+0@s = 'test' // correct
+```
+
