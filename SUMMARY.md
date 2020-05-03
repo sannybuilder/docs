@@ -61,4 +61,8 @@
   * [0019: Unknown array type](troubleshooting/error-messages/0019.md)
   * [0020: Variable is not declared as array](troubleshooting/error-messages/0020.md)
   * [0021: Incorrect variable name](troubleshooting/error-messages/0021.md)
+  * [0022: Loop counter should be a variable](troubleshooting/error-messages/0022.md)
+  * [0023: Unexpected instruction](troubleshooting/error-messages/0023.md)
+  * [0024: Integer value expected](troubleshooting/error-messages/0024.md)
+  * [0025: Incorrect counter range](troubleshooting/error-messages/0025.md)
 
