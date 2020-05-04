@@ -61,4 +61,8 @@
   * [0019: Неизвестный тип массива](troubleshooting/error-messages/0019.md)
   * [0020: Переменная не объявлена как массив](troubleshooting/error-messages/0020.md)
   * [0021: Неверное значение в имени переменной](troubleshooting/error-messages/0021.md)
+  * [0022: Cчетчик итераций должен быть переменной](troubleshooting/error-messages/0022.md)
+  * [0023: Ожидалось одно, но найдено другое](troubleshooting/error-messages/0023.md)
+  * [0024: Ожидалось целочисленное значение](troubleshooting/error-messages/0024.md)
+  * [0025: Некорректные значения счетчика](troubleshooting/error-messages/0025.md)
 
