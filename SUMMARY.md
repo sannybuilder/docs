@@ -65,4 +65,9 @@
   * [0023: Ожидалось одно, но найдено другое](troubleshooting/error-messages/0023.md)
   * [0024: Ожидалось целочисленное значение](troubleshooting/error-messages/0024.md)
   * [0025: Некорректные значения счетчика](troubleshooting/error-messages/0025.md)
+  * [0026: Неверное число с плавающей точкой](troubleshooting/error-messages/0026.md)
+  * [0027: Слишком длинная строка](troubleshooting/error-messages/0027.md)
+  * [0028: Незавершенная строка](troubleshooting/error-messages/0028.md)
+  * [0029: Невозможно прочитать ID отладочного скрипта](troubleshooting/error-messages/0029.md)
+  * [0030: Ожидалось число](troubleshooting/error-messages/0030.md)
 
