@@ -65,4 +65,9 @@
   * [0023: Unexpected instruction](troubleshooting/error-messages/0023.md)
   * [0024: Integer value expected](troubleshooting/error-messages/0024.md)
   * [0025: Incorrect counter range](troubleshooting/error-messages/0025.md)
+  * [0026: Could not get a float parameter](troubleshooting/error-messages/0026.md)
+  * [0027: String is too long](troubleshooting/error-messages/0027.md)
+  * [0028: Unterminated string](troubleshooting/error-messages/0028.md)
+  * [0029: Could not read a debug script ID](troubleshooting/error-messages/0029.md)
+  * [0030: Expected number](troubleshooting/error-messages/0030.md)
 
