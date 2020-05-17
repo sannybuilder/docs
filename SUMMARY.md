@@ -70,4 +70,9 @@
   * [0028: Unterminated string](troubleshooting/error-messages/0028.md)
   * [0029: Could not read a debug script ID](troubleshooting/error-messages/0029.md)
   * [0030: Expected number](troubleshooting/error-messages/0030.md)
+  * [0031: Could not read the total number of elements](troubleshooting/error-messages/0031.md)
+  * [0032: Could not read the value](troubleshooting/error-messages/0032.md)
+  * [0033: Could not get a local variable name](troubleshooting/error-messages/0033.md)
+  * [0034: Local variable is out of range](troubleshooting/error-messages/0034.md)
+  * [0035: Expected word](troubleshooting/error-messages/0035.md)
 
