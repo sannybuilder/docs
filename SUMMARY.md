@@ -70,4 +70,9 @@
   * [0028: Незавершенная строка](troubleshooting/error-messages/0028.md)
   * [0029: Невозможно прочитать ID отладочного скрипта](troubleshooting/error-messages/0029.md)
   * [0030: Ожидалось число](troubleshooting/error-messages/0030.md)
+  * [0031: Невозможно прочитать количество элементов](troubleshooting/error-messages/0031.md)
+  * [0032: Невозможно прочитать значение элемента](troubleshooting/error-messages/0032.md)
+  * [0033: Невозможно прочитать имя локальной переменной](troubleshooting/error-messages/0033.md)
+  * [0034: Локальная переменная вне допустимых границ](troubleshooting/error-messages/0034.md)
+  * [0035: Ожидалось слово](troubleshooting/error-messages/0035.md)
 
