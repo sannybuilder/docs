@@ -75,4 +75,6 @@
   * [0033: Could not get a local variable name](troubleshooting/error-messages/0033.md)
   * [0034: Local variable is out of range](troubleshooting/error-messages/0034.md)
   * [0035: Expected word](troubleshooting/error-messages/0035.md)
+  * [0036: Local mission variable is out of range](troubleshooting/error-messages/0036.md)
+  * [0037: Debug script not found](troubleshooting/error-messages/0037.md)
 
