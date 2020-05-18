@@ -75,4 +75,6 @@
   * [0033: Невозможно прочитать имя локальной переменной](troubleshooting/error-messages/0033.md)
   * [0034: Локальная переменная вне допустимых границ](troubleshooting/error-messages/0034.md)
   * [0035: Ожидалось слово](troubleshooting/error-messages/0035.md)
+  * [0036: Локальная переменная миссии вне допустимых границ](troubleshooting/error-messages/0036.md)
+  * [0037: Отладочный скрипт не найден](troubleshooting/error-messages/0037.md)
 
