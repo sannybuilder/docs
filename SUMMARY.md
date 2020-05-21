@@ -4,7 +4,7 @@
 * [Credits](credits.md)
 * [Version History](version-history.md)
 
-## Coding
+## Syntax <a id="coding"></a>
 
 * [Data Types](coding/data-types.md)
 * [Variables](coding/variables.md)
