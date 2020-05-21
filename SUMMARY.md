@@ -4,7 +4,7 @@
 * [Благодарности](credits.md)
 * [История изменений](version-history.md)
 
-## Кодинг <a id="coding"></a>
+## Синтаксис <a id="coding"></a>
 
 * [Типы данных](coding/data-types.md)
 * [Переменные](coding/variables.md)
