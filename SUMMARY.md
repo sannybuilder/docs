@@ -80,4 +80,6 @@
   * [0038: Неизвестный тип массива](troubleshooting/error-messages/0038.md)
   * [0039: Неверное определение](troubleshooting/error-messages/0039.md)
   * [0040: Имя или значение константы не определено](troubleshooting/error-messages/0040.md)
+  * [0041: Неверный ID миссии](troubleshooting/error-messages/0041.md)
+  * [0042: Дублирование имени внешнего скрипта](troubleshooting/error-messages/0042.md)
 
