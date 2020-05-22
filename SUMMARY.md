@@ -80,4 +80,6 @@
   * [0038: Unknown type of array](troubleshooting/error-messages/0038.md)
   * [0039: Invalid definition](troubleshooting/error-messages/0039.md)
   * [0040: Constant name or value not found](troubleshooting/error-messages/0040.md)
+  * [0041: Invalid mission id](troubleshooting/error-messages/0041.md)
+  * [0042: Duplicate external script name](troubleshooting/error-messages/0042.md)
 
