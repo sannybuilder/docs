@@ -82,4 +82,7 @@
   * [0040: Имя или значение константы не определено](troubleshooting/error-messages/0040.md)
   * [0041: Неверный ID миссии](troubleshooting/error-messages/0041.md)
   * [0042: Дублирование имени внешнего скрипта](troubleshooting/error-messages/0042.md)
+  * [0043: Неверный индекс массива](troubleshooting/error-messages/0043.md)
+  * [0044: Неверное имя массива](troubleshooting/error-messages/0044.md)
+  * [0045: Неверный синтаксис массива](troubleshooting/error-messages/0045.md)
 
