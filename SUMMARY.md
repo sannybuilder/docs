@@ -82,4 +82,7 @@
   * [0040: Constant name or value not found](troubleshooting/error-messages/0040.md)
   * [0041: Invalid mission id](troubleshooting/error-messages/0041.md)
   * [0042: Duplicate external script name](troubleshooting/error-messages/0042.md)
+  * [0043: Invalid array index](troubleshooting/error-messages/0043.md)
+  * [0044: Invalid array name](troubleshooting/error-messages/0044.md)
+  * [0045: Invalid array syntax](troubleshooting/error-messages/0045.md)
 
