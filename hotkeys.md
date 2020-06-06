@@ -279,3 +279,4 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     </tr>
   </tbody>
 </table>
+
