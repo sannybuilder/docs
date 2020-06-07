@@ -85,4 +85,9 @@
   * [0043: Неверный индекс массива](troubleshooting/error-messages/0043.md)
   * [0044: Неверное имя массива](troubleshooting/error-messages/0044.md)
   * [0045: Неверный синтаксис массива](troubleshooting/error-messages/0045.md)
+  * [0046: Неверный синтаксис массива](troubleshooting/error-messages/0046.md)
+  * [0047: Неверный размер массива](troubleshooting/error-messages/0047.md)
+  * [0048: Ошибка чтения размера массива](troubleshooting/error-messages/0048.md)
+  * [0049: Недостаточно параметров для опкода](troubleshooting/error-messages/0049.md)
+  * [0050: Недостаточно параметров для команды](troubleshooting/error-messages/0050.md)
 

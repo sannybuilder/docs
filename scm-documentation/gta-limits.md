@@ -167,7 +167,9 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 Частично заимствовано из сообщения CyQ на [GTAForums.com](http://www.gtaforums.com/index.php?showtopic=213017&view=findpost&p=3145932)
 {% endhint %}
 
