@@ -85,7 +85,7 @@
   * [0043: Invalid array index](troubleshooting/error-messages/0043.md)
   * [0044: Invalid array name](troubleshooting/error-messages/0044.md)
   * [0045: Invalid array syntax](troubleshooting/error-messages/0045.md)
-  * [0046: String variable is forbidden in array syntax](troubleshooting/error-messages/0046.md)
+  * [0046: Invalid array syntax](troubleshooting/error-messages/0046.md)
   * [0047: Invalid array size](troubleshooting/error-messages/0047.md)
   * [0048: Error reading array size](troubleshooting/error-messages/0048.md)
   * [0049: Not enough parameters for opcode](troubleshooting/error-messages/0049.md)
