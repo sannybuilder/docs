@@ -26,6 +26,9 @@
   * [Editor](editor/options/editor.md)
   * [Syntax Highlighting](editor/options/syntax-highlighting.md)
   * [Hotkeys](editor/options/hotkeys.md)
+
+---
+
 * [Features](features.md)
 * [Edit Modes](edit-modes/README.md)
   * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
@@ -90,4 +93,9 @@
   * [0048: Error reading array size](troubleshooting/error-messages/0048.md)
   * [0049: Not enough parameters for opcode](troubleshooting/error-messages/0049.md)
   * [0050: Not enough parameters for command](troubleshooting/error-messages/0050.md)
+  * [0051: Unexpected error while writing IMG header](troubleshooting/error-messages/0051.md)
+  * [0052: Unexpected error while writing IMG content](troubleshooting/error-messages/0052.md)
+  * [0053: Recursive include](troubleshooting/error-messages/0053.md)
+  * [0054: Label not found](troubleshooting/error-messages/0054.md)
+  * [0055: Identifier not found](troubleshooting/error-messages/0055.md)
 
