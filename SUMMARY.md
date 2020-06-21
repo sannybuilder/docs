@@ -48,7 +48,7 @@
   * [0002: Неизвестный тип массива](troubleshooting/error-messages/0002.md)
   * [0003: Ошибка чтения script.img](troubleshooting/error-messages/0003.md)
   * [0004: Неизвестный тип параметра](troubleshooting/error-messages/0004.md)
-  * [0005: Неверный режим редактирования](troubleshooting/error-messages/0005.md)
+  * [0005: Неправильный режим редактирования](troubleshooting/error-messages/0005.md)
   * [0006: Неверный заголовок файла](troubleshooting/error-messages/0006.md)
   * [0007: Файл не найден](troubleshooting/error-messages/0007.md)
   * [0008: Ошибка чтения списка опкодов](troubleshooting/error-messages/0008.md)
@@ -100,4 +100,7 @@
   * [0055: Идентификатор не найден](troubleshooting/error-messages/0055.md)
   * [0056: Метка переобьявлена](troubleshooting/error-messages/0056.md)
   * [0057: Внутренная метка не найдена](troubleshooting/error-messages/0057.md)
+  * [0058: Недопустимый параметр](troubleshooting/error-messages/0058.md)
+  * [0059: Неверное количество параметров у опкода](troubleshooting/error-messages/0059.md)
+  * [0060: Нет исходного файла](troubleshooting/error-messages/0060.md)
 
