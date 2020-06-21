@@ -100,4 +100,7 @@
   * [0055: Identifier not found](troubleshooting/error-messages/0055.md)
   * [0056: Label redeclared](troubleshooting/error-messages/0056.md)
   * [0057: Internal label not found](troubleshooting/error-messages/0057.md)
+  * [0058: Invalid parameter](troubleshooting/error-messages/0058.md)
+  * [0059: Invalid number of parameters](troubleshooting/error-messages/0059.md)
+  * [0060: No input](troubleshooting/error-messages/0060.md)
 
