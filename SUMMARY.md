@@ -98,4 +98,6 @@
   * [0053: Recursive include](troubleshooting/error-messages/0053.md)
   * [0054: Label not found](troubleshooting/error-messages/0054.md)
   * [0055: Identifier not found](troubleshooting/error-messages/0055.md)
+  * [0056: Label redeclared](troubleshooting/error-messages/0056.md)
+  * [0057: Internal label not found](troubleshooting/error-messages/0057.md)
 
