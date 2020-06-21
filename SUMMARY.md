@@ -101,6 +101,6 @@
   * [0056: Метка переобьявлена](troubleshooting/error-messages/0056.md)
   * [0057: Внутренная метка не найдена](troubleshooting/error-messages/0057.md)
   * [0058: Недопустимый параметр](troubleshooting/error-messages/0058.md)
-  * [0059: Неверное количество параметров у опкода](troubleshooting/error-messages/0059.md)
+  * [0059: Неверное определение опкода](troubleshooting/error-messages/0059.md)
   * [0060: Нет исходного файла](troubleshooting/error-messages/0060.md)
 
