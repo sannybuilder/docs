@@ -26,6 +26,9 @@
   * [Редактор](editor/options/editor.md)
   * [Подсветка синтаксиса](editor/options/syntax-highlighting.md)
   * [Горячие клавиши](editor/options/hotkeys.md)
+
+---
+
 * [Возможности](features.md)
 * [Режимы редактирования](edit-modes/README.md)
   * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
@@ -90,4 +93,9 @@
   * [0048: Ошибка чтения размера массива](troubleshooting/error-messages/0048.md)
   * [0049: Недостаточно параметров для опкода](troubleshooting/error-messages/0049.md)
   * [0050: Недостаточно параметров для команды](troubleshooting/error-messages/0050.md)
+  * [0051: Ошибка записи заголовка script.img](troubleshooting/error-messages/0051.md)
+  * [0052: Ошибка записи script.img](troubleshooting/error-messages/0052.md)
+  * [0053: Рекурсивное подключение файла](troubleshooting/error-messages/0053.md)
+  * [0054: Метка не найдена](troubleshooting/error-messages/0054.md)
+  * [0055: Идентификатор не найден](troubleshooting/error-messages/0055.md)
 
