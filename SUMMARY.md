@@ -98,4 +98,6 @@
   * [0053: Рекурсивное подключение файла](troubleshooting/error-messages/0053.md)
   * [0054: Метка не найдена](troubleshooting/error-messages/0054.md)
   * [0055: Идентификатор не найден](troubleshooting/error-messages/0055.md)
+  * [0056: Метка переобьявлена](troubleshooting/error-messages/0056.md)
+  * [0057: Внутренная метка не найдена](troubleshooting/error-messages/0057.md)
 
