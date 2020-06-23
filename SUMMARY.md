@@ -103,4 +103,6 @@
   * [0058: Недопустимый параметр](troubleshooting/error-messages/0058.md)
   * [0059: Неверное определение опкода](troubleshooting/error-messages/0059.md)
   * [0060: Нет исходного файла](troubleshooting/error-messages/0060.md)
+  * [0061: Пустой исходный файл](troubleshooting/error-messages/0061.md)
+  * [0062: IDE файл не найден](troubleshooting/error-messages/0062.md)
 
