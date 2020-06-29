@@ -105,4 +105,7 @@
   * [0060: Нет исходного файла](troubleshooting/error-messages/0060.md)
   * [0061: Пустой исходный файл](troubleshooting/error-messages/0061.md)
   * [0062: IDE файл не найден](troubleshooting/error-messages/0062.md)
+  * [0063: Ожидалась метка миссии](troubleshooting/error-messages/0063.md)
+  * [0064: Метка миссии не найдена](troubleshooting/error-messages/0064.md)
+  * [0065: Метка внешнего скрипта не найдена](troubleshooting/error-messages/0065.md)
 
