@@ -105,4 +105,7 @@
   * [0060: No input file](troubleshooting/error-messages/0060.md)
   * [0061: Empty source](troubleshooting/error-messages/0061.md)
   * [0062: IDE file not found](troubleshooting/error-messages/0062.md)
+  * [0063: Mission label expected](troubleshooting/error-messages/0063.md)
+  * [0064: Mission label not found](troubleshooting/error-messages/0064.md)
+  * [0065: External script label not found](troubleshooting/error-messages/0065.md)
 
