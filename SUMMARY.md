@@ -108,4 +108,7 @@
   * [0063: Ожидалась метка миссии](troubleshooting/error-messages/0063.md)
   * [0064: Метка миссии не найдена](troubleshooting/error-messages/0064.md)
   * [0065: Метка внешнего скрипта не найдена](troubleshooting/error-messages/0065.md)
+  * [0066: Недопустимый символ в имени внешнего скрипта](troubleshooting/error-messages/0066.md)
+  * [0067: Неверный символ в идентификаторе](troubleshooting/error-messages/0067.md)
+  * [0069: Неверный символ в имени объекта](troubleshooting/error-messages/0069.md)
 
