@@ -108,4 +108,7 @@
   * [0063: Mission label expected](troubleshooting/error-messages/0063.md)
   * [0064: Mission label not found](troubleshooting/error-messages/0064.md)
   * [0065: External script label not found](troubleshooting/error-messages/0065.md)
+  * [0067: Forbidden character in external script name](troubleshooting/error-messages/0067.md)
+  * [0068: Forbidden character in identifier](troubleshooting/error-messages/0068.md)
+  * [0069: Forbidden character in object name](troubleshooting/error-messages/0069.md)
 
