@@ -20,5 +20,8 @@ Delphi 7 © Borland Software Corp
 SynEdit © Команда разработчиков SynEdit  
 [http://synedit.sourceforge.net](http://synedit.sourceforge.net/)
 
+Inno Setup © Jordan Russell, Martijn Laan  
+[https://jrsoftware.org/isinfo.php](https://jrsoftware.org/isinfo.php)
+
 
 
