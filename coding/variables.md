@@ -9,7 +9,7 @@ A global variable starts with `$` followed by an identifier \(name\).  The globa
 `$variable1 $100 $____`
 
 {% hint style="info" %}
-A global variable with the name that only consists of digits is called  a`DMA`-variable \(**D**irect **M**emory **A**ddress\). See also [Alloc](built-in-commands.md#alloc).
+A global variable with the name that only consists of digits is called a `DMA`-variable \(**D**irect **M**emory **A**ddress\). See also [Alloc](built-in-commands.md#alloc).
 {% endhint %}
 
 Their values are available from any place of the code.
