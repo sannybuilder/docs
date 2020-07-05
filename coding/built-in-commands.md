@@ -92,7 +92,9 @@ Div(1@)
 
 ## ALLOC 
 
-This function sets the memory address for the [global variable](variables.md#global-variables). It has to be used only for the ones with custom names \(e.g. `$text`\). For variables with numeric names \(DMA-variables\), the memory address is calculated out of this number: the variable `$40` always occupy four bytes in the `main.scm` header starting at the offset 40\*4=160.
+This function sets the offset of a [global variable](variables.md#global-variables) at the global variable space that exists in the beginning of the `main.scm` header.
+
+It's only meaningful for custom variables \(e.g. `$text`\) not defined in the `CustomVariables.ini`. [`DMA`-variables](variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` \(40\*4\).
 
 ```text
 Alloc($MyVar, 40) - the variable $MyVar will be compiled as $40
