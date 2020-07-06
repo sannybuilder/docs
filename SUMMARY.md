@@ -111,4 +111,5 @@
   * [0067: Forbidden character in external script name](troubleshooting/error-messages/0067.md)
   * [0068: Forbidden character in identifier](troubleshooting/error-messages/0068.md)
   * [0069: Forbidden character in object name](troubleshooting/error-messages/0069.md)
+  * [0071: Incorrect number of conditions](troubleshooting/error-messages/0071.md)
 
