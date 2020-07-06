@@ -111,4 +111,5 @@
   * [0066: Недопустимый символ в имени внешнего скрипта](troubleshooting/error-messages/0066.md)
   * [0067: Неверный символ в идентификаторе](troubleshooting/error-messages/0067.md)
   * [0069: Неверный символ в имени объекта](troubleshooting/error-messages/0069.md)
+  * [0071: Неверное число условий](troubleshooting/error-messages/0071.md)
 
