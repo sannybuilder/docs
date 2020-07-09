@@ -112,4 +112,6 @@
   * [0067: Неверный символ в идентификаторе](troubleshooting/error-messages/0067.md)
   * [0069: Неверный символ в имени объекта](troubleshooting/error-messages/0069.md)
   * [0071: Неверное число условий](troubleshooting/error-messages/0071.md)
+  * [0072: Логический оператор пропущен](troubleshooting/error-messages/0072.md)
+  * [0073: Лишний логический оператор](troubleshooting/error-messages/0073.md)
 
