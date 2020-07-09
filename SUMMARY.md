@@ -112,4 +112,6 @@
   * [0068: Forbidden character in identifier](troubleshooting/error-messages/0068.md)
   * [0069: Forbidden character in object name](troubleshooting/error-messages/0069.md)
   * [0071: Incorrect number of conditions](troubleshooting/error-messages/0071.md)
+  * [0072: Missing logical operator](troubleshooting/error-messages/0072.md)
+  * [0073: Redundant logical operator](troubleshooting/error-messages/0073.md)
 
