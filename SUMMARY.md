@@ -114,4 +114,6 @@
   * [0071: Неверное число условий](troubleshooting/error-messages/0071.md)
   * [0072: Логический оператор пропущен](troubleshooting/error-messages/0072.md)
   * [0073: Лишний логический оператор](troubleshooting/error-messages/0073.md)
+  * [0074: Опция отключена](troubleshooting/error-messages/0074.md)
+  * [0075: Неверное 16-ричное значение](troubleshooting/error-messages/0075.md)
 
