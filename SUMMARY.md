@@ -114,4 +114,6 @@
   * [0071: Incorrect number of conditions](troubleshooting/error-messages/0071.md)
   * [0072: Missing logical operator](troubleshooting/error-messages/0072.md)
   * [0073: Redundant logical operator](troubleshooting/error-messages/0073.md)
+  * [0074: Disabled option](troubleshooting/error-messages/0074.md)
+  * [0075: Incorrect hexadecimal value](troubleshooting/error-messages/0075.md)
 
