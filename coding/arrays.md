@@ -63,7 +63,7 @@ $FloatArray[$index] += 100.0
 
 ### Using constant indexes
 
-You can use a number to access a particular array element:
+You can use positive integer numbers and zero to access a particular array element:
 
 ```text
 var

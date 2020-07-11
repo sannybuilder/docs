@@ -96,6 +96,8 @@ This function sets the offset of a [global variable](variables.md#global-variabl
 
 It's only meaningful for custom variables \(e.g. `$text`\) not defined in the `CustomVariables.ini`. [`DMA`-variables](variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` \(40\*4\).
 
+The first parameter must be a global variable, the second parameter must be a positive integer number or zero.
+
 ```text
 Alloc($MyVar, 40) - the variable $MyVar will be compiled as $40
 ```
