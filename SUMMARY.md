@@ -117,4 +117,6 @@
   * [0074: Опция отключена](troubleshooting/errors/0074.md)
   * [0075: Неверное 16-ричное значение](troubleshooting/errors/0075.md)
   * [0076: Ожидалось условие](troubleshooting/errors/0076.md)
+  * [0079: Недопустимый параметр в команде Alloc](troubleshooting/errors/0079.md)
+  * [0080: Ожидалось неотрицательное число](troubleshooting/errors/0080.md)
 
