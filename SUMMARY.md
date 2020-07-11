@@ -116,4 +116,9 @@
   * [0073: Redundant logical operator](troubleshooting/error-messages/0073.md)
   * [0074: Disabled option](troubleshooting/error-messages/0074.md)
   * [0075: Incorrect hexadecimal value](troubleshooting/error-messages/0075.md)
+  * [0076: Condition expected](troubleshooting/error-messages/0076.md)
+  * [0079: Invalid parameter in Alloc command](troubleshooting/error-messages/0079.md)
+  * [0080: Positive integer number expected](troubleshooting/error-messages/0080.md)
+  * [0081: Too many actual parameters](troubleshooting/error-messages/0081.md)
+  * [0082: Invalid syntax](troubleshooting/error-messages/0082.md)
 
