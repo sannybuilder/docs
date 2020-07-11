@@ -119,4 +119,6 @@
   * [0076: Ожидалось условие](troubleshooting/errors/0076.md)
   * [0079: Недопустимый параметр в команде Alloc](troubleshooting/errors/0079.md)
   * [0080: Ожидалось неотрицательное число](troubleshooting/errors/0080.md)
+  * [0081: Слишком много параметров](troubleshooting/errors/0081.md)
+  * [0082: Неверный синтаксис](troubleshooting/errors/0082.md)
 
