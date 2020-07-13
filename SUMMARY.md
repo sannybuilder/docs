@@ -121,4 +121,5 @@
   * [0080: Non-negative integer number expected](troubleshooting/errors/0080.md)
   * [0081: Too many actual parameters](troubleshooting/errors/0081.md)
   * [0082: Invalid syntax](troubleshooting/errors/0082.md)
+  * [0083: Unknown model ID](troubleshooting/errors/0083.md)
 

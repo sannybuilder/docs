@@ -62,10 +62,10 @@ while not #.Available
 end
 ```
 
-All templates are contained in the file `macroes.txt`. This file has the following syntax:  
+All templates are contained in the file `templates.txt`. This file has the following syntax:  
 A template name is written in a separate line. The equal sign `=` follows the name. After the equal sign you can also add a short hint. The template code starts at the next line, each line begins with the equals sign. The cursor position is marked with the `|` character.
 
-It's also possible to add a template in the file `macroes.txt` from the editor. Select the code and click the `Service->Add macros` menu. Enter a name of the template, a description \(optionally\) in the dialog window and press the `OK` button. The template is ready to use.
+It's also possible to add a template in the file `templates.txt` from the editor. Select the code and click the `Service->Add template` menu. Enter a name of the template, a description \(optionally\) in the dialog window and press the `OK` button. The template is ready to use.
 
 ## Keypress Recording \(Macro\)
 
