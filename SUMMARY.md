@@ -122,4 +122,5 @@
   * [0081: Слишком много параметров](troubleshooting/errors/0081.md)
   * [0082: Неверный синтаксис](troubleshooting/errors/0082.md)
   * [0083: Неизвестный ID модели](troubleshooting/errors/0083.md)
+  * [0084: Переход на оффсет 0](troubleshooting/errors/0084.md)
 
