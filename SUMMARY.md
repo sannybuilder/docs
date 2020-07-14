@@ -122,7 +122,7 @@
   * [0081: Too many actual parameters](troubleshooting/errors/0081.md)
   * [0082: Invalid syntax](troubleshooting/errors/0082.md)
   * [0083: Unknown model ID](troubleshooting/errors/0083.md)
-  * [0084: Jump to zero offset](troubleshooting/errors/0084.md)
+  * [0084: Jump to offset 0](troubleshooting/errors/0084.md)
   * [0086: Invalid array index](troubleshooting/errors/0086.md)
   * [0087: Invalid aDMA variable](troubleshooting/errors/0087.md)
   * [0088: Global variable is out of range](troubleshooting/errors/0088.md)
