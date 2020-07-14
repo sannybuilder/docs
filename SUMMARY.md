@@ -121,4 +121,5 @@
   * [0080: Ожидалось неотрицательное число](troubleshooting/errors/0080.md)
   * [0081: Слишком много параметров](troubleshooting/errors/0081.md)
   * [0082: Неверный синтаксис](troubleshooting/errors/0082.md)
+  * [0083: Неизвестный ID модели](troubleshooting/errors/0083.md)
 
