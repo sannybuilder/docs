@@ -124,6 +124,6 @@
   * [0083: Unknown model ID](troubleshooting/errors/0083.md)
   * [0084: Jump to offset 0](troubleshooting/errors/0084.md)
   * [0086: Invalid array index](troubleshooting/errors/0086.md)
-  * [0087: Invalid aDMA variable](troubleshooting/errors/0087.md)
+  * [0087: Invalid variable](troubleshooting/errors/0087.md)
   * [0088: Global variable is out of range](troubleshooting/errors/0088.md)
 
