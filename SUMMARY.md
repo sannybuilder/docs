@@ -123,4 +123,6 @@
   * [0082: Неверный синтаксис](troubleshooting/errors/0082.md)
   * [0083: Неизвестный ID модели](troubleshooting/errors/0083.md)
   * [0084: Переход на оффсет 0](troubleshooting/errors/0084.md)
+  * [0086: Неверный индекс массива](troubleshooting/errors/0086.md)
+  * [0087: Недопустимая переменная](troubleshooting/errors/0087.md)
 
