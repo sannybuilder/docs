@@ -125,4 +125,5 @@
   * [0084: Переход на оффсет 0](troubleshooting/errors/0084.md)
   * [0086: Неверный индекс массива](troubleshooting/errors/0086.md)
   * [0087: Недопустимая переменная](troubleshooting/errors/0087.md)
+  * [0088: Глобальная переменная вне допустимых границ](troubleshooting/errors/0088.md)
 
