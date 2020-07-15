@@ -39,6 +39,8 @@
 
 ## SCM Documentation
 
+* [San Andreas](scm-documentation/san-andreas/README.md)
+  * [Gang IDs](scm-documentation/san-andreas/gang-ids.md)
 * [GTA Limits](scm-documentation/gta-limits.md)
 
 ## Troubleshooting
