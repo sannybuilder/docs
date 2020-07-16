@@ -1,4 +1,4 @@
-# Clothes IDs
+# Player Clothes
 
 | ID | Name |
 | :--- | :--- |

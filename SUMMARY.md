@@ -46,9 +46,12 @@
   * [Gang IDs](scm-documentation/sa/gangs.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
   * [Gang IDs](scm-documentation/lcs/gangs.md)
+  * [Model IDs](scm-documentation/lcs/models.md)
+  * [Player Clothes](scm-documentation/lcs/clothes.md)
+  * [Weather IDs](scm-documentation/lcs/weather.md)
 * [Vice City Stories](scm-documentation/vcs/README.md)
-  * [Clothes IDs](scm-documentation/vcs/clothes.md)
   * [Gang IDs](scm-documentation/vcs/gangs.md)
+  * [Player Clothes](scm-documentation/vcs/clothes.md)
   * [Weather IDs](scm-documentation/vcs/weather.md)
 
 ## Troubleshooting
