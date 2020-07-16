@@ -1,6 +1,6 @@
 # Gang IDs
 
-| Gang ID | Gang Name |
+| ID | Name |
 | :--- | :--- |
 | 0 | Cubans |
 | 1 | Haitians |

@@ -4,7 +4,7 @@
 0237: set_gang 1 weapons_to 24 29 4
 ```
 
-| Gang ID | Gang Name |
+| ID | Name |
 | :--- | :--- |
 | 0 | Ballas |
 | 1 | Grove Street Families |

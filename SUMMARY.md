@@ -41,13 +41,15 @@
 
 * [GTA Limits](scm-documentation/gta-limits.md)
 * [Vice City](scm-documentation/vc/README.md)
-  * [Gang IDs](scm-documentation/vc/gang-ids.md)
+  * [Gang IDs](scm-documentation/vc/gangs.md)
 * [San Andreas](scm-documentation/sa/README.md)
-  * [Gang IDs](scm-documentation/sa/gang-ids.md)
+  * [Gang IDs](scm-documentation/sa/gangs.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
-  * [Gang IDs](scm-documentation/lcs/gang-ids.md)
+  * [Gang IDs](scm-documentation/lcs/gangs.md)
 * [Vice City Stories](scm-documentation/vcs/README.md)
-  * [Gang IDs](scm-documentation/vcs/gang-ids.md)
+  * [Clothes IDs](scm-documentation/vcs/clothes.md)
+  * [Gang IDs](scm-documentation/vcs/gangs.md)
+  * [Weather IDs](scm-documentation/vcs/weather.md)
 
 ## Troubleshooting
 

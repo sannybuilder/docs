@@ -1,6 +1,6 @@
 # Gang IDs
 
-| Gang ID | Gang Name |
+| ID | Name |
 | :--- | :--- |
 | 0 | Umberto's guys |
 | 1 | Cholos |
