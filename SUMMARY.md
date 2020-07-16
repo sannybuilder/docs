@@ -39,9 +39,15 @@
 
 ## SCM Documentation
 
-* [San Andreas](scm-documentation/san-andreas/README.md)
-  * [Gang IDs](scm-documentation/san-andreas/gang-ids.md)
 * [GTA Limits](scm-documentation/gta-limits.md)
+* [Vice City](scm-documentation/vc/README.md)
+  * [Gang IDs](scm-documentation/vc/gang-ids.md)
+* [San Andreas](scm-documentation/sa/README.md)
+  * [Gang IDs](scm-documentation/sa/gang-ids.md)
+* [Liberty City Stories](scm-documentation/lcs/README.md)
+  * [Gang IDs](scm-documentation/lcs/gang-ids.md)
+* [Vice City Stories](scm-documentation/vcs/README.md)
+  * [Gang IDs](scm-documentation/vcs/gang-ids.md)
 
 ## Troubleshooting
 
