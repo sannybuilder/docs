@@ -1,7 +1,7 @@
 # Player Clothes
 
 ```text
-0357: set_actor $PLAYER_ACTOR skin_to 'PLR3'
+0357: set_actor $PLAYER_ACTOR skin_to <id>
 ```
 
 | ID | Name |

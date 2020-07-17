@@ -1,7 +1,7 @@
 # Weapon IDs
 
 ```text
-01B6: give_player $PLAYER_CHAR weapon 1 ammo 1
+01B6: give_player $PLAYER_CHAR weapon <id> ammo 1
 ```
 
 | Weapon ID | Model ID | Name |

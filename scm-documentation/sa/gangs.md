@@ -1,7 +1,7 @@
 # Gang IDs
 
 ```text
-0237: set_gang 1 weapons_to 24 29 4
+0237: set_gang <id> weapons_to 24 29 4
 ```
 
 | ID | Name |

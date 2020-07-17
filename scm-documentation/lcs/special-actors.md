@@ -1,7 +1,7 @@
 # Special Actors
 
 ```text
-0241: load_special_actor 1 'PLR6'
+0241: load_special_actor 1 <id>
 ```
 
 | ID | Name |

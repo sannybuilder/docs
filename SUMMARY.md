@@ -41,7 +41,11 @@
 
 * [GTA Limits](scm-documentation/gta-limits.md)
 * [Vice City](scm-documentation/vc/README.md)
+  * [Button IDs](scm-documentation/vc/buttons.md)
   * [Gang IDs](scm-documentation/vc/gangs.md)
+  * [Garage IDs](scm-documentation/vc/garages.md)
+  * [Interiors](scm-documentation/vc/interiors.md)
+  * [Ped Types](scm-documentation/vc/pedtypes.md)
 * [San Andreas](scm-documentation/sa/README.md)
   * [Gang IDs](scm-documentation/sa/gangs.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
