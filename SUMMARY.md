@@ -48,6 +48,8 @@
   * [Gang IDs](scm-documentation/lcs/gangs.md)
   * [Model IDs](scm-documentation/lcs/models.md)
   * [Player Clothes](scm-documentation/lcs/clothes.md)
+  * [Special Actors](scm-documentation/lcs/special-actors.md)
+  * [Weapon IDs](scm-documentation/lcs/weapons.md)
   * [Weather IDs](scm-documentation/lcs/weather.md)
 * [Vice City Stories](scm-documentation/vcs/README.md)
   * [Gang IDs](scm-documentation/vcs/gangs.md)
