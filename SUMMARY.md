@@ -46,6 +46,7 @@
   * [Garage IDs](scm-documentation/vc/garages.md)
   * [Interiors](scm-documentation/vc/interiors.md)
   * [Ped Types](scm-documentation/vc/pedtypes.md)
+  * [Weapons](scm-documentation/vc/weapons.md)
 * [San Andreas](scm-documentation/sa/README.md)
   * [Gang IDs](scm-documentation/sa/gangs.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
