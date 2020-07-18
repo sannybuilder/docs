@@ -52,6 +52,7 @@
   * [Gang IDs](scm-documentation/sa/gangs.md)
   * [Interiors](scm-documentation/sa/interiors.md)
   * [Weather IDs](scm-documentation/sa/weather.md)
+  * [Weapon IDs](scm-documentation/sa/weapons.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
   * [Gang IDs](scm-documentation/lcs/gangs.md)
   * [Model IDs](scm-documentation/lcs/models.md)
