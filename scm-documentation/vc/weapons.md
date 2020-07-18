@@ -1,4 +1,4 @@
-# Weapons
+# Weapon IDs
 
 ```text
 031D: actor <actor> hit_by_weapon <id> 
