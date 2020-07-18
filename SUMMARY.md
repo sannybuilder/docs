@@ -50,6 +50,8 @@
   * [Weapons](scm-documentation/vc/weapons.md)
 * [San Andreas](scm-documentation/sa/README.md)
   * [Gang IDs](scm-documentation/sa/gangs.md)
+  * [Interiors](scm-documentation/sa/interiors.md)
+  * [Weather IDs](scm-documentation/sa/weather.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
   * [Gang IDs](scm-documentation/lcs/gangs.md)
   * [Model IDs](scm-documentation/lcs/models.md)
