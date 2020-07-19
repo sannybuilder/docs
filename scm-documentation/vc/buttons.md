@@ -1,7 +1,5 @@
 # Button IDs
 
-
-
 ```text
 00E1: key_pressed 0 <button>
 ```

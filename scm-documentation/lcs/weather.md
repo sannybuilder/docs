@@ -1,6 +1,6 @@
 # Weather IDs
 
-| ID | Name |
+| ID | Description |
 | :--- | :--- |
 | 0 | Sunny |
 | 1 | Cloudy |

@@ -4,7 +4,7 @@
 0241: load_special_actor 1 <id>
 ```
 
-| ID | Name |
+| ID | Description |
 | :--- | :--- |
 | AVERY | Avery Carrington |
 | BABY | Giovanni Casa \(baby\) |

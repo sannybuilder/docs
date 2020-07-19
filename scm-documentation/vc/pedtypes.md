@@ -1,10 +1,10 @@
 # Ped Types
 
 ```text
-009A: 0@ = create_actor <pedtype> 0 at 0 0 0
+009A: 0@ = create_actor <id> 0 at 0 0 0
 ```
 
-| ID | Pedtype |
+| ID | Type |
 | :--- | :--- |
 | 0 | player1 |
 | 1 | player2 |
