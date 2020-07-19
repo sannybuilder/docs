@@ -50,6 +50,7 @@
   * [Weapon IDs](scm-documentation/vc/weapons.md)
 * [San Andreas](scm-documentation/sa/README.md)
   * [Gang IDs](scm-documentation/sa/gangs.md)
+  * [Garage IDs](scm-documentation/sa/garages.md)
   * [Interiors](scm-documentation/sa/interiors.md)
   * [Vehicle Variations](scm-documentation/sa/vehicle-variations.md)
   * [Weapon IDs](scm-documentation/sa/weapons.md)
