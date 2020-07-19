@@ -53,6 +53,8 @@
   * [Garage IDs](scm-documentation/sa/garages.md)
   * [Interiors](scm-documentation/sa/interiors.md)
   * [Player Clothes](scm-documentation/sa/clothes.md)
+  * [Player Body Parts](scm-documentation/sa/player-body-parts.md)
+  * [Tattoos](scm-documentation/sa/tattoos.md)
   * [Train Types](scm-documentation/sa/trains.md)
   * [Vehicle Variations](scm-documentation/sa/vehicle-variations.md)
   * [Weapon IDs](scm-documentation/sa/weapons.md)

@@ -6,7 +6,7 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 
 ## Torso
 
-| Texture | Model | Body part | Description |
+| Texture | Model | [Body part](player-body-parts.md) | Description |
 | :--- | :--- | :--- | :--- |
 | player\_torso | torso | 0 | Torso \(default\) |
 | vestblack | vest | 0 | Black Tank |
