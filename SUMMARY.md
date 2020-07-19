@@ -40,6 +40,31 @@
 ## Документация по SCM <a id="scm-documentation"></a>
 
 * [Скриптовые лимиты](scm-documentation/gta-limits.md)
+* [Vice City](scm-documentation/vc/README.md)
+  * [Банды](scm-documentation/vc/gangs.md)
+  * [Гаражи](scm-documentation/vc/garages.md)
+  * [Иконки радара](scm-documentation/vc/icons.md)
+  * [Интерьеры](scm-documentation/vc/interiors.md)
+  * [Номера кнопок](scm-documentation/vc/buttons.md)
+  * [Оружие](scm-documentation/vc/weapons.md)
+  * [Типы пешеходов](scm-documentation/vc/pedtypes.md)
+* [San Andreas](scm-documentation/sa/README.md)
+  * [Банды](scm-documentation/sa/gangs.md)
+  * [Варианты изменения авто](scm-documentation/sa/vehicle-variations.md)
+  * [Интерьеры](scm-documentation/sa/interiors.md)
+  * [Оружие](scm-documentation/sa/weapons.md)
+  * [Погода](scm-documentation/sa/weather.md)
+* [Liberty City Stories](scm-documentation/lcs/README.md)
+  * [Банды](scm-documentation/lcs/gangs.md)
+  * [Модели](scm-documentation/lcs/models.md)
+  * [Одежда](scm-documentation/lcs/clothes.md)
+  * [Оружие](scm-documentation/lcs/weapons.md)
+  * [Персонажи](scm-documentation/lcs/special-actors.md)
+  * [Погода](scm-documentation/lcs/weather.md)
+* [Vice City Stories](scm-documentation/vcs/README.md)
+  * [Банды](scm-documentation/vcs/gangs.md)
+  * [Одежда](scm-documentation/vcs/clothes.md)
+  * [Погода](scm-documentation/vcs/weather.md)
 
 ## Исправление проблем <a id="troubleshooting"></a>
 
