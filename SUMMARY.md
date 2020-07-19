@@ -49,6 +49,7 @@
   * [Radar Icons](scm-documentation/vc/radar-icons.md)
   * [Weapon IDs](scm-documentation/vc/weapons.md)
 * [San Andreas](scm-documentation/sa/README.md)
+  * [Vehicle Variations](scm-documentation/sa/vehicle-variations.md)
   * [Gang IDs](scm-documentation/sa/gangs.md)
   * [Interiors](scm-documentation/sa/interiors.md)
   * [Weapon IDs](scm-documentation/sa/weapons.md)
