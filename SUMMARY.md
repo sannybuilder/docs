@@ -49,6 +49,7 @@
   * [Radar Icons](scm-documentation/vc/radar-icons.md)
   * [Weapon IDs](scm-documentation/vc/weapons.md)
 * [San Andreas](scm-documentation/sa/README.md)
+  * [Button IDs](scm-documentation/sa/buttons.md)
   * [Gang IDs](scm-documentation/sa/gangs.md)
   * [Garage IDs](scm-documentation/sa/garages.md)
   * [Haircuts](scm-documentation/sa/haircuts.md)
