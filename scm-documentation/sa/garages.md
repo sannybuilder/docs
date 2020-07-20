@@ -38,7 +38,7 @@ Garage.Activate('BODLAWN')
 | SPRSFW | \(-2430.13,1013.71,49.3413\) | Juniper Hollow Pay n Spray |  |
 | SAV1SFW | \(2699.12,821.489,49.0042\) | Paradiso garage |  |
 |  | \(-1694.78 1033.15 44.1937\) | Esplanade North garage | used in  "Yay Ka-Boom-Boom" |
-|  | \(-1794.15 1429.69 4.37321\) | Downtown garage | \(for stealing manana\) |
+|  | \(-1794.15 1429.69 4.37321\) | Downtown garage | "Ran Fa Li" |
 | **Las Venturas** |  |  |  |
 | VGELOCK | \(2602.6,1438.84,9.8337\) | burglary garage |  |
 | VECMOD | \(2382.28,1044,9.8337\) | Transfender |  |
