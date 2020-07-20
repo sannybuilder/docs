@@ -54,6 +54,7 @@
   * [Garage IDs](scm-documentation/sa/garages.md)
   * [Haircuts](scm-documentation/sa/haircuts.md)
   * [Interiors](scm-documentation/sa/interiors.md)
+  * [Particle Effects](scm-documentation/sa/particles.md)
   * [Ped Types](scm-documentation/sa/pedtypes.md)
   * [Player Clothes](scm-documentation/sa/clothes.md)
   * [Player Body Parts](scm-documentation/sa/player-body-parts.md)
