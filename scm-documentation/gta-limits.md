@@ -202,7 +202,8 @@
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left">garages</td>
+      <td style="text-align:left"><b>garages</b>
+      </td>
       <td style="text-align:left">32</td>
       <td style="text-align:left">32</td>
       <td style="text-align:left">50</td>
