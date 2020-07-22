@@ -7,7 +7,9 @@
       <th style="text-align:left">GTA III</th>
       <th style="text-align:left">Vice City</th>
       <th style="text-align:left">San Andreas</th>
+      <th style="text-align:left">SA Mobile</th>
       <th style="text-align:left">LCS</th>
+      <th style="text-align:left">VCS</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +19,8 @@
       <td style="text-align:left">131072</td>
       <td style="text-align:left">225512</td>
       <td style="text-align:left">200000</td>
+      <td style="text-align:left">200000</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -25,6 +29,8 @@
       <td style="text-align:left">32768</td>
       <td style="text-align:left">35000</td>
       <td style="text-align:left">69000</td>
+      <td style="text-align:left">69000</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -34,6 +40,8 @@
       <td style="text-align:left">120</td>
       <td style="text-align:left">200</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>mission cleanup list</b>
@@ -41,6 +49,8 @@
       <td style="text-align:left">50</td>
       <td style="text-align:left">50</td>
       <td style="text-align:left">75</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -50,6 +60,8 @@
       <td style="text-align:left">220</td>
       <td style="text-align:left">395</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>running scripts</b>
@@ -57,6 +69,8 @@
       <td style="text-align:left">128</td>
       <td style="text-align:left">128</td>
       <td style="text-align:left">96</td>
+      <td style="text-align:left">96</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -71,8 +85,11 @@
         </p>
         <p>1024 total in missions</p>
       </td>
+      <td style="text-align:left">40+2 <a href="../coding/variables.md#timer-variables">timers</a>
+      </td>
       <td style="text-align:left">96+2 <a href="../coding/variables.md#timer-variables">timers</a>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>gosub levels</b>
@@ -80,6 +97,8 @@
       <td style="text-align:left">4</td>
       <td style="text-align:left">6</td>
       <td style="text-align:left">8</td>
+      <td style="text-align:left">8</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -89,6 +108,8 @@
       <td style="text-align:left">48</td>
       <td style="text-align:left">96</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>jump table labels</b>
@@ -96,7 +117,9 @@
       <td style="text-align:left">N/A</td>
       <td style="text-align:left">N/A</td>
       <td style="text-align:left">75</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">N/A</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>external scripts</b>
@@ -104,7 +127,9 @@
       <td style="text-align:left">N/A</td>
       <td style="text-align:left">N/A</td>
       <td style="text-align:left">82</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">N/A</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>external script attachments</b>
@@ -112,7 +137,9 @@
       <td style="text-align:left">N/A</td>
       <td style="text-align:left">N/A</td>
       <td style="text-align:left">70</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">N/A</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>car generators</b>
@@ -121,6 +148,8 @@
       <td style="text-align:left">185</td>
       <td style="text-align:left">500</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>radar blips</b>
@@ -128,6 +157,8 @@
       <td style="text-align:left">32</td>
       <td style="text-align:left">75</td>
       <td style="text-align:left">175</td>
+      <td style="text-align:left">250</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -136,6 +167,8 @@
       <td style="text-align:left">336</td>
       <td style="text-align:left">336</td>
       <td style="text-align:left">620</td>
+      <td style="text-align:left">620</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -144,6 +177,8 @@
       <td style="text-align:left">0481</td>
       <td style="text-align:left">05a8</td>
       <td style="text-align:left">0a4e</td>
+      <td style="text-align:left">0a90</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -153,6 +188,8 @@
       <td style="text-align:left">16</td>
       <td style="text-align:left">16</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>car saving garage types</b>
@@ -160,6 +197,17 @@
       <td style="text-align:left">16..18</td>
       <td style="text-align:left">16..18, 24..32</td>
       <td style="text-align:left">16..18, 24..32, 39..45</td>
+      <td style="text-align:left">16..18, 24..32, 39..45</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">garages</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">50</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
   </tbody>
