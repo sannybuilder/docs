@@ -81,5 +81,5 @@
 | "water\_fnt\_tme" | the large flow of water |
 | "water\_fountain" | water of a fountain |
 | "wallbust" | a disappearing heap pair |
-| "WS\_factorysmoke" | smok |
+| "WS\_factorysmoke" | smoke |
 
