@@ -1,7 +1,7 @@
 # Варианты изменения авто
 
 ```text
-0506: set_vehicle_model #PONY next_variation <variantA> <variantB>
+0506: set_vehicle_model #PONY next_variation <variant 1> <variant 2>
 ```
 
 Большинство машин может иметь только одно изменение, поэтому второй и третий параметры должны быть одинаковыми. Однако некоторые машины могут иметь два изменения.
