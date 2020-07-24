@@ -65,6 +65,7 @@
   * [Vehicle Variations](scm-documentation/sa/vehicle-variations.md)
   * [Weapon IDs](scm-documentation/sa/weapons.md)
   * [Weather IDs](scm-documentation/sa/weather.md)
+  * [Zones](scm-documentation/sa/zones.md)
 * [Liberty City Stories](scm-documentation/lcs/README.md)
   * [Gang IDs](scm-documentation/lcs/gangs.md)
   * [Model IDs](scm-documentation/lcs/models.md)
