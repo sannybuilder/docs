@@ -52,6 +52,7 @@
   * [Банды](scm-documentation/sa/gangs.md)
   * [Варианты изменения авто](scm-documentation/sa/vehicle-variations.md)
   * [Гаражи](scm-documentation/sa/garages.md)
+  * [Зоны](scm-documentation/sa/zony.md)
   * [Интерьеры](scm-documentation/sa/interiors.md)
   * [Номера клавиш](scm-documentation/sa/buttons.md)
   * [Одежда](scm-documentation/sa/clothes.md)
