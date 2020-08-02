@@ -2,11 +2,11 @@
 
 Here you can change the IDE settings.
 
-![](../../.gitbook/assets/editor_page1.png)
+![](../.gitbook/assets/editor_page1.png)
 
 ## GUI Colors
 
-![](../../.gitbook/assets/editor_colors.png)
+![](../.gitbook/assets/editor_colors.png)
 
 The following options allow to set up different colors for the editor.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_colors.png)
 
@@ -16,21 +16,21 @@ The following options allow to set up different colors for the editor.![](mk:@MS
 
 ## Code Scan Distance
 
-![](../../.gitbook/assets/editor_look.png)
+![](../.gitbook/assets/editor_look.png)
 
-The code scan distance \(looking depth\) is used when you press `Ctrl+Space` to find [constants](../../coding/constants.md), labels and [variables](../../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
+The code scan distance \(looking depth\) is used when you press `Ctrl+Space` to find [constants](../coding/constants.md), labels and [variables](../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
 
 If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_opt.png)
 
 ## Font
 
-![](../../.gitbook/assets/editor_font.png)
+![](../.gitbook/assets/editor_font.png)
 
 Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
 
 ## Editor Configuration
 
-![](../../.gitbook/assets/editor_opt.png)
+![](../.gitbook/assets/editor_opt.png)
 
 `Show main panel` – toggle the main toolbar  
 `Show opcode info` – make the editor display important information in the status bar \(number of expecting parameters for an opcode, model ID, variable type, etc\)  

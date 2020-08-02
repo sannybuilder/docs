@@ -92,7 +92,7 @@ So this directive is the perfect solution to make a CLEO script.
 
 Prohibits the compiler from including a source code of the script. 
 
-Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../editor/options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
+Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
 
 Syntax:  
 `{$NOSOURCE}`

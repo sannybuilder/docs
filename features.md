@@ -4,7 +4,7 @@ Sanny Builder provides the end-user the following features:
 
 ## Syntax Highlighting
 
-Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](editor/options/syntax-highlighting.md).
+Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](options/syntax-highlighting.md).
 
 ## Bookmarks / Quick jump
 
@@ -26,7 +26,7 @@ Before changing the cursor position InstaSearch remembers it, so if you want to 
 
 ## Displaying Information about Opcode
 
-When the `Show opcode info` [option](editor/options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, [model](coding/data-types.md#model-names) IDs \(when the [game directory](editor/options/general.md#game-directory) is set up\), etc.
+When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, [model](coding/data-types.md#model-names) IDs \(when the [game directory](options/general.md#game-directory) is set up\), etc.
 
 ## SA Mission Builder Source Code Converter
 
@@ -116,7 +116,7 @@ DEFINE MISSION 10 AT @MYMISSION
 
 Instead of `start_mission 10` you can write`start_mission MYMISSION`.
 
-There is also the [Replace Mission Numbers](editor/options/general.md#replace-mission-numbers) option. When it's enabled, the decompiler automatically replaces all mission numbers with their names.
+There is also the [Replace Mission Numbers](options/general.md#replace-mission-numbers) option. When it's enabled, the decompiler automatically replaces all mission numbers with their names.
 
 To call the mission names list, press `Ctrl+Space`. The cursor has to be directly after the `start_mission` command.
 
@@ -130,7 +130,7 @@ If a `SCM` file contains custom-made missions you may edit the `missions.txt` to
 
 ## Multilingual Interface
 
-Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](editor/options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
+Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
 
 ## External Tools/Plug-ins Menu
 

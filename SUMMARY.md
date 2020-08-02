@@ -20,15 +20,14 @@
 
 ## Editor
 
-* [Options](editor/options/README.md)
-  * [General](editor/options/general.md)
-  * [Formats](editor/options/formats.md)
-  * [Editor](editor/options/editor.md)
-  * [Syntax Highlighting](editor/options/syntax-highlighting.md)
-  * [Hotkeys](editor/options/hotkeys.md)
-
 ---
 
+* [Options](options/README.md)
+  * [General](options/general.md)
+  * [Formats](options/formats.md)
+  * [Editor](options/editor.md)
+  * [Syntax Highlighting](options/syntax-highlighting.md)
+  * [Hotkeys](options/hotkeys.md)
 * [Features](features.md)
 * [Edit Modes](edit-modes/README.md)
   * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)

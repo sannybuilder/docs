@@ -2,7 +2,7 @@
 
 **Sanny Builder** is a fast and powerful tool designed for the GTA 3D game series \(GTA3, VC, SA, LCS; partially VCS\).
 
-It includes a disassembler, permitting the end-user to transform the game scripts into text. The compiler feature offers a convenient editor with a large number of useful functions such as [syntax highlighting](editor/options/syntax-highlighting.md), error checking, advanced search tools, [player coordinates reading](features.md#player-coordinates-management), fast movement through code and much more.
+It includes a disassembler, permitting the end-user to transform the game scripts into text. The compiler feature offers a convenient editor with a large number of useful functions such as [syntax highlighting](options/syntax-highlighting.md), error checking, advanced search tools, [player coordinates reading](features.md#player-coordinates-management), fast movement through code and much more.
 
 Sanny offers an advanced code syntax which is similar to existing programming languages. This syntax includes changeable [classes](coding/classes.md), [keywords ](coding/keywords.md)and high-level statements. We recommend you continue reading and fully explore the documentation to learn more about SB and its capabilities. We provide a wealth of information that will help you get started in mission coding.
 
@@ -36,7 +36,7 @@ sanny.exe \compile C:\myscm.txt C:\myscm.scm
 ```
 
 {% hint style="info" %}
-The `output_file_path` __parameter is optional. If there is no path specified for an output file, the compiler uses the [format rules](editor/options/formats.md#file-name-format). Note that the source file must have no errors. If there are errors found during compilation, they will be logged in the file `compile.log`. When compilation ends, the program shuts down.
+The `output_file_path` __parameter is optional. If there is no path specified for an output file, the compiler uses the [format rules](options/formats.md#file-name-format). Note that the source file must have no errors. If there are errors found during compilation, they will be logged in the file `compile.log`. When compilation ends, the program shuts down.
 {% endhint %}
 
 `\nosplash` - runs Sanny Builder without the splash screen

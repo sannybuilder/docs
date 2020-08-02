@@ -18,7 +18,7 @@
 
 * added compiler support for the Liberty City Stories `SCM` format
 * added aliases for the [timer variables](coding/variables.md#timer-variables): `TIMERA` and `TIMERB`
-* changed the [Ranges check](editor/options/general.md#ranges-check) option to apply to the global variables
+* changed the [Ranges check](options/general.md#ranges-check) option to apply to the global variables
 
 ## v. 3.2.4 - 04.08.2019
 
@@ -52,7 +52,7 @@
 * CLEO updated to the version 4.3.16
 * added the [InstaSearch](features.md#instasearch) feature \(formerly 'jump to label' function\)
 * mission names can be changed by editing appropriate `missions.txt` files
-* improved [association](editor/options/general.md#file-association) of the script file extensions with Sanny Builder
+* improved [association](options/general.md#file-association) of the script file extensions with Sanny Builder
 * Sanny Builder only checks if the game directory path is not empty, no checks for specific files \(such as an `.exe`\)
 * minor improvements in the SB updating feature
 * changed the Sanny Builder icon and the menu icons
@@ -67,7 +67,7 @@
 ## v. 3.1.3 - 22.12.2013
 
 * added support for iOS and Android versions of GTA San Andreas
-* a [code scan](editor/options/editor.md#code-scan-distance) value is now used when making a list of constants
+* a [code scan](options/editor.md#code-scan-distance) value is now used when making a list of constants
 * updated Chinese and German translations
 
 ## v. 3.1.2 - 06.10.2013
@@ -85,7 +85,7 @@
 ## v. 3.1.0 - 14.09.2013
 
 * `VCSCM.ini` is updated to include opcodes for the GTA VC mobile version and unsupported opcodes
-* when the option [Add extra info to SCM](editor/options/general.md#add-extra-info-to-scm) is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
+* when the option [Add extra info to SCM](options/general.md#add-extra-info-to-scm) is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
 * when the option `Add extra info to SCM` is enabled, Sanny Builder adds a source code into a script file \(only when the directive [$EXTERNAL](coding/directives.md#usdexternal) or [$CLEO](coding/directives.md#usdcleo) is present\)
 * added a new directive [$NOSOURCE](coding/directives.md#usdnosource) to prohibit including a source code into a compiled script
 * some hotkeys are now customizable in the options
@@ -140,7 +140,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 * replaced properties `Actor.Armour` and `Actor.Car` with their correct versions `Actor.AddArmour` and `Actor.MissionCar`
 * added a new property `Actor.CurrentCar` for the opcode `03C0` in the SA and VC classes.
 * added new hotkeys `Ctrl+Num+` and `Ctrl+Num-` to quickly change the text size
-* Sanny Builder now remembers a number of closed files for the option [Load all closed files](editor/options/editor.md#editor-configuration)
+* Sanny Builder now remembers a number of closed files for the option [Load all closed files](options/editor.md#editor-configuration)
 * fixed a bug when the compiler failed to compile a source with multiple [HEX..END](coding/hex..end.md) constructs
 * fixed a bug of version 3.05 when the program hung on startup trying to open a file
 
@@ -186,8 +186,8 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 * disassembler supports the `SCM` format of Vice City Stories
 * [constants ](coding/constants.md)support
 * new [directives](coding/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
-* [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
-* [custom arrays](editor/options/formats.md#custom-names) support
+* [writing of the additional info](options/general.md#add-extra-info-to-scm) to the end of a script file
+* [custom arrays](options/formats.md#custom-names) support
 * a [possibility](console.md#skip_scm_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
@@ -230,8 +230,8 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 * support for [hexadecimal](coding/data-types.md#hexadecimal-numbers) numbers
 * `HEX..END` statement accepts labels and global variables
 * full support for the [ADMA](coding/data-types.md#variables) datatype
-* an opportunity to give [custom names](editor/options/formats.md#custom-names) to labels
-* an opportunity to choose a [different case](editor/options/formats.md#case-converting) for custom names and strings
+* an opportunity to give [custom names](options/formats.md#custom-names) to labels
+* an opportunity to choose a [different case](options/formats.md#case-converting) for custom names and strings
 * added [console](console.md) to switch debug options
 * decompiler supports `GXT` files of GTA III & GTA VC
 * added escape sequences in [long string literals](coding/data-types.md#string-literals)
@@ -258,8 +258,8 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 * Sanny Builder became multilingual
 * added menu for [external applications](features.md#external-tools-plug-ins-menu)
 * a special version of [Opcode Search Tool](opcode-search-tool.md) has been built into SB. The details can be found in the file `OST Readme.txt`
-* validating math expressions during disassembling when [Write opcodes](editor/options/general.md#write-opcodes) is disabled \(to ensure that opcodes are used properly\)
-* an [opportunity to choose](editor/options/general.md#manual-img-opening) a `script.img` file manually if the folder with the `main.scm` file does not have one
+* validating math expressions during disassembling when [Write opcodes](options/general.md#write-opcodes) is disabled \(to ensure that opcodes are used properly\)
+* an [opportunity to choose](options/general.md#manual-img-opening) a `script.img` file manually if the folder with the `main.scm` file does not have one
 * an opportunity to add a new [code template](features.md#code-templates) directly from the editor; added template descriptions 
 * the list of models can be sorted alphabetically/by value \(`Alt+S` when the list is active\)
 * minor corrections and changes
@@ -273,7 +273,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 * improved the [jump to label](features.md#instasearch) option
 * added an opportunity to show the list of templates
-* added an [option](editor/options/general.md#replace-mission-numbers) to replace mission numbers with their names
+* added an [option](options/general.md#replace-mission-numbers) to replace mission numbers with their names
 * fixed some bugs
 
 ## v. 2.9f - 18.02.2006
@@ -306,7 +306,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
   * new [operator](coding/conditions.md#relational-operators) `<>`
   * if the disassembler can't find a `script.img` file, it uses the one from the game folder
   * added `handle` type for [arrays](coding/arrays.md)
-  * an [opportunity](editor/options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
+  * an [opportunity](options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
 
 ## v. 2.5 - 10.10.2005
 
@@ -326,7 +326,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 * added [keywords](coding/keywords.md) support
 *  some math commands can be written without opcodes \(e.g.`0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`\)
 * for the opcode `00D6` the default parameter is `0` \(`if` = `if 0`\)
-* added the [option](editor/options/formats.md#label-name-format) to customize labels output
+* added the [option](options/formats.md#label-name-format) to customize labels output
 * added [keywords](coding/keywords.md) `True` and `False` which correspond to `1` and `0`
 * added construction [HEX...END](coding/hex..end.md) for writing hexadecimal values directly in a binary output
 
@@ -345,7 +345,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 ## v. 0.8 - 20.08.2005
 
-* added an ability to [associate](editor/options/general.md#file-association) `SCM` files with Sanny Builder
+* added an ability to [associate](options/general.md#file-association) `SCM` files with Sanny Builder
 * disassembler adds an additional index to the file name if a file with the same name already exists \(e.g, if `main.scm.txt` already exists, a new file will be `main.scm[0].txt`\)
 * more informative error messages
 * added a check for duplicated labels

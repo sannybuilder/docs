@@ -1,6 +1,6 @@
 # Hotkeys
 
-Sanny Builder supports standard keyboard shortcuts for the file and text operations `(Ctrl+N`, `Ctrl+Z`, etc\). There are extra hotkeys to make scripting easier. Some of them are also [customizable](editor/options/hotkeys.md).
+Sanny Builder supports standard keyboard shortcuts for the file and text operations `(Ctrl+N`, `Ctrl+Z`, etc\). There are extra hotkeys to make scripting easier. Some of them are also [customizable](options/hotkeys.md).
 
 <table>
   <thead>
@@ -40,7 +40,7 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F10</code>
       </td>
-      <td style="text-align:left">open the <a href="editor/options/">options</a> window</td>
+      <td style="text-align:left">open the <a href="options/">options</a> window</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>F12</code>
