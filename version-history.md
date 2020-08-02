@@ -18,7 +18,7 @@
 
 * добавлена поддержка для компиляции `SCM` Liberty City Stories
 * добавлены алиасы для [переменных-таймеров](coding/variables.md#peremennye-taimery): TIMERA and TIMERB
-* опция [Проверка переменных](editor/options/general.md#proverka-peremennykh) теперь применяется и к глобальным переменным
+* опция [Проверка переменных](options/general.md#proverka-peremennykh) теперь применяется и к глобальным переменным
 
 ## v. 3.2.4 - 04.08.2019
 
@@ -52,7 +52,7 @@
 * CLEO обновлена до версии 4.3.16
 * добавлен [моментальный поиск](features.md#momentalnyi-poisk) в тексте \(ранее эта возможность называлась "переход к метке"\)
 * [оригинальные названия миссий](features.md#ispolzovanie-originalnykh-imen-missii) могут быть изменены через файл missions.txt
-* улучшена [ассоциация](editor/options/general.md#associaciya-failovykh-rasshirenii) расширений скриптовых файлов с Sanny Builder
+* улучшена [ассоциация](options/general.md#associaciya-failovykh-rasshirenii) расширений скриптовых файлов с Sanny Builder
 * при указании директории игры Sanny Builder проверяет только существование этой директории и не проверяет наличие дополнительных файлов в ней
 * небольшие улучшения в функции проверки обновлений
 * изменена иконка Sanny Builder и иконки в меню
@@ -67,13 +67,13 @@
 ## v. 3.1.3 - 22.12.2013
 
 * добавлена [поддержка](edit-modes/) iOS и Android версий GTA: San Andreas
-* значение [глубины просмотра](editor/options/editor.md#glubina-prosmotra-koda) теперь используется при построении списка констант
+* значение [глубины просмотра](options/editor.md#glubina-prosmotra-koda) теперь используется при построении списка констант
 * обновлены переводы на китайский и немецкий языки
 
 ## v. 3.1.2 - 06.10.2013
 
 * добавлен перевод на чешкий язык
-* добавлены [опции](editor/options/general.md#associaciya-failovykh-rasshirenii) ассоциации файлов `.cs` и `.cm` с Sanny Builder.
+* добавлены [опции](options/general.md#associaciya-failovykh-rasshirenii) ассоциации файлов `.cs` и `.cm` с Sanny Builder.
 * исправлены баги [\#0000011](http://bugs.sannybuilder.com/view.php?id=11), [\#0000020](http://bugs.sannybuilder.com/view.php?id=20)
 
 ## v. 3.1.1 - 22.09.2013
@@ -85,10 +85,10 @@
 ## v. 3.1.0 - 14.09.2013
 
 * в `VCSCM.ini` добавлены опкоды из мобильной версии GTA VC и отмечены неподдерживаемые опкоды
-* при включенной опции [Добавлять доп. информацию в SCM](editor/options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes/) при декомпиляции
+* при включенной опции [Добавлять доп. информацию в SCM](options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes/) при декомпиляции
 * при включенной опции `Добавлять доп. информацию в SCM`, Sanny Builder добавляет исходный код в тело скрипта \(только при наличии директивы [$EXTERNAL](coding/directives.md#usdexternal) или [$CLEO](coding/directives.md#usdcleo)\)
 * добавлена новая директива [$NOSOURCE](coding/directives.md#usdnosource), чтобы запретить добавление исходного кода в тело скрипта
-* некоторые горячие клавиши могут быть изменены [в опциях](editor/options/hotkeys.md)
+* некоторые горячие клавиши могут быть изменены [в опциях](options/hotkeys.md)
 * добавлена возможность автоматически проверять наличие обновления при запуске программы
 * директивы [$VERSION](coding/directives.md#usdversion) и [$VERSION\_RESTORE](coding/directives.md#usdversion_restore) устарели \(компилируются, но не имеют эффекта\)
 * обновлены перевод на испанский и китайский языки
@@ -132,7 +132,7 @@
 * компилятор может компилировать символы комментария внутри строки `"{text1}text2"`
 * точка с запятой `;` больше не может использоваться для закомментирования строки
 * изменен синтаксис параметра [\debug](./#parametry-komandnoi-stroki)
-* добавлены иконки флагов для доступных языков перевода в [опциях](editor/options/general.md#yazyk-interfeisa)
+* добавлены иконки флагов для доступных языков перевода в [опциях](options/general.md#yazyk-interfeisa)
 * исправлены некоторые ошибки в декомпиляции для VCS
 
 ## v. 3.06 - 17.06.2013
@@ -143,7 +143,7 @@
 * [свойства](coding/classes.md#svoistva) `Actor.Armour` и `Actor.Car` заменены на корректные версии `Actor.AddArmour`, `Actor.MissionCar`
 * добавлено новое свойство `Actor.CurrentCar` для опкода `03C0` в скриптовых классах для игр SA и VC
 * добавлены [новые комбинации клавиш](hotkeys.md) `Ctrl+Num+` и `Ctrl+Num-` для быстрого изменения размера шрифта в редакторе
-* Sanny Builder запоминает число закрытых файлов для опции [Открывать все закрытые файлы](editor/options/editor.md#nastroiki)
+* Sanny Builder запоминает число закрытых файлов для опции [Открывать все закрытые файлы](options/editor.md#nastroiki)
 * исправлена ошибка при компиляции скрипта с большим числом вставок [HEX..END](coding/hex..end.md)
 * исправлена ошибка версии 3.05, когда программа зависала при запуске, пытаясь открыть файл, переданный в качестве параметра
 
@@ -186,16 +186,16 @@
 * возможность декомпиляции `main.scm` Vice City Stories
 * поддержка [констант](coding/constants.md)
 * новые директивы [$INCLUDE](coding/directives.md#usdinclude), [$EXTERNAL](coding/directives.md#usdexternal), [$CLEO](coding/directives.md#usdcleo)
-* запись [дополнительной информации](editor/options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) в конец `main.scm`
-* задание [собственных массивов](editor/options/formats.md#sobstvennye-imena) при декомпиляции
+* запись [дополнительной информации](options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) в конец `main.scm`
+* задание [собственных массивов](options/formats.md#sobstvennye-imena) при декомпиляции
 * [возможность декомпилировать](console.md#skip_scm_header) файлы `main.scm` без заголовка
 * можно использовать внешний скрипт с именем AAA
 * новый [параметр командной строки](./#parametry-komandnoi-stroki) `\compile`
 * в цикле [FOR](coding/loops.md#for-end) можно использовать дробные значения счетчика
 * команды `WriteMem` и `ReadMem` больше не поддерживаются
 * поддержка поиска по тексту с использованием регулярных выражений
-* возможность сохранять исходник в формат [RTF или HTML](editor/options/syntax-highlighting.md)
-* возможность [пропускать заставки](editor/options/general.md#bystraya-zagruzka-igry) при запуске San Andreas
+* возможность сохранять исходник в формат [RTF или HTML](options/syntax-highlighting.md)
+* возможность [пропускать заставки](options/general.md#bystraya-zagruzka-igry) при запуске San Andreas
 * новая комбинация клавиш: [Ctrl+Enter](hotkeys.md)
 * обновленный [SASCM.INI](edit-modes/opcodes-list-scm.ini.md)
 
@@ -230,14 +230,14 @@
 * поддержка чисел в шестнадцатиричном формате
 * конструкция [HEX..END](coding/hex..end.md) может принимать значения меток и глобальных переменных
 * поддержка типа данных & для [массивов](coding/arrays.md), а также в выражениях без опкодов: `&57 += &120(&231,4i)`
-* возможность давать [собственные имена меткам](editor/options/formats.md#sobstvennye-imena)
-* возможность [выбирать регистр букв](editor/options/formats.md#registr-bukv) для собственных имен меток и переменных, а также стринговых переменных
+* возможность давать [собственные имена меткам](options/formats.md#sobstvennye-imena)
+* возможность [выбирать регистр букв](options/formats.md#registr-bukv) для собственных имен меток и переменных, а также стринговых переменных
 * добавлена [консоль](console.md) для специальных опций SB
 * поддержка `GXT` файлов GTA III, GTA VC
 * [поддержка символьных констант](coding/data-types.md#strokovye-literaly) в длинных строках
 * информация об авторе и версии [INI](edit-modes/opcodes-list-scm.ini.md) файла
 * поддержка классами `INI` с оригинальным порядком следования параметров \(как SASCM.INI от PLPynton\)
-* [опция](editor/options/editor.md#nastroiki) подтверждения выхода
+* [опция](options/editor.md#nastroiki) подтверждения выхода
 * возможность быстро переключать режим редактирования
 * конвертация отдельного, выделенного участка кода
 * возможность передавать во [внешнее приложение](features.md#menyu-vneshnikh-prilozhenii) в качестве параметра имя текущего открытого файла
@@ -247,11 +247,11 @@
 
 ## v. 2.98 - 04.08.2006
 
-* Sanny Builder полностью [русифицирован](editor/options/general.md#yazyk-interfeisa)
+* Sanny Builder полностью [русифицирован](options/general.md#yazyk-interfeisa)
 * добавлено [меню внешних приложений](features.md#menyu-vneshnikh-prilozhenii)
 * в SB встроена специальная версия [Opcode Search Tool](opcode-search-tool.md)
-* проверка математических выражений при декомпиляции с выключенной опцией [Писать опкоды](editor/options/general.md#ispolzovat-opkody)
-* возможность выбирать `IMG` файл самостоятельно, если таковой не найден в папке с `main.scm`\(опция [Ручной выбор IMG-файла](editor/options/general.md#ruchnoi-vybor-img-faila)\)
+* проверка математических выражений при декомпиляции с выключенной опцией [Писать опкоды](options/general.md#ispolzovat-opkody)
+* возможность выбирать `IMG` файл самостоятельно, если таковой не найден в папке с `main.scm`\(опция [Ручной выбор IMG-файла](options/general.md#ruchnoi-vybor-img-faila)\)
 * возможность добавлять новые [фрагменты кода](features.md#pereispolzovanie-fragmentov-koda) прямо из редактора; добавлены описания макросов
 * список моделей можно сортировать по алфавиту/по значению \(`Alt+S`, когда активен список\)
 * минорные исправления и изменения
@@ -265,7 +265,7 @@
 
 * расширена [опция прохода по меткам](features.md#momentalnyi-poisk)
 * добавлена возможность вызвать список [фрагментов кода](features.md#pereispolzovanie-fragmentov-koda)
-* добавлена [опция замены](editor/options/general.md#zamenyat-nomera-missii) номеров миссий на их имена
+* добавлена [опция замены](options/general.md#zamenyat-nomera-missii) номеров миссий на их имена
 * исправлены некоторые ошибки
 
 ## v. 2.9f - 18.02.2006
@@ -316,7 +316,7 @@
 * добавлена поддержка [ключевых слов](coding/keywords.md)
 * добавлена возможность писать некоторые математические команды без опкодов
 * для опкода `00D6` по умолчанию устанавливается параметр `0`, если иное не установлено \(`if` = `if 0`\)
-* добавлена [опция выбора](editor/options/formats.md#imena-metok) различных видов меток
+* добавлена [опция выбора](options/formats.md#imena-metok) различных видов меток
 * добавлены [константы](coding/constants.md) `True` и `False`, которые обозначают `1` и `0` соответственно
 * добавлена конструкция [HEX..END](coding/hex..end.md) для записи шестнадцатиричных значений прямо в `SCM`
 

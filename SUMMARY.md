@@ -20,15 +20,14 @@
 
 ## Редактор <a id="editor"></a>
 
-* [Опции программы](editor/options/README.md)
-  * [Общие настройки](editor/options/general.md)
-  * [Форматирование](editor/options/formats.md)
-  * [Редактор](editor/options/editor.md)
-  * [Подсветка синтаксиса](editor/options/syntax-highlighting.md)
-  * [Горячие клавиши](editor/options/hotkeys.md)
-
 ---
 
+* [Опции программы](options/README.md)
+  * [Общие настройки](options/general.md)
+  * [Форматирование](options/formats.md)
+  * [Редактор](options/editor.md)
+  * [Подсветка синтаксиса](options/syntax-highlighting.md)
+  * [Горячие клавиши](options/hotkeys.md)
 * [Возможности](features.md)
 * [Режимы редактирования](edit-modes/README.md)
   * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
