@@ -229,13 +229,13 @@ Sanny Builder supports standard keyboard shortcuts for the file and text operati
     <tr>
       <td style="text-align:left"><code>F2</code>
       </td>
-      <td style="text-align:left">use <a href="features.md#code-snippets">code snippet</a>
+      <td style="text-align:left">use the <a href="edit-modes/code-templates.md">code template</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+J</code>
       </td>
-      <td style="text-align:left">show list of <a href="features.md#code-templates">code templates</a>
+      <td style="text-align:left">show the list of <a href="edit-modes/code-templates.md">code templates</a>
       </td>
     </tr>
     <tr>

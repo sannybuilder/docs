@@ -46,27 +46,6 @@ Press `Ctrl+Alt+1` when GTA San Andreas is running and the Coords Manager window
 
 In the top edit line you can enter the XYZ coordinates, delimited by the space character or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
 
-## Code Templates
-
-You can insert a predefined piece of code called a code template by typing the template name and pressing `F2`. To display the list of available templates, press `Ctrl+J`. 
-
-For example, if you type `load` and press `F2` the editor adds:
-
-```text
-#.Load
-
-while not #.Available
-
-  wait 0
-
-end
-```
-
-All templates are contained in the file `templates.txt`. This file has the following syntax:  
-A template name is written in a separate line. The equal sign `=` follows the name. After the equal sign you can also add a short hint. The template code starts at the next line, each line begins with the equals sign. The cursor position is marked with the `|` character.
-
-It's also possible to add a template in the file `templates.txt` from the editor. Select the code and click the `Service->Add template` menu. Enter a name of the template, a description \(optionally\) in the dialog window and press the `OK` button. The template is ready to use.
-
 ## Keypress Recording \(Macro\)
 
 You can record a key pressing sequence \(macro\) and playback it later. Consider the following code:
@@ -132,9 +111,9 @@ If a `SCM` file contains custom-made missions you may edit the `missions.txt` to
 
 Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
 
-## External Tools/Plug-ins Menu
+## External Tools Menu
 
-You can add up to `9` tools which can be executed whenever you need them. Every tool has its own hotkey for your convenience. You may also pass the parameters to your tool. To pass the name of the currently opened file use the special word `$SB_FileName`.
+You can configure up to `9` apps to run when you need them. Each app has its own hotkey for your convenience. You may also pass the parameters to your app if needed. To pass the name of the currently opened file use the special word `$SB_FileName`.
 
 ## Commenting Code
 

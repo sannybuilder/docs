@@ -32,6 +32,7 @@
 * [Edit Modes](edit-modes/README.md)
   * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
+  * [Code Templates](edit-modes/code-templates.md)
 * [Console](console.md)
 * [Hotkeys](hotkeys.md)
 * [Opcode Search Tool](opcode-search-tool.md)
