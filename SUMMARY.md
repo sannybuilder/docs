@@ -32,6 +32,7 @@
 * [Режимы редактирования](edit-modes/README.md)
   * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
+  * [Шаблоны кода](edit-modes/code-templates.md)
 * [Консоль](console.md)
 * [Горячие клавиши](hotkeys.md)
 * [Поиск опкодов](opcode-search-tool.md)

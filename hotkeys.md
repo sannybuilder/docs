@@ -286,14 +286,14 @@ Sanny Builder поддерживает стандартные сочетания
       </td>
       <td style="text-align:left">&#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         <a
-        href="features.md#ispolzovanie-shablonov-koda">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D; &#x43A;&#x43E;&#x434;&#x430;</a>
+        href="edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D; &#x43A;&#x43E;&#x434;&#x430;</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl+J</code>
       </td>
       <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;
-        &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x44B;&#x445; <a href="features.md#ispolzovanie-shablonov-koda">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432; &#x43A;&#x43E;&#x434;&#x430;</a>
+        &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x44B;&#x445; <a href="edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432; &#x43A;&#x43E;&#x434;&#x430;</a>
       </td>
     </tr>
     <tr>
