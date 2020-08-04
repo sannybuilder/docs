@@ -4,7 +4,7 @@
 
 * добавлена поддержка компиляции `SCM` в GTA: Vice City Stories \([\#2](https://github.com/sannybuilder/dev/issues/2)\)
 * добавлена возможность [объявлять](coding/variables.md#korotkaya-forma-obyavleniya-peremennykh) локальные переменные с собственными именами \([\#32](https://github.com/sannybuilder/dev/issues/32)\)
-* добавлены "[вызывающие метки](coding/data-types.md#metki)": если после имени метки  стоит `()` это представляет команду`gosub`
+* добавлен упрощенный синтаксис для вызова подпрограмм, используя [имя метки](coding/data-types.md#metki): если после имени метки  стоит `()` это представляет команду`gosub`
 * больше конфигураций для [режимов редактирования](edit-modes/):
   * путь к `GXT` файлу, который использует дизассемблер \([\#7](https://github.com/sannybuilder/dev/issues/7)\)
   * путь к `opcodes.txt` \([\#5](https://github.com/sannybuilder/dev/issues/5)\)
