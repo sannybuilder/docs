@@ -1,5 +1,28 @@
 # Version History
 
+## v. 3.4.0 - 04.08.2020
+
+* added compiler support for the SCM format of GTA: Vice City Stories \([\#2](https://github.com/sannybuilder/dev/issues/2)\)
+* added syntax for declaring local variables with custom names \([\#32](https://github.com/sannybuilder/dev/issues/32)\)
+* added [callable labels](coding/data-types.md#labels): a label name followed by a pair of parentheses `()` substitutes a `gosub` command
+* added more customization points for [edit modes](edit-modes/):
+  * path to a GXT file used by the disassembler [\#7](https://github.com/sannybuilder/dev/issues/7)
+  * path to `opcodes.txt` [\#5](https://github.com/sannybuilder/dev/issues/5)
+  * exclusive [code templates](edit-modes/code-templates.md)
+* added a new tutorial on higher level constructions in the Sanny Builder language, see `help\examples` directory
+* IDE updates:
+  * `Run Game` menu action now checks for `gta-sa.exe` \(Steam\)
+  * a new menu item to quickly bootstrap a CLEO script file \(see the bottom note in [Code Templates](edit-modes/code-templates.md)\)
+  * links to the new documentation portal in the main menu and error messages
+* minor updates:
+  * updated opcode descriptions \(player money += in SA, award\_achievement in SA Mobile, `0479` in VCS\)
+  * renamed variables `script_controlled_player` and `flag_player_on_mission` to `PLAYER_ACTOR` and `ONMISSION` respectively in GTA III's `CustomVariables.ini` \([\#3](https://github.com/sannybuilder/data/issues/3)\)
+  * reverted files in the `help\GXT Strings` directory to the older version \([\#25](https://github.com/sannybuilder/dev/issues/25)\)
+  * renamed `macroes.txt` to `templates.txt`
+* [translation updates](https://github.com/sannybuilder/translations/milestone/1)
+
+👏 Kudos to [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [China·XMDS](https://gtaforums.com/profile/1034872-china%C2%B7xmds/), and [Wesser](https://gtaforums.com/profile/172776-wesser/) for their awesome contribution to this release.
+
 ## v. 3.3.3 - 20.10.2019
 
 * fixed a [bug](http://bugs.sannybuilder.com/view.php?id=52) causing incorrect external scripts compilation

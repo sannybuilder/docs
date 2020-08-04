@@ -146,6 +146,38 @@ Syntax:
 int 0@ // 0@ declared as an integer variable.
 ```
 
+Starting from v3.4.0 it is possible to declare variables with custom names:
+
+```text
+int a
+float distance
+string name
+
+a = 1
+distance = 15.5
+name = 'CJ'
+```
+
+An initial value can follow the variable name to reduce the number of the lines of code:
+
+```text
+int a = 1
+float distance = 15.5
+string name = 'CJ'
+```
+
+The compiler binds a new local variable to each name. In the example above one may expect a resulting code to look like:
+
+```text
+0006: 0@ = 1 
+0007: 1@ = 15.5 
+05AA: 2@ = 'CJ'
+```
+
+{% hint style="info" %}
+Due to [design limitations](https://github.com/sannybuilder/dev/issues/32) this feature is only available in CLEO scripts.
+{% endhint %}
+
 ## Variable Initialization
 
 You can specify an initial value for the variable when declaring it. Write `=` and then the value:

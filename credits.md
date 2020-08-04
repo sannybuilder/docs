@@ -4,7 +4,7 @@
 
 **Sanny Builder** is made and produced by [Seemann](https://github.com/x87) with the contributions from the best people from around the globe:
 
-Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Hammer83, koPPP, listener, Midnightz, pdescobar, PLPynton, San'OK, Sergey81, spaceeinstein, Silent, Y\_Less and many others.
+Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Hammer83, koPPP, listener, Midnightz, OrionSR, pdescobar, PLPynton, San'OK, Sergey81, spaceeinstein, Silent, Y\_Less, ZAZ, and many others.
 
 **Special thanks to yelmi and Xieon for their support.**
 

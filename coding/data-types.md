@@ -27,7 +27,7 @@ $myVar = &0 // read first 4 bytes of the main.scm and write them to $myVar
 
 ## Labels
 
-Labels are used to reference the code location from unconditional \(opcodes 0002, 0050\) or conditional jumps \(opcode 004D\). They start with `:`followed by a valid identifier \(a label name\).
+Labels are used to reference the code location from unconditional \(opcodes `0002`, `0050`\) or conditional jumps \(opcode `004D`\). They start with `:`followed by a valid identifier \(a label name\).
 
 ```text
 :MyLabel
@@ -37,6 +37,14 @@ To reference the label from an opcode use `@`  and then write the label name.
 
 ```text
 0002: jump @MyLabel
+```
+
+If a label name is written as a standalone statement followed by `()`  it represents the `gosub` command:
+
+```text
+// the following statements are equivalent
+MyLabel()
+gosub @MyLabel
 ```
 
 ## String literals
