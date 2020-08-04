@@ -39,7 +39,7 @@ To reference the label from an opcode use `@`  and then write the label name.
 0002: jump @MyLabel
 ```
 
-If a label name is written as a standalone statement followed by `()`  it represents the `gosub` command:
+If a label name is written as a standalone statement followed by `()`  it represents a call to the subroutine with the `gosub` command:
 
 ```text
 // the following statements are equivalent

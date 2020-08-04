@@ -2,16 +2,16 @@
 
 ## v. 3.4.0 - 04.08.2020
 
-* added compiler support for the SCM format of GTA: Vice City Stories \([\#2](https://github.com/sannybuilder/dev/issues/2)\)
-* added syntax for declaring local variables with custom names \([\#32](https://github.com/sannybuilder/dev/issues/32)\)
+* added compiler support for the `SCM` format of GTA: Vice City Stories \([\#2](https://github.com/sannybuilder/dev/issues/2)\)
+* added syntax for [declaring](coding/variables.md#shorter-form-of-declaration) local variables with custom names \([\#32](https://github.com/sannybuilder/dev/issues/32)\)
 * added [callable labels](coding/data-types.md#labels): a label name followed by a pair of parentheses `()` substitutes a `gosub` command
 * added more customization points for [edit modes](edit-modes/):
-  * path to a GXT file used by the disassembler [\#7](https://github.com/sannybuilder/dev/issues/7)
-  * path to `opcodes.txt` [\#5](https://github.com/sannybuilder/dev/issues/5)
+  * path to a GXT file used by the disassembler \([\#7](https://github.com/sannybuilder/dev/issues/7)\)
+  * path to `opcodes.txt` \([\#5](https://github.com/sannybuilder/dev/issues/5)\)
   * exclusive [code templates](edit-modes/code-templates.md)
 * added a new tutorial on higher level constructions in the Sanny Builder language, see `help\examples` directory
 * IDE updates:
-  * `Run Game` menu action now checks for `gta-sa.exe` \(Steam\)
+  * `Run San Andreas` menu action now checks for `gta-sa.exe` \(Steam\)
   * a new menu item to quickly bootstrap a CLEO script file \(see the bottom note in [Code Templates](edit-modes/code-templates.md)\)
   * links to the new documentation portal in the main menu and error messages
 * minor updates:
