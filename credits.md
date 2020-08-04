@@ -4,7 +4,7 @@
 
 Автор и разработчик **Sanny Builder** - [Seemann](https://github.com/x87). Проекту также помогали:
 
-Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Hammer83, koPPP, listener, Midnightz, pdescobar, PLPynton, San'OK, Sergey81, spaceeinstein, Silent, Y\_Less и многие другие.
+Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Hammer83, koPPP, listener, Midnightz, OrionSR, pdescobar, PLPynton, San'OK, Sergey81, spaceeinstein, Silent, Y\_Less, ZAZ, и многие другие.
 
 **Особая благодарность за помощь выражается yelmi и Xieon.**
 
