@@ -4,7 +4,7 @@
 
 * added compiler support for the `SCM` format of GTA: Vice City Stories \([\#2](https://github.com/sannybuilder/dev/issues/2)\)
 * added syntax for [declaring](coding/variables.md#shorter-form-of-declaration) local variables with custom names \([\#32](https://github.com/sannybuilder/dev/issues/32)\)
-* added [callable labels](coding/data-types.md#labels): a label name followed by a pair of parentheses `()` substitutes a `gosub` command
+* added a simpler form of calling subroutines using [labels](coding/data-types.md#labels): a label name followed by a pair of parentheses `()` substitutes a `gosub` command
 * added more customization points for [edit modes](edit-modes/):
   * path to a GXT file used by the disassembler \([\#7](https://github.com/sannybuilder/dev/issues/7)\)
   * path to `opcodes.txt` \([\#5](https://github.com/sannybuilder/dev/issues/5)\)
