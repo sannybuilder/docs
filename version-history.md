@@ -1,5 +1,10 @@
 # Version History
 
+## v. 3.4.1 - 06.08.2020
+
+* fixed incorrect number of parameters in opcode `04E3` in `VCSSCM.INI`
+* fixed the issue with the disassembler ignoring `Write opcodes` [option](options/general.md#write-opcodes) and producing a callable label when a regular label is expected
+
 ## v. 3.4.0 - 04.08.2020
 
 * added compiler support for the `SCM` format of GTA: Vice City Stories \([\#2](https://github.com/sannybuilder/dev/issues/2)\)
