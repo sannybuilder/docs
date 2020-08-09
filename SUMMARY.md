@@ -40,6 +40,8 @@
 ## Документация по SCM <a id="scm-documentation"></a>
 
 * [Скриптовые лимиты](scm-documentation/gta-limits.md)
+* [GTA III](scm-documentation/gta3/README.md)
+  * [Иконки радара](scm-documentation/gta3/radar-icons.md)
 * [Vice City](scm-documentation/vc/README.md)
   * [Банды](scm-documentation/vc/gangs.md)
   * [Гаражи](scm-documentation/vc/garages.md)
