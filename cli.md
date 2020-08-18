@@ -2,25 +2,25 @@
 
 ## --compile
 
-`--compile <input file path> [output file path]` - compiles the file and exits
+`--compile <путь к исходному файлу> [путь к конечному файлу]` - скомпилировать `исходный файл` и закрыть программу
 
 ```text
 sanny.exe --compile C:\myscm.txt C:\myscm.scm
 ```
 
 {% hint style="info" %}
-The `output file path` __parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name. 
+Если `путь к конечному файлу` пропущен, компилятор использует [настройки форматирования](options/formats.md#imena-failov). 
 {% endhint %}
 
 {% hint style="info" %}
-The input file must have no errors. If there are errors found during compilation, they will be logged in the file `compile.log`. When compilation ends, the program shuts down.
+Ошибки, возникшие во время компиляции, записываются в файл `compile.log`.
 {% endhint %}
 
-Shortcut: `-c`
+Сокращенная версия: `-c`
 
 ## --debug
 
-`--debug` - toggles [debug options](console.md#running-with-debug)
+`--debug` - переключает [отладочные опции](console.md#otladochnye-opcii)
 
 ```text
 sanny.exe --debug 11000
@@ -28,7 +28,7 @@ sanny.exe --debug 11000
 
 ## --game
 
-`--game <game>` - selects the [default mode](edit-modes/#type) for the given game. Known `game` values are:
+`--game <game>` - выбирает [режим редактирования по умолчанию](edit-modes/#type) для выбранной игры. Допустимые значения `game`:
 
 * `gta3`
 * `vc`
@@ -37,7 +37,7 @@ sanny.exe --debug 11000
 * `vcs`
 * `sa_mobile`
 
-Shortcut: `-g`
+Сокращенная версия: `-g`
 
 ```text
 sanny.exe --game sa
@@ -45,9 +45,9 @@ sanny.exe --game sa
 
 ## --mode
 
-`--mode <id>` - selects the mode by `id`. [Modes](edit-modes/) and their ids are defined in the `modes.xml` file.
+`--mode <id>` - выбирает режим редактирования с заданным [`id`](edit-modes/#id). Режимы и их `id` определяются в файле `modes.xml`.
 
-Shortcut: `-m`
+Сокращенная версия: `-m`
 
 ```text
 sanny.exe --mode vcs_psp
@@ -55,7 +55,7 @@ sanny.exe --mode vcs_psp
 
 ## --no-splash
 
-`--no-splash` - runs Sanny Builder without the splash screen
+`--no-splash` - запускает Sanny Builder без загрузочного экрана
 
 ```text
 sanny.exe --no-splash
@@ -63,7 +63,7 @@ sanny.exe --no-splash
 
 ## -x
 
-`-x <file path>` - sets the path to the file with the [edit modes](edit-modes/) configuration
+`-x <file path>` - устанавливает путь к файлу с [режимами редактирования](edit-modes/)
 
 ```text
 sanny.exe -x ..\my-modes.xml
