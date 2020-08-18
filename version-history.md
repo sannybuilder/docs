@@ -23,7 +23,7 @@
 Новые описания опкодов для GTA LCS и GTA VCS несовместимы с предыдущими версиями. Вы должны заново дизассемблировать `main.scm` этих игр прежде чем делать какие-то изменения.
 {% endhint %}
 
-👏 Благодарим [marcelo\_20xx](https://gtaforums.com/profile/95582-marcelo_20xx/) и [fastman92](https://gtaforums.com/profile/423631-fastman92/) ****за их вклад в этот релиз.
+👏 Спасибо [marcelo\_20xx](https://gtaforums.com/profile/95582-marcelo_20xx/) и [fastman92](https://gtaforums.com/profile/423631-fastman92/) ****за их вклад в этот релиз.
 
 ## v. 3.4.1 - 06.08.2020
 
@@ -51,7 +51,7 @@
   * файл `macroes.txt` переименован `templates.txt`
 * [обновления переводов](https://github.com/sannybuilder/translations/milestone/1)
 
-👏 Благодарим [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [China·XMDS](https://gtaforums.com/profile/1034872-china%C2%B7xmds/), и [Wesser](https://gtaforums.com/profile/172776-wesser/) за их вклад в этот релиз.
+👏 Спасибо [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [China·XMDS](https://gtaforums.com/profile/1034872-china%C2%B7xmds/), и [Wesser](https://gtaforums.com/profile/172776-wesser/) за их вклад в этот релиз.
 
 ## v. 3.3.3 - 20.10.2019
 
