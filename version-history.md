@@ -3,7 +3,7 @@
 ## v. 3.5.0 - 18.08.2020
 
 * updated [command line interface](cli.md)
-  * Unix-style syntax with dashes \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
+  * Unix-style syntax with hyphens \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
   * new options [`-x`](cli.md#x), [`--game`](cli.md#game), [`--mode`](cli.md#mode) 
 * improved [edit modes](edit-modes/)
   * `games.xml` renamed to `modes.xml`, inner [structure](edit-modes/#file-format) updated
@@ -11,11 +11,11 @@
   * a new mode for SA v2.0 \(using [`CustomLabels_v2.ini`](edit-modes/customlabels.ini.md)\)
   * separate modes for VCS PSP and VCS PS2 \([\#41](https://github.com/sannybuilder/dev/issues/41)\)
   * support for [custom IDE/DAT](edit-modes/#ide) files
-  * hot reloading of modes configuration \([\#15](https://github.com/sannybuilder/dev/issues/15)\)
-  * increased space for mode name section \([\#8](https://github.com/sannybuilder/dev/issues/8)\)
+  * "hot" reloading of modes configuration \([\#15](https://github.com/sannybuilder/dev/issues/15)\)
+  * increased available space for the mode name section \([\#8](https://github.com/sannybuilder/dev/issues/8)\)
 * updated opcode definitions for LCS/VCS\*
 * removed SAMB to SB converter \([\#27](https://github.com/sannybuilder/dev/issues/27)\)
-* fixed the file association \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
+* fixed the [file association](options/general.md#file-association) \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
 * fixed the bug with LCS and VCS compilation \([\#49](https://github.com/sannybuilder/dev/issues/49), [\#0053](http://bugs.sannybuilder.com/view.php?id=53), [\#0064](http://bugs.sannybuilder.com/view.php?id=64)\)
 * fixed the issue with [Opcode Search Tool](opcode-search-tool.md) window not available after minimize \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
 
