@@ -6,7 +6,7 @@
   * Unix-подобный синтаксис с дефисами \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
   * новые опции [`-x`](), [`--game`](), [`--mode`]() 
 * улучшения [режимов редактирования](edit-modes/)
-  * `games.xml` переименован в `modes.xml`, обновлена [внутренняя структура](edit-modes/#file-format)
+  * `games.xml` переименован в `modes.xml`, обновлена [внутренняя структура](edit-modes/#format-faila)
   * режимы могут [наследовать](edit-modes/#extends) свойства других режимов \(полезно для поддержки различных версий одной игры\)
   * новый режим для SA v2.0 \(использует [`CustomLabels_v2.ini`]()\)
   * раздельные режимы для VCS PSP и VCS PS2 \([\#41](https://github.com/sannybuilder/dev/issues/41)\)

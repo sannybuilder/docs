@@ -12,7 +12,7 @@ By default Sanny Builder reads the modes configuration from the file `<SB>\data\
 
 The file `modes.xml` is open for modification and extension, and users can create their own modes by changing it.
 
-## File Format
+## Формат файла
 
 `modes.xml` is a file in the XML format and can be changed in any text editor. It defines the available modes.
 
@@ -20,7 +20,7 @@ The root node is `<modes>` and it has no attributes. The file can only have one 
 
 Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags \(properties\) defining paths to directories or files.
 
-### Mode Attributes
+### Атрибуты режима
 
 #### id
 
@@ -67,7 +67,7 @@ One mode for each target game must be a default one. It means Sanny Builder uses
 
 The valid value for the `type` is `default.` Omit this attribute for non-default modes.
 
-### Mode Parameters
+### Параметры режима
 
 #### arrays 
 
@@ -140,7 +140,7 @@ path to [`CustomVariables.ini`](../coding/variables.md)
 
 path to [`opcodes.txt`](../opcode-search-tool.md)
 
-### Built-in Variables
+### Доступные переменные
 
 Sanny provides a few variables that can be used in parameters and attributes \(if applicable\).
 
@@ -149,7 +149,7 @@ Sanny provides a few variables that can be used in parameters and attributes \(i
 
 Both paths do not include the trailing slash.
 
-## Available Modes
+## Список режимов
 
 Sanny Builder offers many different modes and their number may vary from version to version:
 
@@ -169,7 +169,7 @@ The naming schema defines the way of describing the opcodes. The c_ommunity_ sch
 
 The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
 
-## Selecting a mode
+## Переключение режимов
 
 To change the mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. As you click the mode name Sanny Builder makes all necessary adjustments and you may continue working immediately.
 
