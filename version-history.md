@@ -1,6 +1,6 @@
 # Version History
 
-## v. 3.5.0
+## v. 3.5.0 - 18.08.2020
 
 * updated [command line interface](cli.md)
   * Unix-style syntax with dashes \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
