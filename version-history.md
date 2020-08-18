@@ -4,11 +4,11 @@
 
 * изменения в [интерфейсе командной строки](cli.md)
   * Unix-подобный синтаксис с дефисами \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
-  * новые опции [`-x`](), [`--game`](), [`--mode`]() 
+  * новые опции [`-x`](cli.md#x), [`--game`](cli.md#game), [`--mode`](cli.md#mode) 
 * улучшения [режимов редактирования](edit-modes/)
   * `games.xml` переименован в `modes.xml`, обновлена [внутренняя структура](edit-modes/#format-faila)
   * режимы могут [наследовать](edit-modes/#extends) свойства других режимов \(полезно для поддержки различных версий одной игры\)
-  * новый режим для SA v2.0 \(использует [`CustomLabels_v2.ini`]()\)
+  * новый режим для SA v2.0 \(использует [`CustomLabels_v2.ini`](edit-modes/customlabels.ini.md)\)
   * раздельные режимы для VCS PSP и VCS PS2 \([\#41](https://github.com/sannybuilder/dev/issues/41)\)
   * поддержка [собственных IDE/DAT файлов](edit-modes/#ide)
   * "горячая" перезагрузка режимов редактирования \([\#15](https://github.com/sannybuilder/dev/issues/15)\)
