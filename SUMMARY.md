@@ -36,6 +36,7 @@
 * [Консоль](console.md)
 * [Горячие клавиши](hotkeys.md)
 * [Поиск опкодов](opcode-search-tool.md)
+* [Интерфейс командной строки](cli.md)
 
 ## Документация по SCM <a id="scm-documentation"></a>
 
