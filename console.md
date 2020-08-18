@@ -22,7 +22,7 @@ Before enabling the following options turn on the debug mode with the command `t
 
 ### CODE\_OFFSETS
 
-The disassembler prints an offset for each command.
+The disassembler prints the offset of each command.
 
 ### VAR\_COUNTER
 
@@ -30,13 +30,13 @@ After compiling the console contains the list of the [global variables](coding/v
 
 ### IGNORE\_UNKNOWN
 
-The disassembler missing opcodes, incorrect parameters and so on. It helps to calmost any file that used to be protected or compiled incorrectly.
+The disassembler ignores unknown opcodes, incorrect parameters and so on. It helps to open almost any file that used to be protected or compiled incorrectly.
 
 ### CONSTANT\_INDEXES
 
-Disassembles array elements as global variables with indices. It's available for `GTA SA` \(enabled by default\), `LCS`, `VCS` modes. 
+The disassembler prints array elements as global variables with indexes. It's available for `GTA SA`, `LCS`, `VCS` games. 
 
-E.g. given an array of three elements starting with `$10` this option affect the way the variables look like after disassembling:
+E.g. given an array of three elements starting at `$10` this option affects the way the variables look like after disassembling:
 
 | Without `CONSTANT_INDEXES` | With `CONSTANT_INDEXES` |
 | :--- | :--- |
@@ -52,9 +52,9 @@ The disassembler skips the header of the input file. It allows to open headless 
 
 Sanny Builder offers a few other ways to toggling debug options outside of the console that might be useful in some cases.
 
-### Running with  the `\debug` parameter
+### Running with --debug
 
-Usage of the [command-line parameter](./#command-line-usage) `\debug` is an alternate way to switch the debug options. Run Sanny with the parameter `\debug=X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
+The `--debug` [option](cli.md#debug) provides an alternate way of switching the debug options. Run Sanny with the parameter `--debug=X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
 
 | Index | Debug Option |
 | :--- | :--- |
@@ -65,7 +65,7 @@ Usage of the [command-line parameter](./#command-line-usage) `\debug` is an alte
 | 5 | SKIP\_SCM\_HEADER |
 
 ```text
-sanny.exe \debug=11000
+sanny.exe --debug 11000
 ```
 
 The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGNORE_UNKNOWN` mode. The remaining zeros disable `VAR_COUNTER`, `CONSTANT_INDEXES`, `SKIP_SCM_HEADER`.

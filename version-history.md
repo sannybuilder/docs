@@ -1,5 +1,30 @@
 # Version History
 
+## v. 3.5.0
+
+* updated [command line interface](cli.md)
+  * Unix-style syntax with dashes \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
+  * new options [`-x`](cli.md#x), [`--game`](cli.md#game), [`--mode`](cli.md#mode) 
+* improved [edit modes](edit-modes/)
+  * `games.xml` renamed to `modes.xml`, inner [structure](edit-modes/#file-format) updated
+  * modes can now [inherit](edit-modes/#extends) properties of other modes \(useful for different versions of one game\)
+  * a new mode for SA v2.0 \(using [`CustomLabels_v2.ini`](edit-modes/customlabels.ini.md)\)
+  * separate modes for VCS PSP and VCS PS2 \([\#41](https://github.com/sannybuilder/dev/issues/41)\)
+  * support for [custom IDE/DAT](edit-modes/#ide) files
+  * hot reloading of modes configuration \([\#15](https://github.com/sannybuilder/dev/issues/15)\)
+  * increased space for mode name section \([\#8](https://github.com/sannybuilder/dev/issues/8)\)
+* updated opcode definitions for LCS/VCS\*
+* removed SAMB to SB converter \([\#27](https://github.com/sannybuilder/dev/issues/27)\)
+* fixed the file association \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
+* fixed the bug with LCS and VCS compilation \([\#49](https://github.com/sannybuilder/dev/issues/49), [\#0053](http://bugs.sannybuilder.com/view.php?id=53), [\#0064](http://bugs.sannybuilder.com/view.php?id=64)\)
+* fixed the issue with [Opcode Search Tool](opcode-search-tool.md) window not available after minimize \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
+
+{% hint style="warning" %}
+New opcode definitions for GTA LCS and GTA VCS are incompatible with the previous definitions. You must disassemble the `main.scm` prior to making any scripts for those games.
+{% endhint %}
+
+👏 Kudos to [marcelo\_20xx](https://gtaforums.com/profile/95582-marcelo_20xx/) and [fastman92](https://gtaforums.com/profile/423631-fastman92/) ****for their awesome contribution to this release.
+
 ## v. 3.4.1 - 06.08.2020
 
 * fixed incorrect number of parameters in opcode `04E3` in `VCSSCM.INI`

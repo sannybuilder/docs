@@ -1,6 +1,6 @@
 # Opcodes List \(SCM.INI\)
 
-`SCM.INI` is the file containing information about opcodes used during reading and producing script files. Each game has its own list of opcodes. They are shipped with Sanny Builder.
+`SCM.INI` is the file containing information about opcodes used during disassembling and compiling script files. Sanny Builder ships a list of opcodes for each [edit mode](./).
 
 | Game | File Name | Location |
 | :--- | :--- | :--- |
@@ -9,6 +9,7 @@
 | San Andreas | SASCM.INI | data\sa |
 | Liberty City Stories | LCSSCM.INI | data\lcs |
 | Vice City Stories | VCSSCM.INI | data\vcs |
+| SA Mobile | SASCM.INI | data\sa\_mobile |
 
 ## File Format
 
@@ -22,7 +23,7 @@ Special INI parameters provide metadata information about the opcodes list.
 `PUBLISHER` – who authored this version   
 `DATE` – the update date.   
   
-The decompiler prints the metadata in the first line of the output file.
+The disassembler prints the metadata in the first line of the output file.
 
 ### Opcode Definition
 
@@ -76,7 +77,7 @@ Changing parameters order in the INI file should be avoided by any means as it m
 {% endhint %}
 
 {% hint style="info" %}
-In `GTA SA SCR` [edit mode](./) all opcodes have parameters in their original unchanged order.
+Parameters order may vary from mode to mode. See the comparison table in [Edit modes](./#available-modes) to find out which mode uses which type.
 {% endhint %}
 
 #### Parameter Types

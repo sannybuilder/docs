@@ -36,6 +36,7 @@
 * [Console](console.md)
 * [Hotkeys](hotkeys.md)
 * [Opcode Search Tool](opcode-search-tool.md)
+* [Command Line Interface](cli.md)
 
 ## SCM Documentation
 
