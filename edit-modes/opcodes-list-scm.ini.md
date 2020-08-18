@@ -1,6 +1,6 @@
 # Opcodes List \(SCM.INI\)
 
-`SCM.INI` is the file containing information about opcodes used during disassembling and compiling script files. Sanny Builder ships a list of opcodes for each [edit mode](./).
+`SCM.INI` is the file containing information about opcodes used during disassembling and compiling script files. Sanny Builder ships a list of opcodes for each [edit mode](./#opcodes).
 
 | Game | File Name | Location |
 | :--- | :--- | :--- |

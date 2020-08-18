@@ -54,7 +54,7 @@ Sanny Builder offers a few other ways to toggling debug options outside of the c
 
 ### Running with --debug
 
-The `--debug` [option](cli.md#debug) provides an alternate way of switching the debug options. Run Sanny with the parameter `--debug=X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
+The `--debug` [option](cli.md#debug) provides an alternate way of switching the debug options. Run Sanny with the parameter `--debug X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
 
 | Index | Debug Option |
 | :--- | :--- |
