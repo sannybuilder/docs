@@ -26,7 +26,7 @@ Before changing the cursor position InstaSearch remembers it, so if you want to 
 
 ## Displaying Information about Opcode
 
-When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, [model](coding/data-types.md#model-names) IDs \(when the [game directory](options/general.md#game-directory) is set up\), etc.
+When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, [model](coding/data-types.md#model-names) IDs, and more.
 
 ## SA Mission Builder Source Code Converter
 
