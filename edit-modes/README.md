@@ -6,7 +6,7 @@ Edit modes supply Sanny Builder with the following information:
 
 * a target game
 * paths to files with the game data
-* paths to files with supporting information \([label](customlabels.ini.md) names, variable names, constants, etc\)
+* paths to files with supporting information \([labels](customlabels.ini.md), [variables](./#variables), [constants](./#constants), etc\)
 
 By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option](../cli.md#x).
 
