@@ -14,11 +14,11 @@ Sanny Builder поддерживает разные игры и платформ
 
 ## Формат файла
 
-`modes.xml` is a file in the XML format and can be changed in any text editor. It defines the available modes.
+`modes.xml` - документ в формате `XML`, который может редактироваться в любом текстовом редакторе. В этом файле содержатся все доступные режимы.
 
-The root node is `<modes>` and it has no attributes. The file can only have one root node. 
+Корневым является элемент `<modes>`, который не имеет атрибутов. В файле может быть только один корневой элемент. 
 
-Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags \(properties\) defining paths to directories or files.
+Каждый из режимов описывается одним из внутренних элементов `<modes>`, начинающихся с открывающего тэга `<mode>` и заканчивающихся закрывающим тэгом `</mode>`. Элемент `<mode>` имеет как обязательные, так и необязательные атрибуты, описанные ниже. Содержимое `<mode>` представляет собой набор различных тэгов \(элементов\), определяющих пути к папкам и файлам.
 
 ### Атрибуты режима
 
@@ -71,74 +71,74 @@ The valid value for the `type` is `default.` Omit this attribute for non-default
 
 #### arrays 
 
-path to [`CustomArrays.ini`](../coding/arrays.md)
+путь к [`CustomArrays.ini`](../coding/arrays.md)
 
 #### classes 
 
-path to[`classes.db`](../coding/classes.md)
+путь к [`classes.db`](../coding/classes.md)
 
 #### constants
 
-path to[`constants.txt`](../coding/constants.md)
+путь к[`constants.txt`](../coding/constants.md)
 
 #### data 
 
-path to the mode directory
+путь к директории режима редактирования
 
 #### ide 
 
-path to either an `.ide` or `.dat` file:  
-`.ide` files contain game [model names](../coding/data-types.md#model-names) and characteristics  
-`.dat` files contain paths to other `.ide` files
+путь к `.ide` или `.dat` файлу:  
+`.ide` файлы содержат [имена моделей](../coding/data-types.md#imena-modelei) и их характеристики  
+`.dat` файлы содержат пути к другим `.ide` файлам
 
-`ide` element may have an optional `base` attribute to specify a folder that is used to resolve relative paths in the `.dat` file.
+Элемент `ide` имеет необязательный атрибут `base`, который задает папку, относительно которой расчитываются пути, определенные внутри `.dat` файла:
 
 ```text
 <ide base="@game:\">default.dat</ide>
 ```
 
-Without `base` all relative paths are resolved starting from the location of the `.dat` file.
+Без `base` все пути расчитываются относительно папки с `.dat` файлом.
 
-A mode may have multiple `<ide>` elements.
+Режим редактирования может иметь несколько элементов `<ide>`.
 
 #### keywords 
 
-path to a list of [keywords](../coding/keywords.md)
+путь к файлу со списком [ключевых слов](../coding/keywords.md)
 
 #### labels 
 
-path to [`CustomLabels.ini`]()
+путь к [`CustomLabels.ini`]()
 
 #### missions 
 
-path to`missions.txt`
+путь к [`missions.txt`](../features.md#ispolzovanie-originalnykh-imen-missii)\`\`
 
 #### opcodes 
 
-path to a list of [opcodes](opcodes-list-scm.ini.md)
+путь к файлу со [списком опкодов](opcodes-list-scm.ini.md)
 
 #### templates 
 
-path to an [exclusive templates]() file
+путь к файлу с [эксклюзивными шаблонами](code-templates.md)
 
 #### text 
 
-path to a `.gxt` file
+путь к `.gxt` файлу
 
-`<text>` has one required attribute: `format`. The supported values are:
+`<text>` имеет обязательный атрибут: `format`. Допустимыми значениями являются:
 
-`gta3`: `.gxt` has one table, plain keys, ANSI encoding  
-`vc`: `.gxt` has multiple tables, plain keys, ANSI encoding  
-`sa`: `.gxt` has multiple tables, hashed keys are hashed, ANSI encoding  
-`sa_mobile`: `.gxt` has multiple tables, hashed keys, UTF-16 encoding
+`gta3`: `.gxt` с одной таблицей, текстовыми ключами, кодировкой ANSI  
+`vc`: `.gxt` с несколькими таблицами, текстовыми ключами, кодировкой ANSI  
+`sa`: `.gxt` с несколькими таблицами, зашифрованными ключами, кодировкой ANSI  
+`sa_mobile`: `.gxt` с несколькими таблицами, зашифрованными ключами, кодировкой UTF-16
 
 #### variables
 
-path to [`CustomVariables.ini`](../coding/variables.md)
+путь к [`CustomVariables.ini`](../coding/variables.md)
 
 #### examples
 
-path to [`opcodes.txt`](../opcode-search-tool.md)
+путь к [`opcodes.txt`](../opcode-search-tool.md)
 
 ### Доступные переменные
 
