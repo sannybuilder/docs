@@ -1,16 +1,16 @@
 # Режимы редактирования
 
-Sanny Builder supports many games and platforms and so there is a predefined configuration for each supported game called an **edit mode**. 
+Sanny Builder поддерживает разные игры и платформы в серии Grand Theft Auto. Для этого в его состав входит конфигурация для каждой поддерживаемой игры, которая называется **режимом редактирования**.
 
-Edit modes supply Sanny Builder with the following information:
+Режим редактирования определяет следующую информацию:
 
-* a target game
-* paths to files with the game data
-* paths to files with supporting information \([label]() names, variable names, constants, etc\)
+* целевая игра
+* пути к игровым файлам
+* пути к файлам со вспомогательной информацией \(имена [меток](./#labels), [переменных](./#variables), [констант](./#constants)\)
 
-By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option]().
+По умолчанию Sanny Builder читает конфигурацию режимов из файла `<SB>\data\modes.xml`. Этот путь может быть изменен через [опцию](../cli.md#x) командной строки `-x`.
 
-The file `modes.xml` is open for modification and extension, and users can create their own modes by changing it.
+Допускается изменение существующих режимов и создание новых путем внесения изменений в файл `modes.xml`.
 
 ## Формат файла
 
