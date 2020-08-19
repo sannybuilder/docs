@@ -26,15 +26,7 @@ Before changing the cursor position InstaSearch remembers it, so if you want to 
 
 ## Displaying Information about Opcode
 
-When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, [model](coding/data-types.md#model-names) IDs, and more.
-
-## SA Mission Builder Source Code Converter
-
-Sanny Builder supports the SAMB 0.33 syntax. To use the converter, open the source file in Sanny Builder and select the menu: `Tools->Code converter->MB->SB`. 
-
-{% hint style="info" %}
-The converter uses the file `MB.ini` from the Sanny install directory which contains the variables used by SAMB and their memory addresses. If you added your own variables in the file `variables.ini` \(shipped with SAMB 0.33\), copy them into the `MB.ini` file. 
-{% endhint %}
+When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, or [model](coding/data-types.md#model-names) IDs \(if `IDE` files for the current [edit mode](edit-modes/#ide) have been loaded\).
 
 ## Opcode Search
 
