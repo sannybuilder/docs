@@ -151,23 +151,25 @@ Sanny предоставляет несколько переменных, кот
 
 ## Список режимов
 
-Sanny Builder offers many different modes and their number may vary from version to version:
+Sanny Builder предлагает много различных режимов, их количество может меняться от версии к версии:
 
-| Title | Naming schema  | Parameters order | Game |
+| Название | Имена опкодов | Порядок параметров | Игра |
 | :--- | :--- | :--- | :--- |
-| GTA III | community | custom | all versions of GTA III |
-| GTA VC | community | custom | all versions of Vice City |
-| GTA SA v1.0 | community | custom | SA v1.0  |
-| GTA SA v2.0 | community | custom | SA v2.0 |
-| GTA SA \(v1.0 - SCR\) | Rockstar | original | SA v1.0 |
-| GTA LCS | Rockstar | original | all versions of Liberty City Stories |
-| GTA VCS \(PSP\) | Rockstar | original | VCS for PSP |
-| GTA VCS \(PS2\) | Rockstar | original | VCS for PS2 |
-| SA Mobile | community | custom | SA Android and iOS versions |
+| GTA III | сообщество | измененный | все версии GTA III |
+| GTA VC | сообщество | измененный | все версии Vice City |
+| GTA SA v1.0 | сообщество | измененный | SA версия 1.0  |
+| GTA SA v2.0 | сообщество | измененный | SA версия 2.0 |
+| GTA SA \(v1.0 - SCR\) | Rockstar | первоначальный | SA версия 1.0 |
+| GTA LCS | Rockstar | первоначальный | все версии Liberty City Stories |
+| GTA VCS \(PSP\) | Rockstar | первоначальный | VCS для PSP |
+| GTA VCS \(PS2\) | Rockstar | первоначальный | VCS для PS2 |
+| SA Mobile | сообщество | измененный | SA версия для Android и iOS |
 
-The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers \(e.g. `char` or `script`\) that is consistent with the game's inner structures.  
+Колонка `Имена опкодов` определяет способ именования опкодов. Первые имена неизвестным опкодам были даны в результате анализа игрового кода, проводимого сообществом скриптеров в течение многих лет. Так появились такие термины как `актёр` или `поток`. Альтернативой является оригинальная терминология, использованная разработчиками игры \(соответственно `персонаж` или `скрипт`\). Эта терминология вместе со списком оригинальных названий всех опкодов оказались доступны в коде игры GTA SA: Mobile.   
 
-The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
+`Порядок параметров` определяет как расположены параметры опкода относительно друг друга. В первоначальном порядке все параметры находятся в той последовательности, как было задумано разработчиками игры, от параметра с наименьшим индексом к параметру с наибольшим индексом. Измененный порядок подразумевает, что в некоторых опкодах параметры переставлены местами для повышения читаемости кода или по иным причинам.
+
+Сочетание оригинальной терминологии и сохранение порядка следования параметров обеспечивает максимальное сходство скриптов с тем языком, который использовали разработчики игры.
 
 ## Переключение режимов
 
