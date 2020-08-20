@@ -18,31 +18,31 @@ Sanny Builder поддерживает разные игры и платформ
 
 Корневым является элемент `<modes>`, который не имеет атрибутов. В файле может быть только один корневой элемент. 
 
-Каждый из режимов описывается одним из внутренних элементов `<modes>`, начинающихся с открывающего тэга `<mode>` и заканчивающихся закрывающим тэгом `</mode>`. Элемент `<mode>` имеет как обязательные, так и необязательные атрибуты, описанные ниже. Содержимое `<mode>` представляет собой набор различных тэгов \(элементов\), определяющих пути к папкам и файлам.
+Каждый из режимов описывается одним из дочерних элементов `<modes>`, начинающихся с открывающего тэга `<mode>` и заканчивающихся закрывающим тэгом `</mode>`. Элемент `<mode>` имеет как обязательные, так и необязательные атрибуты, описанные ниже. Содержимое `<mode>` представляет собой набор различных тэгов \(элементов\), определяющих пути к папкам и файлам.
 
 ### Атрибуты режима
 
 #### id
 
-`id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some settings for this mode, e.g. a game directory.
+`id` - это обязательный и неповторяющийся идентификатор режима. Sanny Builder использует его для сохранения некоторых пользовательских настроек режима, например выбранной [директории игры](../options/general.md#direktoriya-igry).
 
-A valid value for the `id` attribute is a unique series of characters not used for any other mode's id. 
+Допустимым значением атрибута является последовательность символов, которая не используется как идентификатор другого режима редактирования.
 
 #### extends
 
-A mode can extend another mode \(the parent\) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode. 
+Режим может наследовать свойства другого режима \(родительский режим\), чтобы уменьшить число повторяющихся параметров. Это полезно для разных версий одной игры, где большая часть конфигурации одинакова, за исключением некоторых параметров. Родительский режим может наследовать свойства другого режима.
 
-When a property is missing Sanny Builder recursively traverses all parent modes trying to find the property.
+Если в конфигурации режима отсутствует какой-то параметр, Sanny Builder рекурсивно проходит по всем родительским режимам, чтобы найти его значение.
 
-A valid value for the `extends` attribute is the `id` of another mode defined in the same file.
+Допустимым значением атрибута является `id` другого режима редактирования, описанного в этом же файле.
 
 #### title
 
-`title` defines the mode's displayed name. Due to the interface constraints avoid long names and keep it within the limit of 24 characters.
+`title` задает отображаемое имя режима. Из-за ограничений интерфейса избегайте длинных имен и используйте имена короче 24 символов.
 
 #### game
 
-The `game` attribute defines a target game for the mode. There are 6 known values:
+Атрибут `game` определяет целевую игру для данного режима. Допустимыми значениями являются:
 
 * `gta3`
 * `vc`
@@ -51,21 +51,19 @@ The `game` attribute defines a target game for the mode. There are 6 known value
 * `vcs`
 * `sa_mobile`
 
-Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game.
-
-Sanny Builder displays a game icon in front of the edit mode name so you know the target game. 
-
-Before disassembling or compiling a script, make sure that the correct edit mode is active. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
+Перед началом работы со скриптом, убедитесь что выбран правильный режим редактирования. Каждая игра имеет свой собственный формат скриптов, который несовместим с другими играми. Даже если компиляция прошла без ошибок, в игре может возникнуть ошибка при попытке чтения скрипта в неизвестном ей формате.
 
 {% hint style="info" %}
-A compiled script file may store an information which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
+В скомпилированном файле может [храниться информация](../options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) о целевой игре для данного скрипта. Перед началом дизассемблирования такого скрипта Sanny Builder предлагает переключить режим редактирования на нужный. Игнорирование такого предложения может привести к ошибке, т.к. формат скрипта может отличаться от того, что ожидает дизассемблер.
 {% endhint %}
+
+Для удобства пользователей Sanny Builder отображает иконку целевой игры напротив имени режима. 
 
 #### type
 
-One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option]().
+Один из режимов для каждой целевой игры должен быть режимом по умолчанию. Это означает, что Sanny Builder использует его при запуске с [опцией](../cli.md#game) `--game`.
 
-The valid value for the `type` is `default.` Omit this attribute for non-default modes.
+Допустимым значением атрибута является `default.` Не указывайте этот атрибут для остальных режимов.
 
 ### Параметры режима
 
