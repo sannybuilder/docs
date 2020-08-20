@@ -111,7 +111,7 @@ path to [`CustomLabels.ini`](customlabels.ini.md)
 
 #### missions 
 
-path to`missions.txt`
+path to[`missions.txt`](../features.md#custom-mission-titles)
 
 #### opcodes 
 
@@ -129,7 +129,7 @@ path to a `.gxt` file
 
 `gta3`: `.gxt` has one table, plain keys, ANSI encoding  
 `vc`: `.gxt` has multiple tables, plain keys, ANSI encoding  
-`sa`: `.gxt` has multiple tables, hashed keys are hashed, ANSI encoding  
+`sa`: `.gxt` has multiple tables, hashed keys, ANSI encoding  
 `sa_mobile`: `.gxt` has multiple tables, hashed keys, UTF-16 encoding
 
 #### variables

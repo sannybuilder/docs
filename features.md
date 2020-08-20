@@ -95,7 +95,7 @@ Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to 
 
 ## Custom Mission Titles
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes/). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
+Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes/#missions). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
 
 If a `SCM` file contains custom-made missions you may edit the `missions.txt` to have the correct titles after disassembling.
 

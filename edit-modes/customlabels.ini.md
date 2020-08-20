@@ -1,11 +1,12 @@
 # CustomLabels.ini
 
-You can give labels custom names that do not depend on the disassembler [configuration](../options/formats.md#label-name-format). The names are specified in the file `CustomLabels.ini` \(one for each edit mode\).
+You can give labels custom names that do not depend on the disassembler [configuration](../options/formats.md#label-name-format). Those names are defined in the file `CustomLabels.ini` \(one for each [edit mode](./#labels)\).
 
-File syntax:  
+## File Syntax
+
 `<label offset>=<custom name>`
 
-If the disassembler finds a label at the specified offset, this label gets the given custom name.
+If the disassembler finds a label at the specified offset, this label gets the custom name.
 
-To find out the offset value change the labels format to [`Global Offset`](../options/formats.md#global-offset) in the options. After disassembling, a number in the label name is the offset value.
+To find out offset values enable the `CODE_OFFSETS` debug [option](../console.md#code_offsets). After disassembling, a number in front of the script instruction is the offset value.
 
