@@ -24,9 +24,9 @@ Each edit mode is a child node of `<modes>` beginning with the opening tag `<mod
 
 #### id
 
-`id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some settings for this mode, e.g. a game directory.
+`id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some user settings for this mode, e.g. a [game directory](../options/general.md#game-directory).
 
-A valid value for the `id` attribute is a unique series of characters not used for any other mode's id. 
+A valid value for this attribute is a unique series of characters not used for any other mode's id. 
 
 #### extends
 
@@ -34,15 +34,15 @@ A mode can extend another mode \(the parent\) to reduce the number of duplicated
 
 When a property is missing Sanny Builder recursively traverses all parent modes trying to find the property.
 
-A valid value for the `extends` attribute is the `id` of another mode defined in the same file.
+A valid value for this attribute is the id of another mode defined in the same file.
 
 #### title
 
-`title` defines the mode's displayed name. Due to the interface constraints avoid long names and keep it within the limit of 24 characters.
+`title` defines the mode's displayed name. Due to the interface constraints avoid long names and keep it within the limit of `24` characters.
 
 #### game
 
-The `game` attribute defines a target game for the mode. There are 6 known values:
+The `game` attribute defines a target game for the mode. There are `6` valid values:
 
 * `gta3`
 * `vc`
@@ -51,21 +51,19 @@ The `game` attribute defines a target game for the mode. There are 6 known value
 * `vcs`
 * `sa_mobile`
 
-Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game.
-
-Sanny Builder displays a game icon in front of the edit mode name so you know the target game. 
-
-Before disassembling or compiling a script, make sure that the correct edit mode is active. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
+Before disassembling or compiling a script, make sure that the correct edit mode is active. Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
 
 {% hint style="info" %}
-A compiled script file may store an information which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
+A compiled script file may [store information](../options/general.md#add-extra-info-to-scm) about which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
 {% endhint %}
+
+Sanny Builder displays a game icon in front of the edit mode name so you know the target game. 
 
 #### type
 
 One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option](../cli.md#game).
 
-The valid value for the `type` is `default.` Omit this attribute for non-default modes.
+The valid value for this attribute is `default.` Omit this attribute for non-default modes.
 
 ### Mode Parameters
 
