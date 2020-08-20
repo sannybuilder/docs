@@ -69,11 +69,11 @@ The valid value for the `type` is `default.` Omit this attribute for non-default
 
 ### Параметры режима
 
-#### arrays 
+#### arrays
 
 путь к [`CustomArrays.ini`](../coding/arrays.md)
 
-#### classes 
+#### classes
 
 путь к [`classes.db`](../coding/classes.md)
 
@@ -81,11 +81,11 @@ The valid value for the `type` is `default.` Omit this attribute for non-default
 
 путь к[`constants.txt`](../coding/constants.md)
 
-#### data 
+#### data
 
 путь к директории режима редактирования
 
-#### ide 
+#### ide
 
 путь к `.ide` или `.dat` файлу:  
 `.ide` файлы содержат [имена моделей](../coding/data-types.md#imena-modelei) и их характеристики  
@@ -101,27 +101,27 @@ The valid value for the `type` is `default.` Omit this attribute for non-default
 
 Режим редактирования может иметь несколько элементов `<ide>`.
 
-#### keywords 
+#### keywords
 
 путь к файлу со списком [ключевых слов](../coding/keywords.md)
 
-#### labels 
+#### labels
 
 путь к [`CustomLabels.ini`]()
 
-#### missions 
+#### missions
 
-путь к [`missions.txt`](../features.md#ispolzovanie-originalnykh-imen-missii)\`\`
+путь к [`missions.txt`](../features.md#ispolzovanie-originalnykh-imen-missii)
 
-#### opcodes 
+#### opcodes
 
 путь к файлу со [списком опкодов](opcodes-list-scm.ini.md)
 
-#### templates 
+#### templates
 
 путь к файлу с [эксклюзивными шаблонами](code-templates.md)
 
-#### text 
+#### text
 
 путь к `.gxt` файлу
 
