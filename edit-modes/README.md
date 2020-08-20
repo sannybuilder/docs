@@ -142,12 +142,12 @@ The valid value for the `type` is `default.` Omit this attribute for non-default
 
 ### Доступные переменные
 
-Sanny provides a few variables that can be used in parameters and attributes \(if applicable\).
+Sanny предоставляет несколько переменных, которые могут использоваться в параметрах и атрибутах \(там, где это применимо\).
 
-`@game:` - path to the [game directory](../options/general.md#game-directory) configured in the options  
-`@sb:` - path to the Sanny Builder directory \(where `sanny.exe` is located\)
+`@game:` - путь к [папке с игрой](../options/general.md#direktoriya-igry), которая выбрана в настройках  
+`@sb:` - путь к папке Sanny Builder \(где находится `sanny.exe`\)
 
-Both paths do not include the trailing slash.
+Оба пути не включают в себя завершающий слеш \(`/`\).
 
 ## Список режимов
 
@@ -171,11 +171,11 @@ The parameters order defines the way of arranging the opcode parameters. In the 
 
 ## Переключение режимов
 
-To change the mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. As you click the mode name Sanny Builder makes all necessary adjustments and you may continue working immediately.
+Чтобы переключить режим редактирования, кликните в правом нижнем углу программы. Появится список доступных режимов. Выберите нужный и кликните по нему. Sanny Builder загрузит все требуемые файлы и вы сразу можете продолжить работу.
 
 ![](../.gitbook/assets/edit_modes.png)
 
-To select the mode using CLI run Sanny Builder with the `--mode` [option](). To select a default mode for the game use the `--game` [option]().
+Выбрать режим через командную строку можно с [опцией](../cli.md#mode) `--mode`. Чтобы выбрать режим по умолчанию для какой-либо игры, используйте [опцию](../cli.md#game) `--game`.
 
-Running Sanny Builder with the `-x` [option]() allows loading the modes configuration from a file different from the default `modes.xml`. If Sanny Builder is already running, it reloads the configuration and updates the list of modes.
+Запуск Sanny Builder с [опцией](../cli.md#x) `-x` позволяет загрузить конфигурацию режимов из файла, отличного от `modes.xml`. Если при этом Sanny Builder уже запущен, он перезагрузит конфигурацию и обновит список доступных режимов.
 
