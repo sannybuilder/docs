@@ -86,8 +86,8 @@ A letter following the index number indicates the parameter type.
 
 `d` - any value  
 `p` - a [label](../coding/data-types.md#labels) reference  
-`o` - a [model name](../coding/data-types.md#model-names)   
-`g` - a GXT entry   
+`o` - a [model name](../coding/data-types.md#model-names)  
+`g` - a key from the [`.gxt`](./#text) file  
 `x` - an external script ID
 
 {% hint style="info" %}
