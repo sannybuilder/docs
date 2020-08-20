@@ -107,7 +107,7 @@ The valid value for the `type` is `default.` Omit this attribute for non-default
 
 #### labels
 
-путь к [`CustomLabels.ini`]()
+путь к [`CustomLabels.ini`](customlabels.ini.md)
 
 #### missions
 
