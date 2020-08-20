@@ -91,7 +91,7 @@
 `d` - любое значение  
 `p` - имя [метки](../coding/data-types.md#metki)  
 `o` - имя [модели](../coding/data-types.md#imena-modelei)  
-`g` - ключ из `GXT` файла  
+`g` - ключ из [`.gxt`](./#text) файла  
 `x` - ID внешнего скрипта
 
 {% hint style="info" %}
