@@ -1,5 +1,12 @@
 # Version History
 
+## v. 3.5.1 - 21.08.2020
+
+* fixed a bug with LCS and VCS compilation \([\#56](https://github.com/sannybuilder/dev/issues/56)\)
+* arrays in LCS and VCS now get custom names from `CustomVariables.ini` and `CustomArrays.ini` \([\#53](https://github.com/sannybuilder/dev/issues/53)\)
+
+👏 Kudos to [darkdraggy](https://gtaforums.com/profile/1097463-darkdraggy/) ****for reporting the first bug and helping to test the fix.
+
 ## v. 3.5.0 - 18.08.2020
 
 * updated [command line interface](cli.md)
@@ -15,9 +22,9 @@
   * increased available space for the mode name section \([\#8](https://github.com/sannybuilder/dev/issues/8)\)
 * updated opcode definitions for LCS/VCS\*
 * removed SAMB to SB converter \([\#27](https://github.com/sannybuilder/dev/issues/27)\)
-* fixed the [file association](options/general.md#file-association) \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
-* fixed the bug with LCS and VCS compilation \([\#49](https://github.com/sannybuilder/dev/issues/49), [\#0053](http://bugs.sannybuilder.com/view.php?id=53), [\#0064](http://bugs.sannybuilder.com/view.php?id=64)\)
-* fixed the issue with [Opcode Search Tool](opcode-search-tool.md) window not available after minimize \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
+* fixed [file association](options/general.md#file-association) \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
+* fixed a bug with LCS and VCS compilation \([\#49](https://github.com/sannybuilder/dev/issues/49), [\#0053](http://bugs.sannybuilder.com/view.php?id=53), [\#0064](http://bugs.sannybuilder.com/view.php?id=64)\)
+* fixed an issue with [Opcode Search Tool](opcode-search-tool.md) window not available after minimize \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
 
 {% hint style="warning" %}
 New opcode definitions for GTA LCS and GTA VCS are incompatible with the previous definitions. You must disassemble the `main.scm` prior to making any scripts for those games.
