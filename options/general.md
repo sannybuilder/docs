@@ -12,12 +12,6 @@ This tab contains the general settings used by Sanny Builder.
 
 Sanny Builder needs certain game files while working, so you have to choose a correct directory where the game for the current edit mode is installed. You may input the path manually or by selecting the directory via the dialog appearing when you press the button.
 
-## Opcodes Path
-
-![](../.gitbook/assets/main_ini.png)
-
-The program also needs the file containing the opcodes list. You may set the path to this file here \(manually or by selecting file dialog appearing when you press the button\).
-
 ## Interface Language
 
 ![](../.gitbook/assets/lang-en.png)
