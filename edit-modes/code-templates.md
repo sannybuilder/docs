@@ -12,7 +12,7 @@ end // for
 
 ## Types of Templates
 
-There are two types of templates: shared and exclusive. Shared templates are available across all [edit modes](./). They are contained in the file `data\templates.txt`. Exclusive templates are designed specifically for the current edit mode. A path to an exclusive template file can be customized with the `template` key in the `games.xml`:
+There are two types of templates: shared and exclusive. Shared templates are available across all [edit modes](./). They are contained in the file `data\templates.txt`. Exclusive templates are designed specifically for the current edit mode. A path to an exclusive template file can be customized with the `template` key in the `modes.xml`:
 
 ```text
 <templates>@sb:\data\gta3\templates.txt</templates>
@@ -34,7 +34,7 @@ It's also possible to add a template from the editor. Select the code and click 
 Enter a name of the template, a description \(optionally\) in the dialog window, choose the type of the template, and press the `OK` button. The template is ready to use.
 
 {% hint style="info" %}
-The exclusive template option becomes unavailable if the `games.xml` does not have a template file path set for the current edit mode.
+The exclusive template option becomes unavailable if the `modes.xml` does not have a template file path set for the current edit mode.
 {% endhint %}
 
 {% hint style="info" %}
