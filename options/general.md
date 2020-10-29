@@ -22,7 +22,7 @@ Translation files are located in the `lang` folder. More information on how to c
 
 ## File Association
 
-![](../.gitbook/assets/main_ass.png)
+![](../.gitbook/assets/sb-options-associate.png)
 
 You may associate different file extensions with Sanny Builder. When a checkbox is selected, your Windows Registry is changed and you may open the files with this extension simply by clicking it. To cancel the association, unselect a proper checkbox.
 
