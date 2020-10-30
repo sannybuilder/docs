@@ -1,10 +1,10 @@
-# Built-in Commands
+# Дополнительные команды
 
-The following commands are built directly into the compiler and serve mostly as [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar).
+В компилятор встроено несколько дополнительных команд, которые позволяют [упростить](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D1%85%D0%B0%D1%80) некоторые конструкции.
 
 ## INC
 
-Increments the first parameter by the second one. The first parameter is a [variable](variables.md).
+Прибавляет к значению [переменной](variables.md) \(первый параметр\) число \(второй параметр\):
 
 ```text
 Inc($IntVariable, $Value)
@@ -12,7 +12,7 @@ Inc($IntVariable, $Value)
 $IntVariable += $Value
 ```
 
-The second parameter is equal to `1` if isn't specified.
+Второй параметр по умолчанию равен `1`.
 
 ```text
 Inc(1@)
@@ -20,7 +20,7 @@ Inc(1@)
 1@ += 1
 ```
 
-Since the version 3.06 it's possible to use the `++` operator that can be applied to variables and increments their value by one.
+Начиная с версии 3.06 можно использовать оператор инкремента `++`. Он пишется после имени переменной и увеличивает ее значение на `1`.
 
 ```text
 $var++
@@ -30,7 +30,7 @@ $var += 1
 
 ## DEC
 
-Decrements the first parameter by the second one. The first parameter is a variable.
+Вычитает из значения [переменной](variables.md) \(первый параметр\) число \(второй параметр\):
 
 ```text
 Dec($IntVariable, $Value)
@@ -38,7 +38,7 @@ Dec($IntVariable, $Value)
 $IntVariable -= $Value
 ```
 
-The second parameter is equal to `1` if isn't specified.
+Второй параметр по умолчанию равен `1`.
 
 ```text
 Dec(1@)
@@ -46,7 +46,7 @@ Dec(1@)
 1@ -= 1
 ```
 
-Since the version 3.06 it's possible to use the `--` operator that can be applied to variables and decrements their value by one.
+Начиная с версии 3.06 можно использовать оператор декремента `--`. Он пишется после имени переменной и уменьшает ее значение на `1`.
 
 ```text
 $var--
@@ -56,7 +56,7 @@ $var -= 1
 
 ## MUL
 
-Multiplies the first parameter by the second one. The first parameter is a variable.
+Умножает значение [переменной](variables.md) \(первый параметр\) на число \(второй параметр\):
 
 ```text
 Mul($IntVariable, $Value)
@@ -64,7 +64,7 @@ Mul($IntVariable, $Value)
 $IntVariable = $IntVariable * $Value
 ```
 
-The second parameter is equal to `2` if isn't specified.
+Второй параметр по умолчанию равен `2`.
 
 ```text
 Mul(1@)
@@ -74,7 +74,7 @@ Mul(1@)
 
 ## DIV
 
-Divides the first parameter by the second one. The first parameter is a variable.
+Делит значение [переменной](variables.md) \(первый параметр\) на число \(второй параметр\):
 
 ```text
 Div($IntVariable, $Value)
@@ -82,7 +82,7 @@ Div($IntVariable, $Value)
 $IntVariable = $IntVariable / $Value
 ```
 
-The second parameter is equal to `2` if isn't specified.
+Второй параметр по умолчанию равен `2`.
 
 ```text
 Div(1@)
@@ -92,23 +92,23 @@ Div(1@)
 
 ## ALLOC 
 
-This function sets the offset of a [global variable](variables.md#global-variables) at the global variable space that exists in the beginning of the `main.scm` header.
+Эта функция задает адрес для [глобальной переменной](variables.md#globalnye-peremennye), по которому она будет хранить свое значение. Значения переменных хранятся в начале файла `main.scm`. 
 
-It's only meaningful for custom variables \(e.g. `$text`\) not defined in the `CustomVariables.ini`. [`DMA`-variables](variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` \(40\*4\).
+Применять эту команду следует только к переменным с текстовым именем \(например, `$text`\). Для переменных с числовым именем \(т.н. [`DMA`-переменные](variables.md#globalnye-peremennye)\) их адрес определяется самим этим числом. Например, переменная `$40` хранит свое значение по смещению `160` \(40\*4\).
 
-The first parameter must be a global variable, the second parameter must be a positive integer number or zero.
+Первый параметр должен быть глобальной переменной, второй - целым числом больше либо равным нулю.
 
 ```text
-Alloc($MyVar, 40) - the variable $MyVar will be compiled as $40
+Alloc($MyVar, 40) - переменная $MyVar будет скомпилирована как $40
 ```
 
 {% hint style="info" %}
-See also `help\examples\alloc.txt`
+См. также `help\examples\alloc.txt`
 {% endhint %}
 
 ## SQR
 
-Multiplies the variable by itself.
+Умножает переменную на саму себя
 
 ```text
 sqr($var) 
@@ -117,16 +117,16 @@ $var *= $var
 ```
 
 {% hint style="info" %}
-The variable type has to be [declared](variables.md#var-end-construct).
+Тип переменной должен быть [объявлен](variables.md#konstrukciya-var-end).
 {% endhint %}
 
 ## RANDOM
 
-This function generates a random number within the specified range.
+Эта функция возвращает случайное число в заданном интервале:
 
 ```text
 $rnd = random(1, $high)
 ```
 
-This function can be used for both integer and floating-point variables. The opcode is selected based on the type of the result variable \(`$rnd` in this example\).
+Может использоваться как для целых, так и для дробных чисел. Конечный опкод зависит от [типа](variables.md#konstrukciya-var-end) переменной, в которую записывается результат \(`$rnd`\).
 

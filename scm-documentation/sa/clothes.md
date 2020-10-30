@@ -1,12 +1,12 @@
-# Player Clothes
+# Одежда
 
 ```text
-Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
+Player.SetClothes($PLAYER_CHAR, <текстура>, <модель>, <часть тела>)
 ```
 
-## Torso
+## Верхняя одежда
 
-| Texture | Model | [Body part](player-body-parts.md) | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | player\_torso | torso | 0 | Torso \(default\) |
 | vestblack | vest | 0 | Black Tank |
@@ -77,9 +77,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | suit1gang | suit1 | 0 | Green Jacket |
 | letter | sleevt | 0 | Letterman Top |
 
-## Legs
+## Штаны
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | player\_legs | legs | 2 | Legs \(default\) |
 | worktrcamogrn | worktr | 2 | Woodland Camo |
@@ -127,9 +127,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | suit1trblk2 | suit1tr | 2 | Tuxedo Pants |
 | suit1trgang | suit1tr | 2 | Green Pants |
 
-## Shoes
+## Обувь
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | foot | feet | 3 | Shoes ; \(default\) |
 | cowboyboot2 | biker | 3 | Cowboy Boots |
@@ -170,9 +170,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | shoedressbrn | shoe | 3 | Brown Shoes |
 | shoespatz | shoe | 3 | Spats |
 
-## Necklaces
+## Цепи
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | dogtag | neck | 13 | Dogtags |
 | neckafrica | neck | 13 | Africa Pendant |
@@ -187,9 +187,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | neckdollar | neck | 13 | Dollar Chain |
 | neckcross | neck | 13 | Cross Chain |
 
-## Watches
+## Часы
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | watchpink | watch | 14 | Pink Watch |
 | watchyellow | watch | 14 | Yellow Watch |
@@ -204,9 +204,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | watchcro | watch | 14 | Gold Crowex |
 | watchcro2 | watch | 14 | Silver Crowex |
 
-## Glasses
+## Очки
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | groucho | grouchos | 15 | Joke Glasses |
 | zorro | zorromask | 15 | Joke Mask |
@@ -226,9 +226,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | glasses05dark | glasses03 | 15 | Black Shades |
 | glasses05 | glasses03 | 15 | Black Rim |
 
-## Hats
+## Головные уборы
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | bandred | bandana | 16 | Red Rag Back |
 | bandblue | bandana | 16 | Blue Rag Back |
@@ -288,9 +288,9 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | bowlergang | bowler | 16 | Green Derby |
 | boaterblk | boater | 16 | Black Boater |
 
-## Special
+## Униформа
 
-| Texture | Model | Body part | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | gimpleg | gimpleg | 17 | Gimp Suit |
 | valet | valet | 17 | Valet Uniform |

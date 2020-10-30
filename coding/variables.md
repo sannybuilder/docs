@@ -1,26 +1,26 @@
-# Variables
+# Переменные
 
-A **variable \(var\)** is a named storage location that contains a value and can be read/rewrite many times. There are two types of variables.
+Переменная - это именованная область памяти со значением, которое может быть многократно прочитано и/или изменено. Существует два вида переменных - глобальные и локальные.
 
-## Global variables
+## Глобальные переменные
 
-A global variable starts with `$` followed by an identifier \(name\).  The global variable name is any combination of letters, digits and `_`:
+Глобальная переменная начинается со знака `$`, после которого следует ее имя. Имя глобальной переменной может состоять из латинских букв, цифр и `_`:
 
 `$variable1 $100 $____`
 
 {% hint style="info" %}
-A global variable with the name that only consists of digits is called a `DMA`-variable \(**D**irect **M**emory **A**ddress\). See also [Alloc](built-in-commands.md#alloc).
+Глобальная переменная, чье имя состоит из цифр, называется`DMA`-переменная \(**D**irect **M**emory **A**ddress\). См. [Alloc](built-in-commands.md#alloc).
 {% endhint %}
 
-Their values are available from any place of the code.
+Значения глобальных переменных доступны из любого места в коде.
 
-### **Saved Variables**
+### **Сохраняемые переменные**
 
-A saved variable is a special global variable available only in `LCS` and `VCS` modes. Its name is prefixed with `$_`, e.g. `$_var`. The value of this variable persists across saved games. Global variables denoted by `$` only \(e.g. `$var`\) are not saved and they get blank values when the LCS or VCS game loads.
+Сохраняемые переменные - это особый вид глобальных переменных, добавленный в `LCS` и `VCS` [режимах](../edit-modes/). Перед их именем стоит `$_`, например `$_var`. Значение такой переменной восстанавливается при загрузке сохраненной игры. Глобальные переменные, которые начинаются только с `$` \(например, `$var`\), не сохраняют свое значение и обнуляются при загрузке сохранения в LCS или VCS.
 
-## Local variables
+## Локальные переменные
 
-A local variable name may only be a number followed by `@`.
+Именем локальной переменной служит число, после которого стоит знак `@`.
 
 ```text
 0@ 
@@ -28,87 +28,86 @@ A local variable name may only be a number followed by `@`.
 56@
 ```
 
-Their values are available only within the current script or the mission.
+Значения локальных переменных доступны только в пределах текущего скрипта или миссии.
 
 {% hint style="warning" %}
-The number of local variables per script is strictly [limited](../scm-documentation/gta-limits.md).
+Количество локальных переменных в одном скрипте/миссии строго [ограничено](../scm-documentation/gta-limits.md).
 {% endhint %}
 
-### **Timer Variables**
+### Переменные-таймеры
 
-Each script or a mission have 2 special local variables called `TIMERA` and `TIMERB`. The value of a timer variable is increased automatically when the game clock advances, so they are commonly used to measure time elapsed since the timer reset:
+Каждый скрипт или миссия также имеют две особые локальные переменные, которые называются `TIMERA` и `TIMERB`. Значение переменной-таймера постоянно увеличивается с ходом игры, поэтому они обычно используются, чтобы измерять время, пройденное с определенного момента \(сброса таймера\).
 
 ```text
-0006: TIMERA = 0 // reset the timer
+0006: TIMERA = 0 // сброс таймера
 
 :WAIT_2S
 0001: wait 0 ms
 00D6: if
-0019:   TIMERA > 2000 // if the timer value is > 2000, i.e. 2 seconds has passed
+0019:   TIMERA > 2000 // если таймер увеличился до 2000, т.е. прошло 2 секунды
 004D: jump_if_false @WAIT_2S
-0662: printstring "2 seconds has passed" // display the message
+0662: printstring "2 seconds has passed" // показать текст
 ```
 
 {% hint style="info" %}
-`TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. In older scripts the timers are known as `16@`, `17@` \(GTA3, VC\) or `32@`, `33@` \(SA\).
+Имена `TIMERA`и`TIMERB`доступны начиная с Sanny Builder v3.3.0. В более ранних скриптах таймеры использовались как обычные локальные переменные `16@, 17@` \(в GTA3 и VC\) либо `32@, 33@` \(SA\).
 {% endhint %}
 
-## VAR..END construct
+## Конструкция VAR..END
 
-Variables are commonly used in the expressions. If the right operand is a number constant, the opcode can be omitted:
+Переменные обычно используются в арифметических или условных выражениях. Если в выражении правая часть является числом, опкод указывать не обязательно:
 
 ```text
 $var = 0
 $myarray($index, 10i) >= 150
 ```
 
-If both operands in the expression are variables, the compiler can not determine the correct opcode, because the types of the variables are unknown.
+Если же обе части выражения являются переменными, компилятор не сможет подобрать нужный опкод, т.к. типы переменных неизвестны.
 
-For example, there are two opcodes to increment a variable value: `0058` for integer values and `0059` for floating-point values.
+Например, существует два опкода, которые складывают значения двух переменных: `0058` для целых чисел и `0059` для дробных.
 
 ```text
-0058: $Var1 += $Var2 // (int)
-0059: $Var1 += $Var2 // (float)
+0058: $Var1 += $Var2 // (целые числа)
+0059: $Var1 += $Var2 // (дробные числа)
 ```
 
-Assuming there is no opcode, which one to use?
+Если убрать опкод, как скомпилировать такое выражение?
 
 ```text
 $Var1 += $Var2 // ??
 ```
 
-To communicate the compiler a variable type use the `VAR..END` construct.
+Чтобы сообщить компилятору тип переменных, используется конструкция `VAR..END`.
 
-`VAR..END` construct allows to declare variables and their types for the advanced use.
+Конструкция `VAR..END` позволяет объявлять переменные и их типы.
 
-Syntax:  
+Синтаксис:  
 `var  
-<variable>: <type>  
+<переменная>: <тип>  
 end`
 
-For example, if both variables are declared, the compiler is able to process the expression without opcodes:
+Когда обе переменные имеют объявленный тип, выражение компилируется без опкода:
 
 ```text
 var
     $Var1 : Integer
     $Var2 : Integer
 end
-$Var1 += $Var2 // opcode 0058
+$Var1 += $Var2 // здесь будет опкод 0058
 ```
 
-The following types of variables are supported:
+Поддерживаются следующих типы переменных:
 
-* `Integer`, `Int` - integer values
-* `Float` - floating-points values
-* `String`, `ShortString` - a variable containing a string literal with the fixed length \(only for the arrays, use `s$`, `@s` for variables\)
-* `LongString` - a variable containing a string literal with the variable length \(only for the arrays, use `v$`, `@v` for variables\)
-* `<Class name>` - any available [class name](classes.md)
+* `Integer`, `Int` - целые числа
+* `Float` - дробные числа
+* `String`, `ShortString` - переменная, содержащая [короткий строковый литерал](data-types.md#strokovye-literaly) \(используется только при объявлении массивов, для одиночных переменных используются префикс `s$` или суффикс `@s`\)
+* `LongString` - переменная, содержащая [длинный строковый литерал](data-types.md#strokovye-literaly) \(используется только при объявлении массивов, для одиночных переменных используются префикс `v$` или суффикс `@v`\)
+* `<Имя класса>` - переменная или массив переменных [членов класса](classes.md#chleny-klassa)
 
-The types of the local variables can be declared too.
+Типы локальных переменных также могут быть объявлены.
 
 {% hint style="info" %}
-Once the type of the variable is declared it is used for all the code following the declaration.  
-You can re-declare variables to set the new type:
+Как только тип переменной объявлен, он используется везде ниже по коду. Тип переменной может быть изменен, если она используется по-другому:
 
 ```text
 thread 'Food'
@@ -130,23 +129,23 @@ $var = 1
 end_thread
 ```
 
-In the `'Food'` script `10@` is the floating-point variable. In the `'Loop'` script `10@` is the integer variable.
+В скрипте`'Food'` `10@` является дробной переменной. В скрипте`'Loop'` `10@` уже целочисленная переменная.
 
-You can re-declare variables as many times as you need.
+Тип переменной может быть переобъявлен многократно.
 {% endhint %}
 
-## Shorter Form of Declaration
+## Короткая форма объявления переменных
 
-Since v3.2.0 it's possible to declare a variable of a built-in type \(`Int`, `Float`, `String`, `LongString`\) using only the type name.
+Начиная с версии 3.2.0 можно объявлять переменные, используя только имя типа \(доступно для типов `Int`, `Float`, `String`, `LongString`\).
 
-Syntax:  
+Синтаксис:  
 `<type> <variable name>`
 
 ```text
-int 0@ // 0@ declared as an integer variable.
+int 0@ // 0@ объявлена как целочисленная переменная
 ```
 
-Starting from v3.4.0 it is possible to declare variables with custom names:
+Начиная с версии 3.4.0 появилась возможность объявить переменную с собственным именем:
 
 ```text
 int a
@@ -158,7 +157,7 @@ distance = 15.5
 name = 'CJ'
 ```
 
-An initial value can follow the variable name to reduce the number of the lines of code:
+Одновременно с объявлением такой переменной можно присвоить ей начальное значение, чтобы уменьшить количество строк кода:
 
 ```text
 int a = 1
@@ -166,7 +165,7 @@ float distance = 15.5
 string name = 'CJ'
 ```
 
-The compiler binds a new local variable to each name. In the example above one may expect a resulting code to look like:
+Компилятор связывает каждое имя с новой локальной переменной. В примере выше код будет скомпилирован примерно следующим образом:
 
 ```text
 0006: 0@ = 1 
@@ -175,12 +174,12 @@ The compiler binds a new local variable to each name. In the example above one m
 ```
 
 {% hint style="info" %}
-Due to [design limitations](https://github.com/sannybuilder/dev/issues/32) this feature is only available in CLEO scripts.
+Из-за [архитектурных ограничений](https://github.com/sannybuilder/dev/issues/32) эта возможность доступна только в CLEO скриптах.
 {% endhint %}
 
-## Variable Initialization
+## Начальное значение переменной
 
-You can specify an initial value for the variable when declaring it. Write `=` and then the value:
+Одновременно с объявлением переменной можно задать ей начальное значение. Для этого напишите `=` и значение:
 
 ```text
 var
@@ -188,17 +187,17 @@ var
 end
 ```
 
-or
+или
 
 ```text
 float $fVar = 1.0
 ```
 
-The variable `$fVar` is now declared as `Float` and the compiler adds the opcode `0005` in the script:
+Теперь переменная `$fVar` объявлена как `Float`, и компилятор добавит в скрипт опкод `0005`:
 
 ```text
 0005: $fVar = 1.0
 ```
 
-Initialization is allowed for variables, but not for arrays.
+Инициализация доступна только для переменных, но не массивов.
 

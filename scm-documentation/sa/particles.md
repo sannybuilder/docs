@@ -1,85 +1,89 @@
-# Particle Effects
+# Системы частиц
 
-| Particle | Description |
+```text
+064B: 0@ = create_particle <эффект> at 2048.0 1600.0 32.0 1
+```
+
+| Эффект | Описание |
 | :--- | :--- |
-| "blood\_heli" | bloody explosion |
-| "boat\_prop" | a surf |
-| "camflash" | small flare |
-| "carwashspray" | steam, as on a carwash |
-| "cement" | cement |
-| "cloudfast" | fast clouds |
-| "coke\_puff" | puff of a coke |
-| "coke\_trail" | a pouring water |
-| "cigarette\_smoke" | a smoke from a cigarette |
-| "explosion\_barrel" | explosion and splinters of a box |
-| "explosion\_crate" | explosion and splinters of the large box |
-| "explosion\_door" | a smoke with sparks |
-| "exhale" | a small smoke |
-| "explosion\_fuel\_car" | explosion, as from the machine |
-| "explosion\_large" | the large explosion |
-| "explosion\_medium" | average explosion |
-| "explosion\_molotov" | explosion, as from a movotov cocktail |
-| "explosion\_small" | small explosion |
-| "explosion\_tiny" | very small explosion |
-| "extinguisher" | foam of the fire extinguisher |
-| "flame" | small fire |
-| "fire" | fire |
-| "fire\_med" | average fire |
-| "fire\_large" | large fire |
-| "flamethrower" | fire of the flamethrower |
-| "fire\_bike" | fire, as from a burning motorcycle |
-| "fire\_car" | fire, as from the burning machine |
-| "gunflash" | as the bullet from a trunk takes off |
-| "gunsmoke" | a smoke from a gun |
-| "insects" | insects |
-| "heli\_dust" | a dust, as from the helicopter |
-| "jetpack" | a jetpack's fire |
-| "jetthrust" | fire from the muffler of the machine, as during use of nitrogen |
-| "nitro" | nitro |
-| "molotov\_flame" | fire from a Molotov Cocktail |
-| "overheat\_car" | smoke from damaged car |
-| "overheat\_car\_electric" | wrecked electro-machine |
-| "prt\_boatsplash" | foam |
-| "prt\_cardebris" | splinters from a box |
-| "prt\_collisionsmoke" | a dense white smoke |
-| "prt\_glass" | a crashing glass |
-| "prt\_gunshell" | shells |
-| "prt\_sand" | sand, which was scattered |
-| "prt\_sand2" | there is less sand, than in previous animation |
-| "prt\_smokeII\_3\_expand" | - a grey smoke |
-| "prt\_smoke\_huge" | there is a lot of grey smoke |
-| "prt\_spark" | of a spark |
-| "prt\_spark\_2" | the large sparks |
-| "prt\_splash" | burst |
-| "prt\_wake" | a wave |
-| "prt\_watersplash" | sparks |
-| "prt\_wheeldirt" | sparks from wheels of the car |
-| "petrolcan" | a jet |
-| "puke" | belch |
-| "riot\_smoke" | there is a lot of smoke |
-| "spraycan" | spray |
-| "smoke30lit" | a smoke |
-| "smoke30m" | a rich smoke |
-| "smoke50lit" | more richer smoke |
-| "shootlight" | fireworks |
-| "smoke\_flare" | fireworks |
-| "tank\_fire" | a shot from the tank |
-| "teargas" | gas, as from gas grenade |
-| "teargasAD" | gas, as from small gas grenade |
-| "tree\_hit\_fir" | leaf falling |
-| "tree\_hit\_palm" | falling of pair large leafs |
-| "vent" | slowly dissipating a smoke |
-| "vent2" | practically too most |
-| "water\_hydrant" | the large flow of water |
-| "water\_ripples" | circles on water |
-| "water\_speed" | the large sparks from water |
-| "water\_splash" | small sparks from water |
-| "water\_splash\_big" | average sparks |
-| "water\_splsh\_sml" | sparks, only them it is not visible almost |
-| "water\_swim" | small sparks at navigation |
-| "waterfall\_end" | there is a lot of pair |
-| "water\_fnt\_tme" | the large flow of water |
-| "water\_fountain" | water of a fountain |
-| "wallbust" | a disappearing heap pair |
-| "WS\_factorysmoke" | smoke |
+| "blood\_heli" | Кровавый взрыв |
+| "boat\_prop" | прибой |
+| "camflash" | Маленькая вспышка |
+| "carwashspray" | Пар, как на автомойке. |
+| "cement" | цемент |
+| "cloudfast" | Летающие облака |
+| "coke\_puff" | Затяжка коксом |
+| "coke\_trail" | Выливающаяся вода |
+| "cigarette\_smoke" | Дым от сигареты |
+| "explosion\_barrel" | Взрыв и осколки ящика |
+| "explosion\_crate" | Взрыв и осколки большого ящика |
+| "explosion\_door" | Дым с искрами |
+| "exhale" | Маленький дым |
+| "explosion\_fuel\_car" | Взрыв, как от машины |
+| "explosion\_large" | Большой взрыв |
+| "explosion\_medium" | Средний взрыв |
+| "explosion\_molotov" | Взрыв, как от коктейля Молотова |
+| "explosion\_small" | Небольшой взрыв |
+| "explosion\_tiny" | Маленький взрыв |
+| "extinguisher" | Пена огнетушителя |
+| "flame" | Небольшой огонек |
+| "fire" | огонь |
+| "fire\_med" | Средний огонь |
+| "fire\_large" | Большой огонь |
+| "flamethrower" | Огонь огнемета |
+| "fire\_bike" | Огонь, как от горящего мотоцикла |
+| "fire\_car" | Огонь, как от горящей машины |
+| "gunflash" | Как вылетает пуля из ствола |
+| "gunsmoke" | Дым от вылетевшей пули |
+| "insects" | насекомые |
+| "heli\_dust" | Пыль, как от вертолета |
+| "jetpack" | Огонь, как из сопел джетпака |
+| "jetthrust" | Огонь из глушителя машины, как во время использования азота |
+| "nitro" | нитро |
+| "molotov\_flame" | Огонь от коктейля Молотова |
+| "overheat\_car" | Дымящаяся машина |
+| "overheat\_car\_electric" | Поврежденная электро-машина |
+| "prt\_boatsplash" | пена |
+| "prt\_cardebris" | Осколки от коробки |
+| "prt\_collisionsmoke" | Плотный белый дым |
+| "prt\_glass" | Разбивающееся стекло |
+| "prt\_gunshell" | Гильзы |
+| "prt\_sand" | Песок, который рассыпался |
+| "prt\_sand2" | Немного меньше песка чем в предыдущей анимации |
+| "prt\_smokeII\_3\_expand" | Серый дым |
+| "prt\_smoke\_huge" | Много серого дыма |
+| "prt\_spark" | Искры |
+| "prt\_spark\_2" | Большие искры |
+| "prt\_splash" | Всплеск |
+| "prt\_wake" | Волна |
+| "prt\_watersplash" | Брызги |
+| "prt\_wheeldirt" | Брызги из под колес машины |
+| "petrolcan" | Струя, как писание |
+| "puke" | Рыгачка \(блевотина\) |
+| "riot\_smoke" | Много дыма |
+| "spraycan" | Спрей зеленой краски |
+| "smoke30lit" | Дым |
+| "smoke30m" | Густой дым |
+| "smoke50lit" | Еще более густой дым |
+| "shootlight" | Фейерверк |
+| "smoke\_flare" | Тоже фейерверк |
+| "tank\_fire" | Огонь от выстрела из танка |
+| "teargas" | Газ, как от дымовой гранаты |
+| "teargasAD" | Газ, как от малой дымовой гранаты |
+| "tree\_hit\_fir" | Падение листьев |
+| "tree\_hit\_palm" | Падение пары больших листьев |
+| "vent" | Медленно рассеивающийся дым |
+| "vent2" | Практически тоже самое |
+| "water\_hydrant" | Большой поток воды |
+| "water\_ripples" | Круги на воде |
+| "water\_speed" | Большие брызги от воды |
+| "water\_splash" | Маленькие брызги от воды |
+| "water\_splash\_big" | Средние брызги |
+| "water\_splsh\_sml" | Брызги, только их почти не видно |
+| "water\_swim" | Маленькие брызги при плавании |
+| "waterfall\_end" | Много пара |
+| "water\_fnt\_tme" | Большой поток воды |
+| "water\_fountain" | Вода фонтана |
+| "wallbust" | Исчезающая куча пара |
+| "WS\_factorysmoke" | Дым как от труб |
 

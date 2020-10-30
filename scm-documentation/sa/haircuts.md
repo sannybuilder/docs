@@ -1,10 +1,10 @@
-# Haircuts
+# Прически
 
 ```text
-Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
+Player.SetClothes($PLAYER_CHAR, <текстура>, <модель>, <часть тела>)
 ```
 
-| Texture | Model | [Body part](player-body-parts.md) | Description |
+| Текстура | Модель | [Часть тела](player-body-parts.md) | Описание |
 | :--- | :--- | :--- | :--- |
 | afro | afro | 1 | Afro |
 | afrobeard | afro | 1 | Afro & Beard |

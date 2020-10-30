@@ -1,20 +1,18 @@
-# Introduction
+# Введение
 
-**Sanny Builder** is a fast and powerful tool designed for the GTA 3D game series \(GTA3, VC, SA, LCS, VCS\).
+**Sanny Builder** - это среда разработки новых миссий и скриптов для серии игр GTA 3D. 
 
-It includes a disassembler, permitting the end-user to transform the game scripts into text. The compiler feature offers a convenient editor with a large number of [useful functions](features.md) such as syntax highlighting, error checking, advanced search tools, player coordinates reading, fast movement through code and much more.
+В комплект входит дизассемблер, который переводит игровые скрипты в текстовый формат; компилятор, который переводит скрипт в формат, читаемый игрой, и удобный редактор со множеством [вспомогательных функций](features.md), таких как подсветка синтаксиса, чтение координат игрока в игре, быстрое перемещение по участкам кода и многое другое. Добавьте к этому быструю скорость работы и настраиваемый синтаксис кода \(через [классы](coding/classes.md) и [ключевые слова](coding/keywords.md)\) и вы получите представление о программе.
 
-Sanny offers an advanced code syntax which is similar to existing programming languages. This syntax includes changeable [classes](coding/classes.md), [keywords ](coding/keywords.md)and high-level statements. We recommend you continue reading and fully explore the documentation to learn more about SB and its capabilities. We provide a wealth of information that will help you get started in mission coding.
+## Установка и обновление
 
-## **Installation and Updates**
+Запустите инсталлятор и следуйте его инструкциям. Во время установки вы можете дополнительно указать папку с игрой, с которой будете работать, ассоциировать файлы с расширением `.scm` с Sanny Builder, установить [библиотеку CLEO](https://cleo.li/ru). Все эти [опции](options/) вы можете потом изменить в самой программе.
 
-Run the installer and follow its instructions. During installation you could optionally select the game directory you plan to work with, associate files with the `.scm` extension with Sanny Builder and install the [CLEO library](https://cleo.li).  You can always update these settings in the [program options](options/).
+Для полного удаления программы запустите файл `unins000.exe` в директории программы.
 
-To uninstall the program, run the file `unins000.exe` located in its root folder.
+Свежие версии и обновления программы всегда можно найти на официальном сайте [sannybuilder.com](https://sannybuilder.com/)
 
-Latest versions and updates are always available at [sannybuilder.com](https://sannybuilder.com/)
-
-## Contacts
+## Контактная информация
 
 [sannybuilder.com](https://sannybuilder.com/)  
 [Sanny Builder @ Github](https://github.com/sannybuilder/dev/issues)  
@@ -22,9 +20,9 @@ Latest versions and updates are always available at [sannybuilder.com](https://s
 [Sanny Builder @ Facebook](https://facebook.com/SannyBuilder)  
 [Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)
 
-For any questions e-mail me at [mail@sannybuilder.com](mailto:mail@sannybuilder.com) or raise a ticket on [Github](https://github.com/sannybuilder/dev/issues).
+С замечаниями, советами и предложениями обращайтесь на [mail@sannybuilder.com](mailto:mail@sannybuilder.com) или на [Github](https://github.com/sannybuilder/dev/issues).
 
-Use responsibly at your own risk. In Backup We Trust.
+Используйте программу на свой страх и риск. Делайте резервные копии всех редактируемых файлов.
 
 © 2005-2020 Seemann
 

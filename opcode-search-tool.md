@@ -1,112 +1,112 @@
-# Opcode Search Tool
+# Поиск опкодов
 
-You can call this tool by pressing `Ctrl+Alt+2` or by selecting the menu item: `Tools->IDE Tools->Opcode Search`.
+Вызвать поиск опкодов можно нажатием `Ctrl+Alt+2` или выбрав меню `Сервис->Инструменты->Поиск опкодов`.
 
 ![](.gitbook/assets/ost.PNG)
 
-To find an opcode, type some words in the input line, e.g. `actor car`. The tool displays the opcodes with these words. You can also use special search operators.
+Чтобы найти нужный опкод, впишите в верхнем поле слова, соответствующие ему, например `actor car`. В списке останутся команды, содержащие эти слова. Вписывайте уточняющие слова, пока нужный опкод не будет найден. При поиске можно пользоваться специальными операторами \(подробнее о них ниже\).
 
-When the tool is open, it checks if there is a selected word in the editor. If the selected word is found, it will be copied into the search field.
+Если при открытии окна поиска в редакторе был выделен текст, он будет автоматически вставлен в строку поиска.
 
-## Copying Results
+## Копирование результатов
 
-To copy an opcode into clipboard, select it in the list and press `Enter`.   
-To add another opcode to the clipboard content press `Shift+Enter`.   
-To copy the entire results list press `F2`.
+Чтобы скопировать опкод в буфер обмена, выберите его и нажмите `Enter`.  
+Чтобы добавить опкод к содержимому буфера обмена, нажмите `Shift+Enter`.  
+Чтобы скопировать весь список опкодов, нажмите `F2`.
 
-## Hotkeys
+## Горячие клавиши
 
-`Enter` copy selected opcode onto clipboard  
-`Shift+Enter` add selected opcode to the clipboard  
-`F1` - show help information  
-`F2` - copy all opcodes from the results list into clipboard  
-`F3` - sort the list by opcodes  
-`F4` - sort the list alphabetically  
-`F11` - clear the search field, display all opcodes  
-`ESC` - close the tool window
+`Enter` - скопировать выбранный опкод в буфер обмена  
+`Shift+Enter` - добавить выбранный опкод к содержимому буфера обмена  
+`F1` - показать справочную информацию  
+`F2` - скопировать весь список опкодов в буфер обмена  
+`F3` - сортировать список по опкодам  
+`F4` - сортировать список по алфавиту  
+`F11` - очистить поле поиска, показать все опкоды  
+`ESC` - закрыть программу
 
-## Search Queries
+## Поисковые выражения
 
-### AND operator
+### Оператор И
 
-A single space between words serves as the `AND` operator:
+Одиночный пробел между словами служит оператором `И`:
 
 ```text
 @ player
 ```
 
-Finds all opcodes with both `@` and the word `player`.
+Найдет опкоды, в которых есть `@` и `player`.
 
-### OR operator
+### Оператор ИЛИ
 
-The pipe character `|` is the `OR` operator:
+Символ `|` служит оператором `ИЛИ`:
 
 ```text
 @ | player
 ```
 
-Finds all opcodes with either `@` or `player`.
+Найдет опкоды, в которых есть `@` или `player`.
 
-If you write `|` as the first character in the search, the tool will connect all the following words with the OR operator.
+Если `|` стоит первым символом в поле поиска, программа применит оператор `ИЛИ` ко всем последующим словам:
 
 ```text
 | actor player car
 ```
 
-Finds opcodes with either `actor`, `player` or `car`.
+Найдет опкоды, в которых есть хотя бы одно из слов `actor`, `player`, `car`.
 
-### NOT operator
+### Оператор НЕ
 
-Two dashes before the word exclude opcodes with this word from the result:
+Два дефиса перед словом исключают опкоды с этим словом:
 
 ```text
 car --actor
 ```
 
-Finds opcodes with `car` but without `actor`.
+Найдет опкоды со словом `car`, но без `actor`.
 
-A single dash can be used before identifiers or `$` and `@` characters, but not numbers:
+Одиночный дефис может использоваться как оператор `НЕ` перед словами, либо перед `$` или `@`, но не перед числами:
 
 ```text
 -10 -@ -car ---1
 ```
 
-Finds opcodes with the number `-10` and without `@`, `car` and `-1`
+Найдет опкоды с числом `-10`, но без `@`, `car`, `-1`
 
-### Search in conditional opcodes 
+### Поиск среди условных опкодов
 
-`^` - shows only conditional opcodes   
-`^word` - finds `word` in the conditional opcodes:
+`^` - показать только условные опкоды  
+`^word` - ищет `word` в условных опкодах:
 
 ```text
 ^car ==
 ```
 
-Finds all conditional opcodes with `car` and `==`.
+Найдет условные опкоды со словами `car` и `==`.
 
-`-^` - excludes all conditional opcodes from the list:
+`-^` - исключить условные опкоды из результата:
 
 ```text
 player -^
 ```
 
-Finds all non-conditional opcodes with `player`.
+Найдет все неусловные опкоды со словом `player`.
 
-`-^word` - excludes the conditional opcodes with `word`:
+`-^word` - исключить условные опкоды со словом `word`:
 
 ```text
 player -^actor
 ```
 
-Finds opcodes with `player`, with the exception of the conditional opcodes with `actor`.
+Найдет опкоды со словом `player`, исключив условные опкоды со словом `actor`.
 
-### Respect the order of the words
+### Учет порядка слов
 
-`%` - finds opcodes with the words in the given order:
+`%` - ищет опкоды с учетом заданного порядка слов:
 
 ```text
 % @ = @
 ```
 
-Finds opcodes where `@` `=` `@` follow each other \(possibly with other words in between\).
+Найдет опкоды, в которых символы `@` `=` `@` следуют в указанном порядке \(между ними могут быть другие слова\).
 

@@ -1,13 +1,13 @@
-# Special Actors
+# Персонажи
 
 ```text
 0241: load_special_actor 1 <id>
 ```
 
-| ID | Description |
+| ID | Описание |
 | :--- | :--- |
 | AVERY | Avery Carrington |
-| BABY | Giovanni Casa \(baby\) |
+| BABY | Giovanni Casa \(малыш\) |
 | BIKER1 | Biker Dude 1 |
 | BIKER2 | Biker Dude 2 |
 | BODYBAG | BODYBAG |
@@ -18,7 +18,7 @@
 | DELIASS | Deli Assistant |
 | DONOVAN | O'Donovan |
 | EIGHT | 8Ball |
-| FKENNY | Father Kenny \(not used\) |
+| FKENNY | Father Kenny \(не использовалась\) |
 | FRANFOR | Franco Forelli |
 | GRDANG1 | Avenging Angel |
 | GRDANG2 | Avenging Angel 2 |

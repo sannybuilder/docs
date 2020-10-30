@@ -1,10 +1,10 @@
-# Weapon IDs
+# Оружие
 
 ```text
-01B6: give_player $PLAYER_CHAR weapon <id> ammo 1
+01B6: give_player $PLAYER_CHAR weapon <id оружия> ammo 1
 ```
 
-| Weapon ID | Model ID | Name |
+| ID оружия | ID модели | Название |
 | :--- | :--- | :--- |
 | 0 | - | Unarmed |
 | 1 | 259 |  |

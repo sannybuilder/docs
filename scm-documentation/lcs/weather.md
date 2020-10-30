@@ -1,6 +1,6 @@
-# Weather IDs
+# Погода
 
-| ID | Description |
+| ID | Описание |
 | :--- | :--- |
 | 0 | Sunny |
 | 1 | Cloudy |
@@ -10,6 +10,4 @@
 | 5 | Hurricane |
 | 6 | Extra colors |
 | 7 | Snow |
-
-
 

@@ -1,10 +1,10 @@
-# Weapon IDs
+# Оружие
 
 ```text
 01B2: give_actor $PLAYER_ACTOR weapon <id> ammo 60 
 ```
 
-| ID | Group | Name | Model ID | Model Name | Icon |
+| ID | Группа | Название | ID модели | Имя модели | Иконка |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 10 | 11 | Purple Dildo | 321 | \#gun\_dildo1 | ![](../../.gitbook/assets/dildo.gif) |
 | 11 | 11 | White Dildo | 322 | \#gun\_dildo2 | ![](../../.gitbook/assets/dildo1.gif) |

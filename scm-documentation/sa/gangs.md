@@ -1,10 +1,10 @@
-# Gang IDs
+# Банды
 
 ```text
 0237: set_gang <id> weapons_to 24 29 4
 ```
 
-| ID | Name |
+| ID | Название |
 | :--- | :--- |
 | 0 | Ballas |
 | 1 | Grove Street Families |
@@ -14,8 +14,6 @@
 | 5 | Mafia |
 | 6 | Mountain Cloud Triad |
 | 7 | Varrio Los Aztecas |
-| 8 | \(unused\) |
-| 9 | \(unused\) |
-
-
+| 8 | \(свободно\) |
+| 9 | \(свободно\) |
 

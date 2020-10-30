@@ -1,10 +1,10 @@
-# Button IDs
+# Номера клавиш
 
 ```text
-00E1: key_pressed 0 <button>
+00E1: key_pressed 0 <номер>
 ```
 
-| Button | Enum | On foot | In a vehicle |
+| Номер | Константа | Пешком | В машине |
 | :--- | :--- | :--- | :--- |
 | 0 | LEFTSTICKX | Left / Right | Steer Left / Right |
 | 1 | LEFTSTICKY | Forward / Backwards | Steer Forward / Backward |

@@ -1,17 +1,17 @@
-# Garage IDs
+# Гаражи
 
 ```text
 Garage.Activate('BODLAWN')
 ```
 
-| Name | Position | Description | Notes |
+| Имя | Позиция | Описание | Примечания |
 | :--- | :--- | :--- | :--- |
 | **Los Santos** |  |  |  |
 | CJSAFE | \(2502.31,-1699.36,12.4323\) | Ganton garage |  |
 | CESAFE1 | \(1352.58,-636.657,108.135\) | Muholland garage |  |
-| MUL\_LAN | \(1640.37,-1520.07,12.5118\) | Downtown garage  | used in  "Life's a Beach" |
+| MUL\_LAN | \(1640.37,-1520.07,12.5118\) | Downtown garage  | использовался в "Life's a Beach" |
 | IMP\_LA | \(1523.92,-1653.23,4.72837\) | impound lot |  |
-| DUF\_LAS | \(1873.97,-2096.55,12.487\) | El Corona garage  | used in  "Los Desperados" |
+| DUF\_LAS | \(1873.97,-2096.55,12.487\) | El Corona garage  | использовался в  "Los Desperados" |
 | LASBOMB | \(1843.91,-1858.8,12.3645\) | bomb shop |  |
 | MODGLAS | \(1809.46,-2150.67,12.4283\) | Cesar's garage |  |
 | CARLAS1 | \(1694.8,-2088.7,12.3636\) | El Corona garage |  |
@@ -37,7 +37,7 @@ Garage.Activate('BODLAWN')
 | LCKSFSE | \(-2043.1,118.609,27.821\) | Doherty garage \#2 right |  |
 | SPRSFW | \(-2430.13,1013.71,49.3413\) | Juniper Hollow Pay n Spray |  |
 | SAV1SFW | \(2699.12,821.489,49.0042\) | Paradiso garage |  |
-|  | \(-1694.78 1033.15 44.1937\) | Esplanade North garage | used in  "Yay Ka-Boom-Boom" |
+|  | \(-1694.78 1033.15 44.1937\) | Esplanade North garage | использовался в "Yay Ka-Boom-Boom" |
 |  | \(-1794.15 1429.69 4.37321\) | Downtown garage | "Ran Fa Li" |
 | **Las Venturas** |  |  |  |
 | VGELOCK | \(2602.6,1438.84,9.8337\) | burglary garage |  |
@@ -50,12 +50,12 @@ Garage.Activate('BODLAWN')
 | BLOB6 | \(1408.65,1899.52,10.115\) | Redsands West garage |  |
 | BLOB69 | \(1269.2,2525.14,9.80013\) | Prickle Pine garage |  |
 | BLOB7 | \(929.554,2008.59,10.115\) | Whitewood Estates garage |  |
-| TIMY1 | \(2389.6,1483.26,9.81843\) | unused Pay n Spray | \(the door doesn't work\) |
+| TIMY1 | \(2389.6,1483.26,9.81843\) | unused Pay n Spray | \(нерабочая дверь\) |
 | **Countryside** |  |  |  |
 | CN2SPRY | \(-103.636,1112.42,18.7017\) | Fort Carson Pay n Spray |  |
 | CN2GAR1 | \(-364.439,1194.37,18.597\) | Fort Carson garage |  |
 | CN2GAR2 | \(430.059,2542.31,15.166\) | Verdant Meadows garage |  |
-| GHOSTDR | \(-397.297,2223.17,41.3824\) | garage |  used in "Interdiction" |
+| GHOSTDR | \(-397.297,2223.17,41.3824\) | garage | использовался в "Interdiction" |
 | DHANGAR | \(383.843,2433.28,15.166\) | Verdant Meadows Hangar |  |
 | CESPRAY | \(715.806,-462.403,14.9635\) | Dillimore Pay n Spray |  |
 | BURBDOO | \(2227.6,168.649,26.4635\) | Palomino Creek garage |  |

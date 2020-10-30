@@ -1,10 +1,10 @@
-# Ped Types
+# Типы пешеходов
 
 ```text
 009A: 0@ = create_actor <id> 0 at 0 0 0
 ```
 
-| ID | Type |
+| ID | Тип |
 | :--- | :--- |
 | 0 | player1 |
 | 1 | player2 |

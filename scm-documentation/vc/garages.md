@@ -1,11 +1,12 @@
-# Garage IDs
+# Гаражи
 
 <table>
   <thead>
     <tr>
       <th style="text-align:left">ID</th>
-      <th style="text-align:left">Enum</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">&#x41A;&#x43E;&#x43D;&#x441;&#x442;&#x430;&#x43D;&#x442;&#x430;</th>
+      <th
+      style="text-align:left">&#x41E;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x435;</th>
     </tr>
   </thead>
   <tbody>

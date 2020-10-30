@@ -1,8 +1,8 @@
-# Code Templates
+# Шаблоны кода
 
-You can insert a predefined piece of code called a code template by typing the template name and pressing `F2`. To display the list of available templates, press `Ctrl+J`. 
+Шаблоны - это заранее подготовленный код, которой вставляется в редактор, после ввода имени шаблона и нажатия `F2`. Вызвать список шаблонов можно комбинацией `Ctrl+J`.
 
-For example, if you type `for` and press `F2` the editor adds:
+Например, напишите`for` и нажмите `F2`. Редактор вставит следующий код:
 
 ```text
 for  =  to  // step 1
@@ -10,34 +10,34 @@ for  =  to  // step 1
 end // for
 ```
 
-## Types of Templates
+## Типы шаблонов
 
-There are two types of templates: shared and exclusive. Shared templates are available across all [edit modes](./). They are contained in the file `data\templates.txt`. Exclusive templates are designed specifically for the current edit mode. A path to an exclusive template file can be customized with the `template` key in the `modes.xml`:
+Существует два типа шаблонов: общие и эксклюзивные. Общие доступны во всех [режимах редактирования](./). Они содержатся в файле `data\templates.txt`. Эксклюзивные шаблоны разработаны под конкретный режим. Путь к файлу с эксклюзивными шаблонами задается через ключ `template` в файле `modes.xml`:
 
 ```text
 <templates>@sb:\data\gta3\templates.txt</templates>
 ```
 
-The editor merges the content of shared and exclusive templates in a single list. Exclusive templates have priority over the shared with the same name.
+Редактор объединяет общие и эксклюзивные шаблоны в один список. Эксклюзивный шаблон имеет приоритет над общим шаблоном с такими же именем.
 
-## File Syntax
+## Синтаксис файла
 
-Each template file has the following syntax:  
-A template name is written in a separate line. The equal sign `=` follows the name. After the equal sign you can also add a short hint. The template code starts at the next line, each line begins with the equals sign. The cursor position is marked with the `|` character.
+Каждый файл шаблонов имеет следующий синтаксис:  
+Имя шаблона пишется отдельной строкой. После имени должен стоять знак `=`. После `=` можно добавить краткое описание шаблона. Поддерживаются только однострочные описания. После строки с именем записывается содержимое шаблона, каждая строка начинается знаком `=`. Место, куда должен быть помещен курсор после вставки, обозначается символом `|`.
 
-## Adding a New Template
+## Добавление новых шаблонов
 
-It's also possible to add a template from the editor. Select the code and click the `Service->Add template` menu. 
+Можно сохранить новый шаблон прямо из редактора. Для этого нужно выделить нужный кусок текста и выбрать меню `Сервис->Добавить шаблон`. 
 
-![](../.gitbook/assets/ide-add-template-en.png)
+![](https://gblobscdn.gitbook.com/assets%2F-M0dALM7uq5_eDYhSBjl%2F-MDlJbjXApE45Y1MQjl-%2F-MDlMQiTlVgy3xpUEGxS%2Fide-add-template-en.png?alt=media&token=5e620275-5cf8-4026-acec-8f364dbbde09)
 
-Enter a name of the template, a description \(optionally\) in the dialog window, choose the type of the template, and press the `OK` button. The template is ready to use.
+Введите имя шаблона, описание \(необязательно\), выберите тип шаблона и нажмите кнопку `OK`. Новый шаблон будет сразу же готов к использованию.
 
 {% hint style="info" %}
-The exclusive template option becomes unavailable if the `modes.xml` does not have a template file path set for the current edit mode.
+Сохранение как эксклюзивный шаблон будет недоступно, если файл `modes.xml` не содержит пути к файлу шаблона для текущего режима.
 {% endhint %}
 
 {% hint style="info" %}
-A template with the name `CLEO` unlocks the "New CLEO Script..." item in the main menu. The editor uses this template as the content for a newly created file.
+Наличие шаблона с именем `CLEO` разблокирует пункт в главном меню "Новый CLEO скрипт...". Редактор использует этот шаблон для формирования содержимого нового файла.
 {% endhint %}
 

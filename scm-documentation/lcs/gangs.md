@@ -1,6 +1,6 @@
-# Gang IDs
+# Банды
 
-| ID | Name |
+| ID | Название |
 | :--- | :--- |
 | 0 | Leone |
 | 1 | Triad |

@@ -1,4 +1,4 @@
-# Error Messages
+# Сообщения об ошибках
 
-Sanny Builder throws error or warning messages if something went wrong. This section describes all known messages and what the tool expects from you.
+Sanny Builder выдает сообщение об ошибке или предупреждение, если что-то идет не так. Этот раздел описывает все возможные сообщения и то, что программа ожидает от вас.
 

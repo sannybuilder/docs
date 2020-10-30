@@ -1,10 +1,10 @@
-# Train Types
+# Типы поездов
 
 ```text
-06D8: 1@ = create_train_at 2278.1771 -1144.8823 27.5108 type <type> direction 1
+06D8: 1@ = create_train_at 2278.1771 -1144.8823 27.5108 type <тип> direction 1
 ```
 
-| Type | Engine | Carriage 1 | Carriage 2 | Carriage 3 | Carriage 4 | Carriage 5 |
+| Тип | Локомотив | Вагон 1 | Вагон 2 | Вагон 3 | Вагон 4 | Вагон 5 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0: | \#FREIGHT | \#FREIFLAT | \#FREIFLAT | \#FREIFLAT | \#FREIFLAT |  |
 | 1,2,4,7,11: | \#STREAK | \#STREAKC | \#STREAKC |  |  |  |

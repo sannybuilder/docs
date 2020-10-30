@@ -1,10 +1,10 @@
-# Weather IDs
+# Погода
 
 ```text
 01b6: set_weather <id>
 ```
 
-| ID | Description | Location |
+| ID | Описание | Локация |
 | :--- | :--- | :--- |
 | 0 | Extra Sunny | Los Santos |
 | 1 | Sunny | Los Santos |

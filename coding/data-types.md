@@ -1,114 +1,114 @@
-# Data Types
+# Типы данных
 
-Certain code elements must start or end with specific characters. They help the compiler to recognize their meaning. The following list is final and contains all types of data known to the compiler.  
+Код разделен на отдельные элементы, каждый из которых обозначается по-своему и играет свою роль в скрипте.
 
-## Variables
+## Переменные
 
-A [global variable](variables.md#global-variables) starts with `$` followed by a valid identifier \(any combination of letters, digits and `_`\).
+Если перед именем переменной \(комбинация букв, цифр, и `_`\) стоит знак `$` - это [глобальная переменная](variables.md#globalnye-peremennye).
 
 ```text
 0004: $MyVar = 100
 ```
 
-A [local variable](variables.md#local-variables) name may only be a number followed by `@`.  The number is the local variable index in the list of local variables [allocated](../scm-documentation/gta-limits.md) to this script or a mission.
+Именем [локальной переменной](variables.md#lokalnye-peremennye) может быть только число, после которого стоит `@`.  Это число является индексом в списке локальных переменных, [выделенных](../scm-documentation/gta-limits.md) для текущего скрипта или миссии.
 
 ```text
 0006: 100@ = 10
 ```
 
-An `ADMA` \(**A**dvanced **D**irect **M**emory **A**ccess\) variable is a reference to the offset in the `main.scm` file. They serve as global variables, i.e. you can read from and write to an address in the `main.scm`. 
+Переменная `ADMA` \(**A**dvanced **D**irect **M**emory **A**ccess, усовершенствованный доступ к памяти\) - это указатель на определенный адрес внутри файла `main.scm`. Они используются так же как глобальные переменные, но в отличие от них `ADMA` могут читать и писать значения по любому адресу в пределах `main.scm`. 
 
 ```text
-$myVar = &0 // read first 4 bytes of the main.scm and write them to $myVar
-&57 += &120(&231,4i) // can be used as an array element
+$myVar = &0 // прочитать первые 4 байта main.scm и записать значение в $myVar
+&57 += &120(&231,4i) // также могут использоваться как элементы массива
 ```
 
-`ADMA` variables don't affect the size of the global variables space in the `main.scm` header.
+`ADMA` переменные не влияют на размер буфера для глобальных переменных, выделенного в заголовке `main.scm`.
 
-## Labels
+## Метки
 
-Labels are used to reference the code location from unconditional \(opcodes `0002`, `0050`\) or conditional jumps \(opcode `004D`\). They start with `:`followed by a valid identifier \(a label name\).
+Метки указывают на определенную строку кода и используются в условных \(опкод `004D`\) и безусловных переходах \(опкоды `0002`, `0050`\). Имя метки состоит из букв, цифр и `_` и всегда начинается с `:`
 
 ```text
 :MyLabel
 ```
 
-To reference the label from an opcode use `@`  and then write the label name.
+Чтобы использовать такую метку в опкоде замените `:` на `@`
 
 ```text
 0002: jump @MyLabel
 ```
 
-If a label name is written as a standalone statement followed by `()`  it represents a call to the subroutine with the `gosub` command:
+Если имя метки написано как самостоятельное выражение с парой скобок в конце, это представляет собой вызов подпрограммы командой `gosub`:
 
 ```text
-// the following statements are equivalent
+// следующие выражения эквивалентны
 MyLabel()
 gosub @MyLabel
 ```
 
-## String literals
+## Строковые литералы
 
-A text enclosed between single quotes `' '` is a short string literal \(`15` characters max\).
+Текст,  обрамленный одинарными кавычками `' '`, - это короткий строковый литерал \(до `15` символов\).
 
 ```text
 03A4: name_thread 'MAIN'
 ```
 
-Blank strings are also allowed: `' '`.
+Пустые строки допускаются: `' '`.
 
-A text enclosed between `" "` is a long string literal \(maximum length is determined by the opcode it uses\)
+Текст,  обрамленный двойными кавычками `" "`, - это длинный строковый литерал \(максимальная длина определяется опкодом\).
 
-If the literal contains `"` you must write `\` before it.
+Если внутри литерала используется кавычка, она должна быть заэкранирована при помощи обратного слэша`\`
 
 ```text
 0662: write_debug_message "Hello, \"world\"! \n 'Here we go!'"
 ```
 
-Blank strings are also allowed: `" "`.
+Пустые строки допускаются: `" "`.
 
-## String Variables
+## Строковые переменные
 
-A global variable containing a short string literal starts with `s$`.
+Глобальные переменные, содержащие короткий строковый литерал, начинаются с `s$`.
 
 ```text
 05A9: s$MyString = 'GLOBAL'
 ```
 
-A local variable containing a short string literal starts with`@s`. 
+Локальные переменные, содержащие короткий строковый литерал, заканчиваются на `@s`. 
 
 ```text
 05AA: 1@s = 'LOCAL'
 ```
 
-A global variable containing a long string literal starts with `v$`. 
+Глобальные переменные, содержащие длинный строковый литерал, начинаются с  `v$`. 
 
 ```text
 06D1: v$MyString = "LONG_GLOBAL"
 ```
 
-A local variable containing a long string literal starts with`@v`. 
+Локальные переменные, содержащие длинный строковый литерал, заканчиваются на `@v`. 
 
 ```text
 06D2: 1@v = "LONG_LOCAL"
 ```
 
-## Model Names
+## Имена моделей
 
-Models defined in `.ide` files can be referenced by`#` followed by the model name. 
+Вместо ID моделей из `.ide` файлов могут использоваться их имена, перед которыми стоит `#` 
 
 ```text
 0247: request_model #CELLPHONE
 ```
 
-## Hexadecimal Numbers
+## Числа в 16-ричном формате
 
-`0x` - a hexadecimal number   
-`-0x` - a negative hexadecimal number
+`0x` - число в шестнадцатиричном формате  
+`-0x` - отрицательное число в шестнадцатиричном формате
 
 ```text
 0004: $var = -0xBB08
 ```
 
-A hexadecimal number has to be within the `-80000000..7FFFFFFF` range.
+Разрешенный диапазон шестнадцатиричных чисел лежит между `-80000000` и `7FFFFFFF`.
 

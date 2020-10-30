@@ -1,48 +1,48 @@
-# Edit Modes
+# Режимы редактирования
 
-Sanny Builder supports many games and platforms and so there is a predefined configuration for each supported game called an **edit mode**. 
+Sanny Builder поддерживает разные игры и платформы в серии Grand Theft Auto. Для этого в его состав входит конфигурация для каждой поддерживаемой игры, которая называется **режимом редактирования**.
 
-Edit modes supply Sanny Builder with the following information:
+Режим редактирования определяет следующую информацию:
 
-* a target game
-* paths to files with the game data
-* paths to files with supporting information \([labels](customlabels.ini.md), [variables](./#variables), [constants](./#constants), etc\)
+* целевая игра
+* пути к игровым файлам
+* пути к файлам со вспомогательной информацией \(имена [меток](./#labels), [переменных](./#variables), [констант](./#constants)\)
 
-By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option](../cli.md#x).
+По умолчанию Sanny Builder читает конфигурацию режимов из файла `<SB>\data\modes.xml`. Этот путь может быть изменен через [опцию](../cli.md#x) командной строки `-x`.
 
-The file `modes.xml` is open for modification and extension, and users can create their own modes by changing it.
+Допускается изменение существующих режимов и создание новых путем внесения изменений в файл `modes.xml`.
 
-## File Format
+## Формат файла
 
-`modes.xml` is a file in the XML format and can be changed in any text editor. It defines the available modes.
+`modes.xml` - документ в формате `XML`, который может редактироваться в любом текстовом редакторе. В этом файле содержатся все доступные режимы.
 
-The root node is `<modes>` and it has no attributes. The file can only have one root node. 
+Корневым является элемент `<modes>`, который не имеет атрибутов. В файле может быть только один корневой элемент. 
 
-Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags \(properties\) defining paths to directories or files.
+Каждый из режимов описывается одним из дочерних элементов `<modes>`, начинающихся с открывающего тэга `<mode>` и заканчивающихся закрывающим тэгом `</mode>`. Элемент `<mode>` имеет как обязательные, так и необязательные атрибуты, описанные ниже. Содержимое `<mode>` представляет собой набор различных тэгов \(элементов\), определяющих пути к папкам и файлам.
 
-### Mode Attributes
+### Атрибуты режима
 
 #### id
 
-`id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some user settings for this mode, e.g. a [game directory](../options/general.md#game-directory).
+`id` - это обязательный и неповторяющийся идентификатор режима. Sanny Builder использует его для сохранения некоторых пользовательских настроек режима, например выбранной [директории игры](../options/general.md#direktoriya-igry).
 
-A valid value for this attribute is a unique series of characters not used for any other mode's id. 
+Допустимым значением атрибута является последовательность символов, которая не используется как идентификатор другого режима редактирования.
 
 #### extends
 
-A mode can extend another mode \(the parent\) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode. 
+Режим может наследовать свойства другого режима \(родительский режим\), чтобы уменьшить число повторяющихся параметров. Это полезно для разных версий одной игры, где большая часть конфигурации одинакова, за исключением некоторых параметров. Родительский режим может наследовать свойства другого режима.
 
-When a property is missing Sanny Builder recursively traverses all parent modes trying to find the property.
+Если в конфигурации режима отсутствует какой-то параметр, Sanny Builder рекурсивно проходит по всем родительским режимам, чтобы найти его значение.
 
-A valid value for this attribute is the id of another mode defined in the same file.
+Допустимым значением атрибута является идентификатор другого режима редактирования, описанного в этом же файле.
 
 #### title
 
-`title` defines the mode's displayed name. Due to the interface constraints avoid long names and keep it within the limit of `24` characters.
+`title` задает отображаемое имя режима. Из-за ограничений интерфейса избегайте длинных имен и используйте имена короче `24` символов.
 
 #### game
 
-The `game` attribute defines a target game for the mode. There are `6` valid values:
+Атрибут `game` определяет целевую игру для данного режима. Допустимыми значениями являются:
 
 * `gta3`
 * `vc`
@@ -51,129 +51,131 @@ The `game` attribute defines a target game for the mode. There are `6` valid val
 * `vcs`
 * `sa_mobile`
 
-Before disassembling or compiling a script, make sure that the correct edit mode is active. Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
+Перед началом работы со скриптом, убедитесь что выбран правильный режим редактирования. Каждая игра имеет свой собственный формат скриптов, который несовместим с другими играми. Даже если компиляция прошла без ошибок, в игре может возникнуть ошибка при попытке чтения скрипта в неизвестном ей формате.
 
 {% hint style="info" %}
-A compiled script file may [store information](../options/general.md#add-extra-info-to-scm) about which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
+В скомпилированном файле может [храниться информация](../options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) о целевой игре для данного скрипта. Перед началом дизассемблирования такого скрипта Sanny Builder предлагает переключить режим редактирования на нужный. Игнорирование такого предложения может привести к ошибке, т.к. формат скрипта может отличаться от того, что ожидает дизассемблер.
 {% endhint %}
 
-Sanny Builder displays a game icon in front of the edit mode name so you know the target game. 
+Для удобства пользователей Sanny Builder отображает иконку целевой игры напротив имени режима. 
 
 #### type
 
-One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option](../cli.md#game).
+Один из режимов для каждой целевой игры должен быть режимом по умолчанию. Это означает, что Sanny Builder использует его при запуске с [опцией](../cli.md#game) `--game`.
 
-The valid value for this attribute is `default.` Omit this attribute for non-default modes.
+Допустимым значением атрибута является `default.` Не указывайте этот атрибут для остальных режимов.
 
-### Mode Parameters
+### Параметры режима
 
-#### arrays 
+#### arrays
 
-path to [`CustomArrays.ini`](../coding/arrays.md)
+путь к [`CustomArrays.ini`](../coding/arrays.md)
 
-#### classes 
+#### classes
 
-path to[`classes.db`](../coding/classes.md)
+путь к [`classes.db`](../coding/classes.md)
 
 #### constants
 
-path to[`constants.txt`](../coding/constants.md)
+путь к[`constants.txt`](../coding/constants.md)
 
-#### data 
+#### data
 
-path to the mode directory
+путь к директории режима редактирования
 
-#### ide 
+#### ide
 
-path to either an `.ide` or `.dat` file:  
-`.ide` files contain game [model names](../coding/data-types.md#model-names) and characteristics  
-`.dat` files contain paths to other `.ide` files
+путь к `.ide` или `.dat` файлу:  
+`.ide` файлы содержат [имена моделей](../coding/data-types.md#imena-modelei) и их характеристики  
+`.dat` файлы содержат пути к другим `.ide` файлам
 
-`ide` element may have an optional `base` attribute to specify a folder that is used to resolve relative paths in the `.dat` file.
+Элемент `ide` имеет необязательный атрибут `base`, который задает папку, относительно которой расчитываются пути, определенные внутри `.dat` файла:
 
 ```text
 <ide base="@game:\">default.dat</ide>
 ```
 
-Without `base` all relative paths are resolved starting from the location of the `.dat` file.
+Без `base` все пути расчитываются относительно папки с `.dat` файлом.
 
-A mode may have multiple `<ide>` elements.
+Режим редактирования может иметь несколько элементов `<ide>`.
 
-#### keywords 
+#### keywords
 
-path to a list of [keywords](../coding/keywords.md)
+путь к файлу со списком [ключевых слов](../coding/keywords.md)
 
-#### labels 
+#### labels
 
-path to [`CustomLabels.ini`](customlabels.ini.md)
+путь к [`CustomLabels.ini`](customlabels.ini.md)
 
-#### missions 
+#### missions
 
-path to[`missions.txt`](../features.md#custom-mission-titles)
+путь к [`missions.txt`](../features.md#ispolzovanie-originalnykh-imen-missii)
 
-#### opcodes 
+#### opcodes
 
-path to a list of [opcodes](opcodes-list-scm.ini.md)
+путь к файлу со [списком опкодов](opcodes-list-scm.ini.md)
 
-#### templates 
+#### templates
 
-path to an [exclusive templates](code-templates.md) file
+путь к файлу с [эксклюзивными шаблонами](code-templates.md)
 
-#### text 
+#### text
 
-path to a `.gxt` file
+путь к `.gxt` файлу
 
-`<text>` has one required attribute: `format`. The supported values are:
+`<text>` имеет обязательный атрибут: `format`. Допустимыми значениями являются:
 
-`gta3`: `.gxt` has one table, plain keys, ANSI encoding  
-`vc`: `.gxt` has multiple tables, plain keys, ANSI encoding  
-`sa`: `.gxt` has multiple tables, hashed keys, ANSI encoding  
-`sa_mobile`: `.gxt` has multiple tables, hashed keys, UTF-16 encoding
+`gta3`: `.gxt` с одной таблицей, текстовыми ключами, кодировкой ANSI  
+`vc`: `.gxt` с несколькими таблицами, текстовыми ключами, кодировкой ANSI  
+`sa`: `.gxt` с несколькими таблицами, зашифрованными ключами, кодировкой ANSI  
+`sa_mobile`: `.gxt` с несколькими таблицами, зашифрованными ключами, кодировкой UTF-16
 
 #### variables
 
-path to [`CustomVariables.ini`](../coding/variables.md)
+путь к [`CustomVariables.ini`](../coding/variables.md)
 
 #### examples
 
-path to [`opcodes.txt`](../opcode-search-tool.md)
+путь к [`opcodes.txt`](../opcode-search-tool.md)
 
-### Built-in Variables
+### Доступные переменные
 
-Sanny provides a few variables that can be used in parameters and attributes \(if applicable\).
+Sanny предоставляет несколько переменных, которые могут использоваться в параметрах и атрибутах \(там, где это применимо\).
 
-`@game:` - path to the [game directory](../options/general.md#game-directory) configured in the options  
-`@sb:` - path to the Sanny Builder directory \(where `sanny.exe` is located\)
+`@game:` - путь к [папке с игрой](../options/general.md#direktoriya-igry), которая выбрана в настройках  
+`@sb:` - путь к папке Sanny Builder \(где находится `sanny.exe`\)
 
-Both paths do not include the trailing slash.
+Оба пути не включают в себя завершающий слеш \(`/`\).
 
-## Available Modes
+## Список режимов
 
-Sanny Builder offers many different modes and their number may vary from version to version:
+Sanny Builder предлагает много различных режимов, их количество может меняться от версии к версии:
 
-| Title | Naming schema  | Parameters order | Game |
+| Название | Имена опкодов | Порядок параметров | Игра |
 | :--- | :--- | :--- | :--- |
-| GTA III | community | custom | all versions of GTA III |
-| GTA VC | community | custom | all versions of Vice City |
-| GTA SA v1.0 | community | custom | SA v1.0  |
-| GTA SA v2.0 | community | custom | SA v2.0 |
-| GTA SA \(v1.0 - SCR\) | Rockstar | original | SA v1.0 |
-| GTA LCS | Rockstar | original | all versions of Liberty City Stories |
-| GTA VCS \(PSP\) | Rockstar | original | VCS for PSP |
-| GTA VCS \(PS2\) | Rockstar | original | VCS for PS2 |
-| SA Mobile | community | custom | SA Android and iOS versions |
+| GTA III | сообщество | измененный | все версии GTA III |
+| GTA VC | сообщество | измененный | все версии Vice City |
+| GTA SA v1.0 | сообщество | измененный | SA версия 1.0  |
+| GTA SA v2.0 | сообщество | измененный | SA версия 2.0 |
+| GTA SA \(v1.0 - SCR\) | Rockstar | первоначальный | SA версия 1.0 |
+| GTA LCS | Rockstar | первоначальный | все версии Liberty City Stories |
+| GTA VCS \(PSP\) | Rockstar | первоначальный | VCS для PSP |
+| GTA VCS \(PS2\) | Rockstar | первоначальный | VCS для PS2 |
+| SA Mobile | сообщество | измененный | SA версия для Android и iOS |
 
-The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers \(e.g. `char` or `script`\) that is consistent with the game's inner structures.  
+Колонка `Имена опкодов` определяет способ именования опкодов. Первые имена неизвестным опкодам были даны в результате анализа игрового кода, проводимого сообществом скриптеров в течение многих лет. Так появились такие термины как `актёр` или `поток`. Альтернативой является оригинальная терминология, использованная разработчиками игры \(соответственно `персонаж` или `скрипт`\). Эта терминология вместе со списком оригинальных названий всех опкодов оказались доступны в коде игры GTA SA: Mobile.   
 
-The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
+`Порядок параметров` определяет как расположены параметры опкода относительно друг друга. В первоначальном порядке все параметры находятся в той последовательности, как было задумано разработчиками игры, от параметра с наименьшим индексом к параметру с наибольшим индексом. Измененный порядок подразумевает, что в некоторых опкодах параметры переставлены местами для повышения читаемости кода или по иным причинам.
 
-## Selecting a mode
+Сочетание оригинальной терминологии и сохранение порядка следования параметров обеспечивает максимальное сходство скриптов с тем языком, который использовали разработчики игры.
 
-To change the mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. As you click the mode name Sanny Builder makes all necessary adjustments and you may continue working immediately.
+## Переключение режимов
+
+Чтобы переключить режим редактирования, кликните в правом нижнем углу программы. Появится список доступных режимов. Выберите нужный и кликните по нему. Sanny Builder загрузит все требуемые файлы и вы сразу можете продолжить работу.
 
 ![](../.gitbook/assets/edit_modes.png)
 
-To select the mode using CLI run Sanny Builder with the `--mode` [option](../cli.md#mode). To select a default mode for the game use the `--game` [option](../cli.md#game).
+Выбрать режим через командную строку можно с [опцией](../cli.md#mode) `--mode`. Чтобы выбрать режим по умолчанию для какой-либо игры, используйте [опцию](../cli.md#game) `--game`.
 
-Running Sanny Builder with the `-x` [option](../cli.md#x) allows loading the modes configuration from a file different from the default `modes.xml`. If Sanny Builder is already running, it reloads the configuration and updates the list of modes.
+Запуск Sanny Builder с [опцией](../cli.md#x) `-x` позволяет загрузить конфигурацию режимов из файла, отличного от `modes.xml`. Если при этом Sanny Builder уже запущен, он перезагрузит конфигурацию и обновит список доступных режимов.
 

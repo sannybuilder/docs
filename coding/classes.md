@@ -1,33 +1,33 @@
-# Classes
+# Классы
 
-A **class** is a group of commands applied to the in-game entities: player, peds, objects, etc. For example, the `Player` class groups the commands performed over the player character.
+**Класс** - это группа команд, относящихся к какой-либо сущности в игре: игрокам, актерам, машинам и т.д. Например, класс `Player` объединяет опкоды, которые выполняются над игровым персонажем.
 
-## General Syntax
+## Общий синтаксис
 
-Syntax:  
-`<Class name>.<Class member>(parameters)`
+Синтаксис:  
+`<имя класса>.<член класса>(параметры)`
 
-`Class name` - the name of a group of commands defined in the `classes.db` file for this edit mode  
-`Class member` - one of the commands included in the class  
-`Parameters` - 0 or more comma-delimited [parameters](data-types.md)
+`Имя класса` - название группы опкодов, которая определена в файле `classes.db` для текущего [режима редактирования](../edit-modes/)  
+`Член класса` - одна из команд, входящих в класс  
+`Параметры` - 0 и более [параметров](data-types.md), разделенных запятой
 
 ```text
 Player.SetMinWantedLevel($PLAYER_CHAR, 2)
 ```
 
-`Player` - class name  
-`SetMinWantedLevel` - class member  
-`$PLAYER_CHAR, 2` - two parameters for `SetMinWantedLevel`
+`Player` - имя класса  
+`SetMinWantedLevel` - член класса   
+`$PLAYER_CHAR, 2` - два параметра для команды `SetMinWantedLevel`
 
-There are three types of class members:
+Существует 3 вида членов класса:
 
-* conditions
-* methods
-* properties
+* условия
+* методы
+* свойства
 
-### Conditions
+### Условия 
 
-The list that appears when you press `Ctrl+Space` marks conditional commands with the word `Check`. They are used in [conditional expressions](conditions.md): 
+Условные команды в списке, вызываемом нажатием `Ctrl+пробел`, обозначаются словом `Check`. Они используются в [условных выражениях](conditions.md):
 
 ```text
 if
@@ -35,75 +35,74 @@ if
 jf @anywhere
 ```
 
-### Methods
+### Методы
 
-Methods are regular commands used to complete a single in-game action, e.g. moving an object, destroying a vehicle, etc.:
+Команды, которые используются для выполнения одиночного действия над экземплярами класса, называются методами. Например, перемещение объекта, взрыв машины и т.п.:
 
 ```text
 Object.PutAt($crate, 10.0, -25.5, 12.2)
 Car.Destroy($car)
 ```
 
-They are marked with the work `proc` in the list of class members.
+В списке членов класса они обозначаются словом `proc`. 
 
-A special kind of methods is a constructor. A constructor creates a new instance of a class and stores its handle to a variable.
+Особый вид методов - это конструктор. Конструктор создает новый экземпляр класса и сохраняет указатель на него в переменную.
 
-In Sanny Builder the constructor can be written in two equivalent ways:
+Sanny Builder допускает два эквивалентных друг другу варианта написать конструктор:
 
 ```text
 Player.Create($PLAYER_CHAR, #NULL, 2488.5601, -1666.84, 13.38)
-
 ```
 
 ```text
 $PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38)
 ```
 
-### Properties
+### Свойства
 
-Property allows you to access class attributes and/or modify them.
+Свойства служат для чтения или изменения отдельных атрибутов экземпляра класса.
 
-For example, the `.Money` property of the `Player` class allows to operate with the amount of money of the player:
+Например, свойство `.Money` класса `Player` позволяет работать с количеством денег у игрока:
 
 ```text
-Player($PLAYER_CHAR).Money += 1000000 // add more money
-Player($PLAYER_CHAR).Money > 461@ // check the amount
-4@ = Player($PLAYER_CHAR).Money // read the amount and store in variable
+Player($PLAYER_CHAR).Money += 1000000 // добавить деньги
+Player($PLAYER_CHAR).Money > 461@ // проверить счет игрока
+4@ = Player($PLAYER_CHAR).Money // записать текущую сумму денег в переменную
 ```
 
 {% hint style="warning" %}
-In the current version the compiler ignores whitespace characters in [string literals](data-types.md#string-literals) used in property parameters:
+В текущей версии существует ограничение на использование пробелов в [строковых литералах](data-types.md#strokovye-literaly) в параметрах свойств. Компилятор игнорирует такие пробелы:
 
 ```text
 0@ = File.Open("file name","wb")
 ```
 
-will be compiled as:
+будет скомпилировано как:
 
 ```text
 0@ = File.Open("filename","wb")
 ```
 {% endhint %}
 
-## Class Instances
+## Экземпляры класса
 
-Almost all class members take a variable as the first parameter. This variable holds a handle of the class instance which is a concrete in-game entity the command is applied to:
+Большинство классов в качестве первого параметра принимают переменную, которая хранит указатель на экземпляр класса - ту сущность в игре, над которой выполняется эта команда:
 
 ```text
 Player.Build($PLAYER_CHAR)
 ```
 
-`$PLAYER_CHAR` - the class instance. 
+`$PLAYER_CHAR` - экземпляр класса. 
 
-For some in-game entities there is only one instance to exist. An example of that would be the camera that controls what the player can see. The members of classes for such entities do not require a variable with the class instance:
+При этом некоторые внутриигровые элементы существуют в единственном экземпляре. Например, камера, которая определяет поле зрения игрока. Члены классов для таких сущностей не требуют экземпляра класса:
 
 ```text
 Camera.SetBehindPlayer()
 ```
 
-### Declaring a class instance
+### Объявление экземпляров класса
 
-Variables can be [declared](variables.md#var-end-construct) using a class name as the type:
+Переменные можно [объявлять](variables.md#konstrukciya-var-end) с типом - именем класса:
 
 ```text
 var
@@ -111,7 +110,7 @@ var
 end
 ```
 
-It instructs the compiler that `$PLAYER_CHAR` holds an instance of the class `Player`. This variable can serve as an alias to the class name:
+Это указывает компилятору на то, что переменная `$PLAYER_CHAR` является экземпляром класса `Player`. Такую переменную можно использовать вместо имени класса:
 
 ```text
 if
@@ -120,24 +119,24 @@ jf @anywhere
 ```
 
 {% hint style="warning" %}
-If a variable substitutes a class name, the compiler also makes it the first parameter, hence no need to use it again in the list of parameters:
+Если переменная используется вместо имени класса, она также компилируется как первый параметр, поэтому дублировать её в списке параметров не нужно:
 
 ```text
 $PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head)
 ```
 
-is equivalent to:
+эквивалентно:
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "PLAYER_FACE", "HEAD", Head)
 ```
 {% endhint %}
 
-Variables declared as instances of a class can be redeclared with another type.
+Переменные - экземпляры класса могут быть переобъявлены с другим типом.
 
-### The `Model` Class 
+### Класс `Model` 
 
-[Model names](data-types.md#model-names) are always instances of the `Model` class:
+[Имена моделей](data-types.md#imena-modelei) являются экземплярами класса `Model`:
 
 ```text
 #AK47.Load
@@ -149,7 +148,7 @@ if
 jf @loop
 ```
 
-It is equivalent to:
+эквивалентно:
 
 ```text
 Model.Load(#AK47)
@@ -161,17 +160,19 @@ if
 jf @loop
 ```
 
-## Class constants
+## Константы класса
 
-Some class members have pre-defined constants for some parameter values. It makes the source code more readable:
+Некоторые параметры в членах классов могут задаваться в виде заранее определенных констант. Это делает код более читаемым:
 
 ```text
 Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", Torso)
 ```
 
-The last parameter \(`Torso`\) is a class constant substituted with `0` during compilation. Class constants are defined in the `classes.db` file.
+Последний параметр \(`Torso`\) - это константа для метода `SetClothes`, которая будет заменена на `0` при компиляции. Константы классов определены в файле `classes.db`.
 
 {% hint style="info" %}
-The special `Extended` type is reserved for parameters having a list of constants. You can see the `Extended` type in the list of class members and in a hint appearing as you type class member parameters.
+Параметр, для которого существует список констант, обозначается словом `Extended` в списке членов класса и подсказке при наборе параметров. 
+
+Список доступных констант можно вызвать через `Ctrl+пробел`, если курсор стоит в месте, где используется такой параметр.
 {% endhint %}
 

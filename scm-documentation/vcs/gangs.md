@@ -1,6 +1,6 @@
-# Gang IDs
+# Банды
 
-| ID | Name |
+| ID | Название |
 | :--- | :--- |
 | 0 | Umberto's guys |
 | 1 | Cholos |
@@ -11,6 +11,4 @@
 | 6 | Vance gang |
 | 7 | Golfer |
 | 8 | Marty's |
-
-
 

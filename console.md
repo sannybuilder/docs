@@ -1,44 +1,46 @@
-# Console
+# Консоль
 
-The **console** offers an ability to switch debug options of Sanny Builder. Mostly they relate to the disassembler features and you can see the changes when disassemble a file. The console window is open after pressing `Ctrl+~`. You may enter the commands in the input line. After typing a command press  `Enter` to proceed. The console will display a result.
+**Консоль** служит инструментом для переключения отладочных опций Sanny Builder. Многие из них относятся к возможностям дизассемблера и влияют на его работу. 
 
-## Available commands 
+Окно консоли открывается нажатием `Ctrl+~`. Для запуска команды введите ее в верхнем поле и нажмите `Enter`. Консоль покажет результат.
 
-All commands are case-insensitive.
+## Доступные команды 
 
-`help` – shows the help information about the console  
-`clear` – clears the console  
-`list` – shows in the console the list of all commands  
-`list options` – lists all available debug options  
-`toggle [on/off]` – enable or disable [debug options](console.md#debug-options)
+Все команды являются регистронезависимыми.
 
-The input command ends either with the word `ON` \(the option will be enabled\) or `OFF` \(the option will be disabled\), or nothing \(the option will be toggled from `ON` to `OFF` or from `OFF` to `ON`\).
+`help` – показать справку о консоли  
+`clear` – очистить консоль  
+`list` – показать список доступных команд  
+`list options` – вывести все доступные отладочные опции  
+`toggle <имя опции> [on/off]` – переключить [отладочную опцию](console.md#otladochnye-opcii)
+
+Команда `toggle` заканчивается либо словом `ON` \(опция будет включена\), `OFF` \(опция будет выключена\), или ни тем ни другим \(опция будет переключена с `ON` на `OFF` или с `OFF` на `ON`\).
 
 {% hint style="info" %}
-Before enabling the following options turn on the debug mode with the command `toggle debug_mode ON`
+Перед включением отладочных опций включите общий режим отладки командой`toggle debug_mode ON`
 {% endhint %}
 
-## Debug Options
+## Отладочные опции
 
 ### CODE\_OFFSETS
 
-The disassembler prints the offset of each command.
+Дизассемблер выводит для каждой команды ее адрес в файле \(смещение от начала\).
 
 ### VAR\_COUNTER
 
-After compiling the console contains the list of the [global variables](coding/variables.md#global-variables) used only once in the code \(i.e. can be removed or replaced with [local variables](coding/variables.md#local-variables)\).
+После компиляции в консоли содержится список [глобальных переменных](coding/variables.md#globalnye-peremennye), которые были использованы только один раз \(неиспользуемые переменные, которые можно удалить или заменить на [локальные переменные](coding/variables.md#lokalnye-peremennye)\).
 
 ### IGNORE\_UNKNOWN
 
-The disassembler ignores unknown opcodes, incorrect parameters and so on. It helps to open almost any file that used to be protected or compiled incorrectly.
+Дизассемблер игнорирует ошибки в исходном коде \(неизвестные опкоды, неверные типы данных, нарушения формата файла\). Это помогает открыть большинство скриптов, которые были скомпилированы некорректно.
 
 ### CONSTANT\_INDEXES
 
-The disassembler prints array elements as global variables with indexes. It's available for `GTA SA`, `LCS`, `VCS` games. 
+Выводит элементы массива как глобальные переменные с индексом. Доступно для режимов `GTA SA`, `LCS`, `VCS`. 
 
-E.g. given an array of three elements starting at `$10` this option affects the way the variables look like after disassembling:
+Например, если в исходном файл был массив из трех элементов, начинающийся с `$10`, то при переключении этой опции переменные в дизассемблированном файле будут выглядеть следующим образом:
 
-| Without `CONSTANT_INDEXES` | With `CONSTANT_INDEXES` |
+| `Без CONSTANT_INDEXES` | С `CONSTANT_INDEXES` |
 | :--- | :--- |
 | $10 | $10\[0\] |
 | $11 | $10\[1\] |
@@ -46,17 +48,19 @@ E.g. given an array of three elements starting at `$10` this option affects the 
 
 ### SKIP\_SCM\_HEADER
 
-The disassembler skips the header of the input file. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). Also makes the compiler compile a `.scm` file without the header .
+Дизассемблер пропускает чтение заголовка `.scm` файла. Это позволяет открывать скрипты в которых заголовка нет \(например, скрипты из файла `script.img` или CLEO скрипты\).
 
-## Alternate ways
+Также при включении этой опции Sanny Builder компилирует `.scm` файлы без заголовка.
 
-Sanny Builder offers a few other ways to toggling debug options outside of the console that might be useful in some cases.
+## Альтернативные способы включения
 
-### Running with --debug
+Sanny Builder предлагает несколько способов для переключения отладочных опций за пределами консоли. Эти способы могут быть полезны в определенных случаях.
 
-The `--debug` [option](cli.md#debug) provides an alternate way of switching the debug options. Run Sanny with the parameter `--debug X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
+### Запуск с параметром --`debug`
 
-| Index | Debug Option |
+Запуск программы через командную строку с [параметром](cli.md#debug) `--debug` является способом одновременно переключить несколько опций. Запустите `sanny.exe` с параметром `--debug X`, где `X` это последовательность `0` и `1`.  Каждая цифра в последовательности означает определенную опцию:
+
+| Индекс | Отладочная опция |
 | :--- | :--- |
 | 1 | CODE\_OFFSETS |
 | 2 | IGNORE\_UNKNOWN |
@@ -68,13 +72,13 @@ The `--debug` [option](cli.md#debug) provides an alternate way of switching the 
 sanny.exe --debug 11000
 ```
 
-The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGNORE_UNKNOWN` mode. The remaining zeros disable `VAR_COUNTER`, `CONSTANT_INDEXES`, `SKIP_SCM_HEADER`.
+Первая `1` включит опцию `CODE_OFFSETS`, вторая `1` включит режим `IGNORE_UNKNOWN`. Оставшиеся нули выключат `VAR_COUNTER`, `CONSTANT_INDEXES`, `SKIP_SCM_HEADER`.
 
-### Using GUI
+### Использование интерфейса программы
 
-Clicking the right-most button in the main toolbar shows a drop-down menu with the list of debug options.
+Клик по самой правой кнопке на панели инструментов открывает выпадающее меню со списком опций:
 
 ![](.gitbook/assets/debug_options.PNG)
 
-Each menu item toggles a particular debug option. The change comes into effect immediately.
+Каждый элемент списка переключает одну из опций. Изменение будет сразу доступно для использования.
 

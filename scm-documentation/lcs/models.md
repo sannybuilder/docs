@@ -1,6 +1,6 @@
-# Model IDs
+# Модели
 
-| ID | Name |
+| ID | Название |
 | :--- | :--- |
 | 0 | PLAYER |
 | 1 | COP |
@@ -10,7 +10,7 @@
 | 5 | MEDIC |
 | 6 | FIREMAN |
 | 7 | MALE01 |
-| 8 | \(unknown\) |
+| 8 | \(неизвестно\) |
 | 9 | TAXI\_D |
 | 10 | PIMP |
 | 11 | CRIMINAL01 |

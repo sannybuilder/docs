@@ -1,10 +1,10 @@
-# Ped Types
+# Типы пешеходов
 
 ```text
-009A: $Actor = create_actor <type> #MODEL at X Y Z 
+009A: $Actor = create_actor <тип> #MODEL at X Y Z 
 ```
 
-| Type | Description |
+| Тип | Описание |
 | :--- | :--- |
 | 0 | PLAYER1 |
 | 1 | PLAYER2 |
@@ -21,8 +21,8 @@
 | 12 | GANG6 \(Mafia\) |
 | 13 | GANG7 \(Mountain Cloud Triad\) |
 | 14 | GANG8 \(Varrio Los Aztecas\) |
-| 15 | GANG9 \(unused\) |
-| 16 | GANG10 \(unused\) |
+| 15 | GANG9 \(не используется\) |
+| 16 | GANG10 \(не используется\) |
 | 17 | DEALER |
 | 18 | MEDIC |
 | 19 | FIREMAN |

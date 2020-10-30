@@ -1,6 +1,6 @@
-# Special Actors
+# Персонажи
 
-| ID | Description |
+| ID | Описание |
 | :--- | :--- |
 | ANDRE | Andre |
 | BBTHIN | Big Bear \(thin\) |

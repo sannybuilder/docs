@@ -1,10 +1,10 @@
-# Player Clothes
+# Одежда
 
 ```text
 0357: set_actor $PLAYER_ACTOR skin_to <id>
 ```
 
-| ID | Name |
+| ID | Название |
 | :--- | :--- |
 | PLR | Leone's suit |
 | PLR2 | Lawyer's suit |

@@ -1,12 +1,12 @@
 # CustomLabels.ini
 
-You can give labels custom names that do not depend on the disassembler [configuration](../options/formats.md#label-name-format). Those names are defined in the file `CustomLabels.ini` \(one for each [edit mode](./#labels)\).
+Вы можете присваивать меткам специфичные имена, которые не будут зависеть от [опций](../options/formats.md#imena-metok) дизассемблера. Такие имена содержатся в файле `CustomLabels.ini` \(отдельный для каждого [режима редактирования](./#labels)\).
 
-## File Syntax
+## Формат файла
 
-`<label offset>=<custom name>`
+`<адрес метки>=<имя>`
 
-If the disassembler finds a label at the specified offset, this label gets the custom name.
+Если в дизассемблируемом файле есть метка по указанному адресу, она получит присвоенное имя.
 
-To find out offset values enable the `CODE_OFFSETS` debug [option](../console.md#code_offsets). After disassembling, a number in front of the script instruction is the offset value.
+Узнать адрес метки можно, включив отладочную [опцию](../console.md#code_offsets) `CODE_OFFSETS`. После дизассемблирования число в начале каждой инструкции будет ее адресом.
 

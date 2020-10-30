@@ -1,4 +1,4 @@
-# Options
+# Опции программы
 
-The options window is shown when you press `F10`. This window is divided into five tabs, each of them contains certain kind of settings. By default the [general settings](general.md) tab is open.
+Окно опций можно вызвать нажатием `F10`. Это окно разделено на 5 вкладок, каждая из которых содержит определенный вид настроек. По умолчанию открывается вкладка [общих настроек](general.md).
 

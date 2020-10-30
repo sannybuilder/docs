@@ -1,10 +1,10 @@
-# Weapon IDs
+# Оружие
 
 ```text
 031D: actor <actor> hit_by_weapon <id> 
 ```
 
-| ID | Group | Name | Model | Icon |
+| ID | Группа | Название | Модель | Иконка |
 | :--- | :--- | :--- | :--- | :--- |
 | 0 |  | Unarmed |  | ![](../../.gitbook/assets/fist.gif) |
 | 1 |  | Brass Knuckles | \#brassknuckle | ![](../../.gitbook/assets/brassknuckle.gif) |

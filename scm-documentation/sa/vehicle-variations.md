@@ -1,19 +1,20 @@
-# Vehicle Variations
+# Варианты изменения авто
 
 ```text
-0506: set_vehicle_model #PONY next_variation <variantA> <variantB>
+0506: set_vehicle_model #PONY next_variation <variant 1> <variant 2>
 ```
 
-For most vehicles, only one extra can be added so both the second and third parameters should be set to the same wanted variant to avoid confusion. However, some vehicles can have 2 different extras active.
+Большинство машин может иметь только одно изменение, поэтому второй и третий параметры должны быть одинаковыми. Однако некоторые машины могут иметь два изменения.
 
-Variant `-1` is the default model with no extras. Variants `0` through `5` are possible extra variants which will fall back to the default if the model does not have that many extras, and variants greater than `5` will crash the game.
+Вариант `-1` - это стандартная модель, без изменений. Варианты от `0` до `5` - возможные изменения. Если модель не поддерживает данный номер, то будет установлена модель по умолчанию. Варианты больше `5` приведут к ошибке игры.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Model name</th>
-      <th style="text-align:left">Model ID</th>
-      <th style="text-align:left">Variant</th>
+      <th style="text-align:left">&#x418;&#x43C;&#x44F; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438;</th>
+      <th
+      style="text-align:left">ID &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438;</th>
+        <th style="text-align:left">&#x412;&#x430;&#x440;&#x438;&#x430;&#x43D;&#x442;</th>
     </tr>
   </thead>
   <tbody>

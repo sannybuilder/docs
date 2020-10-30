@@ -1,46 +1,45 @@
-# Features
+# Возможности
 
-Sanny Builder provides the end-user the following features:
+Sanny Builder как среда программирования предоставляет пользователю следующие возможности.
 
-## Syntax Highlighting
+## Подсветка синтаксиса
 
-Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](options/syntax-highlighting.md).
+Sanny Builder подсвечивает код разными цветами, чтобы облегчить его чтение. Настройки подсветки могут быть изменены в [опциях программы](options/syntax-highlighting.md).
 
-## Bookmarks / Quick jump
+## Быстрый переход по тексту
 
-You can bookmark a line by pressing `Ctrl+Shift+0..9` and then get back to it by pressing `Ctrl+0..9`. To delete all bookmarks, use the menu option `Edit->Clear All Bookmarks`. 
+Текущую строку можно запомнить, если поставить закладку нажатием `Ctrl+Shift+0..9`, а затем вернуться к ней нажатием `Ctrl+0..9`.   
+Удалить все закладки можно через меню `Правка -> Удалить закладки`.
 
-Alternatively you can go to a particular line using the `Go To Line` feature. Press `Ctrl+G`, enter the line number and the editor will move the cursor to it.
+Также можно перейти к строке по ее номеру через опцию `Перейти...`. Она вызывается комбинацией `Ctrl+G`. Введите порядковый номер нужной строки, и редактор быстро переместит Вас к ней.
 
-## InstaSearch
+## Моментальный поиск
 
-The InstaSearch feature allows to find a word or a label directly in the editor without using the `Find` dialog box.
+Моментальный поиск позволяет находить слово или метку прямо в редакторе без вызова диалога поиска.
 
-To find an occurrence of the word under the cursor, press `Ctrl+Num6` to start searching it below in a code, or `Ctrl+Num4` to search above. The cursor will immediately move to the line where such word is found. Keep pressing `Ctrl+Num4/Num6` to find other occurrences of this word.
+Чтобы найти в тексте другое вхождение слова под курсором, нажмите `Ctrl+Num6`, чтобы искать его ниже по тексту или `Ctrl+Num4`, чтобы искать выше. Курсор немедленно переместится к строке, где есть такое слово. Продолжайте нажимать `Ctrl+Num4/Num6`, чтобы найти другие строки с нужным словом.
 
-To jump to the line with a label \(e.g, `:MyLabel`\), put the cursor on the label reference \(`@MyLabel`\) and press `Ctrl+Num2`. The editor will move the cursor to the line with this label.
+Чтобы перейти к строке, обозначенной меткой \(например, `:MyLabel`\), поместите курсор на ссылку на эту метку \(`@MyLabel`\) и нажмите `Ctrl+Num2`. Редактор немедленно переместит курсор к строке с искомой меткой.
 
-If InstaSearch did not find the word in the code, the cursor position remains unchanged.
+Если позиция курсора не изменилась, это означает, что моментальный поиск не смог найти нужное слово в тексте.
 
-Before changing the cursor position InstaSearch remembers it, so if you want to return back press `Ctrl+Num8`.
+Перед изменением позиции курсора моментальный поиск запоминает текущую позицию, и если вы решили вернуться на предыдущее место, нажмите `Ctrl+Num8`.
 
-## Displaying Information about Opcode
+## Показ различной информации о текущем опкоде
 
-When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, or [model](coding/data-types.md#model-names) IDs \(if `IDE` files for the current [edit mode](edit-modes/#ide) have been loaded\).
+При включенной [опции](options/editor.md#nastroiki) `Показывать информацию об опкодах` Sanny Builder показывает количество параметров для опкода и, если курсор находится над [именем модели](coding/data-types.md#imena-modelei), ее ID \(если были загружены `IDE` файлы для текущего [режима редактирования](edit-modes/#ide)\).
 
-## Opcode Search
+## Поиск нужного опкода
 
-Use the built-in [Opcode Search tool](opcode-search-tool.md) to find an opcode you need.
+Используйте программу [поиска опкодов](opcode-search-tool.md), чтобы найти нужный опкод.
 
-## Player Coordinates Management
+## Изменение координат и угла разворота игрока
 
-Press `Ctrl+Alt+1` when GTA San Andreas is running and the Coords Manager window will appear. You can read the player's coordinates from the game memory and modify them there. 
+Нажмите `Ctrl+Alt+1`, когда запущена игра, и появится окно менеджера. Здесь вы можете установить новые координаты и угол разворота игрока и скопировать текущие. В верхнем поле ввода вы можете указать сразу 3 координаты, разделив их пробелом или `,`. Также вы можете быстро вставить координаты игрока в редакторе комбинацией `Ctrl+Shift+C`. Вставка угла разворота \(`z_angle`\) в редакторе производится нажатием `Ctrl+Shift+E`.
 
-In the top edit line you can enter the XYZ coordinates, delimited by the space character or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
+## Запись и воспроизведение нажатий кнопок
 
-## Keypress Recording \(Macro\)
-
-You can record a key pressing sequence \(macro\) and playback it later. Consider the following code:
+Можно записывать последовательность нажатия клавиш \(макрос\) и воспроизводить ее позднее. Например, есть следующий код:
 
 ```text
 $Actor = Actor.Create(CivMale, #MALE01, 100.0, 100.0, 10.0)
@@ -51,83 +50,85 @@ $Killer = Actor.Create(CivMale, #MALE01, 140.0, 100.0, 50.0)
 $ActorWithoutGun = Actor.Create(CivMale, #MALE01, 150.0, 100.0, 60.0) 
 ```
 
-Say, you need to exchange the actor's handles in each pair \(i.e have `$ActorWithGun` instead of `$Actor`, and vice versa\).
+Допустим, нужно обменять переменные в каждой паре строк \(поставить вместо `$Actor` `$ActorWithGun`, а вместо `$ActorWithGun` - `$Actor` и т.д.\).
 
-Place the cursor in the first line before `$Actor` and press `Ctrl+M`. The editor immediately begins recording all keys - so be careful!
+Поставьте курсор на первую строку и нажмите `Ctrl+M`. С этого момента редактор запоминает все нажатия клавиш, так что будьте осторожны.
 
-1. Press and hold `Ctrl` and press the `Right Arrow` button once 
-2. Press `Shift+Home` and `Ctrl+Ins`.
-3. Press the `Down Arrow` button. The cursor must be on the second line with the global variable in the clipboard
-4. Press `Ctrl+Right Arrow` and `Shift+Ins`.
-5. Press `Ctrl+Left Arrow`, `Shift+Home`, `Ctrl+Ins` and `Delete`
-6. Press the `Up Arrow` button
-7. Press `Ctrl+Shift+Right Arrow` and `Shift+Ins`
-8. Press the `Home` button.
+1. Зажмите `Ctrl` и нажмите один раз `стрелку вправо`. `Ctrl` нужен так как строки разной длины. 
+2. Теперь нажмите `Shift+Home` и `Ctrl+Ins`. 
+3. Нажмите `стрелку вниз`. Курсор должен оказаться на второй строке, при этом глобальная переменная будет в буфере обмена. 
+4. Нажмите `Ctrl+стрелка вправо` и `Shift+Ins`.
+5. Нажмите `Ctrl+стрелка влево`, `Shift+Home`, `Ctrl+Ins` и кнопку `Delete`
+6. Нажмите `стрелку вверх`
+7. Нажмите `Ctrl+Shift+стрелка вправо` и `Shift+Ins`
+8. Нажмите кнопку `Home`.
 
-Now the first two lines should look like these:
+Теперь первые две строки выглядят так:
 
 ```text
 $ActorWithGun = Actor.Create(CivMale, 100.0, 100.0, 10.0)
 $Actor = Actor.Create(CivMale, 110.0, 100.0, 20.0)
 ```
 
-with the cursor being in the beginning of the first line. Now press `Ctrl+M` to stop recording.
+и курсор стоит в начале первой строки. Теперь нажмите `Ctrl+M`. Макрос записан. Теперь можно воспроизводить записанную последовательность комбинацией `Ctrl+P`. Установите курсор на третью строку, нажмите `Ctrl+P`, и переменные `$Gang01` и `$Gang02` поменяются местами.
 
-You can playback the recorded sequence by pressing `Ctrl+P`. Place the cursor in the beginning of the third line, press `Ctrl+P` and the actor handles will be swapped.
+Во время записи макроса можно поставить/снять запись на паузу нажатием `Ctrl+P`.
 
-During recording, you can pause/unpause it by pressing `Ctrl+P`.
+## Замена номеров миссий на их названия
 
-## Replacing Mission Numbers with their Names
+Sanny Builder допускает использовать имя миссии в команде `start_mission`. Именем миссии явлется ее метка, которая определена в блоке `DEFINE MISSION`.
 
-Sanny Builder allows using a mission name in the opcode `start_mission`. The mission name is the label defined with a `DEFINE MISSION` command. Say, you have:
+Например, у вас есть 
 
 ```text
 DEFINE MISSION 10 AT @MYMISSION
 ```
 
-Instead of `start_mission 10` you can write`start_mission MYMISSION`.
+Вы можете использовать вместо `start_mission 10` команду `start_mission MYMISSION`.
 
-There is also the [Replace Mission Numbers](options/general.md#replace-mission-numbers) option. When it's enabled, the decompiler automatically replaces all mission numbers with their names.
+Также существует [опция](options/general.md#zamenyat-nomera-missii) `Заменять номера миссий`. Когда она включена, дизассемблер автоматически заменяет все номера миссий в коде на их имена. Эта опция дает возможность безболезненно удалять миссии, не заботясь о переименовывании номеров в коде.
 
-To call the mission names list, press `Ctrl+Space`. The cursor has to be directly after the `start_mission` command.
+Для дополнительного удобства после команды `start_mission` можно вызвать список имен миссий нажатием `Ctrl+пробел`.
 
-Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to the mission code when the cursor is under the mission name.
+См. также [Быстрый переход к миссии](features.md#momentalnyi-poisk).
 
-## Custom Mission Titles
+## Использование оригинальных имен миссий
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes/#missions). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
+Начиная с версии 3.2.0 Sanny Builder поддерживает оригинальные названия миссий для каждого [режима редактирования](edit-modes/). Названия содержатся в файле `missions.txt`. Этот файл используется при дизассемблировании, чтобы добавить название миссии как комментарий рядом командой определения \(`DEFINE MISSION`\) или вызова миссии \(`start_mission`\). 
 
-If a `SCM` file contains custom-made missions you may edit the `missions.txt` to have the correct titles after disassembling.
+При дизассемблировании `main.scm` с измененными миссиями, отредактируйте соответствующий файл `missions.txt`, чтобы названий миссий соответствовали скрипту.
 
-## Multilingual Interface
+## Многоязычный интерфейс
 
-Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
+Sanny Builder обладает интерфейсом, переведенным на 15 языков. Переключить язык можно в [опциях](options/general.md#yazyk-interfeisa) \(`F10`\). Информацию по созданию или изменению переводов можно найти на [sannybuilder/translations](https://github.com/sannybuilder/translations).
 
-## External Tools Menu
+## Меню внешних приложений
 
-You can configure up to `9` apps to run when you need them. Each app has its own hotkey for your convenience. You may also pass the parameters to your app if needed. To pass the name of the currently opened file use the special word `$SB_FileName`.
+Вы можете добавить в меню `Инструменты` до `9` внешних приложений и запускать по мере необходимости. Каждому приложению можно присвоить комбинацию горячих клавиш и параметры, необходимые для запуска.
 
-## Commenting Code
+Для передачи в запускаемое приложение пути к открытому в редакторе файлу используйте специальное слово: `$SB_FileName`.
 
-Comments start with the double slash `//`, as seen in other programming languages. Everything after `//` to the end of the line is ignored by the compiler.
+## Комментирование кода
 
-To comment out multiple lines or a part of the line, use block comments `{}`:
+Комментарии обозначаются в коде двумя слэшами `//`. Все, что идет после `//` до конца строки, игнорируется компилятором.
 
-```text
-0001: wait  {comments here} 0 ms
-```
-
-Since version 3.06 Sanny Builder also supports the C++-like comments `/* */`.
+Для того чтобы закомментировать несколько строк сразу либо только часть строки \(например в середине или начале\), используйте блочные комментарии `{}` 
 
 ```text
-0001: wait  /* comments here */ 0 ms
+0001: wait  {это игнорируется} 0 ms
 ```
 
-To comment out or uncomment multiple lines select them and press `Ctrl+Q`.
+Начиная с версии 3.06 Sanny Builder поддерживает C++-подобные комментарии `/* */`. 
 
-## Checking for updates
+```text
+0001: wait /* комментарий */ 0 ms
+```
 
-Sanny Builder is able to check if a new version is available. To use this feature go to menu `Help->Check for update...`. The editor will connect to a remote server and if a newer version is available it prompts the download and install. 
+Также вы можете закомментировать несколько строк, выделив их и нажав `Ctrl+Q`. Для раскоментирования выделите текст и нажмите `Ctrl+Q` еще раз.
 
-The editor can also check for an update during startup if you enable this option in the updater window.
+## Проверка обновлений
+
+Sanny Builder может проверить, доступна ли новая версия программы. Чтобы использовать эту возможность, пройдите в меню `Справка->Проверить обновления...`. Программа подключится к серверу обновлений и предложит скачать и установить обновление, если оно найдено. 
+
+Sanny Builder может автоматически проверять наличие обновления при запуске, если вы включите соответствующую опцию в окне меню обновлений.
 

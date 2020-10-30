@@ -1,135 +1,135 @@
-# Directives
+# Директивы
 
-Preprocessing **directives** are the special words that make the compiler function in different ways. They starts with `$` and enclosed between the curly brackets `{}`.
+Препроцессорные **директивы** - это специальные слова, которые указывают компилятору на необходимое поведение в процессе компиляции. Они начинаются с символа `$` и заключены в фигурные скобки `{}`.
 
 ## $VERSION
 
 {% hint style="warning" %}
-This directive is deprecated since v3.1.0
+Эта директива не используется начиная с версии v3.1.0
 {% endhint %}
 
-Sets what version of [opcodes](../edit-modes/opcodes-list-scm.ini.md) to use during compilation.
+Устанавливает какая версия [опкодов](../edit-modes/opcodes-list-scm.ini.md) будет использована во время компиляции.
 
-Syntax:  
+Синтаксис:  
 `{$VERSION x.y.zzzz}`
 
-* `X`- [edit mode](../edit-modes/) ID
-* `y` - parameters order
-  * `0` - original: 0, 1, 2, etc
-  * `1` - custom order, some parameters reordered
-* `zzzz` - opcodes version
+* `X`- ID [режима редактирования](../edit-modes/)
+* `y` - порядок параметров
+  * `0` - оригинальный, все параметры идут последовательно 0, 1, 2 и т.д.
+  * `1` - модифицированный порядок, некоторые параметры переставлены
+* `zzzz` - номер ревизии
 
-By default the compiler uses the version `current_edit_mode.1.0000`.
+По умолчанию компилятор загружает версию `<текущий режим>.1.0000`
 
 ## $VERSION\_RESTORE
 
 {% hint style="warning" %}
-This directive is deprecated since v3.1.0
+Эта директива не используется начиная с версии v3.1.0
 {% endhint %}
 
-Restores the version to the value prior to using `$VERSION`.
+Восстанавливает версию, которая использовалась до директивы `$VERSION`.
 
-Syntax:  
+Синтаксис:  
 `{$VERSION_RESTORE}`
 
 ## $INCLUDE
 
-Allows to insert the content of an external text file in the current file. If the compiler finds this directive it opens the file at the location provided as the parameter and proceeds from the code written in the included file. When it reaches the end of the included file it returns back to the previous file.
+Подключает внешний текстовый файл к исходнику. Когда компилятор находит указанную директиву, он открывает файл по пути, переданному в качестве параметра директивы и продолжает компиляцию того кода, который записан во внешнем файле. Когда компилятор достигает конца данного файла, он возвращается обратно в предыдущий файл.
 
-Syntax:  
-`{$INCLUDE path\to\file}`
+Синтаксис:  
+`{$INCLUDE путь\к\файлу}`
 
 ```text
 {$INCLUDE loadwav.txt}
 {$INCLUDE C:\dev\getarrayindex.txt}
 ```
 
-If the file path is relative, the compiler scans directories in the following order to find the file:
+Если указан относительный путь, компилятор ищет файл в следующем порядке:
 
-1. directory of the file with the directive
-2. `data` folder for the current edit mode
-3. Sanny Builder root directory
-4. the game directory
+1. папка, где находится файл, содержащий данную директиву
+2. папка `data` для текущего режима редактирования
+3. корневая папка Sanny Builder
+4. корневая папка игры
 
-If none of these directories contains a requested file the compiler throws an exception. 
+Если компилятор не может найти файл относительно ни одной из указанных папок это вызовет ошибку.
 
-You may use this directive unlimited number of times. The included files may contain this directive too.
+Вы можете использовать данную директиву неограниченное число раз. Вкладываемые файлы могут также содержать в себе данную директиву.
 
 {% hint style="info" %}
-A shorter form of this directive is `$I`.
+Короткая форма этой директивы `$I`.
 {% endhint %}
 
 ## $EXTERNAL
 
-Makes the compiler to treat the file as an external script. Meaning, the resulting output file will be header-less and with relative [label](data-types.md#labels) offsets, as an `.scm` file from the `script.img`. Using this directive requires that the file contains only one script or a single mission.
+Заставляет скомпилировать файл как внешний скрипт. Получившийся файл будет без заголовка и с локальными [метками](data-types.md#metki) как `.scm` файл из `script.img`. Использование данной директивы подразумевает, что в файле содержится только один скрипт или одна миссия.
 
-An alternative way to get such file is the debug [option](../console.md#skip_scm_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
+Аналогом использования данной директивы является [опция](../console.md#skip_scm_header) `SKIP_SCM_HEADER`. Данную опцию также можно переключить на главной панели инструментов.
 
-Syntax:  
+Синтаксис:  
 `{$EXTERNAL}`
 
 {% hint style="info" %}
-A shorter form of this directive is `$E`.
+Короткая форма этой директивы `$E`.
 {% endhint %}
 
 ## $CLEO
 
-An analogue of the `$E` one, but the compiler automatically copies an output file to the `game\CLEO` directory. The file also gets an extension provided as the directive parameter.
+Является аналогом директивы `$E`, однако полученный файл автоматически копируется в директорию `игра\CLEO`, и получает расширение, указанное в директиве.
 
-Syntax:  
-`{$CLEO <extension>}`
+Синтаксис:  
+`{$CLEO <расширение файла>}`
 
-`extension` is an optional parameter specifying the file extension of the output file. It starts with the period character `.`. If no extension is present, the compiler uses the default value `.cs`
+`расширение файла` - опциональный параметр, который определяет какое расширение получит скомпилированный файл. Начинается с `.`. По умолчанию равен `.cs`.
 
 ```text
-{$CLEO .cm} // the file gets the extension .cm
-{$CLEO} // the file gets the default extension .cs
+{$CLEO .cm} // файл получит расширение .cm
+{$CLEO} // файл получит расширение по умолчанию .cs
 ```
 
-So this directive is the perfect solution to make a CLEO script.
+Эта директива предназначена максимально упростить создание CLEO скриптов.
 
 ## $NOSOURCE
 
-Prohibits the compiler from including a source code of the script. 
+Запрещает компилятору добавлять в конечный файл исходный код скрипта. 
 
-Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
+Если эта директива отсутствует, то при наличии директив `$EXTERNAL` или `$CLEO` и при включенной [опции](../options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) `Добавлять доп. информацию в SCM`, Sanny Builder добавит исходный код в конец файла для последующего использования при дизассемблировании.
 
-Syntax:  
+Синтаксис:  
 `{$NOSOURCE}`
 
 ## $OPCODE
 
-Registers a custom opcode via the script. 
+Регистрирует новый опкод. 
 
-All the opcodes definitions are contained in a [special file](../edit-modes/opcodes-list-scm.ini.md), one for each supported game. But sometimes it's necessary to add a custom opcode to use in the current script. `$OPCODE` makes it possible without touching the INI file.
+Обычно описания всех опкодов содержатся в [специальном файле](../edit-modes/opcodes-list-scm.ini.md), по одному для каждой игры. Но иногда необходимо добавить новый опкод для использования в текущем скрипте. Директива `$OPCODE` делает это возможным без редактирования оригинального списка опкодов.
 
-Syntax:  
-`{$OPCODE <opcode definition>}`  
- or  
-`{$OPCODE <path\to\file>}`  
- or  
+Синтаксис:  
+`{$OPCODE <описание опкода>}`  
+ или  
+`{$OPCODE <путь к файлу с описанием>}`  
+ или  
 `{$OPCODE}`
 
-`opcode definition` - it accepts an definition in the same [format](../edit-modes/opcodes-list-scm.ini.md#opcode-definition) as the INI file.
+`описание опкода` - директива принимает описание опкода в том же [формате](../edit-modes/opcodes-list-scm.ini.md#opkody), что и файл INI:
 
 ```text
 {$OPCODE 0CCC=1,my_new_opcode %1d%}
 ```
 
-`path\to\file` - this directive also accepts a file name as its parameter. This file must contain only opcodes definitions to be loaded. If a relative path is provided, the compiler scans directories using the same rules as for [$INCLUDE](directives.md#usdinclude).
+`путь к файлу с описанием` - директива также принимает путь к файлу в качестве параметра. Этот файл должен содержать в себе только описания опкодов, которые будут загружены компилятором. Если указан относительный путь, компилятор ищет файл по тем же правилам, что и в директиве `$INCLUDE`.
 
 ```text
 {$OPCODE additional_opcodes.ini}
 ```
 
-When used without any parameter, this directive reloads the original opcodes definitions file and reverts all changes made.
+Если директива использована без какого-либо параметра, это ведет к загрузке оригинального списка опкодов и отмене всех сделанных изменений.
 
 ```text
 {$OPCODE}
 ```
 
 {% hint style="info" %}
-A shorter form of this directive is `$O`.
+Короткая форма этой директивы `$O`.
 {% endhint %}
 
 

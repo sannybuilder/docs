@@ -1,34 +1,34 @@
-# Arrays
+# Массивы
 
-An **array** represents an indexed collection of elements of the same type \(called the base type\). You can work with any element directly via its index. An index numeration begins with a zero. Arrays are supported in San Andreas, LCS and VCS.
+**Массивы** представляют собой последовательный набор элементов одного типа \(тип массива\). К каждому элементу массива можно обратиться используя его индекс \(порядковый номер элемента в массиве\). Нумерация элементов начинается с нуля. Массивы доступны в San Andreas, LCS и VCS.
 
-## General Syntax
+## Общий синтаксис
 
 San Andreas:  
-`<array name>(<index var name>,<size><type>)`
+`<имя массива>(<индекс>,<размер><тип>)`
 
 ```text
 $index = 0
 $array($index,10i) = 1
 ```
 
-`<array name>`: local or global [variable](variables.md)  
-`<index var name>`: any variable containing an index of the element to read or write  
-`<size>`: any value greater than 0  
-`<type>`: one of characters `i` `f` `s` `v`:
+`<имя массива>`: локальная или глобальная [переменная](variables.md)  
+`<индекс>`: локальная или глобальная переменная, содержащая индекс элемента, который нужно прочитать или изменить  
+`<размер>`: любое целое число больше 0  
+`<тип>`: одна из букв `i` `f` `s` `v`:
 
-| Letter | Item Type | Item Size \(bytes\) |
+| Буква | Тип элемента | Размер элемента \(в байтах\) |
 | :--- | :--- | :--- |
-| i | integer | 4 |
-| f | float | 4 |
-| s | string | 8 |
-| v | string | 16 |
+| i | целое число | 4 |
+| f | дробное число | 4 |
+| s | строковый литерал | 8 |
+| v | строковый литерал | 16 |
 
 Liberty City Stories, Vice City Stories:  
-`<array name>(<index var name>,<size>)`
+`<имя массива>(<индекс>,<размер>)`
 
 {% hint style="info" %}
-In LCS, VCS, array elements are only 4 bytes in length. Therefore, there is no need in type declaration.
+В LCS и VCS длина элементов массивов может быть только 4 байта. Поэтому нет необходимости указывать тип массива при обращении к его элементам.
 {% endhint %}
 
 ```text
@@ -36,11 +36,12 @@ $index = 0
 $array($index,10) = 1
 ```
 
-## Array Declaration
+## Объявление массивов
 
-Arrays can be declared using the [`VAR..END`](variables.md#var-end-construct) construct:  
+Массивы могут быть объявлены через конструкцию [`VAR..END`](variables.md#konstrukciya-var-end):
+
 `var  
-   <array name>: array <size> of <type>  
+   <имя массива>: array <размер> of <тип>  
 end`
 
 ```text
@@ -49,9 +50,9 @@ var
 end
 ```
 
-### Accessing array elements after declaration
+### Обращение к элементам массива после объявления
 
-After declaring an array you can work access its elements using square brackets:
+После объявления можно обращаться к элементам массива, используя квадратные скобки и индексную переменную:
 
 ```text
 var
@@ -61,9 +62,9 @@ $index = 1
 $FloatArray[$index] += 100.0
 ```
 
-### Using constant indexes
+### Использование целочисленных констант
 
-You can use positive integer numbers and zero to access a particular array element:
+Для обращения к определенным элементам можно также использовать квадратные скобки и константу больше либо равную нулю:
 
 ```text
 var
@@ -72,25 +73,25 @@ end
 $FloatArray[1] += 100.0
 ```
 
-Elements of an array containing [string literals](data-types.md#string-literals) can be accessed with [string variables](data-types.md#string-variables):
+С массивами, содержащими [строковые литералы](data-types.md#strokovye-literaly), можно работать используя [строковые переменные](data-types.md#strokovye-peremennye):  
 
 ```text
-// initializing first three elements of the $strings array
+// задаем значения для первых трех элементов массива $strings
 s$strings[0] = 'str1'
 s$strings[1] = 'str2'
 s$strings[2] = 'str3'
 ```
 
-An array can be declared as a collection of [class instances](classes.md#class-instances):
+Массив может быть объявлен как коллекция [экземпляров класса](classes.md#ekzemplyary-klassa):
 
 ```text
 var
   $players: array 2 of Player
 end
-$players[0].Build
+$players[0].Build 
 ```
 
 {% hint style="info" %}
-By default in the `GTA SA` [edit mode](../edit-modes/), the disassembler prints array elements with the numbers as indexes. The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../console.md#constant_indexes) `CONSTANT_INDEXES`. 
+По умолчанию в [режиме](../edit-modes/) `GTA SA` дизассемблер выводит элементы массива с целочисленными константами. В LCS и VCS эта возможность присутствует, но по умолчанию выключена. [Отладочная опция](../console.md#constant_indexes) `CONSTANT_INDEXES` позволяет включить или выключить эту возможность. 
 {% endhint %}
 

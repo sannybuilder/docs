@@ -1,6 +1,6 @@
-# Weather IDs
+# Погода
 
-| ID | Description |
+| ID | Описание |
 | :--- | :--- |
 | 0 | Sunny |
 | 1 | Cloudy |

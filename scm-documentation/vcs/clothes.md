@@ -1,6 +1,6 @@
-# Player Clothes
+# Одежда
 
-| ID | Name |
+| ID | Название |
 | :--- | :--- |
 | OUT\_F1 | Army Fatigues |
 | OUT\_F2 | Casuals |

@@ -1,8 +1,8 @@
-# Statistics ID
+# Статистика
 
-`0` to `81` - floating-point values; `82+` - integer values.
+С `0` до `81` - дробные значения; `82+` - целые значения.
 
-| ID | Description |
+| ID | Описание |
 | :--- | :--- |
 | 0 | Progress made |
 | 1 | Total progress |

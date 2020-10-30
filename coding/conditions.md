@@ -1,36 +1,36 @@
-# Conditions
+# Условия
 
-The `IF` operator evaluates one or more conditions and creates a new branch of code.
+Оператор `IF` объединяет одно или несколько условий и создает новое ветвление в коде.
 
-## Low-level IF statements
+## Общий синтаксис условных выражений
 
-`00d6: if <N>  
-  <condition 1>  
-  <condition 2>  
+`00D6: if <N>  
+  <условие 1>  
+  <условие 2>  
 ...  
-  <condition N+1>  
-004D: jump_if_false <label>`
+  <условие N+1>  
+004D: jump_if_false <метка>`
 
-`N` means the total number of conditions within the IF statement and the way the evaluation of conditions happens. 
+`N` означает общее кол-во условий внутри выражения `IF` и логическую связь между ними:
 
-| N | Number of Conditions | Logical Operator |
+| N | Кол-во условий | Логический оператор |
 | :--- | :--- | :--- |
-| 0 | 1 | the IF statement is true if the condition is true |
-| 1..7 | 2..8 | `AND` \(all conditions must be true for the IF statement to be true\) |
-| 21..27 | 2..8 | `OR` \(at least one of the conditions must be true for the IF statement to be true\) |
+| 0 | 1 | нет \(выражение истинно, если условие в нем истинно\) |
+| 1..7 | 2..8 | `И` \(все условия должны быть истинны, чтобы все выражение было истинно\) |
+| 21..27 | 2..8 | `ИЛИ` \(хотя бы одно условие должен быть истинно, чтобы все выражение было истинно\) |
 
 {% hint style="info" %}
-A single IF statement can contain up to 8 conditions. 
+В одном выражении `IF` может объединяться до 8 условий. 
 {% endhint %}
 
 {% hint style="info" %}
-Sanny Builder allows to omit  `0` after `IF. IF 0` and  `IF` are equivalent.
+Sanny Builder позволяет не указывать`0` после `IF. IF 0` и  `IF` эквивалентны.
 {% endhint %}
 
-`<label>`- a name of the [label](data-types.md#labels) where script jumps if the IF statement is false.  
-`<condition>` - any conditional opcode evaluating to `true` or `false` 
+`<метка>`- имя [метки](data-types.md#metki), на которую переходит скрипт, если выражение `IF` ложно.  
+`<условие>` - любой условный опкод, который возвращает `true` или `false` 
 
-If you have the  `Conditions check` enabled in the [options](../options/general.md#check-conditions), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
+Если [опция](../options/general.md#proverka-uslovii)  `Проверка условий` включена, после `IF` можно писать ключевые слова `AND` или `OR`. Компилятор будет рассчитывать правильное значение самостоятельно:
 
 ```text
 if and 
@@ -39,38 +39,38 @@ if and
 jf @anywhere
 ```
 
-The compiler writes the number `1` instead of `and`.
+В данном примере компилятор запишет вместо `and` число  `1`.
 
-`IF AND` - conditions connected with the logical operator `AND` \(a replacement for `if 1..7`\)  
-`IF OR` - conditions connected with the logical operator `OR` \(a replacement for `if 21..27`\)
+`IF AND` - условия, объединенные логическим оператором `И` \(замена `if 1..7`\)  
+`IF OR` - условия, объединенные логическим оператором `ИЛИ` \(замена `if 21..27`\)
 
-## High-level Constructs
+## Высокоуровневые конструкции
 
-To make writing conditions easier there are high-level constructs that don't require any additional labels:
-
-`IF <N>/AND/OR  
-  <condition 1>  
-  <condition 2>  
-  ...  
-  <condition N+1>  
-THEN  
-  <commands if the statement is true>  
-END`
+Для облегчения работы с условными выражениями существуют высокоуровневые конструкции, для которых не нужны дополнительные метки в коде:
 
 `IF <N>/AND/OR  
-  <condition 1>  
-  <condition 2>  
+  <условие 1>  
+  <условие 2>  
   ...  
-  <condition N+1>  
+  <условие N+1>  
 THEN  
-  <commands if the statement is true>  
+  <команды при истинности условия>  
+END` 
+
+`IF <N>/AND/OR  
+  <условие 1>  
+  <условие 2>  
+  ...  
+  <условие N+1>  
+THEN  
+  <команды при истинности условия>  
 ELSE  
-  <commands if the statement is false>  
+  <команды при ложности условия>  
 END`
 
-A condition is created by the rules described for [low-level conditions](conditions.md#low-level-if-statements). After `THEN` you have to specify the command\(-s\) that are executed if the condition is met. After `ELSE` you have to specify the command\(-s\) that are executed if the condition is not met.
+Условное выражение создается по [общим правилам](conditions.md#obshii-sintaksis-uslovnykh-vyrazhenii). После ключевого слова `THEN` указываются опкоды, которые должны выполняться, если условие истинно. После `ELSE` указываются опкоды, которые выполняются, если условие ложно. 
 
-The `IF` statement is closed with the word `END`.
+Выражение `IF` завершается ключевым словом `END`.
 
 ```text
 if $var == 5
@@ -82,21 +82,21 @@ end
 ```
 
 {% hint style="info" %}
-The  [`Conditions check`](../options/general.md#check-conditions) option  has to be enabled.
+[Опция](../options/general.md#proverka-uslovii) `Проверка условий` должна быть включена.
 {% endhint %}
 
 {% hint style="info" %}
-Nested IF statements are supported.
+Допускаются конструкции IF, вложенные друг в друга.
 {% endhint %}
 
-## Relational Operators
+## Операторы сравнения
 
-* a **`==`** b - a is equal to b 
-* a **`>=`** b - a is greater than or equal to b 
-* a **`>`** b - a is greater than b 
-* a **`<`** b - a is less than b 
-* a **`<=`** b - a is less than or equal to b 
-* a **`<>`** b - a is not equal to b
+* a **`==`** b - a равно b 
+* a**`>=`** b - a больше либо равно b 
+* a **`>`** b - a больше b 
+* a **`<`** b - a меньше b 
+* a **`<=`** b - a меньше либо равно b 
+* a **`<>`** b - a не равно b
 
-`a` and `b` are operands. The compiler is able to figure out an opcode if one of the operands is a number or a [string literal](data-types.md#string-literals), or both [variable' type](variables.md#var-end-construct) is known.
+`a` и `b` называются операндами. Компилятор может самостоятельно определить нужный опкод, если один из операндов является числовой константой, [строковым литералом](data-types.md#strokovye-literaly) или [тип](variables.md#konstrukciya-var-end) обеих переменных известен.
 

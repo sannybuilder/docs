@@ -1,18 +1,20 @@
-# Keywords
+# Ключевые слова
 
-A **keyword** is a single word that substitutes the opcode. For example, the keyword `WAIT` can be used instead of the opcode `0001`.
+**Ключевое слово** - это замена номеру опкода. 
+
+Например, ключевое слово `WAIT` заменяет опкод `0001`. Таким образом,
 
 ```text
 wait 0
 ```
 
-and
+и
 
 ```text
 0001: 0
 ```
 
-are the same commands. 
+представляют собой идентичный код. 
 
-The keywords list can be displayed by pressing `Ctrl+Space`.
+Список ключевых слов содержится в файле `keywords.txt` \(свой для каждого [режима редактирования](../edit-modes/)\). В редакторе его можно вызвать нажатием `Ctrl+пробел`.
 

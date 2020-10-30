@@ -1,10 +1,10 @@
-# Zones
+# Зоны
 
 ```text
-0767: set_zone 'CARSO' type <type>
+0767: set_zone 'CARSO' type <тип>
 ```
 
-| Type | Description |
+| Тип | Описание |
 | :--- | :--- |
 | 0 | BUSINESS |
 | 1 | DESERT |
@@ -29,7 +29,7 @@
 
 ### Los Santos
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | LA | Los Santos | LA |
 | RIH1a | Richman | RIH |
@@ -181,7 +181,7 @@
 
 ### Red County
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | RED | Red County | RED |
 | MONT | Montgomery | MONT |
@@ -201,7 +201,7 @@
 
 ### San Fierro
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | SF | San Fierro | SF |
 | BATTP | Battery Point | BATTP |
@@ -254,7 +254,7 @@
 
 ### Flint County
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | FLINTC | Flint County | FLINTC |
 | CUNTC1 | Avispa Country Club | CUNTC |
@@ -281,7 +281,7 @@
 
 ### Whetstone
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | WHET | Whetstone | WHET |
 | MTCHI1 | Mount Chiliad | MTCHI |
@@ -295,7 +295,7 @@
 
 ### Las Venturas
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | VE | Las Venturas | VE |
 | YBELL1 | Yellow Bell Golf Course | YBELL |
@@ -390,7 +390,7 @@
 
 ### Tierra Robada
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | ROBAD | Tierra Robada | ROBAD |
 | ROBAD1 | Tierra Robada | ROBAD |
@@ -404,7 +404,7 @@
 
 ### Bone County
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | BONE | Bone County | BONE |
 | PAYAS | Las Payasadas | PAYAS |
@@ -424,9 +424,9 @@
 | CARSO | Fort Carson | CARSO |
 | QUARY | Hunter Quarry | QUARY |
 
-### Lakes
+### Озера
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | LSINL | Los Santos Inlet | LSINL |
 | FLINW | Flint Water | FLINW |
@@ -436,9 +436,9 @@
 | SHERR | Sherman Reservoir | SHERR |
 | SASO | San Andreas Sound | SASO |
 
-### Bridges
+### Мосты
 
-| Zone ID | GXT Value | GXT Key |
+| ID зоны | Значение GXT | Ключ GXT |
 | :--- | :--- | :--- |
 | GANTB | Gant Bridge | GANTB |
 | GANTB1 | Gant Bridge | GANTB |

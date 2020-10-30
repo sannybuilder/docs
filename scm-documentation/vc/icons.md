@@ -1,6 +1,6 @@
-# Radar Icons
+# Иконки радара
 
-| ID | Icon | Description |
+| ID | Иконка | Описание |
 | :--- | :--- | :--- |
 | 0 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/dot.png) | Small pink square |
 | 1 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/radar_centre.png) | Player position |

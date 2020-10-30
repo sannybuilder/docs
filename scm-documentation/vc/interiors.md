@@ -1,6 +1,6 @@
-# Interiors
+# Интерьеры
 
-| ID | Description |
+| ID | Описание |
 | :--- | :--- |
 | 0 | outside |
 | 1 | hotel |

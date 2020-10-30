@@ -1,28 +1,28 @@
 # HEX..END
 
-Sanny Builder supports writing a raw content in an output file. All values within this construct are written in an output file without any checks.
+Sanny Builder поддерживает запись произвольных значений в выходной файл без какой-либо обработки и проверки.
 
 {% hint style="warning" %}
-Use this feature only if you know what you're doing. Any mistakes will corrupt the script file making it unreadable by the game or a script editor.
+Используйте эту возможность только в том случае, если вы знаете, что делаете. Любые ошибки могут повредить файл и его невозможно будет прочитать в игре или в скриптовом редакторе.
 {% endhint %}
 
-## Syntax
+## Синтаксис
 
 `hex  
-<any hexadecimal numbers>  
+<последовательность байтов>  
 end`
+
+`последовательность байтов` - одна или несколько пар цифр в [16-ричном формате](data-types.md#chisla-v-16-richnom-formate). Каждая пара представляет собой один байт, который будет записан в файл. Все пробелы игнорируются. Если число символов в последовательности нечетное, к последнему значению слева дописывается `0`:
 
 ```text
 hex
-    04 00 02 0800 04 01
+    04 00 02 0800 04 1
 end
 ```
 
-This sequence of bytes is the compiled version of the opcode `0004: $2 = 1`, so the game will correctly read it and set the value of the variable `$2` to `1`.
+Эта последовательность является бинарным представлением команды `0004: $2 = 1`. Игра сможет прочитать его и установит значение переменной `$2` в `1`.
 
-You must specify each byte you're going to write with two digits. All spaces are ignored. The compiler treats any two digits with a space between them as a single byte value. A single digit \(`0..F`\) is prefixed with `0`. So, for example, a sequence of three letters`A B C` will be compiled as the number `0xAB0C`.
-
-The `HEX..END` construct also accepts [string literals](data-types.md#string-literals), [labels](data-types.md#labels), [global variables](variables.md#global-variables), [model names](data-types.md#model-names). They are compiled without a preceding data type byte.
+В конструкции `HEX..END` также можно использовать [строковые литералы](data-types.md#strokovye-literaly), [метки](data-types.md#metki), [глобальные переменные](variables.md#globalnye-peremennye), [имена моделей](data-types.md#imena-modelei). Они компилируются без предшествующего байта, указывающего на тип данных.
 
 ```text
 :get_offset
@@ -31,9 +31,9 @@ hex
 end
 ```
 
-This is the exact copy of the opcode `0004: $PLAYER_CHAR = @get_offset`
+Это эквивалентно команде  `0004: $PLAYER_CHAR = @get_offset`
 
-A string literal enclosed in double quotes is compiled as a sequence of characters.
+Строковые литералы, заключенные в двойные скобки, компилируются как последовательность символов:
 
 ```text
 hex
@@ -41,19 +41,19 @@ hex
 end
 ```
 
-## Escape Sequences
+## Экранированные последовательности
 
-The following escape sequences are supported within a string literal:
+В строках допускается использование следующих управляющих символов:
 
-| Name | Escape Sequence | Byte Form |
+| Имя | Последовательность | Вывод в файл |
 | :--- | :--- | :--- |
-| Null  | \0 | 00 |
-| Backspace | \b | 08 |
-| Tab | \t | 09 |
-| Line Feed | \n | 0A |
-| Carriage Return | \r | 0D |
-| Numeric escape sequence | \x`nn` | `nn` |
-| Escape char | \`char` | `char` |
+| пустой символ | \0 | 00 |
+| возврат на один шаг | \b | 08 |
+| табуляция | \t | 09 |
+| перевод каретки | \n | 0A |
+| возврат каретки | \r | 0D |
+| запись произвольного байта | \x`nn` | `nn` |
+| запись произвольного символа | \`символ` | `символ` |
 
 ```text
 hex
@@ -61,13 +61,15 @@ hex
 end
 ```
 
-It produces the following sequence of bytes: `00 08 09 0A 0D DD`.
+В файл будет записана последовательность байтов `00 08 09 0A 0D DD`.
 
-Currently multiple spaces in a string literal are converted into a single one. Thus a line `"This    is  a     string"` is converted into `"This is a string"`. Use the backward slash character `\` to add multiple spaces in a string literal: `"This \ \ \ is \ a \ \ \ \ string"`.
+{% hint style="info" %}
+В настоящее время несколько подряд идущих пробелов в строке конвертируются в один пробел. Например, строка `"This    is  a     string"` будет сконвертирована в `"This is a string"`. Используйте символ `\` чтобы добавить дополнительные пробелы в строку: `"This \ \ \ is \ a \ \ \ \ string"`.
+{% endhint %}
 
-## Using aDMA Numbers
+## Использование типа aDMA
 
-Also you can use the [aDMA](data-types.md#variables) data type to write a numeric constant in an output file. The number after the `&` sign can be both positive or negative, decimal or hexadecimal.
+Допускается использование типа данных [aDMA](data-types.md#peremennye), чтобы записать произвольное число в выходной файл. Число после знака `&` может быть как положительным, так и отрицательным, в десятичном формате или шестнадцатиричном.
 
 ```text
 hex
@@ -75,5 +77,5 @@ hex
 end
 ```
 
-This example produces the following sequence of bytes: `E8 03 00 CB 5C FF`.
+В файл будет записана последовательность байтов `E8 03 00 CB 5C FF`.
 

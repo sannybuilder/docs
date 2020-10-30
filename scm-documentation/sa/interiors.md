@@ -1,6 +1,6 @@
-# Interiors
+# Интерьеры
 
-| Number | Name | Description |
+| Номер | Название | Описание |
 | :--- | :--- | :--- |
 | 1 | ABATOIR | Sindacco Abattoir |
 | 1 | AMMUN1 | Ammu-Nation |
