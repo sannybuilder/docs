@@ -24,7 +24,7 @@ Translation files are located in the `lang` folder. More information on how to c
 
 ![](../.gitbook/assets/main_ass.png)
 
-You may associate different file extensions with Sanny Builder. When a checkbox is selected, your Windows Registry is changed and you may open the files with this extension simply by clicking it. To cancel the association, unselect a proper checkbox.
+You may associate different file extensions with Sanny Builder. When a checkbox is selected, your Windows Registry is changed and you may open the files with this extension simply by clicking it. To remove the association, unselect the checkbox.
 
 ## Core Settings
 
@@ -84,6 +84,6 @@ If this option is checked the compiler adds extra information at the end of the 
 * current [edit mode](../edit-modes/)
 
 {% hint style="info" %}
-The file compiled with extra information can not be open with Sanny Builder prior to v3.00 \(except the case when `ignore_unknown` [option](../console.md#ignore_unknown) is enabled\).
+The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 unless the `ignore_unknown` [option](../console.md#ignore_unknown) is enabled.
 {% endhint %}
 
