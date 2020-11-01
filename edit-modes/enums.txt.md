@@ -11,12 +11,12 @@ Enumerated types have a few advantages over ordinary constants, such as keeping 
 Each enumerated type is defined with the following syntax:
 
 `enum <enum name>  
-enum members  
+<enum members>  
 end`
 
 `enum name` -  any combination of letters, digits and `_`   
 `enum members` - one or many lines with the format:  
-    `enum member name [= enum member value]`   
+    `<enum member name> [= <enum member value>]`   
     where  
     `enum member name` - any combination of letters, digits and `_`   
     `enum member value` - optional. if not present, the compiler assigns a new value automatically \(see below\).

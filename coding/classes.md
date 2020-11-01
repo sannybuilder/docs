@@ -163,15 +163,21 @@ jf @loop
 
 ## Class constants
 
-Some class members have pre-defined constants for some parameter values. It makes the source code more readable:
+Class parameters can be assigned to an [enumerated type](../edit-modes/enums.txt.md). It makes the source code more readable:
 
 ```text
-Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", Torso)
+Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", BodyPart.Torso)
 ```
 
-The last parameter \(`Torso`\) is a class constant substituted with `0` during compilation. Class constants are defined in the `classes.db` file.
+The last parameter \(`BodyPart.Torso`\) is a member of the `BodyPart` enum substituted with `0` during compilation.  The enums and values are defined in the `enums.txt` file.
 
-{% hint style="info" %}
-The special `Extended` type is reserved for parameters having a list of constants. You can see the `Extended` type in the list of class members and in a hint appearing as you type class member parameters.
-{% endhint %}
+#### Extended parameters \(deprecated\)
+
+Sanny Builder prior to v3.6 defined special constants for class members in the file `classes.db` . These parameters were called extended. This solution only allowed for one extended parameter per class member. 
+
+Since v3.6 class members use enum names as their types and may have any number of enumerated parameters. 
+
+For backward compatibility Sanny Builder still supports old extended parameters during compilation.  `classes.db` keeps them under the `DEPRECATED_ENUMS` section.
+
+
 
