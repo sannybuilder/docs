@@ -83,6 +83,10 @@ path to[`constants.txt`](../coding/constants.md)
 
 path to the mode directory
 
+**enums**
+
+path to [enums.txt](enums.txt.md)
+
 #### ide 
 
 path to either an `.ide` or `.dat` file:  
