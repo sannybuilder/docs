@@ -19,7 +19,7 @@ end`
     `<enum member name> [= <enum member value>]`   
     where  
     `enum member name` - any combination of letters, digits and `_`   
-    `enum member value` - optional. if not present, the compiler assigns a new value automatically \(see below\).
+    `enum member value` - optional. if not present, the compiler assigns a [new value](enums.txt.md#enum-values) automatically.
 
 ```text
 enum Town
@@ -70,8 +70,8 @@ Implicit values are getting assigned automatically starting from `0` for the fir
 
 ```text
 enum Town
-  LS,
-  SF,
+  LS
+  SF
   LV
 end
 ```
@@ -84,10 +84,10 @@ For a mix of implicit and explicit values the following rules take place:
 
 ```text
 enum E
-  A = 10,
-  B,
-  C = 100,
-  D,
+  A = 10
+  B
+  C = 100
+  D
   E
 end
 ```
@@ -98,8 +98,8 @@ end
 
 ```text
 enum Month
-  Jan = "January",
-  Feb = "February",
+  Jan = "January"
+  Feb = "February"
   March
 end
 ```
