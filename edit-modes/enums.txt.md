@@ -2,7 +2,7 @@
 
 An **enumerated type** or **enum** is a set of constants \(called _enum members_\) under a common prefix \(_enum name_\). 
 
-Enumerated types have a few advantages over ordinary constants, such as keeping the global namespace dense and being first-class citizens in the type system \(command parameters having an enumerated type are limited on allowed values range and as a result it eliminates the whole class of errors when an invalid id is used\).
+Enumerated types have a few advantages over ordinary constants. They don't pollute the global namespace and are the first-class citizens in the type system. Command parameters with an enumerated type are limited on allowed values range which in turn eliminates the whole class of errors when an invalid id is used.
 
 **Enums.txt** is a text file that defines a list of the enumerated types available in the [edit mode](./).
 
