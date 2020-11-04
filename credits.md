@@ -10,7 +10,7 @@ Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Ha
 
 ## Translators
 
-Y\_Less, tomworld10, -Shadow-Link, Mordecki, Silent, WordsBG, FunGt, Wesser, Mobster, Jost\_Vice, Thomazu, Balint, Ridvan and Tuna \(RT\), MatiDragon**,** Mega GTAшnik, SHooZ, Yi Yangyijk, VCT team, Alex5526, Marek Simsa, Syping/Hulkkiller, IMasterFX, MINE
+Y\_Less, tomworld10, -Shadow-Link, Mordecki, Silent, WordsBG, FunGt, Wesser, Mobster, Jost\_Vice, Thomazu, Balint, Ridvan and Tuna \(RT\), MatiDragon, ****Mega GTAшnik, SHooZ, Yi Yangyijk, VCT team, Alex5526, Marek Simsa, Syping/Hulkkiller, IMasterFX, MINE
 
 ## Acknowledgements
 
