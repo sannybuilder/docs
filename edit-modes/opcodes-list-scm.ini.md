@@ -89,7 +89,8 @@ A letter following the index number indicates the parameter type.
 `o` - any [model](../coding/data-types.md#model-names) id \(including objects\)  
 `m` - an `.ide` model id \(no objects\)  
 `g` - a key from the [`.gxt`](./#text) file  
-`x` - an external script ID
+`x` - an external script ID  
+`k` - a fixed-size null-terminated string literal \(128 bytes\)
 
 {% hint style="info" %}
 You can freely change parameters types, if needed.
