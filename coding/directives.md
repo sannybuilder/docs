@@ -132,7 +132,13 @@ When used without any parameter, this directive reloads the original opcodes def
 A shorter form of this directive is `$O`.
 {% endhint %}
 
+## $USE
 
+Enables custom instructions set to the compiler. See [Extensions](../edit-modes/extensions.md) for more information.
+
+```text
+{$USE cleo+}
+```
 
 
 

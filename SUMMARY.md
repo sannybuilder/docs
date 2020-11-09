@@ -33,6 +33,7 @@
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Code Templates](edit-modes/code-templates.md)
   * [Enums.txt](edit-modes/enums.txt.md)
+  * [Extensions](edit-modes/extensions.md)
   * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
 * [Console](console.md)
 * [Hotkeys](hotkeys.md)
