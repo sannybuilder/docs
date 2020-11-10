@@ -1,14 +1,14 @@
 # 0089: Опкод не найден
 
-The compiler finds an opcode that is not available among the standard opcodes \(available with vanilla game\) and the current script [extensions](../../edit-modes/extensions.md).
+Компилятор не может найти текущий опкод среди стандартных опкодов \(доступных в оригинальной немодифицированной игре\) и подключенных скриптовых [расширениях](../../edit-modes/extensions.md).
 
-**Possible solutions:** add [directive](../../coding/directives.md#usduse) `{$USE <extension_name>}` where `<extension_name>` is one of the [available extensions](../../edit-modes/extensions.md#extensions-list) defining the opcode.
+**Возможные решения:** добавьте [директиву](../../coding/directives.md#usduse) `{$USE <имя расширения>}`, где `<имя расширения>` это одно из доступных [расширений](../../edit-modes/extensions.md#extensions-list), которое и определяет искомый опкод.
 
-For example, opcode `0BA2` in GTA III is only available with CLEO 2.0 and MemoryModule plugin. In order to make you aware of this extra dependency the compiler throws this error if it can't find `{$USE memory}`. For existing scripts adding this directive will be a one-time change and the script continues to compile. 
+Например, опкод `0BA2` в GTA III доступен только с CLEO 2.0 и плагином MemoryModule. Чтобы обозначить эту зависимость, компилятор выбрасывает ошибку, если не может найти`{$USE memory}`. Для существующих скриптов добавление этой директивы должно быть однократным изменением, чтобы они снова могли компилироваться.
 
 ```text
 {$USE memory}
 ```
 
-If you're unsure which extension the opcode belongs to, open the file `extensions.txt` in the edit mode's directory \(`Sanny Builder\data\<edit mode>\extensions.txt`\) and locate it there.
+Если вы не уверены, к какому расширению принадлежит опкод, откройте файл `extensions.txt` в папке режима редактирования \(`Sanny Builder\data\<имя режима>\extensions.txt`\) и найдите его там.
 
