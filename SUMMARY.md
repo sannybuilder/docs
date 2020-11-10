@@ -30,8 +30,10 @@
   * [Горячие клавиши](options/hotkeys.md)
 * [Возможности](features.md)
 * [Режимы редактирования](edit-modes/README.md)
-  * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
+  * [Enums.txt](edit-modes/enums.txt.md)
+  * [Расширения](edit-modes/extensions.md)
+  * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
   * [Шаблоны кода](edit-modes/code-templates.md)
 * [Консоль](console.md)
 * [Горячие клавиши](hotkeys.md)
@@ -165,4 +167,5 @@
   * [0086: Неверный индекс массива](troubleshooting/errors/0086.md)
   * [0087: Недопустимая переменная](troubleshooting/errors/0087.md)
   * [0088: Глобальная переменная вне допустимых границ](troubleshooting/errors/0088.md)
+  * [0089: Опкод не найден](troubleshooting/errors/0089-opkod-ne-naiden.md)
 
