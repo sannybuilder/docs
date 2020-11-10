@@ -30,7 +30,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
   <thead>
     <tr>
       <th style="text-align:left">Extension Name</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Provided by</th>
       <th style="text-align:left">Edit Modes where available</th>
     </tr>
   </thead>
@@ -166,8 +166,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         <p><code>{$USE vc mobile}</code>
         </p>
       </td>
-      <td style="text-align:left">Opcodes added in the mobile
-        <br />version of Vice City</td>
+      <td style="text-align:left">Vice City on mobile devices</td>
       <td style="text-align:left">Vice City</td>
     </tr>
     <tr>
@@ -177,8 +176,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         <p><code>{$USE ios}</code>
         </p>
       </td>
-      <td style="text-align:left">Opcodes added in the iOS
-        <br />version of GTA SA</td>
+      <td style="text-align:left">GTA SA on iOS</td>
       <td style="text-align:left">SA Mobile</td>
     </tr>
   </tbody>
