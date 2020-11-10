@@ -31,7 +31,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
     <tr>
       <th style="text-align:left">Extension Name</th>
       <th style="text-align:left">Description</th>
-      <th style="text-align:left">Edit Mode</th>
+      <th style="text-align:left">Edit Modes where available</th>
     </tr>
   </thead>
   <tbody>
@@ -42,8 +42,16 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         <p><code>{$USE CLEO}</code>
         </p>
       </td>
-      <td style="text-align:left">CLEO 2.0 for GTA III</td>
-      <td style="text-align:left">GTA III</td>
+      <td style="text-align:left">
+        <p>CLEO 2.0 for GTA III
+          <br />CLEO 2.0 for Vice City</p>
+        <p>CLEO 4.4</p>
+      </td>
+      <td style="text-align:left">
+        <p>GTA III</p>
+        <p>Vice City</p>
+        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -53,39 +61,13 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         </p>
       </td>
       <td style="text-align:left">CLEO 1.1 for GTA III
+        <br />CLEO 1.1 for Vice City
         <br />(not recommended, prefer CLEO 2.0)</td>
-      <td style="text-align:left">GTA III</td>
-    </tr>
-    <tr>
       <td style="text-align:left">
-        <p><b>CLEO</b>
-        </p>
-        <p><code>{$USE CLEO}</code>
-        </p>
+        <p>GTA III</p>
+        <p>Vice City</p>
+        <p></p>
       </td>
-      <td style="text-align:left">CLEO 2.0 for Vice City</td>
-      <td style="text-align:left">Vice City</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>CLEO 1.1</b>
-        </p>
-        <p><code>{$USE CLEO 1.1}</code>
-        </p>
-      </td>
-      <td style="text-align:left">CLEO 1.1 for Vice City
-        <br />(not recommended, prefer CLEO 2.0)</td>
-      <td style="text-align:left">Vice City</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>CLEO</b>
-        </p>
-        <p><code>{$USE CLEO}</code>
-        </p>
-      </td>
-      <td style="text-align:left">CLEO 4.4</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -95,8 +77,12 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         </p>
       </td>
       <td style="text-align:left">IniFiles.cleo plugin
-        <br />(ships with CLEO4)</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+        <br />(ships with CLEO)</td>
+      <td style="text-align:left">
+        <p>GTA III
+          <br />Vice City</p>
+        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -106,8 +92,12 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         </p>
       </td>
       <td style="text-align:left">FileSystemOperations plugin
-        <br />(ships with CLEO4)</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+        <br />(ships with CLEO)</td>
+      <td style="text-align:left">
+        <p>GTA III
+          <br />Vice City</p>
+        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -118,7 +108,11 @@ Sanny Builder ships some common and recognized extensions for different edit mod
       </td>
       <td style="text-align:left">IntOperations plugin
         <br />(ships with CLEO4)</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+      <td style="text-align:left">
+        <p>GTA III
+          <br />Vice City</p>
+        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -128,7 +122,22 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         </p>
       </td>
       <td style="text-align:left">ClipboardControl plugin</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+      <td style="text-align:left">
+        <p>GTA III
+          <br />Vice City</p>
+        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>memory</b>
+        </p>
+        <p><code>{$USE memory}</code>
+        </p>
+      </td>
+      <td style="text-align:left">MemoryModule plugin</td>
+      <td style="text-align:left">GTA III
+        <br />Vice City</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -152,12 +161,24 @@ Sanny Builder ships some common and recognized extensions for different edit mod
     </tr>
     <tr>
       <td style="text-align:left">
+        <p><b>vc mobile</b>
+        </p>
+        <p><code>{$USE vc mobile}</code>
+        </p>
+      </td>
+      <td style="text-align:left">Opcodes added in the mobile
+        <br />version of Vice City</td>
+      <td style="text-align:left">Vice City</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         <p><b>ios</b>
         </p>
         <p><code>{$USE ios}</code>
         </p>
       </td>
-      <td style="text-align:left">Opcodes added in the iOS version of GTA SA</td>
+      <td style="text-align:left">Opcodes added in the iOS
+        <br />version of GTA SA</td>
       <td style="text-align:left">SA Mobile</td>
     </tr>
   </tbody>
