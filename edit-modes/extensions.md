@@ -182,5 +182,5 @@ Sanny Builder ships some common and recognized extensions for different edit mod
   </tbody>
 </table>
 
-
+Using opcodes from the third-party libraries not listed there is possible and the compiler will not be warning you.
 
