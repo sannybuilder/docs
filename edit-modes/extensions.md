@@ -6,7 +6,7 @@ To make Sanny Builder aware of the custom instructions and explicitly signal the
 
 ```text
 {$USE CLEO}
-{$USE IniFiles}
+{$USE ini}
 {$USE CLEO+}
 ```
 
@@ -26,19 +26,142 @@ Using `{$CLEO}` directive also implies `{$USE CLEO}` so standard CLEO opcodes ar
 
 Sanny Builder ships some common and recognized extensions for different edit modes:
 
-| Edit Mode | Extension Name | Description |
-| :--- | :--- | :--- |
-| GTA III | CLEO | CLEO 2.0 for GTA III  |
-| GTA III | CLEO 1.1 | CLEO 1.1 for GTA III \(not recommended, prefer CLEO 2.0\) |
-| Vice City | CLEO | CLEO 2.0 for Vice City |
-| Vice City | CLEO 1.1 | CLEO 1.1 for Vice City \(not recommeded, prefer CLEO 2.0\) |
-| GTA SA v1.0, v2.0, \(v1.0 - SCR\) | CLEO | CLEO 4.4 |
-| GTA SA v1.0, v2.0, \(v1.0 - SCR\) | IniFiles | IniFiles.cleo plugin \(ships with CLEO4\) |
-| GTA SA v1.0, v2.0, \(v1.0 - SCR\) | FileSystemOperations | FileSystemOperations.cleo plugin \(ships with CLEO4\) |
-| GTA SA v1.0, v2.0, \(v1.0 - SCR\) | ClipboardControl | ClipboardControl.cleo plugin |
-| GTA SA v1.0, v2.0, \(v1.0 - SCR\) | CLEO+ | CLEO+ plugin |
-| GTA SA v1.0, v2.0 | newOpcodes | newOpcodes plugin |
-| SA Mobile | ios | Opcodes added in the iOS version of GTA SA |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Extension Name</th>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Edit Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><b>CLEO</b>
+        </p>
+        <p><code>{$USE CLEO}</code>
+        </p>
+      </td>
+      <td style="text-align:left">CLEO 2.0 for GTA III</td>
+      <td style="text-align:left">GTA III</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>CLEO 1.1</b>
+        </p>
+        <p><code>{$USE CLEO 1.1}</code>
+        </p>
+      </td>
+      <td style="text-align:left">CLEO 1.1 for GTA III
+        <br />(not recommended, prefer CLEO 2.0)</td>
+      <td style="text-align:left">GTA III</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>CLEO</b>
+        </p>
+        <p><code>{$USE CLEO}</code>
+        </p>
+      </td>
+      <td style="text-align:left">CLEO 2.0 for Vice City</td>
+      <td style="text-align:left">Vice City</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>CLEO 1.1</b>
+        </p>
+        <p><code>{$USE CLEO 1.1}</code>
+        </p>
+      </td>
+      <td style="text-align:left">CLEO 1.1 for Vice City
+        <br />(not recommended, prefer CLEO 2.0)</td>
+      <td style="text-align:left">Vice City</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>CLEO</b>
+        </p>
+        <p><code>{$USE CLEO}</code>
+        </p>
+      </td>
+      <td style="text-align:left">CLEO 4.4</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>ini</b>
+        </p>
+        <p><code>{$USE ini}</code>
+        </p>
+      </td>
+      <td style="text-align:left">IniFiles.cleo plugin
+        <br />(ships with CLEO4)</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>file</b>
+        </p>
+        <p><code>{$USE file}</code>
+        </p>
+      </td>
+      <td style="text-align:left">FileSystemOperations plugin
+        <br />(ships with CLEO4)</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>bitwise</b>
+        </p>
+        <p><code>{$USE bitwise}</code>
+        </p>
+      </td>
+      <td style="text-align:left">IntOperations plugin
+        <br />(ships with CLEO4)</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>clipboard</b>
+        </p>
+        <p><code>{$USE clipboard}</code>
+        </p>
+      </td>
+      <td style="text-align:left">ClipboardControl plugin</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>CLEO+</b>
+        </p>
+        <p><code>{$USE CLEO+}</code>
+        </p>
+      </td>
+      <td style="text-align:left">CLEO+ plugin</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>newOpcodes</b>
+        </p>
+        <p><code>{$USE newOpcodes}</code>
+        </p>
+      </td>
+      <td style="text-align:left">newOpcodes plugin</td>
+      <td style="text-align:left">GTA SA v1.0, v2.0</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>ios</b>
+        </p>
+        <p><code>${USE ios}</code>
+        </p>
+      </td>
+      <td style="text-align:left">Opcodes added in the iOS version of GTA SA</td>
+      <td style="text-align:left">SA Mobile</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
