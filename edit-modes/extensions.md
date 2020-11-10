@@ -154,7 +154,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
       <td style="text-align:left">
         <p><b>ios</b>
         </p>
-        <p><code>${USE ios}</code>
+        <p><code>{$USE ios}</code>
         </p>
       </td>
       <td style="text-align:left">Opcodes added in the iOS version of GTA SA</td>
