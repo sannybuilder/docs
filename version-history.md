@@ -14,7 +14,7 @@
   * compiler uses CLEO opcodes `0A9E`, `0A9F`, `0A90`, `0A91` [in certain expressions when no opcode is supplied](https://github.com/sannybuilder/dev/issues/58#issuecomment-723376464)
   * unified description and keywords for CLEO opcodes across different edit modes
 * added [keywords](coding/keywords.md) for all opcodes in GTA SA SCR mode
-* word _thread_  has been replaced with _script_ in opcode definitions and keywords
+* word _thread_  has been replaced with _script_ in opcode definitions and keywords \([see why](https://gtamods.com/wiki/Talk:Script#Thread-%3EScript%29.)\)
 * IDE updates:
   * the game directory is no longer required to compile a script \([\#48](https://github.com/sannybuilder/dev/issues/48)\)
   * the "Compile and Copy" destination could be configured \([\#9](https://github.com/sannybuilder/dev/issues/9)\)
