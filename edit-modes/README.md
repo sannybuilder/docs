@@ -73,11 +73,11 @@ path to [`CustomArrays.ini`](../coding/arrays.md)
 
 #### copy-directory
 
-path to a directory where to copy a compiled script
+path to a directory where to put a compiled script on `Compile + Copy` run.
 
 Has a required attribute `type`:  
-`type="scm"` - for regular .scm scripts  
-`type="cleo"` - for scripts with [directive](../coding/directives.md#usdcleo) `{$CLEO}`
+`type="scm"` - used for regular `.scm` scripts  
+`type="cleo"` - used for scripts with [directive](../coding/directives.md#usdcleo) `{$CLEO}`
 
 #### classes 
 
