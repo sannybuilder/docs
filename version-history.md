@@ -21,6 +21,8 @@
   * updated Spanish and Italian translations
   * added option to associate Sanny Builder with `*.csa` and `*.csi` files \(CLEO Android scripts\).
 
+[Complete list of changes](https://github.com/sannybuilder/dev/issues/61)
+
 👏 Kudos to [MatiDragon](https://github.com/MatiDragon-YT) and [Wesser](https://gtaforums.com/profile/172776-wesser/) for updated translations.
 
 ## v. 3.5.1 - 21.08.2020
