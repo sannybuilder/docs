@@ -1,5 +1,28 @@
 # Version History
 
+## v. 3.6.0 - 11.11.2020
+
+* support for [enumerated types](coding/classes.md#class-constants) in classes
+* new [types](edit-modes/opcodes-list-scm.ini.md#parameter-types) of opcode parameters: [`m%`](https://github.com/sannybuilder/dev/issues/10) and [`k%`](https://github.com/sannybuilder/dev/issues/21)
+* initial support for language [extensions](edit-modes/extensions.md)
+* better integration with CLEO library:
+  * updated third-party tools in the `tools` directory:
+    * CLEO v4.4
+    * SCRLog v2020.2
+    * added [CLEO+ plugin](https://github.com/sannybuilder/dev/issues/71) for GTA SA with 250+ new opcodes
+  * [recognize Cleo for Android](https://github.com/sannybuilder/dev/issues/64) scripts \(`*.csa`, `*.csi`\) as compiled scripts
+  * compiler uses CLEO opcodes `0A9E`, `0A9F`, `0A90`, `0A91` [in certain expressions when no opcode is supplied](https://github.com/sannybuilder/dev/issues/58#issuecomment-723376464)
+  * unified description and keywords for CLEO opcodes across different edit modes
+* added [keywords](coding/keywords.md) for all opcodes in GTA SA SCR mode
+* word _thread_  has been replaced with _script_ in opcode definitions and keywords
+* IDE updates:
+  * the game directory is no longer required to compile a script \([\#48](https://github.com/sannybuilder/dev/issues/48)\)
+  * the "Compile and Copy" destination could be configured \([\#9](https://github.com/sannybuilder/dev/issues/9)\)
+  * updated Spanish and Italian translations
+  * added option to associate Sanny Builder with `*.csa` and `*.csi` files \(CLEO Android scripts\).
+
+👏 Kudos to [MatiDragon](https://github.com/MatiDragon-YT) and [Wesser](https://gtaforums.com/profile/172776-wesser/) for updated translations.
+
 ## v. 3.5.1 - 21.08.2020
 
 * fixed a bug with LCS and VCS compilation \([\#56](https://github.com/sannybuilder/dev/issues/56)\)
