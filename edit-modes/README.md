@@ -71,6 +71,14 @@ The valid value for this attribute is `default.` Omit this attribute for non-def
 
 path to [`CustomArrays.ini`](../coding/arrays.md)
 
+#### copy-directory
+
+path to a directory where to copy a compiled script
+
+Has a required attribute `type`:  
+`type="scm"` - for regular .scm scripts  
+`type="cleo"` - for scripts with [directive](../coding/directives.md#usdcleo) `{$CLEO}`
+
 #### classes 
 
 path to[`classes.db`](../coding/classes.md)

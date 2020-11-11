@@ -88,6 +88,10 @@ Syntax:
 
 So this directive is the perfect solution to make a CLEO script.
 
+{% hint style="info" %}
+`{$CLEO}` also implies `{$USE CLEO}`
+{% endhint %}
+
 ## $NOSOURCE
 
 Prohibits the compiler from including a source code of the script. 
