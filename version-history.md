@@ -4,7 +4,7 @@
 
 * поддержка [перечисляемых типов](coding/classes.md#class-constants) в классах
 * новые [типы](edit-modes/opcodes-list-scm.ini.md#parameter-types) параметров опкодов: [`m%`](https://github.com/sannybuilder/dev/issues/10) and [`k%`](https://github.com/sannybuilder/dev/issues/21)
-* начальная поддержка [расширений]()
+* начальная поддержка [расширений](edit-modes/extensions.md)
 * улучшена интеграция с библиотекой CLEO:
   * обновлены пакеты в папке `tools`:
     * CLEO v4.4
