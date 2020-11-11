@@ -1,6 +1,6 @@
 # Extensions
 
-An **extension** is a set of new instructions added to the vanilla game. The CLEO library and its plugins is the most known way of adding those. 
+An **extension** is a set of new instructions added to the vanilla game. The [CLEO library](https://cleo.li) and its plugins is the most known way of adding those. 
 
 To make Sanny Builder aware of the custom instructions and explicitly signal their intentional usage, a script must have `{$USE}` [directive](../coding/directives.md#usduse). The `{$USE}` directive enables a particular set of instructions \(see below the [list of extensions](extensions.md#extensions-list)\).
 
@@ -18,9 +18,9 @@ See [\#74](https://github.com/sannybuilder/dev/issues/74) for more information o
 
 ### Implicit Extensions
 
-Vanilla opcodes have been included in the `default` extension that is implicitly available in any script. `{$USE default}` is possible but redundant. 
+Standard game opcodes have been included in the `default` extension that is implicitly available in any script. `{$USE default}` is possible but redundant. 
 
-Using `{$CLEO}` directive also implies `{$USE CLEO}` so standard CLEO opcodes are available to the compiler already.
+Using `{$CLEO}` [directive](../coding/directives.md#usdcleo) also implies `{$USE CLEO}` so standard CLEO opcodes are available to the compiler already.
 
 ### Extensions List
 
@@ -30,7 +30,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
   <thead>
     <tr>
       <th style="text-align:left">Extension Name</th>
-      <th style="text-align:left">Provided by</th>
+      <th style="text-align:left">Source</th>
       <th style="text-align:left">Edit Modes where available</th>
     </tr>
   </thead>
@@ -182,5 +182,5 @@ Sanny Builder ships some common and recognized extensions for different edit mod
   </tbody>
 </table>
 
-Using opcodes from the third-party libraries not listed there is possible and the compiler will not be warning you.
+Using opcodes from the third-party libraries not listed there is possible, the compiler will not require the `{$USE}` directive.
 

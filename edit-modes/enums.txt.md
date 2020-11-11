@@ -2,7 +2,7 @@
 
 An **enumerated type** or **enum** is a set of constants \(called _enum members_\) under a common prefix \(_enum name_\). 
 
-Enumerated types have a few advantages over ordinary constants. They don't pollute the global namespace and are the first-class citizens in the type system. Command parameters with an enumerated type are limited on allowed values range which in turn eliminates the whole class of errors when an invalid id is used.
+Enumerated types have a few advantages over ordinary constants. They don't pollute the global namespace and are the first-class citizens in the type system. Command parameters with an enumerated type are limited on allowed values range which in turn helps to avoid errors caused by an invalid id usage.
 
 **Enums.txt** is a text file that defines a list of the enumerated types available in the [edit mode](./).
 
@@ -19,7 +19,7 @@ end`
     `<enum member name> [= <enum member value>]`   
     where  
     `enum member name` - any combination of letters, digits and `_`   
-    `enum member value` - optional. if not present, the compiler assigns a [new value](enums.txt.md#enum-values) automatically.
+    `enum member value` - a number or a [string literal](../coding/data-types.md#string-literals) enclosed in double quotes. if not present, the compiler assigns a [new value](enums.txt.md#enum-values) automatically.
 
 ```text
 enum Town
@@ -59,12 +59,12 @@ end
 
 ```text
 enum TicTacToe
-   Player1 = 'X'
-   Player2 = 'O'
+   Player1 = "X"
+   Player2 = "O"
 end
 ```
 
-`TicTacToe.Player1` is equal to `'X'` and `TicTacToe.Player2` is equal to `'O'`.
+`TicTacToe.Player1` is equal to `X` and `TicTacToe.Player2` is equal to `O`.
 
 Implicit values are getting assigned automatically starting from `0` for the first member, `1` for the second member, `2` for the third and so on:
 
