@@ -57,7 +57,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
       <td style="text-align:left">
         <p><b>CLEO 1.1</b>
         </p>
-        <p><code>{$USE CLEO 1.1}</code>
+        <p><code>{$USE CLEO1.1}</code>
         </p>
       </td>
       <td style="text-align:left">CLEO 1.1 for GTA III
@@ -163,7 +163,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
       <td style="text-align:left">
         <p><b>vc mobile</b>
         </p>
-        <p><code>{$USE vc mobile}</code>
+        <p><code>{$USE vcmobile}</code>
         </p>
       </td>
       <td style="text-align:left">Vice City on mobile devices</td>
