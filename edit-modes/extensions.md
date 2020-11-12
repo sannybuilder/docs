@@ -57,9 +57,9 @@ Sanny Builder включает в себя общие и популярные р
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><b>CLEO 1.1</b>
+        <p><b>CLEO1.1</b>
         </p>
-        <p><code>{$USE CLEO 1.1}</code>
+        <p><code>{$USE CLEO1.1}</code>
         </p>
       </td>
       <td style="text-align:left">CLEO 1.1 &#x434;&#x43B;&#x44F; GTA III
@@ -168,9 +168,9 @@ Sanny Builder включает в себя общие и популярные р
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><b>vc mobile</b>
+        <p><b>vcmobile</b>
         </p>
-        <p><code>{$USE vc mobile}</code>
+        <p><code>{$USE vcmobile}</code>
         </p>
       </td>
       <td style="text-align:left">Vice City &#x43D;&#x430; &#x43C;&#x43E;&#x431;&#x438;&#x43B;&#x44C;&#x43D;&#x44B;&#x445;
