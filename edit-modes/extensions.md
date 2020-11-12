@@ -55,7 +55,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><b>CLEO 1.1</b>
+        <p><b>CLEO1.1</b>
         </p>
         <p><code>{$USE CLEO1.1}</code>
         </p>
@@ -161,7 +161,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><b>vc mobile</b>
+        <p><b>vcmobile</b>
         </p>
         <p><code>{$USE vcmobile}</code>
         </p>
