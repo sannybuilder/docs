@@ -1,5 +1,15 @@
 # Version History
 
+## v. 3.6.1 - 27.11.2020
+
+* updated translation to Ukrainian language
+* updated CLEO+ plugin to v1.0.4
+* updated opcode definitions and keywords for CLEO opcodes [\#95](https://github.com/sannybuilder/dev/issues/95)
+* fixed several regression bugs in compiler [\#96](https://github.com/sannybuilder/dev/issues/96), [\#98](https://github.com/sannybuilder/dev/issues/98)
+* minor fixes and improvements \(see the [complete list](https://github.com/sannybuilder/dev/issues/91)\)
+
+👏 Kudos to [wmysterio](https://github.com/wmysterio/) and [XMDS](https://github.com/XMDS) for their contributions.
+
 ## v. 3.6.0 - 11.11.2020
 
 * support for [enumerated types](coding/classes.md#class-constants) in classes
