@@ -45,32 +45,14 @@ Sanny Builder включает в себя общие и популярные р
         </p>
       </td>
       <td style="text-align:left">
-        <p>CLEO 2.0 &#x434;&#x43B;&#x44F; GTA III
-          <br />CLEO 2.0 &#x434;&#x43B;&#x44F; Vice City</p>
+        <p>CLEO &#x434;&#x43B;&#x44F; GTA III
+          <br />CLEO &#x434;&#x43B;&#x44F; Vice City</p>
         <p>CLEO 4.4</p>
       </td>
       <td style="text-align:left">
         <p>GTA III</p>
         <p>Vice City</p>
         <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>CLEO1.1</b>
-        </p>
-        <p><code>{$USE CLEO1.1}</code>
-        </p>
-      </td>
-      <td style="text-align:left">CLEO 1.1 &#x434;&#x43B;&#x44F; GTA III
-        <br />CLEO 1.1 &#x434;&#x43B;&#x44F; Vice City
-        <br />(&#x43D;&#x435; &#x440;&#x435;&#x43A;&#x43E;&#x43C;&#x435;&#x43D;&#x434;&#x443;&#x435;&#x442;&#x441;&#x44F;,
-        &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x439;&#x442;&#x435;
-        CLEO 2.0)</td>
-      <td style="text-align:left">
-        <p>GTA III</p>
-        <p>Vice City</p>
-        <p></p>
       </td>
     </tr>
     <tr>
@@ -177,16 +159,6 @@ Sanny Builder включает в себя общие и популярные р
         &#x443;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x441;&#x442;&#x432;&#x430;&#x445;</td>
       <td
       style="text-align:left">Vice City</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>ios</b>
-        </p>
-        <p><code>{$USE ios}</code>
-        </p>
-      </td>
-      <td style="text-align:left">GTA SA &#x43D;&#x430; iOS</td>
-      <td style="text-align:left">SA Mobile</td>
     </tr>
   </tbody>
 </table>
