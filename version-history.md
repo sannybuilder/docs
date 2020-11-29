@@ -2,7 +2,7 @@
 
 ## v. 3.6.2 - 29.11.2020
 
-* fixed bug with labels missing in disassembled CLEO scripts [\#99](https://github.com/sannybuilder/dev/issues/99)
+* fixed bug with labels missing in disassembled CLEO scripts [\#99](https://github.com/sannybuilder/dev/issues/99) 
 
 ## v. 3.6.1 - 27.11.2020
 
