@@ -1,5 +1,9 @@
 # Version History
 
+## v. 3.6.1 - 29.11.2020
+
+* fixed bug with missing labels in CLEO scripts [\#99](https://github.com/sannybuilder/dev/issues/99)
+
 ## v. 3.6.1 - 27.11.2020
 
 * updated translation to Ukrainian language
