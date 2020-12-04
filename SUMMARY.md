@@ -44,6 +44,7 @@
 
 * [GTA Limits](scm-documentation/gta-limits.md)
 * [GTA III](scm-documentation/gta3/README.md)
+  * [Ped Types](scm-documentation/gta3/pedtypes.md)
   * [Radar Icons](scm-documentation/gta3/radar-icons.md)
 * [Vice City](scm-documentation/vc/README.md)
   * [Button IDs](scm-documentation/vc/buttons.md)
