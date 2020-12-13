@@ -14,7 +14,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>main size</b>
+      <td style="text-align:left"><b>main size (in bytes)</b>
       </td>
       <td style="text-align:left">131072</td>
       <td style="text-align:left">225512</td>
@@ -24,7 +24,7 @@
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>mission size</b>
+      <td style="text-align:left"><b>mission size (in bytes)</b>
       </td>
       <td style="text-align:left">32768</td>
       <td style="text-align:left">35000</td>
@@ -92,7 +92,7 @@
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>gosub levels</b>
+      <td style="text-align:left"><b>gosub nesting levels</b>
       </td>
       <td style="text-align:left">4</td>
       <td style="text-align:left">6</td>
