@@ -16,7 +16,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>&#x440;&#x430;&#x437;&#x43C;&#x435;&#x440; main.scm (&#x431;&#x435;&#x437; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x439;)</b>
+      <td style="text-align:left"><b>&#x440;&#x430;&#x437;&#x43C;&#x435;&#x440; main.scm (&#x431;&#x435;&#x437; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x439;, &#x432; &#x431;&#x430;&#x439;&#x442;&#x430;&#x445;)</b>
       </td>
       <td style="text-align:left">131072</td>
       <td style="text-align:left">225512</td>
@@ -24,7 +24,7 @@
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>&#x440;&#x430;&#x437;&#x43C;&#x435;&#x440; &#x43E;&#x434;&#x43D;&#x43E;&#x439; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438;</b>
+      <td style="text-align:left"><b>&#x440;&#x430;&#x437;&#x43C;&#x435;&#x440; &#x43E;&#x434;&#x43D;&#x43E;&#x439; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438; (&#x432; &#x431;&#x430;&#x439;&#x442;&#x430;&#x445;)</b>
       </td>
       <td style="text-align:left">32768</td>
       <td style="text-align:left">35000</td>
