@@ -1,10 +1,12 @@
 # Constants
 
-A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can not be changed in run-time. During compilation the constant name is replaced with the value associated with it. The constant values can be numeric \(numerals\) and string \(string literals\), and contain an expression.
+A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can not be changed in run-time. In compile-time the constant gets replaced with the value associated with it. The value of the constant can be numeric \(numbers, [model names](data-types.md#model-names) or [labels](data-types.md#labels)\) and string \(string literals\), and contain an expression.
+
+Constants are declared either statically or dynamically. Each [edit mode](../edit-modes/) can load static constant definitions from a file using the `<constants>` parameter in the `modes.xml`. Dynamic declarations are part of the script code and use the syntax outlined below.
 
 ## Syntax
 
-To define a new constant use the `CONST..END` construct:
+To declare a new constant in the code use the `CONST..END` construct:
 
 `CONST  
     <constant name> = <constant value>  
@@ -28,8 +30,6 @@ end
 ```
 
 During compilation the constant `MoneyRequired` gets replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
-
-[Edit modes](../edit-modes/) can load constants from an external file by using the `<constants>` parameter in the `modes.xml`.
 
 A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
 
