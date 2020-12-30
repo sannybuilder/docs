@@ -2,7 +2,7 @@
 
 A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can not be changed in run-time. In compile-time the constant gets replaced with the value associated with it. The value of the constant can be numeric \(numbers, [model names](data-types.md#model-names) or [labels](data-types.md#labels)\) and string \(string literals\), and contain an expression.
 
-Constants are declared either statically or dynamically. Each [edit mode](../edit-modes/) can load static constant definitions from a file using the `<constants>` parameter in the `modes.xml`. Dynamic declarations are part of the script code and use the syntax outlined below.
+Constants are declared either statically or dynamically. Each [edit mode](../edit-modes/) can load static constant definitions from a file using the `<constants>` parameter in the `modes.xml`. Dynamic declarations get created in the script code with the syntax outlined below.
 
 ## Syntax
 
