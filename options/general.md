@@ -2,7 +2,7 @@
 
 Данная вкладка содержит общие настройки программы.
 
-![](../.gitbook/assets/general.png)
+![](../.gitbook/assets/general-ru.png)
 
 
 
