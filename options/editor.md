@@ -2,7 +2,7 @@
 
 На данной вкладке вы можете изменить настройки IDE.
 
-![](../.gitbook/assets/editor00.gif)
+![](../.gitbook/assets/editor-ru.png)
 
 ## Цвета
 
