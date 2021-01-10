@@ -14,7 +14,7 @@
 
 ## Язык интерфейса
 
-![](../.gitbook/assets/general03.gif)
+![](../.gitbook/assets/language-select-ru.png)
 
 Список доступных языков для интерфейса программы. Сами переводы находится в папке `lang`. Информацию о создании новых переводов можно найти на [sannybuilder/translations](https://github.com/sannybuilder/translations).
 
