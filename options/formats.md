@@ -36,7 +36,7 @@ A label name is numeric e.g. `@12345`. The number is the offset of the label fro
 
 ### Script+Local Offset
 
-A label name includes a name of the script where the label is located \(as defined with the `name_thread` command\) and the offset from the beginning of the script, e.g. `@MAIN_12`.
+A label name includes a name of the script where the label is located \(as defined with the `script_name` command\) and the offset from the beginning of the script, e.g. `@MAIN_12`.
 
 ### Script+Global Offset
 

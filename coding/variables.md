@@ -111,7 +111,7 @@ Once the type of the variable is declared it is used for all the code following 
 You can re-declare variables to set the new type:
 
 ```text
-thread 'Food'
+script_name 'Food'
 var
     10@ : Float
     $Var : Float

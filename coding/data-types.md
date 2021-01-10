@@ -52,7 +52,7 @@ gosub @MyLabel
 A text enclosed between single quotes `' '` is a short string literal \(`15` characters max\).
 
 ```text
-03A4: name_thread 'MAIN'
+03A4: script_name 'MAIN'
 ```
 
 Blank strings are also allowed: `' '`.
