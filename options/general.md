@@ -20,7 +20,7 @@
 
 ## Привязка файловых расширений
 
-![](../.gitbook/assets/sb-options-associate.png)
+![](../.gitbook/assets/associate-ru.png)
 
 Файлы с отмеченными расширениями по умолчанию открываются в Sanny Builder. Для отмены ассоциации, снимите галочку.
 
