@@ -49,6 +49,7 @@ The `game` attribute defines a target game for the mode. There are `6` valid val
 * `sa`
 * `lcs`
 * `vcs`
+* `vc_mobile`
 * `sa_mobile`
 
 Before disassembling or compiling a script, make sure that the correct edit mode is active. Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
@@ -173,6 +174,7 @@ Sanny Builder offers many different modes and their number may vary from version
 | GTA LCS | Rockstar | original | all versions of Liberty City Stories |
 | GTA VCS \(PSP\) | Rockstar | original | VCS for PSP |
 | GTA VCS \(PS2\) | Rockstar | original | VCS for PS2 |
+| VC Mobile | community | custom | VC Android and iOS versions |
 | SA Mobile | community | custom | SA Android and iOS versions |
 
 The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers \(e.g. `char` or `script`\) that is consistent with the game's inner structures.  
