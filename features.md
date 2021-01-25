@@ -107,6 +107,13 @@ Sanny Builder has fully multilingual interface translated into 15 languages. You
 
 You can configure up to `9` apps to run when you need them. Each app has its own hotkey for your convenience. You may also pass the parameters to your app if needed. To pass the name of the currently opened file use the special word `$SB_FileName`.
 
+Since v3.7.0 it's also possible to pass the variables `@sb:` and `@game:` that represent Sanny Builder directory and current game directory respectively into the command-line parameters of the external app:
+
+```text
+Parameters:
+--cwd=@sb: --game-dir=@game:
+```
+
 ## Commenting Code
 
 Comments start with the double slash `//`, as seen in other programming languages. Everything after `//` to the end of the line is ignored by the compiler.
