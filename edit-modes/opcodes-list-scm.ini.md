@@ -9,6 +9,7 @@
 | San Andreas | SASCM.INI | data\sa |
 | Liberty City Stories | LCSSCM.INI | data\lcs |
 | Vice City Stories | VCSSCM.INI | data\vcs |
+| VC Mobile | VCSCM.INI | data\vc\_mobile |
 | SA Mobile | SASCM.INI | data\sa\_mobile |
 
 ## Формат файла
