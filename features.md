@@ -26,7 +26,11 @@ Before changing the cursor position InstaSearch remembers it, so if you want to 
 
 ## Displaying Information about Opcode
 
-When the `Show opcode info` [option](options/editor.md) is enabled Sanny Builder displays various information about opcodes in the status bar, such as a number of parameters, or [model](coding/data-types.md#model-names) IDs \(if `IDE` files for the current [edit mode](edit-modes/#ide) have been loaded\).
+When the [option](options/editor.md#editor-configuration) `Show opcode info` is enabled the bottom bar displays:
+
+* a number of parameters for the current opcode;
+* a model ID when the cursor is on the [model name](coding/data-types.md#model-names) and `IDE` files for the current [edit mode](edit-modes/#ide) have been loaded;
+* a constant value when the cursor is on the constant name and the [language service](language-service.md) is enabled.
 
 ## Opcode Search
 
