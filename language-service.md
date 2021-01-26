@@ -1,0 +1,27 @@
+# Language Service
+
+Sanny Builder has an extra service to support richer developer experience. Currently this service is capable of scanning an opened document and all imported files in background to find defined constants and their values. This information then becomes available to the editor for highlighting and displaying values of constants.
+
+```text
+const
+    x = 10
+end
+
+x // x gets highlighted
+```
+
+The [syntax highlighter](options/syntax-highlighting.md) offers two ways of colorizing constants:
+
+* highlight all constants using the same set of rules
+* apply the rules that would otherwise be applied to the constant value \("semantic highlighting"\)
+
+With semantic highlighting enabled and given the example above `x` would get colorized as a regular number \(the maroon color by default\).
+
+It's important to know that the scanning process works in a separate thread and does not immediately reflect what you've just typed. There could be a noticeable delay while the language service reacts on a document change. If for some reason it distracts you, or you're not satisfied with the service performance you can disable it in the [options](options/editor.md#editor-configuration).
+
+The language service also serves as the data provider for the autocomplete feature when you press `Ctrl+Space`. It is responsible for rendering the list of constants and their values. When the language service is disabled, no constants are being displayed in the list.
+
+For better responsiveness the language service only scans a slice of the current document prior to the active line, not the entire file. This is controlled by the [Scanning range](options/editor.md#code-scan-distance) value set in the Editor options. The higher the value the more lines the service scans and the more symbols it finds, but it also impacts the time that is necessary for the editor to reflect the changes made in the document. If you have a less powerful workstation consider using the default value of `250` lines.
+
+
+
