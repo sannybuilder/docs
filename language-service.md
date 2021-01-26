@@ -1,25 +1,25 @@
 # Языковая служба
 
-**Language service** is one of the Sanny Builder features providing rich developer experience. It's responsible for continuous mining data out of the opened document and all imported files. It's important to know that the mining works in a separate thread and does not immediately reflect what you've just typed. There could be a noticeable delay while the language service reacts on a document change. If, for some reason, it distracts you, or you're not satisfied with the service performance you can disable it in the [options](options/editor.md#editor-configuration).
+**Языковая служба** - это часть функционала Sanny Builder, обеспечивающего комфортную работу пользователей. Она ответственна за постоянный сбор данных в текущем открытом документе и всех импортируемых файлах. Сбор информации происходит в отдельном потоке и реагирует на изменения в файле с определенной задержкой. В зависимости от конфигурации службы и объема текста для сканирования эта задержка может быть значительной. Если, по разным причинам, это мешает вам работать со скриптами, или вы не удовлетворены производительностью службы, ее можно отключить в [настройках](options/editor.md#nastroiki) программы.
 
-For better responsiveness the language service only scans a slice of the current document prior to the active line, not the entire file. This is controlled by the [Scanning range](options/editor.md#code-scan-distance) value set in the Editor options. The higher the value the more lines the service scans and the more symbols it finds, but it also impacts the time that is necessary for the editor to reflect the changes made in the document. If you have a less powerful workstation consider using the default value of `250` lines.
+Для лучшей производительности языковая служба сканирует документ частично, а не весь файл целиком. Это управляется значением [глубины сканирования](options/editor.md#glubina-prosmotra-koda) в настройках редактора. Чем выше значение, тем больше символов находит служба, но это также увеличивает время, необходимое на то, чтобы редактор отреагировал на изменения в документе. Если ваш компьютер недостаточно производителен, используйте значение по умолчанию `250` строк.
 
-Since v3.7.0 the language service is capable of finding defined constants and their values. This information then becomes available to the editor for highlighting purposes and for displaying values of constants.
+Начиная с версии 3.7.0 языковая служба способна находить [объявленные константы](coding/constants.md#obyavlenie-konstant) и их значения. Эта информация затем попадает в редактор для [подсветки](options/syntax-highlighting.md) и [отображения значений ](features.md#pokaz-razlichnoi-informacii-o-tekushem-opkode)констант.
 
 ```text
 const
     x = 10
 end
 
-x // x gets highlighted
+x // x подсвечивается
 ```
 
-The [syntax highlighter](options/syntax-highlighting.md) offers two ways of colorizing constants:
+Константы могут быть подсвечены двумя способами:
 
-* highlight all constants using the same set of rules
-* apply the rules that would otherwise be applied to the constant value \("semantic highlighting"\)
+* все константы подсвечиваются одинаково
+* каждая константа подсвечивается так же, как ее значение \("семантическая подсветка"\)
 
-With semantic highlighting enabled and given the example above `x` would get colorized as a regular number \(the maroon color by default\).
+При включенной семантической подсветке в примере выше `x` было бы раскрашено как обычное число \(по умолчанию бордовым цветом\).
 
-The language service also serves as the data provider for the autocomplete feature when you press `Ctrl+Space`. It renders a list of constants and their values. When the language service is disabled, no constants are being displayed in the list.
+Языковая служба также служит источником данных для функции автодополнения, которая срабатывает при нажатии  `Ctrl+Space`. Она выводит список констант и их значения. При выключенной языковой службе константы не отображаются в списке.
 
