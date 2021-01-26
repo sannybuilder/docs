@@ -1,6 +1,6 @@
 # Language Service
 
-Sanny Builder has an extra service to support richer developer experience. Currently this service is capable of scanning an opened document and all imported files in background to find defined constants and their values. This information then becomes available to the editor for highlighting and displaying values of constants.
+Sanny Builder has a functionality to support rich developer experience called the language service. Currently this service is capable of scanning an opened document and all imported files in background to find defined constants and their values. This information then becomes available to the editor for highlighting and displaying values of constants.
 
 ```text
 const

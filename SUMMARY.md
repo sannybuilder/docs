@@ -35,11 +35,11 @@
   * [Enums.txt](edit-modes/enums.txt.md)
   * [Extensions](edit-modes/extensions.md)
   * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
-* [Language Service](language-service.md)
 * [Console](console.md)
 * [Hotkeys](hotkeys.md)
 * [Opcode Search Tool](opcode-search-tool.md)
 * [Command Line Interface](cli.md)
+* [Language Service](language-service.md)
 
 ## SCM Documentation
 
