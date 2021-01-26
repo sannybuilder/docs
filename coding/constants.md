@@ -31,7 +31,7 @@ end
 
 During compilation the constant `MoneyRequired` gets replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
 
-A list of the currently defined constants is displayed after pressing `Ctrl+Space`.
+When the [Language service](../language-service.md) is enabled, a list of constants gets displayed after pressing `Ctrl+Space`.
 
 ## Limitations
 
