@@ -39,6 +39,7 @@
 * [Горячие клавиши](hotkeys.md)
 * [Поиск опкодов](opcode-search-tool.md)
 * [Интерфейс командной строки](cli.md)
+* [Языковая служба](language-service.md)
 
 ## Документация по SCM <a id="scm-documentation"></a>
 
