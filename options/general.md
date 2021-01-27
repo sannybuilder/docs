@@ -2,7 +2,7 @@
 
 This tab contains the general settings used by Sanny Builder.
 
-![](../.gitbook/assets/options-en.PNG)
+![](../.gitbook/assets/general-en.png)
 
 
 
@@ -14,7 +14,7 @@ Sanny Builder needs certain game files while working, so you have to choose a co
 
 ## Interface Language
 
-![](../.gitbook/assets/lang-en.png)
+![](../.gitbook/assets/general-language-en.png)
 
 List of available translations for Sanny Builder. Select a language to update the program interface. 
 

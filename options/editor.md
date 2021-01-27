@@ -2,7 +2,7 @@
 
 Here you can change the IDE settings.
 
-![](../.gitbook/assets/editor_page1.png)
+![](../.gitbook/assets/editor-en.png)
 
 ## GUI Colors
 
@@ -16,29 +16,30 @@ The following options allow to set up different colors for the editor.![](mk:@MS
 
 ## Code Scan Distance
 
-![](../.gitbook/assets/editor_look.png)
+![](../.gitbook/assets/editor-code-scan-en.png)
 
-The code scan distance \(looking depth\) is used when you press `Ctrl+Space` to find [constants](../coding/constants.md), labels and [variables](../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
+The code scanning range is used when you press `Ctrl+Space` to find [constants](../coding/constants.md), labels and [variables](../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
 
 If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_opt.png)
 
 ## Font
 
-![](../.gitbook/assets/editor_font.png)
+![](../.gitbook/assets/editor-font-en.png)
 
 Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
 
 ## Editor Configuration
 
-![](../.gitbook/assets/editor_opt.png)
+![](../.gitbook/assets/editor-settings-en.png)
 
-`Show main panel` – toggle the main toolbar  
-`Show opcode info` – make the editor display important information in the status bar \(number of expecting parameters for an opcode, model ID, variable type, etc\)  
-`Line numbers` – show line numbers in the left padding area  
-`Show gutter border` – display the border line on the right side of the left padding area. Uncheck this option to increase the available space visually.  
+`Show main panel` – toggle the top toolbar  
+`Show opcode info` – make the editor display [different information](../features.md#displaying-information-about-opcode) in the bottom bar  
+`Line numbers` – display line numbers in the left padding area  
+`Show gutter border` – display the border line on the right side of the left padding area. Uncheck this option to increase the available space visually  
 `Load last closed file at startup` – open the last closed file at startup  
-`Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked.  
-`Confirm when exit` – confirm exit to prevent occasional program termination.
+`Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked  
+`Confirm when exit` – confirm exit to prevent occasional program termination  
+`Enable language service` - toggles the [language service](../language-service.md). Disabling this service also makes the [highlighting](syntax-highlighting.md) configuration for constant symbols unavailable. Does not affect a document that is already opened in the editor.
 
 ## 
 
