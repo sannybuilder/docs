@@ -1,5 +1,25 @@
 # История изменений
 
+## v. 3.7.0 - 30.01.2021
+
+* объявленные [константы](coding/constants.md) теперь подсвечиваются \([\#28](https://github.com/sannybuilder/dev/issues/28)\)
+* список автодополнения показывает объявленные константы \([\#40](https://github.com/sannybuilder/dev/issues/40)\)
+* для каждой вкладки в редакторе можно выбирать свой [режим редактирования](edit-modes/) \([\#87](https://github.com/sannybuilder/dev/issues/87)\)
+* новый режим VC Mobile с опкодами CLEO Android \([sannybuilder/data\#11](https://github.com/sannybuilder/data/pull/11)\)
+* в режим VC PC добавлены опкоды из [Opcode Restoration project](https://github.com/cleolibrary/opcodes-restoration-project) \(автор spaceeinstein\)
+* сообщения об ошибке теперь содержат ссылку на переведенную документацию, если таковая имеется \([\#101](https://github.com/sannybuilder/dev/issues/101)\)
+* конфигурация [внешних приложений](features.md#menyu-vneshnikh-prilozhenii) поддерживает переменные **@sb:** и **@game:** \([\#72](https://github.com/sannybuilder/dev/issues/72)\)
+* плагин [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) обновлен до версии 1.0.7 
+* исправлены баги: [\#103](https://github.com/sannybuilder/dev/issues/103) [\#114](https://github.com/sannybuilder/dev/issues/114) [\#120](https://github.com/sannybuilder/dev/issues/120)
+
+{% hint style="info" %}
+Узнать больше о подсветке констант можно в статье [Языковая служба](language-service.md). 
+{% endhint %}
+
+[Полный список изменений](https://github.com/sannybuilder/dev/issues/90)
+
+👏 Спасибо [XMDS](https://github.com/XMDS) за вклад в этот релиз.
+
 ## v. 3.6.2 - 29.11.2020
 
 * исправлен баг с метками, отсутствующими в дизассемблированных CLEO скриптах [\#99](https://github.com/sannybuilder/dev/issues/99)
