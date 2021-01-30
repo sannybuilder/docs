@@ -1,5 +1,25 @@
 # Version History
 
+## v. 3.7.0 - 30.01.2021
+
+* declared [constants](coding/constants.md) are getting highlighted \([\#28](https://github.com/sannybuilder/dev/issues/28)\)
+* the autocomplete list displays declared constants \([\#40](https://github.com/sannybuilder/dev/issues/40)\)
+* each editor tab maintains its own [edit mode](edit-modes/) selection \([\#87](https://github.com/sannybuilder/dev/issues/87)\)
+* new VC Mobile mode with CLEO Android opcodes \([sannybuilder/data\#11](https://github.com/sannybuilder/data/pull/11)\)
+* added spaceeinstein's [Opcode Restoration project](https://github.com/cleolibrary/opcodes-restoration-project) opcodes in VC PC mode
+* error messages now have a link to localized documentation if possible \([\#101](https://github.com/sannybuilder/dev/issues/101)\)
+* [user tools](features.md#external-tools-menu) configuration supports **@sb:** and **@game:** variables \([\#72](https://github.com/sannybuilder/dev/issues/72)\)
+* [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) plugin updated to v1.0.7
+* fixed bugs: [\#103](https://github.com/sannybuilder/dev/issues/103) [\#114](https://github.com/sannybuilder/dev/issues/114) [\#120](https://github.com/sannybuilder/dev/issues/120)
+
+{% hint style="info" %}
+Read more on constants highlighting there: [Language service](language-service.md).
+{% endhint %}
+
+[Complete list of changes](https://github.com/sannybuilder/dev/issues/90)
+
+👏 Kudos to [XMDS](https://github.com/XMDS) for contributions to this release.
+
 ## v. 3.6.2 - 29.11.2020
 
 * fixed bug with labels missing in disassembled CLEO scripts [\#99](https://github.com/sannybuilder/dev/issues/99) 

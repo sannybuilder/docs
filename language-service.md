@@ -23,3 +23,10 @@ With semantic highlighting enabled and given the example above `x` would get col
 
 The language service also serves as the data provider for the autocomplete feature when you press `Ctrl+Space`. It renders a list of constants and their values. When the language service is disabled, no constants are being displayed in the list.
 
+{% hint style="info" %}
+Read more technical details on the service implementation there:
+
+* [Notes on constants highlighting. Part 1/2](https://www.patreon.com/posts/45844911)
+* [Notes on constants highlighting. Part 2/2](https://www.patreon.com/posts/46873773)
+{% endhint %}
+
