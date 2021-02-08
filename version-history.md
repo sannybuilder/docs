@@ -117,7 +117,7 @@
   * файл `macroes.txt` переименован `templates.txt`
 * [обновления переводов](https://github.com/sannybuilder/translations/milestone/1)
 
-👏 Спасибо [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [China·XMDS](https://gtaforums.com/profile/1034872-china%C2%B7xmds/), и [Wesser](https://gtaforums.com/profile/172776-wesser/) за их вклад в этот релиз.
+👏 Спасибо [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [XMDS](https://gtaforums.com/profile/1034872-xmds), и [Wesser](https://gtaforums.com/profile/172776-wesser/) за их вклад в этот релиз.
 
 ## v. 3.3.3 - 20.10.2019
 
