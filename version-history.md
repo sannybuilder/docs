@@ -117,7 +117,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
   * renamed `macroes.txt` to `templates.txt`
 * [translation updates](https://github.com/sannybuilder/translations/milestone/1)
 
-👏 Kudos to [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [China·XMDS](https://gtaforums.com/profile/1034872-china%C2%B7xmds/), and [Wesser](https://gtaforums.com/profile/172776-wesser/) for their awesome contribution to this release.
+👏 Kudos to [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [XMDS](https://gtaforums.com/profile/1034872-xmds), and [Wesser](https://gtaforums.com/profile/172776-wesser/) for their awesome contribution to this release.
 
 ## v. 3.3.3 - 20.10.2019
 
