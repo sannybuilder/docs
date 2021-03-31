@@ -16,10 +16,10 @@ A [local variable](variables.md#local-variables) name may only be a number follo
 0006: 100@ = 10
 ```
 
-An `ADMA` \(**A**dvanced **D**irect **M**emory **A**ccess\) variable is a reference to the offset in the `main.scm` file. They serve as global variables, i.e. you can read from and write to an address in the `main.scm`. 
+An `ADMA` \(**A**dvanced **D**irect **M**emory **A**ccess\) variable is a reference to an address within in the `main.scm` file. They serve as global variables, i.e. you can read from and write to the address in the `main.scm`. 
 
 ```text
-$myVar = &0 // read first 4 bytes of the main.scm and write them to $myVar
+$myVar = &0 // read first 4 bytes of the main.scm (&0) and write the value to $myVar
 &57 += &120(&231,4i) // can be used as an array element
 ```
 
