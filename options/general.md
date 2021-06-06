@@ -40,6 +40,10 @@ When this option is checked the disassembler replaces the existing file with a n
 
 Display a live progress bar during disassembling or compilation. Showing the progress slightly slows the execution time. When this option is turned off the status bar displays the words: `Please wait`. 
 
+### Show report
+
+Displays a popup window with various information about the compiled file.
+
 ### Show warning
 
 This option is only used during compilation of the San Andreas scripts. If the game is running, the file `script.img` containing external scripts can not be overwritten as the game uses this file and the compiler complains about it. You may disable the warning by unchecking this box.

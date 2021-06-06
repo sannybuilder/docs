@@ -69,3 +69,58 @@ sanny.exe --no-splash
 sanny.exe -x ..\my-modes.xml
 ```
 
+## --option
+
+{% hint style="info" %}
+Available since v3.8.0
+{% endhint %}
+
+Shortcut: `-o`
+
+`-o <option name> <value>` - sets the value of the specified [option](options/). To set multiple options, list each of them individually:
+
+`-o <option1 name> <option1 value> -o <option2 name> <option2 value> ... -o <optionN name> <optionN value>` 
+
+Option name can be one of the following:
+
+{% hint style="warning" %}
+This list is not final and subject to change at any moment.
+{% endhint %}
+
+| Name | Allowed Values | Options Tab |
+| :--- | :--- | :--- |
+| [Editor::ShowPanel](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::ShowOpcodeInfo](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::ShowLineNumbers](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::ShowGutterBorder](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::OpenLastFile](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::OpenAllClosedFiles](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::ConfirmExit](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Editor::LanguageService](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Smart](options/editor.md#editor-configuration) | 0, 1 | Editor |
+| [Decompiler::OverwriteOutputFile](options/general.md#always-overwrite-output-file) | 0, 1 | General |
+| [Engine::ShowProgress](options/general.md#show-progress) | 0, 1 | General |
+| [Engine::ShowReport](options/general.md#show-report) | 0, 1 | General |
+| [Compiler::ShowIMGWarning](options/general.md#show-warning) | 0, 1 | General |
+| [Decompiler::ManualIMGOpening](options/general.md#manual-img-opening) | 0, 1 | General |
+| [QuickGameLoading](options/general.md#quick-game-loading) | 0, 1 | General |
+| [Compiler::CheckConditions](options/general.md#check-conditions) | 0, 1 | General |
+| [Compiler::CheckLocalVariables](options/general.md#ranges-check) | 0, 1 | General |
+| [Decompiler::AlwaysWriteOpcodes](options/general.md#write-opcodes) | 0, 1 | General |
+| [Decompiler::ReplaceMissionNumbers](options/general.md#replace-mission-numbers) | 0, 1 | General |
+| [Decompiler::InsertOriginalMissionNames](options/general.md#insert-original-mission-names) | 0, 1 | General |
+| [Compiler::AddExtraInfo](options/general.md#add-extra-info-to-scm) | 0, 1 | General |
+| [CustomNames::UseCustomLabels](options/formats.md#custom-names) | 0, 1 | Formats |
+| [CustomNames::UseCustomVariables](options/formats.md#custom-names) | 0, 1 | Formats |
+| [CustomNames::UseCustomArrays](options/formats.md#custom-names) | 0, 1 | Formats |
+| [CustomNames::CustomNamesFormat](options/formats.md#case-converting) | 0, 1, 2 | Formats |
+| [Editor::IdentifiersListAuto](options/editor.md#code-scan-distance) | 0, 1 | Formats |
+| [Editor::LookingDepth](options/editor.md#code-scan-distance) | 0..65535 | Formats |
+| [Formats::HexadimalOffsets](options/formats.md#label-name-format) | 0, 1 | Formats |
+| [Formats::LabelsFormat](options/formats.md#label-name-format) | 1, 2, 3 | Formats |
+| [Lang](options/general.md#interface-language) | known locale id | General |
+
+{% hint style="info" %}
+Options set via CLI are not persistent and only applied to the current session. On the next launch Sanny Builder will use values stored in the settings.ini.
+{% endhint %}
+
