@@ -124,3 +124,7 @@ This list is not final and subject to change at any moment.
 Options set via CLI are not persistent and only applied to the current session. On the next launch Sanny Builder will use values stored in the settings.ini.
 {% endhint %}
 
+```text
+sanny.exe -o Compiler::CheckConditions 0 -o Editor::LanguageService 1
+```
+
