@@ -75,8 +75,6 @@ sanny.exe -x ..\my-modes.xml
 Available since v3.8.0
 {% endhint %}
 
-Shortcut: `-o`
-
 `-o <option name> <value>` - sets the value of the specified [option](options/). To set multiple options, list each of them individually:
 
 `-o <option1 name> <option1 value> -o <option2 name> <option2 value> ... -o <optionN name> <optionN value>` 
@@ -114,8 +112,8 @@ This list is not final and subject to change at any moment.
 | [CustomNames::UseCustomVariables](options/formats.md#custom-names) | 0, 1 | Formats |
 | [CustomNames::UseCustomArrays](options/formats.md#custom-names) | 0, 1 | Formats |
 | [CustomNames::CustomNamesFormat](options/formats.md#case-converting) | 0, 1, 2 | Formats |
-| [Editor::IdentifiersListAuto](options/editor.md#code-scan-distance) | 0, 1 | Formats |
-| [Editor::LookingDepth](options/editor.md#code-scan-distance) | 0..65535 | Formats |
+| [Editor::IdentifiersListAuto](options/editor.md#code-scan-distance) | 0, 1 | Editor |
+| [Editor::LookingDepth](options/editor.md#code-scan-distance) | 0..65535 | Editor |
 | [Formats::HexadimalOffsets](options/formats.md#label-name-format) | 0, 1 | Formats |
 | [Formats::LabelsFormat](options/formats.md#label-name-format) | 1, 2, 3 | Formats |
 | [Lang](options/general.md#interface-language) | known locale id | General |
@@ -123,6 +121,8 @@ This list is not final and subject to change at any moment.
 {% hint style="info" %}
 Options set via CLI are not persistent and only applied to the current session. On the next launch Sanny Builder will use values stored in the settings.ini.
 {% endhint %}
+
+Shortcut: `-o`
 
 ```text
 sanny.exe -o Compiler::CheckConditions 0 -o Editor::LanguageService 1
