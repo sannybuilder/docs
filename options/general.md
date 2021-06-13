@@ -89,5 +89,9 @@ If this option is checked the compiler adds extra information at the end of the 
 
 {% hint style="info" %}
 The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 \(unless the `ignore_unknown` [option](../console.md#ignore_unknown) is enabled\).
+
+Starting from v3.8.0 the disassembler can [ignore extra information](../console.md#skip_extra_info).
 {% endhint %}
+
+
 
