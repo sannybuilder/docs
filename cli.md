@@ -23,7 +23,7 @@ Shortcut: `-c`
 `--debug` - toggles [debug options](console.md#running-with-debug)
 
 ```text
-sanny.exe --debug 11000
+sanny.exe --debug 110000
 ```
 
 ## --game

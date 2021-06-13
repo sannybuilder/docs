@@ -48,6 +48,10 @@ E.g. given an array of three elements starting at `$10` this option affects the 
 
 The disassembler skips the header of the input file. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). Also makes the compiler compile a `.scm` file without the header .
 
+### SKIP\_EXTRA\_INFO
+
+The disassembler ignores the [extra info](options/general.md#add-extra-info-to-scm) section attached to the input file. It also treats this section as a set of regular SCM instructions, so enabling `IGNORE_UNKNOWN` option is recommended.
+
 ## Alternate ways
 
 Sanny Builder offers a few other ways to toggling debug options outside of the console that might be useful in some cases.
@@ -63,12 +67,13 @@ The `--debug` [option](cli.md#debug) provides an alternate way of switching the 
 | 3 | VAR\_COUNTER |
 | 4 | CONSTANT\_INDEXES |
 | 5 | SKIP\_SCM\_HEADER |
+| 6 | SKIP\_EXTRA\_INFO |
 
 ```text
-sanny.exe --debug 11000
+sanny.exe --debug 110000
 ```
 
-The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGNORE_UNKNOWN` mode. The remaining zeros disable `VAR_COUNTER`, `CONSTANT_INDEXES`, `SKIP_SCM_HEADER`.
+The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGNORE_UNKNOWN` mode. The remaining options are disabled.
 
 ### Using GUI
 
