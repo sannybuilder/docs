@@ -23,7 +23,7 @@ sanny.exe --compile C:\myscm.txt C:\myscm.scm
 `--debug` - переключает [отладочные опции](console.md#otladochnye-opcii)
 
 ```text
-sanny.exe --debug 11000
+sanny.exe --debug 110000
 ```
 
 ## --game
