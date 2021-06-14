@@ -79,7 +79,7 @@ The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGN
 
 Clicking the right-most button in the main toolbar shows a drop-down menu with the list of debug options.
 
-![](.gitbook/assets/debug_options.PNG)
+![](.gitbook/assets/sb-debug-options-dropdown.png)
 
 Each menu item toggles a particular debug option. The change comes into effect immediately.
 
