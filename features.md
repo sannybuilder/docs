@@ -2,9 +2,11 @@
 
 Sanny Builder provides the end-user the following features:
 
-## Syntax Highlighting
+## Color Themes
 
-Sanny Builder highlights different elements of the code for easier reading. The color scheme can be customized via the [options](options/syntax-highlighting.md).
+Sanny Builder's look and feel can be customized with themes. They define colors and style of the interface and code elements for easier reading. The active color theme can be changed in the [options](options/editor.md#color-theme). 
+
+Also Sanny Builder has a built-in [theme editor](options/theme-editor.md) for quick customization of the existing themes.
 
 ## Bookmarks / Quick jump
 

@@ -2,17 +2,13 @@
 
 Here you can change the IDE settings.
 
-![](../.gitbook/assets/editor-en.png)
+![](../.gitbook/assets/sb-editor-options%20%281%29.png)
 
-## GUI Colors
+## Color Theme
 
-![](../.gitbook/assets/editor_colors.png)
+![](../.gitbook/assets/sb-options-color-theme.png)
 
-The following options allow to set up different colors for the editor.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_colors.png)
-
-`Active line` - the background color of the line with the cursor  
-`Gutter` - the background color of the area on the left side of the code area \(with line numbers\)  
-`Editor` - the background color of the code area
+This picker allows to choose one of the pre-defined themes to customize interface colors and syntax highlighting. The Edit button launches [Theme Editor](theme-editor.md).
 
 ## Code Scan Distance
 
@@ -30,7 +26,7 @@ Here you can choose the font and configure its display. Sanny Builder supports o
 
 ## Editor Configuration
 
-![](../.gitbook/assets/editor-settings-en.png)
+![](../.gitbook/assets/sb-editor-configuration.png)
 
 `Show main panel` – toggle the top toolbar  
 `Show opcode info` – make the editor display [different information](../features.md#displaying-information-about-opcode) in the bottom bar  
@@ -39,7 +35,8 @@ Here you can choose the font and configure its display. Sanny Builder supports o
 `Load last closed file at startup` – open the last closed file at startup  
 `Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked  
 `Confirm when exit` – confirm exit to prevent occasional program termination  
-`Enable language service` - toggles the [language service](../language-service.md). Disabling this service also makes the [highlighting](syntax-highlighting.md) configuration for constant symbols unavailable. Does not affect a document that is already opened in the editor.
+`Enable language service` - toggle the [language service](../language-service.md). Disabling this service also makes the semantinc contants highlighting unavailable. Does not affect a document that is already opened in the editor  
+`Semantic highlighting` - apply the same rules to constants as to their values. The color theme's rules for constant highlighting will be ignored.
 
 ## 
 
