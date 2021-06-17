@@ -22,13 +22,14 @@
 
 ---
 
+* [Возможности](features.md)
 * [Опции программы](options/README.md)
   * [Общие настройки](options/general.md)
   * [Форматирование](options/formats.md)
   * [Редактор](options/editor.md)
+  * [Редактор тем оформления](options/theme-editor.md)
   * [Подсветка синтаксиса](options/syntax-highlighting.md)
   * [Горячие клавиши](options/hotkeys.md)
-* [Возможности](features.md)
 * [Режимы редактирования](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Enums.txt](edit-modes/enums.txt.md)
