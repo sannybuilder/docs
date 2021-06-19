@@ -95,31 +95,31 @@ sanny.exe -x ..\my-modes.xml
 | [Editor::OpenAllClosedFiles](options/editor.md#nastroiki) | 0, 1 | Редактор |
 | [Editor::ConfirmExit](options/editor.md#nastroiki) | 0, 1 | Редактор |
 | [Editor::LanguageService](options/editor.md#nastroiki) | 0, 1 | Редактор |
-| [Smart](options/editor.md#nastroiki) | 0, 1 | Редактор |
+| [Editor::SemanticConstHighlighting](options/editor.md#nastroiki) | 0, 1 | Редактор |
+| [Editor::IdentifiersListAuto](options/editor.md#glubina-prosmotra-koda) | 0, 1 | Редактор |
+| [Editor::ScanDistance](options/editor.md#glubina-prosmotra-koda) | 0..65535 | Редактор |
+| [Editor::Lang](options/general.md#yazyk-interfeisa) | номер локали | Общие |
+| [Editor::QuickGameLoading](options/general.md#bystraya-zagruzka-igry) | 0, 1 | Общие |
+| [Editor::ShowProgress](options/general.md#pokazyvat-progress) | 0, 1 | Общие |
+| [Editor::ShowReport](options/general.md#pokazyvat-otchet) | 0, 1 | Общие |
 | [Decompiler::OverwriteOutputFile](options/general.md#perezapis-vykhodnogo-faila) | 0, 1 | Общие |
-| [Engine::ShowProgress](options/general.md#pokazyvat-progress) | 0, 1 | Общие |
-| [Engine::ShowReport](options/general.md#pokazyvat-otchet) | 0, 1 | Общие |
-| [Compiler::ShowIMGWarning](options/general.md#pokazyvat-preduprezhdenie) | 0, 1 | Общие |
 | [Decompiler::ManualIMGOpening](options/general.md#ruchnoi-vybor-img-faila) | 0, 1 | Общие |
-| [QuickGameLoading](options/general.md#bystraya-zagruzka-igry) | 0, 1 | Общие |
-| [Compiler::CheckConditions](options/general.md#proverka-uslovii) | 0, 1 | Общие |
-| [Compiler::CheckLocalVariables](options/general.md#proverka-peremennykh) | 0, 1 | Общие |
+| [Decompiler::HexadimalOffsets](options/formats.md#imena-metok) | 0, 1 | Общие |
+| [Decompiler::LabelsFormat](options/formats.md#imena-metok) | 1, 2, 3 | Общие |
 | [Decompiler::AlwaysWriteOpcodes](options/general.md#ispolzovat-opkody) | 0, 1 | Общие |
 | [Decompiler::ReplaceMissionNumbers](options/general.md#zamenyat-nomera-missii) | 0, 1 | Общие |
 | [Decompiler::InsertOriginalMissionNames](options/general.md#vstavlyat-originalnye-imena-missii) | 0, 1 | Общие |
+| [Compiler::ShowIMGWarning](options/general.md#pokazyvat-preduprezhdenie) | 0, 1 | Общие |
+| [Compiler::CheckConditions](options/general.md#proverka-uslovii) | 0, 1 | Общие |
+| [Compiler::CheckLocalVariables](options/general.md#proverka-peremennykh) | 0, 1 | Общие |
 | [Compiler::AddExtraInfo](options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) | 0, 1 | Общие |
 | [CustomNames::UseCustomLabels](options/formats.md#sobstvennye-imena) | 0, 1 | Форматирование |
 | [CustomNames::UseCustomVariables](options/formats.md#sobstvennye-imena) | 0, 1 | Форматирование |
 | [CustomNames::UseCustomArrays](options/formats.md#sobstvennye-imena) | 0, 1 | Форматирование |
-| [CustomNames::CustomNamesFormat](options/formats.md#registr-bukv) | 0, 1, 2 | Форматирование |
-| [Editor::IdentifiersListAuto](options/editor.md#glubina-prosmotra-koda) | 0, 1 | Редактор |
-| [Editor::LookingDepth](options/editor.md#glubina-prosmotra-koda) | 0..65535 | Редактор |
-| [Formats::HexadimalOffsets](options/formats.md#imena-metok) | 0, 1 | Форматирование |
-| [Formats::LabelsFormat](options/formats.md#imena-metok) | 1, 2, 3 | Форматирование |
-| [Lang](options/general.md#yazyk-interfeisa) | номер локали | Общие |
+| [CustomNames::Format](options/formats.md#registr-bukv) | 0, 1, 2 | Форматирование |
 
 {% hint style="info" %}
-Опции, измененные через командную строку, не являются постоянными и применяются только в текущей сессии. После перезапуска Sanny Builder будет использовать значения из файла settings.ini.
+Опции, измененные через командную строку, не являются постоянными и применяются только в текущей сессии. После перезапуска Sanny Builder будет использовать значения из файла `settings.ini`.
 {% endhint %}
 
 Краткая форма: `-o`
