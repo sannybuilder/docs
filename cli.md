@@ -119,7 +119,7 @@ This list is not final and subject to change at any moment.
 | [CustomNames::Format](options/formats.md#case-converting) | 0, 1, 2 | Formats |
 
 {% hint style="info" %}
-Options set via CLI are not persistent and only applied to the current session. On the next launch Sanny Builder will use values stored in the settings.ini.
+Options set via CLI are not persistent and only applied to the current session. On the next launch Sanny Builder will use values stored in the `settings.ini`.
 {% endhint %}
 
 Shortcut: `-o`
