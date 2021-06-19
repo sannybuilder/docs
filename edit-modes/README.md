@@ -130,7 +130,11 @@ path to a list of [opcodes](opcodes-list-scm.ini.md)
 
 #### templates 
 
-path to an [exclusive templates](code-templates.md) file
+path to a file with the mode's [exclusive templates](code-templates.md) 
+
+Has a required attribute `type`:  
+`type="default"` - path to the predefined templates shipped with Sanny Builder  
+`type="custom"` - path to a file with user templates added via the [Add Template](code-templates.md#adding-a-new-template) form. This file is never overwritten during a Sanny Builder update.
 
 #### text 
 
