@@ -7,7 +7,7 @@ Sanny Builder provides the end-user the following features:
 Sanny Builder's look and feel can be customized with themes. They define colors and style of the interface and code elements for easier reading. The active color theme can be changed in the [options](options/editor.md#color-theme). 
 
 {% hint style="info" %}
-If you launch Sanny Builder v3.8.0 with `settings.ini` from a prior version, your syntax highlighting configuration will be converted to a custom user theme. 
+If you launch Sanny Builder v3.8.0 with `settings.ini` from a prior version, your syntax highlighting configuration will be converted to a custom user theme \(stored in`themes\custom.ini`\).
 {% endhint %}
 
 Also Sanny Builder has a built-in [theme editor](options/theme-editor.md) for quick customization of the existing themes.
