@@ -54,7 +54,7 @@
   * [Иконки радара](scm-documentation/vc/icons.md)
   * [Интерьеры](scm-documentation/vc/interiors.md)
   * [Номера кнопок](scm-documentation/vc/buttons.md)
-  * [Оружие](scm-documentation/vc/weapons.md)
+  * [Типы оружия](scm-documentation/vc/weapons.md)
   * [Типы пешеходов](scm-documentation/vc/pedtypes.md)
 * [San Andreas](scm-documentation/sa/README.md)
   * [Банды](scm-documentation/sa/gangs.md)
