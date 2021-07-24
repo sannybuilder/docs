@@ -105,7 +105,7 @@ This list is not final and subject to change at any moment.
 | [Decompiler::OverwriteOutputFile](options/general.md#always-overwrite-output-file) | 0, 1 | General |
 | [Decompiler::ManualIMGOpening](options/general.md#manual-img-opening) | 0, 1 | General |
 | [Decompiler::HexadimalOffsets](options/formats.md#label-name-format) | 0, 1 | Formats |
-| [Decompiler::LabelsFormat](options/formats.md#label-name-format) | 1, 2, 3 | Formats |
+| [Decompiler::LabelsFormat](options/formats.md#label-name-format) | 0, 1, 2 | Formats |
 | [Decompiler::AlwaysWriteOpcodes](options/general.md#write-opcodes) | 0, 1 | General |
 | [Decompiler::ReplaceMissionNumbers](options/general.md#replace-mission-numbers) | 0, 1 | General |
 | [Decompiler::InsertOriginalMissionNames](options/general.md#insert-original-mission-names) | 0, 1 | General |
