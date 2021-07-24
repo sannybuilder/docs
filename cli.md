@@ -105,7 +105,7 @@ sanny.exe -x ..\my-modes.xml
 | [Decompiler::OverwriteOutputFile](options/general.md#perezapis-vykhodnogo-faila) | 0, 1 | Общие |
 | [Decompiler::ManualIMGOpening](options/general.md#ruchnoi-vybor-img-faila) | 0, 1 | Общие |
 | [Decompiler::HexadimalOffsets](options/formats.md#imena-metok) | 0, 1 | Общие |
-| [Decompiler::LabelsFormat](options/formats.md#imena-metok) | 1, 2, 3 | Общие |
+| [Decompiler::LabelsFormat](options/formats.md#imena-metok) | 0, 1, 2 | Общие |
 | [Decompiler::AlwaysWriteOpcodes](options/general.md#ispolzovat-opkody) | 0, 1 | Общие |
 | [Decompiler::ReplaceMissionNumbers](options/general.md#zamenyat-nomera-missii) | 0, 1 | Общие |
 | [Decompiler::InsertOriginalMissionNames](options/general.md#vstavlyat-originalnye-imena-missii) | 0, 1 | Общие |
