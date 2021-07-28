@@ -17,6 +17,10 @@ END`
 Значением константы может быть число \(а также [имя модели](data-types.md#imena-modelei) или [метка](data-types.md#metki)\), [строковый литерал](data-types.md#strokovye-literaly), [переменная](variables.md) \(а также [свойство класса](classes.md#svoistva)\), другая константа.
 
 ```text
+var
+   $PLAYER_CHAR: Player
+end
+
 const
     MoneyRequired = 30
     PlayerMoney = $PLAYER_CHAR.Money
