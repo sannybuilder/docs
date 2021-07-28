@@ -17,6 +17,10 @@ A constant name is any allowed identifier \(a combination of letters, numbers an
 A constant value might be a number \(also a [model identifier](data-types.md#model-names) or a [label](data-types.md#labels)\); a [string literal](data-types.md#string-literals); a [variable](variables.md) \(also a [class property](classes.md#properties)\); another constant.
 
 ```text
+var
+   $PLAYER_CHAR: Player
+end
+
 const
     MoneyRequired = 30
     PlayerMoney = $PLAYER_CHAR.Money
