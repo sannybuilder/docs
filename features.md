@@ -37,6 +37,7 @@ When the [option](options/editor.md#editor-configuration) `Show opcode info` is 
 * a number of parameters for the current opcode;
 * a model ID when the cursor is on the [model name](coding/data-types.md#model-names) and `IDE` files for the current [edit mode](edit-modes/#ide) have been loaded;
 * a constant value when the cursor is on the constant name and the [language service](language-service.md) is enabled.
+* a brief description what this command does \(from [Sanny Builder Library](https://library.sannybuilder.com)\)
 
 ## Opcode Search
 
