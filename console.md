@@ -34,7 +34,7 @@ The disassembler ignores unknown opcodes, incorrect parameters and so on. It hel
 
 ### CONSTANT\_INDEXES
 
-The disassembler prints array elements as global variables with indexes. It's available for `GTA SA`, `LCS`, `VCS` games. 
+The disassembler prints array elements as global variables with indexes. It's available for `GTA SA`, `LCS`, `VCS` games.
 
 E.g. given an array of three elements starting at `$10` this option affects the way the variables look like after disassembling:
 
@@ -46,7 +46,9 @@ E.g. given an array of three elements starting at `$10` this option affects the 
 
 ### SKIP\_SCM\_HEADER
 
-The disassembler skips the header of the input file. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). Also makes the compiler compile a `.scm` file without the header .
+Disassembler skips the header of the input file. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). 
+
+With this option the compiler makes `.scm` files without the header \(similar to `{$EXTERNAL}` [directive](coding/directives.md#usdexternal)\).
 
 ### SKIP\_EXTRA\_INFO
 
