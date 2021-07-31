@@ -134,7 +134,7 @@ Sanny Builder поддерживает разные игры и платформ
 
 Имеет обязательный атрибут `type`:  
 `type="default"` - путь к файлу с шаблонами, включенными в состав Sanny Builder  
-`type="custom"` - путь к файлу с пользовательскими шаблонами, [добавленными](code-templates.md#dobavlenie-novykh-shablonov) из редактора
+`type="custom"` - путь к файлу с пользовательскими шаблонами, [добавленными](code-templates.md#adding-a-new-template) из редактора
 
 #### text
 
