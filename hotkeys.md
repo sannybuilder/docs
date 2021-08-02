@@ -130,9 +130,9 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Arrow Up</code>
+        <p><code>Ctrl+Up</code>
         </p>
-        <p><code>Ctrl+Arrow Down</code>
+        <p><code>Ctrl+Down</code>
         </p>
       </td>
       <td style="text-align:left">scroll the page one line up / down</td>
@@ -164,13 +164,13 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left">go to the line</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Arrow Right</code>
+      <td style="text-align:left"><code>Alt+Right*</code>
       </td>
       <td style="text-align:left"><a href="features.md#instasearch">navigate </a>to the label under the
         cursor</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Arrow Left</code>
+      <td style="text-align:left"><code>Alt+Left*</code>
       </td>
       <td style="text-align:left">navigate back to the previous position (where <code>Ctrl+Arrow Right </code>was
         called)</td>
