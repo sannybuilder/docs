@@ -2,7 +2,7 @@
 
 Theme Editor is a new built-in tool that replaces syntax highlighting options. It can be launched from the [Editor](editor.md#color-theme) tab.
 
-![](../.gitbook/assets/sb-theme-editor.png)
+![](../.gitbook/assets/theme-editor-en.png)
 
 Theme configuration includes colors and style for interface and code elements.
 

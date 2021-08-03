@@ -26,7 +26,6 @@
   * [General](options/general.md)
   * [Formats](options/formats.md)
   * [Editor](options/editor.md)
-  * [Syntax Highlighting](options/syntax-highlighting.md)
   * [Theme Editor](options/theme-editor.md)
   * [Hotkeys](options/hotkeys.md)
 * [Features](features.md)

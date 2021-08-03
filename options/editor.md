@@ -2,7 +2,7 @@
 
 Here you can change the IDE settings.
 
-![](../.gitbook/assets/sb-editor-options%20%281%29.png)
+![](../.gitbook/assets/options-editor-en.png)
 
 ## Color Theme
 
