@@ -1,6 +1,6 @@
 # Hotkeys
 
-Sanny Builder supports many common shortcuts for the file and text operations `(Ctrl+N`, `Ctrl+Z`, etc\) as well as some custom ones.  Hotkeys marked with `*` are [customizable](options/hotkeys.md).
+Sanny Builder supports many common shortcuts for the file and text operations \(`Ctrl+N`, `Ctrl+Z`, etc\) as well as some custom ones.  Hotkeys marked with `*` are [customizable](options/hotkeys.md).
 
 <table>
   <thead>
@@ -16,24 +16,20 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F5*</code>
-      </td>
+      <td style="text-align:left"><code>F5</code>*</td>
       <td style="text-align:left">open a file as a script and disassemble</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F6*</code>
-      </td>
+      <td style="text-align:left"><code>F6</code>*</td>
       <td style="text-align:left">compile the editor content to a script file</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F7*</code>
-      </td>
+      <td style="text-align:left"><code>F7</code>*</td>
       <td style="text-align:left">compile the editor content to a script file and copy it to the game&apos;s
         scripts directory</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F8*</code>
-      </td>
+      <td style="text-align:left"><code>F8</code>*</td>
       <td style="text-align:left">run the game for the current <a href="edit-modes/">edit mode</a>
       </td>
     </tr>
@@ -53,26 +49,26 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>TAB</code>, <code>Shift+TAB</code>
+      <td style="text-align:left"><code>TAB</code>, <code>Shift</code>+<code>TAB</code>
       </td>
       <td style="text-align:left">indent the selected text to the left / right (tab)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Alt+A</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>A</code>
         </p>
-        <p><code>Ctrl+Alt+D</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>D</code>
         </p>
       </td>
       <td style="text-align:left">indent the selected text to the left / right (by one character)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Alt+B</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>B</code>
         </p>
-        <p><code>Ctrl+Alt+N</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>N</code>
         </p>
-        <p><code>Ctrl+Alt+M</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>M</code>
         </p>
       </td>
       <td style="text-align:left">toggle different modes of the text selection: Normal, Columnar (same as
@@ -80,41 +76,40 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Shift+U</code>
+        <p><code>Ctrl</code>+<code>Shift</code>+<code>U</code>
         </p>
-        <p><code>Ctrl+Shift+L</code>
+        <p><code>Ctrl</code>+<code>Shift</code>+<code>L</code>
         </p>
       </td>
       <td style="text-align:left">convert the word to uppercase / lowercase</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Plus(+)</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>+</code>
       </td>
       <td style="text-align:left">increase the text size (zoom in)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Minus(-)</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>-</code>
       </td>
       <td style="text-align:left">decrease the text size (zoom out)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+T</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>T</code>
       </td>
       <td style="text-align:left">delete the word under the cursor</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Y</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Y</code>
       </td>
       <td style="text-align:left">delete the line</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+Y</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>Y</code>
       </td>
       <td style="text-align:left">clear the line</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Q*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
       <td style="text-align:left"><a href="features.md#commenting-code">comment / uncomment</a> line</td>
     </tr>
     <tr>
@@ -123,60 +118,49 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+B</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>B</code>
       </td>
       <td style="text-align:left">jump between brackets: <code>{}</code>, <code>()</code>, <code>&lt;&gt;</code>, <code>[]</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl+Up</code>
-        </p>
-        <p><code>Ctrl+Down</code>
-        </p>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Up/Down</code>
       </td>
       <td style="text-align:left">scroll the page one line up / down</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl+ScrollUp</code> 
-        </p>
-        <p><code>Ctrl+ScrollDown</code>
-        </p>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Mouse Wheel Up/Down</code> 
       </td>
       <td style="text-align:left">page up / down</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+0..9</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>0..9</code>
       </td>
       <td style="text-align:left">toggle a <a href="features.md#bookmarks-quick-jump">bookmark</a> on the
         line</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+0..9</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>0..9</code>
       </td>
       <td style="text-align:left">navigate to line with the <a href="features.md#bookmarks-quick-jump">bookmark</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+G*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>G</code>*</td>
       <td style="text-align:left">go to the line</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Alt+Right*</code>
-      </td>
+      <td style="text-align:left"><code>Alt</code>+<code>Right</code>*</td>
       <td style="text-align:left"><a href="features.md#instasearch">navigate </a>to the symbol under the
         cursor (a label, mission or function)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Alt+Left*</code>
-      </td>
+      <td style="text-align:left"><code>Alt</code>+<code>Left</code>*</td>
       <td style="text-align:left">navigate back to the previous position (where <code>Navigate to Symbol</code> was
         called)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Enter</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Enter</code>
       </td>
       <td style="text-align:left">open the file which name is under the cursor (see also <a href="coding/directives.md#usdinclude">relative path priorities</a>)</td>
     </tr>
@@ -186,25 +170,23 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Space</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Space</code>
       </td>
       <td style="text-align:left">show the list of classes / class members / models / labels / variables
         / missions</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+Space</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>Space</code>
       </td>
       <td style="text-align:left">show the list of parameters for the current class command</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+C*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>C</code>*</td>
       <td style="text-align:left">insert the <a href="features.md#player-coordinates-management">player&apos;s coordinates</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+E*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>E</code>*</td>
       <td style="text-align:left">insert the <a href="features.md#player-coordinates-management">player&apos;s z_angle</a>
       </td>
     </tr>
@@ -214,7 +196,7 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left">find an opcode with the word under the cursor (with ignoring of <code>_</code> and <code>.</code>)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+F1</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>F1</code>
       </td>
       <td style="text-align:left">find an opcode with the word under the cursor (without ignoring of <code>_</code> and <code>.</code>)</td>
     </tr>
@@ -225,32 +207,30 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
         the same name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+J</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>J</code>
       </td>
       <td style="text-align:left">show the list of <a href="edit-modes/code-templates.md">code templates</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+M</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>M</code>
       </td>
       <td style="text-align:left">start/stop recording of a <a href="features.md#keypress-recording-macro">macro </a>(keystroke
         pressings sequence)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+P</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>P</code>
       </td>
       <td style="text-align:left">replay <a href="features.md#keypress-recording-macro">macro</a>/pause while
         processing</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+H*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>H</code>*</td>
       <td style="text-align:left">convert the number under the cursor from decimal to hexadecimal and vice
         versa</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Alt+H*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Alt</code>+<code>H</code>*</td>
       <td style="text-align:left">convert the model name under the cursor to its numeric ID and vice versa</td>
     </tr>
     <tr>
@@ -259,13 +239,13 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+~</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>~</code>
       </td>
       <td style="text-align:left">open <a href="console.md">console</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Alt+S</code>
+      <td style="text-align:left"><code>Alt</code>+<code>S</code>
       </td>
       <td style="text-align:left">(when the list of models is active) re-sort the list</td>
     </tr>
