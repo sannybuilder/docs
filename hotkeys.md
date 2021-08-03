@@ -16,23 +16,23 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F5</code>
+      <td style="text-align:left"><code>F5*</code>
       </td>
       <td style="text-align:left">open a file as a script and disassemble</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F6</code>
+      <td style="text-align:left"><code>F6*</code>
       </td>
       <td style="text-align:left">compile the editor content to a script file</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F7</code>
+      <td style="text-align:left"><code>F7*</code>
       </td>
       <td style="text-align:left">compile the editor content to a script file and copy it to the game&apos;s
         scripts directory</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F8</code>
+      <td style="text-align:left"><code>F8*</code>
       </td>
       <td style="text-align:left">run the game for the current <a href="edit-modes/">edit mode</a>
       </td>
@@ -166,13 +166,13 @@ Sanny Builder supports many common shortcuts for the file and text operations `(
     <tr>
       <td style="text-align:left"><code>Alt+Right*</code>
       </td>
-      <td style="text-align:left"><a href="features.md#instasearch">navigate </a>to the label under the
-        cursor</td>
+      <td style="text-align:left"><a href="features.md#instasearch">navigate </a>to the symbol under the
+        cursor (a label, mission or function)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Alt+Left*</code>
       </td>
-      <td style="text-align:left">navigate back to the previous position (where <code>Ctrl+Arrow Right </code>was
+      <td style="text-align:left">navigate back to the previous position (where <code>Navigate to Symbol</code> was
         called)</td>
     </tr>
     <tr>
