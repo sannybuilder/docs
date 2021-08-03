@@ -17,38 +17,34 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F5</code>
-      </td>
+      <td style="text-align:left"><code>F5</code>*</td>
       <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x444;&#x430;&#x439;&#x43B;
         &#x43A;&#x430;&#x43A; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442; &#x438;
         &#x434;&#x438;&#x437;&#x430;&#x441;&#x441;&#x435;&#x43C;&#x431;&#x43B;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         &#x435;&#x433;&#x43E;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F6</code>
-      </td>
+      <td style="text-align:left"><code>F6</code>*</td>
       <td style="text-align:left">&#x441;&#x43A;&#x43E;&#x43C;&#x43F;&#x438;&#x43B;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         &#x442;&#x435;&#x43A;&#x441;&#x442; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;
         &#x432; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432;&#x44B;&#x439;
         &#x444;&#x430;&#x439;&#x43B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F7</code>
-      </td>
+      <td style="text-align:left"><code>F7</code>*</td>
       <td style="text-align:left">&#x441;&#x43A;&#x43E;&#x43C;&#x43F;&#x438;&#x43B;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         &#x442;&#x435;&#x43A;&#x441;&#x442; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;
         &#x432; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432;&#x44B;&#x439;
-        &#x444;&#x430;&#x439;&#x43B; &#x438; &#x441;&#x43A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x432;&#x448;&#x438;&#x439;&#x441;&#x44F;
-        &#x444;&#x430;&#x439;&#x43B; &#x432; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44E;
+        &#x444;&#x430;&#x439;&#x43B;, &#x430; &#x437;&#x430;&#x442;&#x435;&#x43C;
+        &#x441;&#x43A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
+        &#x435;&#x433;&#x43E; &#x432; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44E;
         &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432; &#x434;&#x43B;&#x44F;
         <a
         href="options/general.md#direktoriya-igry">&#x432;&#x44B;&#x431;&#x440;&#x430;&#x43D;&#x43D;&#x43E;&#x439; &#x438;&#x433;&#x440;&#x44B;</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>F8</code>
-      </td>
+      <td style="text-align:left"><code>F8</code>*</td>
       <td style="text-align:left">&#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x438;&#x433;&#x440;&#x443;
         &#x434;&#x43B;&#x44F; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x433;&#x43E;
         <a
@@ -72,7 +68,7 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>TAB</code>, <code>Shift+TAB</code>
+      <td style="text-align:left"><code>TAB</code>, <code>Shift</code>+<code>TAB</code>
       </td>
       <td style="text-align:left">&#x434;&#x432;&#x438;&#x433;&#x430;&#x442;&#x44C; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x44B;&#x439;
         &#x431;&#x43B;&#x43E;&#x43A; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;
@@ -80,9 +76,9 @@ Sanny Builder поддерживает стандартные сочетания
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Alt+A</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>A</code>
         </p>
-        <p><code>Ctrl+Alt+D</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>D</code>
         </p>
       </td>
       <td style="text-align:left">&#x434;&#x432;&#x438;&#x433;&#x430;&#x442;&#x44C; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x44B;&#x439;
@@ -92,11 +88,11 @@ Sanny Builder поддерживает стандартные сочетания
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Alt+B</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>B</code>
         </p>
-        <p><code>Ctrl+Alt+N</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>N</code>
         </p>
-        <p><code>Ctrl+Alt+M</code>
+        <p><code>Ctrl</code>+<code>Alt</code>+<code>M</code>
         </p>
       </td>
       <td style="text-align:left">&#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x44B;&#x435; &#x440;&#x435;&#x436;&#x438;&#x43C;&#x44B;
@@ -108,9 +104,9 @@ Sanny Builder поддерживает стандартные сочетания
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+Shift+U</code>
+        <p><code>Ctrl</code>+<code>Shift</code>+<code>U</code>
         </p>
-        <p><code>Ctrl+Shift+L</code>
+        <p><code>Ctrl</code>+<code>Shift</code>+<code>L</code>
         </p>
       </td>
       <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x432;&#x43E;&#x434; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x43E;&#x433;&#x43E;
@@ -118,35 +114,34 @@ Sanny Builder поддерживает стандартные сочетания
         &#x440;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+ +</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>+</code>
       </td>
       <td style="text-align:left">&#x443;&#x432;&#x435;&#x43B;&#x438;&#x447;&#x438;&#x442;&#x44C; &#x440;&#x430;&#x437;&#x43C;&#x435;&#x440;
         &#x448;&#x440;&#x438;&#x444;&#x442;&#x430; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+ -</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>-</code>
       </td>
       <td style="text-align:left">&#x443;&#x43C;&#x435;&#x43D;&#x44C;&#x448;&#x438;&#x442;&#x44C; &#x440;&#x430;&#x437;&#x43C;&#x435;&#x440;
         &#x448;&#x440;&#x438;&#x444;&#x442;&#x430; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+T</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>T</code>
       </td>
       <td style="text-align:left">&#x443;&#x434;&#x430;&#x43B;&#x438;&#x442;&#x44C; &#x441;&#x43B;&#x43E;&#x432;&#x43E;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Y</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Y</code>
       </td>
       <td style="text-align:left">&#x443;&#x434;&#x430;&#x43B;&#x438;&#x442;&#x44C; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+Y</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>Y</code>
       </td>
       <td style="text-align:left">&#x43E;&#x447;&#x438;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Q*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
       <td style="text-align:left"><a href="features.md#kommentirovanie-koda">&#x437;&#x430;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; / &#x440;&#x430;&#x441;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;</a> &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
     </tr>
     <tr>
@@ -155,7 +150,7 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+B</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>B</code>
       </td>
       <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x435;
         &#x43C;&#x435;&#x436;&#x434;&#x443; &#x441;&#x43A;&#x43E;&#x431;&#x43A;&#x430;&#x43C;&#x438;: <code>{}</code>, <code>()</code>, <code>&lt;&gt;</code>, <code>[]</code>
@@ -163,9 +158,9 @@ Sanny Builder поддерживает стандартные сочетания
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>Ctrl+&#x412;&#x432;&#x435;&#x440;&#x445;</code>
+        <p><code>Ctrl</code>+<code>&#x412;&#x432;&#x435;&#x440;&#x445;</code>
         </p>
-        <p><code>Ctrl+&#x412;&#x43D;&#x438;&#x437;</code>
+        <p><code>Ctrl</code>+<code>&#x412;&#x43D;&#x438;&#x437;</code>
         </p>
       </td>
       <td style="text-align:left">&#x43F;&#x440;&#x43E;&#x43A;&#x440;&#x443;&#x442;&#x438;&#x442;&#x44C;
@@ -174,48 +169,48 @@ Sanny Builder поддерживает стандартные сочетания
         &#x432;&#x432;&#x435;&#x440;&#x445;/&#x432;&#x43D;&#x438;&#x437;</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl+ScrollUp</code> 
-        </p>
-        <p><code>Ctrl+ScrollDown</code>
-        </p>
+      <td style="text-align:left"><code>Ctrl</code>+<code>&#x43A;&#x43E;&#x43B;&#x435;&#x441;&#x43E; &#x43C;&#x44B;&#x448;&#x438; &#x432;&#x432;&#x435;&#x440;&#x445;/&#x432;&#x43D;&#x438;&#x437;</code> 
       </td>
       <td style="text-align:left">&#x441;&#x442;&#x440;&#x430;&#x43D;&#x438;&#x446;&#x430; &#x432;&#x432;&#x435;&#x440;&#x445;/&#x432;&#x43D;&#x438;&#x437;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+0..9</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>0..9</code>
       </td>
       <td style="text-align:left">&#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#bystryi-perekhod-po-tekstu">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x443;</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+0..9</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>0..9</code>
       </td>
       <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x439;&#x442;&#x438; &#x43D;&#x430; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;
         &#x441; <a href="features.md#bystryi-perekhod-po-tekstu">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x43E;&#x439;</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+G*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>G</code>*</td>
       <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434; &#x43A; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x435;
         &#x441; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x43E;&#x43C;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Alt+&#x412;&#x43F;&#x440;&#x430;&#x432;&#x43E;*</code>
-      </td>
-      <td style="text-align:left"><a href="features.md#momentalnyi-poisk">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434;</a> &#x43A;
-        &#x43C;&#x435;&#x442;&#x43A;&#x435; &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;</td>
+      <td style="text-align:left"><code>Alt</code>+<code>&#x412;&#x43F;&#x440;&#x430;&#x432;&#x43E;</code>*</td>
+      <td
+      style="text-align:left"><a href="features.md#momentalnyi-poisk">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434;</a> &#x43A;
+        &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;
+        &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;
+        (&#x43C;&#x435;&#x442;&#x43A;&#x430;, &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43E;
+        &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438; &#x438;&#x43B;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Alt+&#x412;&#x43B;&#x435;&#x432;&#x43E;*</code>
-      </td>
-      <td style="text-align:left"><a href="features.md#momentalnyi-poisk">&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C;</a> &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;
+      <td style="text-align:left"><code>Alt</code>+<code>&#x412;&#x43B;&#x435;&#x432;&#x43E;</code>*</td>
+      <td
+      style="text-align:left"><a href="features.md#momentalnyi-poisk">&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C;</a> &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;
         &#x43D;&#x430; &#x43F;&#x440;&#x435;&#x434;&#x44B;&#x434;&#x443;&#x449;&#x443;&#x44E;
-        &#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44E;</td>
+        &#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44E; (&#x43E;&#x442;&#x43A;&#x443;&#x434;&#x430;
+        &#x431;&#x44B;&#x43B; &#x432;&#x44B;&#x437;&#x432;&#x430;&#x43D; &#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434;
+        &#x43A; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Enter</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Enter</code>
       </td>
       <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x444;&#x430;&#x439;&#x43B;
         &#x43F;&#x43E; &#x438;&#x43C;&#x435;&#x43D;&#x438; &#x43F;&#x43E;&#x434;
@@ -229,7 +224,7 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+&#x43F;&#x440;&#x43E;&#x431;&#x435;&#x43B;</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>&#x43F;&#x440;&#x43E;&#x431;&#x435;&#x43B;</code>
       </td>
       <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;
         &#x43A;&#x43B;&#x430;&#x441;&#x441;&#x43E;&#x432; / &#x441;&#x432;&#x43E;&#x439;&#x441;&#x442;&#x432;
@@ -238,21 +233,19 @@ Sanny Builder поддерживает стандартные сочетания
         / &#x43C;&#x438;&#x441;&#x441;&#x438;&#x439;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+Space</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>&#x43F;&#x440;&#x43E;&#x431;&#x435;&#x43B;</code>
       </td>
       <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x443;
         &#x434;&#x43B;&#x44F; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x439;
         &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B; &#x43A;&#x43B;&#x430;&#x441;&#x441;&#x430;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+C*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>C</code>*</td>
       <td style="text-align:left">&#x432;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#izmenenie-koordinat-i-ugla-razvorota-igroka">&#x442;&#x435;&#x43A;&#x443;&#x449;&#x438;&#x435; &#x43A;&#x43E;&#x43E;&#x440;&#x434;&#x438;&#x43D;&#x430;&#x442;&#x44B; &#x438;&#x433;&#x440;&#x43E;&#x43A;&#x430;</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Shift+E*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>E</code>*</td>
       <td style="text-align:left">&#x432;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#izmenenie-koordinat-i-ugla-razvorota-igroka">&#x442;&#x435;&#x43A;&#x443;&#x449;&#x438;&#x439; &#x443;&#x433;&#x43E;&#x43B; &#x43F;&#x43E;&#x432;&#x43E;&#x440;&#x43E;&#x442;&#x430; &#x438;&#x433;&#x440;&#x43E;&#x43A;&#x430;</a>
       </td>
     </tr>
@@ -265,7 +258,7 @@ Sanny Builder поддерживает стандартные сочетания
         &#x443;&#x447;&#x435;&#x442;&#x430; <code>_</code> &#x438; <code>.</code>)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+F1</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>F1</code>
       </td>
       <td style="text-align:left">&#x438;&#x441;&#x43A;&#x430;&#x442;&#x44C; &#x43E;&#x43F;&#x43A;&#x43E;&#x434;
         &#x441;&#x43E; &#x441;&#x43B;&#x43E;&#x432;&#x43E;&#x43C; &#x43F;&#x43E;&#x434;
@@ -280,20 +273,20 @@ Sanny Builder поддерживает стандартные сочетания
         &#x442;&#x430;&#x43A;&#x438;&#x43C; &#x43D;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x438;&#x435;&#x43C;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+J</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>J</code>
       </td>
       <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;
         &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x44B;&#x445; <a href="edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432; &#x43A;&#x43E;&#x434;&#x430;</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+M</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>M</code>
       </td>
       <td style="text-align:left">&#x437;&#x430;&#x43F;&#x438;&#x441;&#x44C; <a href="features.md#zapis-i-vosproizvedenie-nazhatii-knopok">&#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x43D;&#x430;&#x436;&#x430;&#x442;&#x438;&#x44F; &#x43A;&#x43B;&#x430;&#x432;&#x438;&#x448;</a> /
         &#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x430; &#x437;&#x430;&#x43F;&#x438;&#x441;&#x438;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+P</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>P</code>
       </td>
       <td style="text-align:left">&#x432;&#x43E;&#x441;&#x43F;&#x440;&#x43E;&#x438;&#x437;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435;
         &#x437;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x43D;&#x43E;&#x439;
@@ -303,8 +296,7 @@ Sanny Builder поддерживает стандартные сочетания
           &#x437;&#x430;&#x43F;&#x438;&#x441;&#x438;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+H*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>H</code>*</td>
       <td style="text-align:left">&#x43A;&#x43E;&#x43D;&#x432;&#x435;&#x440;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         &#x447;&#x438;&#x441;&#x43B;&#x43E; &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;
         &#x438;&#x437; 10-&#x447;&#x43D;&#x43E;&#x439; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;
@@ -312,8 +304,7 @@ Sanny Builder поддерживает стандартные сочетания
         16-&#x447;&#x43D;&#x443;&#x44E; &#x438; &#x43D;&#x430;&#x43E;&#x431;&#x43E;&#x440;&#x43E;&#x442;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+Alt+H*</code>
-      </td>
+      <td style="text-align:left"><code>Ctrl</code>+<code>Alt</code>+<code>H</code>*</td>
       <td style="text-align:left">&#x43A;&#x43E;&#x43D;&#x432;&#x435;&#x440;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         <a
         href="coding/data-types.md#imena-modelei">&#x438;&#x43C;&#x44F; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438;</a>&#x43F;&#x43E;&#x434;
@@ -326,13 +317,13 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Ctrl+~</code>
+      <td style="text-align:left"><code>Ctrl</code>+<code>~</code>
       </td>
       <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; <a href="console.md">&#x43A;&#x43E;&#x43D;&#x441;&#x43E;&#x43B;&#x44C;</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>Alt+S</code>
+      <td style="text-align:left"><code>Alt</code>+<code>S</code>
       </td>
       <td style="text-align:left">(&#x43A;&#x43E;&#x433;&#x434;&#x430; &#x430;&#x43A;&#x442;&#x438;&#x432;&#x435;&#x43D;
         &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x435;&#x439;)
