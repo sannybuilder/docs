@@ -22,13 +22,13 @@
 
 ---
 
+* [Features](features.md)
 * [Options](options/README.md)
   * [General](options/general.md)
   * [Formats](options/formats.md)
   * [Editor](options/editor.md)
   * [Theme Editor](options/theme-editor.md)
   * [Hotkeys](options/hotkeys.md)
-* [Features](features.md)
 * [Edit Modes](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Code Templates](edit-modes/code-templates.md)

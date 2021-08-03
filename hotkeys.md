@@ -156,7 +156,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     </tr>
     <tr>
       <td style="text-align:left"><code>Alt</code>+<code>Left</code>*</td>
-      <td style="text-align:left">navigate back to the previous position (where <code>Navigate to Symbol</code> was
+      <td style="text-align:left">navigate back to the previous position (where <a href="features.md#navigate-to-symbol">Navigate to Symbol</a> was
         called)</td>
     </tr>
     <tr>
