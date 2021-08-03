@@ -2,11 +2,11 @@
 
 На данной вкладке вы можете изменить настройки IDE.
 
-![](../.gitbook/assets/editor-ru.png)
+![](../.gitbook/assets/options-editor-ru.png)
 
 ## Тема оформления
 
-![](../.gitbook/assets/sb-options-color-theme.png)
+![](../.gitbook/assets/options-theme-select-ru.png)
 
 Здесь вы можете выбрать одну из готовых тем оформления, изменяющих внешний вид программы и правила подсветки синтаксиса. Кнопка Изменить запускает [Редактор тем](theme-editor.md).
 
@@ -26,7 +26,7 @@
 
 ## Настройки
 
-![](../.gitbook/assets/editor-settings-ru.png)
+![](../.gitbook/assets/options-editor-settings.ru.png)
 
 `Показывать главную панель` – показать/спрятать панель с кнопками в главном окне редактора  
 `Показывать информацию об опкодах` – отображать [различную информацию](../features.md#pokaz-razlichnoi-informacii-o-tekushem-opkode) в статусной строке внизу экрана   

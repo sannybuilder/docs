@@ -29,7 +29,7 @@ end // for
 
 Можно сохранить новый шаблон прямо из редактора. Для этого нужно выделить нужный кусок текста и выбрать меню `Сервис->Добавить шаблон`. 
 
-![](https://gblobscdn.gitbook.com/assets%2F-M0dALM7uq5_eDYhSBjl%2F-MDlJbjXApE45Y1MQjl-%2F-MDlMQiTlVgy3xpUEGxS%2Fide-add-template-en.png?alt=media&token=5e620275-5cf8-4026-acec-8f364dbbde09)
+![](../.gitbook/assets/add-templates-ru.png)
 
 Введите имя шаблона, описание \(необязательно\), выберите тип шаблона и нажмите кнопку `OK`. Новый шаблон будет сразу же готов к использованию.
 

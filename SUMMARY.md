@@ -28,7 +28,6 @@
   * [Форматирование](options/formats.md)
   * [Редактор](options/editor.md)
   * [Редактор тем оформления](options/theme-editor.md)
-  * [Подсветка синтаксиса](options/syntax-highlighting.md)
   * [Горячие клавиши](options/hotkeys.md)
 * [Режимы редактирования](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
