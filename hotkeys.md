@@ -176,14 +176,14 @@ Sanny Builder поддерживает стандартные сочетания
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>0..9</code>
       </td>
-      <td style="text-align:left">&#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#bystryi-perekhod-po-tekstu">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x443;</a>
+      <td style="text-align:left">&#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#bookmarks-quick-jump">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x443;</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>0..9</code>
       </td>
       <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x439;&#x442;&#x438; &#x43D;&#x430; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;
-        &#x441; <a href="features.md#bystryi-perekhod-po-tekstu">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x43E;&#x439;</a>
+        &#x441; <a href="features.md#bookmarks-quick-jump">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x43E;&#x439;</a>
       </td>
     </tr>
     <tr>
@@ -194,20 +194,18 @@ Sanny Builder поддерживает стандартные сочетания
     <tr>
       <td style="text-align:left"><code>Alt</code>+<code>&#x412;&#x43F;&#x440;&#x430;&#x432;&#x43E;</code>*</td>
       <td
-      style="text-align:left"><a href="features.md#momentalnyi-poisk">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434;</a> &#x43A;
-        &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;
-        &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;
-        (&#x43C;&#x435;&#x442;&#x43A;&#x430;, &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43E;
-        &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438; &#x438;&#x43B;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;)</td>
+      style="text-align:left"><a href="features.md#navigate-to-symbol">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434; &#x43A; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;</a> &#x43F;&#x43E;&#x434;
+        &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; (&#x43C;&#x435;&#x442;&#x43A;&#x430;,
+        &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43E; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438;
+        &#x438;&#x43B;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Alt</code>+<code>&#x412;&#x43B;&#x435;&#x432;&#x43E;</code>*</td>
       <td
-      style="text-align:left"><a href="features.md#momentalnyi-poisk">&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C;</a> &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;
+      style="text-align:left">&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;
         &#x43D;&#x430; &#x43F;&#x440;&#x435;&#x434;&#x44B;&#x434;&#x443;&#x449;&#x443;&#x44E;
         &#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44E; (&#x43E;&#x442;&#x43A;&#x443;&#x434;&#x430;
-        &#x431;&#x44B;&#x43B; &#x432;&#x44B;&#x437;&#x432;&#x430;&#x43D; &#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434;
-        &#x43A; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;)</td>
+        &#x431;&#x44B;&#x43B; &#x432;&#x44B;&#x437;&#x432;&#x430;&#x43D; <a href="features.md#navigate-to-symbol">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434; &#x43A; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Enter</code>
