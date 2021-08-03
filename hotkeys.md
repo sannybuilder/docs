@@ -151,7 +151,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     </tr>
     <tr>
       <td style="text-align:left"><code>Alt</code>+<code>Right</code>*</td>
-      <td style="text-align:left"><a href="features.md#instasearch">navigate </a>to the symbol under the
+      <td style="text-align:left"><a href="features.md#navigate-to-symbol">navigate to symbol</a> under the
         cursor (a label, mission or function)</td>
     </tr>
     <tr>
@@ -162,7 +162,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Enter</code>
       </td>
-      <td style="text-align:left">open the file which name is under the cursor (see also <a href="coding/directives.md#usdinclude">relative path priorities</a>)</td>
+      <td style="text-align:left">open a file which name is under the cursor (see also <a href="coding/directives.md#usdinclude">relative path priorities</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Code</b>

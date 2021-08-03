@@ -18,17 +18,17 @@ You can bookmark a line by pressing `Ctrl+Shift+0..9` and then get back to it by
 
 Alternatively you can go to a particular line using the `Go To Line` feature. Press `Ctrl+G`, enter the line number and the editor will move the cursor to it.
 
-## InstaSearch
+## Navigate to Symbol
 
-The InstaSearch feature allows to find a word or a label directly in the editor without using the `Find` dialog box.
+The IDE allows to quickly navigate to some points of interest in the code without using the `Find` dialog box.
 
-To find an occurrence of the word under the cursor, press `Ctrl+Num6` to start searching it below in a code, or `Ctrl+Num4` to search above. The cursor will immediately move to the line where such word is found. Keep pressing `Ctrl+Num4/Num6` to find other occurrences of this word.
+To go to the line marked with a label \(e.g, `:MyLabel`\), put the cursor on the label reference \(`@MyLabel`\) and press `Alt+Right`. If the label exists, the cursor position will change.
 
-To jump to the line with a label \(e.g, `:MyLabel`\), put the cursor on the label reference \(`@MyLabel`\) and press `Ctrl+Num2`. The editor will move the cursor to the line with this label.
+Similarly, to navigate to the start of a function or mission, use `Alt+Right` on the function or mission name.
 
-If InstaSearch did not find the word in the code, the cursor position remains unchanged.
+To return back to the previous position, press `Alt+Left`. Keep pressing if you had more than one navigation.
 
-Before changing the cursor position InstaSearch remembers it, so if you want to return back press `Ctrl+Num8`.
+These shortcuts can be redefined in the [options](options/hotkeys.md).
 
 ## Displaying Information about Opcode
 
@@ -102,7 +102,7 @@ There is also the [Replace Mission Numbers](options/general.md#replace-mission-n
 
 To call the mission names list, press `Ctrl+Space`. The cursor has to be directly after the `start_mission` command.
 
-Additionally, you can use [InstaSearch](features.md#instasearch) to navigate to the mission code when the cursor is under the mission name.
+Additionally, you can use [navigate](features.md#navigate-to-symbol) to the mission code when the cursor is under the mission name.
 
 ## Custom Mission Titles
 
