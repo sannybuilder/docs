@@ -10,7 +10,7 @@ Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Ha
 
 ## Авторы переводов
 
-Y\_Less, tomworld10, -Shadow-Link, Mordecki, Silent, WordsBG, FunGt, Wesser, Mobster, Jost\_Vice, Thomazu, Balint, Ridvan and Tuna \(RT\), MatiDragon, Mega GTAшnik, SHooZ, Yi Yangyijk, VCT team, Alex5526, Marek Simsa, Syping/Hulkkiller, IMasterFX, MINE
+Y\_Less, tomworld10, -Shadow-Link, Mordecki, Silent, WordsBG, FunGt, Wesser, Mobster, Jost\_Vice, Thomazu, Balint, Ridvan and Tuna \(RT\), MatiDragon, Mega GTAшnik, SHooZ, Yi Yangyijk, VCT team, Alex5526, Marek Simsa, Syping/Hulkkiller, IMasterFX, MINE, MatiDragon, wmysterio, forms55, XMDS.
 
 ## Программы и компоненты
 
