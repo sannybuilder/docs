@@ -155,6 +155,10 @@ path to [`CustomVariables.ini`](../coding/variables.md)
 
 path to [`opcodes.txt`](../opcode-search-tool.md)
 
+#### `library`
+
+path to a JSON file generated in [Sanny Builder Library](../features.md#integration-with-sanny-builder-library) with documentation on the scripting commands used in the target [game](./#game).
+
 ### Built-in Variables
 
 Sanny provides a few variables that can be used in parameters and attributes \(if applicable\).

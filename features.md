@@ -2,6 +2,20 @@
 
 Sanny Builder provides the end-user the following features:
 
+## Integration with Sanny Builder Library
+
+Sanny Builder Library is a community-driven portal aiming to document all known scripting commands used in GTA III, Vice City and San Andreas. You can find it here: [https://library.sannybuilder.com/](https://library.sannybuilder.com/)
+
+Starting with v3.8.0 Sanny Builder uses library's files to provide brief descriptions to all opcodes directly in the IDE complimentary to the [Show opcode info](features.md#displaying-information-about-opcode) feature. Those files are controlled with the new `<library>` parameter in the edit mode configuration.
+
+Double-clicking the opcode description in the status bar opens the library's page with this opcode's full description in the browser.
+
+If the current edit mode uses the library documentation there is a text in the status bar telling the version of the documentation, e.g. `SBL v0.119`. The version may vary from mode to mode.
+
+![](.gitbook/assets/sbl-update-popup-en.png)
+
+Clicking the library version text in the status bar brings up a popup menu from which you can check if there are newer versions and download them. If you enable `Automatic updates` option Sanny Builder will check the updates and download them on startup.
+
 ## Color Themes
 
 Sanny Builder's look and feel can be customized with themes. They define colors and style of the interface and code elements for easier reading. The active color theme can be changed in the [options](options/editor.md#color-theme). 
