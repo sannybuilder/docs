@@ -142,7 +142,7 @@ Sanny Builder поддерживает стандартные сочетания
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
-      <td style="text-align:left"><a href="features.md#kommentirovanie-koda">&#x437;&#x430;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; / &#x440;&#x430;&#x441;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;</a> &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
+      <td style="text-align:left"><a href="coding/comments.md">&#x437;&#x430;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; / &#x440;&#x430;&#x441;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;</a> &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>&#x41D;&#x430;&#x432;&#x438;&#x433;&#x430;&#x446;&#x438;&#x44F;</b>

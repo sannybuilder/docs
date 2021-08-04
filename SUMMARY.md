@@ -17,6 +17,7 @@
 * [Дополнительные команды](coding/built-in-commands.md)
 * [HEX..END](coding/hex..end.md)
 * [Директивы](coding/directives.md)
+* [Комментарии](coding/comments.md)
 
 ## Редактор <a id="editor"></a>
 
