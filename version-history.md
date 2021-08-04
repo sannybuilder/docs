@@ -1,5 +1,22 @@
 # Version History
 
+## v. 3.8.0 - 04.08.2021
+
+* [integration with Sanny Builder Library](features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
+* 16 [new color themes](https://github.com/sannybuilder/themes)
+* disassembler now outputs the content of a `hex..end` block as a string if it's a sequence of ASCII characters ending with 00 [\#33](https://github.com/sannybuilder/dev/issues/33)
+* [new debug option](console.md#skip_extra_info) to let disassembler ignore custom information attached to the compiled script
+* [new CLI parameter](cli.md#option) to launch the editor with custom options
+* [custom user templates](edit-modes/code-templates.md#adding-a-new-template) are now stored in a separate file and kept between updates
+* [hotkeys](hotkeys.md) using Numpad buttons have been changed \(Zoom text: Ctrl + +/- and Navigate to label and back: Alt + Right/Left\)
+* updated [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) plugin to v1.0.8
+* updated translations to Hungarian, Spanish, Ukrainian and Chinese languages
+* [fixed 16 bugs](https://github.com/sannybuilder/dev/issues/130#issue-805022048)
+
+👏 Kudos to contributors to this release: [forms55](https://github.com/forms55), [MatiDragon](https://github.com/MatiDragon-YT), [Vital](https://github.com/VitalRus95), [wmysterio](https://github.com/wmysterio), [XMDS](https://github.com/XMDS)
+
+[Complete list of changes](https://github.com/sannybuilder/dev/issues/130)
+
 ## v. 3.7.0 - 30.01.2021
 
 * declared [constants](coding/constants.md) are getting highlighted \([\#28](https://github.com/sannybuilder/dev/issues/28)\)
