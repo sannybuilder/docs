@@ -6,7 +6,7 @@ Sanny Builder provides the end-user the following features:
 
 Sanny Builder Library is a community-driven portal aiming to document all known scripting commands used in GTA III, Vice City and San Andreas. You can find it here: [https://library.sannybuilder.com/](https://library.sannybuilder.com/)
 
-Starting with v3.8.0 Sanny Builder uses library's files to provide brief descriptions to all opcodes directly in the IDE complimentary to the [Show opcode info](features.md#displaying-information-about-opcode) feature. Those files are controlled with the new `<library>` parameter in the edit mode configuration.
+Starting with v3.8.0 Sanny Builder uses library's files to provide brief descriptions to all opcodes directly in the IDE complimentary to the [Show opcode info](features.md#displaying-information-about-opcode) feature. Those files are controlled with the new `<library>` parameter in the [edit mode configuration](edit-modes/#library).
 
 Double-clicking the opcode description in the status bar opens the library's page with this opcode's full description in the browser.
 
