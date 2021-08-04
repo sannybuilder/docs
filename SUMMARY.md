@@ -17,6 +17,7 @@
 * [Built-in Commands](coding/built-in-commands.md)
 * [HEX..END](coding/hex..end.md)
 * [Directives](coding/directives.md)
+* [Comments](coding/comments.md)
 
 ## Editor
 

@@ -125,24 +125,6 @@ Parameters:
 --cwd=@sb: --game-dir=@game:
 ```
 
-## Commenting Code
-
-Comments start with the double slash `//`, as seen in other programming languages. Everything after `//` to the end of the line is ignored by the compiler.
-
-To comment out multiple lines or a part of the line, use block comments `{}`:
-
-```text
-0001: wait  {comments here} 0 ms
-```
-
-Since version 3.06 Sanny Builder also supports the C++-like comments `/* */`.
-
-```text
-0001: wait  /* comments here */ 0 ms
-```
-
-To comment out or uncomment multiple lines select them and press `Ctrl+Q` \(this hotkey is configurable in the [options](options/hotkeys.md)\).
-
 ## Checking for updates
 
 Sanny Builder is able to check if a new version is available. To use this feature go to menu `Help->Check for update...`. The editor will connect to a remote server and if a newer version is available it prompts the download and install. 

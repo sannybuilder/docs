@@ -110,7 +110,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
-      <td style="text-align:left"><a href="features.md#commenting-code">comment / uncomment</a> line</td>
+      <td style="text-align:left"><a href="coding/comments.md">comment / uncomment</a> the line</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Navigation</b>

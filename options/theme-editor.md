@@ -19,7 +19,7 @@ Available `style` elements are: **B** – bold, **I** – italic, **U** – unde
 
 ### Code elements
 
-* [Comments](../features.md#commenting-code) – a text after `//` or between `{}` or `/* */`
+* [Comments](../coding/comments.md) – a text after `//` or between `{}` or `/* */`
 * [Labels](../coding/data-types.md) – identifiers starting with `@`
 * [Variables](../coding/variables.md) – identifiers starting with `$` \(global variables\), or ending with `@` \(local variables\) Also the [aDMA](../coding/data-types.md) type \(starts with `&`\) and [arrays](../coding/arrays.md) are highlighted as variables.
 * [Keywords](../coding/keywords.md) – the special words stored in the file `keywords.ini` \(one for all [edit modes](../edit-modes/)\) and a file`keywords.txt` \(one per edit mode\)
