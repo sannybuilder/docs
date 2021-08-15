@@ -160,6 +160,17 @@ Sanny Builder включает в себя общие и популярные р
       <td
       style="text-align:left">Vice City</td>
     </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>Restoration</b>
+        </p>
+        <p><code>{$USE Restoration}</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://gtamods.com/wiki/Opcodes_Restoration_Project">Opcode Restoration Project</a>
+      </td>
+      <td style="text-align:left">Vice City</td>
+    </tr>
   </tbody>
 </table>
 
