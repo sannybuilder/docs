@@ -46,11 +46,14 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         <p>CLEO for GTA III
           <br />CLEO for Vice City</p>
         <p>CLEO 4.4</p>
+        <p>CLEO Android
       </td>
       <td style="text-align:left">
         <p>GTA III</p>
         <p>Vice City</p>
         <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
+        <p>SA Mobile</p>
+        <p>VC Mobile</p>
       </td>
     </tr>
     <tr>
@@ -142,16 +145,6 @@ Sanny Builder ships some common and recognized extensions for different edit mod
       </td>
       <td style="text-align:left">newOpcodes plugin</td>
       <td style="text-align:left">GTA SA v1.0, v2.0</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>vcmobile</b>
-        </p>
-        <p><code>{$USE vcmobile}</code>
-        </p>
-      </td>
-      <td style="text-align:left">Vice City on mobile devices</td>
-      <td style="text-align:left">Vice City</td>
     </tr>
     <tr>
       <td style="text-align:left">
