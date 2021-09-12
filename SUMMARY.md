@@ -30,17 +30,17 @@
   * [Редактор](options/editor.md)
   * [Редактор тем оформления](options/theme-editor.md)
   * [Горячие клавиши](options/hotkeys.md)
+* [Консоль](console.md)
+* [Горячие клавиши](hotkeys.md)
+* [Поиск опкодов](opcode-search-tool.md)
+* [Интерфейс командной строки](cli.md)
+* [Языковая служба](language-service.md)
 * [Режимы редактирования](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Enums.txt](edit-modes/enums.txt.md)
   * [Расширения](edit-modes/extensions.md)
   * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
   * [Шаблоны кода](edit-modes/code-templates.md)
-* [Консоль](console.md)
-* [Горячие клавиши](hotkeys.md)
-* [Поиск опкодов](opcode-search-tool.md)
-* [Интерфейс командной строки](cli.md)
-* [Языковая служба](language-service.md)
 
 ## Документация по SCM <a id="scm-documentation"></a>
 
