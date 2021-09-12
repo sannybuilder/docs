@@ -21,20 +21,21 @@
 
 ## Редактор <a id="editor"></a>
 
+* [Возможности](editor/features.md)
+* [Опции программы](editor/options/README.md)
+  * [Общие настройки](editor/options/general.md)
+  * [Форматирование](editor/options/formats.md)
+  * [Редактор](editor/options/editor.md)
+  * [Редактор тем оформления](editor/options/theme-editor.md)
+  * [Горячие клавиши](editor/options/hotkeys.md)
+* [Консоль](editor/console.md)
+* [Горячие клавиши](editor/hotkeys.md)
+* [Поиск опкодов](editor/opcode-search-tool.md)
+* [Интерфейс командной строки](editor/cli.md)
+* [Языковая служба](editor/language-service.md)
+
 ---
 
-* [Возможности](features.md)
-* [Опции программы](options/README.md)
-  * [Общие настройки](options/general.md)
-  * [Форматирование](options/formats.md)
-  * [Редактор](options/editor.md)
-  * [Редактор тем оформления](options/theme-editor.md)
-  * [Горячие клавиши](options/hotkeys.md)
-* [Консоль](console.md)
-* [Горячие клавиши](hotkeys.md)
-* [Поиск опкодов](opcode-search-tool.md)
-* [Интерфейс командной строки](cli.md)
-* [Языковая служба](language-service.md)
 * [Режимы редактирования](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Enums.txt](edit-modes/enums.txt.md)

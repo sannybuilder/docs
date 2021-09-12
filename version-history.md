@@ -2,13 +2,13 @@
 
 ## v. 3.8.0 - 04.08.2021
 
-* [интеграция с Sanny Builder Library](features.md#integration-with-sanny-builder-library): новым порталом с документацией по всем известным опкодам
+* [интеграция с Sanny Builder Library](editor/features.md#integration-with-sanny-builder-library): новым порталом с документацией по всем известным опкодам
 * добавлено 16 [новых тем оформления](https://github.com/sannybuilder/themes)
 * дизассемблер теперь выводит содержимое блока `hex..end` как строку, если оно является последовательностью ASCII символов, завершающейся нулевым байтом [\#33](https://github.com/sannybuilder/dev/issues/33)
-* [новая отладочная опция](console.md#skip_extra_info), которая позволяет дизассемблеру игнорировать блок с доп. информацией в конце скрипта
-* [новый параметр командной строки](cli.md#option) для запуска Sanny Builder с определенными настройками
+* [новая отладочная опция](editor/console.md#skip_extra_info), которая позволяет дизассемблеру игнорировать блок с доп. информацией в конце скрипта
+* [новый параметр командной строки](editor/cli.md#option) для запуска Sanny Builder с определенными настройками
 * [пользовательские шаблоны кода](edit-modes/code-templates.md#adding-a-new-template) теперь сохраняются в отдельный файл, чтобы обновления их не перезаписывали
-* сочетания [горячих клавиш](hotkeys.md), которые использовали цифровую клавиатуру \(Numpad\), были изменены \(Размер текста: Ctrl + +/- and Переход к метке и обратно: Alt + Right/Left\)
+* сочетания [горячих клавиш](editor/hotkeys.md), которые использовали цифровую клавиатуру \(Numpad\), были изменены \(Размер текста: Ctrl + +/- and Переход к метке и обратно: Alt + Right/Left\)
 * плагин [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) обновлен до версии 1.0.8
 * обновлены переводы на венгерский, испанский, украинский и китайский языки
 * [исправлено 16 багов](https://github.com/sannybuilder/dev/issues/130#issue-805022048)
@@ -25,12 +25,12 @@
 * новый режим VC Mobile с опкодами CLEO Android \([sannybuilder/data\#11](https://github.com/sannybuilder/data/pull/11)\)
 * в режим VC PC добавлены опкоды из [Opcode Restoration project](https://github.com/cleolibrary/opcodes-restoration-project) \(автор spaceeinstein\)
 * сообщения об ошибке теперь содержат ссылку на переведенную документацию, если таковая имеется \([\#101](https://github.com/sannybuilder/dev/issues/101)\)
-* конфигурация [внешних приложений](features.md#menyu-vneshnikh-prilozhenii) поддерживает переменные **@sb:** и **@game:** \([\#72](https://github.com/sannybuilder/dev/issues/72)\)
+* конфигурация [внешних приложений](editor/features.md#menyu-vneshnikh-prilozhenii) поддерживает переменные **@sb:** и **@game:** \([\#72](https://github.com/sannybuilder/dev/issues/72)\)
 * плагин [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) обновлен до версии 1.0.7 
 * исправлены баги: [\#103](https://github.com/sannybuilder/dev/issues/103) [\#114](https://github.com/sannybuilder/dev/issues/114) [\#120](https://github.com/sannybuilder/dev/issues/120)
 
 {% hint style="info" %}
-Узнать больше о подсветке констант можно в статье [Языковая служба](language-service.md). 
+Узнать больше о подсветке констант можно в статье [Языковая служба](editor/language-service.md). 
 {% endhint %}
 
 [Полный список изменений](https://github.com/sannybuilder/dev/issues/90)
@@ -85,9 +85,9 @@
 
 ## v. 3.5.0 - 18.08.2020
 
-* изменения в [интерфейсе командной строки](cli.md)
+* изменения в [интерфейсе командной строки](editor/cli.md)
   * Unix-подобный синтаксис с дефисами \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
-  * новые опции [`-x`](cli.md#x), [`--game`](cli.md#game), [`--mode`](cli.md#mode) 
+  * новые опции [`-x`](editor/cli.md#x), [`--game`](editor/cli.md#game), [`--mode`](editor/cli.md#mode) 
 * улучшения [режимов редактирования](edit-modes/)
   * `games.xml` переименован в `modes.xml`, обновлена [внутренняя структура](edit-modes/#format-faila)
   * режимы могут [наследовать](edit-modes/#extends) свойства других режимов \(полезно для поддержки различных версий одной игры\)
@@ -98,9 +98,9 @@
   * увеличено пространство для имени режима в углу экрана \([\#8](https://github.com/sannybuilder/dev/issues/8)\)
 * обновлены описания опкодов LCS/VCS\*
 * убран конвертер синтаксиса SAMB в SB \([\#27](https://github.com/sannybuilder/dev/issues/27)\)
-* исправлена [привязка файловых расширений](options/general.md#privyazka-failovykh-rasshirenii) к Sanny Builder \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
+* исправлена [привязка файловых расширений](editor/options/general.md#privyazka-failovykh-rasshirenii) к Sanny Builder \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
 * исправлен баг с компиляцией скриптов LCS и VCS \([\#49](https://github.com/sannybuilder/dev/issues/49), [\#0053](http://bugs.sannybuilder.com/view.php?id=53), [\#0064](http://bugs.sannybuilder.com/view.php?id=64)\)
-* исправлена проблема, при которой окно [Opcode Search Tool](opcode-search-tool.md) было недоступно после сворачивания \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
+* исправлена проблема, при которой окно [Opcode Search Tool](editor/opcode-search-tool.md) было недоступно после сворачивания \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
 
 {% hint style="warning" %}
 Новые описания опкодов для GTA LCS и GTA VCS несовместимы с предыдущими версиями. Вы должны заново дизассемблировать `main.scm` этих игр прежде чем делать какие-то изменения.
@@ -154,7 +154,7 @@
 
 * добавлена поддержка для компиляции `SCM` Liberty City Stories
 * добавлены алиасы для [переменных-таймеров](coding/variables.md#peremennye-taimery): TIMERA and TIMERB
-* опция [Проверка переменных](options/general.md#proverka-peremennykh) теперь применяется и к глобальным переменным
+* опция [Проверка переменных](editor/options/general.md#proverka-peremennykh) теперь применяется и к глобальным переменным
 
 ## v. 3.2.4 - 04.08.2019
 
@@ -186,9 +186,9 @@
 * новый режим редактирования `GTA SA SCR`
 * переменные [могут быть объявлены](coding/variables.md#korotkaya-forma-obyavleniya-peremennykh) при помощи указания типа перед именем переменной
 * CLEO обновлена до версии 4.3.16
-* добавлен [моментальный поиск](features.md#momentalnyi-poisk) в тексте \(ранее эта возможность называлась "переход к метке"\)
-* [оригинальные названия миссий](features.md#ispolzovanie-originalnykh-imen-missii) могут быть изменены через файл missions.txt
-* улучшена [ассоциация](options/general.md#associaciya-failovykh-rasshirenii) расширений скриптовых файлов с Sanny Builder
+* добавлен [моментальный поиск](editor/features.md#momentalnyi-poisk) в тексте \(ранее эта возможность называлась "переход к метке"\)
+* [оригинальные названия миссий](editor/features.md#ispolzovanie-originalnykh-imen-missii) могут быть изменены через файл missions.txt
+* улучшена [ассоциация](editor/options/general.md#associaciya-failovykh-rasshirenii) расширений скриптовых файлов с Sanny Builder
 * при указании директории игры Sanny Builder проверяет только существование этой директории и не проверяет наличие дополнительных файлов в ней
 * небольшие улучшения в функции проверки обновлений
 * изменена иконка Sanny Builder и иконки в меню
@@ -203,13 +203,13 @@
 ## v. 3.1.3 - 22.12.2013
 
 * добавлена [поддержка](edit-modes/) iOS и Android версий GTA: San Andreas
-* значение [глубины просмотра](options/editor.md#glubina-prosmotra-koda) теперь используется при построении списка констант
+* значение [глубины просмотра](editor/options/editor.md#glubina-prosmotra-koda) теперь используется при построении списка констант
 * обновлены переводы на китайский и немецкий языки
 
 ## v. 3.1.2 - 06.10.2013
 
 * добавлен перевод на чешкий язык
-* добавлены [опции](options/general.md#associaciya-failovykh-rasshirenii) ассоциации файлов `.cs` и `.cm` с Sanny Builder.
+* добавлены [опции](editor/options/general.md#associaciya-failovykh-rasshirenii) ассоциации файлов `.cs` и `.cm` с Sanny Builder.
 * исправлены баги [\#0000011](http://bugs.sannybuilder.com/view.php?id=11), [\#0000020](http://bugs.sannybuilder.com/view.php?id=20)
 
 ## v. 3.1.1 - 22.09.2013
@@ -221,14 +221,14 @@
 ## v. 3.1.0 - 14.09.2013
 
 * в `VCSCM.ini` добавлены опкоды из мобильной версии GTA VC и отмечены неподдерживаемые опкоды
-* при включенной опции [Добавлять доп. информацию в SCM](options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes/) при декомпиляции
+* при включенной опции [Добавлять доп. информацию в SCM](editor/options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm), Sanny Builder запоминает игру, для которой был скомпилирован скрипт, чтобы включить нужный [режим редактирования](edit-modes/) при декомпиляции
 * при включенной опции `Добавлять доп. информацию в SCM`, Sanny Builder добавляет исходный код в тело скрипта \(только при наличии директивы [$EXTERNAL](coding/directives.md#usdexternal) или [$CLEO](coding/directives.md#usdcleo)\)
 * добавлена новая директива [$NOSOURCE](coding/directives.md#usdnosource), чтобы запретить добавление исходного кода в тело скрипта
-* некоторые горячие клавиши могут быть изменены [в опциях](options/hotkeys.md)
+* некоторые горячие клавиши могут быть изменены [в опциях](editor/options/hotkeys.md)
 * добавлена возможность автоматически проверять наличие обновления при запуске программы
 * директивы [$VERSION](coding/directives.md#usdversion) и [$VERSION\_RESTORE](coding/directives.md#usdversion_restore) устарели \(компилируются, но не имеют эффекта\)
 * обновлены перевод на испанский и китайский языки
-* [Менеджер координат](features.md#izmenenie-koordinat-i-ugla-razvorota-igroka) может изменять угол поворота игрока в GTA VC
+* [Менеджер координат](editor/features.md#izmenenie-koordinat-i-ugla-razvorota-igroka) может изменять угол поворота игрока в GTA VC
 * в комплектацию Sanny Builder добавлен [CLEO плагин SCRLog](http://www.gtagarage.com/mods/show.php?id=23846) от LINK/2012 \(можно найти в папке tools\)
 * исправлены баги [\#0000010](http://bugs.sannybuilder.com/view.php?id=10), [\#0000014](http://bugs.sannybuilder.com/view.php?id=14), [\#0000015](http://bugs.sannybuilder.com/view.php?id=15), [\#0000016](http://bugs.sannybuilder.com/view.php?id=16)
 
@@ -237,7 +237,7 @@
 * в Sanny Builder добавлено лицензионное соглашение вида Freeware/Donationware
 * добавлена возможность сообщать о найденных багах в [официальный баг-трекер](http://bugs.sannybuilder.com/)
 * добавлена возможность проверять наличие обновления для Sanny Builder
-* [Менеджер координат](features.md#izmenenie-koordinat-i-ugla-razvorota-igroka) теперь поддерживает все известные версии GTA3, VC и SA \(спасибо Silent\)
+* [Менеджер координат](editor/features.md#izmenenie-koordinat-i-ugla-razvorota-igroka) теперь поддерживает все известные версии GTA3, VC и SA \(спасибо Silent\)
 * добавлена обновленная версия перевода на китайский язык
 * исправлены баги [\#0000002](http://bugs.sannybuilder.com/view.php?id=2), [\#0000003](http://bugs.sannybuilder.com/view.php?id=3), [\#0000004](http://bugs.sannybuilder.com/view.php?id=4), [\#0000006](http://bugs.sannybuilder.com/view.php?id=6), [\#0000009](http://bugs.sannybuilder.com/view.php?id=9)
 * небольшие изменения дизайна
@@ -268,18 +268,18 @@
 * компилятор может компилировать символы комментария внутри строки `"{text1}text2"`
 * точка с запятой `;` больше не может использоваться для закомментирования строки
 * изменен синтаксис параметра [\debug](./#parametry-komandnoi-stroki)
-* добавлены иконки флагов для доступных языков перевода в [опциях](options/general.md#yazyk-interfeisa)
+* добавлены иконки флагов для доступных языков перевода в [опциях](editor/options/general.md#yazyk-interfeisa)
 * исправлены некоторые ошибки в декомпиляции для VCS
 
 ## v. 3.06 - 17.06.2013
 
 * добавлены [новые операторы ++ и --](coding/built-in-commands.md)
-* добавлена поддержка [блочных комментариев](features.md#kommentirovanie-koda) /\*   \*/
+* добавлена поддержка [блочных комментариев](editor/features.md#kommentirovanie-koda) /\*   \*/
 * `SASCM.INI` обновлен при помощи [базы GTAG](https://gtagmodding.com/opcode-database/)
 * [свойства](coding/classes.md#svoistva) `Actor.Armour` и `Actor.Car` заменены на корректные версии `Actor.AddArmour`, `Actor.MissionCar`
 * добавлено новое свойство `Actor.CurrentCar` для опкода `03C0` в скриптовых классах для игр SA и VC
-* добавлены [новые комбинации клавиш](hotkeys.md) `Ctrl+Num+` и `Ctrl+Num-` для быстрого изменения размера шрифта в редакторе
-* Sanny Builder запоминает число закрытых файлов для опции [Открывать все закрытые файлы](options/editor.md#nastroiki)
+* добавлены [новые комбинации клавиш](editor/hotkeys.md) `Ctrl+Num+` и `Ctrl+Num-` для быстрого изменения размера шрифта в редакторе
+* Sanny Builder запоминает число закрытых файлов для опции [Открывать все закрытые файлы](editor/options/editor.md#nastroiki)
 * исправлена ошибка при компиляции скрипта с большим числом вставок [HEX..END](coding/hex..end.md)
 * исправлена ошибка версии 3.05, когда программа зависала при запуске, пытаясь открыть файл, переданный в качестве параметра
 
@@ -322,17 +322,17 @@
 * возможность декомпиляции `main.scm` Vice City Stories
 * поддержка [констант](coding/constants.md)
 * новые директивы [$INCLUDE](coding/directives.md#usdinclude), [$EXTERNAL](coding/directives.md#usdexternal), [$CLEO](coding/directives.md#usdcleo)
-* запись [дополнительной информации](options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) в конец `main.scm`
-* задание [собственных массивов](options/formats.md#sobstvennye-imena) при декомпиляции
-* [возможность декомпилировать](console.md#skip_scm_header) файлы `main.scm` без заголовка
+* запись [дополнительной информации](editor/options/general.md#dobavlyat-dopolnitelnuyu-informaciyu-v-scm) в конец `main.scm`
+* задание [собственных массивов](editor/options/formats.md#sobstvennye-imena) при декомпиляции
+* [возможность декомпилировать](editor/console.md#skip_scm_header) файлы `main.scm` без заголовка
 * можно использовать внешний скрипт с именем AAA
 * новый [параметр командной строки](./#parametry-komandnoi-stroki) `\compile`
 * в цикле [FOR](coding/loops.md#for-end) можно использовать дробные значения счетчика
 * команды `WriteMem` и `ReadMem` больше не поддерживаются
 * поддержка поиска по тексту с использованием регулярных выражений
 * возможность сохранять исходник в формат [RTF или HTML]()
-* возможность [пропускать заставки](options/general.md#bystraya-zagruzka-igry) при запуске San Andreas
-* новая комбинация клавиш: [Ctrl+Enter](hotkeys.md)
+* возможность [пропускать заставки](editor/options/general.md#bystraya-zagruzka-igry) при запуске San Andreas
+* новая комбинация клавиш: [Ctrl+Enter](editor/hotkeys.md)
 * обновленный [SASCM.INI](edit-modes/opcodes-list-scm.ini.md)
 
 ## v. 2.99e - 01.01.2007
@@ -350,7 +350,7 @@
 
 * добавлен плагин Memory Hacker
 * возможность декомпиляции main.scm Liberty City Stories
-* поддержка [числовых констант в качестве индекса](console.md#constant_indexes) глобального массива
+* поддержка [числовых констант в качестве индекса](editor/console.md#constant_indexes) глобального массива
 * при декомпиляции переменные заменяются на тип [ADMA](coding/data-types.md#peremennye), если не делятся на `4`
 * при компиляции при отсутствии заголовка выставляются значения по умолчанию
 * возможность открывать файлы в редакторе методом Drag&Drop
@@ -366,29 +366,29 @@
 * поддержка чисел в шестнадцатиричном формате
 * конструкция [HEX..END](coding/hex..end.md) может принимать значения меток и глобальных переменных
 * поддержка типа данных & для [массивов](coding/arrays.md), а также в выражениях без опкодов: `&57 += &120(&231,4i)`
-* возможность давать [собственные имена меткам](options/formats.md#sobstvennye-imena)
-* возможность [выбирать регистр букв](options/formats.md#registr-bukv) для собственных имен меток и переменных, а также стринговых переменных
-* добавлена [консоль](console.md) для специальных опций SB
+* возможность давать [собственные имена меткам](editor/options/formats.md#sobstvennye-imena)
+* возможность [выбирать регистр букв](editor/options/formats.md#registr-bukv) для собственных имен меток и переменных, а также стринговых переменных
+* добавлена [консоль](editor/console.md) для специальных опций SB
 * поддержка `GXT` файлов GTA III, GTA VC
 * [поддержка символьных констант](coding/data-types.md#strokovye-literaly) в длинных строках
 * информация об авторе и версии [INI](edit-modes/opcodes-list-scm.ini.md) файла
 * поддержка классами `INI` с оригинальным порядком следования параметров \(как SASCM.INI от PLPynton\)
-* [опция](options/editor.md#nastroiki) подтверждения выхода
+* [опция](editor/options/editor.md#nastroiki) подтверждения выхода
 * возможность быстро переключать режим редактирования
 * конвертация отдельного, выделенного участка кода
-* возможность передавать во [внешнее приложение](features.md#menyu-vneshnikh-prilozhenii) в качестве параметра имя текущего открытого файла
+* возможность передавать во [внешнее приложение](editor/features.md#menyu-vneshnikh-prilozhenii) в качестве параметра имя текущего открытого файла
 * исправлены некоторые ошибки в конфигурационных файлах
 * убрана автоматическая конвертация числа в тип `Float`, если переменная была объявлена как `Float`, а в нее записывалось целое число. Теперь опкод выбирается только в зависимости от типа числа
-* чтение/изменение Z\_angle игрока в [Coord Manager](features.md#izmenenie-koordinat-i-ugla-razvorota-igroka); возможность вставки значения угла в скрипт нажатием `Ctrl+Shift+E` \(для SA\)
+* чтение/изменение Z\_angle игрока в [Coord Manager](editor/features.md#izmenenie-koordinat-i-ugla-razvorota-igroka); возможность вставки значения угла в скрипт нажатием `Ctrl+Shift+E` \(для SA\)
 
 ## v. 2.98 - 04.08.2006
 
-* Sanny Builder полностью [русифицирован](options/general.md#yazyk-interfeisa)
-* добавлено [меню внешних приложений](features.md#menyu-vneshnikh-prilozhenii)
-* в SB встроена специальная версия [Opcode Search Tool](opcode-search-tool.md)
-* проверка математических выражений при декомпиляции с выключенной опцией [Писать опкоды](options/general.md#ispolzovat-opkody)
-* возможность выбирать `IMG` файл самостоятельно, если таковой не найден в папке с `main.scm`\(опция [Ручной выбор IMG-файла](options/general.md#ruchnoi-vybor-img-faila)\)
-* возможность добавлять новые [фрагменты кода](features.md#pereispolzovanie-fragmentov-koda) прямо из редактора; добавлены описания макросов
+* Sanny Builder полностью [русифицирован](editor/options/general.md#yazyk-interfeisa)
+* добавлено [меню внешних приложений](editor/features.md#menyu-vneshnikh-prilozhenii)
+* в SB встроена специальная версия [Opcode Search Tool](editor/opcode-search-tool.md)
+* проверка математических выражений при декомпиляции с выключенной опцией [Писать опкоды](editor/options/general.md#ispolzovat-opkody)
+* возможность выбирать `IMG` файл самостоятельно, если таковой не найден в папке с `main.scm`\(опция [Ручной выбор IMG-файла](editor/options/general.md#ruchnoi-vybor-img-faila)\)
+* возможность добавлять новые [фрагменты кода](editor/features.md#pereispolzovanie-fragmentov-koda) прямо из редактора; добавлены описания макросов
 * список моделей можно сортировать по алфавиту/по значению \(`Alt+S`, когда активен список\)
 * минорные исправления и изменения
 
@@ -399,16 +399,16 @@
 
 ## v. 2.96 - 01.04.2006
 
-* расширена [опция прохода по меткам](features.md#momentalnyi-poisk)
-* добавлена возможность вызвать список [фрагментов кода](features.md#pereispolzovanie-fragmentov-koda)
-* добавлена [опция замены](options/general.md#zamenyat-nomera-missii) номеров миссий на их имена
+* расширена [опция прохода по меткам](editor/features.md#momentalnyi-poisk)
+* добавлена возможность вызвать список [фрагментов кода](editor/features.md#pereispolzovanie-fragmentov-koda)
+* добавлена [опция замены](editor/options/general.md#zamenyat-nomera-missii) номеров миссий на их имена
 * исправлены некоторые ошибки
 
 ## v. 2.9f - 18.02.2006
 
 * новые модели автоматически добавляются в список `DEFINE OBJECTS` \(этот список можно вообще не использовать\)
 * добавлены блочные комментарии: `{}`
-* добавлена запись [макросов](features.md#zapis-i-vosproizvedenie-nazhatii-knopok)
+* добавлена запись [макросов](editor/features.md#zapis-i-vosproizvedenie-nazhatii-knopok)
 * минорные исправления и добавления
 
 ## v. 2.9 - 15.12.2005
@@ -437,7 +437,7 @@
 ## v. 2.5 - 10.10.2005
 
 * добавлена поддержка [свойств](coding/classes.md#svoistva) классов
-* добавлена поддержка [фрагментов кода](features.md#pereispolzovanie-fragmentov-koda)
+* добавлена поддержка [фрагментов кода](editor/features.md#pereispolzovanie-fragmentov-koda)
 * добавлена конструкция [VAR..END](coding/variables.md#konstrukciya-var-end) для эффективного управления переменными
 * описаны все возможные математические опкоды: `0004..008B`
 * новые операторы `<` и `<=`
@@ -452,13 +452,13 @@
 * добавлена поддержка [ключевых слов](coding/keywords.md)
 * добавлена возможность писать некоторые математические команды без опкодов
 * для опкода `00D6` по умолчанию устанавливается параметр `0`, если иное не установлено \(`if` = `if 0`\)
-* добавлена [опция выбора](options/formats.md#imena-metok) различных видов меток
+* добавлена [опция выбора](editor/options/formats.md#imena-metok) различных видов меток
 * добавлены [константы](coding/constants.md) `True` и `False`, которые обозначают `1` и `0` соответственно
 * добавлена конструкция [HEX..END](coding/hex..end.md) для записи шестнадцатиричных значений прямо в `SCM`
 
 ## v. 1.1 - 07.09.2005
 
-* добавлен [Coord Manager](features.md#izmenenie-koordinat-i-ugla-razvorota-igroka)
+* добавлен [Coord Manager](editor/features.md#izmenenie-koordinat-i-ugla-razvorota-igroka)
 * исправлены некоторые ошибки
 
 ## v. 1.0 - 04.09.2005

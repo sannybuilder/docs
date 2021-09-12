@@ -48,7 +48,7 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left">&#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x438;&#x433;&#x440;&#x443;
         &#x434;&#x43B;&#x44F; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x433;&#x43E;
         <a
-        href="edit-modes/">&#x440;&#x435;&#x436;&#x438;&#x43C;&#x430; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F;</a>
+        href="../edit-modes/">&#x440;&#x435;&#x436;&#x438;&#x43C;&#x430; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F;</a>
       </td>
     </tr>
     <tr>
@@ -142,7 +142,7 @@ Sanny Builder поддерживает стандартные сочетания
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
-      <td style="text-align:left"><a href="coding/comments.md">&#x437;&#x430;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; / &#x440;&#x430;&#x441;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;</a> &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
+      <td style="text-align:left"><a href="../coding/comments.md">&#x437;&#x430;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; / &#x440;&#x430;&#x441;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;</a> &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>&#x41D;&#x430;&#x432;&#x438;&#x433;&#x430;&#x446;&#x438;&#x44F;</b>
@@ -214,7 +214,7 @@ Sanny Builder поддерживает стандартные сочетания
         &#x43F;&#x43E; &#x438;&#x43C;&#x435;&#x43D;&#x438; &#x43F;&#x43E;&#x434;
         &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; (&#x441;&#x43C;.
         &#x43E;&#x447;&#x435;&#x440;&#x435;&#x434;&#x43D;&#x43E;&#x441;&#x442;&#x44C;
-        &#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x438;&#x44F; <a href="coding/directives.md#usdinclude">&#x43E;&#x442;&#x43D;&#x43E;&#x441;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x44B;&#x445; &#x43F;&#x443;&#x442;&#x435;&#x439;</a>)</td>
+        &#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x438;&#x44F; <a href="../coding/directives.md#usdinclude">&#x43E;&#x442;&#x43D;&#x43E;&#x441;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x44B;&#x445; &#x43F;&#x443;&#x442;&#x435;&#x439;</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>&#x41A;&#x43E;&#x434;</b>
@@ -267,14 +267,14 @@ Sanny Builder поддерживает стандартные сочетания
       </td>
       <td style="text-align:left">&#x440;&#x430;&#x437;&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C;
         &#x441;&#x43B;&#x43E;&#x432;&#x43E; &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;
-        &#x432; <a href="edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D; &#x43A;&#x43E;&#x434;&#x430;</a> &#x441;
+        &#x432; <a href="../edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D; &#x43A;&#x43E;&#x434;&#x430;</a> &#x441;
         &#x442;&#x430;&#x43A;&#x438;&#x43C; &#x43D;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x438;&#x435;&#x43C;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>J</code>
       </td>
       <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;
-        &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x44B;&#x445; <a href="edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432; &#x43A;&#x43E;&#x434;&#x430;</a>
+        &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x44B;&#x445; <a href="../edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432; &#x43A;&#x43E;&#x434;&#x430;</a>
       </td>
     </tr>
     <tr>
@@ -305,7 +305,7 @@ Sanny Builder поддерживает стандартные сочетания
       <td style="text-align:left"><code>Ctrl</code>+<code>Alt</code>+<code>H</code>*</td>
       <td style="text-align:left">&#x43A;&#x43E;&#x43D;&#x432;&#x435;&#x440;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
         <a
-        href="coding/data-types.md#imena-modelei">&#x438;&#x43C;&#x44F; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438;</a>&#x43F;&#x43E;&#x434;
+        href="../coding/data-types.md#imena-modelei">&#x438;&#x43C;&#x44F; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438;</a>&#x43F;&#x43E;&#x434;
           &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; &#x432; ID &#x438;
           &#x43D;&#x430;&#x43E;&#x431;&#x43E;&#x440;&#x43E;&#x442;</td>
     </tr>
