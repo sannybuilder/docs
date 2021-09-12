@@ -2,7 +2,7 @@
 
 You can call this tool by pressing `Ctrl+Alt+2` or by selecting the menu item: `Tools->IDE Tools->Opcode Search`.
 
-![](.gitbook/assets/ost.PNG)
+![](../.gitbook/assets/ost.PNG)
 
 To find an opcode, type some words in the input line, e.g. `actor car`. The tool displays the opcodes with these words. You can also use special search operators.
 

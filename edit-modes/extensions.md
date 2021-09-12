@@ -1,6 +1,6 @@
 # Extensions
 
-An **extension** is a set of new instructions added to the vanilla game. The [CLEO library](https://cleo.li) and its plugins is the most known way of adding those. 
+An **extension** is a set of new instructions added to the vanilla game. The [CLEO library](https://cleo.li) and its plugins is the most known way of adding those.
 
 To make Sanny Builder aware of the custom instructions and explicitly signal their intentional usage, a script must have `{$USE}` [directive](../coding/directives.md#usduse). The `{$USE}` directive enables a particular set of instructions \(see below the [list of extensions](extensions.md#extensions-list)\).
 
@@ -10,19 +10,19 @@ To make Sanny Builder aware of the custom instructions and explicitly signal the
 {$USE CLEO+}
 ```
 
-Each opcode included in Sanny Builder's [INI files](opcodes-list-scm.ini.md) has been categorized to belong to some extension. Currently it is done via the file `extensions.txt`. 
+Each opcode included in Sanny Builder's [INI files](opcodes-list-scm.ini.md) has been categorized to belong to some extension. Currently it is done via the file `extensions.txt`.
 
 {% hint style="info" %}
 See [\#74](https://github.com/sannybuilder/dev/issues/74) for more information on how this feature is expected to function in the future.
 {% endhint %}
 
-### Implicit Extensions
+## Implicit Extensions
 
-Standard game opcodes have been included in the `default` extension that is implicitly available in any script. `{$USE default}` is possible but redundant. 
+Standard game opcodes have been included in the `default` extension that is implicitly available in any script. `{$USE default}` is possible but redundant.
 
 Using `{$CLEO}` [directive](../coding/directives.md#usdcleo) also implies `{$USE CLEO}` so standard CLEO opcodes are available to the compiler already.
 
-### Extensions List
+## Extensions List
 
 Sanny Builder ships some common and recognized extensions for different edit modes:
 
@@ -46,7 +46,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         <p>CLEO for GTA III
           <br />CLEO for Vice City</p>
         <p>CLEO 4.4</p>
-        <p>CLEO Android
+        <p>CLEO Android</p>
       </td>
       <td style="text-align:left">
         <p>GTA III</p>
@@ -153,7 +153,7 @@ Sanny Builder ships some common and recognized extensions for different edit mod
         <p><code>{$USE Restoration}</code>
         </p>
       </td>
-      <td style="text-align:left"><a href="https://gtamods.com/wiki/Opcodes_Restoration_Project">Opcode Restoration Project</a> 
+      <td style="text-align:left"><a href="https://gtamods.com/wiki/Opcodes_Restoration_Project">Opcode Restoration Project</a>
       </td>
       <td style="text-align:left">Vice City</td>
     </tr>

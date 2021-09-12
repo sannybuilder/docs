@@ -30,7 +30,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     </tr>
     <tr>
       <td style="text-align:left"><code>F8</code>*</td>
-      <td style="text-align:left">run the game for the current <a href="edit-modes/">edit mode</a>
+      <td style="text-align:left">run the game for the current <a href="../edit-modes/">edit mode</a>
       </td>
     </tr>
     <tr>
@@ -110,7 +110,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
-      <td style="text-align:left"><a href="coding/comments.md">comment / uncomment</a> the line</td>
+      <td style="text-align:left"><a href="../coding/comments.md">comment / uncomment</a> the line</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Navigation</b>
@@ -162,7 +162,7 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>Enter</code>
       </td>
-      <td style="text-align:left">open a file which name is under the cursor (see also <a href="coding/directives.md#usdinclude">relative path priorities</a>)</td>
+      <td style="text-align:left">open a file which name is under the cursor (see also <a href="../coding/directives.md#usdinclude">relative path priorities</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Code</b>
@@ -203,13 +203,13 @@ Sanny Builder supports many common shortcuts for the file and text operations \(
     <tr>
       <td style="text-align:left"><code>F2</code>
       </td>
-      <td style="text-align:left">use the word under the cursor to expand to the <a href="edit-modes/code-templates.md">code template</a> with
+      <td style="text-align:left">use the word under the cursor to expand to the <a href="../edit-modes/code-templates.md">code template</a> with
         the same name</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Ctrl</code>+<code>J</code>
       </td>
-      <td style="text-align:left">show the list of <a href="edit-modes/code-templates.md">code templates</a>
+      <td style="text-align:left">show the list of <a href="../edit-modes/code-templates.md">code templates</a>
       </td>
     </tr>
     <tr>

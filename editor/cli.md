@@ -28,7 +28,7 @@ sanny.exe --debug 110000
 
 ## --game
 
-`--game <game>` - selects the [default mode](edit-modes/#type) for the given game. Known `game` values are:
+`--game <game>` - selects the [default mode](../edit-modes/#type) for the given game. Known `game` values are:
 
 * `gta3`
 * `vc`
@@ -45,7 +45,7 @@ sanny.exe --game sa
 
 ## --mode
 
-`--mode <id>` - selects the mode by `id`. [Modes](edit-modes/) and their ids are defined in the `modes.xml` file.
+`--mode <id>` - selects the mode by `id`. [Modes](../edit-modes/) and their ids are defined in the `modes.xml` file.
 
 Shortcut: `-m`
 
@@ -63,7 +63,7 @@ sanny.exe --no-splash
 
 ## -x
 
-`-x <file path>` - sets the path to the file with the [edit modes](edit-modes/) configuration
+`-x <file path>` - sets the path to the file with the [edit modes](../edit-modes/) configuration
 
 ```text
 sanny.exe -x ..\my-modes.xml

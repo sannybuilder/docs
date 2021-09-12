@@ -6,13 +6,13 @@ Sanny Builder provides the end-user the following features:
 
 Sanny Builder Library is a community-driven portal aiming to document all known scripting commands used in GTA III, Vice City and San Andreas. You can find it here: [https://library.sannybuilder.com/](https://library.sannybuilder.com/)
 
-Starting with v3.8.0 Sanny Builder uses library's files to provide brief descriptions to all opcodes directly in the IDE complimentary to the [Show opcode info](features.md#displaying-information-about-opcode) feature. Those files are controlled with the new `<library>` parameter in the [edit mode configuration](edit-modes/#library).
+Starting with v3.8.0 Sanny Builder uses library's files to provide brief descriptions to all opcodes directly in the IDE complimentary to the [Show opcode info](features.md#displaying-information-about-opcode) feature. Those files are controlled with the new `<library>` parameter in the [edit mode configuration](../edit-modes/#library).
 
 Double-clicking the opcode description in the status bar opens the library's page with this opcode's full description in the browser.
 
 If the current edit mode uses the library documentation there is a text in the status bar telling the version of the documentation, e.g. `SBL v0.119`. The version may vary from mode to mode.
 
-![](.gitbook/assets/sbl-update-popup-en.png)
+![](../.gitbook/assets/sbl-update-popup-en.png)
 
 Clicking the library version text in the status bar brings up a popup menu from which you can check if there are newer versions and download them. If you enable `Automatic updates` option Sanny Builder will check the updates and download them on startup.
 
@@ -49,7 +49,7 @@ These shortcuts can be redefined in the [options](options/hotkeys.md).
 When the [option](options/editor.md#editor-configuration) `Show opcode info` is enabled the bottom bar displays:
 
 * a number of parameters for the current opcode;
-* a model ID when the cursor is on the [model name](coding/data-types.md#model-names) and `IDE` files for the current [edit mode](edit-modes/#ide) have been loaded;
+* a model ID when the cursor is on the [model name](../coding/data-types.md#model-names) and `IDE` files for the current [edit mode](../edit-modes/#ide) have been loaded;
 * a constant value when the cursor is on the constant name and the [language service](language-service.md) is enabled.
 * a brief description what this command does \(from [Sanny Builder Library](features.md#integration-with-sanny-builder-library)\)
 
@@ -120,7 +120,7 @@ Additionally, you can use [navigate](features.md#navigate-to-symbol) to the miss
 
 ## Custom Mission Titles
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](edit-modes/#missions). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
+Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](../edit-modes/#missions). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
 
 If a `SCM` file contains custom-made missions you may edit the `missions.txt` to have the correct titles after disassembling.
 

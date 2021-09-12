@@ -63,7 +63,7 @@ A shorter form of this directive is `$I`.
 
 Makes the compiler to treat the file as an external script. Meaning, the resulting output file will be header-less and with relative [label](data-types.md#labels) offsets, as an `.scm` file from the `script.img`. Using this directive requires that the file contains only one script or a single mission.
 
-An alternative way to get such file is the debug [option](../console.md#skip_scm_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
+An alternative way to get such file is the debug [option](../editor/console.md#skip_scm_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
 
 Syntax:  
 `{$EXTERNAL}`
@@ -96,7 +96,7 @@ So this directive is the perfect solution to make a CLEO script.
 
 Prohibits the compiler from including a source code of the script. 
 
-Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
+Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../editor/options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
 
 Syntax:  
 `{$NOSOURCE}`
@@ -138,7 +138,7 @@ A shorter form of this directive is `$O`.
 
 ## $USE
 
-Enables custom instructions set to the compiler. See [Extensions](../edit-modes/extensions.md) for more information.
+Enables custom instructions set to the compiler. See [Extensions]() for more information.
 
 ```text
 {$USE CLEO+}

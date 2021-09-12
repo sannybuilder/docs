@@ -59,7 +59,7 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 | :--- | :--- | :--- | :--- | :--- |
 | 9crown | 9CROWN | 9 | Crown | ![](../../.gitbook/assets/9crown.gif) |
 | 9gun | 9GUN | 9 | Gun | ![](../../.gitbook/assets/9gun.gif) |
-| 9gun2 | 9GUN2 | 9 | Gun | ![](../../.gitbook/assets/9gun2.gif) |
+| 9gun2 | 9GUN2 | 9 | Gun | ![](../../.gitbook/assets/9gun2%20%281%29.gif) |
 | 9homeboy | 9HOMBY | 9 | Homeboy | ![](../../.gitbook/assets/9homby.gif) |
 | 9bullet | 9BULLT | 9 | Bullet | ![](../../.gitbook/assets/9bullt.gif) |
 | 9rasta | 9RASTA | 9 | Rasta | ![](../../.gitbook/assets/9rasta.gif) |

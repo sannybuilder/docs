@@ -2,19 +2,19 @@
 
 This tab contains the general settings used by Sanny Builder.
 
-![](../.gitbook/assets/options-general-en.png)
+![](../../.gitbook/assets/options-general-en.png)
 
 
 
 ## Game Directory
 
-![](../.gitbook/assets/main_dir.png)
+![](../../.gitbook/assets/main_dir.png)
 
 Sanny Builder needs certain game files while working, so you have to choose a correct directory where the game for the current edit mode is installed. You may input the path manually or by selecting the directory via the dialog appearing when you press the button.
 
 ## Interface Language
 
-![](../.gitbook/assets/general-language-en.png)
+![](../../.gitbook/assets/general-language-en.png)
 
 List of available translations for Sanny Builder. Select a language to update the program interface. 
 
@@ -22,13 +22,13 @@ Translation files are located in the `lang` folder. More information on how to c
 
 ## File Association
 
-![](../.gitbook/assets/sb-options-associate.png)
+![](../../.gitbook/assets/sb-options-associate.png)
 
 You may associate different file extensions with Sanny Builder. When a checkbox is selected, your Windows Registry is changed and you may open the files with this extension simply by clicking it. To remove the association, unselect the checkbox.
 
 ## Core Settings
 
-![](../.gitbook/assets/main_opt.png)
+![](../../.gitbook/assets/main_opt.png)
 
 ### Always overwrite output file
 
@@ -58,15 +58,15 @@ With this option Sanny Builder skips the startup splash screens when launching S
 
 ### Check conditions
 
-This option has two meanings. First, the program replaces the [number of conditions](../coding/conditions.md#syntax) in the `IF` opcode with `AND` or `OR`. Second, the program is able to compile the `IF..END` construct, and calculate needed `IF` parameter in the conditions with words `AND` or `OR`.
+This option has two meanings. First, the program replaces the [number of conditions](../../coding/conditions.md#syntax) in the `IF` opcode with `AND` or `OR`. Second, the program is able to compile the `IF..END` construct, and calculate needed `IF` parameter in the conditions with words `AND` or `OR`.
 
 ### Ranges check
 
-The number of local and global [variables](../coding/variables.md) is limited. When this option is checked, the compiler checks if a variable fits the available range.
+The number of local and global [variables](../../coding/variables.md) is limited. When this option is checked, the compiler checks if a variable fits the available range.
 
 ### Write opcodes
 
-If this option is unchecked, the disassembler uses available [classes](../coding/classes.md) and [keywords](../coding/keywords.md) instead of opcodes. In addition, simple math expressions have no opcodes. 
+If this option is unchecked, the disassembler uses available [classes](../../coding/classes.md) and [keywords](../../coding/keywords.md) instead of opcodes. In addition, simple math expressions have no opcodes. 
 
 If the option is checked, all opcodes are present in the output file.
 
@@ -82,10 +82,10 @@ When this option is checked, the disassembler adds the [mission title](../featur
 
 If this option is checked the compiler adds extra information at the end of the resulting file. This info is used later when this file gets disassembled to restore the source closer to the original. The following data is stored: 
 
-* [HEX..END](../coding/hex..end.md) constructs offsets
-* [global variables](../coding/variables.md#global-variables) names
-* full source code \(use [$NOSOURCE](../coding/directives.md#usdnosource) to disable\)
-* current [edit mode](../edit-modes/)
+* [HEX..END](../../coding/hex..end.md) constructs offsets
+* [global variables](../../coding/variables.md#global-variables) names
+* full source code \(use [$NOSOURCE](../../coding/directives.md#usdnosource) to disable\)
+* current [edit mode](../../edit-modes/)
 
 {% hint style="info" %}
 The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 \(unless the `ignore_unknown` [option](../console.md#ignore_unknown) is enabled\).

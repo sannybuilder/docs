@@ -26,7 +26,7 @@
 | 17 | 4 | Colt \(.45\) | \#colt45 | ![](../../.gitbook/assets/colt45.gif) |
 | 18 | 4 | Python \(.357\) | \#python | ![](../../.gitbook/assets/python.gif) |
 | 19 | 5 | Chrome Shotgun | \#chromegun | ![](../../.gitbook/assets/chromegun.gif) |
-| 20 | 5 | S.P.A.S 12 Shotgun | \#shotgspa | ![](../../.gitbook/assets/shotgspa.gif) |
+| 20 | 5 | S.P.A.S 12 Shotgun | \#shotgspa | ![](../../.gitbook/assets/shotgspa%20%281%29.gif) |
 | 21 | 5 | Stubby Shotgun | \#buddyshot | ![](../../.gitbook/assets/buddyshot.gif) |
 | 22 | 6 | Tec-9 | \#tec9 | ![](../../.gitbook/assets/tec9.gif) |
 | 23 | 6 | Uzi 9mm | \#uzi | ![](../../.gitbook/assets/uzi.gif) |

@@ -21,26 +21,27 @@
 
 ## Editor
 
+* [Features](editor/features.md)
+* [Options](editor/options/README.md)
+  * [General](editor/options/general.md)
+  * [Formats](editor/options/formats.md)
+  * [Editor](editor/options/editor.md)
+  * [Theme Editor](editor/options/theme-editor.md)
+  * [Hotkeys](editor/options/hotkeys.md)
+* [Console](editor/console.md)
+* [Hotkeys](editor/hotkeys.md)
+* [Opcode Search Tool](editor/opcode-search-tool.md)
+* [Command Line Interface](editor/cli.md)
+* [Language Service](editor/language-service.md)
+
 ---
 
-* [Features](features.md)
-* [Options](options/README.md)
-  * [General](options/general.md)
-  * [Formats](options/formats.md)
-  * [Editor](options/editor.md)
-  * [Theme Editor](options/theme-editor.md)
-  * [Hotkeys](options/hotkeys.md)
 * [Edit Modes](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Code Templates](edit-modes/code-templates.md)
   * [Enums.txt](edit-modes/enums.txt.md)
   * [Extensions](edit-modes/extensions.md)
   * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
-* [Console](console.md)
-* [Hotkeys](hotkeys.md)
-* [Opcode Search Tool](opcode-search-tool.md)
-* [Command Line Interface](cli.md)
-* [Language Service](language-service.md)
 
 ## SCM Documentation
 

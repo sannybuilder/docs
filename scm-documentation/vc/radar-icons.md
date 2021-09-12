@@ -31,7 +31,7 @@
 | 26 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/sunyard.png) | Sunshine Autos |
 | 27 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/spray.png) | Pay 'n' Spray |
 | 28 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/tshirt.png) | Clothes |
-| 29 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/tommy%20%281%29.png) | Vercetti's Mansion |
+| 29 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/tommy%20%281%29%20%281%29.png) | Vercetti's Mansion |
 | 30 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/phone.png) | Phone |
 | 31 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/rwildstyle.png) | Wildstyle Radio station |
 | 32 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/rflash.png) | Flash Radio station |
@@ -40,6 +40,6 @@
 | 35 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/rvrock.png) | VRock Radio station |
 | 36 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/rvcpr%20%281%29.png) | VCPR Radio station |
 | 37 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/respantoso.png) | Espantoso Radio station |
-| 38 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/remotion.png) | Emotion Radio station |
+| 38 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/remotion%20%281%29.png) | Emotion Radio station |
 | 39 | ![](../../.gitbook/assets/fist.gif)![](../../.gitbook/assets/rwave.png) | Wave Radio station |
 

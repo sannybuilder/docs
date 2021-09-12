@@ -30,7 +30,7 @@ Sanny Builder allows to omit  `0` after `IF. IF 0` and  `IF` are equivalent.
 `<label>`- a name of the [label](data-types.md#labels) where script jumps if the IF statement is false.  
 `<condition>` - any conditional opcode evaluating to `true` or `false` 
 
-If you have the  `Conditions check` enabled in the [options](../options/general.md#check-conditions), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
+If you have the  `Conditions check` enabled in the [options](../editor/options/general.md#check-conditions), you can replace the if number with the keywords `AND` or `OR`. The compiler calculates the correct value itself.
 
 ```text
 if and 
@@ -82,7 +82,7 @@ end
 ```
 
 {% hint style="info" %}
-The  [`Conditions check`](../options/general.md#check-conditions) option  has to be enabled.
+The  [`Conditions check`](../editor/options/general.md#check-conditions) option  has to be enabled.
 {% endhint %}
 
 {% hint style="info" %}

@@ -14,5 +14,5 @@ Since version 3.06 Sanny Builder also supports the C++-like comments `/* */`.
 0001: wait  /* comments here */ 0 ms
 ```
 
-To comment out or uncomment multiple selected lines of the code press `Ctrl+Q` \(this hotkey is configurable in the [options](../options/hotkeys.md)\).
+To comment out or uncomment multiple selected lines of the code press `Ctrl+Q` \(this hotkey is configurable in the [options](../editor/options/hotkeys.md)\).
 

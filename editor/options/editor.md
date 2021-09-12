@@ -2,31 +2,31 @@
 
 Here you can change the IDE settings.
 
-![](../.gitbook/assets/options-editor-en.png)
+![](../../.gitbook/assets/options-editor-en.png)
 
 ## Color Theme
 
-![](../.gitbook/assets/sb-options-color-theme.png)
+![](../../.gitbook/assets/sb-options-color-theme.png)
 
 This picker allows to choose one of the pre-defined themes to customize interface colors and syntax highlighting. The Edit button launches [Theme Editor](theme-editor.md).
 
 ## Code Scan Distance
 
-![](../.gitbook/assets/editor-code-scan-en.png)
+![](../../.gitbook/assets/editor-code-scan-en.png)
 
-The code scanning range is used when you press `Ctrl+Space` to find [constants](../coding/constants.md), labels and [variables](../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
+The code scanning range is used when you press `Ctrl+Space` to find [constants](../../coding/constants.md), labels and [variables](../../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
 
 If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_opt.png)
 
 ## Font
 
-![](../.gitbook/assets/editor-font-en.png)
+![](../../.gitbook/assets/editor-font-en.png)
 
 Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
 
 ## Editor Configuration
 
-![](../.gitbook/assets/sb-editor-configuration.png)
+![](../../.gitbook/assets/sb-editor-configuration.png)
 
 `Show main panel` – toggle the top toolbar  
 `Show opcode info` – make the editor display [different information](../features.md#displaying-information-about-opcode) in the bottom bar  

@@ -2,13 +2,13 @@
 
 ## v. 3.8.0 - 04.08.2021
 
-* [integration with Sanny Builder Library](features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
+* [integration with Sanny Builder Library](editor/features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
 * 16 [new color themes](https://github.com/sannybuilder/themes)
 * disassembler now outputs the content of a `hex..end` block as a string if it's a sequence of ASCII characters ending with 00 [\#33](https://github.com/sannybuilder/dev/issues/33)
-* [new debug option](console.md#skip_extra_info) to let disassembler ignore custom information attached to the compiled script
-* [new CLI parameter](cli.md#option) to launch the editor with custom options
+* [new debug option](editor/console.md#skip_extra_info) to let disassembler ignore custom information attached to the compiled script
+* [new CLI parameter](editor/cli.md#option) to launch the editor with custom options
 * [custom user templates](edit-modes/code-templates.md#adding-a-new-template) are now stored in a separate file and kept between updates
-* [hotkeys](hotkeys.md) using Numpad buttons have been changed \(Zoom text: Ctrl + +/- and Navigate to label and back: Alt + Right/Left\)
+* [hotkeys](editor/hotkeys.md) using Numpad buttons have been changed \(Zoom text: Ctrl + +/- and Navigate to label and back: Alt + Right/Left\)
 * updated [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) plugin to v1.0.8
 * updated translations to Hungarian, Spanish, Ukrainian and Chinese languages
 * [fixed 16 bugs](https://github.com/sannybuilder/dev/issues/130#issue-805022048)
@@ -25,12 +25,12 @@
 * new VC Mobile mode with CLEO Android opcodes \([sannybuilder/data\#11](https://github.com/sannybuilder/data/pull/11)\)
 * added spaceeinstein's [Opcode Restoration project](https://github.com/cleolibrary/opcodes-restoration-project) opcodes in VC PC mode
 * error messages now have a link to localized documentation if possible \([\#101](https://github.com/sannybuilder/dev/issues/101)\)
-* [user tools](features.md#external-tools-menu) configuration supports **@sb:** and **@game:** variables \([\#72](https://github.com/sannybuilder/dev/issues/72)\)
+* [user tools](editor/features.md#external-tools-menu) configuration supports **@sb:** and **@game:** variables \([\#72](https://github.com/sannybuilder/dev/issues/72)\)
 * [CLEO+](https://github.com/JuniorDjjr/CLEOPlus) plugin updated to v1.0.7
 * fixed bugs: [\#103](https://github.com/sannybuilder/dev/issues/103) [\#114](https://github.com/sannybuilder/dev/issues/114) [\#120](https://github.com/sannybuilder/dev/issues/120)
 
 {% hint style="info" %}
-Read more on constants highlighting there: [Language service](language-service.md).
+Read more on constants highlighting there: [Language service](editor/language-service.md).
 {% endhint %}
 
 [Complete list of changes](https://github.com/sannybuilder/dev/issues/90)
@@ -55,7 +55,7 @@ Read more on constants highlighting there: [Language service](language-service.m
 
 * support for [enumerated types](coding/classes.md#class-constants) in classes
 * new [types](edit-modes/opcodes-list-scm.ini.md#parameter-types) of opcode parameters: [`m%`](https://github.com/sannybuilder/dev/issues/10) and [`k%`](https://github.com/sannybuilder/dev/issues/21)
-* initial support for language [extensions](edit-modes/extensions.md)
+* initial support for language [extensions]()
 * better integration with CLEO library:
   * updated third-party tools in the `tools` directory:
     * CLEO v4.4
@@ -85,9 +85,9 @@ Read more on constants highlighting there: [Language service](language-service.m
 
 ## v. 3.5.0 - 18.08.2020
 
-* updated [command line interface](cli.md)
+* updated [command line interface](editor/cli.md)
   * Unix-style syntax with hyphens \([\#42](https://github.com/sannybuilder/dev/issues/42)\)
-  * new options [`-x`](cli.md#x), [`--game`](cli.md#game), [`--mode`](cli.md#mode) 
+  * new options [`-x`](editor/cli.md#x), [`--game`](editor/cli.md#game), [`--mode`](editor/cli.md#mode) 
 * improved [edit modes](edit-modes/)
   * `games.xml` renamed to `modes.xml`, inner [structure](edit-modes/#file-format) updated
   * modes can now [inherit](edit-modes/#extends) properties of other modes \(useful for different versions of one game\)
@@ -98,9 +98,9 @@ Read more on constants highlighting there: [Language service](language-service.m
   * increased available space for the mode name section \([\#8](https://github.com/sannybuilder/dev/issues/8)\)
 * updated opcode definitions for LCS/VCS\*
 * removed SAMB to SB converter \([\#27](https://github.com/sannybuilder/dev/issues/27)\)
-* fixed [file association](options/general.md#file-association) \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
+* fixed [file association](editor/options/general.md#file-association) \([\#43](https://github.com/sannybuilder/dev/issues/43#issuecomment-670219723)\)
 * fixed a bug with LCS and VCS compilation \([\#49](https://github.com/sannybuilder/dev/issues/49), [\#0053](http://bugs.sannybuilder.com/view.php?id=53), [\#0064](http://bugs.sannybuilder.com/view.php?id=64)\)
-* fixed an issue with [Opcode Search Tool](opcode-search-tool.md) window not available after minimize \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
+* fixed an issue with [Opcode Search Tool](editor/opcode-search-tool.md) window not available after minimize \([\#35](https://github.com/sannybuilder/dev/issues/35)\)
 
 {% hint style="warning" %}
 New opcode definitions for GTA LCS and GTA VCS are incompatible with the previous definitions. You must disassemble the `main.scm` prior to making any scripts for those games.
@@ -111,7 +111,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 ## v. 3.4.1 - 06.08.2020
 
 * fixed incorrect number of parameters in opcode `04E3` in `VCSSCM.INI`
-* fixed the issue with the disassembler ignoring `Write opcodes` [option](options/general.md#write-opcodes) and producing a callable label when a regular label is expected
+* fixed the issue with the disassembler ignoring `Write opcodes` [option](editor/options/general.md#write-opcodes) and producing a callable label when a regular label is expected
 
 ## v. 3.4.0 - 04.08.2020
 
@@ -154,7 +154,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 
 * added compiler support for the Liberty City Stories `SCM` format
 * added aliases for the [timer variables](coding/variables.md#timer-variables): `TIMERA` and `TIMERB`
-* changed the [Ranges check](options/general.md#ranges-check) option to apply to the global variables
+* changed the [Ranges check](editor/options/general.md#ranges-check) option to apply to the global variables
 
 ## v. 3.2.4 - 04.08.2019
 
@@ -186,9 +186,9 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 * new edit mode - `GTA SA SCR`
 * variables can be quickly declared using a type name prefix
 * CLEO updated to the version 4.3.16
-* added the [InstaSearch](features.md#instasearch) feature \(formerly 'jump to label' function\)
+* added the [InstaSearch](editor/features.md#instasearch) feature \(formerly 'jump to label' function\)
 * mission names can be changed by editing appropriate `missions.txt` files
-* improved [association](options/general.md#file-association) of the script file extensions with Sanny Builder
+* improved [association](editor/options/general.md#file-association) of the script file extensions with Sanny Builder
 * Sanny Builder only checks if the game directory path is not empty, no checks for specific files \(such as an `.exe`\)
 * minor improvements in the SB updating feature
 * changed the Sanny Builder icon and the menu icons
@@ -203,7 +203,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 ## v. 3.1.3 - 22.12.2013
 
 * added support for iOS and Android versions of GTA San Andreas
-* a [code scan](options/editor.md#code-scan-distance) value is now used when making a list of constants
+* a [code scan](editor/options/editor.md#code-scan-distance) value is now used when making a list of constants
 * updated Chinese and German translations
 
 ## v. 3.1.2 - 06.10.2013
@@ -221,7 +221,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 ## v. 3.1.0 - 14.09.2013
 
 * `VCSCM.ini` is updated to include opcodes for the GTA VC mobile version and unsupported opcodes
-* when the option [Add extra info to SCM](options/general.md#add-extra-info-to-scm) is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
+* when the option [Add extra info to SCM](editor/options/general.md#add-extra-info-to-scm) is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
 * when the option `Add extra info to SCM` is enabled, Sanny Builder adds a source code into a script file \(only when the directive [$EXTERNAL](coding/directives.md#usdexternal) or [$CLEO](coding/directives.md#usdcleo) is present\)
 * added a new directive [$NOSOURCE](coding/directives.md#usdnosource) to prohibit including a source code into a compiled script
 * some hotkeys are now customizable in the options
@@ -271,12 +271,12 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 ## v. 3.06 - 17.06.2013
 
 * added new [operators ](coding/built-in-commands.md)`++` and `--`
-* added support for block [comments](features.md#commenting-code) `/*   */`
+* added support for block [comments](editor/features.md#commenting-code) `/*   */`
 * `SASCM.INI` got an update from the [GTAG Database](https://gtagmodding.com/opcode-database/)
 * replaced properties `Actor.Armour` and `Actor.Car` with their correct versions `Actor.AddArmour` and `Actor.MissionCar`
 * added a new property `Actor.CurrentCar` for the opcode `03C0` in the SA and VC classes.
 * added new hotkeys `Ctrl+Num+` and `Ctrl+Num-` to quickly change the text size
-* Sanny Builder now remembers a number of closed files for the option [Load all closed files](options/editor.md#editor-configuration)
+* Sanny Builder now remembers a number of closed files for the option [Load all closed files](editor/options/editor.md#editor-configuration)
 * fixed a bug when the compiler failed to compile a source with multiple [HEX..END](coding/hex..end.md) constructs
 * fixed a bug of version 3.05 when the program hung on startup trying to open a file
 
@@ -322,9 +322,9 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 * disassembler supports the `SCM` format of Vice City Stories
 * [constants ](coding/constants.md)support
 * new [directives](coding/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
-* [writing of the additional info](options/general.md#add-extra-info-to-scm) to the end of a script file
-* [custom arrays](options/formats.md#custom-names) support
-* a [possibility](console.md#skip_scm_header) to decompile SCM files having no header
+* [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
+* [custom arrays](editor/options/formats.md#custom-names) support
+* a [possibility](editor/console.md#skip_scm_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
 * a possibility to use a floating-point value as the counter value in a [FOR..END](coding/loops.md#for-end) loop
@@ -337,7 +337,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 
 ## v. 2.99e - 01.01.2007
 
-* fixed a bug when parts of the code within the [HEX..END](coding/hex..end.md) construct disappeared in [debug mode](console.md#debug-options) 
+* fixed a bug when parts of the code within the [HEX..END](coding/hex..end.md) construct disappeared in [debug mode](editor/console.md#debug-options) 
 * a HEX..END construct now accepts the [aDMA](coding/hex..end.md#using-adma-numbers) type and string literals
 * a [FOR ](coding/loops.md#for-end)loop accepts model identifiers as the counter values
 
@@ -366,9 +366,9 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 * support for [hexadecimal](coding/data-types.md#hexadecimal-numbers) numbers
 * `HEX..END` statement accepts labels and global variables
 * full support for the [ADMA](coding/data-types.md#variables) datatype
-* an opportunity to give [custom names](options/formats.md#custom-names) to labels
-* an opportunity to choose a [different case](options/formats.md#case-converting) for custom names and strings
-* added [console](console.md) to switch debug options
+* an opportunity to give [custom names](editor/options/formats.md#custom-names) to labels
+* an opportunity to choose a [different case](editor/options/formats.md#case-converting) for custom names and strings
+* added [console](editor/console.md) to switch debug options
 * decompiler supports `GXT` files of GTA III & GTA VC
 * added escape sequences in [long string literals](coding/data-types.md#string-literals)
 * information about [INI](edit-modes/opcodes-list-scm.ini.md) file \(version, author, date\)
@@ -376,10 +376,10 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 * added option to confirm an exit from the program
 * a dropdown menu to switch [edit modes](edit-modes/)
 * converting of the selected piece of code
-* an opportunity to pass the current file name to an [external tool](features.md#external-tools-plug-ins-menu)
+* an opportunity to pass the current file name to an [external tool](editor/features.md#external-tools-plug-ins-menu)
 * corrected some mistakes in the configuration files
 * removed auto-casting of an integer number to the float one when a variable is declared as `Float`. Now the compiler chooses an opcode depending on the number type only \(in math expressions without opcodes\)
-* reading/writing of the player's z\_angle in [Coord Manager](features.md#player-coordinates-management); quick insertion of the z\_angle value in the script by pressing `Ctrl+Shift+E` \(for SA\)
+* reading/writing of the player's z\_angle in [Coord Manager](editor/features.md#player-coordinates-management); quick insertion of the z\_angle value in the script by pressing `Ctrl+Shift+E` \(for SA\)
 
 {% hint style="info" %}
 The following opcodes were changed in `SASCM.INI`: `0181`, `00c3`, `00c4` in order to support the commands `WriteMem` and `ReadMem`. The original scripts did not use these opcodes and the unmodified games do not implement them so it should not break existing scripts.
@@ -392,11 +392,11 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 ## v. 2.98 - 04.08.2006
 
 * Sanny Builder became multilingual
-* added menu for [external applications](features.md#external-tools-plug-ins-menu)
-* a special version of [Opcode Search Tool](opcode-search-tool.md) has been built into SB. The details can be found in the file `OST Readme.txt`
-* validating math expressions during disassembling when [Write opcodes](options/general.md#write-opcodes) is disabled \(to ensure that opcodes are used properly\)
-* an [opportunity to choose](options/general.md#manual-img-opening) a `script.img` file manually if the folder with the `main.scm` file does not have one
-* an opportunity to add a new [code template](features.md#code-templates) directly from the editor; added template descriptions 
+* added menu for [external applications](editor/features.md#external-tools-plug-ins-menu)
+* a special version of [Opcode Search Tool](editor/opcode-search-tool.md) has been built into SB. The details can be found in the file `OST Readme.txt`
+* validating math expressions during disassembling when [Write opcodes](editor/options/general.md#write-opcodes) is disabled \(to ensure that opcodes are used properly\)
+* an [opportunity to choose](editor/options/general.md#manual-img-opening) a `script.img` file manually if the folder with the `main.scm` file does not have one
+* an opportunity to add a new [code template](editor/features.md#code-templates) directly from the editor; added template descriptions 
 * the list of models can be sorted alphabetically/by value \(`Alt+S` when the list is active\)
 * minor corrections and changes
 
@@ -407,16 +407,16 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 
 ## v. 2.96 - 01.04.2006
 
-* improved the [jump to label](features.md#instasearch) option
+* improved the [jump to label](editor/features.md#instasearch) option
 * added an opportunity to show the list of templates
-* added an [option](options/general.md#replace-mission-numbers) to replace mission numbers with their names
+* added an [option](editor/options/general.md#replace-mission-numbers) to replace mission numbers with their names
 * fixed some bugs
 
 ## v. 2.9f - 18.02.2006
 
 * the `DEFINE OBJECT` list is now optional \(the compiler can make it out of model names used in the script\)
 * support for block comments `{}`
-* keypress [recording](features.md#keypress-recording-macro)
+* keypress [recording](editor/features.md#keypress-recording-macro)
 * minor changes
 
 ## v. 2.9 - 15.12.2005
@@ -442,12 +442,12 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
   * new [operator](coding/conditions.md#relational-operators) `<>`
   * if the disassembler can't find a `script.img` file, it uses the one from the game folder
   * added `handle` type for [arrays](coding/arrays.md)
-  * an [opportunity](options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
+  * an [opportunity](editor/options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
 
 ## v. 2.5 - 10.10.2005
 
 * added [properties](coding/classes.md#properties) support
-* added [code templates](features.md#code-templates) support
+* added [code templates](editor/features.md#code-templates) support
 * added construction [VAR...END](coding/variables.md#var-end-construct) for variables declaration
 * all math commands can be used without opcodes \(`0004..008B`\)
 * new [operators](coding/conditions.md#relational-operators) `<` and `<=`
@@ -462,26 +462,26 @@ The class member `Car.SetSpeedInstantly` was named incorrectly \(with a wrong op
 * added [keywords](coding/keywords.md) support
 *  some math commands can be written without opcodes \(e.g.`0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`\)
 * for the opcode `00D6` the default parameter is `0` \(`if` = `if 0`\)
-* added the [option](options/formats.md#label-name-format) to customize labels output
+* added the [option](editor/options/formats.md#label-name-format) to customize labels output
 * added [keywords](coding/keywords.md) `True` and `False` which correspond to `1` and `0`
 * added construction [HEX...END](coding/hex..end.md) for writing hexadecimal values directly in a binary output
 
 ## v. 1.1 - 07.09.2005
 
-* added [coords manager](features.md#player-coordinates-management)
+* added [coords manager](editor/features.md#player-coordinates-management)
 * some bugs fixed
 
 ## v. 1.0 - 04.09.2005
 
 * new format of [labels](coding/data-types.md#labels)
-* added [converter](features.md#sa-mission-builder-source-code-converter) from the BW's SA Mission Builder syntax
+* added [converter](editor/features.md#sa-mission-builder-source-code-converter) from the BW's SA Mission Builder syntax
 * disassembler adds the model names and the text from `american.gxt` in a source file
 * added new options
 * fixed some bugs 
 
 ## v. 0.8 - 20.08.2005
 
-* added an ability to [associate](options/general.md#file-association) `SCM` files with Sanny Builder
+* added an ability to [associate](editor/options/general.md#file-association) `SCM` files with Sanny Builder
 * disassembler adds an additional index to the file name if a file with the same name already exists \(e.g, if `main.scm.txt` already exists, a new file will be `main.scm[0].txt`\)
 * more informative error messages
 * added a check for duplicated labels

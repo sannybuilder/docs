@@ -8,7 +8,7 @@ Edit modes supply Sanny Builder with the following information:
 * paths to files with the game data
 * paths to files with supporting information \([labels](customlabels.ini.md), [variables](./#variables), [constants](./#constants), etc\)
 
-By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option](../cli.md#x).
+By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option](../editor/cli.md#x).
 
 The file `modes.xml` is open for modification and extension, and users can create their own modes by changing it.
 
@@ -24,7 +24,7 @@ Each edit mode is a child node of `<modes>` beginning with the opening tag `<mod
 
 #### id
 
-`id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some user settings for this mode, e.g. a [game directory](../options/general.md#game-directory).
+`id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some user settings for this mode, e.g. a [game directory](../editor/options/general.md#game-directory).
 
 A valid value for this attribute is a unique series of characters not used for any other mode's id. 
 
@@ -55,14 +55,14 @@ The `game` attribute defines a target game for the mode. There are `6` valid val
 Before disassembling or compiling a script, make sure that the correct edit mode is active. Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
 
 {% hint style="info" %}
-A compiled script file may [store information](../options/general.md#add-extra-info-to-scm) about which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
+A compiled script file may [store information](../editor/options/general.md#add-extra-info-to-scm) about which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
 {% endhint %}
 
 Sanny Builder displays a game icon in front of the edit mode name so you know the target game. 
 
 #### type
 
-One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option](../cli.md#game).
+One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option](../editor/cli.md#game).
 
 The valid value for this attribute is `default.` Omit this attribute for non-default modes.
 
@@ -122,7 +122,7 @@ path to [`CustomLabels.ini`](customlabels.ini.md)
 
 #### missions 
 
-path to[`missions.txt`](../features.md#custom-mission-titles)
+path to[`missions.txt`](../editor/features.md#custom-mission-titles)
 
 #### opcodes 
 
@@ -153,17 +153,17 @@ path to [`CustomVariables.ini`](../coding/variables.md)
 
 #### examples
 
-path to [`opcodes.txt`](../opcode-search-tool.md)
+path to [`opcodes.txt`](../editor/opcode-search-tool.md)
 
 #### `library`
 
-path to a JSON file generated in [Sanny Builder Library](../features.md#integration-with-sanny-builder-library) with documentation on the scripting commands used in the target [game](./#game).
+path to a JSON file generated in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library) with documentation on the scripting commands used in the target [game](./#game).
 
 ### Built-in Variables
 
 Sanny provides a few variables that can be used in parameters and attributes \(if applicable\).
 
-`@game:` - path to the [game directory](../options/general.md#game-directory) configured in the options  
+`@game:` - path to the [game directory](../editor/options/general.md#game-directory) configured in the options  
 `@sb:` - path to the Sanny Builder directory \(where `sanny.exe` is located\)
 
 Both paths do not include the trailing slash.
@@ -195,7 +195,7 @@ To change the mode, click at the right bottom corner of the Sanny Builder's main
 
 ![](../.gitbook/assets/edit_modes.png)
 
-To select the mode using CLI run Sanny Builder with the `--mode` [option](../cli.md#mode). To select a default mode for the game use the `--game` [option](../cli.md#game).
+To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game use the `--game` [option](../editor/cli.md#game).
 
-Running Sanny Builder with the `-x` [option](../cli.md#x) allows loading the modes configuration from a file different from the default `modes.xml`. If Sanny Builder is already running, it reloads the configuration and updates the list of modes.
+Running Sanny Builder with the `-x` [option](../editor/cli.md#x) allows loading the modes configuration from a file different from the default `modes.xml`. If Sanny Builder is already running, it reloads the configuration and updates the list of modes.
 
