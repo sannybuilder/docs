@@ -330,7 +330,7 @@
 * в цикле [FOR](coding/loops.md#for-end) можно использовать дробные значения счетчика
 * команды `WriteMem` и `ReadMem` больше не поддерживаются
 * поддержка поиска по тексту с использованием регулярных выражений
-* возможность сохранять исходник в формат [RTF или HTML]()
+* возможность сохранять исходник в формат RTF или HTML
 * возможность [пропускать заставки](editor/options/general.md#bystraya-zagruzka-igry) при запуске San Andreas
 * новая комбинация клавиш: [Ctrl+Enter](editor/hotkeys.md)
 * обновленный [SASCM.INI](edit-modes/opcodes-list-scm.ini.md)
