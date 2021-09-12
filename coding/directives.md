@@ -138,7 +138,7 @@ A shorter form of this directive is `$O`.
 
 ## $USE
 
-Enables custom instructions set to the compiler. See [Extensions]() for more information.
+Enables custom instructions set to the compiler. See [Extensions](../edit-modes/extensions.md) for more information.
 
 ```text
 {$USE CLEO+}

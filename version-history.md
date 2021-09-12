@@ -55,7 +55,7 @@ Read more on constants highlighting there: [Language service](editor/language-se
 
 * support for [enumerated types](coding/classes.md#class-constants) in classes
 * new [types](edit-modes/opcodes-list-scm.ini.md#parameter-types) of opcode parameters: [`m%`](https://github.com/sannybuilder/dev/issues/10) and [`k%`](https://github.com/sannybuilder/dev/issues/21)
-* initial support for language [extensions]()
+* initial support for language [extensions](edit-modes/extensions.md)
 * better integration with CLEO library:
   * updated third-party tools in the `tools` directory:
     * CLEO v4.4
