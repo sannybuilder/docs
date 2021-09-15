@@ -35,6 +35,7 @@ sanny.exe --debug 110000
 * `sa`
 * `lcs`
 * `vcs`
+* `vc_mobile`
 * `sa_mobile`
 
 Краткая форма: `-g`
