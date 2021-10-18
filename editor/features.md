@@ -4,7 +4,7 @@ Sanny Builder provides the end-user the following features:
 
 ## Integration with Sanny Builder Library
 
-Sanny Builder Library is a community-driven portal aiming to document all known scripting commands used in GTA III, Vice City and San Andreas. You can find it here: [https://library.sannybuilder.com/](https://library.sannybuilder.com/)
+Sanny Builder Library is a community-driven portal aiming to document all known scripting commands used in GTA III, Vice City and San Andreas. You can find it here: [https://library.sannybuilder.com/](https://library.sannybuilder.com)
 
 Starting with v3.8.0 Sanny Builder uses library's files to provide brief descriptions to all opcodes directly in the IDE complimentary to the [Show opcode info](features.md#displaying-information-about-opcode) feature. Those files are controlled with the new `<library>` parameter in the [edit mode configuration](../edit-modes/#library).
 
@@ -12,7 +12,7 @@ Double-clicking the opcode description in the status bar opens the library's pag
 
 If the current edit mode uses the library documentation there is a text in the status bar telling the version of the documentation, e.g. `SBL v0.119`. The version may vary from mode to mode.
 
-![](../.gitbook/assets/sbl-update-popup-en.png)
+![](../.gitbook/assets/sbl-update-popup-en.PNG)
 
 Clicking the library version text in the status bar brings up a popup menu from which you can check if there are newer versions and download them. If you enable `Automatic updates` option Sanny Builder will check the updates and download them on startup.
 
@@ -21,7 +21,7 @@ Clicking the library version text in the status bar brings up a popup menu from 
 Sanny Builder's look and feel can be customized with themes. They define colors and style of the interface and code elements for easier reading. The active color theme can be changed in the [options](options/editor.md#color-theme). 
 
 {% hint style="info" %}
-If you launch Sanny Builder v3.8.0 with `settings.ini` from a prior version, your syntax highlighting configuration will be converted to a custom user theme \(stored in`themes\custom.ini`\).
+If you launch Sanny Builder v3.8.0 with `settings.ini` from a prior version, your syntax highlighting configuration will be converted to a custom user theme (stored in`themes\custom.ini`).
 {% endhint %}
 
 Also Sanny Builder has a built-in [theme editor](options/theme-editor.md) for quick customization of the existing themes.
@@ -36,7 +36,7 @@ Alternatively you can go to a particular line using the `Go To Line` feature. Pr
 
 The IDE allows to quickly navigate to some points of interest in the code without using the `Find` dialog box.
 
-To go to the line marked with a label \(e.g, `:MyLabel`\), put the cursor on the label reference \(`@MyLabel`\) and press `Alt+Right`. If the label exists, the cursor position will change.
+To go to the line marked with a label (e.g, `:MyLabel`), put the cursor on the label reference (`@MyLabel`) and press `Alt+Right`. If the label exists, the cursor position will change.
 
 Similarly, to navigate to the start of a function or mission, use `Alt+Right` on the function or mission name.
 
@@ -51,7 +51,7 @@ When the [option](options/editor.md#editor-configuration) `Show opcode info` is 
 * a number of parameters for the current opcode;
 * a model ID when the cursor is on the [model name](../coding/data-types.md#model-names) and `IDE` files for the current [edit mode](../edit-modes/#ide) have been loaded;
 * a constant value when the cursor is on the constant name and the [language service](language-service.md) is enabled.
-* a brief description what this command does \(from [Sanny Builder Library](features.md#integration-with-sanny-builder-library)\)
+* a brief description what this command does (from [Sanny Builder Library](features.md#integration-with-sanny-builder-library))
 
 ## Opcode Search
 
@@ -63,11 +63,11 @@ Press `Ctrl+Alt+1` when GTA San Andreas is running and the Coords Manager window
 
 In the top edit line you can enter the XYZ coordinates, delimited by the space character or the comma character `,`. Additionally, you can insert the player's coordinates in the script source by pressing `Ctrl+Shift+C`. To insert the player's z-angle, press `Ctrl+Shift+E`.
 
-## Keypress Recording \(Macro\)
+## Keypress Recording (Macro)
 
-You can record a key pressing sequence \(macro\) and playback it later. Consider the following code:
+You can record a key pressing sequence (macro) and playback it later. Consider the following code:
 
-```text
+```
 $Actor = Actor.Create(CivMale, #MALE01, 100.0, 100.0, 10.0)
 $ActorWithGun = Actor.Create(CivMale, #MALE01, 110.0, 100.0, 20.0)
 $Gang01 = Actor.Create(CivMale, #MALE01, 120.0, 100.0, 30.0)
@@ -76,7 +76,7 @@ $Killer = Actor.Create(CivMale, #MALE01, 140.0, 100.0, 50.0)
 $ActorWithoutGun = Actor.Create(CivMale, #MALE01, 150.0, 100.0, 60.0) 
 ```
 
-Say, you need to exchange the actor's handles in each pair \(i.e have `$ActorWithGun` instead of `$Actor`, and vice versa\).
+Say, you need to exchange the actor's handles in each pair (i.e have `$ActorWithGun` instead of `$Actor`, and vice versa).
 
 Place the cursor in the first line before `$Actor` and press `Ctrl+M`. The editor immediately begins recording all keys - so be careful!
 
@@ -91,7 +91,7 @@ Place the cursor in the first line before `$Actor` and press `Ctrl+M`. The edito
 
 Now the first two lines should look like these:
 
-```text
+```
 $ActorWithGun = Actor.Create(CivMale, 100.0, 100.0, 10.0)
 $Actor = Actor.Create(CivMale, 110.0, 100.0, 20.0)
 ```
@@ -106,7 +106,7 @@ During recording, you can pause/unpause it by pressing `Ctrl+P`.
 
 Sanny Builder allows using a mission name in the opcode `start_mission`. The mission name is the label defined with a `DEFINE MISSION` command. Say, you have:
 
-```text
+```
 DEFINE MISSION 10 AT @MYMISSION
 ```
 
@@ -120,13 +120,13 @@ Additionally, you can use [navigate](features.md#navigate-to-symbol) to the miss
 
 ## Custom Mission Titles
 
-Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](../edit-modes/#missions). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define \(`DEFINE MISSION`\) or start \(`mission_start`\) command. 
+Since v3.2.0 Sanny supports custom mission titles for each available [edit mode](../edit-modes/#missions). They are stored in the `missions.txt` file. This file is used by the disassembler to add the title as a comment on line with mission define (`DEFINE MISSION`) or start (`mission_start`) command. 
 
 If a `SCM` file contains custom-made missions you may edit the `missions.txt` to have the correct titles after disassembling.
 
 ## Multilingual Interface
 
-Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](options/general.md#interface-language) \(`F10`\). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
+Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](options/general.md#interface-language) (`F10`). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
 
 ## External Tools Menu
 
@@ -134,7 +134,7 @@ You can configure up to `9` apps to run when you need them. Each app has its own
 
 Since v3.7.0 it's also possible to pass the variables `@sb:` and `@game:` that represent Sanny Builder directory and current game directory respectively into the command-line parameters of the external app:
 
-```text
+```
 Parameters:
 --cwd=@sb: --game-dir=@game:
 ```
@@ -144,4 +144,3 @@ Parameters:
 Sanny Builder is able to check if a new version is available. To use this feature go to menu `Help->Check for update...`. The editor will connect to a remote server and if a newer version is available it prompts the download and install. 
 
 The editor can also check for an update during startup if you enable this option in the updater window.
-

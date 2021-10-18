@@ -2,7 +2,7 @@
 
 Here you can set up source file names, labels format, letter case for string literals, etc.
 
-![](../../.gitbook/assets/options-format-en.png)
+![](../../.gitbook/assets/options-format-en.PNG)
 
 ## File Name Format
 
@@ -10,16 +10,16 @@ Formats for files produced by the disassembler or the compiler.
 
 ![](../../.gitbook/assets/formats-files-en.png)
 
-The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` \(if the [edit mode](../../edit-modes/) is `GTA SA`\) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
+The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` (if the [edit mode](../../edit-modes/) is `GTA SA`) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
 
-`$dir` – the file path   
-`$name` – the file name   
+`$dir` – the file path \
+`$name` – the file name \
 `$ext` – the file extension
 
 E.g. if you disassemble the file `C:\MyDir\main.scm`, then
 
-`$dir` is `C:\MyDir`   
-`$name` is `main`   
+`$dir` is `C:\MyDir` \
+`$name` is `main` \
 `$ext` is `.scm` 
 
 If the format is `$dir\$name.txt`, the output file is named `C:\MyDir\main.txt`.
@@ -36,11 +36,11 @@ A label name is numeric e.g. `@12345`. The number is the offset of the label fro
 
 ### Script+Local Offset
 
-A label name includes a name of the script where the label is located \(as defined with the `script_name` command\) and the offset from the beginning of the script, e.g. `@MAIN_12`.
+A label name includes a name of the script where the label is located (as defined with the `script_name` command) and the offset from the beginning of the script, e.g. `@MAIN_12`.
 
 ### Script+Global Offset
 
-A label name includes a name of the script where the label is located \(as defined with the `name_thread` command\) and the offset from the beginning of the source file, e.g. `@MAIN_12345`.
+A label name includes a name of the script where the label is located (as defined with the `name_thread` command) and the offset from the beginning of the source file, e.g. `@MAIN_12345`.
 
 {% hint style="info" %}
 If you want the offsets to be hexadecimal, select the checkbox at the bottom.
@@ -63,4 +63,3 @@ The file `CustomArrays.ini` contains names of the arrays in the following syntax
 ![](../../.gitbook/assets/formats-case-en.png)
 
 This option serves a dual purpose. The disassembler names [global variables](../../coding/variables.md#global-variables), [labels](../../coding/data-types.md#labels), [arrays](../../coding/arrays.md) using the selected letter case. The compiler writes [string literals](../../coding/data-types.md#string-literals) using the selected case too.
-

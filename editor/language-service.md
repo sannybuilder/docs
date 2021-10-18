@@ -6,7 +6,7 @@ For better responsiveness the language service only scans a slice of the current
 
 Since v3.7.0 the language service is capable of finding [defined constants](../coding/constants.md#syntax) and their values. This information then becomes available to the editor for [highlighting purposes](options/editor.md#color-theme) and for [displaying values](features.md#displaying-information-about-opcode) of constants.
 
-```text
+```
 const
     x = 10
 end
@@ -17,9 +17,9 @@ x // x gets highlighted
 The syntax highlighter offers two ways of colorizing constants:
 
 * highlight all constants using the same set of rules
-* apply the rules that would otherwise be applied to the constant value \("semantic highlighting"\)
+* apply the rules that would otherwise be applied to the constant value ("semantic highlighting")
 
-With semantic highlighting enabled and given the example above `x` would get colorized as a regular number \(the maroon color by default\).
+With semantic highlighting enabled and given the example above `x` would get colorized as a regular number (the maroon color by default).
 
 The language service also serves as the data provider for the autocomplete feature when you press `Ctrl+Space`. It renders a list of constants and their values. When the language service is disabled, no constants are being displayed in the list.
 
@@ -29,4 +29,3 @@ Read more technical details on the service implementation there:
 * [Notes on constants highlighting. Part 1/2](https://www.patreon.com/posts/45844911)
 * [Notes on constants highlighting. Part 2/2](https://www.patreon.com/posts/46873773)
 {% endhint %}
-

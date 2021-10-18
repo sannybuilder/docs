@@ -1,20 +1,20 @@
-# Opcodes List \(SCM.INI\)
+# Opcodes List (SCM.INI)
 
 {% hint style="success" %}
-Opcodes documentation can be found in [Sanny Builder Library](https://library.sannybuilder.com/).
+Opcodes documentation can be found in [Sanny Builder Library](https://library.sannybuilder.com).
 {% endhint %}
 
 `SCM.INI` is the file containing information about opcodes used during disassembling and compiling script files. Sanny Builder ships a list of opcodes for each [edit mode](./#opcodes).
 
-| Game | File Name | Location |
-| :--- | :--- | :--- |
-| GTA III | SCM.INI | data\gta3 |
-| Vice City | VCSCM.INI | data\vc |
-| San Andreas | SASCM.INI | data\sa |
-| Liberty City Stories | LCSSCM.INI | data\lcs |
-| Vice City Stories | VCSSCM.INI | data\vcs |
-| VC Mobile | VCSCM.INI | data\vc\_mobile |
-| SA Mobile | SASCM.INI | data\sa\_mobile |
+| Game                 | File Name  | Location       |
+| -------------------- | ---------- | -------------- |
+| GTA III              | SCM.INI    | data\gta3      |
+| Vice City            | VCSCM.INI  | data\vc        |
+| San Andreas          | SASCM.INI  | data\sa        |
+| Liberty City Stories | LCSSCM.INI | data\lcs       |
+| Vice City Stories    | VCSSCM.INI | data\vcs       |
+| VC Mobile            | VCSCM.INI  | data\vc_mobile |
+| SA Mobile            | SASCM.INI  | data\sa_mobile |
 
 ## File Format
 
@@ -24,19 +24,19 @@ Lines starting with `;` are ignored.
 
 Special INI parameters provide metadata information about the opcodes list.
 
-`VERSION` – defines the version of this file. See the [$VERSION](../coding/directives.md#usdversion) directive  
-`PUBLISHER` – who authored this version   
-`DATE` – the update date.   
-  
+`VERSION` – defines the version of this file. See the [$VERSION](../coding/directives.md#usdversion) directive\
+`PUBLISHER` – who authored this version \
+`DATE` – the update date. \
+\
 The disassembler prints the metadata in the first line of the output file.
 
 ### Opcode Definition
 
 Each line has the following syntax:
 
-`xxxx=N, yyyy`   
-`XXXX` – the opcode number  
-`N` – the number of parameters  
+`xxxx=N, yyyy` \
+`XXXX` – the opcode number\
+`N` – the number of parameters\
 `yyyy` – the opcode description.
 
 The opcode number and the number of parameters are final and can't be changed. The description is open to modifications.
@@ -49,7 +49,7 @@ By convention a description for a conditional opcode starts with two spaces.
 
 A parameter is a dynamic part of the opcode. They start and end with `%` 
 
-```text
+```
 0001=1,wait %1d% ms
 ```
 
@@ -61,19 +61,19 @@ A parameter consists of two parts: a `number` and a `type`.
 
 The number in parameter `%1d%` is its index. The idea is that some opcodes have their parameters rearranged to make source code more readable.
 
-```text
+```
 0053=5,%5d% = create_player %1o% at %2d% %3d% %4d%
 ```
 
 The disassembler writes the 5th opcode parameter before any others. 
 
-```text
+```
 0053: $PLAYER_CHAR = сreate_player #NULL at 2488.562 -1666.865 12.8757 
 ```
 
 If the parameters will follow their original order, the opcode `0053` would look like:
 
-```text
+```
 0053: сreate_player #NULL at 2488.562 -1666.865 12.8757 $PLAYER_CHAR
 ```
 
@@ -89,15 +89,14 @@ Parameters order may vary from mode to mode. See the comparison table in [Edit m
 
 A letter following the index number indicates the parameter type.
 
-`d` - any value  
-`p` - a [label](../coding/data-types.md#labels) reference  
-`o` - any [model](../coding/data-types.md#model-names) id \(including objects\)  
-`m` - an `.ide` model id \(no objects\)  
-`g` - a key from the [`.gxt`](./#text) file  
-`x` - an external script ID  
-`k` - a fixed-size null-terminated string literal \(128 bytes\)
+`d` - any value\
+`p` - a [label](../coding/data-types.md#labels) reference\
+`o` - any [model](../coding/data-types.md#model-names) id (including objects)\
+`m` - an `.ide` model id (no objects)\
+`g` - a key from the [`.gxt`](./#text) file\
+`x` - an external script ID\
+`k` - a fixed-size null-terminated string literal (128 bytes)
 
 {% hint style="info" %}
 You can freely change parameters types, if needed.
 {% endhint %}
-

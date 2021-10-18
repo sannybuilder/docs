@@ -2,7 +2,7 @@
 
 This tab contains the general settings used by Sanny Builder.
 
-![](../../.gitbook/assets/options-general-en.png)
+![](../../.gitbook/assets/options-general-en.PNG)
 
 
 
@@ -32,7 +32,7 @@ You may associate different file extensions with Sanny Builder. When a checkbox 
 
 ### Always overwrite output file
 
-This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name \(e.g. `main[0].txt`\). 
+This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name (e.g. `main[0].txt`). 
 
 When this option is checked the disassembler replaces the existing file with a new file.
 
@@ -54,7 +54,7 @@ When the disassembling process starts, the program searches the file `script.img
 
 ### Quick game loading
 
-With this option Sanny Builder skips the startup splash screens when launching San Andreas \(`F8`\). If this feature does not work with your game version, disable this option.
+With this option Sanny Builder skips the startup splash screens when launching San Andreas (`F8`). If this feature does not work with your game version, disable this option.
 
 ### Check conditions
 
@@ -84,14 +84,12 @@ If this option is checked the compiler adds extra information at the end of the 
 
 * [HEX..END](../../coding/hex..end.md) constructs offsets
 * [global variables](../../coding/variables.md#global-variables) names
-* full source code \(use [$NOSOURCE](../../coding/directives.md#usdnosource) to disable\)
+* full source code (use [$NOSOURCE](../../coding/directives.md#usdnosource) to disable)
 * current [edit mode](../../edit-modes/)
 
 {% hint style="info" %}
-The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 \(unless the `ignore_unknown` [option](../console.md#ignore_unknown) is enabled\).
+The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 (unless the `ignore_unknown` [option](../console.md#ignore_unknown) is enabled).
 
 Starting from v3.8.0 the disassembler can [ignore extra information](../console.md#skip_extra_info).
 {% endhint %}
-
-
 

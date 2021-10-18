@@ -1,6 +1,6 @@
 # Constants
 
-A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can not be changed in run-time. In compile-time the constant gets replaced with the value associated with it. The value of the constant can be numeric \(numbers, [model names](data-types.md#model-names) or [labels](data-types.md#labels)\) and string \(string literals\), and contain an expression.
+A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant can not be changed in run-time. In compile-time the constant gets replaced with the value associated with it. The value of the constant can be numeric (numbers, [model names](data-types.md#model-names) or [labels](data-types.md#labels)) and string (string literals), and contain an expression.
 
 Constants are declared either statically or dynamically. Each [edit mode](../edit-modes/) can load static constant definitions from a file using the `<constants>` parameter in the `modes.xml`. Dynamic declarations get created in the script code with the syntax outlined below.
 
@@ -8,15 +8,15 @@ Constants are declared either statically or dynamically. Each [edit mode](../edi
 
 To declare a new constant in the code use the `CONST..END` construct:
 
-`CONST  
-    <constant name> = <constant value>  
-END`
+`CONST`\
+`    <constant name> = <constant value>`\
+`END`
 
-A constant name is any allowed identifier \(a combination of letters, numbers and `_`\). There are names reserved by the compiler that can not be used, such as `Continue`, `Break`, `And`, etc \(see `compiler.ini)`.  
-  
-A constant value might be a number \(also a [model identifier](data-types.md#model-names) or a [label](data-types.md#labels)\); a [string literal](data-types.md#string-literals); a [variable](variables.md) \(also a [class property](classes.md#properties)\); another constant.
+A constant name is any allowed identifier (a combination of letters, numbers and `_`). There are names reserved by the compiler that can not be used, such as `Continue`, `Break`, `And`, etc (see `compiler.ini)`.\
+\
+A constant value might be a number (also a [model identifier](data-types.md#model-names) or a [label](data-types.md#labels)); a [string literal](data-types.md#string-literals); a [variable](variables.md) (also a [class property](classes.md#properties)); another constant.
 
-```text
+```
 var
    $PLAYER_CHAR: Player
 end
@@ -33,7 +33,7 @@ then
 end
 ```
 
-During compilation the constant `MoneyRequired` gets replaced with the number `30` and `PlayerMoney` with `$PLAYER_CHAR.Money`
+During compilation the constant `MoneyRequired` gets replaced with the number `30 `and `PlayerMoney `with `$PLAYER_CHAR.Money`
 
 When the [Language service](../editor/language-service.md) is enabled, a list of constants gets displayed after pressing `Ctrl+Space`.
 
@@ -41,7 +41,7 @@ When the [Language service](../editor/language-service.md) is enabled, a list of
 
 You can use constants anywhere except the case:
 
-```text
+```
 const
     VarName = $Var
     IndexName = 25
@@ -51,9 +51,8 @@ VarName[IndexName] = 0
 
 To compile such expression, you must write the opcode, for example:
 
-```text
+```
 0004: VarName[IndexName] = 0
 ```
 
 Also there are some limitations with using an expression as the constant value.
-

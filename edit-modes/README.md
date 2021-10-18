@@ -6,7 +6,7 @@ Edit modes supply Sanny Builder with the following information:
 
 * a target game
 * paths to files with the game data
-* paths to files with supporting information \([labels](customlabels.ini.md), [variables](./#variables), [constants](./#constants), etc\)
+* paths to files with supporting information ([labels](customlabels.ini.md), [variables](./#variables), [constants](./#constants), etc)
 
 By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option](../editor/cli.md#x).
 
@@ -18,7 +18,7 @@ The file `modes.xml` is open for modification and extension, and users can creat
 
 The root node is `<modes>` and it has no attributes. The file can only have one root node. 
 
-Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags \(properties\) defining paths to directories or files.
+Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags (properties) defining paths to directories or files.
 
 ### Mode Attributes
 
@@ -30,7 +30,7 @@ A valid value for this attribute is a unique series of characters not used for a
 
 #### extends
 
-A mode can extend another mode \(the parent\) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode. 
+A mode can extend another mode (the parent) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode. 
 
 When a property is missing Sanny Builder recursively traverses all parent modes trying to find the property.
 
@@ -62,7 +62,7 @@ Sanny Builder displays a game icon in front of the edit mode name so you know th
 
 #### type
 
-One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option](../editor/cli.md#game).
+One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game `CLI [option](../editor/cli.md#game).
 
 The valid value for this attribute is `default.` Omit this attribute for non-default modes.
 
@@ -76,8 +76,8 @@ path to [`CustomArrays.ini`](../coding/arrays.md)
 
 path to a directory where to put a compiled script on `Compile + Copy` run.
 
-Has a required attribute `type`:  
-`type="scm"` - used for regular `.scm` scripts  
+Has a required attribute `type`:\
+`type="scm"` - used for regular `.scm` scripts\
 `type="cleo"` - used for scripts with [directive](../coding/directives.md#usdcleo) `{$CLEO}`
 
 #### classes 
@@ -98,13 +98,13 @@ path to [enums.txt](enums.txt.md)
 
 #### ide 
 
-path to either an `.ide` or `.dat` file:  
-`.ide` files contain game [model names](../coding/data-types.md#model-names) and characteristics  
+path to either an `.ide` or `.dat` file:\
+`.ide` files contain game [model names](../coding/data-types.md#model-names) and characteristics\
 `.dat` files contain paths to other `.ide` files
 
 `ide` element may have an optional `base` attribute to specify a folder that is used to resolve relative paths in the `.dat` file.
 
-```text
+```
 <ide base="@game:\">default.dat</ide>
 ```
 
@@ -132,8 +132,8 @@ path to a list of [opcodes](opcodes-list-scm.ini.md)
 
 path to a file with the mode's [exclusive templates](code-templates.md) 
 
-Has a required attribute `type`:  
-`type="default"` - path to the predefined templates shipped with Sanny Builder  
+Has a required attribute `type`:\
+`type="default"` - path to the predefined templates shipped with Sanny Builder\
 `type="custom"` - path to a file with user templates added via the [Add Template](code-templates.md#adding-a-new-template) form. This file is never overwritten during a Sanny Builder update.
 
 #### text 
@@ -142,9 +142,9 @@ path to a `.gxt` file
 
 `<text>` has one required attribute: `format`. The supported values are:
 
-`gta3`: `.gxt` has one table, plain keys, ANSI encoding  
-`vc`: `.gxt` has multiple tables, plain keys, ANSI encoding  
-`sa`: `.gxt` has multiple tables, hashed keys, ANSI encoding  
+`gta3`: `.gxt` has one table, plain keys, ANSI encoding\
+`vc`: `.gxt` has multiple tables, plain keys, ANSI encoding\
+`sa`: `.gxt` has multiple tables, hashed keys, ANSI encoding\
 `sa_mobile`: `.gxt` has multiple tables, hashed keys, UTF-16 encoding
 
 #### variables
@@ -161,10 +161,10 @@ path to a JSON file generated in [Sanny Builder Library](../editor/features.md#i
 
 ### Built-in Variables
 
-Sanny provides a few variables that can be used in parameters and attributes \(if applicable\).
+Sanny provides a few variables that can be used in parameters and attributes (if applicable).
 
-`@game:` - path to the [game directory](../editor/options/general.md#game-directory) configured in the options  
-`@sb:` - path to the Sanny Builder directory \(where `sanny.exe` is located\)
+`@game:` - path to the [game directory](../editor/options/general.md#game-directory) configured in the options\
+`@sb:` - path to the Sanny Builder directory (where `sanny.exe` is located)
 
 Both paths do not include the trailing slash.
 
@@ -172,22 +172,22 @@ Both paths do not include the trailing slash.
 
 Sanny Builder offers many different modes and their number may vary from version to version:
 
-| Title | Naming schema  | Parameters order | Game |
-| :--- | :--- | :--- | :--- |
-| GTA III | community | custom | all versions of GTA III |
-| GTA VC | community | custom | all versions of Vice City |
-| GTA SA v1.0 | community | custom | SA v1.0  |
-| GTA SA v2.0 | community | custom | SA v2.0 |
-| GTA SA \(v1.0 - SCR\) | Rockstar | original | SA v1.0 |
-| GTA LCS | Rockstar | original | all versions of Liberty City Stories |
-| GTA VCS \(PSP\) | Rockstar | original | VCS for PSP |
-| GTA VCS \(PS2\) | Rockstar | original | VCS for PS2 |
-| VC Mobile | community | custom | VC Android and iOS versions |
-| SA Mobile | community | custom | SA Android and iOS versions |
+| Title               | Naming schema  | Parameters order | Game                                 |
+| ------------------- | -------------- | ---------------- | ------------------------------------ |
+| GTA III             | community      | custom           | all versions of GTA III              |
+| GTA VC              | community      | custom           | all versions of Vice City            |
+| GTA SA v1.0         | community      | custom           | SA v1.0                              |
+| GTA SA v2.0         | community      | custom           | SA v2.0                              |
+| GTA SA (v1.0 - SCR) | Rockstar       | original         | SA v1.0                              |
+| GTA LCS             | Rockstar       | original         | all versions of Liberty City Stories |
+| GTA VCS (PSP)       | Rockstar       | original         | VCS for PSP                          |
+| GTA VCS (PS2)       | Rockstar       | original         | VCS for PS2                          |
+| VC Mobile           | community      | custom           | VC Android and iOS versions          |
+| SA Mobile           | community      | custom           | SA Android and iOS versions          |
 
-The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers \(e.g. `char` or `script`\) that is consistent with the game's inner structures.  
+The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g. `char` or `script`) that is consistent with the game's inner structures.  
 
-The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
+The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original _order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
 
 ## Selecting a mode
 
@@ -198,4 +198,3 @@ To change the mode, click at the right bottom corner of the Sanny Builder's main
 To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game use the `--game` [option](../editor/cli.md#game).
 
 Running Sanny Builder with the `-x` [option](../editor/cli.md#x) allows loading the modes configuration from a file different from the default `modes.xml`. If Sanny Builder is already running, it reloads the configuration and updates the list of modes.
-

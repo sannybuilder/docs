@@ -2,11 +2,11 @@
 
 Here you can change the IDE settings.
 
-![](../../.gitbook/assets/options-editor-en.png)
+![](../../.gitbook/assets/options-editor-en.PNG)
 
 ## Color Theme
 
-![](../../.gitbook/assets/sb-options-color-theme.png)
+![](<../../.gitbook/assets/sb-options-color-theme (1).PNG>)
 
 This picker allows to choose one of the pre-defined themes to customize interface colors and syntax highlighting. The Edit button launches [Theme Editor](theme-editor.md).
 
@@ -26,17 +26,16 @@ Here you can choose the font and configure its display. Sanny Builder supports o
 
 ## Editor Configuration
 
-![](../../.gitbook/assets/sb-editor-configuration.png)
+![](../../.gitbook/assets/sb-editor-configuration.PNG)
 
-`Show main panel` – toggle the top toolbar  
-`Show opcode info` – make the editor display [different information](../features.md#displaying-information-about-opcode) in the bottom bar  
-`Line numbers` – display line numbers in the left padding area  
-`Show gutter border` – display the border line on the right side of the left padding area. Uncheck this option to increase the available space visually  
-`Load last closed file at startup` – open the last closed file at startup  
-`Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked  
-`Confirm when exit` – confirm exit to prevent occasional program termination  
-`Enable language service` - toggle the [language service](../language-service.md). Disabling this service also makes the semantinc contants highlighting unavailable. Does not affect a document that is already opened in the editor  
+`Show main panel` – toggle the top toolbar\
+`Show opcode info` – make the editor display [different information](../features.md#displaying-information-about-opcode) in the bottom bar\
+`Line numbers` – display line numbers in the left padding area\
+`Show gutter border` – display the border line on the right side of the left padding area. Uncheck this option to increase the available space visually\
+`Load last closed file at startup` – open the last closed file at startup\
+`Load all closed files` – open all closed files at startup. This option is only available when the Load last closed file at startup is checked\
+`Confirm when exit` – confirm exit to prevent occasional program termination\
+`Enable language service` - toggle the [language service](../language-service.md). Disabling this service also makes the semantinc contants highlighting unavailable. Does not affect a document that is already opened in the editor\
 `Semantic highlighting` - apply the same rules to constants as to their values. The color theme's rules for constant highlighting will be ignored.
 
-## 
-
+##

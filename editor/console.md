@@ -6,13 +6,13 @@ The **console** offers an ability to switch debug options of Sanny Builder. Most
 
 All commands are case-insensitive.
 
-`help` – shows the help information about the console  
-`clear` – clears the console  
-`list` – shows in the console the list of all commands  
-`list options` – lists all available debug options  
+`help` – shows the help information about the console\
+`clear` – clears the console\
+`list` – shows in the console the list of all commands\
+`list options` – lists all available debug options\
 `toggle [on/off]` – enable or disable [debug options](console.md#debug-options)
 
-The input command ends either with the word `ON` \(the option will be enabled\) or `OFF` \(the option will be disabled\), or nothing \(the option will be toggled from `ON` to `OFF` or from `OFF` to `ON`\).
+The input command ends either with the word `ON` (the option will be enabled) or `OFF` (the option will be disabled), or nothing (the option will be toggled from `ON` to `OFF` or from `OFF` to `ON`).
 
 {% hint style="info" %}
 Before enabling the following options turn on the debug mode with the command `toggle debug_mode ON`
@@ -20,37 +20,37 @@ Before enabling the following options turn on the debug mode with the command `t
 
 ## Debug Options
 
-### CODE\_OFFSETS
+### CODE_OFFSETS
 
 The disassembler prints the offset of each command.
 
-### VAR\_COUNTER
+### VAR_COUNTER
 
-After compiling the console contains the list of the [global variables](../coding/variables.md#global-variables) used only once in the code \(i.e. can be removed or replaced with [local variables](../coding/variables.md#local-variables)\).
+After compiling the console contains the list of the [global variables](../coding/variables.md#global-variables) used only once in the code (i.e. can be removed or replaced with [local variables](../coding/variables.md#local-variables)).
 
-### IGNORE\_UNKNOWN
+### IGNORE_UNKNOWN
 
 The disassembler ignores unknown opcodes, incorrect parameters and so on. It helps to open almost any file that used to be protected or compiled incorrectly.
 
-### CONSTANT\_INDEXES
+### CONSTANT_INDEXES
 
 The disassembler prints array elements as global variables with indexes. It's available for `GTA SA`, `LCS`, `VCS` games.
 
 E.g. given an array of three elements starting at `$10` this option affects the way the variables look like after disassembling:
 
 | Without `CONSTANT_INDEXES` | With `CONSTANT_INDEXES` |
-| :--- | :--- |
-| $10 | $10\[0\] |
-| $11 | $10\[1\] |
-| $12 | $10\[2\] |
+| -------------------------- | ----------------------- |
+| $10                        | $10\[0]                 |
+| $11                        | $10\[1]                 |
+| $12                        | $10\[2]                 |
 
-### SKIP\_SCM\_HEADER
+### SKIP_SCM_HEADER
 
-Disassembler skips the header of the input file. It allows to open headless scripts \(e.g. the ones from `script.img` or CLEO scripts\). 
+Disassembler skips the header of the input file. It allows to open headless scripts (e.g. the ones from `script.img` or CLEO scripts). 
 
-With this option the compiler makes `.scm` files without the header \(similar to `{$EXTERNAL}` [directive](../coding/directives.md#usdexternal)\).
+With this option the compiler makes `.scm` files without the header (similar to `{$EXTERNAL}` [directive](../coding/directives.md#usdexternal)).
 
-### SKIP\_EXTRA\_INFO
+### SKIP_EXTRA_INFO
 
 The disassembler ignores the [extra info](options/general.md#add-extra-info-to-scm) section attached to the input file. It also treats this section as a set of regular SCM instructions, so enabling `IGNORE_UNKNOWN` option is recommended.
 
@@ -62,16 +62,16 @@ Sanny Builder offers a few other ways to toggling debug options outside of the c
 
 The `--debug` [option](cli.md#debug) provides an alternate way of switching the debug options. Run Sanny with the parameter `--debug X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
 
-| Index | Debug Option |
-| :--- | :--- |
-| 1 | CODE\_OFFSETS |
-| 2 | IGNORE\_UNKNOWN |
-| 3 | VAR\_COUNTER |
-| 4 | CONSTANT\_INDEXES |
-| 5 | SKIP\_SCM\_HEADER |
-| 6 | SKIP\_EXTRA\_INFO |
+| Index | Debug Option     |
+| ----- | ---------------- |
+| 1     | CODE_OFFSETS     |
+| 2     | IGNORE_UNKNOWN   |
+| 3     | VAR_COUNTER      |
+| 4     | CONSTANT_INDEXES |
+| 5     | SKIP_SCM_HEADER  |
+| 6     | SKIP_EXTRA_INFO  |
 
-```text
+```
 sanny.exe --debug 110000
 ```
 
@@ -81,7 +81,6 @@ The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGN
 
 Clicking the right-most button in the main toolbar shows a drop-down menu with the list of debug options.
 
-![](../.gitbook/assets/sb-debug-options-dropdown.png)
+![](../.gitbook/assets/sb-debug-options-dropdown.PNG)
 
 Each menu item toggles a particular debug option. The change comes into effect immediately.
-

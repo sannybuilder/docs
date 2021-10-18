@@ -10,19 +10,19 @@ When the tool is open, it checks if there is a selected word in the editor. If t
 
 ## Copying Results
 
-To copy an opcode into clipboard, select it in the list and press `Enter`.   
-To add another opcode to the clipboard content press `Shift+Enter`.   
+To copy an opcode into clipboard, select it in the list and press `Enter`. \
+To add another opcode to the clipboard content press `Shift+Enter`. \
 To copy the entire results list press `F2`.
 
 ## Hotkeys
 
-`Enter` copy selected opcode onto clipboard  
-`Shift+Enter` add selected opcode to the clipboard  
-`F1` - show help information  
-`F2` - copy all opcodes from the results list into clipboard  
-`F3` - sort the list by opcodes  
-`F4` - sort the list alphabetically  
-`F11` - clear the search field, display all opcodes  
+`Enter` copy selected opcode onto clipboard\
+`Shift+Enter` add selected opcode to the clipboard\
+`F1` - show help information\
+`F2` - copy all opcodes from the results list into clipboard\
+`F3` - sort the list by opcodes\
+`F4` - sort the list alphabetically\
+`F11` - clear the search field, display all opcodes\
 `ESC` - close the tool window
 
 ## Search Queries
@@ -31,7 +31,7 @@ To copy the entire results list press `F2`.
 
 A single space between words serves as the `AND` operator:
 
-```text
+```
 @ player
 ```
 
@@ -41,7 +41,7 @@ Finds all opcodes with both `@` and the word `player`.
 
 The pipe character `|` is the `OR` operator:
 
-```text
+```
 @ | player
 ```
 
@@ -49,7 +49,7 @@ Finds all opcodes with either `@` or `player`.
 
 If you write `|` as the first character in the search, the tool will connect all the following words with the OR operator.
 
-```text
+```
 | actor player car
 ```
 
@@ -59,7 +59,7 @@ Finds opcodes with either `actor`, `player` or `car`.
 
 Two dashes before the word exclude opcodes with this word from the result:
 
-```text
+```
 car --actor
 ```
 
@@ -67,7 +67,7 @@ Finds opcodes with `car` but without `actor`.
 
 A single dash can be used before identifiers or `$` and `@` characters, but not numbers:
 
-```text
+```
 -10 -@ -car ---1
 ```
 
@@ -75,10 +75,10 @@ Finds opcodes with the number `-10` and without `@`, `car` and `-1`
 
 ### Search in conditional opcodes 
 
-`^` - shows only conditional opcodes   
+`^` - shows only conditional opcodes \
 `^word` - finds `word` in the conditional opcodes:
 
-```text
+```
 ^car ==
 ```
 
@@ -86,7 +86,7 @@ Finds all conditional opcodes with `car` and `==`.
 
 `-^` - excludes all conditional opcodes from the list:
 
-```text
+```
 player -^
 ```
 
@@ -94,7 +94,7 @@ Finds all non-conditional opcodes with `player`.
 
 `-^word` - excludes the conditional opcodes with `word`:
 
-```text
+```
 player -^actor
 ```
 
@@ -104,9 +104,8 @@ Finds opcodes with `player`, with the exception of the conditional opcodes with 
 
 `%` - finds opcodes with the words in the given order:
 
-```text
+```
 % @ = @
 ```
 
-Finds opcodes where `@` `=` `@` follow each other \(possibly with other words in between\).
-
+Finds opcodes where `@` `=` `@` follow each other (possibly with other words in between).

@@ -6,7 +6,7 @@ The following commands are built directly into the compiler and serve mostly as 
 
 Increments the first parameter by the second one. The first parameter is a [variable](variables.md).
 
-```text
+```
 Inc($IntVariable, $Value)
 =
 $IntVariable += $Value
@@ -14,7 +14,7 @@ $IntVariable += $Value
 
 The second parameter is equal to `1` if isn't specified.
 
-```text
+```
 Inc(1@)
 =
 1@ += 1
@@ -22,7 +22,7 @@ Inc(1@)
 
 Since the version 3.06 it's possible to use the `++` operator that can be applied to variables and increments their value by one.
 
-```text
+```
 $var++
 =
 $var += 1
@@ -32,7 +32,7 @@ $var += 1
 
 Decrements the first parameter by the second one. The first parameter is a variable.
 
-```text
+```
 Dec($IntVariable, $Value)
 =
 $IntVariable -= $Value
@@ -40,7 +40,7 @@ $IntVariable -= $Value
 
 The second parameter is equal to `1` if isn't specified.
 
-```text
+```
 Dec(1@)
 =
 1@ -= 1
@@ -48,7 +48,7 @@ Dec(1@)
 
 Since the version 3.06 it's possible to use the `--` operator that can be applied to variables and decrements their value by one.
 
-```text
+```
 $var--
 =
 $var -= 1
@@ -58,7 +58,7 @@ $var -= 1
 
 Multiplies the first parameter by the second one. The first parameter is a variable.
 
-```text
+```
 Mul($IntVariable, $Value)
 =
 $IntVariable = $IntVariable * $Value
@@ -66,7 +66,7 @@ $IntVariable = $IntVariable * $Value
 
 The second parameter is equal to `2` if isn't specified.
 
-```text
+```
 Mul(1@)
 =
 1@ = 1@ * 2
@@ -76,7 +76,7 @@ Mul(1@)
 
 Divides the first parameter by the second one. The first parameter is a variable.
 
-```text
+```
 Div($IntVariable, $Value)
 =
 $IntVariable = $IntVariable / $Value
@@ -84,7 +84,7 @@ $IntVariable = $IntVariable / $Value
 
 The second parameter is equal to `2` if isn't specified.
 
-```text
+```
 Div(1@)
 =
 1@ = 1@ / 2
@@ -94,11 +94,11 @@ Div(1@)
 
 This function sets the offset of a [global variable](variables.md#global-variables) at the global variable space that exists in the beginning of the `main.scm` header.
 
-It's only meaningful for custom variables \(e.g. `$text`\) not defined in the `CustomVariables.ini`. [`DMA`-variables](variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` \(40\*4\).
+It's only meaningful for custom variables (e.g. `$text`) not defined in the `CustomVariables.ini`. [`DMA`-variables](variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` (40\*4).
 
 The first parameter must be a global variable, the second parameter must be a positive integer number or zero.
 
-```text
+```
 Alloc($MyVar, 40) - the variable $MyVar will be compiled as $40
 ```
 
@@ -110,7 +110,7 @@ See also `help\examples\alloc.txt`
 
 Multiplies the variable by itself.
 
-```text
+```
 sqr($var) 
 =
 $var *= $var
@@ -124,9 +124,8 @@ The variable type has to be [declared](variables.md#var-end-construct).
 
 This function generates a random number within the specified range.
 
-```text
+```
 $rnd = random(1, $high)
 ```
 
-This function can be used for both integer and floating-point variables. The opcode is selected based on the type of the result variable \(`$rnd` in this example\).
-
+This function can be used for both integer and floating-point variables. The opcode is selected based on the type of the result variable (`$rnd` in this example).

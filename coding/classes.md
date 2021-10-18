@@ -4,19 +4,19 @@ A **class** is a group of commands applied to the in-game entities: player, peds
 
 ## General Syntax
 
-Syntax:  
+Syntax:\
 `<Class name>.<Class member>(parameters)`
 
-`Class name` - the name of a group of commands defined in the `classes.db` file for this edit mode  
-`Class member` - one of the commands included in the class  
+`Class name` - the name of a group of commands defined in the `classes.db` file for this edit mode\
+`Class member` - one of the commands included in the class\
 `Parameters` - 0 or more comma-delimited [parameters](data-types.md)
 
-```text
+```
 Player.SetMinWantedLevel($PLAYER_CHAR, 2)
 ```
 
-`Player` - class name  
-`SetMinWantedLevel` - class member  
+`Player` - class name\
+`SetMinWantedLevel` - class member\
 `$PLAYER_CHAR, 2` - two parameters for `SetMinWantedLevel`
 
 There are three types of class members:
@@ -29,7 +29,7 @@ There are three types of class members:
 
 The list that appears when you press `Ctrl+Space` marks conditional commands with the word `Check`. They are used in [conditional expressions](conditions.md): 
 
-```text
+```
 if
     Player.Defined($PLAYER_CHAR)
 jf @anywhere
@@ -39,7 +39,7 @@ jf @anywhere
 
 Methods are regular commands used to complete a single in-game action, e.g. moving an object, destroying a vehicle, etc.:
 
-```text
+```
 Object.PutAt($crate, 10.0, -25.5, 12.2)
 Car.Destroy($car)
 ```
@@ -50,12 +50,12 @@ A special kind of methods is a constructor. A constructor creates a new instance
 
 In Sanny Builder the constructor can be written in two equivalent ways:
 
-```text
+```
 Player.Create($PLAYER_CHAR, #NULL, 2488.5601, -1666.84, 13.38)
 
 ```
 
-```text
+```
 $PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38)
 ```
 
@@ -65,7 +65,7 @@ Property allows you to access class attributes and/or modify them.
 
 For example, the `.Money` property of the `Player` class allows to operate with the amount of money of the player:
 
-```text
+```
 Player($PLAYER_CHAR).Money += 1000000 // add more money
 Player($PLAYER_CHAR).Money > 461@ // check the amount
 4@ = Player($PLAYER_CHAR).Money // read the amount and store in variable
@@ -74,13 +74,13 @@ Player($PLAYER_CHAR).Money > 461@ // check the amount
 {% hint style="warning" %}
 In the current version the compiler ignores whitespace characters in [string literals](data-types.md#string-literals) used in property parameters:
 
-```text
+```
 0@ = File.Open("file name","wb")
 ```
 
 will be compiled as:
 
-```text
+```
 0@ = File.Open("filename","wb")
 ```
 {% endhint %}
@@ -89,7 +89,7 @@ will be compiled as:
 
 Almost all class members take a variable as the first parameter. This variable holds a handle of the class instance which is a concrete in-game entity the command is applied to:
 
-```text
+```
 Player.Build($PLAYER_CHAR)
 ```
 
@@ -97,7 +97,7 @@ Player.Build($PLAYER_CHAR)
 
 For some in-game entities there is only one instance to exist. An example of that would be the camera that controls what the player can see. The members of classes for such entities do not require a variable with the class instance:
 
-```text
+```
 Camera.SetBehindPlayer()
 ```
 
@@ -105,7 +105,7 @@ Camera.SetBehindPlayer()
 
 Variables can be [declared](variables.md#var-end-construct) using a class name as the type:
 
-```text
+```
 var
     $PLAYER_CHAR: Player
 end
@@ -113,7 +113,7 @@ end
 
 It instructs the compiler that `$PLAYER_CHAR` holds an instance of the class `Player`. This variable can serve as an alias to the class name:
 
-```text
+```
 if
     $PLAYER_CHAR.Defined
 jf @anywhere
@@ -122,13 +122,13 @@ jf @anywhere
 {% hint style="warning" %}
 If a variable substitutes a class name, the compiler also makes it the first parameter, hence no need to use it again in the list of parameters:
 
-```text
+```
 $PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head)
 ```
 
 is equivalent to:
 
-```text
+```
 Player.SetClothes($PLAYER_CHAR, "PLAYER_FACE", "HEAD", Head)
 ```
 {% endhint %}
@@ -139,7 +139,7 @@ Variables declared as instances of a class can be redeclared with another type.
 
 [Model names](data-types.md#model-names) are always instances of the `Model` class:
 
-```text
+```
 #AK47.Load
   
 :loop
@@ -151,7 +151,7 @@ jf @loop
 
 It is equivalent to:
 
-```text
+```
 Model.Load(#AK47)
 
 :loop
@@ -165,19 +165,17 @@ jf @loop
 
 Class parameters can be assigned to an [enumerated type](../edit-modes/enums.txt.md). It makes the source code more readable:
 
-```text
+```
 Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", BodyPart.Torso)
 ```
 
-The last parameter \(`BodyPart.Torso`\) is a member of the `BodyPart` enum substituted with `0` during compilation.  The enums and values are defined in the `enums.txt` file.
+The last parameter (`BodyPart.Torso`) is a member of the `BodyPart` enum substituted with `0` during compilation.  The enums and values are defined in the `enums.txt` file.
 
-#### Extended parameters \(deprecated\)
+#### Extended parameters (deprecated)
 
 Sanny Builder prior to v3.6 defined special constants for class members in the file `classes.db` . These parameters were called extended. This solution only allowed for one extended parameter per class member. 
 
 Since v3.6 class members use enum names as their types and may have any number of enumerated parameters. 
 
 For backward compatibility Sanny Builder still supports old extended parameters during compilation.  `classes.db` keeps them under the `DEPRECATED_ENUMS` section.
-
-
 
