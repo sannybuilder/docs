@@ -16,7 +16,7 @@ This picker allows to choose one of the pre-defined themes to customize interfac
 
 The code scanning range is used when you press `Ctrl+Space` to find [constants](../../coding/constants.md), labels and [variables](../../coding/variables.md). The value tells the editor how many lines to scan up and down starting from the active line. If you set a number of `0`, the editor scans the whole source file.
 
-If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](mk:@MSITStore:D:\Coding\Delphi\Sanny\misc\HelpSystem\chm\help.chm::/old/options/sbo/editor_opt.png)
+If the `Auto list` option is checked, the list of available labels, models and variables appears automatically as you type `@`, `$`, `#`.![](../../.gitbook/assets/editor_opt.png)
 
 ## Font
 
