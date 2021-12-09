@@ -10,18 +10,16 @@ Alexander Blade, Barton Waterduck, BG\_ASM, Capushon, CyQ, Demarest, JernejL, Ha
 
 ## Авторы переводов
 
-Y\_Less, tomworld10, -Shadow-Link, Mordecki, Silent, WordsBG, FunGt, Wesser, Mobster, Jost\_Vice, Thomazu, Balint, Ridvan and Tuna \(RT\), MatiDragon, Mega GTAшnik, SHooZ, Yi Yangyijk, VCT team, Alex5526, Marek Simsa, Syping/Hulkkiller, IMasterFX, MINE, MatiDragon, wmysterio, forms55, XMDS.
+Y\_Less, tomworld10, -Shadow-Link, Mordecki, Silent, WordsBG, FunGt, Wesser, Mobster, Jost\_Vice, Thomazu, Balint, Ridvan and Tuna (RT), MatiDragon, Mega GTAшnik, SHooZ, Yi Yangyijk, VCT team, Alex5526, Marek Simsa, Syping/Hulkkiller, IMasterFX, MINE, wmysterio, forms55, XMDS.
 
 ## Программы и компоненты
 
-Delphi 7 © Borland Software Corp  
-[http://www.borland.com](http://www.borland.com/)
+Delphi 7 © Borland Software Corp\
+[http://www.borland.com](http://www.borland.com)
 
-SynEdit © Команда разработчиков SynEdit  
-[http://synedit.sourceforge.net](http://synedit.sourceforge.net/)
+SynEdit © Команда разработчиков SynEdit\
+[http://synedit.sourceforge.net](http://synedit.sourceforge.net)
 
-Inno Setup © Jordan Russell, Martijn Laan  
+Inno Setup © Jordan Russell, Martijn Laan\
 [https://jrsoftware.org/isinfo.php](https://jrsoftware.org/isinfo.php)
-
-
 
