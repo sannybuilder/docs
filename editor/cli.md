@@ -9,7 +9,7 @@ sanny.exe --compile C:\myscm.txt C:\myscm.scm
 ```
 
 {% hint style="info" %}
-The `output file path`_ _parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name. 
+The `output file path` __ parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -78,7 +78,7 @@ Available since v3.8.0
 
 `-o <option name> <value>` - sets the value of the specified [option](options/). To set multiple options, list each of them individually:
 
-`-o <option1 name> <option1 value> -o <option2 name> <option2 value> ... -o <optionN name> <optionN value>` 
+`-o <option1 name> <option1 value> -o <option2 name> <option2 value> ... -o <optionN name> <optionN value>`&#x20;
 
 Option name can be one of the following:
 

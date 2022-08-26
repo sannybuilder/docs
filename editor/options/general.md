@@ -2,13 +2,13 @@
 
 This tab contains the general settings used by Sanny Builder.
 
-![](../../.gitbook/assets/options-general-en.PNG)
+![](../../.gitbook/assets/options-general-en.png)
 
 
 
 ## Game Directory
 
-![](../../.gitbook/assets/main_dir.png)
+![](../../.gitbook/assets/main\_dir.png)
 
 Sanny Builder needs certain game files while working, so you have to choose a correct directory where the game for the current edit mode is installed. You may input the path manually or by selecting the directory via the dialog appearing when you press the button.
 
@@ -16,7 +16,7 @@ Sanny Builder needs certain game files while working, so you have to choose a co
 
 ![](../../.gitbook/assets/general-language-en.png)
 
-List of available translations for Sanny Builder. Select a language to update the program interface. 
+List of available translations for Sanny Builder. Select a language to update the program interface.&#x20;
 
 Translation files are located in the `lang` folder. More information on how to create a new translation or update the existing one can be found at [sannybuilder/translations](https://github.com/sannybuilder/translations).
 
@@ -28,17 +28,17 @@ You may associate different file extensions with Sanny Builder. When a checkbox 
 
 ## Core Settings
 
-![](../../.gitbook/assets/main_opt.png)
+![](../../.gitbook/assets/main\_opt.png)
 
 ### Always overwrite output file
 
-This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name (e.g. `main[0].txt`). 
+This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name (e.g. `main[0].txt`).&#x20;
 
 When this option is checked the disassembler replaces the existing file with a new file.
 
 ### Show progress
 
-Display a live progress bar during disassembling or compilation. Showing the progress slightly slows the execution time. When this option is turned off the status bar displays the words: `Please wait`. 
+Display a live progress bar during disassembling or compilation. Showing the progress slightly slows the execution time. When this option is turned off the status bar displays the words: `Please wait`.&#x20;
 
 ### Show report
 
@@ -66,7 +66,7 @@ The number of local and global [variables](../../coding/variables.md) is limited
 
 ### Write opcodes
 
-If this option is unchecked, the disassembler uses available [classes](../../coding/classes.md) and [keywords](../../coding/keywords.md) instead of opcodes. In addition, simple math expressions have no opcodes. 
+If this option is unchecked, the disassembler uses available [classes](../../coding/classes.md) and [keywords](../../coding/keywords.md) instead of opcodes. In addition, simple math expressions have no opcodes.&#x20;
 
 If the option is checked, all opcodes are present in the output file.
 
@@ -80,7 +80,7 @@ When this option is checked, the disassembler adds the [mission title](../featur
 
 ### Add extra info to SCM
 
-If this option is checked the compiler adds extra information at the end of the resulting file. This info is used later when this file gets disassembled to restore the source closer to the original. The following data is stored: 
+If this option is checked the compiler adds extra information at the end of the resulting file. This info is used later when this file gets disassembled to restore the source closer to the original. The following data is stored:&#x20;
 
 * [HEX..END](../../coding/hex..end.md) constructs offsets
 * [global variables](../../coding/variables.md#global-variables) names
@@ -88,8 +88,8 @@ If this option is checked the compiler adds extra information at the end of the 
 * current [edit mode](../../edit-modes/)
 
 {% hint style="info" %}
-The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 (unless the `ignore_unknown` [option](../console.md#ignore_unknown) is enabled).
+The file compiled with the extra information can not be open in Sanny Builder prior to v3.00 (unless the `ignore_unknown` [option](../console.md#ignore\_unknown) is enabled).
 
-Starting from v3.8.0 the disassembler can [ignore extra information](../console.md#skip_extra_info).
+Starting from v3.8.0 the disassembler can [ignore extra information](../console.md#skip\_extra\_info).
 {% endhint %}
 

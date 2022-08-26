@@ -2,7 +2,7 @@
 
 Here you can set up source file names, labels format, letter case for string literals, etc.
 
-![](../../.gitbook/assets/options-format-en.PNG)
+![](../../.gitbook/assets/options-format-en.png)
 
 ## File Name Format
 
@@ -20,7 +20,7 @@ E.g. if you disassemble the file `C:\MyDir\main.scm`, then
 
 `$dir` is `C:\MyDir` \
 `$name` is `main` \
-`$ext` is `.scm` 
+`$ext` is `.scm`&#x20;
 
 If the format is `$dir\$name.txt`, the output file is named `C:\MyDir\main.txt`.
 

@@ -1,6 +1,6 @@
 # Edit Modes
 
-Sanny Builder supports many games and platforms and so there is a predefined configuration for each supported game called an **edit mode**. 
+Sanny Builder supports many games and platforms and so there is a predefined configuration for each supported game called an **edit mode**.&#x20;
 
 Edit modes supply Sanny Builder with the following information:
 
@@ -16,7 +16,7 @@ The file `modes.xml` is open for modification and extension, and users can creat
 
 `modes.xml` is a file in the XML format and can be changed in any text editor. It defines the available modes.
 
-The root node is `<modes>` and it has no attributes. The file can only have one root node. 
+The root node is `<modes>` and it has no attributes. The file can only have one root node.&#x20;
 
 Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags (properties) defining paths to directories or files.
 
@@ -26,11 +26,11 @@ Each edit mode is a child node of `<modes>` beginning with the opening tag `<mod
 
 `id` is a required and unique identifier of the mode. Sanny Builder uses the `id` to save some user settings for this mode, e.g. a [game directory](../editor/options/general.md#game-directory).
 
-A valid value for this attribute is a unique series of characters not used for any other mode's id. 
+A valid value for this attribute is a unique series of characters not used for any other mode's id.&#x20;
 
 #### extends
 
-A mode can extend another mode (the parent) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode. 
+A mode can extend another mode (the parent) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode.&#x20;
 
 When a property is missing Sanny Builder recursively traverses all parent modes trying to find the property.
 
@@ -52,23 +52,23 @@ The `game` attribute defines a target game for the mode. There are `6` valid val
 * `vc_mobile`
 * `sa_mobile`
 
-Before disassembling or compiling a script, make sure that the correct edit mode is active. Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game. Even if the script is compiled without errors, the game would crash trying to read a script in different format. 
+Before disassembling or compiling a script, make sure that the correct edit mode is active. Each game has an unique script format and the scripts compiled for one game are not compatible with scripts for another game. Even if the script is compiled without errors, the game would crash trying to read a script in different format.&#x20;
 
 {% hint style="info" %}
 A compiled script file may [store information](../editor/options/general.md#add-extra-info-to-scm) about which game it is made for. When you open such a script, Sanny Builder prompts you to change the mode to the correct one. Ignoring this prompt may cause a crash of the disassembler, because the script format is unexpected for it.
 {% endhint %}
 
-Sanny Builder displays a game icon in front of the edit mode name so you know the target game. 
+Sanny Builder displays a game icon in front of the edit mode name so you know the target game.&#x20;
 
 #### type
 
-One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game `CLI [option](../editor/cli.md#game).
+One mode for each target game must be a default one. It means Sanny Builder uses this mode when run with the `--game` CLI [option](../editor/cli.md#game).
 
 The valid value for this attribute is `default.` Omit this attribute for non-default modes.
 
 ### Mode Parameters
 
-#### arrays 
+#### arrays&#x20;
 
 path to [`CustomArrays.ini`](../coding/arrays.md)
 
@@ -80,7 +80,7 @@ Has a required attribute `type`:\
 `type="scm"` - used for regular `.scm` scripts\
 `type="cleo"` - used for scripts with [directive](../coding/directives.md#usdcleo) `{$CLEO}`
 
-#### classes 
+#### classes&#x20;
 
 path to[`classes.db`](../coding/classes.md)
 
@@ -88,7 +88,7 @@ path to[`classes.db`](../coding/classes.md)
 
 path to[`constants.txt`](../coding/constants.md)
 
-#### data 
+#### data&#x20;
 
 path to the mode directory
 
@@ -96,7 +96,7 @@ path to the mode directory
 
 path to [enums.txt](enums.txt.md)
 
-#### ide 
+#### ide&#x20;
 
 path to either an `.ide` or `.dat` file:\
 `.ide` files contain game [model names](../coding/data-types.md#model-names) and characteristics\
@@ -112,31 +112,31 @@ Without `base` all relative paths are resolved starting from the location of the
 
 A mode may have multiple `<ide>` elements.
 
-#### keywords 
+#### keywords&#x20;
 
 path to a list of [keywords](../coding/keywords.md)
 
-#### labels 
+#### labels&#x20;
 
 path to [`CustomLabels.ini`](customlabels.ini.md)
 
-#### missions 
+#### missions&#x20;
 
 path to[`missions.txt`](../editor/features.md#custom-mission-titles)
 
-#### opcodes 
+#### opcodes&#x20;
 
 path to a list of [opcodes](opcodes-list-scm.ini.md)
 
-#### templates 
+#### templates&#x20;
 
-path to a file with the mode's [exclusive templates](code-templates.md) 
+path to a file with the mode's [exclusive templates](code-templates.md)&#x20;
 
 Has a required attribute `type`:\
 `type="default"` - path to the predefined templates shipped with Sanny Builder\
 `type="custom"` - path to a file with user templates added via the [Add Template](code-templates.md#adding-a-new-template) form. This file is never overwritten during a Sanny Builder update.
 
-#### text 
+#### text&#x20;
 
 path to a `.gxt` file
 
@@ -185,15 +185,15 @@ Sanny Builder offers many different modes and their number may vary from version
 | VC Mobile           | community      | custom           | VC Android and iOS versions          |
 | SA Mobile           | community      | custom           | SA Android and iOS versions          |
 
-The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g. `char` or `script`) that is consistent with the game's inner structures.  
+The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g. `char` or `script`) that is consistent with the game's inner structures. &#x20;
 
-The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original _order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
+The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
 
 ## Selecting a mode
 
 To change the mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. As you click the mode name Sanny Builder makes all necessary adjustments and you may continue working immediately.
 
-![](../.gitbook/assets/edit_modes.png)
+![](../.gitbook/assets/edit\_modes.png)
 
 To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game use the `--game` [option](../editor/cli.md#game).
 

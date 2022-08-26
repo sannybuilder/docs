@@ -12,11 +12,11 @@ Run the installer and follow its instructions. During installation you could opt
 
 To uninstall the program, run the file `unins000.exe` located in its root folder.
 
-Latest versions and updates are always available on [sannybuilder.com](https://sannybuilder.com)
+Latest versions and updates are always available on [sannybuilder.com](https://sannybuilder.com/)
 
 ## Contacts
 
-[sannybuilder.com](https://sannybuilder.com)\
+[sannybuilder.com](https://sannybuilder.com/)\
 [Sanny Builder @ GitHub](https://github.com/sannybuilder/dev/issues)\
 [Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)\
 [Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)

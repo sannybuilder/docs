@@ -2,11 +2,11 @@
 
 Here you can change the IDE settings.
 
-![](../../.gitbook/assets/options-editor-en.PNG)
+![](../../.gitbook/assets/options-editor-en.png)
 
 ## Color Theme
 
-![](<../../.gitbook/assets/sb-options-color-theme (1).PNG>)
+![](../../.gitbook/assets/sb-options-color-theme.png)
 
 This picker allows to choose one of the pre-defined themes to customize interface colors and syntax highlighting. The Edit button launches [Theme Editor](theme-editor.md).
 
@@ -22,11 +22,11 @@ If the `Auto list` option is checked, the list of available labels, models and v
 
 ![](../../.gitbook/assets/editor-font-en.png)
 
-Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
+Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced\_font). `AaBbCcDd` reflects selected configuration.
 
 ## Editor Configuration
 
-![](../../.gitbook/assets/sb-editor-configuration.PNG)
+![](../../.gitbook/assets/sb-editor-configuration.png)
 
 `Show main panel` – toggle the top toolbar\
 `Show opcode info` – make the editor display [different information](../features.md#displaying-information-about-opcode) in the bottom bar\

@@ -1,19 +1,19 @@
 # Loops
 
-A **loop **is a statement which allows code to be repeatedly executed. Sanny Builder supports three kinds of controls loops: [for](loops.md#for-end), [while](loops.md#while-end), [repeat](loops.md#repeat-until).
+A **loop** is a statement which allows code to be repeatedly executed. Sanny Builder supports three kinds of controls loops: [for](loops.md#for-end), [while](loops.md#while-end), [repeat](loops.md#repeat-until).
 
 ## FOR..END
 
-The `FOR `loop has a strictly certain number of iterations (repetitions).
+The `FOR` loop has a strictly certain number of iterations (repetitions).
 
 Syntax:\
 `FOR <loop variable> = <initial value> TO/DOWNTO <final value> [step = 1]`\
-`  <the loop body>`\
+&#x20; `<the loop body>`\
 `END`
 
 `<loop variable>` - a [variable](variables.md) used as a counter for iterations\
 `<initial value>` - a value of the loop variable before the first iteration (any value including a [model identifier](data-types.md#model-names))\
-`TO` or `DOWNTO`** **- increment or decrement the loop variable between iterations\
+`TO` or `DOWNTO` **** - increment or decrement the loop variable between iterations\
 `<final value>` - a value of the loop variable after the last iteration (any value including a model identifier)\
 `<step>` - an optional value the loop variable will be incremented or decremented with between iterations. By default it is equal to `1`.
 
@@ -28,7 +28,7 @@ FOR $MyCounter = 1 to $final step 2
 end
 ```
 
-If the `loop variable` is not [declared](variables.md#var-end-construct) with any type before the loop it gets the `Integer` type. If  `initial value`, `final value` or `step` are variables, they get the same type the `loop variable` has To use floating-point numbers for the initial and final values, declare the loop variable with the `Float `type.
+If the `loop variable` is not [declared](variables.md#var-end-construct) with any type before the loop it gets the `Integer` type. If  `initial value`, `final value` or `step` are variables, they get the same type the `loop variable` has To use floating-point numbers for the initial and final values, declare the loop variable with the `Float` type.
 
 ```
 var
@@ -45,7 +45,7 @@ Variables `$MyCounter` and `$final` both have the `Float` type after the loop.
 
 Syntax:\
 `WHILE <loop condition>`\
-`  <the loop body>`\
+&#x20; `<the loop body>`\
 `END`
 
 `loop condition` - a single conditional opcode\
@@ -88,7 +88,7 @@ end
 This loop is ignored by the compiler as the condition is never met.
 
 {% hint style="info" %}
-Currently the compiler accepts only one opcode in the loop condition, but you can check more conditions before the loop body and use the commands `Break `and `Continue`.
+Currently the compiler accepts only one opcode in the loop condition, but you can check more conditions before the loop body and use the commands `Break` and `Continue`.
 
 ```
 while true
@@ -109,7 +109,7 @@ end
 
 Syntax:\
 `REPEAT`\
-`  <the loop body>`\
+&#x20; `<the loop body>`\
 `UNTIL <loop condition>`
 
 `loop body` - commands to execute on each iteration; can be omitted\
@@ -150,7 +150,7 @@ until false
 
 ## Continue and Break
 
-If you want to skip the current iteration and proceed to the next one, use the `Continue` command. 
+If you want to skip the current iteration and proceed to the next one, use the `Continue` command.&#x20;
 
 The `Break` command causes the loop to stop immediately and proceed to the command after the loop body.
 

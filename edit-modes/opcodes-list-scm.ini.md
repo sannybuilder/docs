@@ -1,20 +1,20 @@
 # Opcodes List (SCM.INI)
 
 {% hint style="success" %}
-Opcodes documentation can be found in [Sanny Builder Library](https://library.sannybuilder.com).
+Opcodes documentation can be found in [Sanny Builder Library](https://library.sannybuilder.com/).
 {% endhint %}
 
 `SCM.INI` is the file containing information about opcodes used during disassembling and compiling script files. Sanny Builder ships a list of opcodes for each [edit mode](./#opcodes).
 
-| Game                 | File Name  | Location       |
-| -------------------- | ---------- | -------------- |
-| GTA III              | SCM.INI    | data\gta3      |
-| Vice City            | VCSCM.INI  | data\vc        |
-| San Andreas          | SASCM.INI  | data\sa        |
-| Liberty City Stories | LCSSCM.INI | data\lcs       |
-| Vice City Stories    | VCSSCM.INI | data\vcs       |
-| VC Mobile            | VCSCM.INI  | data\vc_mobile |
-| SA Mobile            | SASCM.INI  | data\sa_mobile |
+| Game                 | File Name  | Location        |
+| -------------------- | ---------- | --------------- |
+| GTA III              | SCM.INI    | data\gta3       |
+| Vice City            | VCSCM.INI  | data\vc         |
+| San Andreas          | SASCM.INI  | data\sa         |
+| Liberty City Stories | LCSSCM.INI | data\lcs        |
+| Vice City Stories    | VCSSCM.INI | data\vcs        |
+| VC Mobile            | VCSCM.INI  | data\vc\_mobile |
+| SA Mobile            | SASCM.INI  | data\sa\_mobile |
 
 ## File Format
 
@@ -47,7 +47,7 @@ By convention a description for a conditional opcode starts with two spaces.
 
 ### Opcode Parameters
 
-A parameter is a dynamic part of the opcode. They start and end with `%` 
+A parameter is a dynamic part of the opcode. They start and end with `%`&#x20;
 
 ```
 0001=1,wait %1d% ms
@@ -65,7 +65,7 @@ The number in parameter `%1d%` is its index. The idea is that some opcodes have 
 0053=5,%5d% = create_player %1o% at %2d% %3d% %4d%
 ```
 
-The disassembler writes the 5th opcode parameter before any others. 
+The disassembler writes the 5th opcode parameter before any others.&#x20;
 
 ```
 0053: $PLAYER_CHAR = сreate_player #NULL at 2488.562 -1666.865 12.8757 

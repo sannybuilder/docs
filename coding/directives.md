@@ -1,6 +1,6 @@
 # Directives
 
-Preprocessing **directives **are the special words that make the compiler function in different ways. They starts with `$` and enclosed between the curly brackets `{}`.
+Preprocessing **directives** are the special words that make the compiler function in different ways. They starts with `$` and enclosed between the curly brackets `{}`.
 
 ## $VERSION
 
@@ -21,7 +21,7 @@ Syntax:\
 
 By default the compiler uses the version `current_edit_mode.1.0000`.
 
-## $VERSION_RESTORE
+## $VERSION\_RESTORE
 
 {% hint style="warning" %}
 This directive is deprecated since v3.1.0
@@ -51,7 +51,7 @@ If the file path is relative, the compiler scans directories in the following or
 3. Sanny Builder root directory
 4. the game directory
 
-If none of these directories contains a requested file the compiler throws an exception. 
+If none of these directories contains a requested file the compiler throws an exception.&#x20;
 
 You may use this directive unlimited number of times. The included files may contain this directive too.
 
@@ -63,7 +63,7 @@ A shorter form of this directive is `$I`.
 
 Makes the compiler to treat the file as an external script. Meaning, the resulting output file will be header-less and with relative [label](data-types.md#labels) offsets, as an `.scm` file from the `script.img`. Using this directive requires that the file contains only one script or a single mission.
 
-An alternative way to get such file is the debug [option](../editor/console.md#skip_scm_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
+An alternative way to get such file is the debug [option](../editor/console.md#skip\_scm\_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
 
 Syntax:\
 `{$EXTERNAL}`
@@ -94,24 +94,24 @@ So this directive is the perfect solution to make a CLEO script.
 
 ## $NOSOURCE
 
-Prohibits the compiler from including a source code of the script. 
+Prohibits the compiler from including a source code of the script.&#x20;
 
-Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../editor/options/general.md#add-extra-info-to-scm)` Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
+Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../editor/options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
 
 Syntax:\
 `{$NOSOURCE}`
 
 ## $OPCODE
 
-Registers a custom opcode via the script. 
+Registers a custom opcode via the script.&#x20;
 
 All the opcodes definitions are contained in a [special file](../edit-modes/opcodes-list-scm.ini.md), one for each supported game. But sometimes it's necessary to add a custom opcode to use in the current script. `$OPCODE` makes it possible without touching the INI file.
 
 Syntax:\
 `{$OPCODE <opcode definition>}`\
- or\
+&#x20;or\
 `{$OPCODE <path\to\file>}`\
- or\
+&#x20;or\
 `{$OPCODE}`
 
 `opcode definition` - it accepts an definition in the same [format](../edit-modes/opcodes-list-scm.ini.md#opcode-definition) as the INI file.
