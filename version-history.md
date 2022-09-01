@@ -1,5 +1,30 @@
 # Version History
 
+## v. 3.8.1 - 01.09.2022
+
+* added support for more commands terminating an if statement with multiple conditions [#133](https://github.com/sannybuilder/dev/issues/133)
+
+```
+    if and
+        0AB0: is_key_pressed 9
+	0AB0: is_key_pressed 10
+    0AA0: gosub_if_false @label // was not working before, now compiles
+```
+
+* new and updated [translations](https://github.com/sannybuilder/translations) (Spanish, Ukrainian, Romanian, Armenian)
+* [new color themes](https://github.com/sannybuilder/themes) contributed by the users
+* [massive update](https://github.com/MatiDragon-YT/help-system) for local help files (CHM)
+* new [edit mode](edit-modes/) for GTA SA PS2 with PS2 CLEO commands
+* updated local [CLEO](https://cleo.li/) and plugin files:&#x20;
+  * CLEO for San Andreas 4.4.1
+  * CLEO for GTA III and Vice City 2.0.0.6
+  * plugin [CLEO+ 1.1.2](https://github.com/JuniorDjjr/CLEOPlus/releases/tag/v1.1.2)
+* fixed bugs [#172](https://github.com/sannybuilder/dev/issues/172), [#189](https://github.com/sannybuilder/dev/issues/189)
+
+👏 Thanks to everyone who contributed to this version: [NicusorN5](https://github.com/NicusorN5), [Junior\_Djjr](https://github.com/JuniorDjjr), [wmysterio](https://github.com/wmysterio), [MatiDragon](https://github.com/MatiDragon-YT), [DanielSant0s](https://github.com/DanielSant0s), [JaggerJam69](https://github.com/JaggerJam69), [Vital](https://github.com/VitalRus95), [Sdas50](https://github.com/Sdas50), [nick7](https://github.com/nick7)
+
+[Complete list of changes](https://github.com/sannybuilder/dev/issues/182)
+
 ## v. 3.8.0 - 04.08.2021
 
 * [integration with Sanny Builder Library](editor/features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
@@ -65,7 +90,7 @@ Read more on constants highlighting there: [Language service](editor/language-se
   * compiler uses CLEO opcodes `0A9E`, `0A9F`, `0A90`, `0A91` [in certain expressions when no opcode is supplied](https://github.com/sannybuilder/dev/issues/58#issuecomment-723376464)
   * unified description and keywords for CLEO opcodes across different edit modes
 * added [keywords](coding/keywords.md) for all opcodes in GTA SA SCR mode
-* word _thread_  has been replaced with _script_ in opcode definitions and keywords ([see why](https://gtamods.com/wiki/Talk:Script#Thread-%3EScript\).))
+* word _thread_ has been replaced with _script_ in opcode definitions and keywords ([see why](https://gtamods.com/wiki/Talk:Script#Thread-%3EScript\).))
 * IDE updates:
   * the game directory is no longer required to compile a script ([#48](https://github.com/sannybuilder/dev/issues/48))
   * the "Compile and Copy" destination could be configured ([#9](https://github.com/sannybuilder/dev/issues/9))
@@ -271,7 +296,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 ## v. 3.06 - 17.06.2013
 
 * added new [operators ](coding/built-in-commands.md)`++` and `--`
-* added support for block [comments](editor/features.md#commenting-code) `/*   */`
+* added support for block [comments](editor/features.md#commenting-code) `/* */`
 * `SASCM.INI` got an update from the [GTAG Database](https://gtagmodding.com/opcode-database/)
 * replaced properties `Actor.Armour` and `Actor.Car` with their correct versions `Actor.AddArmour` and `Actor.MissionCar`
 * added a new property `Actor.CurrentCar` for the opcode `03C0` in the SA and VC classes.
@@ -308,7 +333,7 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 * the Compile+Copy feature (`F7`) does not create a copy of the output file if the source has `$E` or `$CLEO` directives
 *   during a compilation run after pressing `F6`, the output file for a source file with the `$CLEO` directive
 
-    is created in the same directory; after `F7`  the output file is created in the CLEO directory (similarly to `SCM` files)
+    is created in the same directory; after `F7` the output file is created in the CLEO directory (similarly to `SCM` files)
 * new translations: Italian, Portuguese
 
 ## v. 3.01- 06.08.2007
