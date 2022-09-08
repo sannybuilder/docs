@@ -1,5 +1,9 @@
 # История изменений
 
+## v. 3.8.2 - 08.09.2022
+
+* исправлены баги [#200](https://github.com/sannybuilder/dev/issues/200), [#187](https://github.com/sannybuilder/dev/issues/187)
+
 ## v. 3.8.1 - 01.09.2022
 
 * добавлена поддержка большего количества команд, завершающих выражение с несколькими условиями [#133](https://github.com/sannybuilder/dev/issues/133)&#x20;
