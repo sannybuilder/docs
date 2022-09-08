@@ -1,5 +1,9 @@
 # Version History
 
+## v. 3.8.2 - 08.09.2022
+
+* fix bugs [#200](https://github.com/sannybuilder/dev/issues/200), [#187](https://github.com/sannybuilder/dev/issues/187)
+
 ## v. 3.8.1 - 01.09.2022
 
 * added support for more commands terminating an if statement with multiple conditions [#133](https://github.com/sannybuilder/dev/issues/133)
