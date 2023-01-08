@@ -1,5 +1,11 @@
 # История изменений
 
+## v. 3.8.3 - 08.01.2023
+
+* исправлены баги [#210](https://github.com/sannybuilder/dev/issues/210), [#204](https://github.com/sannybuilder/dev/issues/204), [#168](https://github.com/sannybuilder/dev/issues/168)
+* исправлен [баг](https://github.com/sannybuilder/GetObjectID/issues/1) в поиске моделей
+* плагин CLEO+ обновлен до [1.1.3](https://github.com/JuniorDjjr/CLEOPlus/releases/tag/v1.1.3)
+
 ## v. 3.8.2 - 08.09.2022
 
 * исправлены баги [#200](https://github.com/sannybuilder/dev/issues/200), [#187](https://github.com/sannybuilder/dev/issues/187)
