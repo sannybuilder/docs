@@ -1,5 +1,11 @@
 # Version History
 
+## v. 3.8.3 - 08.01.2023
+
+* fix bugs [#210](https://github.com/sannybuilder/dev/issues/210), [#204](https://github.com/sannybuilder/dev/issues/204), [#168](https://github.com/sannybuilder/dev/issues/168)
+* fix [a bug](https://github.com/sannybuilder/GetObjectID/issues/1) in model search
+* update CLEO+ plugin to [1.1.3](https://github.com/JuniorDjjr/CLEOPlus/releases/tag/v1.1.3)
+
 ## v. 3.8.2 - 08.09.2022
 
 * fix bugs [#200](https://github.com/sannybuilder/dev/issues/200), [#187](https://github.com/sannybuilder/dev/issues/187)
