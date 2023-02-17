@@ -1,5 +1,12 @@
 # История изменений
 
+## v. 3.8.4 - 17.02.2023
+
+* при запуске программы с файлом (опция Открыть с помощью...) ранее открытые файлы должны быть доступны [#151](https://github.com/sannybuilder/dev/issues/151)
+* [новая опция](editor/cli.md#decompile) командной строки `--decompile`&#x20;
+* исправлены баги [#212](https://github.com/sannybuilder/dev/issues/212), [#213](https://github.com/sannybuilder/dev/issues/213), [#180](https://github.com/sannybuilder/dev/issues/180)
+* исправлены некоторые проблемы компиляции классов с аргументами в виде строковых литералов
+
 ## v. 3.8.3 - 08.01.2023
 
 * исправлены баги [#210](https://github.com/sannybuilder/dev/issues/210), [#204](https://github.com/sannybuilder/dev/issues/204), [#168](https://github.com/sannybuilder/dev/issues/168)
