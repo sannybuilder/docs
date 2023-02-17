@@ -18,6 +18,24 @@ The input file must have no errors. If there are errors found during compilation
 
 Shortcut: `-c`
 
+## --decompile
+
+`--decompile <input file path> [output file path]` - decompiles the file and exits
+
+```
+sanny.exe --decompile C:\myscm.scm C:\myscm.txt
+```
+
+{% hint style="info" %}
+The `output file path` __ parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+The input file must have no errors. If there are errors found during decompilation, they will be logged in the file `compile.log`. When decompilation ends, the program shuts down.
+{% endhint %}
+
+Shortcut: `-d`
+
 ## --debug
 
 `--debug` - toggles [debug options](console.md#running-with-debug)

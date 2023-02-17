@@ -1,5 +1,12 @@
 # Version History
 
+## v. 3.8.4 - 17.02.2023
+
+* keep previously opened documents when launching SB with an input file (Open with) [#151](https://github.com/sannybuilder/dev/issues/151)
+* add "--decompile" parameter to [CLI](editor/cli.md#decompile)
+* fix bugs [#212](https://github.com/sannybuilder/dev/issues/212), [#213](https://github.com/sannybuilder/dev/issues/213), [#180](https://github.com/sannybuilder/dev/issues/180)
+* fix some compilation issues with classes using string literals
+
 ## v. 3.8.3 - 08.01.2023
 
 * fix bugs [#210](https://github.com/sannybuilder/dev/issues/210), [#204](https://github.com/sannybuilder/dev/issues/204), [#168](https://github.com/sannybuilder/dev/issues/168)
