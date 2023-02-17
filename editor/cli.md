@@ -36,6 +36,12 @@ The input file must have no errors. If there are errors found during decompilati
 
 Shortcut: `-d`
 
+**--use-source** - optional argument that makes the decompiler use the source code [embedded in the script](options/general.md#add-extra-info-to-scm) (if present). By default the source is ignored.
+
+```
+sanny.exe --decompile C:\1.cs --use-source
+```
+
 ## --debug
 
 `--debug` - toggles [debug options](console.md#running-with-debug)
