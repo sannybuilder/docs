@@ -1,5 +1,9 @@
 # Version History
 
+## v. 3.8.5 - 22.02.2023
+
+* fix bug [#216](https://github.com/sannybuilder/dev/issues/216)
+
 ## v. 3.8.4 - 17.02.2023
 
 * keep previously opened documents when launching SB with an input file (Open with) [#151](https://github.com/sannybuilder/dev/issues/151)
