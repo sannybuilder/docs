@@ -9,7 +9,7 @@ sanny.exe --compile C:\myscm.txt C:\myscm.scm
 ```
 
 {% hint style="info" %}
-The `output file path` __ parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name.&#x20;
+The `output file path` parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -27,7 +27,7 @@ sanny.exe --decompile C:\myscm.scm C:\myscm.txt
 ```
 
 {% hint style="info" %}
-The `output file path` __ parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name.&#x20;
+The `output file path` parameter is optional. If there is no output path parameter, the compiler uses the [format rules](options/formats.md#file-name-format) to compute the output file name.&#x20;
 {% endhint %}
 
 {% hint style="info" %}

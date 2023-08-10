@@ -8,13 +8,21 @@ This tab contains the general settings used by Sanny Builder.
 
 ## Game Directory
 
-![](../../.gitbook/assets/main\_dir.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/main_dir.png" alt="">
+
+</div>
 
 Sanny Builder needs certain game files while working, so you have to choose a correct directory where the game for the current edit mode is installed. You may input the path manually or by selecting the directory via the dialog appearing when you press the button.
 
 ## Interface Language
 
-![](../../.gitbook/assets/general-language-en.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/general-language-en.png" alt="">
+
+</div>
 
 List of available translations for Sanny Builder. Select a language to update the program interface.&#x20;
 
@@ -22,13 +30,21 @@ Translation files are located in the `lang` folder. More information on how to c
 
 ## File Association
 
-![](../../.gitbook/assets/sb-options-associate.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/sb-options-associate.png" alt="">
+
+</div>
 
 You may associate different file extensions with Sanny Builder. When a checkbox is selected, your Windows Registry is changed and you may open the files with this extension simply by clicking it. To remove the association, unselect the checkbox.
 
 ## Core Settings
 
-![](../../.gitbook/assets/main\_opt.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/main_opt.png" alt="">
+
+</div>
 
 ### Always overwrite output file
 

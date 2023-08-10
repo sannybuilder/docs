@@ -172,4 +172,4 @@
   * [0087: Invalid variable](troubleshooting/errors/0087.md)
   * [0088: Global variable is out of range](troubleshooting/errors/0088.md)
   * [0089: Opcode not found](troubleshooting/errors/0089.md)
-  * [0090: Duplicate constant](troubleshooting/errors/0090-duplicate-constant.md)
+  * [0090: Duplicate constant](troubleshooting/errors/0090.md)

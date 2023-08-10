@@ -8,7 +8,11 @@ Here you can set up source file names, labels format, letter case for string lit
 
 Formats for files produced by the disassembler or the compiler.
 
-![](../../.gitbook/assets/formats-files-en.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/formats-files-en.png" alt="">
+
+</div>
 
 The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` (if the [edit mode](../../edit-modes/) is `GTA SA`) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
 
@@ -28,7 +32,11 @@ If the format is `$dir\$name.txt`, the output file is named `C:\MyDir\main.txt`.
 
 Formats for label names used during disassembling.
 
-![](../../.gitbook/assets/formats-labels-en.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/formats-labels-en.png" alt="">
+
+</div>
 
 ### Global Offset
 
@@ -50,7 +58,11 @@ If you want the offsets to be hexadecimal, select the checkbox at the bottom.
 
 These options instruct the disassembler to use custom names defined by the user in the external files.
 
-![](../../.gitbook/assets/formats-custom-names-en.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/formats-custom-names-en.png" alt="">
+
+</div>
 
 The file [`CustomLabels.ini`](../../edit-modes/customlabels.ini.md) contains the list of label names and their offsets. If the disassembler finds a match between the label offset in the source file and the offset defined in the INI file it gives this label a name associated with this offset.
 
@@ -60,6 +72,10 @@ The file `CustomArrays.ini` contains names of the arrays in the following syntax
 
 ## Case Converting
 
-![](../../.gitbook/assets/formats-case-en.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/formats-case-en.png" alt="">
+
+</div>
 
 This option serves a dual purpose. The disassembler names [global variables](../../coding/variables.md#global-variables), [labels](../../coding/data-types.md#labels), [arrays](../../coding/arrays.md) using the selected letter case. The compiler writes [string literals](../../coding/data-types.md#string-literals) using the selected case too.
