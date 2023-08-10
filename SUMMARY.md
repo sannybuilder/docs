@@ -4,7 +4,7 @@
 * [Благодарности](credits.md)
 * [История изменений](version-history.md)
 
-## Синтаксис <a id="coding"></a>
+## Синтаксис <a href="#coding" id="coding"></a>
 
 * [Типы данных](coding/data-types.md)
 * [Переменные](coding/variables.md)
@@ -19,7 +19,7 @@
 * [Директивы](coding/directives.md)
 * [Комментарии](coding/comments.md)
 
-## Редактор <a id="editor"></a>
+## Редактор <a href="#editor" id="editor"></a>
 
 * [Возможности](editor/features.md)
 * [Опции программы](editor/options/README.md)
@@ -34,16 +34,16 @@
 * [Интерфейс командной строки](editor/cli.md)
 * [Языковая служба](editor/language-service.md)
 
----
+***
 
 * [Режимы редактирования](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Enums.txt](edit-modes/enums.txt.md)
   * [Расширения](edit-modes/extensions.md)
-  * [Список опкодов \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
+  * [Список опкодов (SCM.INI)](edit-modes/opcodes-list-scm.ini.md)
   * [Шаблоны кода](edit-modes/code-templates.md)
 
-## Документация по SCM <a id="scm-documentation"></a>
+## Документация по SCM <a href="#scm-documentation" id="scm-documentation"></a>
 
 * [Скриптовые лимиты](scm-documentation/gta-limits.md)
 * [GTA III](scm-documentation/gta3/README.md)
@@ -87,7 +87,7 @@
   * [Одежда](scm-documentation/vcs/clothes.md)
   * [Погода](scm-documentation/vcs/weather.md)
 
-## Исправление проблем <a id="troubleshooting"></a>
+## Исправление проблем <a href="#troubleshooting" id="troubleshooting"></a>
 
 * [Сообщения об ошибках](troubleshooting/errors/README.md)
   * [0001: INI файл не найден](troubleshooting/errors/0001.md)
@@ -172,4 +172,4 @@
   * [0087: Недопустимая переменная](troubleshooting/errors/0087.md)
   * [0088: Глобальная переменная вне допустимых границ](troubleshooting/errors/0088.md)
   * [0089: Опкод не найден](troubleshooting/errors/0089-opkod-ne-naiden.md)
-
+  * [0090: Константа переобъявлена](troubleshooting/errors/0090-konstanta-pereobyavlena.md)
