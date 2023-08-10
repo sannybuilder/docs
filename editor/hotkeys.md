@@ -1,333 +1,50 @@
 # Горячие клавиши
 
-Sanny Builder поддерживает стандартные сочетания клавиш для операций с файлами и текстом \(`Ctrl+N`, `Ctrl+Z`, и т.д.\), а также собственные комбинации. Сочетания, отмеченные `*`, могут быть изменены в [настройках](options/hotkeys.md).
+Sanny Builder поддерживает стандартные сочетания клавиш для операций с файлами и текстом (`Ctrl+N`, `Ctrl+Z`, и т.д.), а также собственные комбинации. Сочетания, отмеченные `*`, могут быть изменены в [настройках](options/hotkeys.md).
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x41A;&#x43B;&#x430;&#x432;&#x438;&#x448;&#x430;/&#x41A;&#x43E;&#x43C;&#x431;&#x438;&#x43D;&#x430;&#x446;&#x438;&#x44F;</th>
-      <th
-      style="text-align:left">&#x414;&#x435;&#x439;&#x441;&#x442;&#x432;&#x438;&#x435;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>&#x413;&#x43B;&#x430;&#x432;&#x43D;&#x43E;&#x435; &#x43C;&#x435;&#x43D;&#x44E;</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F5</code>*</td>
-      <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x444;&#x430;&#x439;&#x43B;
-        &#x43A;&#x430;&#x43A; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442; &#x438;
-        &#x434;&#x438;&#x437;&#x430;&#x441;&#x441;&#x435;&#x43C;&#x431;&#x43B;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x435;&#x433;&#x43E;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F6</code>*</td>
-      <td style="text-align:left">&#x441;&#x43A;&#x43E;&#x43C;&#x43F;&#x438;&#x43B;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x442;&#x435;&#x43A;&#x441;&#x442; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;
-        &#x432; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432;&#x44B;&#x439;
-        &#x444;&#x430;&#x439;&#x43B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F7</code>*</td>
-      <td style="text-align:left">&#x441;&#x43A;&#x43E;&#x43C;&#x43F;&#x438;&#x43B;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x442;&#x435;&#x43A;&#x441;&#x442; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;
-        &#x432; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432;&#x44B;&#x439;
-        &#x444;&#x430;&#x439;&#x43B;, &#x430; &#x437;&#x430;&#x442;&#x435;&#x43C;
-        &#x441;&#x43A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x435;&#x433;&#x43E; &#x432; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44E;
-        &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432; &#x434;&#x43B;&#x44F;
-        <a
-        href="options/general.md#direktoriya-igry">&#x432;&#x44B;&#x431;&#x440;&#x430;&#x43D;&#x43D;&#x43E;&#x439; &#x438;&#x433;&#x440;&#x44B;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F8</code>*</td>
-      <td style="text-align:left">&#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x438;&#x433;&#x440;&#x443;
-        &#x434;&#x43B;&#x44F; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x433;&#x43E;
-        <a
-        href="../edit-modes/">&#x440;&#x435;&#x436;&#x438;&#x43C;&#x430; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F10</code>
-      </td>
-      <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; <a href="options/">&#x43E;&#x43A;&#x43D;&#x43E; &#x43E;&#x43F;&#x446;&#x438;&#x439;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F12</code>
-      </td>
-      <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x434;&#x43E;&#x43A;&#x443;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x446;&#x438;&#x44E;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>&#x422;&#x435;&#x43A;&#x441;&#x442;</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>TAB</code>, <code>Shift</code>+<code>TAB</code>
-      </td>
-      <td style="text-align:left">&#x434;&#x432;&#x438;&#x433;&#x430;&#x442;&#x44C; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x44B;&#x439;
-        &#x431;&#x43B;&#x43E;&#x43A; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;
-        &#x432;&#x43B;&#x435;&#x432;&#x43E;/&#x432;&#x43F;&#x440;&#x430;&#x432;&#x43E;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl</code>+<code>Alt</code>+<code>A</code>
-        </p>
-        <p><code>Ctrl</code>+<code>Alt</code>+<code>D</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x434;&#x432;&#x438;&#x433;&#x430;&#x442;&#x44C; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x44B;&#x439;
-        &#x431;&#x43B;&#x43E;&#x43A; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;
-        &#x432;&#x43B;&#x435;&#x432;&#x43E;/&#x432;&#x43F;&#x440;&#x430;&#x432;&#x43E;
-        (&#x43D;&#x430; &#x43E;&#x434;&#x438;&#x43D; &#x441;&#x438;&#x43C;&#x432;&#x43E;&#x43B;)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl</code>+<code>Alt</code>+<code>B</code>
-        </p>
-        <p><code>Ctrl</code>+<code>Alt</code>+<code>N</code>
-        </p>
-        <p><code>Ctrl</code>+<code>Alt</code>+<code>M</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x44B;&#x435; &#x440;&#x435;&#x436;&#x438;&#x43C;&#x44B;
-        &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44F; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;:
-        &#x41E;&#x431;&#x44B;&#x447;&#x43D;&#x44B;&#x439;, &#x41F;&#x43E; &#x441;&#x442;&#x43E;&#x43B;&#x431;&#x446;&#x430;&#x43C;
-        (&#x430;&#x43D;&#x430;&#x43B;&#x43E;&#x433; - &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x435;
-        &#x441; &#x437;&#x430;&#x436;&#x430;&#x442;&#x44B;&#x43C; <code>Alt</code>),
-        &#x41F;&#x43E; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x430;&#x43C;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl</code>+<code>Shift</code>+<code>U</code>
-        </p>
-        <p><code>Ctrl</code>+<code>Shift</code>+<code>L</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x432;&#x43E;&#x434; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x43E;&#x433;&#x43E;
-        &#x441;&#x43B;&#x43E;&#x432;&#x430; &#x432; &#x432;&#x435;&#x440;&#x445;&#x43D;&#x438;&#x439;/&#x43D;&#x438;&#x436;&#x43D;&#x438;&#x439;
-        &#x440;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>+</code>
-      </td>
-      <td style="text-align:left">&#x443;&#x432;&#x435;&#x43B;&#x438;&#x447;&#x438;&#x442;&#x44C; &#x440;&#x430;&#x437;&#x43C;&#x435;&#x440;
-        &#x448;&#x440;&#x438;&#x444;&#x442;&#x430; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>-</code>
-      </td>
-      <td style="text-align:left">&#x443;&#x43C;&#x435;&#x43D;&#x44C;&#x448;&#x438;&#x442;&#x44C; &#x440;&#x430;&#x437;&#x43C;&#x435;&#x440;
-        &#x448;&#x440;&#x438;&#x444;&#x442;&#x430; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>T</code>
-      </td>
-      <td style="text-align:left">&#x443;&#x434;&#x430;&#x43B;&#x438;&#x442;&#x44C; &#x441;&#x43B;&#x43E;&#x432;&#x43E;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Y</code>
-      </td>
-      <td style="text-align:left">&#x443;&#x434;&#x430;&#x43B;&#x438;&#x442;&#x44C; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>Y</code>
-      </td>
-      <td style="text-align:left">&#x43E;&#x447;&#x438;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Q</code>*</td>
-      <td style="text-align:left"><a href="../coding/comments.md">&#x437;&#x430;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; / &#x440;&#x430;&#x441;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;</a> &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>&#x41D;&#x430;&#x432;&#x438;&#x433;&#x430;&#x446;&#x438;&#x44F;</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>B</code>
-      </td>
-      <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x435;
-        &#x43C;&#x435;&#x436;&#x434;&#x443; &#x441;&#x43A;&#x43E;&#x431;&#x43A;&#x430;&#x43C;&#x438;: <code>{}</code>, <code>()</code>, <code>&lt;&gt;</code>, <code>[]</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><code>Ctrl</code>+<code>&#x412;&#x432;&#x435;&#x440;&#x445;</code>
-        </p>
-        <p><code>Ctrl</code>+<code>&#x412;&#x43D;&#x438;&#x437;</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x440;&#x43E;&#x43A;&#x440;&#x443;&#x442;&#x438;&#x442;&#x44C;
-        &#x441;&#x442;&#x440;&#x430;&#x43D;&#x438;&#x446;&#x443; &#x43D;&#x430;
-        &#x43E;&#x434;&#x43D;&#x443; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;
-        &#x432;&#x432;&#x435;&#x440;&#x445;/&#x432;&#x43D;&#x438;&#x437;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>&#x43A;&#x43E;&#x43B;&#x435;&#x441;&#x43E; &#x43C;&#x44B;&#x448;&#x438; &#x432;&#x432;&#x435;&#x440;&#x445;/&#x432;&#x43D;&#x438;&#x437;</code> 
-      </td>
-      <td style="text-align:left">&#x441;&#x442;&#x440;&#x430;&#x43D;&#x438;&#x446;&#x430; &#x432;&#x432;&#x435;&#x440;&#x445;/&#x432;&#x43D;&#x438;&#x437;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>0..9</code>
-      </td>
-      <td style="text-align:left">&#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#bookmarks-quick-jump">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x443;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>0..9</code>
-      </td>
-      <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x439;&#x442;&#x438; &#x43D;&#x430; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;
-        &#x441; <a href="features.md#bookmarks-quick-jump">&#x437;&#x430;&#x43A;&#x43B;&#x430;&#x434;&#x43A;&#x43E;&#x439;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>G</code>*</td>
-      <td style="text-align:left">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434; &#x43A; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x435;
-        &#x441; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x43E;&#x43C;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Alt</code>+<code>&#x412;&#x43F;&#x440;&#x430;&#x432;&#x43E;</code>*</td>
-      <td
-      style="text-align:left"><a href="features.md#navigate-to-symbol">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434; &#x43A; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;</a> &#x43F;&#x43E;&#x434;
-        &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; (&#x43C;&#x435;&#x442;&#x43A;&#x430;,
-        &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43E; &#x43C;&#x438;&#x441;&#x441;&#x438;&#x438;
-        &#x438;&#x43B;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Alt</code>+<code>&#x412;&#x43B;&#x435;&#x432;&#x43E;</code>*</td>
-      <td
-      style="text-align:left">&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;
-        &#x43D;&#x430; &#x43F;&#x440;&#x435;&#x434;&#x44B;&#x434;&#x443;&#x449;&#x443;&#x44E;
-        &#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44E; (&#x43E;&#x442;&#x43A;&#x443;&#x434;&#x430;
-        &#x431;&#x44B;&#x43B; &#x432;&#x44B;&#x437;&#x432;&#x430;&#x43D; <a href="features.md#navigate-to-symbol">&#x43F;&#x435;&#x440;&#x435;&#x445;&#x43E;&#x434; &#x43A; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44E;</a>)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Enter</code>
-      </td>
-      <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x444;&#x430;&#x439;&#x43B;
-        &#x43F;&#x43E; &#x438;&#x43C;&#x435;&#x43D;&#x438; &#x43F;&#x43E;&#x434;
-        &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; (&#x441;&#x43C;.
-        &#x43E;&#x447;&#x435;&#x440;&#x435;&#x434;&#x43D;&#x43E;&#x441;&#x442;&#x44C;
-        &#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x438;&#x44F; <a href="../coding/directives.md#usdinclude">&#x43E;&#x442;&#x43D;&#x43E;&#x441;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x44B;&#x445; &#x43F;&#x443;&#x442;&#x435;&#x439;</a>)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>&#x41A;&#x43E;&#x434;</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>&#x43F;&#x440;&#x43E;&#x431;&#x435;&#x43B;</code>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;
-        &#x43A;&#x43B;&#x430;&#x441;&#x441;&#x43E;&#x432; / &#x441;&#x432;&#x43E;&#x439;&#x441;&#x442;&#x432;
-        / &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x435;&#x439; / &#x43C;&#x435;&#x442;&#x43E;&#x43A;
-        / &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x44B;&#x445;
-        / &#x43C;&#x438;&#x441;&#x441;&#x438;&#x439;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>&#x43F;&#x440;&#x43E;&#x431;&#x435;&#x43B;</code>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x443;
-        &#x434;&#x43B;&#x44F; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x439;
-        &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B; &#x43A;&#x43B;&#x430;&#x441;&#x441;&#x430;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>C</code>*</td>
-      <td style="text-align:left">&#x432;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#izmenenie-koordinat-i-ugla-razvorota-igroka">&#x442;&#x435;&#x43A;&#x443;&#x449;&#x438;&#x435; &#x43A;&#x43E;&#x43E;&#x440;&#x434;&#x438;&#x43D;&#x430;&#x442;&#x44B; &#x438;&#x433;&#x440;&#x43E;&#x43A;&#x430;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Shift</code>+<code>E</code>*</td>
-      <td style="text-align:left">&#x432;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x44C; <a href="features.md#izmenenie-koordinat-i-ugla-razvorota-igroka">&#x442;&#x435;&#x43A;&#x443;&#x449;&#x438;&#x439; &#x443;&#x433;&#x43E;&#x43B; &#x43F;&#x43E;&#x432;&#x43E;&#x440;&#x43E;&#x442;&#x430; &#x438;&#x433;&#x440;&#x43E;&#x43A;&#x430;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F1</code>
-      </td>
-      <td style="text-align:left">&#x438;&#x441;&#x43A;&#x430;&#x442;&#x44C; &#x43E;&#x43F;&#x43A;&#x43E;&#x434;
-        &#x441;&#x43E; &#x441;&#x43B;&#x43E;&#x432;&#x43E;&#x43C; &#x43F;&#x43E;&#x434;
-        &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; (&#x431;&#x435;&#x437;
-        &#x443;&#x447;&#x435;&#x442;&#x430; <code>_</code> &#x438; <code>.</code>)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>F1</code>
-      </td>
-      <td style="text-align:left">&#x438;&#x441;&#x43A;&#x430;&#x442;&#x44C; &#x43E;&#x43F;&#x43A;&#x43E;&#x434;
-        &#x441;&#x43E; &#x441;&#x43B;&#x43E;&#x432;&#x43E;&#x43C; &#x43F;&#x43E;&#x434;
-        &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; (&#x441; &#x443;&#x447;&#x435;&#x442;&#x43E;&#x43C; <code>_</code> &#x438; <code>.</code>)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>F2</code>
-      </td>
-      <td style="text-align:left">&#x440;&#x430;&#x437;&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C;
-        &#x441;&#x43B;&#x43E;&#x432;&#x43E; &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;
-        &#x432; <a href="../edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D; &#x43A;&#x43E;&#x434;&#x430;</a> &#x441;
-        &#x442;&#x430;&#x43A;&#x438;&#x43C; &#x43D;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x438;&#x435;&#x43C;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>J</code>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;
-        &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x44B;&#x445; <a href="../edit-modes/code-templates.md">&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432; &#x43A;&#x43E;&#x434;&#x430;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>M</code>
-      </td>
-      <td style="text-align:left">&#x437;&#x430;&#x43F;&#x438;&#x441;&#x44C; <a href="features.md#zapis-i-vosproizvedenie-nazhatii-knopok">&#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x43D;&#x430;&#x436;&#x430;&#x442;&#x438;&#x44F; &#x43A;&#x43B;&#x430;&#x432;&#x438;&#x448;</a> /
-        &#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x430; &#x437;&#x430;&#x43F;&#x438;&#x441;&#x438;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>P</code>
-      </td>
-      <td style="text-align:left">&#x432;&#x43E;&#x441;&#x43F;&#x440;&#x43E;&#x438;&#x437;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435;
-        &#x437;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x43D;&#x43E;&#x439;
-        <a
-        href="features.md#zapis-i-vosproizvedenie-nazhatii-knopok">&#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E;&#x441;&#x442;&#x438;</a>/
-          &#x43F;&#x430;&#x443;&#x437;&#x430; &#x432;&#x43E; &#x432;&#x440;&#x435;&#x43C;&#x44F;
-          &#x437;&#x430;&#x43F;&#x438;&#x441;&#x438;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>H</code>*</td>
-      <td style="text-align:left">&#x43A;&#x43E;&#x43D;&#x432;&#x435;&#x440;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x447;&#x438;&#x441;&#x43B;&#x43E; &#x43F;&#x43E;&#x434; &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C;
-        &#x438;&#x437; 10-&#x447;&#x43D;&#x43E;&#x439; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;
-        &#x441;&#x447;&#x438;&#x441;&#x43B;&#x435;&#x43D;&#x438;&#x44F; &#x432;
-        16-&#x447;&#x43D;&#x443;&#x44E; &#x438; &#x43D;&#x430;&#x43E;&#x431;&#x43E;&#x440;&#x43E;&#x442;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>Alt</code>+<code>H</code>*</td>
-      <td style="text-align:left">&#x43A;&#x43E;&#x43D;&#x432;&#x435;&#x440;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        <a
-        href="../coding/data-types.md#imena-modelei">&#x438;&#x43C;&#x44F; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438;</a>&#x43F;&#x43E;&#x434;
-          &#x43A;&#x443;&#x440;&#x441;&#x43E;&#x440;&#x43E;&#x43C; &#x432; ID &#x438;
-          &#x43D;&#x430;&#x43E;&#x431;&#x43E;&#x440;&#x43E;&#x442;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>&#x420;&#x430;&#x437;&#x43D;&#x43E;&#x435;</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Ctrl</code>+<code>~</code>
-      </td>
-      <td style="text-align:left">&#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; <a href="console.md">&#x43A;&#x43E;&#x43D;&#x441;&#x43E;&#x43B;&#x44C;</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Alt</code>+<code>S</code>
-      </td>
-      <td style="text-align:left">(&#x43A;&#x43E;&#x433;&#x434;&#x430; &#x430;&#x43A;&#x442;&#x438;&#x432;&#x435;&#x43D;
-        &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A; &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x435;&#x439;)
-        - &#x43F;&#x435;&#x440;&#x435;&#x441;&#x43E;&#x440;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;
-        &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A;</td>
-    </tr>
-  </tbody>
-</table>
-
+| Клавиша/Комбинация                                                                                                                                                       | Действие                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Главное меню**                                                                                                                                                         |                                                                                                                                                             |
+| `F5`\*                                                                                                                                                                   | открыть файл как скрипт и дизассемблировать его                                                                                                             |
+| `F6`\*                                                                                                                                                                   | скомпилировать текст в редакторе в скриптовый файл                                                                                                          |
+| `F7`\*                                                                                                                                                                   | скомпилировать текст в редакторе в скриптовый файл, а затем скопировать его в директорию скриптов для [выбранной игры](options/general.md#direktoriya-igry) |
+| `F8`\*                                                                                                                                                                   | запустить игру для текущего [режима редактирования](../edit-modes/)                                                                                         |
+| `F10`                                                                                                                                                                    | открыть [окно опций](options/)                                                                                                                              |
+| `F12`                                                                                                                                                                    | открыть документацию                                                                                                                                        |
+| **Текст**                                                                                                                                                                |                                                                                                                                                             |
+| `TAB`, `Shift`+`TAB`                                                                                                                                                     | двигать выделенный блок текста влево/вправо                                                                                                                 |
+| <p><code>Ctrl</code>+<code>Alt</code>+<code>A</code></p><p><code>Ctrl</code>+<code>Alt</code>+<code>D</code></p>                                                         | двигать выделенный блок текста влево/вправо (на один символ)                                                                                                |
+| <p><code>Ctrl</code>+<code>Alt</code>+<code>B</code></p><p><code>Ctrl</code>+<code>Alt</code>+<code>N</code></p><p><code>Ctrl</code>+<code>Alt</code>+<code>M</code></p> | различные режимы выделения текста: Обычный, По столбцам (аналог - выделение с зажатым `Alt`), По строкам                                                    |
+| <p><code>Ctrl</code>+<code>Shift</code>+<code>U</code></p><p><code>Ctrl</code>+<code>Shift</code>+<code>L</code></p>                                                     | перевод выделенного слова в верхний/нижний регистр                                                                                                          |
+| `Ctrl`+`+`                                                                                                                                                               | увеличить размер шрифта в редакторе                                                                                                                         |
+| `Ctrl`+`-`                                                                                                                                                               | уменьшить размер шрифта в редакторе                                                                                                                         |
+| `Ctrl`+`T`                                                                                                                                                               | удалить слово                                                                                                                                               |
+| `Ctrl`+`Y`                                                                                                                                                               | удалить строку                                                                                                                                              |
+| `Ctrl`+`Shift`+`Y`                                                                                                                                                       | очистить строку                                                                                                                                             |
+| `Ctrl`+`Q`\*                                                                                                                                                             | [закомментировать / раскомментировать](../coding/comments.md) строку                                                                                        |
+| **Навигация**                                                                                                                                                            |                                                                                                                                                             |
+| `Ctrl`+`Shift`+`B`                                                                                                                                                       | перемещение между скобками: `{}`, `()`, `<>`, `[]`                                                                                                          |
+| <p><code>Ctrl</code>+<code>Вверх</code></p><p><code>Ctrl</code>+<code>Вниз</code></p>                                                                                    | прокрутить страницу на одну строку вверх/вниз                                                                                                               |
+| `Ctrl`+`колесо мыши вверх/вниз`                                                                                                                                          | страница вверх/вниз                                                                                                                                         |
+| `Ctrl`+`Shift`+`0..9`                                                                                                                                                    | добавить [закладку](features.md#bookmarks-quick-jump)                                                                                                       |
+| `Ctrl`+`0..9`                                                                                                                                                            | перейти на строку с [закладкой](features.md#bookmarks-quick-jump)                                                                                           |
+| `Ctrl`+`G`\*                                                                                                                                                             | переход к строке с номером                                                                                                                                  |
+| `Alt`+`Вправо`\*                                                                                                                                                         | [переход к определению](features.md#navigate-to-symbol) под курсором (метка, начало миссии или функции)                                                     |
+| `Alt`+`Влево`\*                                                                                                                                                          | вернуть курсор на предыдущую позицию (откуда был вызван [переход к определению](features.md#navigate-to-symbol))                                            |
+| `Ctrl`+`Enter`                                                                                                                                                           | открыть файл по имени под курсором (см. очередность открытия [относительных путей](../coding/directives.md#usdinclude))                                     |
+| **Код**                                                                                                                                                                  |                                                                                                                                                             |
+| `Ctrl`+`пробел`                                                                                                                                                          | показать список классов / свойств / моделей / меток / переменных / миссий                                                                                   |
+| `Ctrl`+`Shift`+`пробел`                                                                                                                                                  | показать подсказку для текущей команды класса                                                                                                               |
+| `Ctrl`+`Shift`+`C`\*                                                                                                                                                     | вставить [текущие координаты игрока](features.md#izmenenie-koordinat-i-ugla-razvorota-igroka)                                                               |
+| `Ctrl`+`Shift`+`E`\*                                                                                                                                                     | вставить [текущий угол поворота игрока](features.md#izmenenie-koordinat-i-ugla-razvorota-igroka)                                                            |
+| `F1`                                                                                                                                                                     | искать опкод со словом под курсором (без учета `_` и `.`)                                                                                                   |
+| `Ctrl`+`F1`                                                                                                                                                              | искать опкод со словом под курсором (с учетом `_` и `.`)                                                                                                    |
+| `F2`                                                                                                                                                                     | развернуть слово под курсором в [шаблон кода](../edit-modes/code-templates.md) с таким названием                                                            |
+| `Ctrl`+`J`                                                                                                                                                               | показать список доступных [шаблонов кода](../edit-modes/code-templates.md)                                                                                  |
+| `Ctrl`+`M`                                                                                                                                                               | запись [последовательности нажатия клавиш](features.md#zapis-i-vosproizvedenie-nazhatii-knopok) / остановка записи                                          |
+| `Ctrl`+`P`                                                                                                                                                               | воспроизведение записанной [последовательности](features.md#zapis-i-vosproizvedenie-nazhatii-knopok) / пауза во время записи                                |
+| `Ctrl`+`H`\*                                                                                                                                                             | конвертировать число под курсором из 10-чной системы счисления в 16-чную и наоборот                                                                         |
+| `Ctrl`+`Alt`+`H`\*                                                                                                                                                       | конвертировать [имя модели](../coding/data-types.md#imena-modelei) под курсором в ID и наоборот                                                             |
+| **Разное**                                                                                                                                                               |                                                                                                                                                             |
+| `Ctrl`+`~`                                                                                                                                                               | открыть [консоль](console.md)                                                                                                                               |
+| `Alt`+`S`                                                                                                                                                                | (когда активен список моделей) - пересортировать список                                                                                                     |

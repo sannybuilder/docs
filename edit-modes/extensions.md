@@ -1,19 +1,19 @@
 # Расширения
 
-**Расширение** - это набор новых инструкций \(опкодов\), добавленных в игру. [Библиотека CLEO](https://cleo.li) и плагины к ней являются наиболее известным источником таких наборов.
+**Расширение** - это набор новых инструкций (опкодов), добавленных в игру. [Библиотека CLEO](https://cleo.li) и плагины к ней являются наиболее известным источником таких наборов.
 
-Чтобы Sanny Builder знал о намерении использовать в скрипте нестандартные опкоды, скрипт должен иметь [директиву](../coding/directives.md#usduse) `{$USE}`. Эта директива подключает дополнительный набор инструкций \(см. ниже [список доступных расширений](extensions.md#extensions-list)\):
+Чтобы Sanny Builder знал о намерении использовать в скрипте нестандартные опкоды, скрипт должен иметь [директиву](../coding/directives.md#usduse) `{$USE}`. Эта директива подключает дополнительный набор инструкций (см. ниже [список доступных расширений](extensions.md#extensions-list)):
 
-```text
+```
 {$USE CLEO}
 {$USE ini}
 {$USE CLEO+}
 ```
 
-Каждый опкод, доступный в [INI файлах](opcodes-list-scm.ini.md) Sanny Builder, принадлежит к какому-либо расширению. Это сделано через файл `extensions.txt`. 
+Каждый опкод, доступный в [INI файлах](opcodes-list-scm.ini.md) Sanny Builder, принадлежит к какому-либо расширению. Это сделано через файл `extensions.txt`.&#x20;
 
 {% hint style="info" %}
-См. [\#74](https://github.com/sannybuilder/dev/issues/74) чтобы узнать о дальнейших планах по развитию расширений.
+См. [#74](https://github.com/sannybuilder/dev/issues/74) чтобы узнать о дальнейших планах по развитию расширений.
 {% endhint %}
 
 ### Расширения по умолчанию
@@ -22,157 +22,21 @@
 
 Использование [директивы](../coding/directives.md#usdcleo) `{$CLEO}` также подразумевает   `{$USE CLEO}`, что делает стандартные CLEO опкоды доступными компилятору.
 
-### Список расширений <a id="extensions-list"></a>
+### Список расширений <a href="#extensions-list" id="extensions-list"></a>
 
 Sanny Builder включает в себя общие и популярные расширения для различных режимов редактирования:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x418;&#x43C;&#x44F; &#x440;&#x430;&#x441;&#x448;&#x438;&#x440;&#x435;&#x43D;&#x438;&#x44F;</th>
-      <th
-      style="text-align:left">&#x418;&#x441;&#x442;&#x43E;&#x447;&#x43D;&#x438;&#x43A;</th>
-        <th style="text-align:left">&#x420;&#x435;&#x436;&#x438;&#x43C;&#x44B;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x445;
-          &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x43E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><b>CLEO</b>
-        </p>
-        <p><code>{$USE CLEO}</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p>CLEO &#x434;&#x43B;&#x44F; GTA III
-          <br />CLEO &#x434;&#x43B;&#x44F; Vice City</p>
-        <p>CLEO 4.4</p>
-      </td>
-      <td style="text-align:left">
-        <p>GTA III</p>
-        <p>Vice City</p>
-        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>ini</b>
-        </p>
-        <p><code>{$USE ini}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; IniFiles.cleo
-        <br />(&#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F;
-        &#x441; CLEO)</td>
-      <td style="text-align:left">
-        <p>GTA III
-          <br />Vice City</p>
-        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>file</b>
-        </p>
-        <p><code>{$USE file}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; FileSystemOperations
-        <br />(&#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F;
-        &#x441; CLEO)</td>
-      <td style="text-align:left">
-        <p>GTA III
-          <br />Vice City</p>
-        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>bitwise</b>
-        </p>
-        <p><code>{$USE bitwise}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; IntOperations
-        <br />(&#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F;
-        &#x441; CLEO4)</td>
-      <td style="text-align:left">
-        <p>GTA III
-          <br />Vice City</p>
-        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>clipboard</b>
-        </p>
-        <p><code>{$USE clipboard}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; ClipboardControl</td>
-      <td style="text-align:left">
-        <p>GTA III
-          <br />Vice City</p>
-        <p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>memory</b>
-        </p>
-        <p><code>{$USE memory}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; MemoryModule</td>
-      <td style="text-align:left">GTA III
-        <br />Vice City</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>CLEO+</b>
-        </p>
-        <p><code>{$USE CLEO+}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; CLEO+</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0, (v1.0 - SCR)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>newOpcodes</b>
-        </p>
-        <p><code>{$USE newOpcodes}</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x43F;&#x43B;&#x430;&#x433;&#x438;&#x43D; newOpcodes</td>
-      <td style="text-align:left">GTA SA v1.0, v2.0</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>vcmobile</b>
-        </p>
-        <p><code>{$USE vcmobile}</code>
-        </p>
-      </td>
-      <td style="text-align:left">Vice City &#x43D;&#x430; &#x43C;&#x43E;&#x431;&#x438;&#x43B;&#x44C;&#x43D;&#x44B;&#x445;
-        &#x443;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x441;&#x442;&#x432;&#x430;&#x445;</td>
-      <td
-      style="text-align:left">Vice City</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><b>Restoration</b>
-        </p>
-        <p><code>{$USE Restoration}</code>
-        </p>
-      </td>
-      <td style="text-align:left"><a href="https://gtamods.com/wiki/Opcodes_Restoration_Project">Opcode Restoration Project</a>
-      </td>
-      <td style="text-align:left">Vice City</td>
-    </tr>
-  </tbody>
-</table>
+| Имя расширения                                                            | Источник                                                                             | Режимы, в которых доступно                                           |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| <p><strong>CLEO</strong></p><p><code>{$USE CLEO}</code></p>               | <p>CLEO для GTA III <br>CLEO для Vice City</p><p>CLEO 4.4</p>                        | <p>GTA III</p><p>Vice City</p><p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p> |
+| <p><strong>ini</strong></p><p><code>{$USE ini}</code></p>                 | <p>плагин IniFiles.cleo<br>(поставляется с CLEO)</p>                                 | <p>GTA III<br>Vice City</p><p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>    |
+| <p><strong>file</strong></p><p><code>{$USE file}</code></p>               | <p>плагин FileSystemOperations<br>(поставляется с CLEO)</p>                          | <p>GTA III<br>Vice City</p><p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>    |
+| <p><strong>bitwise</strong></p><p><code>{$USE bitwise}</code></p>         | <p>плагин IntOperations<br>(поставляется с CLEO4)</p>                                | <p>GTA III<br>Vice City</p><p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>    |
+| <p><strong>clipboard</strong></p><p><code>{$USE clipboard}</code></p>     | плагин ClipboardControl                                                              | <p>GTA III<br>Vice City</p><p>GTA SA v1.0, v2.0, (v1.0 - SCR)</p>    |
+| <p><strong>memory</strong></p><p><code>{$USE memory}</code></p>           | плагин MemoryModule                                                                  | <p>GTA III<br>Vice City</p>                                          |
+| <p><strong>CLEO+</strong></p><p><code>{$USE CLEO+}</code></p>             | плагин CLEO+                                                                         | GTA SA v1.0, v2.0, (v1.0 - SCR)                                      |
+| <p><strong>newOpcodes</strong></p><p><code>{$USE newOpcodes}</code></p>   | плагин newOpcodes                                                                    | GTA SA v1.0, v2.0                                                    |
+| <p><strong>vcmobile</strong></p><p><code>{$USE vcmobile}</code></p>       | Vice City на мобильных устройствах                                                   | Vice City                                                            |
+| <p><strong>Restoration</strong></p><p><code>{$USE Restoration}</code></p> | [Opcode Restoration Project](https://gtamods.com/wiki/Opcodes\_Restoration\_Project) | Vice City                                                            |
 
 Допускается использование опкодов из источников, не перечисленных выше, при этом компилятор не будет требовать использование директивы `{$USE}`.
-
