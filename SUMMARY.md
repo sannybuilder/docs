@@ -4,7 +4,7 @@
 * [Credits](credits.md)
 * [Version History](version-history.md)
 
-## Syntax <a id="coding"></a>
+## Syntax <a href="#coding" id="coding"></a>
 
 * [Data Types](coding/data-types.md)
 * [Variables](coding/variables.md)
@@ -34,14 +34,14 @@
 * [Command Line Interface](editor/cli.md)
 * [Language Service](editor/language-service.md)
 
----
+***
 
 * [Edit Modes](edit-modes/README.md)
   * [CustomLabels.ini](edit-modes/customlabels.ini.md)
   * [Code Templates](edit-modes/code-templates.md)
   * [Enums.txt](edit-modes/enums.txt.md)
   * [Extensions](edit-modes/extensions.md)
-  * [Opcodes List \(SCM.INI\)](edit-modes/opcodes-list-scm.ini.md)
+  * [Opcodes List (SCM.INI)](edit-modes/opcodes-list-scm.ini.md)
 
 ## SCM Documentation
 
@@ -172,4 +172,4 @@
   * [0087: Invalid variable](troubleshooting/errors/0087.md)
   * [0088: Global variable is out of range](troubleshooting/errors/0088.md)
   * [0089: Opcode not found](troubleshooting/errors/0089.md)
-
+  * [0090: Duplicate constant](troubleshooting/errors/0090-duplicate-constant.md)
