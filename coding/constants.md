@@ -1,6 +1,8 @@
 # Constants
 
-A **constant** is an identifier with a predefined value. Contrary to a variable the value of the constant cannot be changed in run-time. In compile-time the constant gets replaced with the value associated with it. The value of the constant can be a number (including [model names](data-types.md#model-names) and [labels](data-types.md#labels)) or a string literal.
+A **constant** is an identifier with an associated predefined value. The identifier must be unique in the current compilation context (the main source file and all [includes](directives.md#usdinclude)).
+
+In compile-time the constant gets replaced with the value associated with it, e.g., a number or a string literal. Contrary to a variable the value of the constant cannot be changed in run-time.&#x20;
 
 Constants are declared either statically or dynamically. Each [edit mode](../edit-modes/) can load static constant definitions from a file using the `<constants>` parameter in the `modes.xml`. Dynamic declarations get created in the script code with the syntax outlined below.
 
@@ -8,7 +10,7 @@ Constants are declared either statically or dynamically. Each [edit mode](../edi
 
 To declare a new constant in the code, use the `const` keyword.
 
-```javascript
+```pascal
 const <constant name> = <constant value>    
 ```
 
@@ -18,13 +20,13 @@ A constant value might be a number (also a [model identifier](data-types.md#mode
 
 For example:
 
-```javascript
+```pascal
 const x = 5
 ```
 
 You can declare multiple constants separating each declaration with a comma like this:
 
-```javascript
+```pascal
 const a = 1, b = 2, c = 3
 ```
 
