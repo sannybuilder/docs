@@ -4,15 +4,18 @@ An **array** represents an indexed collection of elements of the same type (call
 
 ## General Syntax
 
-San Andreas:\
-`<array name>(<index var name>,<size><type>)`
+San Andreas:
 
+```pascal
+<array name>(<index var name>,<size><type>)
 ```
+
+```pascal
 $index = 0
 $array($index,10i) = 1
 ```
 
-`<array name>`: local or global [variable](variables.md)\
+`<array name>`: a local or global [variable](variables.md)\
 `<index var name>`: any variable containing an index of the element to read or write\
 `<size>`: a value between 1 and 255 (inclusive)\
 `<type>`: one of characters `i` `f` `s` `v`:
@@ -24,39 +27,38 @@ $array($index,10i) = 1
 | s      | string    | 8                 |
 | v      | string    | 16                |
 
-Liberty City Stories, Vice City Stories:\
-`<array name>(<index var name>,<size>)`
+Liberty City Stories, Vice City Stories:
 
-{% hint style="info" %}
 In LCS, VCS, array elements are only 4 bytes in length. Therefore, there is no need in type declaration.
-{% endhint %}
 
+```pascal
+<array name>(<index var name>,<size>)
 ```
+
+```pascal
 $index = 0
 $array($index,10) = 1
 ```
 
 ## Array Declaration
 
-Arrays can be declared using the [`VAR..END`](variables.md#var-end-construct) construct:\
-`var`\
-&#x20;  `<array name>: array <size> of <type>`\
-`end`
+Arrays can be declared using the `var` keyword (similar to [variables](variables.md)):
 
+```pascal
+var <array name>: array <size> of <type>
 ```
-var
-    $FloatArray: array 10 of Float
-end
+
+```pascal
+var $FloatArray: array 10 of Float
 ```
 
 ### Accessing array elements after declaration
 
 After declaring an array you can work access its elements using square brackets:
 
-```
-var
-    $FloatArray: array 10 of Float
-end
+```pascal
+var $FloatArray: array 10 of Float
+
 $index = 1
 $FloatArray[$index] += 100.0
 ```
@@ -65,16 +67,15 @@ $FloatArray[$index] += 100.0
 
 You can use positive integer numbers and zero to access a particular array element:
 
-```
-var
-    $FloatArray: array 10 of Float
-end
+```pascal
+var $FloatArray: array 10 of Float
+
 $FloatArray[1] += 100.0
 ```
 
 Elements of an array containing [string literals](data-types.md#string-literals) can be accessed with [string variables](data-types.md#string-variables):
 
-```
+```pascal
 // initializing first three elements of the $strings array
 s$strings[0] = 'str1'
 s$strings[1] = 'str2'
@@ -83,10 +84,9 @@ s$strings[2] = 'str3'
 
 An array can be declared as a collection of [class instances](classes.md#class-instances):
 
-```
-var
-  $players: array 2 of Player
-end
+```pascal
+var $players: array 2 of Player
+
 $players[0].Build
 ```
 
