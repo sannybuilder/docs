@@ -83,7 +83,7 @@ $Var1 += $Var2 // ??
 
 To tell the compiler the type of the variable, use the `var` keyword.
 
-```
+```pascal
 var <variable>: <type>
 ```
 
@@ -167,13 +167,13 @@ Since v3.2.0 it's possible to declare a variable of a built-in type (`Int`, `Flo
 Syntax:\
 `<type> <variable name>`
 
-```
+```pascal
 int 0@ // 0@ declared as an integer variable.
 ```
 
 Starting from v3.4.0 it is possible to declare variables with custom names:
 
-```
+```pascal
 int a
 float distance
 string name
@@ -185,7 +185,7 @@ name = 'CJ'
 
 An initial value can follow the variable name to reduce the number of the lines of code:
 
-```
+```pascal
 int a = 1
 float distance = 15.5
 string name = 'CJ'
@@ -193,7 +193,7 @@ string name = 'CJ'
 
 The compiler binds a new local variable to each name. In the example above one may expect a resulting code to look like:
 
-```
+```pascal
 0006: 0@ = 1 
 0007: 1@ = 15.5 
 05AA: 2@ = 'CJ'
@@ -207,19 +207,19 @@ Due to [design limitations](https://github.com/sannybuilder/dev/issues/32) this 
 
 You can specify an initial value for the variable when declaring it. Write `=` and then the value:
 
-```
+```pascal
 var $fVar: float = 1.0
 ```
 
 or
 
-```
+```pascal
 float $fVar = 1.0
 ```
 
 The variable `$fVar` is now declared as `Float` and the compiler adds the opcode `0005` in the script:
 
-```
+```pascal
 0005: $fVar = 1.0
 ```
 
