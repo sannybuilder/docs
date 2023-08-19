@@ -4,12 +4,10 @@
 
 ## Общий синтаксис
 
-San Andreas:\
-`<имя массива>(<индекс>,<размер><тип>)`
+San Andreas:
 
-```
-$index = 0
-$array($index,10i) = 1
+```pascal
+<имя массива>(<индекс>,<размер><тип>)
 ```
 
 `<имя массива>`: локальная или глобальная [переменная](variables.md)\
@@ -24,40 +22,49 @@ $array($index,10i) = 1
 | s     | строковый литерал | 8                          |
 | v     | строковый литерал | 16                         |
 
-Liberty City Stories, Vice City Stories:\
-`<имя массива>(<индекс>,<размер>)`
+Пример:
 
-{% hint style="info" %}
-В LCS и VCS длина элементов массивов может быть только 4 байта. Поэтому нет необходимости указывать тип массива при обращении к его элементам.
-{% endhint %}
-
+```pascal
+$index = 0
+$array($index,10i) = 1
 ```
+
+Liberty City Stories, Vice City Stories:
+
+```pascal
+<имя массива>(<индекс>,<размер>)
+```
+
+В LCS и VCS длина элементов массивов может быть только 4 байта. Поэтому нет необходимости указывать тип массива при обращении к его элементам.
+
+Пример:
+
+```pascal
 $index = 0
 $array($index,10) = 1
 ```
 
 ## Объявление массивов
 
-Массивы могут быть объявлены через конструкцию [`VAR..END`](variables.md#konstrukciya-var-end):
+Массивы, как и отдельные [переменные](variables.md), могут быть объявлены при помощи ключевого слова `var`:
 
-`var`\
-&#x20;  `<имя массива>: array <размер> of <тип>`\
-`end`
-
+```pascal
+var <имя массива>: array <размер> of <тип>
 ```
-var
-    $FloatArray: array 10 of Float
-end
+
+Пример:
+
+```pascal
+var $FloatArray: array 10 of Float
 ```
 
 ### Обращение к элементам массива после объявления
 
 После объявления можно обращаться к элементам массива, используя квадратные скобки и индексную переменную:
 
-```
-var
-    $FloatArray: array 10 of Float
-end
+```pascal
+var $FloatArray: array 10 of Float
+
 $index = 1
 $FloatArray[$index] += 100.0
 ```
@@ -66,16 +73,15 @@ $FloatArray[$index] += 100.0
 
 Для обращения к определенным элементам можно также использовать квадратные скобки и константу больше либо равную нулю:
 
-```
-var
-    $FloatArray: array 10 of Float
-end
+```pascal
+var $FloatArray: array 10 of Float
+
 $FloatArray[1] += 100.0
 ```
 
 С массивами, содержащими [строковые литералы](data-types.md#strokovye-literaly), можно работать используя [строковые переменные](data-types.md#strokovye-peremennye): &#x20;
 
-```
+```pascal
 // задаем значения для первых трех элементов массива $strings
 s$strings[0] = 'str1'
 s$strings[1] = 'str2'
@@ -84,10 +90,9 @@ s$strings[2] = 'str3'
 
 Массив может быть объявлен как коллекция [экземпляров класса](classes.md#ekzemplyary-klassa):
 
-```
-var
-  $players: array 2 of Player
-end
+```pascal
+var $players: array 2 of Player
+
 $players[0].Build 
 ```
 
