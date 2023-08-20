@@ -44,7 +44,7 @@ $index = 0
 $array($index,10) = 1
 ```
 
-## Объявление массивов
+## Объявление массивов <a href="#array-declaration" id="array-declaration"></a>
 
 Массивы, как и отдельные [переменные](variables.md), могут быть объявлены при помощи ключевого слова `var`:
 
@@ -58,26 +58,19 @@ var <имя массива>: array <размер> of <тип>
 var $FloatArray: array 10 of Float
 ```
 
-### Обращение к элементам массива после объявления
+### Обращение к элементам массива после объявления <a href="#accessing-array-elements" id="accessing-array-elements"></a>
 
-После объявления можно обращаться к элементам массива, используя квадратные скобки и индексную переменную:
+После объявления массива можно обращаться к его элементам, используя квадратные скобки:
 
-```pascal
-var $FloatArray: array 10 of Float
+<pre class="language-pascal"><code class="lang-pascal">var $FloatArray: array 10 of Float
 
-$index = 1
-$FloatArray[$index] += 100.0
-```
-
-### Использование целочисленных констант
-
-Для обращения к определенным элементам можно также использовать квадратные скобки и константу больше либо равную нулю:
-
-```pascal
-var $FloatArray: array 10 of Float
-
-$FloatArray[1] += 100.0
-```
+$index = 0
+// увеличить значение первого элемента на 100
+<strong>$FloatArray[$index] += 100.0
+</strong>
+// аналогично
+$FloatArray[0] += 100.0
+</code></pre>
 
 С массивами, содержащими [строковые литералы](data-types.md#strokovye-literaly), можно работать используя [строковые переменные](data-types.md#strokovye-peremennye): &#x20;
 
@@ -88,7 +81,7 @@ s$strings[1] = 'str2'
 s$strings[2] = 'str3'
 ```
 
-Массив может быть объявлен как коллекция [экземпляров класса](classes.md#ekzemplyary-klassa):
+Массив может быть объявлен как коллекция [экземпляров класса](classes.md#ekzemplyary-klassa), его методы будут доступны для каждого элемента:
 
 ```pascal
 var $players: array 2 of Player
