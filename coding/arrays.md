@@ -62,15 +62,17 @@ var $FloatArray: array 10 of Float
 
 После объявления массива можно обращаться к его элементам, используя квадратные скобки:
 
-<pre class="language-pascal"><code class="lang-pascal">var $FloatArray: array 10 of Float
+```pascal
+var $FloatArray: array 10 of Float
 
 $index = 0
+
 // увеличить значение первого элемента на 100
-<strong>$FloatArray[$index] += 100.0
-</strong>
+$FloatArray[$index] += 100.0
+
 // аналогично
 $FloatArray[0] += 100.0
-</code></pre>
+```
 
 С массивами, содержащими [строковые литералы](data-types.md#strokovye-literaly), можно работать используя [строковые переменные](data-types.md#strokovye-peremennye): &#x20;
 
