@@ -52,28 +52,23 @@ var <array name>: array <size> of <type>
 var $FloatArray: array 10 of Float
 ```
 
-### Accessing array elements after declaration
+### Accessing array elements after declaration <a href="#accessing-array-elements" id="accessing-array-elements"></a>
 
-After declaring an array you can work access its elements using square brackets:
+After declaring an array, you can access its elements using square brackets:
 
 ```pascal
 var $FloatArray: array 10 of Float
 
-$index = 1
+$index = 0
+
+// increasing value of the first element by 100
 $FloatArray[$index] += 100.0
+
+// same
+$FloatArray[0] += 100.0
 ```
 
-### Using constant indexes
-
-You can use positive integer numbers and zero to access a particular array element:
-
-```pascal
-var $FloatArray: array 10 of Float
-
-$FloatArray[1] += 100.0
-```
-
-Elements of an array containing [string literals](data-types.md#string-literals) can be accessed with [string variables](data-types.md#string-variables):
+Elements of an array containing [string literals](data-types.md#string-literals) can be accessed using [string variables](data-types.md#string-variables):
 
 ```pascal
 // initializing first three elements of the $strings array
@@ -82,7 +77,7 @@ s$strings[1] = 'str2'
 s$strings[2] = 'str3'
 ```
 
-An array can be declared as a collection of [class instances](classes.md#class-instances):
+An array can be declared as a collection of [class instances](classes.md#class-instances), its methods are available for each element:
 
 ```pascal
 var $players: array 2 of Player
@@ -91,5 +86,5 @@ $players[0].Build
 ```
 
 {% hint style="info" %}
-By default in the `GTA SA` [edit mode](../edit-modes/), the disassembler prints array elements with the numbers as indexes. The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../editor/console.md#constant\_indexes) `CONSTANT_INDEXES`.&#x20;
+By default, the disassembler prints array elements with the numbers as indexes in the `GTA SA` [edit mode](../edit-modes/). The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../editor/console.md#constant\_indexes) `CONSTANT_INDEXES`.&#x20;
 {% endhint %}
