@@ -8,13 +8,13 @@ Use this feature only if you know what you're doing. Any mistakes will corrupt t
 
 ## Syntax
 
-```
+```pascal
 hex
 <hexadecimal input>
 end
 ```
 
-```
+```pascal
 hex
   04 00 02 08 00 04 01
 end
@@ -28,7 +28,7 @@ For example, a sequence of three letters `A B C` will be compiled as the number 
 
 The `HEX..END` construct also accepts [string literals](data-types.md#string-literals), [labels](data-types.md#labels), [global variables](variables.md#global-variables), [model names](data-types.md#model-names). They are compiled without a preceding data type byte.
 
-```
+```pascal
 :get_offset
 hex
     04 00 02 $PLAYER_CHAR 01 @get_offset
@@ -39,7 +39,7 @@ This is the exact copy of the opcode `0004: $PLAYER_CHAR = @get_offset`
 
 A string literal enclosed in double quotes is compiled as a sequence of characters.
 
-```
+```pascal
 hex
     "This is a string"
 end
@@ -59,7 +59,7 @@ The following escape sequences are supported within a string literal:
 | Numeric escape sequence | \x`nn`          | `nn`      |
 | Escape char             | \\`char`        | `char`    |
 
-```
+```pascal
 hex
     "\0\b\t\n\r\xDD"
 end
@@ -73,7 +73,7 @@ Currently multiple spaces in a string literal are converted into a single one. T
 
 For convenience, large numbers can be prefixed with an `&` symbol. The number following the `&` symbol can be positive or negative, and it can be represented in either decimal or hexadecimal format.
 
-```
+```pascal
 hex
     &1000 &-0xA33500
 end
@@ -85,7 +85,7 @@ This example produces the following sequence of bytes: `E8 03 00 CB 5C FF`.
 
 In cases where it is necessary to repeat a specific byte multiple times, such as when creating a zero-filled buffer, indicate the count by appending `(n)` after the byte, where `n` is a positive integer number:
 
-```
+```pascal
 hex
  00(10)
 end
@@ -93,7 +93,7 @@ end
 
 This syntax is equivalent to:
 
-```
+```pascal
 hex
   00 00 00 00 00 00 00 00 00 00
 end
@@ -101,7 +101,7 @@ end
 
 Byte repetitions can be used multiple times within the same block, and they can also be set with a constant value.
 
-```
+```pascal
 const n = 25
 
 hex
@@ -113,7 +113,7 @@ end
 
 `hex..end` allows usage of the `$INCLUDE` directive to embed the contents of a binary file directly into the script's body. The syntax is as follows:
 
-```
+```pascal
 hex 
  {$INCLUDE <path>}
 end
