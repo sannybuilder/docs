@@ -54,13 +54,13 @@ var $FloatArray: array 10 of Float
 
 Arrays of a primitive type (numbers or strings) can be declared using the type name:
 
-```
+```pascal
 <type name> <array name>[<size>]
 ```
 
 Type name can be either `int`, `float`, `string`, or `longstring`:
 
-```
+```pascal
 int intArray[10]
 float floatArray[10]
 string stringArray[10]
