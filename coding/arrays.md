@@ -52,13 +52,13 @@ var <array name>: array <size> of <type>
 var $FloatArray: array 10 of Float
 ```
 
-Arrays of a primitive type (numbers or strings) can be declared using the type name:
+You can declare arrays of primitive types (such as numbers or strings) using a more concise syntax:
 
 ```pascal
-<type name> <array name>[<size>]
+<type> <array name>[<size>]
 ```
 
-Type name can be either `int`, `float`, `string`, or `longstring`:
+The type can be one of the following: `Int`, `Float`, `String`, or `LongString`:
 
 ```pascal
 int intArray[10]
