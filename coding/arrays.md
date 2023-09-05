@@ -58,6 +58,21 @@ var <имя массива>: array <размер> of <тип>
 var $FloatArray: array 10 of Float
 ```
 
+Массивы с элементами примитивного типа могут быть объявлены при помощи короткой записи вида:
+
+```pascal
+<тип> <имя массива>[<размер>]
+```
+
+Допустимыми типами в таком объявлении являются `Int`, `Float`, `String`, `LongString`:
+
+```pascal
+int intArray[10]
+float floatArray[10]
+string stringArray[10]
+longstring longStringArray[10]
+```
+
 ### Обращение к элементам массива после объявления <a href="#accessing-array-elements" id="accessing-array-elements"></a>
 
 После объявления массива можно обращаться к его элементам, используя квадратные скобки:

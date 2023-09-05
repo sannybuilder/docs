@@ -7,8 +7,8 @@
 ## Синтаксис <a href="#coding" id="coding"></a>
 
 * [Типы данных](coding/data-types.md)
-* [Переменные](coding/variables.md)
 * [Константы](coding/constants.md)
+* [Переменные](coding/variables.md)
 * [Массивы](coding/arrays.md)
 * [Условия](coding/conditions.md)
 * [Циклы](coding/loops.md)
