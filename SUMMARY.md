@@ -173,3 +173,4 @@
   * [0088: Глобальная переменная вне допустимых границ](troubleshooting/errors/0088.md)
   * [0089: Опкод не найден](troubleshooting/errors/0089-opkod-ne-naiden.md)
   * [0090: Константа переобъявлена](troubleshooting/errors/0090-konstanta-pereobyavlena.md)
+  * [0091: Недостаточно памяти для переменной](troubleshooting/errors/0091.md)
