@@ -173,3 +173,4 @@
   * [0088: Global variable is out of range](troubleshooting/errors/0088.md)
   * [0089: Opcode not found](troubleshooting/errors/0089.md)
   * [0090: Duplicate constant](troubleshooting/errors/0090.md)
+  * [0091: Not enough memory to allocate a local variable](troubleshooting/errors/0091.md)
