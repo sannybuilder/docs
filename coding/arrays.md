@@ -52,6 +52,21 @@ var <array name>: array <size> of <type>
 var $FloatArray: array 10 of Float
 ```
 
+Arrays of a primitive type (numbers or strings) can be declared using the type name:
+
+```
+<type name> <array name>[<size>]
+```
+
+Type name can be either `int`, `float`, `string`, or `longstring`:
+
+```
+int intArray[10]
+float floatArray[10]
+string stringArray[10]
+longstring longStringArray[10]
+```
+
 ### Accessing array elements after declaration <a href="#accessing-array-elements" id="accessing-array-elements"></a>
 
 After declaring an array, you can access its elements using square brackets:

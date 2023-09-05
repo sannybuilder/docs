@@ -7,8 +7,8 @@
 ## Syntax <a href="#coding" id="coding"></a>
 
 * [Data Types](coding/data-types.md)
-* [Variables](coding/variables.md)
 * [Constants](coding/constants.md)
+* [Variables](coding/variables.md)
 * [Arrays](coding/arrays.md)
 * [Conditions](coding/conditions.md)
 * [Loops](coding/loops.md)
