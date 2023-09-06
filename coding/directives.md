@@ -6,10 +6,13 @@ Preprocessing **directives** are unique keywords that alter the compiler's behav
 
 Allows to insert the content of an external text file in the current file. If the compiler finds this directive it opens the file at the location provided as the parameter and proceeds from the code written in the included file. When it reaches the end of the included file it returns back to the previous file.
 
-Syntax:\
-`{$INCLUDE path\to\file}`
+Syntax:
 
+```pascal
+{$INCLUDE path\to\file}
 ```
+
+```pascal
 {$INCLUDE loadwav.txt}
 {$INCLUDE C:\dev\getarrayindex.txt}
 ```
@@ -51,7 +54,7 @@ Syntax:\
 
 `extension` is an optional parameter specifying the file extension of the output file. It starts with the period character `.`. If no extension is present, the compiler uses the default value `.cs`
 
-```
+```pascal
 {$CLEO .cm} // the file gets the extension .cm
 {$CLEO} // the file gets the default extension .cs
 ```
@@ -68,8 +71,11 @@ Prohibits the compiler from including a source code of the script.&#x20;
 
 Without this directive when either the directive `$EXTERNAL` or `$CLEO` is present and the [option](../editor/options/general.md#add-extra-info-to-scm) `Add extra info to SCM` is enabled, Sanny Builder adds the source code into an output file.
 
-Syntax:\
-`{$NOSOURCE}`
+Syntax:
+
+```pascal
+{$NOSOURCE}
+```
 
 ## $OPCODE
 
@@ -77,28 +83,39 @@ Registers a custom opcode via the script.&#x20;
 
 All the opcodes definitions are contained in a [special file](../edit-modes/opcodes-list-scm.ini.md), one for each supported game. But sometimes it's necessary to add a custom opcode to use in the current script. `$OPCODE` makes it possible without touching the INI file.
 
-Syntax:\
-`{$OPCODE <opcode definition>}`\
-&#x20;or\
-`{$OPCODE <path\to\file>}`\
-&#x20;or\
-`{$OPCODE}`
+Syntax:
+
+```pascal
+{$OPCODE <opcode definition>}
+```
+
+or
+
+```pascal
+{$OPCODE <path\to\file>}
+```
+
+or
+
+```pascal
+{$OPCODE}
+```
 
 `opcode definition` - it accepts an definition in the same [format](../edit-modes/opcodes-list-scm.ini.md#opcode-definition) as the INI file.
 
-```
+```pascal
 {$OPCODE 0CCC=1,my_new_opcode %1d%}
 ```
 
 `path\to\file` - this directive also accepts a file name as its parameter. This file must contain only opcodes definitions to be loaded. If a relative path is provided, the compiler scans directories using the same rules as for [$INCLUDE](directives.md#usdinclude).
 
-```
+```pascal
 {$OPCODE additional_opcodes.ini}
 ```
 
 When used without any parameter, this directive reloads the original opcodes definitions file and reverts all changes made.
 
-```
+```pascal
 {$OPCODE}
 ```
 
@@ -110,13 +127,13 @@ A shorter form of this directive is `$O`.
 
 Allows the compiler to use a custom instruction set (an [extension](../edit-modes/extensions.md)).
 
-```
+```pascal
 {$USE CLEO+}
 ```
 
 You can enable multiple extensions by separating them with commas.
 
-```
+```pascal
 {$USE ini, bitwise, CLEO+}
 ```
 
