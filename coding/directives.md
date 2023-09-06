@@ -38,8 +38,11 @@ Makes the compiler to treat the file as an external script. Meaning, the resulti
 
 An alternative way to get such file is the debug [option](../editor/console.md#skip\_scm\_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
 
-Syntax:\
-`{$EXTERNAL}`
+Syntax:
+
+```pascal
+{$EXTERNAL}
+```
 
 {% hint style="info" %}
 A shorter form of this directive is `$E`.
@@ -49,8 +52,11 @@ A shorter form of this directive is `$E`.
 
 An analogue of the `$E` one, but the compiler automatically copies an output file to the `game\CLEO` directory. The file also gets an extension provided as the directive parameter.
 
-Syntax:\
-`{$CLEO <extension>}`
+Syntax:
+
+```pascal
+{$CLEO <extension>}
+```
 
 `extension` is an optional parameter specifying the file extension of the output file. It starts with the period character `.`. If no extension is present, the compiler uses the default value `.cs`
 
@@ -145,8 +151,11 @@ This directive is deprecated since v3.1.0
 
 Sets what version of [opcodes](../edit-modes/opcodes-list-scm.ini.md) to use during compilation.
 
-Syntax:\
-`{$VERSION x.y.zzzz}`
+Syntax:
+
+```pascal
+{$VERSION x.y.zzzz}
+```
 
 * `X`- [edit mode](../edit-modes/) ID
 * `y` - parameters order
@@ -164,5 +173,8 @@ This directive is deprecated since v3.1.0
 
 Restores the version to the value prior to using `$VERSION`.
 
-Syntax:\
-`{$VERSION_RESTORE}`
+Syntax:
+
+```pascal
+{$VERSION_RESTORE}
+```
