@@ -1,36 +1,6 @@
 # Directives
 
-Preprocessing **directives** are the special words that make the compiler function in different ways. They starts with `$` and enclosed between the curly brackets `{}`.
-
-## $VERSION
-
-{% hint style="warning" %}
-This directive is deprecated since v3.1.0
-{% endhint %}
-
-Sets what version of [opcodes](../edit-modes/opcodes-list-scm.ini.md) to use during compilation.
-
-Syntax:\
-`{$VERSION x.y.zzzz}`
-
-* `X`- [edit mode](../edit-modes/) ID
-* `y` - parameters order
-  * `0` - original: 0, 1, 2, etc
-  * `1` - custom order, some parameters reordered
-* `zzzz` - opcodes version
-
-By default the compiler uses the version `current_edit_mode.1.0000`.
-
-## $VERSION\_RESTORE
-
-{% hint style="warning" %}
-This directive is deprecated since v3.1.0
-{% endhint %}
-
-Restores the version to the value prior to using `$VERSION`.
-
-Syntax:\
-`{$VERSION_RESTORE}`
+Preprocessing **directives** are unique keywords that alter the compiler's behavior. They start with a dollar sign `$` and enclosed within curly braces`{}`.
 
 ## $INCLUDE
 
@@ -138,9 +108,44 @@ A shorter form of this directive is `$O`.
 
 ## $USE
 
-Enables custom instructions set to the compiler. See [Extensions](../edit-modes/extensions.md) for more information.
+Allows the compiler to use a custom instruction set (an [extension](../edit-modes/extensions.md)).
 
 ```
 {$USE CLEO+}
 ```
 
+You can enable multiple extensions by separating them with commas.
+
+```
+{$USE ini, bitwise, CLEO+}
+```
+
+## $VERSION
+
+{% hint style="warning" %}
+This directive is deprecated since v3.1.0
+{% endhint %}
+
+Sets what version of [opcodes](../edit-modes/opcodes-list-scm.ini.md) to use during compilation.
+
+Syntax:\
+`{$VERSION x.y.zzzz}`
+
+* `X`- [edit mode](../edit-modes/) ID
+* `y` - parameters order
+  * `0` - original: 0, 1, 2, etc
+  * `1` - custom order, some parameters reordered
+* `zzzz` - opcodes version
+
+By default the compiler uses the version `current_edit_mode.1.0000`.
+
+## $VERSION\_RESTORE
+
+{% hint style="warning" %}
+This directive is deprecated since v3.1.0
+{% endhint %}
+
+Restores the version to the value prior to using `$VERSION`.
+
+Syntax:\
+`{$VERSION_RESTORE}`
