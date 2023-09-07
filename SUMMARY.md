@@ -11,6 +11,7 @@
 * [Variables](coding/variables.md)
 * [Arrays](coding/arrays.md)
 * [Conditions](coding/conditions.md)
+* [Operators](coding/operators.md)
 * [Loops](coding/loops.md)
 * [Classes](coding/classes.md)
 * [Keywords](coding/keywords.md)
