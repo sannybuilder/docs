@@ -10,6 +10,7 @@
 * [Константы](coding/constants.md)
 * [Переменные](coding/variables.md)
 * [Массивы](coding/arrays.md)
+* [Операторы](coding/operators.md)
 * [Условия](coding/conditions.md)
 * [Циклы](coding/loops.md)
 * [Классы](coding/classes.md)
