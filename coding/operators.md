@@ -14,14 +14,21 @@ The majority of supported operations in Sanny Builder involve just two operands:
 * `LHS *= RHS` - a multiplication operation
 * `LHS /= RHS` - a division operation
 
+The following operations require the `CLEO` extension (`{$USE CLEO}` or `{$CLEO}`).
+
+* `LHS = value1 + value2` - add two integer values together and write the result in `LHS`
+* `LHS = value1 - value2` - subtract one integer value from another and write the result in `LHS`
+* `LHS = value1 * value2` - multiply two integer values and write the result in `LHS`
+* `LHS = value1 / value2` - divide one integer value by another and write the result in `LHS`
+
 ### Comparison
 
-* `LHS == RHS` - an equal to operation. Both sides must have the same value for the comparison to return true
-* `LHS > RHS` - a greater than operation
-* `LHS >= RHS` - a greater than or equal to operation
-* `LHS < RHS` - a less than operation
-* `LHS <= RHS` - a less than or equal to operation
-* `LHS <> RHS` - a not equal operation. Both sides must have different values for the comparison to return true
+* `LHS == RHS` - an "equal to" operation. Both sides must have the same value for the comparison to return true
+* `LHS > RHS` - a "greater than" operation
+* `LHS >= RHS` - a "greater than or equal to" operation
+* `LHS < RHS` - a "less than" operation
+* `LHS <= RHS` - a "less than or equal to" operation
+* `LHS <> RHS` - a "not equal" operation. Both sides must have different values for the comparison to return true
 
 {% hint style="info" %}
 The language does not have a dedicated Boolean type. The result of each comparison only affects the current [IF statement](conditions.md).
