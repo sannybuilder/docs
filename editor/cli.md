@@ -88,10 +88,10 @@ sanny.exe --no-splash
 
 ## -x
 
-`-x <file path>` - sets the path to the file with the [edit modes](../edit-modes/) configuration
+`-x` - reloads [edit modes](../edit-modes/) configuration (useful for testing the mode changes)
 
 ```
-sanny.exe -x ..\my-modes.xml
+sanny.exe -x
 ```
 
 ## --option

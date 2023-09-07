@@ -8,17 +8,29 @@ Edit modes supply Sanny Builder with the following information:
 * paths to files with the game data
 * paths to files with supporting information ([labels](customlabels.ini.md), [variables](./#variables), [constants](./#constants), etc)
 
-By default Sanny Builder reads the modes configuration from the file `<SB>\data\modes.xml`. This path can be customized via the `-x` CLI [option](../editor/cli.md#x).
+Sanny Builder stores the edit modes within the `data` folder. When a subfolder inside `data` contains a file named `mode.xml`, this file is automatically loaded as the configuration file for the respective edit mode.
 
-The file `modes.xml` is open for modification and extension, and users can create their own modes by changing it.
+{% hint style="info" %}
+In versions prior to 3.9, the modes configuration was stored in a single file named `modes.xml,` which was located in the `data` folder. Starting from version 3.9 and onwards, this configuration has been divided into separate XML files, each dedicated to a specific mode.
+{% endhint %}
+
+The modes configuration is automatically loaded upon startup of Sanny Builder. If needed, it can also be manually reloaded by running Sanny Builder with the `-x` CLI [option](../editor/cli.md#x).
+
+The configuration of the modes is open to modification and extensions, and users can create their own modes for specific needs.
 
 ## File Format
 
-`modes.xml` is a file in the XML format and can be changed in any text editor. It defines the available modes.
+The `mode.xml` file is formatted in XML and is editable using any text editor.
 
-The root node is `<modes>` and it has no attributes. The file can only have one root node.&#x20;
+Each configuration file should begin with the following XML declaration:
 
-Each edit mode is a child node of `<modes>` beginning with the opening tag `<mode>` and ending with the closing tag `</mode>`. The `<mode>` element has both mandatory and optional attributes as outlined below. The content of the `<mode>` is a set of specific tags (properties) defining paths to directories or files.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+```
+
+Following the declaration, there should be a single root node, `<mode>`. The file must only contain one root node.
+
+Within the `<mode>` tag, there are both mandatory and optional attributes, as described below. The content of the `<mode>` tag consists of specific tags (properties) that define paths to directories or files.
 
 ### Mode Attributes
 
@@ -104,7 +116,7 @@ path to either an `.ide` or `.dat` file:\
 
 `ide` element may have an optional `base` attribute to specify a folder that is used to resolve relative paths in the `.dat` file.
 
-```
+```xml
 <ide base="@game:\">default.dat</ide>
 ```
 
@@ -170,7 +182,7 @@ Both paths do not include the trailing slash.
 
 ## Available Modes
 
-Sanny Builder offers many different modes and their number may vary from version to version:
+Sanny Builder offers many different modes, and their number may vary from version to version:
 
 | Title               | Naming schema  | Parameters order | Game                                 |
 | ------------------- | -------------- | ---------------- | ------------------------------------ |
@@ -185,9 +197,9 @@ Sanny Builder offers many different modes and their number may vary from version
 | VC Mobile           | community      | custom           | VC Android and iOS versions          |
 | SA Mobile           | community      | custom           | SA Android and iOS versions          |
 
-The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g. `char` or `script`) that is consistent with the game's inner structures. &#x20;
+The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g., `char` or `script`) that is consistent with the game's inner structures. &#x20;
 
-The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order have all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
+The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order has all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
 
 ## Selecting a mode
 
@@ -195,6 +207,6 @@ To change the mode, click at the right bottom corner of the Sanny Builder's main
 
 ![](../.gitbook/assets/edit\_modes.png)
 
-To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game use the `--game` [option](../editor/cli.md#game).
+To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game, use the `--game` [option](../editor/cli.md#game).
 
-Running Sanny Builder with the `-x` [option](../editor/cli.md#x) allows loading the modes configuration from a file different from the default `modes.xml`. If Sanny Builder is already running, it reloads the configuration and updates the list of modes.
+Running Sanny Builder with the `-x` [option](../editor/cli.md#x) reloads the modes configuration and updates the list of modes.
