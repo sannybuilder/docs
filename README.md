@@ -1,8 +1,8 @@
 # Введение
 
-**Sanny Builder** - это среда разработки новых миссий и скриптов для серии игр GTA 3D. 
+**Sanny Builder** - это среда разработки новых миссий и скриптов для серии игр GTA 3D.&#x20;
 
-В комплект входит дизассемблер, который переводит игровые скрипты в текстовый формат; компилятор, который переводит скрипт в формат, читаемый игрой, и удобный редактор со множеством [вспомогательных функций](editor/features.md), таких как подсветка синтаксиса, чтение координат игрока в игре, быстрое перемещение по участкам кода и многое другое. Добавьте к этому быструю скорость работы и настраиваемый синтаксис кода \(через [классы](coding/classes.md) и [ключевые слова](coding/keywords.md)\) и вы получите представление о программе.
+В комплект входит дизассемблер, который переводит игровые скрипты в текстовый формат; компилятор, который переводит скрипт в формат, читаемый игрой, и удобный редактор со множеством [вспомогательных функций](editor/features.md), таких как подсветка синтаксиса, чтение координат игрока в игре, быстрое перемещение по участкам кода и многое другое. Добавьте к этому быструю скорость работы и настраиваемый синтаксис кода (через [классы](coding/classes.md) и [ключевые слова](coding/keywords.md)) и вы получите представление о программе.
 
 ## Установка и обновление
 
@@ -14,15 +14,14 @@
 
 ## Контактная информация
 
-[sannybuilder.com](https://sannybuilder.com/)  
-[Sanny Builder @ Github](https://github.com/sannybuilder/dev/issues)  
-[Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)  
-[Sanny Builder @ Facebook](https://facebook.com/SannyBuilder)  
+[sannybuilder.com](https://sannybuilder.com/)\
+[Sanny Builder @ Github](https://github.com/sannybuilder/dev/issues)\
+[Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)\
+[Sanny Builder @ Facebook](https://facebook.com/SannyBuilder)\
 [Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)
 
 С замечаниями, советами и предложениями обращайтесь на [mail@sannybuilder.com](mailto:mail@sannybuilder.com) или на [Github](https://github.com/sannybuilder/dev/issues).
 
 Используйте программу на свой страх и риск. Делайте резервные копии всех редактируемых файлов.
 
-© 2005-2021 Seemann
-
+© 2005-2023 Seemann
