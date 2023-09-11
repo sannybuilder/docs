@@ -212,3 +212,13 @@ Sanny Builder предлагает много различных режимов,
 Выбрать режим через командную строку можно с [опцией](../editor/cli.md#mode) `--mode`. Чтобы выбрать режим по умолчанию для какой-либо игры, используйте [опцию](../editor/cli.md#game) `--game`.
 
 Запуск Sanny Builder с [опцией](../editor/cli.md#x) `-x` перезагружает режимы редактирования и обновляет список доступных режимов.
+
+{% hint style="info" %}
+Вы можете зарегистрировать новое сочетание клавиш для быстрого обновления режимов редактирования без необходимости перезапуска Sanny Builder. Добавьте новый элемент в [меню внешних приложений](../editor/features.md#menyu-vneshnikh-prilozhenii):
+
+Путь: `sanny.exe`\
+Параметры: `-x --no-splash`\
+Shortcut: `<any combo of your choice>`
+
+<img src="../.gitbook/assets/usertools-x.PNG" alt="" data-size="original">
+{% endhint %}
