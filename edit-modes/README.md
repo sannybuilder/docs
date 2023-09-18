@@ -210,3 +210,14 @@ To change the mode, click at the right bottom corner of the Sanny Builder's main
 To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game, use the `--game` [option](../editor/cli.md#game).
 
 Running Sanny Builder with the `-x` [option](../editor/cli.md#x) reloads the modes configuration and updates the list of modes.
+
+{% hint style="info" %}
+You can register a new shortcut to instantly refresh edit modes configuration without having to close Sanny Builder. Add the following configuration in the [User tools](../editor/features.md#external-tools-menu):
+
+Path: `sanny.exe`\
+Parameters: `-x --no-splash`\
+Shortcut: `<any combo of your choice>`
+
+<img src="../.gitbook/assets/usertools-x.PNG" alt="" data-size="original">
+{% endhint %}
+

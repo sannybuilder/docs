@@ -1,5 +1,32 @@
 # Version History
 
+## v. 3.9.1 - 18.09.2023
+
+* array name in expressions without opcode could be a constant [#250](https://github.com/sannybuilder/dev/issues/250)&#x20;
+* preserve global variable index when disassembling with extra info [#251](https://github.com/sannybuilder/dev/issues/251)&#x20;
+* default choice for option [Case converting](editor/options/formats.md#case-converting) should be "As is" [#256](https://github.com/sannybuilder/dev/issues/256)
+* fix an issue with compiling opcode 0B17 [#254](https://github.com/sannybuilder/dev/issues/254)&#x20;
+* fix an issue when Sanny doesn't present the option to use the included script text. [#258](https://github.com/sannybuilder/dev/issues/258)&#x20;
+* fixed some issues with string variables [#259](https://github.com/sannybuilder/dev/issues/259), [#265](https://github.com/sannybuilder/dev/issues/265)
+
+## v. 3.9.0 - 09.09.2023
+
+* command names defined in [Sanny Builder Library](https://library.sannybuilder.com) JSON files are now valid [keywords](coding/keywords.md)
+* [HEX..END](coding/hex..end.md#byte-repetition) improvements (repeat the same byte N times, include binary files)
+* simplified [const](coding/constants.md#syntax) and [variable](coding/variables.md#declaring-a-variable-type) declarations (`const x = 1, y = 2`, `float x, y, z`)
+* new [operators](coding/operators.md#bitwise) (`bitwise`, `=@`, `=#`)
+* `{$INCLUDE_ONCE}` [directive](coding/directives.md#usdinclude\_once)
+* adding new [edit modes](edit-modes/) can be done by copying them into the `data` folder, the `modes.xml` is gone
+* bug fixes and other changes
+
+👏 Thanks to all people who helped and contributed to this release, and many thanks to my supporters on [Patreon](https://patreon.com/seemann).
+
+{% hint style="warning" %}
+Previous versions allowed the compilation of some broken code. Now, it will produce an error. You can find examples of such code [here](https://github.com/sannybuilder/dev/issues/231#issuecomment-1627984136).
+{% endhint %}
+
+[Complete list of changes](https://github.com/sannybuilder/dev/issues/231)
+
 ## v. 3.8.5 - 22.02.2023
 
 * fix bug [#216](https://github.com/sannybuilder/dev/issues/216)

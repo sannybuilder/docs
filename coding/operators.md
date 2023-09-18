@@ -78,6 +78,10 @@ The game natively supports timed addition and subtraction, providing FPS-indepen
 
 Casting operations convert a value from one type to another. The game supports a conversion between `Integer` and `Float` types.
 
+{% hint style="info" %}
+The use of the operator =# requires that types of both variables are [known](variables.md#declaring-a-variable-type).
+{% endhint %}
+
 | Operation                        | Opcode | Expression |
 | -------------------------------- | ------ | ---------- |
 | CSET\_VAR\_INT\_TO\_VAR\_FLOAT   | 008C   | $i =# $f   |

@@ -32,6 +32,10 @@ You may use this directive unlimited number of times. The included files may con
 A shorter form of this directive is `$I`.
 {% endhint %}
 
+## $INCLUDE\_ONCE
+
+Similar to `{$INCLUDE}`, with the only difference being that if the code from a file has already been included, it will not be included again, and the directive is silently ignored.
+
 ## $EXTERNAL
 
 Makes the compiler to treat the file as an external script. Meaning, the resulting output file will be header-less and with relative [label](data-types.md#labels) offsets, as an `.scm` file from the `script.img`. Using this directive requires that the file contains only one script or a single mission.

@@ -2,7 +2,7 @@
 
 This tab contains the general settings used by Sanny Builder.
 
-![](../../.gitbook/assets/options-general-en.png)
+![](../../.gitbook/assets/options-general-en.PNG)
 
 
 

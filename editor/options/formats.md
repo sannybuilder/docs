@@ -2,7 +2,7 @@
 
 Here you can set up source file names, labels format, letter case for string literals, etc.
 
-![](../../.gitbook/assets/options-format-en.png)
+![](../../.gitbook/assets/options-format-en.PNG)
 
 ## File Name Format
 

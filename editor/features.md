@@ -12,7 +12,7 @@ Double-clicking the opcode description in the status bar opens the library's pag
 
 If the current edit mode uses the library documentation there is a text in the status bar telling the version of the documentation, e.g. `SBL v0.119`. The version may vary from mode to mode.
 
-![](../.gitbook/assets/sbl-update-popup-en.png)
+![](../.gitbook/assets/sbl-update-popup-en.PNG)
 
 Clicking the library version text in the status bar brings up a popup menu from which you can check if there are newer versions and download them. If you enable `Automatic updates` option Sanny Builder will check the updates and download them on startup.
 
@@ -129,6 +129,12 @@ If a `SCM` file contains custom-made missions you may edit the `missions.txt` to
 Sanny Builder has fully multilingual interface translated into 15 languages. You can switch the languages in the [options](options/general.md#interface-language) (`F10`). Refer to [sannybuilder/translations](https://github.com/sannybuilder/translations) for more information on how to create or update a translation.
 
 ## External Tools Menu
+
+<div data-full-width="false">
+
+<figure><img src="../.gitbook/assets/usertools.PNG" alt="" width="375"><figcaption><p>User Tools interface</p></figcaption></figure>
+
+</div>
 
 You can configure up to `9` apps to run when you need them. Each app has its own hotkey for your convenience. You may also pass the parameters to your app if needed. To pass the name of the currently opened file use the special word `$SB_FileName`.
 

@@ -25,4 +25,4 @@ For any questions e-mail me at [mail@sannybuilder.com](mailto:mail@sannybuilder.
 
 Use responsibly at your own risk. In Backup We Trust.
 
-© 2005-2021 Seemann
+© 2005-2023 Seemann

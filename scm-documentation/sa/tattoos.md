@@ -55,14 +55,14 @@ Player.SetClothes($PLAYER_CHAR, <texture>, <model>, <body part>)
 
 ## Left chest
 
-| Texture  | Model  | [Body Part](player-body-parts.md) | Tattoo Name | Image                                                                           |
-| -------- | ------ | --------------------------------- | ----------- | ------------------------------------------------------------------------------- |
-| 9crown   | 9CROWN | 9                                 | Crown       | <img src="../../.gitbook/assets/9crown.gif" alt="" data-size="original">        |
-| 9gun     | 9GUN   | 9                                 | Gun         | <img src="../../.gitbook/assets/9gun.gif" alt="" data-size="original">          |
-| 9gun2    | 9GUN2  | 9                                 | Gun         | <img src="../../.gitbook/assets/9gun2 (1) (1).gif" alt="" data-size="original"> |
-| 9homeboy | 9HOMBY | 9                                 | Homeboy     | <img src="../../.gitbook/assets/9homby.gif" alt="" data-size="original">        |
-| 9bullet  | 9BULLT | 9                                 | Bullet      | <img src="../../.gitbook/assets/9bullt.gif" alt="" data-size="original">        |
-| 9rasta   | 9RASTA | 9                                 | Rasta       | <img src="../../.gitbook/assets/9rasta.gif" alt="" data-size="original">        |
+| Texture  | Model  | [Body Part](player-body-parts.md) | Tattoo Name | Image                                                                       |
+| -------- | ------ | --------------------------------- | ----------- | --------------------------------------------------------------------------- |
+| 9crown   | 9CROWN | 9                                 | Crown       | <img src="../../.gitbook/assets/9crown.gif" alt="" data-size="original">    |
+| 9gun     | 9GUN   | 9                                 | Gun         | <img src="../../.gitbook/assets/9gun.gif" alt="" data-size="original">      |
+| 9gun2    | 9GUN2  | 9                                 | Gun         | <img src="../../.gitbook/assets/9gun2 (1).gif" alt="" data-size="original"> |
+| 9homeboy | 9HOMBY | 9                                 | Homeboy     | <img src="../../.gitbook/assets/9homby.gif" alt="" data-size="original">    |
+| 9bullet  | 9BULLT | 9                                 | Bullet      | <img src="../../.gitbook/assets/9bullt.gif" alt="" data-size="original">    |
+| 9rasta   | 9RASTA | 9                                 | Rasta       | <img src="../../.gitbook/assets/9rasta.gif" alt="" data-size="original">    |
 
 ## Right chest
 
