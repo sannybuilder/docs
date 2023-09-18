@@ -1,5 +1,14 @@
 # История изменений
 
+## v. 3.9.1 - 18.09.2023
+
+* имя массива в выражениях без опкодов  может быть константой [#250](https://github.com/sannybuilder/dev/issues/250)&#x20;
+* декомпилятор использует Alloc для глобальных переменных, если они отличаются от CustomVariables.ini [#251](https://github.com/sannybuilder/dev/issues/251)&#x20;
+* опция "[Регистр букв](editor/options/formats.md#registr-bukv)" по умолчанию установлена в "Как есть" [#256](https://github.com/sannybuilder/dev/issues/256)
+* исправлена ошибка, возникающая при компиляции опкода 0B17 [#254](https://github.com/sannybuilder/dev/issues/254)&#x20;
+* исправлена ошибка, из-за которой редактор не предлагал использовать исходный код скрипта [#258](https://github.com/sannybuilder/dev/issues/258)&#x20;
+* исправлены некоторые проблемы, связанные с объявлением строковых переменных [#259](https://github.com/sannybuilder/dev/issues/259), [#265](https://github.com/sannybuilder/dev/issues/265)
+
 ## v. 3.9.0 - 09.09.2023
 
 * названия команд, используемые в JSON файлах [Sanny Builder Library](https://library.sannybuilder.com), могут использоваться в качестве [ключевых слов](coding/keywords.md)
