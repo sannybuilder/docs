@@ -14,13 +14,9 @@
 
 ## Контактная информация
 
-[sannybuilder.com](https://sannybuilder.com/)\
-[Sanny Builder @ Github](https://github.com/sannybuilder/dev/issues)\
-[Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)\
-[Sanny Builder @ Facebook](https://facebook.com/SannyBuilder)\
-[Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)
-
-С замечаниями, советами и предложениями обращайтесь на [mail@sannybuilder.com](mailto:mail@sannybuilder.com) или на [Github](https://github.com/sannybuilder/dev/issues).
+[Discord](https://sannybuilder.com/discord)\
+[Sanny Builder на GitHub](https://github.com/sannybuilder/dev/issues)\
+[Sanny Builder в **𝕏**](https://twitter.com/SannyBuilderDev)
 
 Используйте программу на свой страх и риск. Делайте резервные копии всех редактируемых файлов.
 
