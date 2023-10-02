@@ -16,12 +16,9 @@ Latest versions and updates are always available on [sannybuilder.com](https://s
 
 ## Contacts
 
-[sannybuilder.com](https://sannybuilder.com/)\
-[Sanny Builder @ GitHub](https://github.com/sannybuilder/dev/issues)\
-[Sanny Builder @ Twitter](https://twitter.com/SannyBuilderDev)\
-[Sanny Builder @ GTAForums.com](http://gtaforums.com/index.php?showtopic=211077)
-
-For any questions e-mail me at [mail@sannybuilder.com](mailto:mail@sannybuilder.com) or create a ticket on [GitHub](https://github.com/sannybuilder/dev/issues).
+[Discord](https://sannybuilder.com/discord)\
+[Sanny Builder on GitHub](https://github.com/sannybuilder/dev/issues)\
+[Sanny Builder on **𝕏**](https://twitter.com/SannyBuilderDev)
 
 Use responsibly at your own risk. In Backup We Trust.
 
