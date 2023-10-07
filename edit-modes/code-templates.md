@@ -1,6 +1,6 @@
 # Code Templates
 
-You can insert a predefined piece of code called a code template by typing the template name and pressing `F2`. To display the list of available templates, press `Ctrl+J`. 
+You can insert a predefined piece of code called a code template by typing the template name and pressing `F2`. To display the list of available templates, press `Ctrl+J`.&#x20;
 
 For example, if you type `for` and press `F2` the editor adds:
 
@@ -12,7 +12,7 @@ end // for
 
 ## Types of Templates
 
-There are two types of templates: _shared_ and _exclusive_. Shared templates are available across all [edit modes](./). They are contained in the file `data\templates.txt`. Exclusive templates are designed specifically for the current edit mode. A path to the exclusive template file can be customized with the [`template`](./#templates) key in the `modes.xml`:
+There are two types of templates: _shared_ and _exclusive_. Shared templates are available across all [edit modes](./). They are contained in the file `data\templates.txt`. Exclusive templates are designed specifically for the current edit mode. A path to the exclusive template file can be customized with the [`template`](./#templates) key in the mode configuration:
 
 ```
 <templates type="default">@sb:\data\gta3\templates.txt</templates>
@@ -27,11 +27,11 @@ A template name is written in a separate line. The equal sign `=` follows the na
 
 ## Adding a New Template
 
-It's also possible to add a new template from the editor. Select the code and click the `Service->Add template` menu. 
+It's also possible to add a new template from the editor. Select the code and click the `Service->Add template` menu.&#x20;
 
 ![](../.gitbook/assets/ide-add-template-en.png)
 
-Enter a name of the template, a description (optionally) in the dialog window, choose the type of the template, and press the `OK` button. The template is ready to use. 
+Enter a name of the template, a description (optionally) in the dialog window, choose the type of the template, and press the `OK` button. The template is ready to use.&#x20;
 
 Custom templates are saved in either `data\templates.custom.txt` (_custom shared templates_) or in `data\<edit mode>\templates.custom.txt`(_custom exclusive templates_). The latter can be customized in the [modes configuration](./#templates).
 
