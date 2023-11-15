@@ -136,9 +136,13 @@ path to [`CustomLabels.ini`](customlabels.ini.md)
 
 path to[`missions.txt`](../editor/features.md#custom-mission-titles)
 
+#### `library`
+
+path to a JSON file generated in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library) with documentation on the scripting commands used in the target [game](./#game).
+
 #### opcodes&#x20;
 
-path to a list of [opcodes](opcodes-list-scm.ini.md)
+path to a list of [opcodes](opcodes-list-scm.ini.md). This file is optional if you have specified a library path (see above).
 
 #### templates&#x20;
 
@@ -167,9 +171,7 @@ path to [`CustomVariables.ini`](../coding/variables.md)
 
 path to [`opcodes.txt`](../editor/opcode-search-tool.md)
 
-#### `library`
 
-path to a JSON file generated in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library) with documentation on the scripting commands used in the target [game](./#game).
 
 ### Built-in Variables
 
@@ -184,22 +186,11 @@ Both paths do not include the trailing slash.
 
 Sanny Builder offers many different modes, and their number may vary from version to version:
 
-| Title               | Naming schema  | Parameters order | Game                                 |
-| ------------------- | -------------- | ---------------- | ------------------------------------ |
-| GTA III             | community      | custom           | all versions of GTA III              |
-| GTA VC              | community      | custom           | all versions of Vice City            |
-| GTA SA v1.0         | community      | custom           | SA v1.0                              |
-| GTA SA v2.0         | community      | custom           | SA v2.0                              |
-| GTA SA (v1.0 - SCR) | Rockstar       | original         | SA v1.0                              |
-| GTA LCS             | Rockstar       | original         | all versions of Liberty City Stories |
-| GTA VCS (PSP)       | Rockstar       | original         | VCS for PSP                          |
-| GTA VCS (PS2)       | Rockstar       | original         | VCS for PS2                          |
-| VC Mobile           | community      | custom           | VC Android and iOS versions          |
-| SA Mobile           | community      | custom           | SA Android and iOS versions          |
+<table data-header-hidden><thead><tr><th>Title</th><th width="106">Id</th><th width="165">Naming Schema </th><th width="154">Param Order</th><th>Game</th></tr></thead><tbody><tr><td>Title</td><td>Id</td><td>Naming schema </td><td>Parameters order</td><td>Game</td></tr><tr><td>GTA III</td><td>gta3</td><td>community</td><td>custom</td><td>all versions of GTA III</td></tr><tr><td>GTA VC (SBL)</td><td>vc_sbl</td><td>Rockstar</td><td>original</td><td>all versions of Vice City</td></tr><tr><td><del>GTA VC</del></td><td>vc</td><td><del>community</del></td><td><del>custom</del></td><td>all versions of Vice City;<br>deprecated in v4.0, use VC SBL instead</td></tr><tr><td>GTA SA (v1.0 - SBL)</td><td>sa_sbl</td><td>Rockstar</td><td>original</td><td>SA v1.0</td></tr><tr><td><del>GTA SA v1.0</del></td><td>sa</td><td><del>community</del></td><td><del>custom</del></td><td>SA v1.0;<br>deprecated in v4.0, use SA SBL instead</td></tr><tr><td>GTA SA v2.0</td><td>sa_v2</td><td>community</td><td>custom</td><td>SA v2.0</td></tr><tr><td><del>GTA SA (v1.0 - SCR)</del></td><td>sa_scr</td><td><del>Rockstar</del></td><td><del>original</del></td><td>SA v1.0;<br>deprecated in v4.0, use SA SBL instead</td></tr><tr><td>GTA LCS</td><td>lcs</td><td>Rockstar</td><td>original</td><td>all versions of Liberty City Stories</td></tr><tr><td>GTA VCS (PSP)</td><td>vcs_psp</td><td>Rockstar</td><td>original</td><td>VCS for PSP</td></tr><tr><td>GTA VCS (PS2)</td><td>vcs_ps2</td><td>Rockstar</td><td>original</td><td>VCS for PS2</td></tr><tr><td>VC Mobile</td><td>vc_mobile</td><td>community</td><td>custom</td><td>VC Android and iOS versions</td></tr><tr><td>SA Mobile</td><td>sa_mobile</td><td>community</td><td>custom</td><td>SA Android and iOS versions</td></tr></tbody></table>
 
 The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g., `char` or `script`) that is consistent with the game's inner structures. &#x20;
 
-The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order has all parameters arranged from the smallest index to the largest index. This goes with the Rockstar schema to make scripts look like they are meant to be by the developers.
+The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order has all parameters arranged from the smallest index to the largest index. This goes along with the Rockstar schema to make scripts look like they are meant to be by the developers.
 
 ## Selecting a mode
 

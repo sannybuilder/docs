@@ -70,7 +70,7 @@ sanny.exe --game sa
 
 ## --mode
 
-`--mode <id>` - selects the mode by `id`. [Modes](../edit-modes/) and their ids are defined in the `modes.xml` file.
+`--mode <id>` - selects the mode by `id`. [Modes](../edit-modes/) and their ids are defined in respective `mode.xml` files.
 
 Shortcut: `-m`
 

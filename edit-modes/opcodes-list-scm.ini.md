@@ -6,6 +6,10 @@ Opcodes documentation can be found in [Sanny Builder Library](https://library.sa
 
 `SCM.INI` is the file containing information about opcodes used during disassembling and compiling script files. Sanny Builder ships a list of opcodes for each [edit mode](./#opcodes).
 
+{% hint style="info" %}
+Starting v4.0, this file is optional and can be substituted with the new definition files available for download in [Sanny Builder Library](https://library.sannybuilder.com/). New SBL edit modes use only JSON files.
+{% endhint %}
+
 | Game                 | File Name  | Location        |
 | -------------------- | ---------- | --------------- |
 | GTA III              | SCM.INI    | data\gta3       |
