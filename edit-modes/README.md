@@ -138,11 +138,11 @@ path to[`missions.txt`](../editor/features.md#custom-mission-titles)
 
 #### `library`
 
-path to a JSON file generated in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library) with documentation on the scripting commands used in the target [game](./#game).
+path to a JSON file with scripting command definitions used in the target [game](./#game). Available for download in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library).
 
 #### opcodes&#x20;
 
-path to a list of [opcodes](opcodes-list-scm.ini.md). This file is optional if you have specified a library path (see above).
+path to a file with [opcodes](opcodes-list-scm.ini.md). Can be used multiple times with different files. This file is optional if you have specified a **library** path (see above).
 
 #### templates&#x20;
 
