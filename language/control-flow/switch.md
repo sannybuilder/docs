@@ -24,7 +24,7 @@ Each case can be associated with up to `8` values.
 
 Default case is optional and can be omitted. When provided, default must be the last in the list of cases.
 
-Switch statement does not support any extra instructions outside of `case..end` blocks. It also does not support a "fall through" behavior usually found in C-like languages. When the case block ends, the control flow is transferred out of the switch statement.
+Switch statement does not support any extra instructions outside of `case` or `default` blocks. It also does not support a "fall through" behavior usually found in C-like languages. When the case block ends, the control flow is transferred out of the switch statement.
 
 #### Example
 
