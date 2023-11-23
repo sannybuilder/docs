@@ -82,7 +82,7 @@ The valid value for this attribute is `default.` Omit this attribute for non-def
 
 #### arrays&#x20;
 
-path to [`CustomArrays.ini`](../coding/arrays.md)
+path to [`CustomArrays.ini`](../language/data-types/arrays.md)
 
 #### copy-directory
 
@@ -90,15 +90,15 @@ path to a directory where to put a compiled script on `Compile + Copy` run.
 
 Has a required attribute `type`:\
 `type="scm"` - used for regular `.scm` scripts\
-`type="cleo"` - used for scripts with [directive](../coding/directives.md#usdcleo) `{$CLEO}`
+`type="cleo"` - used for scripts with [directive](../language/directives.md#usdcleo) `{$CLEO}`
 
 #### classes&#x20;
 
-path to[`classes.db`](../coding/classes.md)
+path to[`classes.db`](../language/instructions/classes.md)
 
 #### constants
 
-path to[`constants.txt`](../coding/constants.md)
+path to[`constants.txt`](../language/data-types/constants.md)
 
 #### data&#x20;
 
@@ -111,7 +111,7 @@ path to [enums.txt](enums.txt.md)
 #### ide&#x20;
 
 path to either an `.ide` or `.dat` file:\
-`.ide` files contain game [model names](../coding/data-types.md#model-names) and characteristics\
+`.ide` files contain game [model names](../language/data-types/#model-names) and characteristics\
 `.dat` files contain paths to other `.ide` files
 
 `ide` element may have an optional `base` attribute to specify a folder that is used to resolve relative paths in the `.dat` file.
@@ -126,7 +126,7 @@ A mode may have multiple `<ide>` elements.
 
 #### keywords&#x20;
 
-path to a list of [keywords](../coding/keywords.md)
+path to a list of [keywords](../language/instructions/keywords.md)
 
 #### labels&#x20;
 
@@ -165,7 +165,7 @@ path to a `.gxt` file
 
 #### variables
 
-path to [`CustomVariables.ini`](../coding/variables.md)
+path to [`CustomVariables.ini`](../language/data-types/variables.md)
 
 #### examples
 

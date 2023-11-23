@@ -26,7 +26,7 @@ The disassembler prints the offset of each command.
 
 ### VAR\_COUNTER
 
-After compiling the console contains the list of the [global variables](../coding/variables.md#global-variables) used only once in the code (i.e. can be removed or replaced with [local variables](../coding/variables.md#local-variables)).
+After compiling the console contains the list of the [global variables](../language/data-types/variables.md#global-variables) used only once in the code (i.e. can be removed or replaced with [local variables](../language/data-types/variables.md#local-variables)).
 
 ### IGNORE\_UNKNOWN
 
@@ -48,7 +48,7 @@ E.g. given an array of three elements starting at `$10` this option affects the 
 
 Disassembler skips the header of the input file. It allows to open headless scripts (e.g. the ones from `script.img` or CLEO scripts).&#x20;
 
-With this option the compiler makes `.scm` files without the header (similar to `{$EXTERNAL}` [directive](../coding/directives.md#usdexternal)).
+With this option the compiler makes `.scm` files without the header (similar to `{$EXTERNAL}` [directive](../language/directives.md#usdexternal)).
 
 ### SKIP\_EXTRA\_INFO
 

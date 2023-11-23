@@ -4,7 +4,7 @@
 
 For better responsiveness the language service only scans a slice of the current document prior to the active line, not the entire file. This is controlled by the [Scanning range](options/editor.md#code-scan-distance) value set in the Editor options. The higher the value the more lines the service scans and the more symbols it finds, but it also increases the time that is necessary for the editor to reflect the changes made in the document. If you have a less powerful workstation consider using the default value of `250` lines.
 
-Since v3.7.0 the language service is capable of finding [defined constants](../coding/constants.md#syntax) and their values. This information then becomes available to the editor for [highlighting purposes](options/editor.md#color-theme) and for [displaying values](features.md#displaying-information-about-opcode) of constants.
+Since v3.7.0 the language service is capable of finding [defined constants](../language/data-types/constants.md#syntax) and their values. This information then becomes available to the editor for [highlighting purposes](options/editor.md#color-theme) and for [displaying values](features.md#displaying-information-about-opcode) of constants.
 
 ```
 const

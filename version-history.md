@@ -11,11 +11,11 @@
 
 ## v. 3.9.0 - 09.09.2023
 
-* command names defined in [Sanny Builder Library](https://library.sannybuilder.com) JSON files are now valid [keywords](coding/keywords.md)
-* [HEX..END](coding/hex..end.md#byte-repetition) improvements (repeat the same byte N times, include binary files)
-* simplified [const](coding/constants.md#syntax) and [variable](coding/variables.md#declaring-a-variable-type) declarations (`const x = 1, y = 2`, `float x, y, z`)
-* new [operators](coding/operators.md#bitwise) (`bitwise`, `=@`, `=#`)
-* `{$INCLUDE_ONCE}` [directive](coding/directives.md#usdinclude\_once)
+* command names defined in [Sanny Builder Library](https://library.sannybuilder.com) JSON files are now valid [keywords](language/instructions/keywords.md)
+* [HEX..END](language/instructions/hex..end.md#byte-repetition) improvements (repeat the same byte N times, include binary files)
+* simplified [const](language/data-types/constants.md#syntax) and [variable](language/data-types/variables.md#declaring-a-variable-type) declarations (`const x = 1, y = 2`, `float x, y, z`)
+* new [operators](language/instructions/operators.md#bitwise) (`bitwise`, `=@`, `=#`)
+* `{$INCLUDE_ONCE}` [directive](language/directives.md#usdinclude\_once)
 * adding new [edit modes](edit-modes/) can be done by copying them into the `data` folder, the `modes.xml` is gone
 * bug fixes and other changes
 
@@ -92,7 +92,7 @@ Previous versions allowed the compilation of some broken code. Now, it will prod
 
 ## v. 3.7.0 - 30.01.2021
 
-* declared [constants](coding/constants.md) are getting highlighted ([#28](https://github.com/sannybuilder/dev/issues/28))
+* declared [constants](language/data-types/constants.md) are getting highlighted ([#28](https://github.com/sannybuilder/dev/issues/28))
 * the autocomplete list displays declared constants ([#40](https://github.com/sannybuilder/dev/issues/40))
 * each editor tab maintains its own [edit mode](edit-modes/) selection ([#87](https://github.com/sannybuilder/dev/issues/87))
 * new VC Mobile mode with CLEO Android opcodes ([sannybuilder/data#11](https://github.com/sannybuilder/data/pull/11))
@@ -126,7 +126,7 @@ Read more on constants highlighting there: [Language service](editor/language-se
 
 ## v. 3.6.0 - 11.11.2020
 
-* support for [enumerated types](coding/classes.md#class-constants) in classes
+* support for [enumerated types](language/instructions/classes.md#class-constants) in classes
 * new [types](edit-modes/opcodes-list-scm.ini.md#parameter-types) of opcode parameters: [`m%`](https://github.com/sannybuilder/dev/issues/10) and [`k%`](https://github.com/sannybuilder/dev/issues/21)
 * initial support for language [extensions](edit-modes/extensions.md)
 * better integration with CLEO library:
@@ -137,7 +137,7 @@ Read more on constants highlighting there: [Language service](editor/language-se
   * [recognize Cleo for Android](https://github.com/sannybuilder/dev/issues/64) scripts (`*.csa`, `*.csi`) as compiled scripts
   * compiler uses CLEO opcodes `0A9E`, `0A9F`, `0A90`, `0A91` [in certain expressions when no opcode is supplied](https://github.com/sannybuilder/dev/issues/58#issuecomment-723376464)
   * unified description and keywords for CLEO opcodes across different edit modes
-* added [keywords](coding/keywords.md) for all opcodes in GTA SA SCR mode
+* added [keywords](language/instructions/keywords.md) for all opcodes in GTA SA SCR mode
 * word _thread_ has been replaced with _script_ in opcode definitions and keywords ([see why](https://gtamods.com/wiki/Talk:Script#Thread-%3EScript\).))
 * IDE updates:
   * the game directory is no longer required to compile a script ([#48](https://github.com/sannybuilder/dev/issues/48))
@@ -189,8 +189,8 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 ## v. 3.4.0 - 04.08.2020
 
 * added compiler support for the `SCM` format of GTA: Vice City Stories ([#2](https://github.com/sannybuilder/dev/issues/2))
-* added syntax for [declaring](coding/variables.md#shorter-form-of-declaration) local variables with custom names ([#32](https://github.com/sannybuilder/dev/issues/32))
-* added a simpler form of calling subroutines using [labels](coding/data-types.md#labels): a label name followed by a pair of parentheses `()` substitutes a `gosub` command
+* added syntax for [declaring](language/data-types/variables.md#shorter-form-of-declaration) local variables with custom names ([#32](https://github.com/sannybuilder/dev/issues/32))
+* added a simpler form of calling subroutines using [labels](language/data-types/#labels): a label name followed by a pair of parentheses `()` substitutes a `gosub` command
 * added more customization points for [edit modes](edit-modes/):
   * path to a GXT file used by the disassembler ([#7](https://github.com/sannybuilder/dev/issues/7))
   * path to `opcodes.txt` ([#5](https://github.com/sannybuilder/dev/issues/5))
@@ -226,7 +226,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 ## v. 3.3.0 - 08.09.2019
 
 * added compiler support for the Liberty City Stories `SCM` format
-* added aliases for the [timer variables](coding/variables.md#timer-variables): `TIMERA` and `TIMERB`
+* added aliases for the [timer variables](language/data-types/variables.md#timer-variables): `TIMERA` and `TIMERB`
 * changed the [Ranges check](editor/options/general.md#ranges-check) option to apply to the global variables
 
 ## v. 3.2.4 - 04.08.2019
@@ -244,7 +244,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 ## v. 3.2.2 - 05.07.2014
 
 * added translation into Korean language (thanks to MINE)
-* improved [HEX..END](coding/hex..end.md) construct processing
+* improved [HEX..END](language/instructions/hex..end.md) construct processing
 * fixed the bug [#0000028](http://bugs.sannybuilder.com/view.php?id=28)
 
 ## v. 3.2.1 - 04.05.2014
@@ -287,19 +287,19 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 
 ## v. 3.1.1 - 22.09.2013
 
-* added a new directive [$OPCODE](coding/directives.md#usdopcode) to register a new opcode in the script
-* corrected behavior of the directive [$INCLUDE](coding/directives.md#usdinclude) while scanning directories for the file
+* added a new directive [$OPCODE](language/directives.md#usdopcode) to register a new opcode in the script
+* corrected behavior of the directive [$INCLUDE](language/directives.md#usdinclude) while scanning directories for the file
 * fixed bugs [#0000005](http://bugs.sannybuilder.com/view.php?id=5), [#0000019](http://bugs.sannybuilder.com/view.php?id=19)
 
 ## v. 3.1.0 - 14.09.2013
 
 * `VCSCM.ini` is updated to include opcodes for the GTA VC mobile version and unsupported opcodes
 * when the option [Add extra info to SCM](editor/options/general.md#add-extra-info-to-scm) is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
-* when the option `Add extra info to SCM` is enabled, Sanny Builder adds a source code into a script file (only when the directive [$EXTERNAL](coding/directives.md#usdexternal) or [$CLEO](coding/directives.md#usdcleo) is present)
-* added a new directive [$NOSOURCE](coding/directives.md#usdnosource) to prohibit including a source code into a compiled script
+* when the option `Add extra info to SCM` is enabled, Sanny Builder adds a source code into a script file (only when the directive [$EXTERNAL](language/directives.md#usdexternal) or [$CLEO](language/directives.md#usdcleo) is present)
+* added a new directive [$NOSOURCE](language/directives.md#usdnosource) to prohibit including a source code into a compiled script
 * some hotkeys are now customizable in the options
 * added a feature to check automatically if an update exists at the program startup
-* [directives ](coding/directives.md)`$VERSION` and `$VERSION_RESTORE` are deprecated
+* [directives ](language/directives.md)`$VERSION` and `$VERSION_RESTORE` are deprecated
 * updated Spanish and Chinese translations
 * Coords manager is now able to change the player's angle in GTA VC
 * The Sanny Builder installation now includes the [SCRLog CLEO plugin](http://www.gtagarage.com/mods/show.php?id=23846) by LINK/2012 (can be found in the `tools` folder)
@@ -331,7 +331,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 * the compiler now accepts a string literal as a parameter in a class property
 
 {% hint style="info" %}
-There is a [limit](coding/classes.md#properties) on using space characters in such parameter.
+There is a [limit](language/instructions/classes.md#properties) on using space characters in such parameter.
 {% endhint %}
 
 * the compiler now throws an error for a malformed string literal like `text1"text2"` or `text1'text2'` (without a leading quotation mark)
@@ -343,14 +343,14 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 
 ## v. 3.06 - 17.06.2013
 
-* added new [operators ](coding/built-in-commands.md)`++` and `--`
+* added new [operators ](language/instructions/built-in-commands.md)`++` and `--`
 * added support for block [comments](editor/features.md#commenting-code) `/* */`
 * `SASCM.INI` got an update from the [GTAG Database](https://gtagmodding.com/opcode-database/)
 * replaced properties `Actor.Armour` and `Actor.Car` with their correct versions `Actor.AddArmour` and `Actor.MissionCar`
 * added a new property `Actor.CurrentCar` for the opcode `03C0` in the SA and VC classes.
 * added new hotkeys `Ctrl+Num+` and `Ctrl+Num-` to quickly change the text size
 * Sanny Builder now remembers a number of closed files for the option [Load all closed files](editor/options/editor.md#editor-configuration)
-* fixed a bug when the compiler failed to compile a source with multiple [HEX..END](coding/hex..end.md) constructs
+* fixed a bug when the compiler failed to compile a source with multiple [HEX..END](language/instructions/hex..end.md) constructs
 * fixed a bug of version 3.05 when the program hung on startup trying to open a file
 
 ## v. 3.05 - 05.06.2013
@@ -392,14 +392,14 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 
 * the CLEO 3 library is integrated into Sanny Builder
 * disassembler supports the `SCM` format of Vice City Stories
-* [constants ](coding/constants.md)support
-* new [directives](coding/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
+* [constants ](language/data-types/constants.md)support
+* new [directives](language/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
 * [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
 * [custom arrays](editor/options/formats.md#custom-names) support
 * a [possibility](editor/console.md#skip\_scm\_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
-* a possibility to use a floating-point value as the counter value in a [FOR..END](coding/loops.md#for-end) loop
+* a possibility to use a floating-point value as the counter value in a [FOR..END](language/control-flow/loops.md#for-end) loop
 * dropped support for the commands `WriteMem` and `ReadMem`
 * a possibility to use regular expressions when searching
 * a possibility to save a source file in the `RTF` or `HTML` formats
@@ -409,9 +409,9 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 
 ## v. 2.99e - 01.01.2007
 
-* fixed a bug when parts of the code within the [HEX..END](coding/hex..end.md) construct disappeared in [debug mode](editor/console.md#debug-options)
-* a HEX..END construct now accepts the [aDMA](coding/hex..end.md#using-adma-numbers) type and string literals
-* a [FOR ](coding/loops.md#for-end)loop accepts model identifiers as the counter values
+* fixed a bug when parts of the code within the [HEX..END](language/instructions/hex..end.md) construct disappeared in [debug mode](editor/console.md#debug-options)
+* a HEX..END construct now accepts the [aDMA](language/instructions/hex..end.md#using-adma-numbers) type and string literals
+* a [FOR ](language/control-flow/loops.md#for-end)loop accepts model identifiers as the counter values
 
 ## v. 2.99d - 03.12.2006
 
@@ -422,11 +422,11 @@ There is a [limit](coding/classes.md#properties) on using space characters in su
 
 * added the Memory Hacker plug-in
 * disassembler supports the `SCM` format of Liberty City Stories
-* support for constant numbers as indexes of global [arrays](coding/arrays.md)
-* a global variable gets disassembled with the type [aDMA](coding/data-types.md#variables) (`&`) if its address is not divisible by 4
+* support for constant numbers as indexes of global [arrays](language/data-types/arrays.md)
+* a global variable gets disassembled with the type [aDMA](language/data-types/#variables) (`&`) if its address is not divisible by 4
 * the compiler uses default values during compilation of a`main.scm` with the missing header segments (`DEFINE XXX`)
 * a possibility to Drag\&Drop a file into the editor to open it
-* new preprocessor [directives](coding/directives.md): `{$VERSION}`, `{$VERSION_RESTORE}`
+* new preprocessor [directives](language/directives.md): `{$VERSION}`, `{$VERSION_RESTORE}`
 
 {% hint style="info" %}
 If you get a compiler error message like `Unknown directive xxxx` when compiling the sources from v2.99, replace the line `{$VERSION xxxx}` to any place after the header, for instance before the comment `//-------------MAIN---------------`
@@ -435,14 +435,14 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 ## v. 2.99 - 27.09.2006
 
 * added new commands `WriteMem` and `ReadMem`
-* support for [hexadecimal](coding/data-types.md#hexadecimal-numbers) numbers
+* support for [hexadecimal](language/data-types/#hexadecimal-numbers) numbers
 * `HEX..END` statement accepts labels and global variables
-* full support for the [ADMA](coding/data-types.md#variables) datatype
+* full support for the [ADMA](language/data-types/#variables) datatype
 * an opportunity to give [custom names](editor/options/formats.md#custom-names) to labels
 * an opportunity to choose a [different case](editor/options/formats.md#case-converting) for custom names and strings
 * added [console](editor/console.md) to switch debug options
 * decompiler supports `GXT` files of GTA III & GTA VC
-* added escape sequences in [long string literals](coding/data-types.md#string-literals)
+* added escape sequences in [long string literals](language/data-types/#string-literals)
 * information about [INI](edit-modes/opcodes-list-scm.ini.md) file (version, author, date)
 * classes support the original order of the parameters (like in `SASCM.INI` by PLPynton). The script should have a line {`$VERSION x.0.xxxx`} to support such order, see comments in the `INI` about this
 * added option to confirm an exit from the program
@@ -474,7 +474,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 
 ## v. 2.97 - 11.06.2006
 
-* new data type: `&` for direct byte address ([ADMA](coding/data-types.md)).
+* new data type: `&` for direct byte address ([ADMA](language/data-types/)).
 * minor updates
 
 ## v. 2.96 - 01.04.2006
@@ -493,50 +493,50 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 
 ## v. 2.9 - 15.12.2005
 
-* added [additional commands](coding/built-in-commands.md)
+* added [additional commands](language/instructions/built-in-commands.md)
 * new operator `IN`
-* added [IF..THEN..ELSE..END](coding/conditions.md#high-level-constructs)
-* added support for `WHILE` and `REPEAT` [loops](coding/loops.md)
+* added [IF..THEN..ELSE..END](language/control-flow/conditions.md#high-level-constructs)
+* added support for `WHILE` and `REPEAT` [loops](language/control-flow/loops.md)
 * added support for nested loops
-* added a new function [Alloc](coding/built-in-commands.md#alloc), allowing to assign a specific memory address to a global variable
+* added a new function [Alloc](language/instructions/built-in-commands.md#alloc), allowing to assign a specific memory address to a global variable
 * new comment style: `//`
 * the editor now remembers the position of markers and the cursor in closed files
 
 ## v. 2.6 - 05.11.2005
 
 * full support of `SCM` formats of Vice City and GTA 3
-* an opportunity to [declare](coding/classes.md#declaring-a-class-instance) variables and arrays as class instances
+* an opportunity to [declare](language/instructions/classes.md#declaring-a-class-instance) variables and arrays as class instances
 * added a feature to display the list of variables and labels
-* added [loops](coding/loops.md) (`FOR..END`)
+* added [loops](language/control-flow/loops.md) (`FOR..END`)
 * minor changes:
   * missions can be referenced by their name (`start_mission MYMISSION` where `MYMISSION` is the label defined in line`DEFINE MISSION XX at @MYMISSION`)
   * `Ctrl+Space` displays the list of imported models (`DEFINE OBJECT`)
-  * new [operator](coding/conditions.md#relational-operators) `<>`
+  * new [operator](language/control-flow/conditions.md#relational-operators) `<>`
   * if the disassembler can't find a `script.img` file, it uses the one from the game folder
-  * added `handle` type for [arrays](coding/arrays.md)
+  * added `handle` type for [arrays](language/data-types/arrays.md)
   * an [opportunity](editor/options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
 
 ## v. 2.5 - 10.10.2005
 
-* added [properties](coding/classes.md#properties) support
+* added [properties](language/instructions/classes.md#properties) support
 * added [code templates](editor/features.md#code-templates) support
-* added construction [VAR...END](coding/variables.md#var-end-construct) for variables declaration
+* added construction [VAR...END](language/data-types/variables.md#var-end-construct) for variables declaration
 * all math commands can be used without opcodes (`0004..008B`)
-* new [operators](coding/conditions.md#relational-operators) `<` and `<=`
-* added a capability that the compiler itself set necessary value for the [IF command](coding/conditions.md#low-level-if-statements)
-* added [extended parameters](coding/classes.md#extended-parameters-class-constants) support
+* new [operators](language/control-flow/conditions.md#relational-operators) `<` and `<=`
+* added a capability that the compiler itself set necessary value for the [IF command](language/control-flow/conditions.md#low-level-if-statements)
+* added [extended parameters](language/instructions/classes.md#extended-parameters-class-constants) support
 * added models list showing
 * minor changes and fixes
 
 ## v. 2.0 - 18.09.2005
 
-* added [classes](coding/classes.md) support
-* added [keywords](coding/keywords.md) support
+* added [classes](language/instructions/classes.md) support
+* added [keywords](language/instructions/keywords.md) support
 * some math commands can be written without opcodes (e.g.`0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`)
 * for the opcode `00D6` the default parameter is `0` (`if` = `if 0`)
 * added the [option](editor/options/formats.md#label-name-format) to customize labels output
-* added [keywords](coding/keywords.md) `True` and `False` which correspond to `1` and `0`
-* added construction [HEX...END](coding/hex..end.md) for writing hexadecimal values directly in a binary output
+* added [keywords](language/instructions/keywords.md) `True` and `False` which correspond to `1` and `0`
+* added construction [HEX...END](language/instructions/hex..end.md) for writing hexadecimal values directly in a binary output
 
 ## v. 1.1 - 07.09.2005
 
@@ -545,7 +545,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 
 ## v. 1.0 - 04.09.2005
 
-* new format of [labels](coding/data-types.md#labels)
+* new format of [labels](language/data-types/#labels)
 * added [converter](editor/features.md#sa-mission-builder-source-code-converter) from the BW's SA Mission Builder syntax
 * disassembler adds the model names and the text from `american.gxt` in a source file
 * added new options

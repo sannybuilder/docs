@@ -19,18 +19,18 @@ Available `style` elements are: **B** – bold, **I** – italic, **U** – unde
 
 ### Code elements
 
-* [Comments](../../coding/comments.md) – a text after `//` or between `{}` or `/* */`
-* [Labels](../../coding/data-types.md) – identifiers starting with `@`
-* [Variables](../../coding/variables.md) – identifiers starting with `$` (global variables), or ending with `@` (local variables)\
-  Also the [aDMA](../../coding/data-types.md) type (starts with `&`) and [arrays](../../coding/arrays.md) are highlighted as variables.
-* [Keywords](../../coding/keywords.md) – the special words stored in the file `keywords.ini` (one for all [edit modes](../../edit-modes/)) and a file`keywords.txt` (one per edit mode)
+* [Comments](../../language/comments.md) – a text after `//` or between `{}` or `/* */`
+* [Labels](../../language/data-types/) – identifiers starting with `@`
+* [Variables](../../language/data-types/variables.md) – identifiers starting with `$` (global variables), or ending with `@` (local variables)\
+  Also the [aDMA](../../language/data-types/) type (starts with `&`) and [arrays](../../language/data-types/arrays.md) are highlighted as variables.
+* [Keywords](../../language/instructions/keywords.md) – the special words stored in the file `keywords.ini` (one for all [edit modes](../../edit-modes/)) and a file`keywords.txt` (one per edit mode)
 * Numbers – integer and floating-point numbers
 * Strings – a text between double quotes `" "` or single quotes `' '`
 * Models – identifiers starting with `#`
-* [Classes](../../coding/classes.md) – the part of a class command before the `.` character
-* [Commands](../../coding/classes.md) – the part of a class command after the `.` character, or a [subroutine](../../coding/data-types.md#labels)
-* [Directives ](../../coding/directives.md)– a command starting with `{$`
-* [Constants](../../coding/constants.md) – identifiers, declared within the `CONST..END` construct. See also [Semantic highlighting](editor.md#editor-configuration).
+* [Classes](../../language/instructions/classes.md) – the part of a class command before the `.` character
+* [Commands](../../language/instructions/classes.md) – the part of a class command after the `.` character, or a [subroutine](../../language/data-types/#labels)
+* [Directives ](../../language/directives.md)– a command starting with `{$`
+* [Constants](../../language/data-types/constants.md) – identifiers, declared within the `CONST..END` construct. See also [Semantic highlighting](editor.md#editor-configuration).
 
 {% hint style="info" %}
 The highlighting configuration is also used when the code source is saved into the `RTF` or `HTML` formats.

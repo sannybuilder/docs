@@ -28,7 +28,7 @@ Lines starting with `;` are ignored.
 
 Special INI parameters provide metadata information about the opcodes list.
 
-`VERSION` – defines the version of this file. See the [$VERSION](../coding/directives.md#usdversion) directive\
+`VERSION` – defines the version of this file. See the [$VERSION](../language/directives.md#usdversion) directive\
 `PUBLISHER` – who authored this version \
 `DATE` – the update date. \
 \
@@ -94,8 +94,8 @@ Parameters order may vary from mode to mode. See the comparison table in [Edit m
 A letter following the index number indicates the parameter type.
 
 `d` - any value\
-`p` - a [label](../coding/data-types.md#labels) reference\
-`o` - any [model](../coding/data-types.md#model-names) id (including objects)\
+`p` - a [label](../language/data-types/#labels) reference\
+`o` - any [model](../language/data-types/#model-names) id (including objects)\
 `m` - an `.ide` model id (no objects)\
 `g` - a key from the [`.gxt`](./#text) file\
 `x` - an external script ID\

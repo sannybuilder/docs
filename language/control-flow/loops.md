@@ -11,13 +11,13 @@ Syntax:\
 &#x20; `<the loop body>`\
 `END`
 
-`<loop variable>` - a [variable](variables.md) used as a counter for iterations\
-`<initial value>` - a value of the loop variable before the first iteration (any value including a [model identifier](data-types.md#model-names))\
+`<loop variable>` - a [variable](../data-types/variables.md) used as a counter for iterations\
+`<initial value>` - a value of the loop variable before the first iteration (any value including a [model identifier](../data-types/#model-names))\
 `TO` or `DOWNTO` - increment or decrement the loop variable between iterations\
 `<final value>` - a value of the loop variable after the last iteration (any value including a model identifier)\
 `<step>` - an optional value the loop variable will be incremented or decremented with between iterations. By default it is equal to `1`.
 
-```
+```pascal
 var
     $value: int = 0
     $final: int = 100
@@ -28,9 +28,9 @@ FOR $MyCounter = 1 to $final step 2
 end
 ```
 
-If the `loop variable` is not [declared](variables.md#var-end-construct) with any type before the loop it gets the `Integer` type. If  `initial value`, `final value` or `step` are variables, they get the same type the `loop variable` has To use floating-point numbers for the initial and final values, declare the loop variable with the `Float` type.
+If the `loop variable` is not [declared](../data-types/variables.md#var-end-construct) with any type before the loop it gets the `Integer` type. If  `initial value`, `final value` or `step` are variables, they get the same type the `loop variable` has To use floating-point numbers for the initial and final values, declare the loop variable with the `Float` type.
 
-```
+```pascal
 var
     $MyCounter: float
 end
@@ -51,7 +51,7 @@ Syntax:\
 `loop condition` - a single conditional opcode\
 `loop body` - commands to execute on each iteration; can be omitted
 
-```
+```pascal
 while not #AK47.Available
     wait 0
 end
@@ -59,7 +59,7 @@ end
 
 The `WHILE` loop works while the loop condition is true. The condition is evaluated before a loop iteration. Hence, if the condition is false, the loop body never gets executed.
 
-```
+```pascal
 $var = 10
 
 while $var > 11
@@ -69,9 +69,9 @@ end
 // as the loop condition is false, inc($var) never gets executed
 ```
 
-[Constants](constants.md) `True` and `False` can be used as a loop condition.
+[Constants](../data-types/constants.md) `True` and `False` can be used as a loop condition.
 
-```
+```pascal
 while true
     <loop body>
 end
@@ -79,7 +79,7 @@ end
 
 This loop body executes infinitely until the loop is stopped with the `Break` command.
 
-```
+```pascal
 while false
     <loop body>
 end
@@ -90,7 +90,7 @@ This loop is ignored by the compiler as the condition is never met.
 {% hint style="info" %}
 Currently the compiler accepts only one opcode in the loop condition, but you can check more conditions before the loop body and use the commands `Break` and `Continue`.
 
-```
+```pascal
 while true
     if and
        $var >= 0
@@ -117,15 +117,15 @@ Syntax:\
 
 The `REPEAT..UNTIL` loop executes until the loop condition returns false. The condition is evaluated after iteration therefore the loop is guaranteed to be executed at least once.
 
-[Constants](constants.md) `True` and `False` can be used as the loop condition.
+[Constants](../data-types/constants.md) `True` and `False` can be used as the loop condition.
 
-```
+```pascal
 repeat
   // the loop has the only iteration
 until true 
 ```
 
-```
+```pascal
 repeat
   // the loop executes infinitely until it's stopped with the Break command
 until false
@@ -134,7 +134,7 @@ until false
 {% hint style="info" %}
 Currently the compiler accepts only one opcode in the loop condition, but you can check more conditions after the loop body and use the commands `Break` and `Continue`.
 
-```
+```pascal
 repeat  
    <loop body>
    if and
@@ -156,7 +156,7 @@ The `Break` command causes the loop to stop immediately and proceed to the comma
 
 They can substitute an opcode parameter (e.g., `jf Continue`) or serve as a standalone statement.
 
-```
+```pascal
 while true
   if
     not $currentactor.dead

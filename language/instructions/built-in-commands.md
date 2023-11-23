@@ -1,10 +1,10 @@
 # Built-in Commands
 
-The following commands are built directly into the compiler and serve mostly as [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar).
+The following commands are built directly into the compiler and serve mostly as [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic\_sugar).
 
 ## INC
 
-Increments the first parameter by the second one. The first parameter is a [variable](variables.md).
+Increments the first parameter by the second one. The first parameter is a [variable](../data-types/variables.md).
 
 ```
 Inc($IntVariable, $Value)
@@ -90,11 +90,11 @@ Div(1@)
 1@ = 1@ / 2
 ```
 
-## ALLOC 
+## ALLOC&#x20;
 
-This function sets the offset of a [global variable](variables.md#global-variables) at the global variable space that exists in the beginning of the `main.scm` header.
+This function sets the offset of a [global variable](../data-types/variables.md#global-variables) at the global variable space that exists in the beginning of the `main.scm` header.
 
-It's only meaningful for custom variables (e.g. `$text`) not defined in the `CustomVariables.ini`. [`DMA`-variables](variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` (40\*4).
+It's only meaningful for custom variables (e.g. `$text`) not defined in the `CustomVariables.ini`. [`DMA`-variables](../data-types/variables.md#global-variables) always get their offset based on the number in their names, e.g the variable `$40` always occupies four bytes at the offset `160` (40\*4).
 
 The first parameter must be a global variable, the second parameter must be a positive integer number or zero.
 
@@ -117,7 +117,7 @@ $var *= $var
 ```
 
 {% hint style="info" %}
-The variable type has to be [declared](variables.md#var-end-construct).
+The variable type has to be [declared](../data-types/variables.md#var-end-construct).
 {% endhint %}
 
 ## RANDOM

@@ -2,7 +2,7 @@
 
 Sanny Builder supports many common operations to be written without an explicit opcode. The compiler, in this context, analyzes both the left and right sides of the expression as well as the operator between them to determine the appropriate opcode to use.
 
-Due to the nature of the language, there are different opcodes for different types of data involved in operations. For instance, adding integer values requires a distinct opcode compared to adding two floating-point values. In some scenarios, it requires the upfront [declaration](variables.md#declaring-a-variable-type) of variable types, so the compiler can select the appropriate opcode.
+Due to the nature of the language, there are different opcodes for different types of data involved in operations. For instance, adding integer values requires a distinct opcode compared to adding two floating-point values. In most cases, the compiler is able to figure out the opcode automatically, but sometimes an upfront [declaration](../data-types/variables.md#declaring-a-variable-type) of variable types is needed to disambiguate the opcode.
 
 The majority of supported operations in Sanny Builder involve just two operands: one on the left-hand side (**LHS**) and another on the right-hand side (**RHS**).
 
@@ -31,12 +31,12 @@ The following operations require the `CLEO` extension (`{$USE CLEO}` or `{$CLEO}
 * `LHS <> RHS` - a "not equal" operation. Both sides must have different values for the comparison to return true
 
 {% hint style="info" %}
-The language does not have a dedicated Boolean type. The result of each comparison only affects the current [IF statement](conditions.md).
+The language does not have a dedicated Boolean type. The result of each comparison only affects the current [IF statement](../control-flow/conditions.md).
 {% endhint %}
 
 ### Bitwise
 
-The game lacks native support for bitwise operations, making them accessible exclusively through the use of a [CLEO plugin](https://library.sannybuilder.com/#/sa/bitwise). The `bitwise` [extension](../edit-modes/extensions.md) must be enabled to use the following operations (`{$USE bitwise}`).
+The game lacks native support for bitwise operations, making them accessible exclusively through the use of a [CLEO plugin](https://library.sannybuilder.com/#/sa/bitwise). The `bitwise` [extension](../../edit-modes/extensions.md) must be enabled to use the following operations (`{$USE bitwise}`).
 
 | Operation                         | Opcode | Expression    |
 | --------------------------------- | ------ | ------------- |
@@ -79,7 +79,7 @@ The game natively supports timed addition and subtraction, providing FPS-indepen
 Casting operations convert a value from one type to another. The game supports a conversion between `Integer` and `Float` types.
 
 {% hint style="info" %}
-The use of the operator =# requires that types of both variables are [known](variables.md#declaring-a-variable-type).
+The use of the operator =# requires that types of both variables are [known](../data-types/variables.md#declaring-a-variable-type).
 {% endhint %}
 
 | Operation                        | Opcode | Expression |

@@ -2,7 +2,7 @@
 
 An **extension** is a set of new instructions added to the vanilla game. The [CLEO library](https://cleo.li) and its plugins is the most known way of adding those.
 
-To make Sanny Builder aware of the custom instructions and explicitly signal their intentional usage, a script must have `{$USE}` [directive](../coding/directives.md#usduse). The `{$USE}` directive enables one or multiple sets of instructions (see below the [list of extensions](extensions.md#extensions-list)).
+To make Sanny Builder aware of the custom instructions and explicitly signal their intentional usage, a script must have `{$USE}` [directive](../language/directives.md#usduse). The `{$USE}` directive enables one or multiple sets of instructions (see below the [list of extensions](extensions.md#extensions-list)).
 
 ```
 {$USE CLEO, ini, CLEO+}
@@ -18,7 +18,7 @@ New edit modes shipped with Sanny Builder 4 use command definitions managed thro
 
 Standard game opcodes have been included in the `default` extension that is implicitly available in any script. `{$USE default}` is possible but redundant.
 
-Using `{$CLEO}` [directive](../coding/directives.md#usdcleo) also implies `{$USE CLEO}` so standard CLEO opcodes are available to the compiler already.
+Using `{$CLEO}` [directive](../language/directives.md#usdcleo) also implies `{$USE CLEO}` so standard CLEO opcodes are available to the compiler already.
 
 ## Extensions List
 

@@ -9,7 +9,7 @@ Syntax:\
 
 `Class name` - the name of a group of commands defined in the `classes.db` file for this edit mode\
 `Class member` - one of the commands included in the class\
-`Parameters` - 0 or more comma-delimited [parameters](data-types.md)
+`Parameters` - 0 or more comma-delimited [parameters](../data-types/)
 
 ```
 Player.SetMinWantedLevel($PLAYER_CHAR, 2)
@@ -27,7 +27,7 @@ There are three types of class members:
 
 ### Conditions
 
-The list that appears when you press `Ctrl+Space` marks conditional commands with the word `Check`. They are used in [conditional expressions](conditions.md): 
+The list that appears when you press `Ctrl+Space` marks conditional commands with the word `Check`. They are used in [conditional expressions](../control-flow/conditions.md):&#x20;
 
 ```
 if
@@ -72,7 +72,7 @@ Player($PLAYER_CHAR).Money > 461@ // check the amount
 ```
 
 {% hint style="warning" %}
-In the current version the compiler ignores whitespace characters in [string literals](data-types.md#string-literals) used in property parameters:
+In the current version the compiler ignores whitespace characters in [string literals](../data-types/#string-literals) used in property parameters:
 
 ```
 0@ = File.Open("file name","wb")
@@ -93,7 +93,7 @@ Almost all class members take a variable as the first parameter. This variable h
 Player.Build($PLAYER_CHAR)
 ```
 
-`$PLAYER_CHAR` - the class instance. 
+`$PLAYER_CHAR` - the class instance.&#x20;
 
 For some in-game entities there is only one instance to exist. An example of that would be the camera that controls what the player can see. The members of classes for such entities do not require a variable with the class instance:
 
@@ -103,7 +103,7 @@ Camera.SetBehindPlayer()
 
 ### Declaring a class instance
 
-Variables can be [declared](variables.md#var-end-construct) using a class name as the type:
+Variables can be [declared](../data-types/variables.md#var-end-construct) using a class name as the type:
 
 ```
 var
@@ -135,9 +135,9 @@ Player.SetClothes($PLAYER_CHAR, "PLAYER_FACE", "HEAD", Head)
 
 Variables declared as instances of a class can be redeclared with another type.
 
-### The `Model` Class 
+### The `Model` Class&#x20;
 
-[Model names](data-types.md#model-names) are always instances of the `Model` class:
+[Model names](../data-types/#model-names) are always instances of the `Model` class:
 
 ```
 #AK47.Load
@@ -163,7 +163,7 @@ jf @loop
 
 ## Class constants
 
-Class parameters can be assigned to an [enumerated type](../edit-modes/enums.txt.md). It makes the source code more readable:
+Class parameters can be assigned to an [enumerated type](../../edit-modes/enums.txt.md). It makes the source code more readable:
 
 ```
 Player.SetClothes($PLAYER_CHAR, "VEST", "VEST", BodyPart.Torso)
@@ -173,9 +173,9 @@ The last parameter (`BodyPart.Torso`) is a member of the `BodyPart` enum substit
 
 #### Extended parameters (deprecated)
 
-Sanny Builder prior to v3.6 defined special constants for class members in the file `classes.db` . These parameters were called extended. This solution only allowed for one extended parameter per class member. 
+Sanny Builder prior to v3.6 defined special constants for class members in the file `classes.db` . These parameters were called extended. This solution only allowed for one extended parameter per class member.&#x20;
 
-Since v3.6 class members use enum names as their types and may have any number of enumerated parameters. 
+Since v3.6 class members use enum names as their types and may have any number of enumerated parameters.&#x20;
 
 For backward compatibility Sanny Builder still supports old extended parameters during compilation.  `classes.db` keeps them under the `DEPRECATED_ENUMS` section.
 

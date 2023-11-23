@@ -83,7 +83,7 @@ $FloatArray[$index] += 100.0
 $FloatArray[0] += 100.0
 ```
 
-Elements of an array containing [string literals](data-types.md#string-literals) can be accessed using [string variables](data-types.md#string-variables):
+Elements of an array containing [string literals](./#string-literals) can be accessed using [string variables](variables.md#string-variables):
 
 ```pascal
 // initializing first three elements of the $strings array
@@ -92,7 +92,7 @@ s$strings[1] = 'str2'
 s$strings[2] = 'str3'
 ```
 
-An array can be declared as a collection of [class instances](classes.md#class-instances), its methods are available for each element:
+An array can be declared as a collection of [class instances](../instructions/classes.md#class-instances), its methods are available for each element:
 
 ```pascal
 var $players: array 2 of Player
@@ -101,5 +101,5 @@ $players[0].Build
 ```
 
 {% hint style="info" %}
-By default, the disassembler prints array elements with the numbers as indexes in the `GTA SA` [edit mode](../edit-modes/). The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../editor/console.md#constant\_indexes) `CONSTANT_INDEXES`.&#x20;
+By default, the disassembler prints array elements with the numbers as indexes in the `GTA SA` [edit mode](../../edit-modes/). The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../../editor/console.md#constant\_indexes) `CONSTANT_INDEXES`.&#x20;
 {% endhint %}

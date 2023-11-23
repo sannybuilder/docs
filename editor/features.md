@@ -49,7 +49,7 @@ These shortcuts can be redefined in the [options](options/hotkeys.md).
 When the [option](options/editor.md#editor-configuration) `Show opcode info` is enabled the bottom bar displays:
 
 * a number of parameters for the current opcode;
-* a model ID when the cursor is on the [model name](../coding/data-types.md#model-names) and `IDE` files for the current [edit mode](../edit-modes/#ide) have been loaded;
+* a model ID when the cursor is on the [model name](../language/data-types/#model-names) and `IDE` files for the current [edit mode](../edit-modes/#ide) have been loaded;
 * a constant value when the cursor is on the constant name and the [language service](language-service.md) is enabled.
 * a brief description what this command does (from [Sanny Builder Library](features.md#integration-with-sanny-builder-library))
 

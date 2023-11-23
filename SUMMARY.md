@@ -4,21 +4,35 @@
 * [Credits](credits.md)
 * [Version History](version-history.md)
 
-## Syntax <a href="#coding" id="coding"></a>
+## Language
 
-* [Data Types](coding/data-types.md)
-* [Constants](coding/constants.md)
-* [Variables](coding/variables.md)
-* [Arrays](coding/arrays.md)
-* [Conditions](coding/conditions.md)
-* [Operators](coding/operators.md)
-* [Loops](coding/loops.md)
-* [Classes](coding/classes.md)
-* [Keywords](coding/keywords.md)
-* [Built-in Commands](coding/built-in-commands.md)
-* [HEX..END](coding/hex..end.md)
-* [Directives](coding/directives.md)
-* [Comments](coding/comments.md)
+* [Data Types](language/data-types/README.md)
+  * [Constants](language/data-types/constants.md)
+  * [Variables](language/data-types/variables.md)
+  * [Arrays](language/data-types/arrays.md)
+* [Instructions](language/instructions/README.md)
+  * [Opcodes](language/instructions/opcodes.md)
+  * [Keywords](language/instructions/keywords.md)
+  * [Classes](language/instructions/classes.md)
+  * [Operators](language/instructions/operators.md)
+  * [Built-in Commands](language/instructions/built-in-commands.md)
+  * [HEX..END](language/instructions/hex..end.md)
+* [Control Flow](language/control-flow/README.md)
+  * [Labels](language/control-flow/labels.md)
+  * [Conditions](language/control-flow/conditions.md)
+  * [Loops](language/control-flow/loops.md)
+  * [Switch](language/control-flow/switch.md)
+* [Directives](language/directives.md)
+* [Comments](language/comments.md)
+
+***
+
+* [Edit Modes](edit-modes/README.md)
+  * [CustomLabels.ini](edit-modes/customlabels.ini.md)
+  * [Code Templates](edit-modes/code-templates.md)
+  * [Enums.txt](edit-modes/enums.txt.md)
+  * [Extensions](edit-modes/extensions.md)
+  * [Opcodes List (SCM.INI)](edit-modes/opcodes-list-scm.ini.md)
 
 ## Editor
 
@@ -34,15 +48,6 @@
 * [Opcode Search Tool](editor/opcode-search-tool.md)
 * [Command Line Interface](editor/cli.md)
 * [Language Service](editor/language-service.md)
-
-***
-
-* [Edit Modes](edit-modes/README.md)
-  * [CustomLabels.ini](edit-modes/customlabels.ini.md)
-  * [Code Templates](edit-modes/code-templates.md)
-  * [Enums.txt](edit-modes/enums.txt.md)
-  * [Extensions](edit-modes/extensions.md)
-  * [Opcodes List (SCM.INI)](edit-modes/opcodes-list-scm.ini.md)
 
 ## SCM Documentation
 

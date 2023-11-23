@@ -26,7 +26,7 @@ Each byte consists of two digits. The compiler ignores any spaces, effectively t
 
 For example, a sequence of three letters `A B C` will be compiled as the number `0xAB0C`.
 
-The `HEX..END` construct also accepts [string literals](data-types.md#string-literals), [labels](data-types.md#labels), [global variables](variables.md#global-variables), [model names](data-types.md#model-names). They are compiled without a preceding data type byte.
+The `HEX..END` construct also accepts [string literals](../data-types/#string-literals), [labels](../data-types/#labels), [global variables](../data-types/variables.md#global-variables), [model names](../data-types/#model-names). They are compiled without a preceding data type byte.
 
 ```pascal
 :get_offset
@@ -119,4 +119,4 @@ hex
 end
 ```
 
-Path resolution follows the rules set for the [{$INCLUDE}](directives.md#usdinclude) directive.
+Path resolution follows the rules set for the [{$INCLUDE}](../directives.md#usdinclude) directive.

@@ -74,15 +74,15 @@ With this option Sanny Builder skips the startup splash screens when launching S
 
 ### Check conditions
 
-This option has two meanings. First, the program replaces the [number of conditions](../../coding/conditions.md#syntax) in the `IF` opcode with `AND` or `OR`. Second, the program is able to compile the `IF..END` construct, and calculate needed `IF` parameter in the conditions with words `AND` or `OR`.
+This option has two meanings. First, the program replaces the [number of conditions](../../language/control-flow/conditions.md#syntax) in the `IF` opcode with `AND` or `OR`. Second, the program is able to compile the `IF..END` construct, and calculate needed `IF` parameter in the conditions with words `AND` or `OR`.
 
 ### Ranges check
 
-The number of local and global [variables](../../coding/variables.md) is limited. When this option is checked, the compiler checks if a variable fits the available range.
+The number of local and global [variables](../../language/data-types/variables.md) is limited. When this option is checked, the compiler checks if a variable fits the available range.
 
 ### Write opcodes
 
-If this option is unchecked, the disassembler uses available [classes](../../coding/classes.md) and [keywords](../../coding/keywords.md) instead of opcodes. In addition, simple math expressions have no opcodes.&#x20;
+If this option is unchecked, the disassembler uses available [classes](../../language/instructions/classes.md) and [keywords](../../language/instructions/keywords.md) instead of opcodes. In addition, simple math expressions have no opcodes.&#x20;
 
 If the option is checked, all opcodes are present in the output file.
 
@@ -98,9 +98,9 @@ When this option is checked, the disassembler adds the [mission title](../featur
 
 If this option is checked the compiler adds extra information at the end of the resulting file. This info is used later when this file gets disassembled to restore the source closer to the original. The following data is stored:&#x20;
 
-* [HEX..END](../../coding/hex..end.md) constructs offsets
-* [global variables](../../coding/variables.md#global-variables) names
-* full source code (use [$NOSOURCE](../../coding/directives.md#usdnosource) to disable)
+* [HEX..END](../../language/instructions/hex..end.md) constructs offsets
+* [global variables](../../language/data-types/variables.md#global-variables) names
+* full source code (use [$NOSOURCE](../../language/directives.md#usdnosource) to disable)
 * current [edit mode](../../edit-modes/)
 
 {% hint style="info" %}

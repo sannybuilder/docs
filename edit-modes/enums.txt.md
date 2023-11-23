@@ -16,10 +16,10 @@ Each enumerated type is defined with the following syntax:
 
 `enum name` -  any combination of letters, digits and `_` \
 `enum fields` - one or many lines with the format:\
-    `<enum field name> [= <enum field value>]` \
-    where\
-    `enum field name` - any combination of letters, digits and `_` \
-    `enum field value` - a number or a [string literal](../coding/data-types.md#string-literals) enclosed in double quotes. if not present, the compiler assigns a [new value](enums.txt.md#enum-values) automatically.
+&#x20;   `<enum field name> [= <enum field value>]` \
+&#x20;   where\
+&#x20;   `enum field name` - any combination of letters, digits and `_` \
+&#x20;   `enum field value` - a number or a [string literal](../language/data-types/#string-literals) enclosed in double quotes. if not present, the compiler assigns a [new value](enums.txt.md#enum-values) automatically.
 
 ```
 enum Town
@@ -94,7 +94,7 @@ end
 
 `E.A` = `10`, `E.B` = `11`, `E.C` = `100`, `E.D` = `101`, `E.E` = `102`
 
-*  a field following an explicit string value gets its value after the field name:
+* &#x20;a field following an explicit string value gets its value after the field name:
 
 ```
 enum Month

@@ -18,24 +18,56 @@ A saved variable is a special global variable available only in `LCS` and `VCS` 
 
 ### DMA Variables
 
-When global variables are compiled, each one of them gets a new index in the global variable space. This index will be used by the game to locate the variable value. This index is unique across all scripts (hence global).
+When global variables are compiled, they get assigned a unique numeric index in the global variable space. The runtime then uses this index to access the variable.
 
-A global variable with the name that only consists of digits is called a `DMA`-variable (**D**irect **M**emory **A**ddress). See also [Alloc](built-in-commands.md#alloc).
+If variable's name is already numeric, the compiler uses it as is. For example, `$100` has the same index regardless of other variables. `$var`, on the other hand, can be compiled with different index each time, depending on slots availability. Some authors refer to such variables as `DMA`-variables (**D**irect **M**emory **A**ddress).
+
+Another form of global variables is `ADMA` (**A**dvanced **D**irect **M**emory **A**ccess). ADMA-variables can read from and write into the `main.scm` bytecode.
+
+```pascal
+$myVar = &0 // read DWORD value from offset 0 of main.scm into $myVar
+&120 = 5 // write DWORD value 5 into offset 120 of main.scm 
+&57 += &120(&231,4i) // can also be used as an array element
+```
+
+`ADMA` variables don't affect the size of the global variable space in the `main.scm` header.
 
 ## Local variables
 
-A local variable name may only be a number followed by `@`.
+Each script has a [limited](../../scm-documentation/gta-limits.md) number of local variables. As the name implies, their values are available only within the current script or the mission.
 
-```pascal
-0@ 
-999@ 
-56@
+Local variables can be created using the following syntax:
+
+```
+<type> <variable name>
 ```
 
-Their values are available only within the current script or the mission.
+```pascal
+int a
+float distance
+string name
+
+a = 1
+distance = 15.5
+name = 'CJ'
+```
+
+An initial value can follow the variable name to reduce the number of the lines of code:
+
+```pascal
+int a = 1
+float distance = 15.5
+string name = 'CJ'
+```
 
 {% hint style="warning" %}
-The number of local variables per script is strictly [limited](../scm-documentation/gta-limits.md).
+Due to [design limitations](https://github.com/sannybuilder/dev/issues/32) this feature is only available in CLEO scripts. In SCM scripts local variables can be referenced using legacy syntax:
+
+```
+<local var index>@
+```
+
+For example, `0@`, `999@`, `56@`.
 {% endhint %}
 
 ### **Timer Variables**
@@ -56,6 +88,32 @@ Each script or a mission have 2 special local variables called `TIMERA` and `TIM
 {% hint style="info" %}
 `TIMERA` and `TIMERB` names are only available starting with Sanny Builder v3.3.0. In older scripts the timers are known as `16@`, `17@` (GTA3, VC) or `32@`, `33@` (SA).
 {% endhint %}
+
+## String Variables
+
+A global variable containing a short string literal starts with `s$`.
+
+```pascal
+05A9: s$MyString = 'GLOBAL'
+```
+
+A local variable containing a short string literal ends with`@s`.&#x20;
+
+```pascal
+05AA: 1@s = 'LOCAL'
+```
+
+A global variable containing a long string literal starts with `v$`.
+
+```pascal
+06D1: v$MyString = "LONG_GLOBAL"
+```
+
+A local variable containing a long string literal ends with`@v`.&#x20;
+
+```pascal
+06D2: 1@v = "LONG_LOCAL"
+```
 
 ## Declaring a variable type
 
@@ -95,7 +153,7 @@ A `type` could be one of these:
 * `Float` - floating-points values
 * `String`, `ShortString` - a variable containing a string literal with the fixed length (only for the arrays, use `s$`, `@s` for variables)
 * `LongString` - a variable containing a string literal with the variable length (only for the arrays, use `v$`, `@v` for variables)
-* `<Class name>` - any available [class name](classes.md)
+* `<Class name>` - any available [class name](../instructions/classes.md)
 
 Example:
 
@@ -122,14 +180,10 @@ end
 When variable types are known, the compiler is able to process the expression without opcode:
 
 ```pascal
-var
-    $Var1 : Integer
-    $Var2 : Integer
-end
+var $Var1: Integer, $Var2: Integer
+
 $Var1 += $Var2 // opcode 0058
 ```
-
-
 
 {% hint style="info" %}
 Once the type of the variable is declared it is used for all the code following the declaration.\
@@ -158,49 +212,6 @@ end_thread
 In the `'Food'` script `10@` is the floating-point variable. In the `'Loop'` script `10@` is the integer variable.
 
 You can re-declare variables as many times as you need.
-{% endhint %}
-
-## Shorter Form of Declaration
-
-Since v3.2.0 it's possible to declare a variable of a built-in type (`Int`, `Float`, `String`, `LongString`) using only the type name.
-
-Syntax:\
-`<type> <variable name>`
-
-```pascal
-int 0@ // 0@ declared as an integer variable.
-```
-
-Starting from v3.4.0 it is possible to declare variables with custom names:
-
-```pascal
-int a
-float distance
-string name
-
-a = 1
-distance = 15.5
-name = 'CJ'
-```
-
-An initial value can follow the variable name to reduce the number of the lines of code:
-
-```pascal
-int a = 1
-float distance = 15.5
-string name = 'CJ'
-```
-
-The compiler binds a new local variable to each name. In the example above one may expect a resulting code to look like:
-
-```pascal
-0006: 0@ = 1 
-0007: 1@ = 15.5 
-05AA: 2@ = 'CJ'
-```
-
-{% hint style="info" %}
-Due to [design limitations](https://github.com/sannybuilder/dev/issues/32) this feature is only available in CLEO scripts.
 {% endhint %}
 
 ## Variable Initialization
