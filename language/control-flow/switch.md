@@ -6,15 +6,10 @@ Switch statement compares a variable with one or many given values and executes 
 
 ```pascal
 switch <var>
-
    case <n1, n2, ...n3>
      // do something if <var> is equal to n1, n2, or n3
-   end
-   
    case <n4>
      // do something if <var> is equal to n4
-   end
-   
    default
      // do something if none of the values above matched the variable
 end
@@ -37,12 +32,8 @@ Switch statement does not support any extra instructions outside of `case..end` 
 switch 0@
    case 1, 2, 3
      0ace: "Value is 1, 2 or 3"
-   end
-   
    case 5
      0ace: "Value is 5"
-   end
-   
    default
      0ace: "value is not 1, 2, 3, or 5"
 end
