@@ -1,12 +1,12 @@
 # Switch
 
-Switch statement compares a variable with one or many given values and executes a block of code associated with this value when a match is found. Starting from v4.0, Sanny Builder supports it for all games.
+**Switch statement** compares a variable with one or many given values and executes a block of code associated with this value when a match is found. Starting from v4.0, Sanny Builder supports it for all games.
 
 ### Syntax
 
 ```pascal
 switch <var>
-   case <n1, n2, ...n3>
+   case <n1>, <n2>, ... <n3>
      // do something if <var> is equal to n1, n2, or n3
    case <n4>
      // do something if <var> is equal to n4
@@ -31,11 +31,11 @@ Switch statement does not support any extra instructions outside of `case` or `d
 ```pascal
 switch 0@
    case 1, 2, 3
-     0ace: "Value is 1, 2 or 3"
+     0ace: "Value is 1, 2, or 3"
    case 5
      0ace: "Value is 5"
    default
-     0ace: "value is not 1, 2, 3, or 5"
+     0ace: "Value is not 1, 2, 3, or 5"
 end
 ```
 
