@@ -16,7 +16,7 @@ end
 ```
 
 `<var>` a global or local [variable](../data-types/variables.md). Can be an integer, float, or string variable.\
-`<n>` - a comma-separated list of values the variable is compared with. Sanny uses `==` [operator](../instructions/operators.md) to compare values. `n` can be an integer number, float, string, also a [constant](../data-types/constants.md).
+`<n>` - a comma-separated list of values the variable is compared with. Sanny uses `==` [operator](../instructions/expressions.md) to compare values. `n` can be an integer number, float, string, also a [constant](../data-types/constants.md).
 
 {% hint style="info" %}
 Each case can be associated with up to `8` values.

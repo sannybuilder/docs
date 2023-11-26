@@ -14,7 +14,7 @@
 * command names defined in [Sanny Builder Library](https://library.sannybuilder.com) JSON files are now valid [keywords](language/instructions/keywords.md)
 * [HEX..END](language/instructions/hex..end.md#byte-repetition) improvements (repeat the same byte N times, include binary files)
 * simplified [const](language/data-types/constants.md#syntax) and [variable](language/data-types/variables.md#declaring-a-variable-type) declarations (`const x = 1, y = 2`, `float x, y, z`)
-* new [operators](language/instructions/operators.md#bitwise) (`bitwise`, `=@`, `=#`)
+* new [operators](language/instructions/expressions.md#bitwise) (`bitwise`, `=@`, `=#`)
 * `{$INCLUDE_ONCE}` [directive](language/directives.md#usdinclude\_once)
 * adding new [edit modes](edit-modes/) can be done by copying them into the `data` folder, the `modes.xml` is gone
 * bug fixes and other changes

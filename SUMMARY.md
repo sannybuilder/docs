@@ -14,7 +14,7 @@
   * [Opcodes](language/instructions/opcodes.md)
   * [Keywords](language/instructions/keywords.md)
   * [Classes](language/instructions/classes.md)
-  * [Operators](language/instructions/operators.md)
+  * [Expressions](language/instructions/expressions.md)
   * [Built-in Commands](language/instructions/built-in-commands.md)
   * [HEX..END](language/instructions/hex..end.md)
 * [Control Flow](language/control-flow/README.md)
