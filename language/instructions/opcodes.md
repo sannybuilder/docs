@@ -35,16 +35,17 @@ Sanny's compiler only cares about numbers and strings when it comes to processin
 
 Some instructions can be used as [conditions](../control-flow/conditions.md) to check on various things. You can combine up to 8 instructions in one check:
 
-<pre><code><strong>if
-</strong>  0018: $var 0 // test if $var is greater than 0
+```pascal
+if
+  0018: $var 0 // test if $var is greater than 0
 then
  ...
 end
-</code></pre>
+```
 
 Any conditional opcode can be negated by adding `0x8000` to the id. For original opcodes it's as simple as changing the first `0` to `8`:
 
-```
+```pascal
 if
   8018: $var 0 // test if $var is less than or equal to 0
 then
