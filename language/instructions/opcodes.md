@@ -42,8 +42,6 @@ then
 end
 </code></pre>
 
-`0018:` checks if the value of `$var` is greater than `0`.
-
 Any conditional opcode can be negated by adding `0x8000` to the id. For original opcodes it's as simple as changing the first `0` to `8`:
 
 ```
