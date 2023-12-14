@@ -58,6 +58,10 @@ end
 `<consequent>` - a branch of the code that executes if all conditions are `true`.\
 `<alternative>` - an optional branch of the code that executes if any condition is `false`. If `else` is omitted the flow skips the `consequent` branch and continues after a closing `end` keyword.
 
+{% hint style="warning" %}
+[Short-circuit evaluation](https://en.wikipedia.org/wiki/Short-circuit\_evaluation) is not supported. All conditions are evaluated regardless of the result of the preceding checks.
+{% endhint %}
+
 #### Example
 
 Checking if a number is within the given range:
@@ -93,6 +97,10 @@ end
 
 `<consequent>` - a branch of the code that executes if any condition is `true`.\
 `<alternative>` - an optional branch of the code that executes if all conditions are `false`. If `else` is omitted the flow skips the `consequent` branch and continues after a closing `end` keyword.
+
+{% hint style="warning" %}
+[Short-circuit evaluation](https://en.wikipedia.org/wiki/Short-circuit\_evaluation) is not supported. All conditions are evaluated regardless of the result of the preceding checks.
+{% endhint %}
 
 #### Example
 
