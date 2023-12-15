@@ -2,9 +2,11 @@
 
 ## Numbers
 
+Sanny Builder supports 32-bit integers and floating-point numbers.&#x20;
+
 ### Integers
 
-Sanny Builder supports 32-bit integers and floating-point numbers. Integers are whole numbers represented as a string of digits from `0` to `9`. Negative numbers are denoted by a minus sign (`-`) in front of them. Examples of valid integer numbers include `0`, `1`, `123`, `-10`, and `-900000`.
+Integers are whole numbers represented as a string of digits from `0` to `9`. Negative numbers are denoted by a minus sign (`-`) in front of them. Examples of valid integer numbers include `0`, `1`, `123`, `-10`, and `-900000`.
 
 Sanny also supports hexadecimal and binary notation for integer numbers. Hexadecimal numbers are represented as a string of digits from `0` through `9` and letters from `A` through `F`, prefixed with `0x` or `-0x`. For instance, `0xA`, `0xFFFF`, `-0x90`. Binary numbers are represented as a string of digits `0` and `1`, prefixed with `0b` or `-0b`. For example, `0b0`, `0b10110`, `-0b10000`.
 
@@ -24,23 +26,23 @@ GTA III, unlike other titles, uses [16-bit integer numbers](https://gtamods.com/
 
 ## String Literals
 
-A text enclosed between single quotes `' '` is a short string literal (`15` characters max).
+A text enclosed between single quotes `' '` is a [null-terminated string](https://en.wikipedia.org/wiki/String\_\(computer\_science\)#Null-terminated). It is limited to `15` characters.
 
-```
+```pascal
 03A4: script_name 'MAIN'
 ```
 
 Empty strings are allowed: `''`.
 
-A text enclosed between `" "` is a long string literal (maximum length is determined by the opcode it uses)
+A text enclosed between `" "` is a [length-prefixed string](https://en.wikipedia.org/wiki/String\_\(computer\_science\)#Length-prefixed). Its maximum length cannot exceed `255` characters.
 
-```
+```pascal
 0662: write_debug_message "Hello, world!"
 ```
 
 If the literal contains `"` you must write `\` before it.
 
-<pre><code><strong>0662: write_debug_message "Hello, \"world\"! \n 'Here we go!'"
+<pre class="language-pascal"><code class="lang-pascal"><strong>0662: write_debug_message "Hello, \"world\"! \n 'Here we go!'"
 </strong></code></pre>
 
 Empty strings are allowed: `""`.
@@ -49,6 +51,6 @@ Empty strings are allowed: `""`.
 
 Model IDs defined in `.ide` files can be referenced by`#` followed by a valid model name.&#x20;
 
-```
+```pascal
 0247: request_model #CELLPHONE
 ```
