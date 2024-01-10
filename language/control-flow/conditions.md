@@ -1,6 +1,6 @@
 # Conditions
 
-A **conditional** **statement** allows to evaluate one or more conditional instructions and based on the result of the evaluation either execute or skip a block of code. [Conditional statements](https://en.wikipedia.org/wiki/Conditional\_\(computer\_programming\)) can be found in nearly all programming languages. It is an important part of the control flow.&#x20;
+A **conditional** **statement** allows to evaluate one or more conditional instructions. Depending on the result, a block of code can be either executed or skipped. [Conditional statements](https://en.wikipedia.org/wiki/Conditional\_\(computer\_programming\)) can be found in nearly all programming languages. It is an important part of the control flow.&#x20;
 
 ### Single Condition
 
