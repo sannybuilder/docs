@@ -22,4 +22,4 @@ Latest versions and updates are always available on [sannybuilder.com](https://s
 
 Use responsibly at your own risk. In Backup We Trust.
 
-© 2005-2023 Seemann
+© 2005-2024 Seemann
