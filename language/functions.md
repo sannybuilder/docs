@@ -8,7 +8,7 @@ Sanny Builder 4 adds new syntactic element to the language to easily create and 
 
 ### Syntax
 
-To define a new function, use the `function` keyword.
+To make a new function, use the `function` keyword.
 
 ```pascal
 function <signature>
@@ -31,7 +31,25 @@ end
 
 ### Signature
 
-A function's signature defines what types of input arguments the function receive and what type of value it returns.&#x20;
+A function's signature defines what types of input arguments the function receives and what type of value it returns.&#x20;
+
+{% hint style="info" %}
+Input arguments may be a primitive type `int`, `float`, or a class, e.g. `Car` or `Pickup`. `String` type is not supported. If a function has string arguments, they must be declared as `int`, because they are passed as pointers.
+
+<pre class="language-pascal"><code class="lang-pascal"><strong>function foo(s: int)
+</strong>  print_help_string s
+end
+</code></pre>
+
+Native opcodes do not work with pointers to strings. In order to use them with string arguments inside `function..end` convert the pointer to a string, first as so:
+
+<pre class="language-pascal"><code class="lang-pascal">function foo(gxt: int)
+<strong>  string key
+</strong>  string_format key "%s"
+  print_help key
+end
+</code></pre>
+{% endhint %}
 
 A function may have zero parameters. If it has parameters, they are listed between `()`.  Each parameter has a name and a type, separated by a `:`. Parameter declaration syntax is similar to that of [`var..end`](data-types/variables.md#declaring-a-variable-type). Each parameter can be used as a function's local variable in the function body.
 
