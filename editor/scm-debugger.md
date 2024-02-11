@@ -8,7 +8,7 @@ Sanny Builder 4.0 offers a native debugger for SCM scripts. It means you can add
 Debugging functionality is very basic at the moment. It only works with scripts located in`main.scm.` Only GTA San Andreas v1.0 is supported. CLEO scripts and other games are not supported.
 {% endhint %}
 
-### Configuring Debugger
+### Configuring the Debugger
 
 Before using a debugger, configure a path to the game executable in the main [options](options/debugger.md). When Sanny knows the path, it can run a new instance of the game, or attach to the already running process.
 
