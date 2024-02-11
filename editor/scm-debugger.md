@@ -2,6 +2,8 @@
 
 Sanny Builder 4.0 offers a native debugger for SCM scripts. It means you can add breakpoints in your code and pause the game as it hits a breakpoint. You can then step through the code and inspect values of global and local variables.
 
+{% embed url="https://www.youtube.com/watch?v=4-CiQZNQr18" %}
+
 {% hint style="warning" %}
 Debugging functionality is very basic at the moment. It only works with scripts located in`main.scm.` Only GTA San Andreas v1.0 is supported. CLEO scripts and other games are not supported.
 {% endhint %}
