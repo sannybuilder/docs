@@ -44,11 +44,13 @@
   * [Editor](editor/options/editor.md)
   * [Theme Editor](editor/options/theme-editor.md)
   * [Hotkeys](editor/options/hotkeys.md)
+  * [Debugger](editor/options/debugger.md)
 * [Console](editor/console.md)
 * [Hotkeys](editor/hotkeys.md)
 * [Opcode Search Tool](editor/opcode-search-tool.md)
 * [Command Line Interface](editor/cli.md)
 * [Language Service](editor/language-service.md)
+* [SCM Debugger](editor/scm-debugger.md)
 
 ## SCM Documentation
 
