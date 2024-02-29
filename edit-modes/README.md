@@ -42,11 +42,11 @@ A valid value for this attribute is a unique series of characters not used for a
 
 #### extends
 
-A mode can extend another mode (the parent) to reduce the number of duplicated properties. It is helpful for different versions of a game where most of the configuration is the same except for a few properties. The parent can also extend another mode.&#x20;
+A mode can extend another mode (a parent mode) to reduce a number of duplicated properties. It is helpful for different versions of the game where most of the configuration is the same except for a few properties. By extending another mode the mode inherits all its unique properties and can override them with the new values.
 
-When a property is missing Sanny Builder recursively traverses all parent modes trying to find the property.
+The parent can also extend another mode.
 
-A valid value for this attribute is the id of another mode defined in the same file.
+A valid value for this attribute is an `id` of another mode.
 
 #### title
 
