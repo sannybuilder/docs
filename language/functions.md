@@ -70,7 +70,7 @@ mod()
 
 Function ends at the `end` keyword. You may exit early using the `return` keyword.&#x20;
 
-{% hint style="warning" %}
+{% hint style="success" %}
 `return` keyword can be used in both gosub subroutines and functions.
 {% endhint %}
 
@@ -255,7 +255,7 @@ define function Foo<stdcall,0x400000>(int, float): int
 
 int value = Foo(10, 20.0)
 
-0AA7: call_function_return {address} 0x400000 {numParams} 2 {pop} 0 {funcParams} 20.0 {var_funcRet} 10 0@ 
+// 0AA7: call_function_return {address} 0x400000 {numParams} 2 {pop} 0 {funcParams} 20.0 {var_funcRet} 10 0@ 
 
 ```
 
@@ -274,13 +274,14 @@ Destroy(instance)
 
 When function's address is not known at compile time, you still can define a foreign function and use a function pointer to call it by reference. To declare a function pointer, [declare a new variable](data-types/variables.md#declaring-a-variable-type) with the function name as the type:
 
-<pre class="language-pascal"><code class="lang-pascal">define function Destroy&#x3C;thiscall>(struct: int)
+```pascal
+define function Destroy<thiscall>(struct: int)
 Destroy method // define a pointer to function Destroy
-<strong>...
-</strong><strong>method = 0x400000 // function is located at 0x400000
-</strong>method(0xDEADD0D0) // call function using the pointer
+...
+method = 0x400000 // function is located at 0x400000
+method(0xDEADD0D0) // call function using the pointer
 
 // 0006: 0@ = 0x400000
 // 0AA6: call_method {address} 0@ {struct} 0xDEADD0D0 {numParams} 0 {pop} 0
-</code></pre>
+```
 
