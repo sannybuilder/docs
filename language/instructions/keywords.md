@@ -6,20 +6,33 @@ When using keywords, they must be the first word on the line, followed by argume
 
 Here is an example of a WAIT command using its name as the keyword:
 
-```
+```pascal
 wait 0
 ```
 
 Extra words are allowed (similarly to [opcode syntax](opcodes.md)):
 
-```
+```pascal
 CREATE_PLAYER 0 at 811.875 -939.9375 35.75 store_to $player 
 ```
 
-Edit modes can define extra aliases to command names in the file [keywords.txt](../../edit-modes/#keywords):&#x20;
+A keywords list can be displayed after pressing `Ctrl+Space`.
 
+
+
+### Extra keywords
+
+{% hint style="warning" %}
+Editing `keywords.txt` is deprecated and legacy keywords are left only for backward compatibility with old scripts. Adding new keywords is discouraged.
+{% endhint %}
+
+Edit modes can define extra aliases to command names in the file [keywords.txt](../../edit-modes/#keywords):
+
+```javascript
+0002=jump
+0002=goto
 ```
+
+```javascript
 jump @label // 'jump' is an alias to the GOTO command
 ```
-
-A keywords list can be displayed after pressing `Ctrl+Space`.

@@ -6,6 +6,10 @@ CLEO Library brought support for functions (dubbed _scm func_) in early versions
 
 Sanny Builder 4 adds new syntactic element to the language to easily create and use SCM functions in the code.
 
+{% hint style="info" %}
+Visit [this GitHub ticket](https://github.com/sannybuilder/dev/issues/263) for more technical information and examples on function syntax.&#x20;
+{% endhint %}
+
 ### Syntax
 
 To make a new function, use the `function` keyword.
@@ -31,27 +35,13 @@ end
 
 ### Signature
 
-A function's signature defines what types of input arguments the function receives and what type of value it returns.&#x20;
+A function's signature defines what types of input arguments the function receives and what type of value it returns. Function arguments may be of a primitive type `int`, `float, string`, or a class, e.g. `Car` or `Pickup`.
 
 {% hint style="info" %}
-Input arguments may be a primitive type `int`, `float`, or a class, e.g. `Car` or `Pickup`. `String` type is not supported. If a function has string arguments, they must be declared as `int`, because they are passed as pointers.
-
-<pre class="language-pascal"><code class="lang-pascal"><strong>function foo(s: int)
-</strong>  print_help_string s
-end
-</code></pre>
-
-Native opcodes do not work with pointers to strings. In order to use them with string arguments inside `function..end` convert the pointer to a string, first as so:
-
-<pre class="language-pascal"><code class="lang-pascal">function foo(gxt: int)
-<strong>  string key
-</strong>  string_format key "%s"
-  print_help key
-end
-</code></pre>
+String arguments are always passed as pointers.
 {% endhint %}
 
-A function may have zero parameters. If it has parameters, they are listed between `()`.  Each parameter has a name and a type, separated by a `:`. Parameter declaration syntax is similar to that of [`var..end`](data-types/variables.md#declaring-a-variable-type). Each parameter can be used as a function's local variable in the function body.
+A function may have zero parameters. If it has parameters, they are listed between `()`.  Each parameter has a name and a type, separated by a colon. Parameter declaration syntax is similar to that of [`var..end`](data-types/variables.md#declaring-a-variable-type). Each parameter can be used as a function's local variable in the function body.
 
 If the function returns something, its type has to be defined after the list of parameters (or the function name, if there are no parameters). E.g.:
 
@@ -81,10 +71,26 @@ mod()
 Function ends at the `end` keyword. You may exit early using the `return` keyword.&#x20;
 
 {% hint style="warning" %}
-The `return` keyword is similar to the `return` command used in the SCM code to leave the gosub subroutine, but it acts differently in the functions.
+`return` keyword can be used in both gosub subroutines and functions.
 {% endhint %}
 
-In functions the return keyword is always followed by `true` or `false`.&#x20;
+```pascal
+function SetWantedLevel(level: int)
+  set_max_wanted_level level
+end // no explicit return, function ends here
+
+function SetWantedLevel(level: int)
+  if or
+    level < 0
+    level > 6
+  then
+     return // early return, code below won't be executed
+  end
+  set_max_wanted_level level
+end // function ends here
+```
+
+When leaving the function, you can optionally set the condition flag in the current script like so:&#x20;
 
 ```pascal
 return true
@@ -123,15 +129,15 @@ end
 
 The function may return one or multiple values, using the `return` keyword.&#x20;
 
-To define a function that returns something, add a `:` and a type at the end of the function signature:
+To define a function that returns something, add a colon and a type at the end of the function signature:
 
-```
+```pascal
 function maxItems: int
 ```
 
 To return a value use `return` followed by `true` or `false` and a value:
 
-```
+```pascal
 return true 5
 return false 5
 ```
@@ -151,7 +157,7 @@ if
 then
  // function returned true and a value
 else
- // function returned false
+ // function returned false and a value
 end
 ```
 
@@ -193,8 +199,88 @@ define function bar(int, float): int
 
 #### Rules
 
-* forward declaration starts with the word `DEFINE`. Same word is used to declare elements of SCM header.
+* forward declaration starts with the word `DEFINE`. The same word is used to declare elements of SCM header.
 * `<name>` must be a valid identifier.
 * input arguments may omit names and only list types `(float, float, float)`.
 * forward declaration must have the same number of input and output parameters as the actual implementation. Types of parameters must match too.
 * each function may have only one forward declaration.
+
+### Foreign Functions
+
+CLEO provides an interface for calling game's native functions. There are 4 opcodes that support different calling conventions:
+
+```
+0AA5: call_function {address} [int] {numParams} [int] {pop} [int] {funcParams} [arguments]
+0AA6: call_method {address} [int] {struct} [int] {numParams} [int] {pop} [int] {funcParams} [arguments]
+0AA7: call_function_return {address} [int] {numParams} [int] {pop} [int] {funcParams} [arguments] {var_funcRet} [var any]
+0AA8: call_method_return {address} [int] {struct} [int] {numParams} [int] {pop} [int] {funcParams} [arguments] {var_funcRet} [var any]
+```
+
+As you may guess, using them directly is not very convenient. These opcodes have their own quirks, like having to provide input arguments in reverse order.
+
+Sanny Builder 4 offers an interface for defining foreign functions in code and using them as regular functions. It can be done by adding calling convention type to a forward declaration.
+
+```
+define function<cc[,address]>(args): return type
+```
+
+A `cc` or calling convention defines who's in charge of cleaning up the stack when function returns.
+
+CLEO and Sanny Builder supports 3 major conventions:
+
+* _cdecl_ - caller cleans up the stack
+* _stdcall_ - callee cleans up the stack
+* _thiscall_ - callee cleans up the stack. Since `thiscall` is a class method function, it additionally receives a pointer to the class instance in `ecx` register.
+
+You can read more about different types of calling conventions on [Wikipedia](https://en.wikipedia.org/wiki/X86\_calling\_conventions).&#x20;
+
+Optional address parameter defines where this function is located in the game memory (static functions). If this address can only be known in runtime, this parameter can be omitted.
+
+#### Example
+
+```pascal
+define function CStats__GetStatType<cdecl,0x558E30>(statId: int): int
+
+int type = CStats__GetStatType(42)
+
+// 0AA7: call_function_return {address} 0x558E30 {numParams} 1 {pop} 1 {funcParams} 42 {var_funcRet} 0@ 
+```
+
+This code invokes a function at address `0x558E30` with argument `42` and stores the returned value in the variable `type`.&#x20;
+
+Passing multiple arguments can be done as usual:
+
+```pascal
+define function Foo<stdcall,0x400000>(int, float): int
+
+int value = Foo(10, 20.0)
+
+0AA7: call_function_return {address} 0x400000 {numParams} 2 {pop} 0 {funcParams} 20.0 {var_funcRet} 10 0@ 
+
+```
+
+Calling a `thiscall` function requires the first argument to always be a pointer to the class instance.
+
+```pascal
+define function Destroy<thiscall,0x400000>(struct: int)
+
+int instance = 0xDEADD0D0
+Destroy(instance)
+
+// 0006: 0@ = 0xDEADD0D0
+// 0AA6: call_method {address} 0x400000 {struct} 0@ {numParams} 0 {pop} 0
+
+```
+
+When function's address is not known at compile time, you still can define a foreign function and use a function pointer to call it by reference. To declare a function pointer, [declare a new variable](data-types/variables.md#declaring-a-variable-type) with the function name as the type:
+
+<pre class="language-pascal"><code class="lang-pascal">define function Destroy&#x3C;thiscall>(struct: int)
+Destroy method // define a pointer to function Destroy
+<strong>...
+</strong><strong>method = 0x400000 // function is located at 0x400000
+</strong>method(0xDEADD0D0) // call function using the pointer
+
+// 0006: 0@ = 0x400000
+// 0AA6: call_method {address} 0@ {struct} 0xDEADD0D0 {numParams} 0 {pop} 0
+</code></pre>
+

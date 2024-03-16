@@ -67,8 +67,6 @@ end
 
 It produces the following sequence of bytes: `00 08 09 0A 0D DD`.
 
-Currently multiple spaces in a string literal are converted into a single one. Thus a line `"This    is  a     string"` is converted into `"This is a string"`. Use the backward slash character `\` to add multiple spaces in a string literal: `"This \ \ \ is \ a \ \ \ \ string"`.
-
 ## Entering large numbers
 
 For convenience, large numbers can be prefixed with an `&` symbol. The number following the `&` symbol can be positive or negative, and it can be represented in either decimal or hexadecimal format.
