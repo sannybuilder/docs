@@ -61,7 +61,7 @@ function bar(i: int): int
 
 #### &#x20;Optional Return Type
 
-Some functions may not be able to return correct values. For example, a function reading a file may fail if the file does not exist. In this case the return type can be marked with the `optional` keyword:
+Some functions may not be able to return correct values (_a fallible function_). For example, a function reading a file may fail if the file does not exist. In this case the return type can be marked with the `optional` keyword:
 
 ```pascal
 function getValues: optional int, int, int
@@ -74,7 +74,7 @@ function getValues: optional int, int, int
 end
 ```
 
-Function `getValues` may return `3` integer values or nothing. On calling end, to check whether the a fallible function succeeded it can be wrapped into IF..THEN condition like so:
+Function `getValues` may return `3` integer values or nothing. On calling end, to check whether a fallible function succeeded it can be wrapped into IF..THEN condition like so:
 
 ```pascal
 int a, b, c
