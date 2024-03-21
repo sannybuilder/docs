@@ -259,7 +259,7 @@ int value = maxItems() // value is 5
 ```
 
 {% hint style="info" %}
-Returning any value, even 0, from a function is considered a success if functions is used as a condition.
+Returning any value, even 0, from a function is considered a success if the function is used as a condition.
 
 ```pascal
 function zero: int
