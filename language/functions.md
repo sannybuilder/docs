@@ -29,7 +29,7 @@ A function must end with the `end` keyword.&#x20;
 ```typescript
 function sum(a: int, b: int): int
   int result = a + b
-  return true result
+  return result
 end
 ```
 
@@ -43,6 +43,15 @@ String arguments are always passed as pointers.
 
 A function may have zero parameters. If it has parameters, they are listed between `()`.  Each parameter has a name and a type, separated by a colon. Parameter declaration syntax is similar to that of [`var..end`](data-types/variables.md#declaring-a-variable-type). Each parameter can be used as a function's local variable in the function body.
 
+```pascal
+function sum(a: int, b: int): int
+  int result = a + b
+  return result
+end
+```
+
+`a` and `b` are the two input parameters of the `int` type. They can be used as local variables.
+
 If the function returns something, its type has to be defined after the list of parameters (or the function name, if there are no parameters). E.g.:
 
 ```pascal
@@ -50,114 +59,31 @@ function foo: float
 function bar(i: int): int
 ```
 
-### Body
+#### &#x20;Optional Return Type
 
-A function's body include all instructions executed when the main code calls the function. The function may have zero instructions. Function parameters can be referenced in the body as local variables. The function may create extra local variables and even new functions, available only within this function:
-
-```pascal
-int x
-
-function mod
-int x = 5
-end
-
-x = 10
-mod()
-// x is still equal to 10
-```
-
-### Return From Function
-
-Function ends at the `end` keyword. You may exit early using the `return` keyword.&#x20;
-
-{% hint style="success" %}
-`return` keyword can be used in both gosub subroutines and functions.
-{% endhint %}
+Some functions may not be able to return correct values. For example, a function reading a file may fail if the file does not exist. In this case the return type can be marked with the `optional` keyword:
 
 ```pascal
-function SetWantedLevel(level: int)
-  set_max_wanted_level level
-end // no explicit return, function ends here
-
-function SetWantedLevel(level: int)
-  if or
-    level < 0
-    level > 6
+function getValues: optional int, int, int
+  if <...>
   then
-     return // early return, code below won't be executed
-  end
-  set_max_wanted_level level
-end // function ends here
-```
-
-When leaving the function, you can optionally set the condition flag in the current script like so:&#x20;
-
-```pascal
-return true
-return false
-```
-
-`true` and `false` set the script's [condition result](control-flow/conditions.md). It can be used with `IF..THEN` to check on the function result and act accordingly:&#x20;
-
-```pascal
-function isDefined(val: int)
-  if val <> 0
-  then return true
-  else return false
+     return 1 2 3
+  else
+     return
   end
 end
+```
 
-if isDefined(5)
+Function `getValues` may return `3` integer values or nothing. On calling end, to check whether the a fallible function succeeded it can be wrapped into IF..THEN condition like so:
+
+```pascal
+int a, b, c
+if
+  a, b, c = getValues()
 then
-  // result is true
+  // we got 3 values in a, b, c
 else
-  // result is false
-end
-```
-
-{% hint style="info" %}
-The example above can also be written in a more concise way:
-
-```pascal
-function isDefined(val: int)
-  return val <> 0
-end
-```
-{% endhint %}
-
-### Returning Values
-
-The function may return one or multiple values, using the `return` keyword.&#x20;
-
-To define a function that returns something, add a colon and a type at the end of the function signature:
-
-```pascal
-function maxItems: int
-```
-
-To return a value use `return` followed by `true` or `false` and a value:
-
-```pascal
-return true 5
-return false 5
-```
-
-To read the returned value, a caller must provide a variable:
-
-```javascript
-int value = maxItems() // value is 5
-```
-
-It can also be used with `IF..END`:
-
-```pascal
-int value
-if 
-  value = maxItems()
-then
- // function returned true and a value
-else
- // function returned false and a value
+  // we got nothing, a, b, c have not been changed
 end
 ```
 
@@ -171,13 +97,13 @@ Functions whose body precedes any call don't need a declaration:
 function foo
 end
 
-foo // compiles
+foo() // compiles
 ```
 
 If, however, the function implementation is located later in the code, it will produce a compilation error, as the function name cannot be resolved.
 
 ```pascal
-foo // error, foo is not defined
+foo() // error, foo is not defined
 
 function foo
 end
@@ -204,6 +130,169 @@ define function bar(int, float): int
 * input arguments may omit names and only list types `(float, float, float)`.
 * forward declaration must have the same number of input and output parameters as the actual implementation. Types of parameters must match too.
 * each function may have only one forward declaration.
+
+### Calling a Function
+
+Functions can be called using its name followed by open and closed braces:
+
+```pascal
+function foo
+end
+
+foo()
+```
+
+`()` are required for the function call, even if function receives no arguments. Without `()` function name is compiled as it's offset or address (if this is a static [foreign function](functions.md#foreign-functions)):
+
+```pascal
+function foo
+  return
+end
+
+jump foo // jumps into the function body
+```
+
+### Function Body
+
+A function's body include all instructions executed when the main code calls the function. The function may have zero instructions. Function parameters can be referenced in the body as local variables. The function may create extra local variables and even new functions, available only within this function:
+
+```pascal
+int x
+
+function mod
+  int x = 5  // this `x` only exists within function `mod`
+end
+
+x = 10
+mod()
+// x is still equal to 10
+```
+
+### Return From Function
+
+Function ends at the `end` keyword. You may exit early using the `return` keyword.&#x20;
+
+```pascal
+function SetWantedLevel(level: int)
+  set_max_wanted_level level
+end // no explicit return, function ends here
+
+function SetWantedLevel(level: int)
+  if or
+    level < 0
+    level > 6
+  then
+     return // early return, code below won't be executed
+  end
+  set_max_wanted_level level
+end // function ends here
+```
+
+#### Returning logical values
+
+For a function to be used as a [condition](control-flow/conditions.md) in `IF..THEN`, it must have a special return type: `logical`.&#x20;
+
+```pascal
+function check(): logical
+
+if check()
+then
+end
+```
+
+`logical` function returns a result of logical expression, or `true` or `false`.
+
+<pre class="language-pascal"><code class="lang-pascal"><strong>return true
+</strong>return false
+return 0@ == 1
+return Char.DoesExist(0@)
+</code></pre>
+
+A value returned from a logical function sets the script's [condition result](control-flow/conditions.md) and be combined with other checks in one IF statement.
+
+```pascal
+function isDefined(val: int): logical
+  if val <> 0
+  then return true
+  else return false
+  end
+end
+
+if isDefined(5)
+then
+  // result is true
+else
+  // result is false
+end
+```
+
+{% hint style="info" %}
+The example above can also be written in a more concise way:
+
+```pascal
+function isDefined(val: int)
+  return val <> 0
+end
+```
+{% endhint %}
+
+#### Returning Values
+
+The function may return one or multiple values, using the `return` keyword.&#x20;
+
+To define a function that returns something, add a colon and a type at the end of the function signature:
+
+```pascal
+function maxItems: int
+```
+
+To return a value use `return` followed a value:
+
+```pascal
+return 5
+```
+
+To read the returned value, a caller must provide a variable:
+
+```javascript
+int value = maxItems() // value is 5
+```
+
+{% hint style="info" %}
+Returning any value, even 0, from a function is considered a success if functions is used as a condition.
+
+```pascal
+function zero: int
+  return 0
+end
+
+if
+  zero()
+then
+  // success
+else
+  // will never be here
+end
+```
+{% endhint %}
+
+If a function may fail and not have a valid result, its return type should be marked as `optional` and a blank return can be used:
+
+```pascal
+function createCar: optional int
+  return
+end
+
+if
+  Car c = createCar()
+then
+  // got a car handle in c
+else
+  // got nothing
+end
+```
+
+`optional` keyword must precede the list of return types.
 
 ### Foreign Functions
 
@@ -236,6 +325,8 @@ You can read more about different types of calling conventions on [Wikipedia](ht
 
 Optional address parameter defines where this function is located in the game memory (static functions). If this address can only be known in runtime, this parameter can be omitted.
 
+A return type can be `int`, `float,` or `string`.
+
 #### Example
 
 ```pascal
@@ -256,7 +347,6 @@ define function Foo<stdcall,0x400000>(int, float): int
 int value = Foo(10, 20.0)
 
 // 0AA7: call_function_return {address} 0x400000 {numParams} 2 {pop} 0 {funcParams} 20.0 {var_funcRet} 10 0@ 
-
 ```
 
 Calling a `thiscall` function requires the first argument to always be a pointer to the class instance.
@@ -269,7 +359,6 @@ Destroy(instance)
 
 // 0006: 0@ = 0xDEADD0D0
 // 0AA6: call_method {address} 0x400000 {struct} 0@ {numParams} 0 {pop} 0
-
 ```
 
 When function's address is not known at compile time, you still can define a foreign function and use a function pointer to call it by reference. To declare a function pointer, [declare a new variable](data-types/variables.md#declaring-a-variable-type) with the function name as the type:
@@ -285,3 +374,12 @@ method(0xDEADD0D0) // call function using the pointer
 // 0AA6: call_method {address} 0@ {struct} 0xDEADD0D0 {numParams} 0 {pop} 0
 ```
 
+{% hint style="info" %}
+Static function's name represents its address when used without `()`
+
+```pascal
+define function Foo<stdcall,0x400000>(int, float): int
+
+int addr = foo // addr = 0x400000
+```
+{% endhint %}
