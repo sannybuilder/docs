@@ -267,8 +267,8 @@ As you may guess, using them directly is not very convenient. These opcodes have
 
 Sanny Builder 4 offers an interface for defining foreign functions in code and using them as regular functions. It can be done by adding calling convention type to a forward declaration.
 
-```
-define function<cc[,address]>(args): return type
+```pascal
+function<cc[,address]>(args): return type
 ```
 
 A `cc` or calling convention defines who's in charge of cleaning up the stack when function returns.
@@ -288,7 +288,7 @@ A return type can be `int`, `float,` or `string`.
 #### Example
 
 ```pascal
-define function CStats__GetStatType<cdecl,0x558E30>(statId: int): int
+function CStats__GetStatType<cdecl,0x558E30>(statId: int): int
 
 int type = CStats__GetStatType(42)
 
@@ -300,7 +300,7 @@ This code invokes a function at address `0x558E30` with argument `42` and stores
 Passing multiple arguments can be done as usual:
 
 ```pascal
-define function Foo<stdcall,0x400000>(int, float): int
+function Foo<stdcall,0x400000>(int, float): int
 
 int value = Foo(10, 20.0)
 
@@ -310,7 +310,7 @@ int value = Foo(10, 20.0)
 Calling a `thiscall` function requires the first argument to always be a pointer to the class instance.
 
 ```pascal
-define function Destroy<thiscall,0x400000>(struct: int)
+function Destroy<thiscall,0x400000>(struct: int)
 
 int instance = 0xDEADD0D0
 Destroy(instance)
@@ -322,7 +322,7 @@ Destroy(instance)
 When function's address is not known at compile time, you still can define a foreign function and use a function pointer to call it by reference. To declare a function pointer, [declare a new variable](data-types/variables.md#declaring-a-variable-type) with the function name as the type:
 
 ```pascal
-define function Destroy<thiscall>(struct: int)
+function Destroy<thiscall>(struct: int)
 Destroy method // define a pointer to function Destroy
 ...
 method = 0x400000 // function is located at 0x400000
@@ -336,7 +336,7 @@ method(0xDEADD0D0) // call function using the pointer
 Static function's name represents its address when used without `()`
 
 ```pascal
-define function Foo<stdcall,0x400000>(int, float): int
+function Foo<stdcall,0x400000>(int, float): int
 
 int addr = foo // addr = 0x400000
 ```
