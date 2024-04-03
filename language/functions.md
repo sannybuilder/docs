@@ -2,7 +2,7 @@
 
 First native support for functions in GTA was added in Liberty City Stories. The games prior to that only had limited subroutines invoked with the `gosub` command. Those subroutines allowed to avoid code duplication; however, they were operating on the same scope as the code invoking them. Any variables used in a subroutine would alter the state of the script.
 
-CLEO Library brought support for functions (dubbed _scm func_) in early versions, and it became important part of the modern scripting techniques. An SCM Function has its own variable stack. You are given additional `16` or `32` variables ([depending](../scm-documentation/gta-limits.md) on the game), none of them would clash with the local variables of the script calling the functions. CLEO5 improved SCM Functions a lot by completely isolating script and function state, adding support for string arguments, and more.
+CLEO Library brought support for functions (dubbed _scm func_) in early versions, and it became important part of the modern scripting techniques. Each SCM function owns `16` or `32` local variables ([depending](../scm-documentation/gta-limits.md) on the game), none of them would clash with the local variables of the script calling the functions. CLEO5 improved SCM functions a lot by completely isolating script and function state, adding support for string arguments, and more.
 
 Sanny Builder 4 adds new syntactic element to the language to easily create and use SCM functions in the code.
 
@@ -22,7 +22,9 @@ end
 
 `signature` defines function's input parameters and their type, and also an optional return type.\
 `body` is the code that runs when you call the function.\
-A function must end with the `end` keyword.&#x20;
+A function must end with the `end` keyword.
+
+Functions are available anywhere in the current scope. Functions defined inside other functions only available in that function.
 
 #### Example
 
@@ -86,50 +88,6 @@ else
   // we got nothing, a, b, c have not been changed
 end
 ```
-
-### Declaring functions
-
-Functions must be known to the compiler before they are used in the code.
-
-Functions whose body precedes any call don't need a declaration:
-
-```pascal
-function foo
-end
-
-foo() // compiles
-```
-
-If, however, the function implementation is located later in the code, it will produce a compilation error, as the function name cannot be resolved.
-
-```pascal
-foo() // error, foo is not defined
-
-function foo
-end
-```
-
-To solve it, declare a function upfront using a `define` keyword:
-
-```pascal
-define function <name>(<input types>):<output types>
-```
-
-#### Example
-
-```pascal
-define function foo
-define function setPos(float, float, z: float)
-define function bar(int, float): int
-```
-
-#### Rules
-
-* forward declaration starts with the word `DEFINE`. The same word is used to declare elements of SCM header.
-* `<name>` must be a valid identifier.
-* input arguments may omit names and only list types `(float, float, float)`.
-* forward declaration must have the same number of input and output parameters as the actual implementation. Types of parameters must match too.
-* each function may have only one forward declaration.
 
 ### Calling a Function
 
