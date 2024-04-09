@@ -103,7 +103,7 @@ mod()
 Function ends at the `end` keyword. You may exit early using the `return` keyword.&#x20;
 
 {% hint style="warning" %}
-Exit from a function using `return` keyword is only supported in CLEO 5 (San Andreas). For other CLEO versions use `cleo_return command`.
+Exit from a function using `return` keyword is only supported in CLEO 5 (San Andreas). For other CLEO versions use `cleo_return` command.
 {% endhint %}
 
 ```pascal
