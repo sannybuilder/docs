@@ -39,54 +39,27 @@ end
 
 A function's signature defines what types of input arguments the function receives and what type of value it returns. Function arguments may be of a primitive type `int`, `float, string`, or a class, e.g. `Car` or `Pickup`.
 
-{% hint style="info" %}
-String arguments are always passed as pointers.
+{% hint style="warning" %}
+String arguments are only supported in CLEO 5. They are always passed as pointers.
 {% endhint %}
 
 A function may have zero parameters. If it has parameters, they are listed between `()`.  Each parameter has a name and a type, separated by a colon. Parameter declaration syntax is similar to that of [`var..end`](data-types/variables.md#declaring-a-variable-type). Each parameter can be used as a function's local variable in the function body.
 
-```pascal
-function sum(a: int, b: int): int
-  int result = a + b
-  return result
+<pre class="language-pascal"><code class="lang-pascal">function loadModel(modelId: int)
+<strong>    request_model modelId
+</strong>    while not is_model_available modelId
+        wait 0
+    end
 end
-```
+</code></pre>
 
-`a` and `b` are the two input parameters of the `int` type. They can be used as local variables.
+`modelId` is an input parameter of the `int` type. It can be used as a local variable.
 
 If the function returns something, its type has to be defined after the list of parameters (or the function name, if there are no parameters). E.g.:
 
 ```pascal
 function foo: float
 function bar(i: int): int
-```
-
-#### &#x20;Optional Return Type
-
-Some functions may not be able to return correct values (_a fallible function_). For example, a function reading a file may fail if the file does not exist. In this case the return type can be marked with the `optional` keyword:
-
-```pascal
-function getValues: optional int, int, int
-  if <...>
-  then
-     return 1 2 3
-  else
-     return
-  end
-end
-```
-
-Function `getValues` may return `3` integer values or nothing. On calling end, to check whether a fallible function succeeded it can be wrapped into IF..THEN condition like so:
-
-```pascal
-int a, b, c
-if
-  a, b, c = getValues()
-then
-  // we got 3 values in a, b, c
-else
-  // we got nothing, a, b, c have not been changed
-end
 ```
 
 ### Calling a Function
@@ -104,7 +77,6 @@ foo()
 
 ```pascal
 function foo
-  return
 end
 
 jump foo // jumps into the function body
@@ -129,6 +101,10 @@ mod()
 ### Return From Function
 
 Function ends at the `end` keyword. You may exit early using the `return` keyword.&#x20;
+
+{% hint style="warning" %}
+Exit from a function using `return` keyword is only supported in CLEO 5 (San Andreas). For other CLEO versions use `cleo_return command`.
+{% endhint %}
 
 ```pascal
 function SetWantedLevel(level: int)
@@ -251,6 +227,34 @@ end
 ```
 
 `optional` keyword must precede the list of return types.
+
+#### &#x20;Optional Return Type
+
+Some functions may not be able to return correct values (_a fallible function_). For example, a function reading a file may fail if the file does not exist. In this case the return type can be marked with the `optional` keyword:
+
+```pascal
+function getValues: optional int, int, int
+  if <...>
+  then
+     return 1 2 3
+  else
+     return
+  end
+end
+```
+
+Function `getValues` may return `3` integer values or nothing. On calling end, to check whether a fallible function succeeded it can be wrapped into IF..THEN condition like so:
+
+```pascal
+int a, b, c
+if
+  a, b, c = getValues()
+then
+  // we got 3 values in a, b, c
+else
+  // we got nothing, a, b, c have not been changed
+end
+```
 
 ### Foreign Functions
 
