@@ -151,4 +151,6 @@ Sanny Builder is able to check if a new version is available. To use this featur
 
 <figure><img src="../.gitbook/assets/sb-update-form.PNG" alt=""><figcaption></figcaption></figure>
 
+Updates are available under different channels. The Stable channel provides full releases of Sanny Builder. The Beta channels provides intermediate beta releases that might be unstable but give you early access to new features.
+
 With "Automatically install updates" checkbox checked, installation begins as soon as the new version is found.
