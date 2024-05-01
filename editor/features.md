@@ -145,8 +145,10 @@ Parameters:
 --cwd=@sb: --game-dir=@game:
 ```
 
-## Checking for updates
+## Automatic updates
 
-Sanny Builder is able to check if a new version is available. To use this feature go to menu `Help->Check for update...`. The editor will connect to a remote server and if a newer version is available it prompts the download and install.&#x20;
+Sanny Builder is able to check if a new version is available. To use this feature, go to menu `Help->Check for update...`. If a newer version is available, the editor will prompt the download and installation.
 
-The editor can also check for an update during startup if you enable this option in the updater window.
+<figure><img src="../.gitbook/assets/sb-update-form.PNG" alt=""><figcaption></figcaption></figure>
+
+With "Automatically install updates" checkbox checked, installation begins as soon as the new version is found.
