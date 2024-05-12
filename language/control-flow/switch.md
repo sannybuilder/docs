@@ -4,16 +4,15 @@
 
 ### Syntax
 
-```pascal
-switch <var>
-   case <n1>, <n2>, ... <n3>
-     // do something if <var> is equal to n1, n2, or n3
-   case <n4>
-     // do something if <var> is equal to n4
+<pre class="language-pascal"><code class="lang-pascal"><strong>switch &#x3C;var>
+</strong>   case &#x3C;n1>, &#x3C;n2>, ... &#x3C;n3>
+     // do something if &#x3C;var> is equal to n1, n2, or n3
+   case &#x3C;n4>
+     // do something if &#x3C;var> is equal to n4
    default
      // do something if none of the values above matched the variable
 end
-```
+</code></pre>
 
 `<var>` a global or local [variable](../data-types/variables.md). Can be an integer, float, or string variable.\
 `<n>` - a comma-separated list of values the variable is compared with. Sanny uses `==` [operator](../instructions/expressions.md) to compare values. `n` can be an integer number, float, string, also a [constant](../data-types/constants.md).
