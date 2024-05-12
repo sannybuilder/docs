@@ -27,14 +27,13 @@ Switch statement does not support any extra instructions outside of `case` or `d
 
 #### Example
 
-```pascal
-switch 0@
-   case 1, 2, 3
+<pre class="language-pascal"><code class="lang-pascal"><strong>switch 0@
+</strong>   case 1, 2, 3
      0ace: "Value is 1, 2, or 3"
    case 5
      0ace: "Value is 5"
    default
      0ace: "Value is not 1, 2, 3, or 5"
 end
-```
+</code></pre>
 

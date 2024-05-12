@@ -195,7 +195,7 @@
   * [0101: Variable is not a class instance](troubleshooting/errors/0101.md)
   * [0102: Switch statement needs a variable](troubleshooting/errors/0102.md)
   * [0103: Expected a switch case](troubleshooting/errors/0103.md)
-  * [0104: Expected a constant for the switch case](troubleshooting/errors/0104.md)
+  * [0104: Expected a value for the switch case](troubleshooting/errors/0104.md)
   * [0105](troubleshooting/errors/0105.md)
   * [0106](troubleshooting/errors/0106.md)
   * [0107](troubleshooting/errors/0107.md)
