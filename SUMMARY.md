@@ -199,7 +199,7 @@
   * [0105: Expected a function argument name](troubleshooting/errors/0105.md)
   * [0106: Expected a function argument type](troubleshooting/errors/0106.md)
   * [0108: Unsupported argument type](troubleshooting/errors/0108.md)
-  * [0109](troubleshooting/errors/0109.md)
+  * [0109: Expected variables to store function result](troubleshooting/errors/0109.md)
   * [0110](troubleshooting/errors/0110.md)
   * [0111](troubleshooting/errors/0111.md)
   * [0112](troubleshooting/errors/0112.md)
