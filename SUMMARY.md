@@ -201,7 +201,7 @@
   * [0108: Unsupported argument type](troubleshooting/errors/0108.md)
   * [0109: Expected variables to store function result](troubleshooting/errors/0109.md)
   * [0110: Function must return N values](troubleshooting/errors/0110.md)
-  * [0111](troubleshooting/errors/0111.md)
+  * [0111: Function not found in current scope](troubleshooting/errors/0111.md)
   * [0112](troubleshooting/errors/0112.md)
   * [0115](troubleshooting/errors/0115.md)
   * [0116](troubleshooting/errors/0116.md)
