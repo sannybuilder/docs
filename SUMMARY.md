@@ -198,6 +198,7 @@
   * [0104: Expected a value for the switch case](troubleshooting/errors/0104.md)
   * [0105: Expected a function argument name](troubleshooting/errors/0105.md)
   * [0106: Expected a function argument type](troubleshooting/errors/0106.md)
+  * [0107: Expected function return type](troubleshooting/errors/0107.md)
   * [0108: Unsupported argument type](troubleshooting/errors/0108.md)
   * [0109: Expected variables to store function result](troubleshooting/errors/0109.md)
   * [0110: Function must return N values](troubleshooting/errors/0110.md)
