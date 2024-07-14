@@ -205,6 +205,6 @@
   * [0111: Function not found in current scope](troubleshooting/errors/0111.md)
   * [0113: Duplicate function declaration](troubleshooting/errors/0113.md)
   * [0115: Invalid variable name. Name is reserved by another class or function](troubleshooting/errors/0115.md)
-  * [0116](troubleshooting/errors/0116.md)
-  * [0117](troubleshooting/errors/0117.md)
+  * [0116: Invalid variable name](troubleshooting/errors/0116.md)
+  * [0117: Invalid function name](troubleshooting/errors/0117.md)
   * [0118](troubleshooting/errors/0118.md)
