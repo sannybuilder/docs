@@ -207,4 +207,4 @@
   * [0115: Invalid variable name. Name is reserved by another class or function](troubleshooting/errors/0115.md)
   * [0116: Invalid variable name](troubleshooting/errors/0116.md)
   * [0117: Invalid function name](troubleshooting/errors/0117.md)
-  * [0118](troubleshooting/errors/0118.md)
+  * [0118: Unexpected value to return](troubleshooting/errors/0118.md)
