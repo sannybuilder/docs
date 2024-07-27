@@ -23,6 +23,7 @@
   * [Loops](language/control-flow/loops.md)
   * [Switch](language/control-flow/switch.md)
 * [Functions](language/functions.md)
+* [Import/Export](language/import-export.md)
 * [Directives](language/directives.md)
 * [Comments](language/comments.md)
 
