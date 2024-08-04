@@ -1,5 +1,22 @@
 # История изменений
 
+## v. 4.0.0 - 04.08.2024
+
+* [functions support](https://docs.sannybuilder.com/language/functions) (`function..end`)
+* [CLEO 5 modules](https://docs.sannybuilder.com/language/import-export) support
+* [new SBL edit modes](edit-modes/#available-modes)
+* [debugger](https://docs.sannybuilder.com/editor/scm-debugger) for main.scm scripts
+* [`switch..end`](https://docs.sannybuilder.com/language/control-flow/switch)
+* binary number format (`0b101010`)
+* new tabs
+* other improvements and fixes
+
+See the [complete list of changes](https://github.com/sannybuilder/dev/issues/277). Visit [SannyBuilder Discord](https://sannybuilder.com/discord) for additional information and support.
+
+{% hint style="info" %}
+This release won't be possible without great feedback and testing from Sanny Builder community as well as support from my [Patreon](https://www.patreon.com/seemann).
+{% endhint %}
+
 ## v. 3.9.1 - 18.09.2023
 
 * имя массива в выражениях без опкодов  может быть константой [#250](https://github.com/sannybuilder/dev/issues/250)&#x20;
