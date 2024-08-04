@@ -1,5 +1,22 @@
 # Version History
 
+## v. 4.0.0 - 04.08.2024
+
+* [functions support](language/functions.md) (`function..end`)
+* [CLEO 5 modules](language/import-export.md) support
+* [new SBL edit modes](edit-modes/#available-modes)
+* [debugger](editor/scm-debugger.md) for main.scm scripts
+* [`switch..end`](language/control-flow/switch.md)
+* binary number format (`0b101010`)
+* new tabs
+* other improvements and fixes
+
+See the [complete list of changes](https://github.com/sannybuilder/dev/issues/277). Visit [SannyBuilder Discord](https://sannybuilder.com/discord) for additional information and support.
+
+{% hint style="info" %}
+This release won't be possible without great feedback and testing from Sanny Builder community as well as support from my [Patreon](https://www.patreon.com/seemann).
+{% endhint %}
+
 ## v. 3.9.1 - 18.09.2023
 
 * array name in expressions without opcode could be a constant [#250](https://github.com/sannybuilder/dev/issues/250)&#x20;
