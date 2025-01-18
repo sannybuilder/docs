@@ -40,6 +40,14 @@ Within the `<mode>` tag, there are both mandatory and optional attributes, as de
 
 A valid value for this attribute is a unique series of characters not used for any other mode's id.&#x20;
 
+
+
+{% hint style="info" %}
+A mode with `sbl` in the id is called an SBL mode (e.g. _GTA SA (v1.0 - SBL)_). SBL modes use JSON files defined with `<library>` element(s) as the default source of command definitions. They may also use [INI files](opcodes-list-scm.ini.md) defined with `<opcode>` element(s), which are loaded after JSON and take precedence in case of id collisions.
+
+Legacy non-SBL modes (e.g. _GTA III, GTA VC, GTA v1.0_) use only INI files as the source.
+{% endhint %}
+
 #### extends
 
 A mode can extend another mode (a parent mode) to reduce a number of duplicated properties. It is helpful for different versions of the game where most of the configuration is the same except for a few properties. By extending another mode the mode inherits all its unique properties and can override them with the new values.
@@ -96,6 +104,9 @@ Has a required attribute `type`:\
 
 path to[`classes.db`](../language/instructions/classes.md)
 
+Has an optional attribute `autoupdate`:\
+`autoupdate="no"` - exclude this file from automatic SBL update
+
 #### constants
 
 path to[`constants.txt`](../language/data-types/constants.md)
@@ -107,6 +118,9 @@ path to the mode directory
 **enums**
 
 path to [enums.txt](enums.txt.md)
+
+Has an optional attribute `autoupdate`:\
+`autoupdate="no"` - exclude this file from automatic SBL update
 
 #### ide&#x20;
 
@@ -140,6 +154,8 @@ path to[`missions.txt`](../editor/features.md#custom-mission-titles)
 
 path to a JSON file with scripting command definitions used in the target [game](./#game). Available for download in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library).
 
+A mode may have multiple `<library>` elements.
+
 #### opcodes&#x20;
 
 path to a file with [opcodes](opcodes-list-scm.ini.md). Can be used multiple times with different files. This file is optional if you have specified a **library** path (see above).
@@ -171,6 +187,9 @@ path to [`CustomVariables.ini`](../language/data-types/variables.md)
 
 path to [`opcodes.txt`](../editor/opcode-search-tool.md)
 
+Has an optional attribute `autoupdate`:\
+`autoupdate="no"` - exclude this file from automatic SBL update
+
 
 
 ### Built-in Variables
@@ -188,7 +207,7 @@ Sanny Builder offers many different modes, and their number may vary from versio
 
 <table data-header-hidden><thead><tr><th>Title</th><th width="106">Id</th><th width="165">Naming Schema </th><th width="154">Param Order</th><th>Game</th></tr></thead><tbody><tr><td>Title</td><td>Id</td><td>Naming schema </td><td>Parameters order</td><td>Game</td></tr><tr><td>GTA III</td><td>gta3</td><td>community</td><td>custom</td><td>all versions of GTA III</td></tr><tr><td>GTA VC (SBL)</td><td>vc_sbl</td><td>Rockstar</td><td>original</td><td>all versions of Vice City</td></tr><tr><td><del>GTA VC</del></td><td>vc</td><td><del>community</del></td><td><del>custom</del></td><td>all versions of Vice City;<br>deprecated in v4.0, use VC SBL instead</td></tr><tr><td>GTA SA (v1.0 - SBL)</td><td>sa_sbl</td><td>Rockstar</td><td>original</td><td>SA v1.0</td></tr><tr><td><del>GTA SA v1.0</del></td><td>sa</td><td><del>community</del></td><td><del>custom</del></td><td>SA v1.0;<br>deprecated in v4.0, use SA SBL instead</td></tr><tr><td>GTA SA v2.0</td><td>sa_v2</td><td>community</td><td>custom</td><td>SA v2.0</td></tr><tr><td><del>GTA SA (v1.0 - SCR)</del></td><td>sa_scr</td><td><del>Rockstar</del></td><td><del>original</del></td><td>SA v1.0;<br>removed in v4.0, use SA SBL instead</td></tr><tr><td>GTA LCS</td><td>lcs</td><td>Rockstar</td><td>original</td><td>all versions of Liberty City Stories</td></tr><tr><td>GTA VCS (PSP)</td><td>vcs_psp</td><td>Rockstar</td><td>original</td><td>VCS for PSP</td></tr><tr><td>GTA VCS (PS2)</td><td>vcs_ps2</td><td>Rockstar</td><td>original</td><td>VCS for PS2</td></tr><tr><td>VC Mobile</td><td>vc_mobile</td><td>community</td><td>custom</td><td>VC Android and iOS versions</td></tr><tr><td>SA Mobile</td><td>sa_mobile</td><td>community</td><td>custom</td><td>SA Android and iOS versions</td></tr></tbody></table>
 
-The naming schema defines the way of describing the opcodes. The c_ommunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g., `char` or `script`) that is consistent with the game's inner structures. &#x20;
+The naming schema defines the way of describing the opcodes. The &#x63;_&#x6F;mmunity_ schema has the names randomly guessed over the years, such as `actor` or `thread`. The _Rockstar_ schema has the original taxonomy used by the game developers (e.g., `char` or `script`) that is consistent with the game's inner structures. &#x20;
 
 The parameters order defines the way of arranging the opcode parameters. In the _custom_ order the parameter with the higher index may go earlier in the script. This is applicable to community opcode descriptions. The _original_ order has all parameters arranged from the smallest index to the largest index. This goes along with the Rockstar schema to make scripts look like they are meant to be by the developers.
 
@@ -196,7 +215,7 @@ The parameters order defines the way of arranging the opcode parameters. In the 
 
 To change the mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. As you click the mode name Sanny Builder makes all necessary adjustments and you may continue working immediately.
 
-![](../.gitbook/assets/edit\_modes.png)
+![](../.gitbook/assets/edit_modes.png)
 
 To select the mode using CLI run Sanny Builder with the `--mode` [option](../editor/cli.md#mode). To select a default mode for the game, use the `--game` [option](../editor/cli.md#game).
 
