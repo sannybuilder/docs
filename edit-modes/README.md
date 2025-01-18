@@ -43,7 +43,7 @@ A valid value for this attribute is a unique series of characters not used for a
 
 
 {% hint style="info" %}
-A mode with `sbl` in the id is called an SBL mode (e.g. _GTA SA (v1.0 - SBL)_). SBL modes use JSON files defined with `<library>` element(s) as the default source of command definitions. They may also use [INI files](opcodes-list-scm.ini.md) defined with `<opcode>` element(s), which are loaded after JSON and take precedence in case of id collisions.
+A mode with `sbl` in the id is called an SBL mode (e.g. _GTA SA (v1.0 - SBL) mode has an id sa\_sbl_). SBL modes use JSON files defined with `<library>` element(s) as the default source of command definitions. They may also use [INI files](opcodes-list-scm.ini.md) defined with `<opcode>` element(s), which are loaded after JSON and take precedence in case of id collisions.
 
 Legacy non-SBL modes (e.g. _GTA III, GTA VC, GTA v1.0_) use only INI files as the source.
 {% endhint %}
