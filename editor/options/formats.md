@@ -2,17 +2,13 @@
 
 Here you can set up source file names, labels format, letter case for string literals, etc.
 
-![](../../.gitbook/assets/options-format-en.PNG)
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## File Name Format
 
 Formats for files produced by the disassembler or the compiler.
 
-<div align="left">
-
-<img src="../../.gitbook/assets/formats-files-en.png" alt="">
-
-</div>
+<div align="left"><img src="../../.gitbook/assets/formats-files-en.png" alt=""></div>
 
 The top field contains the full path and name of a text file created during disassembling. Two fields below contain the path and the name of binary files `SCM` and `IMG` (if the [edit mode](../../edit-modes/) is `GTA SA`) created during compilation. All fields share the same syntax. They also may use special words representing parts of the source file name:
 
@@ -32,11 +28,7 @@ If the format is `$dir\$name.txt`, the output file is named `C:\MyDir\main.txt`.
 
 Formats for label names used during disassembling.
 
-<div align="left">
-
-<img src="../../.gitbook/assets/formats-labels-en.png" alt="">
-
-</div>
+<div align="left"><img src="../../.gitbook/assets/formats-labels-en.png" alt=""></div>
 
 ### Global Offset
 
@@ -58,12 +50,6 @@ If you want the offsets to be hexadecimal, select the checkbox at the bottom.
 
 These options instruct the disassembler to use custom names defined by the user in the external files.
 
-<div align="left">
-
-<img src="../../.gitbook/assets/formats-custom-names-en.png" alt="">
-
-</div>
-
 The file [`CustomLabels.ini`](../../edit-modes/customlabels.ini.md) contains the list of label names and their offsets. If the disassembler finds a match between the label offset in the source file and the offset defined in the INI file it gives this label a name associated with this offset.
 
 The file `CustomVariables.ini` contains the list of [global variables](../../language/data-types/variables.md#global-variables) addresses and their custom names. The disassembler uses this file to name global variables.
@@ -72,10 +58,6 @@ The file `CustomArrays.ini` contains names of the arrays in the following syntax
 
 ## Case Converting
 
-<div align="left">
-
-<img src="../../.gitbook/assets/formats-case-en.png" alt="">
-
-</div>
+<div align="left"><img src="../../.gitbook/assets/formats-case-en.png" alt=""></div>
 
 This option serves a dual purpose. The disassembler names [global variables](../../language/data-types/variables.md#global-variables), [labels](../../language/data-types/#labels), [arrays](../../language/data-types/arrays.md) using the selected letter case. The compiler writes [string literals](../../language/data-types/#string-literals) using the selected case too.

@@ -55,12 +55,10 @@ import <function name> from "<module path>"
 * function name should match the exported function name. Name is case insensitive.
 * module path should point to the module file relative to the current script.
 
-To import multiple functions from the same module, list them on separate lines:
+To import multiple functions from the same module, separate them with commas:
 
 ```pascal
-import <name 1> from "<module path>"
-import <name 2> from "<module path>"
-import <name 3> from "<module path>"
+import <name 1>, <name 2>, <name 3> from "<module path>"
 ```
 
 Imported functions are _opaque_, which means the compiler currently does not validate if it is called with the correct number of arguments. It is user responsibility to provide a correct number of arguments and also make sure there are enough variables to store the result, if the imported function returns any.

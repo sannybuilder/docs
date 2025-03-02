@@ -18,7 +18,7 @@ You can also provide additional arguments that will be used when launching the g
 
 Using the debug menu, you can start new game process and debug the scripts.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, if the game is already running, you can simply attach to it. If attaching did not work, check the debugger.log in Sanny Builder root directory. It is possible that the game is already being debugged or it requires elevated permissions (i.e. you need to run Sanny Builder as admin).&#x20;
 
@@ -26,7 +26,7 @@ Alternatively, if the game is already running, you can simply attach to it. If a
 
 When you compile the script Sanny displays a green dot on each compiled line. Lines that did not produce any [instruction](../language/instructions/) (e.g. directives, comments, declarations, etc.) won't have a dot.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Green dots are clickable. When you click it, Sanny sets up a new breakpoint on this line and marks it red. Clicking a red dot removes the breakpoint.
 
@@ -34,7 +34,7 @@ Green dots are clickable. When you click it, Sanny sets up a new breakpoint on t
 
 When the game encounters an instruction with a breakpoint it immediately pauses, and the debugger takes control. You can see the active line in red. From now on, you can click variable names and see their current values displayed at the bottom.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 To resume the game execution, click the `Continue` button  in the Debug menu or on the main toolbar ![](<../.gitbook/assets/image (7).png>). The game will continue as usual until it hits another breakpoint if any.
 

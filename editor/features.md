@@ -102,6 +102,14 @@ You can playback the recorded sequence by pressing `Ctrl+P`. Place the cursor in
 
 During recording, you can pause/unpause it by pressing `Ctrl+P`.
 
+## Code Formatting
+
+{% hint style="success" %}
+Available since version 4.1
+{% endhint %}
+
+Sanny Builder has a built-in code formatter to properly indent high-level constructs.  Default hotkey combo is `Ctrl+Alt+3` and can be redefined in [Options](options/hotkeys.md). Alternatively, you can press <img src="../.gitbook/assets/image (3).png" alt="" data-size="line"> icon on the toolbar to quickly format the open file.
+
 ## Replacing Mission Numbers with their Names
 
 Sanny Builder allows using a mission name in the opcode `start_mission`. The mission name is the label defined with a `DEFINE MISSION` command. Say, you have:
@@ -130,11 +138,7 @@ Sanny Builder has fully multilingual interface translated into 15 languages. You
 
 ## External Tools Menu
 
-<div data-full-width="false">
-
-<figure><img src="../.gitbook/assets/usertools.PNG" alt="" width="375"><figcaption><p>User Tools interface</p></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../.gitbook/assets/usertools.PNG" alt="" width="375"><figcaption><p>User Tools interface</p></figcaption></figure></div>
 
 You can configure up to `9` apps to run when you need them. Each app has its own hotkey for your convenience. You may also pass the parameters to your app if needed. To pass the name of the currently opened file use the special word `$SB_FileName`.
 
