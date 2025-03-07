@@ -105,7 +105,9 @@ Has a required attribute `type`:\
 path to[`classes.db`](../language/instructions/classes.md)
 
 Has an optional attribute `autoupdate`:\
-`autoupdate="no"` - exclude this file from automatic SBL update
+`autoupdate="yes"` - let autoupdate tool replace this file with the latest version from the SBL website
+
+A mode may have multiple `<classes>` elements.
 
 #### constants
 
@@ -120,7 +122,9 @@ path to the mode directory
 path to [enums.txt](enums.txt.md)
 
 Has an optional attribute `autoupdate`:\
-`autoupdate="no"` - exclude this file from automatic SBL update
+`autoupdate="yes"` - let autoupdate tool replace this file with the latest version from the SBL website
+
+A mode may have multiple `<enums>` elements.
 
 #### ide&#x20;
 
@@ -153,6 +157,9 @@ path to[`missions.txt`](../editor/features.md#custom-mission-titles)
 #### `library`
 
 path to a JSON file with scripting command definitions used in the target [game](./#game). Available for download in [Sanny Builder Library](../editor/features.md#integration-with-sanny-builder-library).
+
+Has an optional attribute `autoupdate`:\
+`autoupdate="yes"` - let autoupdate tool replace this file with the latest version from the SBL website
 
 A mode may have multiple `<library>` elements.
 
