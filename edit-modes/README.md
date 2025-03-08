@@ -197,7 +197,9 @@ optional path to [`opcodes.txt`](../editor/opcode-search-tool.md). Will be autog
 Has an optional attribute `autoupdate`:\
 `autoupdate="no"` - exclude this file from automatic SBL update
 
+#### cleo-default-extensions
 
+path to a file with the list of default extensions enabled when the compiler finds {$CLEO} or {$USE CLEO} directives. Each extension should be listed on its own line.
 
 ### Built-in Variables
 
