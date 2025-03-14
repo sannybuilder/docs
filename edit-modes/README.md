@@ -222,12 +222,16 @@ The parameters order defines the way of arranging the opcode parameters. In the 
 
 ### Experimental Modes
 
-Experimental modes provide early access to new features, but not ready for production use and are subject to change without notice. Modes can be updated and backward compatibility with existing scripts is not guaranteed.
+Experimental modes provide early access to new features, but not ready for production use and are subject to change without notice.&#x20;
+
+{% hint style="warning" %}
+Experimental modes can be updated and backward compatibility with existing scripts is not guaranteed.
+{% endhint %}
 
 Version 4.1 includes two experimental modes:
 
 * **GTA SA v1.0 - Somersault**. This mode provides access to new script compiler toolchain called 'Somersault'. You can learn more about it at [https://next.sannybuilder.com](https://next.sannybuilder.com/). This compiler is in early stage of development.
-* **GTA SA v1.0 - SAMPFUNCS**. This mode provides easy way to write scripts using SAMPFUNCS extensions. Currently this extension is undergoing documentation in Sanny Builder Library and some naming conventions are not finalized yet.
+* **GTA SA v1.0 - SAMPFUNCS**. This mode provides easy way to write scripts using SAMPFUNCS extensions. Currently this extension is undergoing documenting in Sanny Builder Library and some naming conventions are not finalized yet.
 
 ## Selecting a mode
 
