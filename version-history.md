@@ -1,5 +1,18 @@
 # Version History
 
+## v. 4.1.0 - March 15, 2024
+
+* edit mode enhancements, including a new feature to customize edit mode list
+* two new experimental modes for GTA San Andreas: one with [Somersault compiler](https://next.sannybuilder.com/) and one with support for SAMPFUNCS extension
+* autocomplete (`Ctrl+Space`) improvements
+* code formatter (`Ctrl+Alt+3`)
+* main menu updates with new icons
+* new theme Night Blue by Vital
+* updated Turkish translation by Bloodriver the Conqueror
+* bug fixes
+
+See the [complete list of changes](https://github.com/sannybuilder/dev/issues/355). Visit [SannyBuilder Discord](https://sannybuilder.com/discord) for additional information and support.
+
 ## v. 4.0.0 - 04.08.2024
 
 * [functions support](language/functions.md) (`function..end`)
@@ -32,7 +45,7 @@ This release won't be possible without great feedback and testing from Sanny Bui
 * [HEX..END](language/instructions/hex..end.md#byte-repetition) improvements (repeat the same byte N times, include binary files)
 * simplified [const](language/data-types/constants.md#syntax) and [variable](language/data-types/variables.md#declaring-a-variable-type) declarations (`const x = 1, y = 2`, `float x, y, z`)
 * new [operators](language/instructions/expressions.md#bitwise) (`bitwise`, `=@`, `=#`)
-* `{$INCLUDE_ONCE}` [directive](language/directives.md#usdinclude\_once)
+* `{$INCLUDE_ONCE}` [directive](language/directives.md#usdinclude_once)
 * adding new [edit modes](edit-modes/) can be done by copying them into the `data` folder, the `modes.xml` is gone
 * bug fixes and other changes
 
@@ -95,7 +108,7 @@ Previous versions allowed the compilation of some broken code. Now, it will prod
 * [integration with Sanny Builder Library](editor/features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
 * 16 [new color themes](https://github.com/sannybuilder/themes)
 * disassembler now outputs the content of a `hex..end` block as a string if it's a sequence of ASCII characters ending with 00 [#33](https://github.com/sannybuilder/dev/issues/33)
-* [new debug option](editor/console.md#skip\_extra\_info) to let disassembler ignore custom information attached to the compiled script
+* [new debug option](editor/console.md#skip_extra_info) to let disassembler ignore custom information attached to the compiled script
 * [new CLI parameter](editor/cli.md#option) to launch the editor with custom options
 * [custom user templates](edit-modes/code-templates.md#adding-a-new-template) are now stored in a separate file and kept between updates
 * [hotkeys](editor/hotkeys.md) using Numpad buttons have been changed (Zoom text: Ctrl + +/- and Navigate to label and back: Alt + Right/Left)
@@ -196,7 +209,7 @@ Read more on constants highlighting there: [Language service](editor/language-se
 New opcode definitions for GTA LCS and GTA VCS are incompatible with the previous definitions. You must disassemble the `main.scm` prior to making any scripts for those games.
 {% endhint %}
 
-:clap: Kudos to [marcelo\_20xx](https://gtaforums.com/profile/95582-marcelo\_20xx/) and [fastman92](https://gtaforums.com/profile/423631-fastman92/) for their awesome contribution to this release.
+:clap: Kudos to [marcelo\_20xx](https://gtaforums.com/profile/95582-marcelo_20xx/) and [fastman92](https://gtaforums.com/profile/423631-fastman92/) for their awesome contribution to this release.
 
 ## v. 3.4.1 - 06.08.2020
 
@@ -413,7 +426,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * new [directives](language/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
 * [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
 * [custom arrays](editor/options/formats.md#custom-names) support
-* a [possibility](editor/console.md#skip\_scm\_header) to decompile SCM files having no header
+* a [possibility](editor/console.md#skip_scm_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
 * a possibility to use a floating-point value as the counter value in a [FOR..END](language/control-flow/loops.md#for-end) loop
