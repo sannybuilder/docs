@@ -532,7 +532,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * new comment style: `//`
 * the editor now remembers the position of markers and the cursor in closed files
 
-## v. 2.6 - Nov 15, 2005
+## v. 2.6 - Nov 5, 2005
 
 * full support of `SCM` formats of Vice City and GTA 3
 * an opportunity to [declare](language/instructions/classes.md#declaring-a-class-instance) variables and arrays as class instances
