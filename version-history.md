@@ -1,6 +1,6 @@
 # Version History
 
-## v. 4.1.0 - March 15, 2024
+## v. 4.1.0 - Mar 15, 2024
 
 * edit mode enhancements, including a new feature to customize edit mode list
 * two new experimental modes for GTA San Andreas: one with [Somersault compiler](https://next.sannybuilder.com/) and one with support for SAMPFUNCS extension
@@ -13,7 +13,7 @@
 
 See the [complete list of changes](https://github.com/sannybuilder/dev/issues/355). Visit [SannyBuilder Discord](https://sannybuilder.com/discord) for additional information and support.
 
-## v. 4.0.0 - 04.08.2024
+## v. 4.0.0 - Aug 4, 2024
 
 * [functions support](language/functions.md) (`function..end`)
 * [CLEO 5 modules](language/import-export.md) support
@@ -30,7 +30,7 @@ See the [complete list of changes](https://github.com/sannybuilder/dev/issues/27
 This release won't be possible without great feedback and testing from Sanny Builder community as well as support from my [Patreon](https://www.patreon.com/seemann).
 {% endhint %}
 
-## v. 3.9.1 - 18.09.2023
+## v. 3.9.1 - Sep 18, 2023
 
 * array name in expressions without opcode could be a constant [#250](https://github.com/sannybuilder/dev/issues/250)&#x20;
 * preserve global variable index when disassembling with extra info [#251](https://github.com/sannybuilder/dev/issues/251)&#x20;
@@ -39,7 +39,7 @@ This release won't be possible without great feedback and testing from Sanny Bui
 * fix an issue when Sanny doesn't present the option to use the included script text. [#258](https://github.com/sannybuilder/dev/issues/258)&#x20;
 * fixed some issues with string variables [#259](https://github.com/sannybuilder/dev/issues/259), [#265](https://github.com/sannybuilder/dev/issues/265)
 
-## v. 3.9.0 - 09.09.2023
+## v. 3.9.0 - Sep 9, 2023
 
 * command names defined in [Sanny Builder Library](https://library.sannybuilder.com) JSON files are now valid [keywords](language/instructions/keywords.md)
 * [HEX..END](language/instructions/hex..end.md#byte-repetition) improvements (repeat the same byte N times, include binary files)
@@ -57,28 +57,28 @@ Previous versions allowed the compilation of some broken code. Now, it will prod
 
 [Complete list of changes](https://github.com/sannybuilder/dev/issues/231)
 
-## v. 3.8.5 - 22.02.2023
+## v. 3.8.5 - Feb 22, 2023
 
 * fix bug [#216](https://github.com/sannybuilder/dev/issues/216)
 
-## v. 3.8.4 - 17.02.2023
+## v. 3.8.4 - Feb 17, 2023
 
 * keep previously opened documents when launching SB with an input file (Open with) [#151](https://github.com/sannybuilder/dev/issues/151)
 * add "--decompile" parameter to [CLI](editor/cli.md#decompile)
 * fix bugs [#212](https://github.com/sannybuilder/dev/issues/212), [#213](https://github.com/sannybuilder/dev/issues/213), [#180](https://github.com/sannybuilder/dev/issues/180)
 * fix some compilation issues with classes using string literals
 
-## v. 3.8.3 - 08.01.2023
+## v. 3.8.3 - Jan 8, 2023
 
 * fix bugs [#210](https://github.com/sannybuilder/dev/issues/210), [#204](https://github.com/sannybuilder/dev/issues/204), [#168](https://github.com/sannybuilder/dev/issues/168)
 * fix [a bug](https://github.com/sannybuilder/GetObjectID/issues/1) in model search
 * update CLEO+ plugin to [1.1.3](https://github.com/JuniorDjjr/CLEOPlus/releases/tag/v1.1.3)
 
-## v. 3.8.2 - 08.09.2022
+## v. 3.8.2 - Sep 8, 2022
 
 * fix bugs [#200](https://github.com/sannybuilder/dev/issues/200), [#187](https://github.com/sannybuilder/dev/issues/187)
 
-## v. 3.8.1 - 01.09.2022
+## v. 3.8.1 - Sep 1, 2022
 
 * added support for more commands terminating an if statement with multiple conditions [#133](https://github.com/sannybuilder/dev/issues/133)
 
@@ -103,7 +103,7 @@ Previous versions allowed the compilation of some broken code. Now, it will prod
 
 [Complete list of changes](https://github.com/sannybuilder/dev/issues/182)
 
-## v. 3.8.0 - 04.08.2021
+## v. 3.8.0 - Aug 4, 2021
 
 * [integration with Sanny Builder Library](editor/features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
 * 16 [new color themes](https://github.com/sannybuilder/themes)
@@ -120,7 +120,7 @@ Previous versions allowed the compilation of some broken code. Now, it will prod
 
 [Complete list of changes](https://github.com/sannybuilder/dev/issues/130)
 
-## v. 3.7.0 - 30.01.2021
+## v. 3.7.0 - Jan 30, 2021
 
 * declared [constants](language/data-types/constants.md) are getting highlighted ([#28](https://github.com/sannybuilder/dev/issues/28))
 * the autocomplete list displays declared constants ([#40](https://github.com/sannybuilder/dev/issues/40))
@@ -140,11 +140,11 @@ Read more on constants highlighting there: [Language service](editor/language-se
 
 :clap: Kudos to [XMDS](https://github.com/XMDS) for contributions to this release.
 
-## v. 3.6.2 - 29.11.2020
+## v. 3.6.2 - Nov 29, 2020
 
 * fixed a bug with labels missing in disassembled CLEO scripts [#99](https://github.com/sannybuilder/dev/issues/99)
 
-## v. 3.6.1 - 27.11.2020
+## v. 3.6.1 - Nov 27, 2020
 
 * updated translation to Ukrainian language
 * updated CLEO+ plugin to v1.0.4
@@ -154,7 +154,7 @@ Read more on constants highlighting there: [Language service](editor/language-se
 
 :clap: Kudos to [wmysterio](https://github.com/wmysterio/) and [XMDS](https://github.com/XMDS) for their contributions.
 
-## v. 3.6.0 - 11.11.2020
+## v. 3.6.0 - Nov 11, 2020
 
 * support for [enumerated types](language/instructions/classes.md#class-constants) in classes
 * new [types](edit-modes/opcodes-list-scm.ini.md#parameter-types) of opcode parameters: [`m%`](https://github.com/sannybuilder/dev/issues/10) and [`k%`](https://github.com/sannybuilder/dev/issues/21)
@@ -179,14 +179,14 @@ Read more on constants highlighting there: [Language service](editor/language-se
 
 :clap: Kudos to [MatiDragon](https://github.com/MatiDragon-YT) and [Wesser](https://gtaforums.com/profile/172776-wesser/) for updated translations.
 
-## v. 3.5.1 - 21.08.2020
+## v. 3.5.1 - Aug 21, 2020
 
 * fixed a bug with LCS and VCS compilation ([#56](https://github.com/sannybuilder/dev/issues/56))
 * arrays in LCS and VCS now get custom names from `CustomVariables.ini` and `CustomArrays.ini` ([#53](https://github.com/sannybuilder/dev/issues/53))
 
 :clap: Kudos to [darkdraggy](https://gtaforums.com/profile/1097463-darkdraggy/) for reporting the first bug and helping to test the fix.
 
-## v. 3.5.0 - 18.08.2020
+## v. 3.5.0 - Aug 18, 2020
 
 * updated [command line interface](editor/cli.md)
   * Unix-style syntax with hyphens ([#42](https://github.com/sannybuilder/dev/issues/42))
@@ -211,12 +211,12 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 
 :clap: Kudos to [marcelo\_20xx](https://gtaforums.com/profile/95582-marcelo_20xx/) and [fastman92](https://gtaforums.com/profile/423631-fastman92/) for their awesome contribution to this release.
 
-## v. 3.4.1 - 06.08.2020
+## v. 3.4.1 - Aug 6, 2020
 
 * fixed incorrect number of parameters in opcode `04E3` in `VCSSCM.INI`
 * fixed the issue with the disassembler ignoring `Write opcodes` [option](editor/options/general.md#write-opcodes) and producing a callable label when a regular label is expected
 
-## v. 3.4.0 - 04.08.2020
+## v. 3.4.0 - Aug 4, 2020
 
 * added compiler support for the `SCM` format of GTA: Vice City Stories ([#2](https://github.com/sannybuilder/dev/issues/2))
 * added syntax for [declaring](language/data-types/variables.md#shorter-form-of-declaration) local variables with custom names ([#32](https://github.com/sannybuilder/dev/issues/32))
@@ -239,51 +239,51 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 
 :clap: Kudos to [OrionSR](https://gtaforums.com/profile/213525-orionsr/), [ZAZ](https://gtaforums.com/profile/67506-zaz/), [XMDS](https://gtaforums.com/profile/1034872-xmds), and [Wesser](https://gtaforums.com/profile/172776-wesser/) for their awesome contribution to this release.
 
-## v. 3.3.3 - 20.10.2019
+## v. 3.3.3 - Oct 20, 2019
 
 * fixed a [bug](http://bugs.sannybuilder.com/view.php?id=52) causing incorrect external scripts compilation
 
-## v. 3.3.2 - 19.10.2019
+## v. 3.3.2 - Oct 19, 2019
 
 * fixed bugs [#0036](http://bugs.sannybuilder.com/view.php?id=36), [#0050](http://bugs.sannybuilder.com/view.php?id=50)
 * fixed the opcode `059C` in the Vice City mode
 
-## v. 3.3.1 - 14.09.2019
+## v. 3.3.1 - Sep 14, 2019
 
 * fixed the bug [#0048](http://bugs.sannybuilder.com/view.php?id=48)
 * included `constants.txt` missing in the `GTA SA` mode
 
-## v. 3.3.0 - 08.09.2019
+## v. 3.3.0 - Sep 8, 2019
 
 * added compiler support for the Liberty City Stories `SCM` format
 * added aliases for the [timer variables](language/data-types/variables.md#timer-variables): `TIMERA` and `TIMERB`
 * changed the [Ranges check](editor/options/general.md#ranges-check) option to apply to the global variables
 
-## v. 3.2.4 - 04.08.2019
+## v. 3.2.4 - Aug 4, 2019
 
 * fixed bugs [#0031](http://bugs.sannybuilder.com/view.php?id=31), [#0032](http://bugs.sannybuilder.com/view.php?id=32), [#0033](http://bugs.sannybuilder.com/view.php?id=33), [#0040](http://bugs.sannybuilder.com/view.php?id=40), [#0044](http://bugs.sannybuilder.com/view.php?id=44)
 * fixed a regression defect when a CHM help file can not be open
 * updated opcode definitions for GTA 3 and Vice City
 * added IDE support for CLEO 2.0 for III and VC
 
-## v. 3.2.3 - 07.07.2019
+## v. 3.2.3 - Jul 7, 2019
 
 * improved support for the version of GTA San Andreas for Wi﻿nStore, Xbox 360, and P﻿S3
 * fixed an issue with opcodes `09A4` and `0A18` not being properly decompiled in the SA\_Mobile mode
 
-## v. 3.2.2 - 05.07.2014
+## v. 3.2.2 - Jul 5, 2014
 
 * added translation into Korean language (thanks to MINE)
 * improved [HEX..END](language/instructions/hex..end.md) construct processing
 * fixed the bug [#0000028](http://bugs.sannybuilder.com/view.php?id=28)
 
-## v. 3.2.1 - 04.05.2014
+## v. 3.2.1 - May 4, 2014
 
 * added translation into Indonesian language (thanks to IMasterFX)
 * CLEO for GTA III and CLEO for Vice City updated (thanks to Silent)
 * fixed bugs [#0000026](http://bugs.sannybuilder.com/view.php?id=26), [#0000027](http://bugs.sannybuilder.com/view.php?id=27)
 
-## v. 3.2.0 - 22.03.2014
+## v. 3.2.0 - Mar 22, 2014
 
 * adding custom edit modes by editing the `games.xml` file is now possible
 * new edit mode - `GTA SA SCR`
@@ -297,31 +297,31 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 * changed the Sanny Builder icon and the menu icons
 * fixed the bug [#0000024](http://bugs.sannybuilder.com/view.php?id=24)
 
-## v. 3.1.4 - 22.02.2014
+## v. 3.1.4 -Feb 22, 2014
 
 * CLEO updated to the version 4.3.14
 * fixed minor interface glitches for hi-res displays
 * updated German, Polish, Chinese, Ukrainian translations
 
-## v. 3.1.3 - 22.12.2013
+## v. 3.1.3 - Dec 22, 2013
 
 * added support for iOS and Android versions of GTA San Andreas
 * a [code scan](editor/options/editor.md#code-scan-distance) value is now used when making a list of constants
 * updated Chinese and German translations
 
-## v. 3.1.2 - 06.10.2013
+## v. 3.1.2 - Oct 6, 2013
 
 * added Czech translation
 * added options to associate file extensions `.cs` and `.cm` with Sanny Builder
 * fixed bugs [#0000011](http://bugs.sannybuilder.com/view.php?id=11), [#0000020](http://bugs.sannybuilder.com/view.php?id=20)
 
-## v. 3.1.1 - 22.09.2013
+## v. 3.1.1 - Sep 22, 2013
 
 * added a new directive [$OPCODE](language/directives.md#usdopcode) to register a new opcode in the script
 * corrected behavior of the directive [$INCLUDE](language/directives.md#usdinclude) while scanning directories for the file
 * fixed bugs [#0000005](http://bugs.sannybuilder.com/view.php?id=5), [#0000019](http://bugs.sannybuilder.com/view.php?id=19)
 
-## v. 3.1.0 - 14.09.2013
+## v. 3.1.0 - Sep 14, 2013
 
 * `VCSCM.ini` is updated to include opcodes for the GTA VC mobile version and unsupported opcodes
 * when the option [Add extra info to SCM](editor/options/general.md#add-extra-info-to-scm) is enabled, Sanny Builder remembers the game a script is compiled for, to use the proper edit mode when decompiling
@@ -335,7 +335,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 * The Sanny Builder installation now includes the [SCRLog CLEO plugin](http://www.gtagarage.com/mods/show.php?id=23846) by LINK/2012 (can be found in the `tools` folder)
 * fixed bugs [#0000010](http://bugs.sannybuilder.com/view.php?id=10), [#0000014](http://bugs.sannybuilder.com/view.php?id=14), [#0000015](http://bugs.sannybuilder.com/view.php?id=15), [#0000016](http://bugs.sannybuilder.com/view.php?id=16)
 
-## v. 3.09 - 28.07.2013
+## v. 3.09 - Jul 28, 2013
 
 * Sanny Builder is licensed under the Sanny Builder Freeware/Donationware License Agreement
 * added a feature to report found bugs via [the official bug tracker](http://bugs.sannybuilder.com)
@@ -345,7 +345,7 @@ New opcode definitions for GTA LCS and GTA VCS are incompatible with the previou
 * fixed bugs [#0000002](http://bugs.sannybuilder.com/view.php?id=2), [#0000003](http://bugs.sannybuilder.com/view.php?id=3), [#0000004](http://bugs.sannybuilder.com/view.php?id=4), [#0000006](http://bugs.sannybuilder.com/view.php?id=6), [#0000009](http://bugs.sannybuilder.com/view.php?id=9)
 * minor design changes
 
-## v. 3.08 - 05.07.2013
+## v. 3.08 - Jul 5, 2013
 
 * added [Silent's ASI Loader](http://www.gtagarage.com/mods/show.php?id=21709) v1.1 as a default ASI loader for CLEO 3 and CLEO 4
 * added Chinese translation
@@ -371,7 +371,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * added flag icons for the available languages in the options
 * fixed some issues with disassembling of the VCS SCM format
 
-## v. 3.06 - 17.06.2013
+## v. 3.06 - Jun 17, 2013
 
 * added new [operators ](language/instructions/built-in-commands.md)`++` and `--`
 * added support for block [comments](editor/features.md#commenting-code) `/* */`
@@ -383,7 +383,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * fixed a bug when the compiler failed to compile a source with multiple [HEX..END](language/instructions/hex..end.md) constructs
 * fixed a bug of version 3.05 when the program hung on startup trying to open a file
 
-## v. 3.05 - 05.06.2013
+## v. 3.05 - Jun 5, 2013
 
 * added new translations for the following languages: Finnish, Polish, Hungarian, Turkish, Ukrainian
 * the CLEO library updated to version 4.1.1.30f (CLEO 4 by Alien)
@@ -391,7 +391,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * opcode files (\*\*SCM.ini, opcodes.txt) replaced with the ones from the CLEO 4 library installation
 * new [command line parameter](./#command-line-usage) `\nosplash`
 
-## v. 3.04 - 17.08.2008
+## v. 3.04 - Aug 17, 2008
 
 * the editor is able to to convert hexadecimal numbers to decimal ones and vice versa (`Ctrl+H`), and convert the model names to their IDs (`Ctrl+Alt+H`)
 * removed a warning message about `script.img` being used by the game when compiling a CLEO script
@@ -399,12 +399,12 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * fixed a bug when compiling an array with constant numeric indexes
 * the installer no longer requires the system administrator rights
 
-## v. 3.03 - 17.11.2007
+## v. 3.03 - Nov 17, 2007
 
 * the previous version of CLEO had a bug
 * minor changes (the toolbar position wasn't saved)
 
-## v. 3.02 - 16.11.2007
+## v. 3.02 - Nov 16, 2007
 
 * new version of the CLEO library
 * main toolbar is movable
@@ -414,11 +414,11 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
     is created in the same directory; after `F7` the output file is created in the CLEO directory (similarly to `SCM` files)
 * new translations: Italian, Portuguese
 
-## v. 3.01- 06.08.2007
+## v. 3.01- Aug 6, 2007
 
 * bug-fixes update
 
-## v. 3.00 - 04.08.2007
+## v. 3.00 - Aug 4, 2007
 
 * the CLEO 3 library is integrated into Sanny Builder
 * disassembler supports the `SCM` format of Vice City Stories
@@ -437,18 +437,18 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * a new key combo `Ctrl+Enter`
 * updated `SASCM.INI`
 
-## v. 2.99e - 01.01.2007
+## v. 2.99e - Jan 1, 2007
 
 * fixed a bug when parts of the code within the [HEX..END](language/instructions/hex..end.md) construct disappeared in [debug mode](editor/console.md#debug-options)
 * a HEX..END construct now accepts the [aDMA](language/instructions/hex..end.md#using-adma-numbers) type and string literals
 * a [FOR ](language/control-flow/loops.md#for-end)loop accepts model identifiers as the counter values
 
-## v. 2.99d - 03.12.2006
+## v. 2.99d - Dec 3, 2006
 
 * Memory Hacker became a [separate tool](https://sannybuilder.com/downloads).
 * fixed a decompiler bug
 
-## v. 2.99c - 30.11.2006
+## v. 2.99c - Nov 30, 2006
 
 * added the Memory Hacker plug-in
 * disassembler supports the `SCM` format of Liberty City Stories
@@ -462,7 +462,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 If you get a compiler error message like `Unknown directive xxxx` when compiling the sources from v2.99, replace the line `{$VERSION xxxx}` to any place after the header, for instance before the comment `//-------------MAIN---------------`
 {% endhint %}
 
-## v. 2.99 - 27.09.2006
+## v. 2.99 - Sep 27, 2006
 
 * added new commands `WriteMem` and `ReadMem`
 * support for [hexadecimal](language/data-types/#hexadecimal-numbers) numbers
@@ -491,7 +491,7 @@ The following opcodes were changed in `SASCM.INI`: `0181`, `00c3`, `00c4` in ord
 The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opcode) in the `classes.db` for SA. If you get an error message about this method during compilation, rename it to`Actor.DrivingPlane`. We apologize.
 {% endhint %}
 
-## v. 2.98 - 04.08.2006
+## v. 2.98 - Aug 4, 2006
 
 * Sanny Builder became multilingual
 * added menu for [external applications](editor/features.md#external-tools-plug-ins-menu)
@@ -502,26 +502,26 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * the list of models can be sorted alphabetically/by value (`Alt+S` when the list is active)
 * minor corrections and changes
 
-## v. 2.97 - 11.06.2006
+## v. 2.97 - Jun 11, 2006
 
 * new data type: `&` for direct byte address ([ADMA](language/data-types/)).
 * minor updates
 
-## v. 2.96 - 01.04.2006
+## v. 2.96 - Apr 1, 2006
 
 * improved the [jump to label](editor/features.md#instasearch) option
 * added an opportunity to show the list of templates
 * added an [option](editor/options/general.md#replace-mission-numbers) to replace mission numbers with their names
 * fixed some bugs
 
-## v. 2.9f - 18.02.2006
+## v. 2.9f - Feb 18, 2006
 
 * the `DEFINE OBJECT` list is now optional (the compiler can make it out of model names used in the script)
 * support for block comments `{}`
 * keypress [recording](editor/features.md#keypress-recording-macro)
 * minor changes
 
-## v. 2.9 - 15.12.2005
+## v. 2.9 - Dec 15, 2005
 
 * added [additional commands](language/instructions/built-in-commands.md)
 * new operator `IN`
@@ -532,7 +532,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * new comment style: `//`
 * the editor now remembers the position of markers and the cursor in closed files
 
-## v. 2.6 - 05.11.2005
+## v. 2.6 - Nov 15, 2005
 
 * full support of `SCM` formats of Vice City and GTA 3
 * an opportunity to [declare](language/instructions/classes.md#declaring-a-class-instance) variables and arrays as class instances
@@ -546,7 +546,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
   * added `handle` type for [arrays](language/data-types/arrays.md)
   * an [opportunity](editor/options/general.md#show-warning) to switch off a warning that the `script.img` file is being used by the game
 
-## v. 2.5 - 10.10.2005
+## v. 2.5 - Oct 10, 2005
 
 * added [properties](language/instructions/classes.md#properties) support
 * added [code templates](editor/features.md#code-templates) support
@@ -558,7 +558,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * added models list showing
 * minor changes and fixes
 
-## v. 2.0 - 18.09.2005
+## v. 2.0 - Sep 18, 2005
 
 * added [classes](language/instructions/classes.md) support
 * added [keywords](language/instructions/keywords.md) support
@@ -568,12 +568,12 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * added [keywords](language/instructions/keywords.md) `True` and `False` which correspond to `1` and `0`
 * added construction [HEX...END](language/instructions/hex..end.md) for writing hexadecimal values directly in a binary output
 
-## v. 1.1 - 07.09.2005
+## v. 1.1 - Sep 7, 2005
 
 * added [coords manager](editor/features.md#player-coordinates-management)
 * some bugs fixed
 
-## v. 1.0 - 04.09.2005
+## v. 1.0 - Sep 4, 2005
 
 * new format of [labels](language/data-types/#labels)
 * added [converter](editor/features.md#sa-mission-builder-source-code-converter) from the BW's SA Mission Builder syntax
@@ -581,7 +581,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * added new options
 * fixed some bugs
 
-## v. 0.8 - 20.08.2005
+## v. 0.8 - Aug 20, 2005
 
 * added an ability to [associate](editor/options/general.md#file-association) `SCM` files with Sanny Builder
 * disassembler adds an additional index to the file name if a file with the same name already exists (e.g, if `main.scm.txt` already exists, a new file will be `main.scm[0].txt`)
@@ -589,13 +589,13 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * added a check for duplicated labels
 * fixed some bugs
 
-## v. 0.7 - 10.08.2005
+## v. 0.7 - Aug 10, 2005
 
 * added new options for text editing
 * added an ability to work with multiple files simultaneously
 * added a function to auto-complete an opcode with the `F1` button (beta)
 
-## v. 0.6 - 04.08.2005
+## v. 0.6 - Aug 4, 2005
 
 * disassembling support for GTA SA `SCM` format
 * compilation of text sources into `main.scm` and `script.img`
