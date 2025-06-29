@@ -1,5 +1,9 @@
 # Opcode Search Tool
 
+{% hint style="success" %}
+See Sanny Builder Library for more advanced and complete database on available commands in each supported game: [https://library.sannybuilder.com](https://library.sannybuilder.com/)
+{% endhint %}
+
 You can call this tool by pressing `Ctrl+Alt+2` or by selecting the menu item: `Tools->IDE Tools->Opcode Search`.
 
 ![](../.gitbook/assets/ost.PNG)
@@ -73,7 +77,7 @@ A single dash can be used before identifiers or `$` and `@` characters, but not 
 
 Finds opcodes with the number `-10` and without `@`, `car` and `-1`
 
-### Search in conditional opcodes 
+### Search in conditional opcodes&#x20;
 
 `^` - shows only conditional opcodes \
 `^word` - finds `word` in the conditional opcodes:
