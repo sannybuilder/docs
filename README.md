@@ -12,11 +12,22 @@ Make sure to check out a beginner-friendly introduction to scripting with Sanny 
 
 ## **Installation and Updates**
 
-Run the installer and follow its instructions. During installation you could optionally select the game directory you plan to work with, associate files with the `.scm` extension with Sanny Builder and install the [CLEO library](https://cleo.li).  You can always update these settings in the [program options](editor/options/).
+Sanny Builder 4 is distributed in a standalone archive. Unzip it anywhere and run `sanny.exe` to get started.&#x20;
 
-To uninstall the program, run the file `unins000.exe` located in its root folder.
+{% hint style="info" %}
+Older versions of Sanny Builder were distributed with the automatic installer (`SannyBuilder.exe`). They can be found at [https://public.sannybuilder.com/archive/](https://public.sannybuilder.com/archive/)
+{% endhint %}
 
-Latest versions and updates are always available on [sannybuilder.com](https://sannybuilder.com/)
+After start, make yourself familiar with the [edit mode selector](edit-modes/#selecting-a-mode) at the bottom right corner of the tool window - it allows you to select one of many modes supported by Sanny Builder. SA edit mode is selected by default.
+
+Each mode works with specific game directory to read and write files. When selecting a new mode, set a [path to the game directory](editor/options/general.md#game-directory) in the options.&#x20;
+
+{% hint style="info" %}
+There can be multiple edit modes for the same game. For example, **GTA III**, **GTA VC**, and **GTA SA** each have at least two modes: one with the **(SBL)** suffix and one without.\
+**SBL** modes have consistent syntax, offer better support, and receive automatic updates. They are recommended for new projects. The other modes are kept for legacy support but will eventually be removed from the tool.
+{% endhint %}
+
+Sanny Builder can automatically find and [install updates](editor/features.md#automatic-updates). Latest versions are always available on [sannybuilder.com](https://sannybuilder.com/)
 
 ## Contacts
 
