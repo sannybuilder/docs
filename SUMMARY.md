@@ -35,6 +35,7 @@
   * [Enums.txt](edit-modes/enums.txt.md)
   * [Extensions](edit-modes/extensions.md)
   * [Opcodes List (SCM.INI)](edit-modes/opcodes-list-scm.ini.md)
+  * [Migration to new SBL modes in SB4](edit-modes/migration-to-new-sbl-modes-in-sb4.md)
 
 ## Editor
 
