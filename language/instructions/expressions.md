@@ -110,7 +110,7 @@ f++ // f += 1.0
 
 Variables can be decremented by one using postfix `--` operator:
 
-```
+```cpp
 int x = 0
 x-- // x -= 1
 float f = 0
