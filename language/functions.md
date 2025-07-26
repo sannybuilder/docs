@@ -37,7 +37,7 @@ end
 
 ### Signature
 
-A function's signature defines what types of input arguments the function receives and what type of value it returns. Function arguments may be of a primitive type `int`, `float, string`, or a class, e.g. `Car` or `Pickup`.
+A function's signature defines what types of input arguments the function receives and what type of value it returns. Function arguments may be of a primitive type `int`, `float, string`, or a class, e.g. `Car` or `Pickup`. Since v4.2 they can also be an array.
 
 {% hint style="warning" %}
 String arguments are only supported in CLEO 5. They are always passed as pointers.
@@ -60,6 +60,62 @@ If the function returns something, its type has to be defined after the list of 
 ```pascal
 function foo: float
 function bar(i: int): int
+```
+
+### Array Arguments
+
+Since v4.2. function arguments can be arrays. To define an array argument, use the following syntax:
+
+```
+function move(pos: float[3])
+```
+
+Here `pos` is an array with 3 elements of type `float`. To call this function, you need to pass three float values:
+
+```
+move(100.0, -200.0, 25.0)
+```
+
+If you have an array, you can pass it to the function using the [spread operator](instructions/expressions.md#spreading-arrays) `...`:
+
+```
+float pos = float[3]
+...pos = get_char_coordinates $scplayer
+move(...pos)
+```
+
+
+
+The last function argument can be declared as a variadic argument, using the following syntax:
+
+```pascal
+function myFunction(...args: int[5]) {
+  // Function implementation
+}
+```
+
+Here, the last argument `...args: int[5]` represents an array of integers with a maximum length of `5`. Zero or more integers can be passed to this function, and they will be accessible within the function as the elements of the `args` array.
+
+```pascal
+myFunction()
+myFunction(1,2,3)
+myFunction(1,2,3,4,5,6) // Error: Exceeds maximum argument length
+```
+
+To find out the actual number of arguments the function was called with, you can use [GET\_CLEO\_ARG\_COUNT](https://library.sannybuilder.com/#/sa/script/extensions/CLEO/2000) from CLEO5:
+
+```
+function loadModels(...models: int[16]) // allow up to 16 values
+    int count = get_cleo_arg_count // get actual number of arguments, this is CLEO5 opcode
+    count--
+    int i
+
+    for i = 0 to count
+        request_model models[i]
+    end
+    load_all_models_now
+end
+
 ```
 
 ### Calling a Function
@@ -283,7 +339,7 @@ CLEO and Sanny Builder supports 3 major conventions:
 * _stdcall_ - callee cleans up the stack
 * _thiscall_ - callee cleans up the stack. Since `thiscall` is a class method function, it additionally receives a pointer to the class instance in `ecx` register.
 
-You can read more about different types of calling conventions on [Wikipedia](https://en.wikipedia.org/wiki/X86\_calling\_conventions).&#x20;
+You can read more about different types of calling conventions on [Wikipedia](https://en.wikipedia.org/wiki/X86_calling_conventions).&#x20;
 
 Optional address parameter defines where this function is located in the game memory (static functions). If this address can only be known in runtime, this parameter can be omitted.
 
