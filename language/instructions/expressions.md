@@ -1,4 +1,4 @@
-# Operators
+# Expressions
 
 Sanny Builder supports many common operations to be written without an explicit opcode. The compiler, in this context, analyzes both the left and right sides of the expression as well as the operator between them to determine the appropriate opcode to use.
 
@@ -57,7 +57,7 @@ The game lacks native support for bitwise operations, making them accessible exc
 
 ### Timed addition and subtraction
 
-The game natively supports timed addition and subtraction, providing FPS-independent calculations in relevant contexts. Read an [article](https://gtamods.com/wiki/SCM\_language#Operators) on GTAMods.com for more information.
+The game natively supports timed addition and subtraction, providing FPS-independent calculations in relevant contexts. Read an [article](https://gtamods.com/wiki/SCM_language#Operators) on GTAMods.com for more information.
 
 | Operation                                  | Opcode | Expression      |
 | ------------------------------------------ | ------ | --------------- |
@@ -92,3 +92,38 @@ The use of the operator =# requires that types of both variables are [known](../
 | CSET\_VAR\_FLOAT\_TO\_LVAR\_INT  | 0091   | $f =# 0@   |
 | CSET\_LVAR\_INT\_TO\_LVAR\_FLOAT | 0092   | 0@ =# 1@   |
 | CSET\_LVAR\_FLOAT\_TO\_LVAR\_INT | 0093   | 1@ =# 0@   |
+
+
+
+### Increment
+
+Variable can be incremented by one using postfix `++` operator:
+
+```cpp
+int x = 0
+x++ // x += 1
+float f = 0
+f++ // f += 1.0
+```
+
+### Decrement
+
+Variables can be decremented by one using postfix `--` operator:
+
+```
+int x = 0
+x-- // x -= 1
+float f = 0
+f-- // f -= 1.0
+```
+
+### Spreading arrays
+
+Array can be expanded to a list of items using spread operator `...` It is especially useful when working with XYZ arguments
+
+```cpp
+float pos[3] // declare array with 3 elements
+...pos = get_char_coordinates $scplayer // store 3 returned values in pos
+set_char_coordinates $scplayer ...pos // call command using 3 values of pos 
+```
+
