@@ -84,7 +84,9 @@ float pos = float[3]
 move(...pos)
 ```
 
+Functions can have multiple array arguments.&#x20;
 
+### Variadic Functions
 
 The last function argument can be declared as a variadic argument, using the following syntax:
 
