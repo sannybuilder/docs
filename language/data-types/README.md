@@ -21,39 +21,44 @@ The maximum integer number is `2147483647` (`0x7FFFFFFF`), and the minimum is `-
 
 ### Floats
 
-Floating-point numbers consist of the whole and fractional parts separated by a period (`.`). Examples include `-100.0`, `-1.0`, and `-22.434`.
+Floating-point numbers include whole and fractional parts separated by a dot (e.g., `-100.0`, `-1.0`, `-22.434`).
 
 {% hint style="info" %}
-GTA III, unlike other titles, uses [16-bit integer numbers](https://gtamods.com/wiki/Talk:Mission_Scripting_\(Overview\)#Fixed-point_remark) to store decimal values. It means a precision of those values has a step value of 0.0625 units. I.e. you can use a number 0.0625, while 0.0630 will be rounded to 0.0625.
+GTA III, unlike other titles, decimals are stored as [16-bit integers](https://gtamods.com/wiki/Talk:Mission_Scripting_\(Overview\)#Fixed-point_remark) with a step size of **0.0625**, meaning values like `0.063` are rounded to `0.0625`.
 {% endhint %}
 
 ## String Literals
 
-A text enclosed between single quotes `' '` is a [null-terminated string](https://en.wikipedia.org/wiki/String_\(computer_science\)#Null-terminated). It is limited to `15` characters.
+Text in **single quotes** (`'...'`) is a [null-terminated string](https://en.wikipedia.org/wiki/String_\(computer_science\)#Null-terminated), limited to `7` (III, VC) or `15` (SA) characters.
 
 ```pascal
-03A4: script_name 'MAIN'
+script_name 'MAIN'
 ```
 
-Empty strings are allowed: `''`.
+Empty strings like `''` are allowed.
 
-A text enclosed between `" "` is a [length-prefixed string](https://en.wikipedia.org/wiki/String_\(computer_science\)#Length-prefixed). Its maximum length cannot exceed `255` characters.
 
-```pascal
-0662: write_debug_message "Hello, world!"
+
+Text in **double quotes** (`"..."`) is a [length-prefixed string](https://en.wikipedia.org/wiki/String_\(computer_science\)#Length-prefixed), with a maximum of `255` characters.
+
+```cpp
+write_debug "Hello, world!"
 ```
 
-If the literal contains `"` you must write `\` before it.
+Empty strings like `""` are also allowed.
 
-<pre class="language-pascal"><code class="lang-pascal"><strong>0662: write_debug_message "Hello, \"world\"! \n 'Here we go!'"
-</strong></code></pre>
+\
+Use `\` to escape quotes or special characters:
 
-Empty strings are allowed: `""`.
+```cpp
+write_debug "Hello, \"world\"! \n 'Here we go!'"
+```
 
 ## Model Names
 
-Model IDs defined in `.ide` files can be referenced by`#` followed by a valid model name.&#x20;
+Model IDs defined in `.ide` files can be referenced by `#` followed by a valid model name.&#x20;
 
-```pascal
-0247: request_model #CELLPHONE
+```php
+request_model #CELLPHONE
 ```
+
