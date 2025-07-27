@@ -1,68 +1,62 @@
 # Arrays
 
-An **array** represents an indexed collection of elements of the same type (called the base type). You can work with any element directly via its index. An index numeration begins with a zero. Arrays are supported in San Andreas, LCS and VCS.
+An **array** represents an indexed collection of elements of the same type (called the base type).
 
 ## Array Declaration
-
-Arrays can be declared using the `var` keyword (similar to [variables](variables.md)):
-
-```pascal
-var <array name>: array <size> of <type>
-```
-
-```pascal
-var floatArray: array 10 of Float
-```
-
-You can declare arrays of primitive types (such as numbers or strings) using a more concise syntax:
 
 ```pascal
 <type> <array name>[<size>]
 ```
 
-The type can be one of the following: `Int`, `Float`, `String`, or `LongString`:
+The type can be one of the following: `Int`, `Float`, `String`, `LongString` or any available [class name](../instructions/classes.md):
 
 ```pascal
 int intArray[10]
 float floatArray[10]
 string stringArray[10]
 longstring longStringArray[10]
+Car cars[5]
 ```
 
-### Accessing array elements after declaration <a href="#accessing-array-elements" id="accessing-array-elements"></a>
+## Accessing array elements after declaration <a href="#accessing-array-elements" id="accessing-array-elements"></a>
 
-After declaring an array, you can access its elements using square brackets:
+After declaring an array, you can access its elements using square brackets notation. Arrays use zero-based indexes, where the first element of the array is available at the index `0`, the second one at the index `1`, etc:
 
 ```pascal
-var floatArray: array 10 of Float
+float values[10]
+values[0] = 100.0
 
-int index = 0
-
-// increasing value of the first element by 100
-floatArray[index] += 100.0
-
-// same
-floatArray[0] += 100.0
-```
-
-String arrays can store [string literals](./#string-literals):
-
-```lua
+string stringArray[10]
 stringArray[0] = 'str1'
 stringArray[1] = 'str2'
 stringArray[2] = 'str3'
 
+longstring longStringArray[10]
 longStringArray[0] = "str1"
 longStringArray[1] = "str2"
 longStringArray[2] = "str3"
 ```
 
-An array can be declared as a collection of [class instances](../instructions/classes.md#class-instances), its methods are available for each element:
+You can also index array elements using variables, like so:
 
 ```pascal
-var players: array 2 of Player
+int index = 2
+int list[5]
+list[index] = 10 // set the third element of the array to 10
+```
 
-$players[0].Build
+{% hint style="warning" %}
+Indexing arrays using variables is only supported in San Andreas, LCS and VCS
+{% endhint %}
+
+An element of an array can be used just like any other [variable](variables.md). If the array has a class type, each element can be used to call methods of that class:
+
+```pascal
+Player main
+Player others[2]
+
+main.addScore(10) // ADD_SCORE main 10
+others[0].AddScore(10) // ADD_SCORE others[0] 10
 ```
 
 {% hint style="info" %}
@@ -71,7 +65,29 @@ By default, the disassembler prints array elements with the numbers as indexes i
 
 ## Spreading Arrays
 
-Arrays support spread syntax using `...` operator. Read more about it [here](../instructions/expressions.md#spreading-arrays).
+Arrays support spread syntax with the `...` operator as a quick way to represent all array elements.
+
+For example, if you have an array of 3 elements like so:
+
+```cpp
+float pos[3]
+```
+
+You can spread it to store the result of a command that returns three float numbers, e.g. `get_char_coordinates`:
+
+```pascal
+...pos = get_char_coordinates $scplayer 
+// same as pos[0], pos[1], pos[2] = get_char_coordinates $scplayer
+```
+
+You can also spread an array to pass all elements to a command that requires that amount of arguments, e.g. `set_char_coordinates`:
+
+```pascal
+set_char_coordinates $scplayer ...pos
+// same as set_char_coordinates $scplayer pos[0] pos[1] pos[2]
+```
+
+You can also use [spread syntax when calling functions](../functions.md#array-arguments).
 
 ## Legacy syntax
 
