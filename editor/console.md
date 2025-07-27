@@ -34,7 +34,7 @@ The disassembler ignores unknown opcodes, incorrect parameters and so on. It hel
 
 ### CONSTANT\_INDEXES
 
-The disassembler prints array elements as global variables with indexes. It's available for `GTA SA`, `LCS`, `VCS` games.
+The disassembler prints array elements as global variables with indexes. It's available for GTA SA, LCS, VCS games. It is enabled by default in GTA SA.
 
 E.g. given an array of three elements starting at `$10` this option affects the way the variables look like after disassembling:
 

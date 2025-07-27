@@ -59,10 +59,6 @@ main.addScore(10) // ADD_SCORE main 10
 others[0].AddScore(10) // ADD_SCORE others[0] 10
 ```
 
-{% hint style="info" %}
-By default, the disassembler prints array elements with the numbers as indexes in the `GTA SA` [edit mode](../../edit-modes/). The same feature is available in LCS and VCS but is disabled by default. You can turn this feature on and off using the [debug option](../../editor/console.md#constant_indexes) `CONSTANT_INDEXES`.&#x20;
-{% endhint %}
-
 ## Spreading Arrays
 
 Arrays support spread syntax with the `...` operator as a quick way to represent all array elements.
