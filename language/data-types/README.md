@@ -6,9 +6,12 @@ Sanny Builder supports 32-bit integers and floating-point numbers.&#x20;
 
 ### Integers
 
-Integers are whole numbers represented as a string of digits from `0` to `9`. Negative numbers are denoted by a minus sign (`-`) in front of them. Examples of valid integer numbers include `0`, `1`, `123`, `-10`, and `-900000`.
+Integers are whole numbers using digits 0-9, with an optional minus sign for negatives (e.g., `0`, `123`, `-10`).
 
-Sanny also supports hexadecimal and binary notation for integer numbers. Hexadecimal numbers are represented as a string of digits from `0` through `9` and letters from `A` through `F`, prefixed with `0x` or `-0x`. For instance, `0xA`, `0xFFFF`, `-0x90`. Binary numbers are represented as a string of digits `0` and `1`, prefixed with `0b` or `-0b`. For example, `0b0`, `0b10110`, `-0b10000`.
+Also supported:
+
+* **Hexadecimal**: Digits 0-9 and letters A-F, prefixed with `0x` or `-0x` (e.g., `0xA`, `-0x90`).
+* **Binary**: Digits 0 and 1, prefixed with `0b` or `-0b` (e.g., `0b10110`, `-0b10000`).
 
 {% hint style="success" %}
 For your convenience Sanny's IDE has [shortcuts](../../editor/hotkeys.md) `Ctrl`+`H` and `Ctrl`+`B` to convert numbers between decimal and hexadecimal/binary notations.
@@ -21,12 +24,12 @@ The maximum integer number is `2147483647` (`0x7FFFFFFF`), and the minimum is `-
 Floating-point numbers consist of the whole and fractional parts separated by a period (`.`). Examples include `-100.0`, `-1.0`, and `-22.434`.
 
 {% hint style="info" %}
-GTA III, unlike other titles, uses [16-bit integer numbers](https://gtamods.com/wiki/Talk:Mission\_Scripting\_\(Overview\)#Fixed-point\_remark) to store decimal values. It means a precision of those values has a step value of 0.0625 units. I.e. you can use a number 0.0625, while 0.0630 will be rounded to 0.0625.
+GTA III, unlike other titles, uses [16-bit integer numbers](https://gtamods.com/wiki/Talk:Mission_Scripting_\(Overview\)#Fixed-point_remark) to store decimal values. It means a precision of those values has a step value of 0.0625 units. I.e. you can use a number 0.0625, while 0.0630 will be rounded to 0.0625.
 {% endhint %}
 
 ## String Literals
 
-A text enclosed between single quotes `' '` is a [null-terminated string](https://en.wikipedia.org/wiki/String\_\(computer\_science\)#Null-terminated). It is limited to `15` characters.
+A text enclosed between single quotes `' '` is a [null-terminated string](https://en.wikipedia.org/wiki/String_\(computer_science\)#Null-terminated). It is limited to `15` characters.
 
 ```pascal
 03A4: script_name 'MAIN'
@@ -34,7 +37,7 @@ A text enclosed between single quotes `' '` is a [null-terminated string](https:
 
 Empty strings are allowed: `''`.
 
-A text enclosed between `" "` is a [length-prefixed string](https://en.wikipedia.org/wiki/String\_\(computer\_science\)#Length-prefixed). Its maximum length cannot exceed `255` characters.
+A text enclosed between `" "` is a [length-prefixed string](https://en.wikipedia.org/wiki/String_\(computer_science\)#Length-prefixed). Its maximum length cannot exceed `255` characters.
 
 ```pascal
 0662: write_debug_message "Hello, world!"
