@@ -4,11 +4,7 @@ Here you can change the IDE settings.
 
 ![](../../.gitbook/assets/options-editor-en.PNG)
 
-## Color Theme
 
-![](../../.gitbook/assets/sb-options-color-theme.PNG)
-
-This picker allows to choose one of the pre-defined themes to customize interface colors and syntax highlighting. The Edit button launches [Theme Editor](theme-editor.md).
 
 ## Code Scan Distance
 
@@ -22,7 +18,7 @@ If the `Auto list` option is checked, the list of available labels, models and v
 
 ![](../../.gitbook/assets/editor-font-en.png)
 
-Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced\_font). `AaBbCcDd` reflects selected configuration.
+Here you can choose the font and configure its display. Sanny Builder supports only [monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font). `AaBbCcDd` reflects selected configuration.
 
 ## Editor Configuration
 
