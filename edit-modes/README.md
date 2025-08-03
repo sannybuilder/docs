@@ -237,7 +237,7 @@ Version 4.1 includes two experimental modes:
 
 To change the mode, click at the right bottom corner of the Sanny Builder's main window. A list of the available modes will appear. As you click the mode name Sanny Builder makes all necessary adjustments and you may continue working immediately.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="192"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="192"><figcaption></figcaption></figure>
 
 List of displayed modes can be [customized via Options](../editor/options/edit-modes.md).
 

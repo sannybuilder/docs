@@ -2,7 +2,9 @@
 
 Here you can decide what modes to display in the edit mode list at the bottom right corner and change some shared options.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+### Custom Names
 
 <div align="left"><img src="../../.gitbook/assets/formats-custom-names-en.png" alt=""></div>
 

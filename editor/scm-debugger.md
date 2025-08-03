@@ -18,7 +18,7 @@ You can also provide additional arguments that will be used when launching the g
 
 Using the debug menu, you can start new game process and debug the scripts.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, if the game is already running, you can simply attach to it. If attaching did not work, check the debugger.log in Sanny Builder root directory. It is possible that the game is already being debugged or it requires elevated permissions (i.e. you need to run Sanny Builder as admin).&#x20;
 

@@ -44,7 +44,6 @@
   * [General](editor/options/general.md)
   * [Disassembler](editor/options/disassembler.md)
   * [Compiler](editor/options/compiler.md)
-  * [Formats](editor/options/formats.md)
   * [Editor](editor/options/editor.md)
   * [Theme Editor](editor/options/theme-editor.md)
   * [Hotkeys](editor/options/hotkeys.md)

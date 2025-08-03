@@ -34,7 +34,7 @@ This release won't be possible without great feedback and testing from Sanny Bui
 
 * array name in expressions without opcode could be a constant [#250](https://github.com/sannybuilder/dev/issues/250)&#x20;
 * preserve global variable index when disassembling with extra info [#251](https://github.com/sannybuilder/dev/issues/251)&#x20;
-* default choice for option [Case converting](editor/options/formats.md#case-converting) should be "As is" [#256](https://github.com/sannybuilder/dev/issues/256)
+* default choice for option [Case converting](broken-reference) should be "As is" [#256](https://github.com/sannybuilder/dev/issues/256)
 * fix an issue with compiling opcode 0B17 [#254](https://github.com/sannybuilder/dev/issues/254)&#x20;
 * fix an issue when Sanny doesn't present the option to use the included script text. [#258](https://github.com/sannybuilder/dev/issues/258)&#x20;
 * fixed some issues with string variables [#259](https://github.com/sannybuilder/dev/issues/259), [#265](https://github.com/sannybuilder/dev/issues/265)
@@ -425,7 +425,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * [constants ](language/data-types/constants.md)support
 * new [directives](language/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
 * [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
-* [custom arrays](editor/options/formats.md#custom-names) support
+* [custom arrays](broken-reference) support
 * a [possibility](editor/console.md#skip_scm_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
@@ -468,8 +468,8 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 * support for [hexadecimal](language/data-types/#hexadecimal-numbers) numbers
 * `HEX..END` statement accepts labels and global variables
 * full support for the [ADMA](language/data-types/#variables) datatype
-* an opportunity to give [custom names](editor/options/formats.md#custom-names) to labels
-* an opportunity to choose a [different case](editor/options/formats.md#case-converting) for custom names and strings
+* an opportunity to give [custom names](broken-reference) to labels
+* an opportunity to choose a [different case](broken-reference) for custom names and strings
 * added [console](editor/console.md) to switch debug options
 * decompiler supports `GXT` files of GTA III & GTA VC
 * added escape sequences in [long string literals](language/data-types/#string-literals)
@@ -564,7 +564,7 @@ The class member `Car.SetSpeedInstantly` was named incorrectly (with a wrong opc
 * added [keywords](language/instructions/keywords.md) support
 * some math commands can be written without opcodes (e.g.`0004`, `0005`, `0006`, `0007`, `0038`, `0039`, `0042`, `0043`)
 * for the opcode `00D6` the default parameter is `0` (`if` = `if 0`)
-* added the [option](editor/options/formats.md#label-name-format) to customize labels output
+* added the [option](broken-reference) to customize labels output
 * added [keywords](language/instructions/keywords.md) `True` and `False` which correspond to `1` and `0`
 * added construction [HEX...END](language/instructions/hex..end.md) for writing hexadecimal values directly in a binary output
 

@@ -1,6 +1,6 @@
 # CustomLabels.ini
 
-You can give labels custom names that do not depend on the disassembler [configuration](../editor/options/formats.md#label-name-format). Those names are defined in the file `CustomLabels.ini` (one for each [edit mode](./#labels)).
+You can give labels custom names that do not depend on the disassembler [configuration](broken-reference). Those names are defined in the file `CustomLabels.ini` (one for each [edit mode](./#labels)).
 
 ## File Syntax
 

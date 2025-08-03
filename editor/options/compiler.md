@@ -1,5 +1,11 @@
 # Compiler
 
+## Case Converting
+
+<div align="left"><img src="../../.gitbook/assets/formats-case-en.png" alt=""></div>
+
+This option serves a dual purpose. The disassembler names [global variables](../../language/data-types/variables.md#global-variables), [labels](../../language/data-types/#labels), [arrays](../../language/data-types/arrays.md) using the selected letter case. The compiler writes [string literals](../../language/data-types/#string-literals) using the selected case too.
+
 ### Show warning
 
 This option is only used during compilation of the San Andreas scripts. If the game is running, the file `script.img` containing external scripts can not be overwritten as the game uses this file and the compiler complains about it. You may disable the warning by unchecking this box.
