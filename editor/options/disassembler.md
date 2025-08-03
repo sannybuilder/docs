@@ -36,7 +36,7 @@ If you want the offsets to be hexadecimal, select the checkbox at the bottom.
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure></div>
 
-This field specifies the output file path and name for disassembled text files using placeholder variables:
+This field specifies the path and name for disassembled text files using placeholder variables:
 
 * `$dir` – input file directory path
 * `$name` – input file name (without extension)
