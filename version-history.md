@@ -1,5 +1,24 @@
 # Version History
 
+## v. 4.2.0 - Aug 4, 2025
+
+{% hint style="success" %}
+This release marks the 20th Anniversary since Sanny Builder's first release in 2005! Thank you for being part of the journey!
+{% endhint %}
+
+* new [spread operator](https://docs.sannybuilder.com/language/instructions/expressions#spreading-arrays) to unwrap array to a list of arguments (e.g. `...pos = get_char_coordinates $scplayer`)
+* compiler support for [variadic functions](https://docs.sannybuilder.com/language/functions#variadic-functions)
+* compiler support for [array arguments in functions](https://docs.sannybuilder.com/language/functions#array-arguments)
+* [options](https://docs.sannybuilder.com/editor/options/general) have been reworked to move out Disassembler and Compiler options from General and Formats to their own tabs
+* new disassembler syntax options to select between opcodes, commands or classes outputs
+* new edit mode: LCS Mobile
+* new color theme Neon Dark by Vital
+* bug fixes and minor improvements
+
+Thanks to everyone who contributed to the release and helped with testing. Shout out to my [Patreon](https://www.patreon.com/seemann) supporters, you're best!
+
+See [the complete list of changes](https://github.com/sannybuilder/dev/issues/379) for additional information.
+
 ## v. 4.1.0 - Mar 15, 2024
 
 * edit mode enhancements, including a new feature to customize edit mode list
