@@ -1,5 +1,7 @@
 # Introduction
 
+<div align="center" data-full-width="false"><figure><img src=".gitbook/assets/sb_20_1.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
 **Sanny Builder** is a fast and powerful tool designed for the GTA 3D game series (GTA3, VC, SA, LCS, VCS).
 
 It includes a disassembler, permitting the end-user to transform the game scripts into text. The compiler feature offers a convenient editor with a large number of features such as a [debugger](editor/scm-debugger.md), syntax highlighting, error checking, advanced search tools, player coordinates reading, fast movement through code and much more.
