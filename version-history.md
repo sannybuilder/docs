@@ -19,7 +19,7 @@ Thanks to everyone who contributed to the release and helped with testing. Shout
 
 See [the complete list of changes](https://github.com/sannybuilder/dev/issues/379) for additional information.
 
-## v. 4.1.0 - Mar 15, 2024
+## v. 4.1.0 - Mar 15, 2025
 
 * edit mode enhancements, including a new feature to customize edit mode list
 * two new experimental modes for GTA San Andreas: one with [Somersault compiler](https://next.sannybuilder.com/) and one with support for SAMPFUNCS extension
