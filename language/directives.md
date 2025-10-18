@@ -40,7 +40,7 @@ Similar to `{$INCLUDE}`, with the only difference being that if the code from a 
 
 Makes the compiler to treat the file as an external script. Meaning, the resulting output file will be header-less and with relative [label](data-types/#labels) offsets, as an `.scm` file from the `script.img`. Using this directive requires that the file contains only one script or a single mission.
 
-An alternative way to get such file is the debug [option](../editor/console.md#skip\_scm\_header) `SKIP_SCM_HEADER`. This option could be enabled in the console or from the dropdown list on the main toolbar.
+An alternative way to get such file is the [`SKIP_SCM_HEADER`](../editor/debug-options.md#skip_scm_header) debug option.
 
 Syntax:
 

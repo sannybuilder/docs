@@ -49,7 +49,7 @@
   * [Hotkeys](editor/options/hotkeys.md)
   * [Debugger](editor/options/debugger.md)
   * [Edit modes](editor/options/edit-modes.md)
-* [Console](editor/console.md)
+* [Debug Options](editor/debug-options.md)
 * [Hotkeys](editor/hotkeys.md)
 * [Opcode Search Tool](editor/opcode-search-tool.md)
 * [Command Line Interface](editor/cli.md)

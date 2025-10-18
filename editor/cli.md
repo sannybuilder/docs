@@ -44,7 +44,7 @@ sanny.exe --decompile C:\1.cs --use-source
 
 ## --debug
 
-`--debug` - toggles [debug options](console.md#running-with-debug)
+`--debug` - toggles [debug options](debug-options.md)
 
 ```
 sanny.exe --debug 110000

@@ -46,7 +46,7 @@ If this option is checked the compiler adds extra information at the end of the 
 * current [edit mode](../../edit-modes/)
 
 {% hint style="info" %}
-Starting from v3.8.0 the disassembler can [ignore extra information](../console.md#skip_extra_info).
+Starting from v3.8.0 the disassembler can [ignore extra information](../debug-options.md#skip_extra_info).
 {% endhint %}
 
 ### Show warning

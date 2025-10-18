@@ -127,7 +127,7 @@ Previous versions allowed the compilation of some broken code. Now, it will prod
 * [integration with Sanny Builder Library](editor/features.md#integration-with-sanny-builder-library): a new portal documenting all known opcodes
 * 16 [new color themes](https://github.com/sannybuilder/themes)
 * disassembler now outputs the content of a `hex..end` block as a string if it's a sequence of ASCII characters ending with 00 [#33](https://github.com/sannybuilder/dev/issues/33)
-* [new debug option](editor/console.md#skip_extra_info) to let disassembler ignore custom information attached to the compiled script
+* [new debug option](editor/debug-options.md#skip_extra_info) to let disassembler ignore custom information attached to the compiled script
 * [new CLI parameter](editor/cli.md#option) to launch the editor with custom options
 * [custom user templates](edit-modes/code-templates.md#adding-a-new-template) are now stored in a separate file and kept between updates
 * [hotkeys](editor/hotkeys.md) using Numpad buttons have been changed (Zoom text: Ctrl + +/- and Navigate to label and back: Alt + Right/Left)
@@ -445,7 +445,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 * new [directives](language/directives.md) `$INCLUDE`,`$EXTERNAL`,`$CLEO`
 * [writing of the additional info](editor/options/general.md#add-extra-info-to-scm) to the end of a script file
 * [custom arrays](broken-reference) support
-* a [possibility](editor/console.md#skip_scm_header) to decompile SCM files having no header
+* a [possibility](editor/debug-options.md#skip_scm_header) to decompile SCM files having no header
 * an ability to create an external script named `AAA`
 * a new [command line parameter](./#command-line-usage) `\compile`
 * a possibility to use a floating-point value as the counter value in a [FOR..END](language/control-flow/loops.md#for-end) loop
@@ -458,7 +458,7 @@ There is a [limit](language/instructions/classes.md#properties) on using space c
 
 ## v. 2.99e - Jan 1, 2007
 
-* fixed a bug when parts of the code within the [HEX..END](language/instructions/hex..end.md) construct disappeared in [debug mode](editor/console.md#debug-options)
+* fixed a bug when parts of the code within the [HEX..END](language/instructions/hex..end.md) construct disappeared in [debug mode](editor/debug-options.md#debug-options)
 * a HEX..END construct now accepts the [aDMA](language/instructions/hex..end.md#using-adma-numbers) type and string literals
 * a [FOR ](language/control-flow/loops.md#for-end)loop accepts model identifiers as the counter values
 
@@ -489,7 +489,7 @@ If you get a compiler error message like `Unknown directive xxxx` when compiling
 * full support for the [ADMA](language/data-types/#variables) datatype
 * an opportunity to give [custom names](broken-reference) to labels
 * an opportunity to choose a [different case](broken-reference) for custom names and strings
-* added [console](editor/console.md) to switch debug options
+* added console to switch [debug options](editor/debug-options.md)
 * decompiler supports `GXT` files of GTA III & GTA VC
 * added escape sequences in [long string literals](language/data-types/#string-literals)
 * information about [INI](edit-modes/opcodes-list-scm.ini.md) file (version, author, date)

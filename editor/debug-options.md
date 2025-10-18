@@ -1,38 +1,24 @@
-# Console
+# Debug Options
 
-The **console** offers an ability to switch debug options of Sanny Builder. Mostly they relate to the disassembler features and you can see the changes when disassemble a file. The console window is open after pressing `Ctrl+~`. You may enter the commands in the input line. After typing a command press  `Enter` to proceed. The console will display a result.
+**Debug options** are temporary, per-tab flags modifying the disassembler and compiler behavior. Each open tab maintains its own set of debug options. You can toggle individual options on or off from the rightmost button in the main toolbar, which opens a drop-down list showing all available debug options. Changes take effect immediately and remain active only for the current tab and session.
 
-## Available commands&#x20;
+![](../.gitbook/assets/sb-debug-options-dropdown.PNG)
 
-All commands are case-insensitive.
+### List of options
 
-`help` – shows the help information about the console\
-`clear` – clears the console\
-`list` – shows in the console the list of all commands\
-`list options` – lists all available debug options\
-`toggle [on/off]` – enable or disable [debug options](console.md#debug-options)
-
-The input command ends either with the word `ON` (the option will be enabled) or `OFF` (the option will be disabled), or nothing (the option will be toggled from `ON` to `OFF` or from `OFF` to `ON`).
-
-{% hint style="info" %}
-Before enabling the following options turn on the debug mode with the command `toggle debug_mode ON`
-{% endhint %}
-
-## Debug Options
-
-### CODE\_OFFSETS
+#### CODE\_OFFSETS
 
 The disassembler prints the offset of each command.
 
-### VAR\_COUNTER
+#### VAR\_COUNTER
 
 After compiling the console contains the list of the [global variables](../language/data-types/variables.md#global-variables) used only once in the code (i.e. can be removed or replaced with [local variables](../language/data-types/variables.md#local-variables)).
 
-### IGNORE\_UNKNOWN
+#### IGNORE\_UNKNOWN
 
 The disassembler ignores unknown opcodes, incorrect parameters and so on. It helps to open almost any file that used to be protected or compiled incorrectly.
 
-### CONSTANT\_INDEXES
+#### CONSTANT\_INDEXES
 
 The disassembler prints array elements as global variables with indexes. It's available for GTA SA, LCS, VCS games. It is enabled by default in GTA SA.
 
@@ -44,21 +30,17 @@ E.g. given an array of three elements starting at `$10` this option affects the 
 | $11                        | $10\[1]                 |
 | $12                        | $10\[2]                 |
 
-### SKIP\_SCM\_HEADER
+#### SKIP\_SCM\_HEADER
 
 Disassembler skips the header of the input file. It allows to open headless scripts (e.g. the ones from `script.img` or CLEO scripts).&#x20;
 
 With this option the compiler makes `.scm` files without the header (similar to `{$EXTERNAL}` [directive](../language/directives.md#usdexternal)).
 
-### SKIP\_EXTRA\_INFO
+#### SKIP\_EXTRA\_INFO
 
 The disassembler ignores the [extra info](options/general.md#add-extra-info-to-scm) section attached to the input file. It also treats this section as a set of regular SCM instructions, so enabling `IGNORE_UNKNOWN` option is recommended.
 
-## Alternate ways
-
-Sanny Builder offers a few other ways to toggling debug options outside of the console that might be useful in some cases.
-
-### Running with --debug
+### Setting Debug Options Using CLI
 
 The `--debug` [option](cli.md#debug) provides an alternate way of switching the debug options. Run Sanny with the parameter `--debug X`, where `X` is a series of `0` and `1`.  Each digit in the series corresponds to a particular debug option:
 
@@ -76,11 +58,3 @@ sanny.exe --debug 110000
 ```
 
 The first `1` enables the `CODE_OFFSETS` option, the second `1` enables the `IGNORE_UNKNOWN` mode. The remaining options are disabled.
-
-### Using GUI
-
-Clicking the right-most button in the main toolbar shows a drop-down menu with the list of debug options.
-
-![](../.gitbook/assets/sb-debug-options-dropdown.PNG)
-
-Each menu item toggles a particular debug option. The change comes into effect immediately.
