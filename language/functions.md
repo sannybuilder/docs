@@ -79,7 +79,7 @@ move(100.0, -200.0, 25.0)
 If you have an array, you can pass it to the function using the [spread operator](instructions/expressions.md#spreading-arrays) `...`:
 
 ```
-float pos = float[3]
+float pos[3]
 ...pos = get_char_coordinates $scplayer
 move(...pos)
 ```
