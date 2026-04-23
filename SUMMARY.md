@@ -99,6 +99,7 @@
   * [Gang IDs](scm-documentation/vcs/gangs.md)
   * [Player Clothes](scm-documentation/vcs/clothes.md)
   * [Weather IDs](scm-documentation/vcs/weather.md)
+  * [Ped Types](scm-documentation/vcs/ped-types.md)
 
 ## Troubleshooting
 

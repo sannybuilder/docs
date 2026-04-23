@@ -4,7 +4,7 @@
 
 ## Disassembler Syntax
 
-This picker allows to choose how disassembler outputs commands. You can select between opcodes, [command names](../../language/instructions/keywords.md) and [classes](../../language/instructions/classes.md).&#x20;
+This picker allows to choose how disassembler outputs commands. You can select between opcodes, [command names](../../language/instructions/keywords.md) and [classes](../../language/instructions/classes.md).
 
 ## Labels and Variables
 
@@ -34,7 +34,7 @@ If you want the offsets to be hexadecimal, select the checkbox at the bottom.
 
 ## File Name Format
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 This field specifies the path and name for disassembled text files using placeholder variables:
 
@@ -60,13 +60,13 @@ When this option is checked, the disassembler [replaces mission numbers](../feat
 
 When this option is checked, the disassembler adds the [mission title](../features.md#custom-mission-titles) as a comment for the opcode `start_mission` and for the line `DEFINE MISSION` in the file header.
 
-### Disassemble with IF AND / IF OR&#x20;
+### Disassemble with IF AND / IF OR
 
 Disassembler replaces the [number of conditions](../../language/control-flow/conditions.md#syntax) in the `IF` opcode with `AND` or `OR`
 
 ### Always overwrite output file
 
-This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name (e.g. `main[0].txt`).&#x20;
+This option determines how the disassembler treats the output file when a file with the same name exists already. By default the disassembler keeps the existing file and creates a new one with the extra number in the name (e.g. `main[0].txt`).
 
 When this option is checked the disassembler replaces the existing file with a new file.
 

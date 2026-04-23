@@ -38,7 +38,7 @@
 | 33 | <img src="../../.gitbook/assets/RKchat.png" alt="" data-size="line">           | KChat Radio station     |
 | 34 | <img src="../../.gitbook/assets/RFever.png" alt="" data-size="line">           | Fever Radio station     |
 | 35 | <img src="../../.gitbook/assets/RVRock.png" alt="" data-size="line">           | VRock Radio station     |
-| 36 | <img src="../../.gitbook/assets/rvcpr.png" alt="" data-size="line">            | VCPR Radio station      |
+| 36 | <img src="../../.gitbook/assets/RVCPR (1).png" alt="" data-size="line">        | VCPR Radio station      |
 | 37 | <img src="../../.gitbook/assets/REspantoso.png" alt="" data-size="line">       | Espantoso Radio station |
-| 38 | <img src="../../.gitbook/assets/remotion (1).png" alt="" data-size="line">     | Emotion Radio station   |
+| 38 | <img src="../../.gitbook/assets/REmotion (1).png" alt="" data-size="line">     | Emotion Radio station   |
 | 39 | <img src="../../.gitbook/assets/RWave.png" alt="" data-size="line">            | Wave Radio station      |
